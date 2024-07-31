@@ -21,7 +21,6 @@ N 140 -180 140 -160 {
 lab=Vin}
 N 140 -100 140 -80 {
 lab=GND}
-C {/foss/designs/my_design/xschem/schemetic/buffer.sym} 400 -260 0 0 {name=X1}
 C {devices/code.sym} 690 -330 0 0 {name=TT_MODELS only_toplevel=false value="
 
 .lib /foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice tt
@@ -42,3 +41,4 @@ C {devices/gnd.sym} 140 -80 0 0 {name=l6 lab=GND}
 C {devices/lab_pin.sym} 420 -260 0 0 {name=p1 sig_type=std_logic lab=Vin}
 C {devices/lab_pin.sym} 540 -260 2 0 {name=p2 sig_type=std_logic lab=Vout}
 C {devices/lab_pin.sym} 140 -180 2 0 {name=p3 sig_type=std_logic lab=Vin}
+C {/foss/designs/my_design/xschem/schemetic_symbol/inverter_tutorial/buffer.sym} 400 -260 0 0 {name=X1}
