@@ -1,36 +1,36 @@
 ** sch_path: /foss/designs/my_design/projects/negdff/xschem_ngspice/negdff.sch
-**.subckt negdff D Db1 Db2 Q Qb1 CLK
+**.subckt negdff D Db1 Db2 Q Qb1 CLK VP VN
 *.ipin D
 *.ipin Db1
 *.ipin Db2
 *.opin Q
 *.opin Qb1
 *.ipin CLK
-X1 GND Db2 net6 irf540 m=1
+*.ipin VP
+*.ipin VN
+X1 VN Db2 net6 irf540 m=1
 X2 net6 CLK net7 irf540 m=1
-X3 GND net2 net7 irf540 m=1
-X4 net1 D GND irf540 m=1
+X3 VN net2 net7 irf540 m=1
+X4 net1 D VN irf540 m=1
 X5 net1 CLK net2 irf540 m=1
-X6 GND net7 net2 irf540 m=1
-X7 net8 net7 GND irf540 m=1
-X8 GND CLK net8 irf540 m=1
+X6 VN net7 net2 irf540 m=1
+X7 net8 net7 VN irf540 m=1
+X8 VN CLK net8 irf540 m=1
 X9 Qb1 Q net8 irf540 m=1
-X10 GND net2 net5 irf540 m=1
-X11 GND CLK net5 irf540 m=1
+X10 VN net2 net5 irf540 m=1
+X11 VN CLK net5 irf540 m=1
 X12 Q Qb1 net5 irf540 m=1
-X13 net3 D VDD irf540 m=1
-X14 VDD CLK net3 irf540 m=1
-X15 net3 net7 net2 irf540 m=1
-X16 VDD Db1 net9 irf540 m=1
-X17 VDD CLK net9 irf540 m=1
-X18 net9 net2 net7 irf540 m=1
-X19 VDD net2 net4 irf540 m=1
-X20 net4 CLK Q irf540 m=1
-X21 Q Qb1 VDD irf540 m=1
-X22 net10 net7 VDD irf540 m=1
-X23 net10 CLK Qb1 irf540 m=1
-X24 Qb1 Q VDD irf540 m=1
+X25 VP D net3 irf5305
+X13 net3 CLK VP irf5305
+X14 net2 net7 net3 irf5305
+X15 net9 Db1 VP irf5305
+X16 net9 CLK VP irf5305
+X17 net7 net2 net9 irf5305
+X18 net4 net2 VP irf5305
+X19 Q CLK net4 irf5305
+X20 VP Qb1 Q irf5305
+X21 VP net7 net10 irf5305
+X22 Qb1 CLK net10 irf5305
+X23 VP Q Qb1 irf5305
 **.ends
-.GLOBAL GND
-.GLOBAL VDD
 .end

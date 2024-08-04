@@ -1,0 +1,51 @@
+** sch_path: /foss/designs/my_design/projects/inverter_tutorial/xschem_ngspice/buffer_tran.sch
+**.subckt buffer_tran
+Vdd VDD GND 1.8
+Vin Vin GND pulse(0 1.8 1ns 1ns 1ns 4ns 10ns)
+X1 Vin Vout VDD GND buffer
+**** begin user architecture code
+
+
+
+.lib /foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+
+.tran 0.01n 1u
+
+.save all
+
+
+
+
+**** end user architecture code
+**.ends
+
+* expanding   symbol:  /foss/designs/my_design/projects/inverter_tutorial/xschem_ngspice/buffer.sym # of pins=4
+** sym_path: /foss/designs/my_design/projects/inverter_tutorial/xschem_ngspice/buffer.sym
+** sch_path: /foss/designs/my_design/projects/inverter_tutorial/xschem_ngspice/buffer.sch
+.subckt buffer A Y VP VN
+*.ipin A
+*.iopin VP
+*.iopin VN
+*.opin Y
+X1 A net1 VP VN inverter
+X2 net1 Y VP VN inverter
+.ends
+
+
+* expanding   symbol:  /foss/designs/my_design/projects/inverter_tutorial/xschem_ngspice/inverter.sym # of pins=4
+** sym_path: /foss/designs/my_design/projects/inverter_tutorial/xschem_ngspice/inverter.sym
+** sch_path: /foss/designs/my_design/projects/inverter_tutorial/xschem_ngspice/inverter.sch
+.subckt inverter A Y VP VN
+*.ipin A
+*.iopin VP
+*.iopin VN
+*.opin Y
+XM1 Y A VN VN sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM2 Y A VP VP sky130_fd_pr__pfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+.ends
+
+.GLOBAL VDD
+.GLOBAL GND
+.end

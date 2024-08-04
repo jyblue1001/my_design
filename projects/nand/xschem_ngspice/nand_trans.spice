@@ -1,0 +1,43 @@
+** sch_path: /foss/designs/my_design/projects/nand/xschem_ngspice/nand_trans.sch
+**.subckt nand_trans
+X1 VinA VinB Vout VDD GND nand
+Vdd VDD GND 1.8
+VinA VinA GND pulse(0 1.8 0.1ns 0.1ns 1ns 4ns 10ns)
+VinB VinB GND pulse(0 1.8 1ns 0.1ns 0.1ns 8ns 20ns)
+**** begin user architecture code
+
+
+
+.lib /foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+
+.tran 0.01n 1u
+
+.save all
+
+
+
+**** end user architecture code
+**.ends
+
+* expanding   symbol:  /foss/designs/my_design/projects/nand/xschem_ngspice/nand.sym # of pins=5
+** sym_path: /foss/designs/my_design/projects/nand/xschem_ngspice/nand.sym
+** sch_path: /foss/designs/my_design/projects/nand/xschem_ngspice/nand.sch
+.subckt nand A B Y VP VN
+*.ipin A
+*.ipin B
+*.opin Y
+*.iopin VP
+*.iopin VN
+XM1 net1 A VN VN sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM2 Y B net1 net1 sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM3 Y B VP VP sky130_fd_pr__pfet_01v8 L=0.15 W=2 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM4 Y A VP VP sky130_fd_pr__pfet_01v8 L=0.15 W=2 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+.ends
+
+.GLOBAL VDD
+.GLOBAL GND
+.end

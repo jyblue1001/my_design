@@ -41,4 +41,4 @@ C {devices/gnd.sym} 140 -80 0 0 {name=l6 lab=GND}
 C {devices/lab_pin.sym} 420 -260 0 0 {name=p1 sig_type=std_logic lab=Vin}
 C {devices/lab_pin.sym} 540 -260 2 0 {name=p2 sig_type=std_logic lab=Vout}
 C {devices/lab_pin.sym} 140 -180 2 0 {name=p3 sig_type=std_logic lab=Vin}
-C {/foss/designs/my_design/xschem/schemetic_symbol/inverter_tutorial/buffer.sym} 400 -260 0 0 {name=X1}
+C {/foss/designs/my_design/projects/inverter_tutorial/xschem_ngspice/buffer.sym} 400 -260 0 0 {name=X1}
