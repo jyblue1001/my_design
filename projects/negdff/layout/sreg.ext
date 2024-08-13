@@ -1,0 +1,215 @@
+timestamp 1723467390
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+use sreginv sreginv_0 1 0 150 0 1 -230
+use negdff3 negdff3_3 1 0 3300 0 1 -230
+use negdff3 negdff3_0 1 0 150 0 1 -230
+use negdff3 negdff3_1 1 0 1200 0 1 -230
+use negdff3 negdff3_2 1 0 2250 0 1 -230
+node "CLK" 1 213.246 -390 0 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 32800 980 0 0 0 0 0 0 0 0 0 0
+node "GND" 2 274.31 -390 190 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 25200 1340 0 0 0 0 0 0 0 0 0 0
+node "m1_n390_900#" 0 19.9801 -390 900 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1600 160 0 0 0 0 0 0 0 0 0 0
+node "VDD" 2 281.617 -390 1070 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 25200 1340 0 0 0 0 0 0 0 0 0 0
+node "li_4000_1730#" 13 68.2209 4000 1730 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6400 320 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_2950_1730#" 13 65.4035 2950 1730 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6400 320 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_1900_1730#" 13 65.4035 1900 1730 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6400 320 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_850_1730#" 13 68.2209 850 1730 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6400 320 0 0 0 0 0 0 0 0 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "li_1900_1730#" "li_850_1730#" 2.04409
+cap "li_2950_1730#" "li_4000_1730#" 2.04409
+cap "li_1900_1730#" "li_2950_1730#" 2.04409
+cap "VDD" "m1_n390_900#" 9.77778
+cap "CLK" "GND" 11
+cap "GND" "m1_n390_900#" 13.5385
+cap "negdff3_0/a_100_420#" "negdff3_0/a_100_850#" -5.68434e-14
+cap "negdff3_0/a_390_420#" "negdff3_1/a_20_420#" 0.014703
+cap "negdff3_0/a_100_420#" "negdff3_0/D" 0.307905
+cap "negdff3_0/VP" "negdff3_2/a_20_230#" 5.41671
+cap "negdff3_0/Q" "negdff3_0/VN" 12.9653
+cap "negdff3_0/a_390_420#" "negdff3_0/Qb1" 0.153409
+cap "negdff3_0/a_100_850#" "negdff3_1/a_100_850#" 0.511022
+cap "negdff3_2/a_20_230#" "negdff3_0/Qb1" 1.02564
+cap "negdff3_2/a_20_230#" "negdff3_0/a_100_850#" 0.0253384
+cap "negdff3_2/a_20_230#" "negdff3_0/Db1" 5.59021
+cap "negdff3_0/Q" "negdff3_1/a_n110_1300#" 3.36388
+cap "negdff3_1/a_100_420#" "negdff3_0/D" 0.0310906
+cap "negdff3_0/VP" "negdff3_0/Q" 1.01557
+cap "negdff3_2/a_20_230#" "negdff3_0/D" 0.805595
+cap "negdff3_0/VP" "negdff3_0/VN" 1.42109e-14
+cap "negdff3_0/VP" "negdff3_0/a_n110_1300#" 59.3201
+cap "negdff3_0/Qb1" "negdff3_0/Q" 11.9339
+cap "negdff3_0/a_100_850#" "negdff3_0/Q" 3.55271e-15
+cap "negdff3_0/Db1" "negdff3_0/a_n110_1300#" 5.20048
+cap "negdff3_0/Db1" "negdff3_0/VN" 43.2258
+cap "negdff3_0/a_100_850#" "negdff3_0/VN" 0.843309
+cap "negdff3_0/Qb1" "negdff3_0/VN" 0.353831
+cap "negdff3_0/a_390_420#" "negdff3_1/a_100_850#" 2.5
+cap "negdff3_0/Db1" "negdff3_0/a_20_850#" 0.0459621
+cap "negdff3_0/Q" "negdff3_0/D" 0.157182
+cap "negdff3_2/a_20_230#" "negdff3_1/a_100_850#" 0.0637157
+cap "negdff3_0/Qb1" "negdff3_1/a_n110_1300#" 0.417104
+cap "negdff3_0/D" "negdff3_0/VN" -5.29172
+cap "negdff3_0/a_n110_1300#" "negdff3_0/D" 0.583777
+cap "negdff3_0/VP" "negdff3_0/Db1" 12.8693
+cap "negdff3_0/VP" "negdff3_0/Qb1" 7.94203
+cap "negdff3_0/a_100_850#" "negdff3_0/Db1" 3.03066
+cap "negdff3_0/VP" "negdff3_0/D" 1.01525
+cap "negdff3_0/a_390_420#" "negdff3_0/VN" 0.389339
+cap "negdff3_2/a_20_230#" "negdff3_0/VN" 104.487
+cap "negdff3_0/Qb1" "negdff3_0/D" 0.0568074
+cap "negdff3_0/a_100_420#" "negdff3_0/Db1" 0.0232005
+cap "negdff3_0/a_100_850#" "negdff3_0/D" 1.95924
+cap "negdff3_0/Db1" "negdff3_0/D" 3.55763
+cap "negdff3_1/a_390_420#" "negdff3_1/Qb1" 0.153409
+cap "negdff3_2/a_20_230#" "negdff3_1/Qb1" 14.5953
+cap "negdff3_2/a_n110_1300#" "negdff3_1/Qb1" 1.01334
+cap "negdff3_1/a_100_850#" "negdff3_2/a_100_850#" 1.02204
+cap "negdff3_0/Qb1" "negdff3_1/a_100_850#" 0.632283
+cap "negdff3_3/VN" "negdff3_1/Q" 75.1374
+cap "negdff3_3/VN" "negdff3_0/Q" 62.1721
+cap "negdff3_2/a_100_420#" "negdff3_1/Q" 0.188807
+cap "negdff3_3/VN" "negdff3_1/a_390_420#" 0.389339
+cap "negdff3_2/a_20_230#" "negdff3_3/VN" 1.51861
+cap "negdff3_2/a_20_230#" "negdff3_1/Q" 0.711267
+cap "negdff3_1/a_100_850#" "negdff3_0/a_100_850#" 0.511022
+cap "negdff3_2/a_20_230#" "negdff3_0/Q" 0.711267
+cap "negdff3_2/a_20_230#" "negdff3_1/a_390_420#" 0.0814316
+cap "negdff3_2/a_n110_1300#" "negdff3_1/Q" 8.32477
+cap "negdff3_1/a_n110_1300#" "negdff3_0/Q" 4.96089
+cap "negdff3_2/a_100_850#" "negdff3_1/Qb1" 1.12806
+cap "negdff3_3/VP" "negdff3_1/Qb1" 16.6465
+cap "negdff3_3/VN" "negdff3_1/a_100_850#" 0.351231
+cap "negdff3_2/a_20_230#" "negdff3_0/a_390_420#" 0.0814316
+cap "negdff3_2/a_20_420#" "negdff3_1/a_390_420#" 0.014703
+cap "negdff3_1/a_100_850#" "negdff3_1/Q" 3.55271e-15
+cap "negdff3_1/a_100_850#" "negdff3_0/Q" 6.9445
+cap "negdff3_2/a_20_230#" "negdff3_1/a_100_850#" 0.0890188
+cap "negdff3_2/a_20_850#" "negdff3_1/Q" 0.153449
+cap "negdff3_3/VN" "negdff3_2/a_100_850#" 0.351231
+cap "negdff3_3/VN" "negdff3_3/VP" 3.55271e-14
+cap "negdff3_3/VN" "negdff3_0/Qb1" 95.6392
+cap "negdff3_2/a_100_850#" "negdff3_1/Q" 5.40836
+cap "negdff3_3/VP" "negdff3_1/Q" 3.93387
+cap "negdff3_2/a_100_850#" "negdff3_1/a_390_420#" 5.0805
+cap "negdff3_3/VP" "negdff3_0/Q" 2.91831
+cap "negdff3_0/Qb1" "negdff3_0/Q" 11.7998
+cap "negdff3_2/a_20_230#" "negdff3_2/a_100_850#" 0.127396
+cap "negdff3_2/a_20_230#" "negdff3_0/Qb1" 9.20241
+cap "negdff3_2/a_20_230#" "negdff3_3/VP" 4.10574
+cap "negdff3_0/a_390_420#" "negdff3_1/a_100_850#" 2.5805
+cap "negdff3_1/a_100_420#" "negdff3_0/Q" 0.188807
+cap "negdff3_3/VN" "negdff3_1/Qb1" 99.7201
+cap "negdff3_1/a_20_850#" "negdff3_0/Q" 0.153449
+cap "negdff3_1/Qb1" "negdff3_1/Q" 24.1781
+cap "negdff3_0/Qb1" "negdff3_1/a_n110_1300#" 0.596233
+cap "negdff3_3/VP" "negdff3_1/a_n110_1300#" 58.2412
+cap "negdff3_3/VP" "negdff3_2/a_n110_1300#" 58.2412
+cap "negdff3_3/Db1" "negdff3_3/D" 24.1781
+cap "negdff3_3/VN" "negdff3_3/VP" 2.84217e-14
+cap "negdff3_2/a_390_420#" "negdff3_3/a_100_850#" 5.0805
+cap "negdff3_3/Db1" "negdff3_2/a_20_230#" 14.5953
+cap "negdff3_2/a_390_420#" "negdff3_3/VN" 0.389339
+cap "negdff3_2/a_100_850#" "negdff3_1/Q" 1.53614
+cap "negdff3_3/Db1" "negdff3_3/VP" 16.6465
+cap "negdff3_3/a_100_420#" "negdff3_3/D" 0.188807
+cap "negdff3_3/a_100_850#" "negdff3_3/VN" 0.351231
+cap "negdff3_2/a_20_230#" "negdff3_3/D" 0.711267
+cap "negdff3_2/a_100_850#" "negdff3_3/D" 3.55271e-15
+cap "negdff3_3/Db1" "negdff3_3/a_n110_1300#" 1.01334
+cap "negdff3_2/a_100_850#" "negdff3_2/a_20_230#" 0.0253384
+cap "negdff3_3/VP" "negdff3_3/D" 3.93387
+cap "negdff3_3/Db1" "negdff3_2/a_390_420#" 0.153409
+cap "negdff3_3/D" "negdff3_3/a_n110_1300#" 8.32477
+cap "negdff3_3/a_20_850#" "negdff3_3/D" 0.153449
+cap "negdff3_2/a_20_230#" "negdff3_3/VP" 2.05287
+cap "negdff3_3/Db1" "negdff3_3/a_100_850#" 1.12806
+cap "negdff3_3/a_100_850#" "negdff3_3/D" 6.9445
+cap "negdff3_3/Db1" "negdff3_3/VN" 99.7201
+cap "negdff3_3/VP" "negdff3_3/a_n110_1300#" 58.2412
+cap "negdff3_2/a_390_420#" "negdff3_2/a_20_230#" 0.0814316
+cap "negdff3_3/a_100_850#" "negdff3_2/a_100_850#" 1.02204
+cap "negdff3_3/a_20_420#" "negdff3_2/a_390_420#" 0.014703
+cap "negdff3_3/VN" "negdff3_3/D" 75.1374
+cap "negdff3_3/a_100_850#" "negdff3_2/a_20_230#" 0.127396
+cap "negdff3_2/a_20_230#" "negdff3_3/VN" 0.759303
+cap "negdff3_0/Db1" "negdff3_2/a_20_230#" 2.66667
+cap "negdff3_0/VP" "negdff3_2/a_20_230#" 0.51341
+cap "negdff3_1/a_n110_1730#" "negdff3_0/Q" 4.42038
+cap "negdff3_0/D" "negdff3_0/Db1" 2.15106e-16
+cap "negdff3_0/VP" "negdff3_0/Q" 4.11964
+cap "negdff3_0/Qb1" "negdff3_0/Q" 1.53846
+cap "negdff3_1/Q" "negdff3_0/Q" 0.202262
+cap "negdff3_0/VP" "negdff3_0/Db1" 31.3521
+cap "negdff3_0/a_n110_1730#" "negdff3_0/VP" 45.8396
+cap "negdff3_2/a_n110_1730#" "negdff3_3/VP" 58.9795
+cap "negdff3_1/a_n110_1730#" "negdff3_2/a_20_230#" 0.153409
+cap "negdff3_1/Qb1" "negdff3_3/VP" 13.9149
+cap "negdff3_1/a_n110_1730#" "negdff3_0/a_570_1730#" 0.014703
+cap "negdff3_3/VP" "negdff3_0/Qb1" 5.58634
+cap "negdff3_1/Q" "negdff3_3/VP" 4.08271
+cap "negdff3_0/Q" "negdff3_0/Qb1" 1.53846
+cap "negdff3_2/a_20_230#" "negdff3_3/VP" 1.27102
+cap "negdff3_2/a_n110_1730#" "negdff3_1/Qb1" 0.2211
+cap "negdff3_1/Q" "negdff3_0/Q" 0.148772
+cap "negdff3_1/a_n110_1730#" "negdff3_3/VP" 58.9795
+cap "negdff3_1/Qb1" "negdff3_1/Q" 3.07692
+cap "negdff3_2/a_n110_1730#" "negdff3_1/Q" 8.15394
+cap "negdff3_1/a_n110_1730#" "negdff3_0/Q" 3.73356
+cap "negdff3_2/a_20_230#" "negdff3_1/Qb1" 2.58065
+cap "negdff3_2/a_n110_1730#" "negdff3_1/a_570_1730#" 0.014703
+cap "negdff3_2/a_20_230#" "negdff3_2/a_n110_1730#" 0.153409
+cap "negdff3_3/D" "negdff3_1/Q" 0.202262
+cap "negdff3_2/a_20_230#" "negdff3_0/Qb1" 1.29032
+cap "negdff3_3/VN" "negdff3_1/Qb1" -1.66533e-16
+cap "negdff3_1/a_n110_1730#" "negdff3_0/Qb1" 0.2211
+cap "negdff3_3/VN" "negdff3_0/Qb1" -1.66533e-16
+cap "negdff3_2/a_570_1730#" "negdff3_3/a_n110_1730#" 0.014703
+cap "negdff3_3/Db1" "negdff3_3/D" 3.07692
+cap "negdff3_3/VP" "negdff3_3/D" 4.08271
+cap "negdff3_3/D" "negdff3_3/a_n110_1730#" 8.15394
+cap "negdff3_3/D" "negdff3_3/Q" 0.202262
+cap "negdff3_1/Q" "negdff3_3/D" 0.148772
+cap "negdff3_3/Db1" "negdff3_2/a_20_230#" 2.58065
+cap "negdff3_3/VP" "negdff3_3/Db1" 13.9149
+cap "negdff3_3/Db1" "negdff3_3/a_n110_1730#" 0.2211
+cap "negdff3_3/Db1" "negdff3_3/VN" -1.66533e-16
+cap "negdff3_3/VP" "negdff3_2/a_20_230#" 0.635508
+cap "negdff3_3/VP" "negdff3_3/a_n110_1730#" 58.9795
+cap "negdff3_3/a_n110_1730#" "negdff3_2/a_20_230#" 0.153409
+cap "negdff3_3/D" "negdff3_3/Q" 0.148772
+cap "negdff3_3/VP" "negdff3_3/Q" 0.0238671
+merge "negdff3_3/VN" "negdff3_2/VN" -1750.2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -12600 -6340 0 0 0 0 0 0 0 0 0 0
+merge "negdff3_2/VN" "negdff3_1/VN"
+merge "negdff3_1/VN" "negdff3_0/VN"
+merge "negdff3_0/VN" "sreginv_0/a_n370_850#"
+merge "sreginv_0/a_n370_850#" "VSUBS"
+merge "VSUBS" "GND"
+merge "negdff3_2/a_20_230#" "negdff3_3/a_20_230#" -328.199 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -640 0 0 0 0 0 0 0 0 0 0
+merge "negdff3_3/a_20_230#" "negdff3_1/a_20_230#"
+merge "negdff3_1/a_20_230#" "negdff3_0/a_20_230#"
+merge "negdff3_0/a_20_230#" "CLK"
+merge "negdff3_0/Db2" "negdff3_0/Db1" -117.92 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -120 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "negdff3_0/Db1" "sreginv_0/a_n500_850#"
+merge "negdff3_3/Q" "li_4000_1730#" -71.0171 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6400 -320 0 0 0 0 0 0 0 0 0 0 0 0
+merge "negdff3_1/Db2" "negdff3_1/Db1" -122.596 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -120 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "negdff3_1/Db1" "negdff3_0/Qb1"
+merge "negdff3_2/VP" "negdff3_3/VP" -1987.23 0 0 0 0 -56800 -5840 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -25200 -6380 0 0 0 0 0 0 0 0 0 0
+merge "negdff3_3/VP" "negdff3_1/VP"
+merge "negdff3_1/VP" "negdff3_0/VP"
+merge "negdff3_0/VP" "sreginv_0/w_n540_1260#"
+merge "sreginv_0/w_n540_1260#" "VDD"
+merge "negdff3_2/Qb1" "negdff3_3/Db2" -147.222 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -120 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "negdff3_3/Db2" "negdff3_3/Db1"
+merge "negdff3_2/D" "negdff3_1/Q" -215.384 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6800 -420 0 0 0 0 0 0 0 0 0 0 0 0
+merge "negdff3_1/Q" "li_1900_1730#"
+merge "negdff3_2/Q" "negdff3_3/D" -215.384 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6800 -420 0 0 0 0 0 0 0 0 0 0 0 0
+merge "negdff3_3/D" "li_2950_1730#"
+merge "negdff3_0/D" "sreginv_0/a_n400_820#" -83.9717 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -400 -100 -800 -120 0 0 0 0 0 0 0 0 0 0
+merge "sreginv_0/a_n400_820#" "m1_n390_900#"
+merge "negdff3_2/Db2" "negdff3_2/Db1" -147.222 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -120 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "negdff3_2/Db1" "negdff3_1/Qb1"
+merge "negdff3_1/D" "negdff3_0/Q" -215.467 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6800 -420 0 0 0 0 0 0 0 0 0 0 0 0
+merge "negdff3_0/Q" "li_850_1730#"

@@ -5,31 +5,27 @@ K {}
 V {}
 S {}
 E {}
-N 480 -340 520 -340 {
-lab=#net1}
-N 400 -460 400 -400 {
-lab=VP}
-N 400 -460 580 -460 {
-lab=VP}
-N 580 -460 580 -400 {
-lab=VP}
-N 400 -280 400 -210 {
-lab=VN}
-N 400 -210 580 -210 {
-lab=VN}
-N 580 -280 580 -210 {
-lab=VN}
-N 300 -340 340 -340 {
+N 330 -340 367.5 -340 {
 lab=A}
-N 660 -340 710 -340 {
-lab=Y}
-N 400 -490 400 -460 {
+N 397.5 -400 397.5 -375 {
 lab=VP}
-N 400 -210 400 -180 {
+N 397.5 -387.5 505 -387.5 {
+lab=VP}
+N 505 -387.5 505 -372.5 {
+lab=VP}
+N 397.5 -310 397.5 -285 {
 lab=VN}
-C {devices/ipin.sym} 300 -340 0 0 {name=p1 lab=A}
-C {devices/iopin.sym} 400 -490 3 0 {name=p2 lab=VP}
-C {devices/iopin.sym} 400 -180 1 0 {name=p3 lab=VN}
-C {devices/opin.sym} 710 -340 0 0 {name=p4 lab=Y}
-C {/foss/designs/my_design/projects/inverter_tutorial/xschem_ngspice/inverter.sym} 300 -340 0 0 {name=X1}
-C {/foss/designs/my_design/projects/inverter_tutorial/xschem_ngspice/inverter.sym} 480 -340 0 0 {name=X2}
+N 397.5 -297.5 505 -297.5 {
+lab=VN}
+N 505 -310 505 -297.5 {
+lab=VN}
+N 435 -340 475 -340 {
+lab=#net1}
+N 542.5 -340 577.5 -340 {
+lab=Y}
+C {devices/ipin.sym} 330 -340 0 0 {name=p1 lab=A}
+C {devices/iopin.sym} 397.5 -400 3 0 {name=p2 lab=VP}
+C {devices/iopin.sym} 397.5 -285 1 0 {name=p3 lab=VN}
+C {devices/opin.sym} 577.5 -340 0 0 {name=p4 lab=Y}
+C {/foss/designs/my_design/projects/inverter_tutorial/xschem_ngspice/inverter.sym} 320 -340 0 0 {name=X1}
+C {/foss/designs/my_design/projects/inverter_tutorial/xschem_ngspice/inverter.sym} 427.5 -340 0 0 {name=X2}

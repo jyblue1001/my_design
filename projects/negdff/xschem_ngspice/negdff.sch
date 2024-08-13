@@ -239,17 +239,17 @@ N 540 -810 540 -710 {
 lab=VP}
 N 820 -810 820 -710 {
 lab=VP}
-C {devices/nmos3.sym} 280 -270 3 0 {name=X1 model=irf540 m=1}
+C {devices/nmos3.sym} 280 -270 1 1 {name=X1 model=irf540 m=1}
 C {devices/nmos3.sym} 370 -270 3 0 {name=X2 model=irf540 m=1}
-C {devices/nmos3.sym} 460 -310 1 0 {name=X3 model=irf540 m=1}
+C {devices/nmos3.sym} 460 -310 3 1 {name=X3 model=irf540 m=1}
 C {devices/nmos3.sym} 280 -460 1 0 {name=X4 model=irf540 m=1}
 C {devices/nmos3.sym} 370 -420 3 0 {name=X5 model=irf540 m=1}
-C {devices/nmos3.sym} 460 -460 1 0 {name=X6 model=irf540 m=1}
+C {devices/nmos3.sym} 460 -460 3 1 {name=X6 model=irf540 m=1}
 C {devices/nmos3.sym} 590 -270 3 0 {name=X7 model=irf540 m=1}
-C {devices/nmos3.sym} 680 -270 3 0 {name=X8 model=irf540 m=1}
+C {devices/nmos3.sym} 680 -270 1 1 {name=X8 model=irf540 m=1}
 C {devices/nmos3.sym} 770 -310 1 0 {name=X9 model=irf540 m=1}
-C {devices/nmos3.sym} 590 -460 1 0 {name=X10 model=irf540 m=1}
-C {devices/nmos3.sym} 680 -420 3 0 {name=X11 model=irf540 m=1}
+C {devices/nmos3.sym} 590 -460 3 1 {name=X10 model=irf540 m=1}
+C {devices/nmos3.sym} 680 -420 1 1 {name=X11 model=irf540 m=1}
 C {devices/nmos3.sym} 770 -460 1 0 {name=X12 model=irf540 m=1}
 C {devices/ipin.sym} 190 -510 0 0 {name=p1 lab=D}
 C {devices/ipin.sym} 190 -770 0 0 {name=p2 lab=Db1}
@@ -260,7 +260,7 @@ C {devices/ipin.sym} 190 -150 0 0 {name=p6 lab=CLK
 }
 C {devices/ipin.sym} 190 -810 0 0 {name=p7 lab=VP}
 C {devices/ipin.sym} 190 -190 0 0 {name=p8 lab=VN}
-C {devices/pmos3.sym} 280 -560 3 0 {name=X25 model=irf5305}
+C {devices/pmos3.sym} 280 -560 1 1 {name=X25 model=irf5305}
 C {devices/pmos3.sym} 370 -560 3 0 {name=X13 model=irf5305}
 C {devices/pmos3.sym} 460 -560 3 0 {name=X14 model=irf5305}
 C {devices/pmos3.sym} 280 -730 1 0 {name=X15 model=irf5305}
@@ -268,7 +268,7 @@ C {devices/pmos3.sym} 370 -690 3 0 {name=X16 model=irf5305}
 C {devices/pmos3.sym} 460 -690 3 0 {name=X17 model=irf5305}
 C {devices/pmos3.sym} 590 -560 3 0 {name=X18 model=irf5305}
 C {devices/pmos3.sym} 680 -560 3 0 {name=X19 model=irf5305}
-C {devices/pmos3.sym} 770 -560 3 0 {name=X20 model=irf5305}
-C {devices/pmos3.sym} 590 -730 1 0 {name=X21 model=irf5305}
+C {devices/pmos3.sym} 770 -560 1 1 {name=X20 model=irf5305}
+C {devices/pmos3.sym} 590 -730 3 1 {name=X21 model=irf5305}
 C {devices/pmos3.sym} 680 -690 3 0 {name=X22 model=irf5305}
-C {devices/pmos3.sym} 770 -690 3 0 {name=X23 model=irf5305}
+C {devices/pmos3.sym} 770 -690 1 1 {name=X23 model=irf5305}
