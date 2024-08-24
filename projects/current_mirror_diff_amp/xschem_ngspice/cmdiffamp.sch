@@ -49,10 +49,6 @@ N 1280 -650 1280 -600 {
 lab=V1}
 N 620 -380 1100 -380 {
 lab=#net2}
-N 350 -650 1280 -650 {
-lab=V1}
-N 350 -470 1160 -470 {
-lab=V2}
 N 470 -270 530 -270 {
 lab=GND}
 N 590 -270 650 -270 {
@@ -365,8 +361,6 @@ N 250 -940 350 -940 {
 lab=VDD}
 N 310 -940 310 -830 {
 lab=VDD}
-N 250 -470 350 -470 {
-lab=V2}
 N 250 -140 350 -140 {
 lab=GND}
 N 1420 -790 1460 -790 {
@@ -467,8 +461,6 @@ N 310 -620 310 -600 {
 lab=VDD}
 N 170 -940 250 -940 {
 lab=VDD}
-N 170 -470 250 -470 {
-lab=V2}
 N 170 -140 250 -140 {
 lab=GND}
 N 250 -790 280 -790 {
@@ -479,8 +471,6 @@ N 250 -790 250 -620 {
 lab=VDD}
 N 170 -750 380 -750 {
 lab=Vb}
-N 170 -650 350 -650 {
-lab=V1}
 N 310 -230 310 -140 {
 lab=GND}
 N 250 -270 250 -140 {
@@ -497,6 +487,12 @@ N 2560 -230 2560 -140 {
 lab=GND}
 N 2260 -330 2670 -330 {
 lab=Vout}
+N 170 -650 1280 -650 {
+lab=V1}
+N 170 -470 1160 -470 {
+lab=V2}
+N 440 -650 440 -600 {
+lab=V1}
 C {sky130_fd_pr/pfet3_01v8.sym} 440 -580 1 0 {name=M1a
 L=0.5
 W=3
@@ -617,8 +613,6 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {devices/lab_pin.sym} 170 -650 0 0 {name=p1 sig_type=std_logic lab=V1}
-C {devices/lab_pin.sym} 170 -470 0 0 {name=p2 sig_type=std_logic lab=V2}
 C {sky130_fd_pr/nfet3_01v8.sym} 440 -250 3 0 {name=M5a
 L=0.5
 W=3
@@ -1358,7 +1352,7 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {sky130_fd_pr/pfet3_01v8.sym} 310 -580 1 0 {name=M10
+C {sky130_fd_pr/pfet3_01v8.sym} 310 -580 3 1 {name=M10
 L=0.5
 W=3
 body=VDD
@@ -1403,3 +1397,5 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
+C {devices/ipin.sym} 170 -650 0 0 {name=p5 lab=V1}
+C {devices/ipin.sym} 170 -470 0 0 {name=p1 lab=V2}
