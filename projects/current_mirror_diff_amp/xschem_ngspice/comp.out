@@ -8,47 +8,18 @@ Equate elements:  no current cell.
 Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
 
 Class cmdiffamp.spice (0):  Merged 45 parallel devices.
-Class cmdiffamp_layout.spice (1):  Merged 46 parallel devices.
+Class cmdiffamp2_layout.spice (1):  Merged 45 parallel devices.
 Subcircuit summary:
-Circuit 1: cmdiffamp.spice                 |Circuit 2: cmdiffamp_layout.spice          
+Circuit 1: cmdiffamp.spice                 |Circuit 2: cmdiffamp2_layout.spice         
 -------------------------------------------|-------------------------------------------
-sky130_fd_pr__pfet_01v8 (40->9)            |sky130_fd_pr__pfet_01v8 (40->8) **Mismatch 
+sky130_fd_pr__pfet_01v8 (40->9)            |sky130_fd_pr__pfet_01v8 (40->9)            
 sky130_fd_pr__nfet_01v8 (20->6)            |sky130_fd_pr__nfet_01v8 (20->6)            
-Number of devices: 15 **Mismatch**         |Number of devices: 14 **Mismatch**         
-Number of nets: 10 **Mismatch**            |Number of nets: 9 **Mismatch**             
+Number of devices: 15                      |Number of devices: 15                      
+Number of nets: 10                         |Number of nets: 10                         
 ---------------------------------------------------------------------------------------
-NET mismatches: Class fragments follow (with fanout counts):
-Circuit 1: cmdiffamp.spice                 |Circuit 2: cmdiffamp_layout.spice          
-
----------------------------------------------------------------------------------------
-Net: VDD                                   |Net: VP                                    
-  sky130_fd_pr__pfet_01v8/4 = 9            |  sky130_fd_pr__pfet_01v8/(1|3) = 7        
-  sky130_fd_pr__pfet_01v8/(1|3) = 7        |  sky130_fd_pr__pfet_01v8/4 = 8            
-  sky130_fd_pr__pfet_01v8/2 = 3            |  sky130_fd_pr__pfet_01v8/2 = 4            
-                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
-                                           |                                           
-Net: net4                                  |(no matching net)                          
-  sky130_fd_pr__nfet_01v8/(1|3) = 1        |                                           
-  sky130_fd_pr__pfet_01v8/(1|3) = 2        |                                           
-  sky130_fd_pr__pfet_01v8/2 = 2            |                                           
----------------------------------------------------------------------------------------
-DEVICE mismatches: Class fragments follow (with node fanout counts):
-Circuit 1: cmdiffamp.spice                 |Circuit 2: cmdiffamp_layout.spice          
-
----------------------------------------------------------------------------------------
-Instance: sky130_fd_pr__pfet_01v8:M7a      |Instance: sky130_fd_pr__pfet_01v8:3        
-  (1,3) = (19,5)                           |  (1,3) = (20,20)                          
-  2 = 5                                    |  2 = 20                                   
-  4 = 19                                   |  4 = 20                                   
-                                           |                                           
-Instance: sky130_fd_pr__pfet_01v8:M5       |(no matching instance)                     
-  (1,3) = (19,5)                           |                                           
-  2 = 19                                   |                                           
-  4 = 19                                   |                                           
-                                           |                                           
----------------------------------------------------------------------------------------
-Netlists do not match.
+Netlists match uniquely.
 Cells have no pins;  pin matching not needed.
-Device classes cmdiffamp.spice and cmdiffamp_layout.spice are equivalent.
+Device classes cmdiffamp.spice and cmdiffamp2_layout.spice are equivalent.
 
-Final result: Netlists do not match.
+Final result: Circuits match uniquely.
+.
