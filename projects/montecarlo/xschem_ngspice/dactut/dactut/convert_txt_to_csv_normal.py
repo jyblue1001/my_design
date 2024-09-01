@@ -1,0 +1,31 @@
+import csv
+
+# Generate the input and output file names based on the current index
+input_file = f'dactut.txt'
+output_file = f'dactut.csv'
+
+try:
+    # Open the input .txt file for reading
+    with open(input_file, 'r') as txt_file:
+        lines = txt_file.readlines()
+
+    # Open the output .csv file for writing
+    with open(output_file, 'w', newline='') as csv_file:
+        writer = csv.writer(csv_file)
+
+        # Process the first line (header)
+        if lines:
+            header = lines[0].split()
+            writer.writerow(header)
+
+            # Process the remaining lines (data)
+            for line in lines[1:]:
+                row = line.split()
+                writer.writerow(row)
+
+    print(f"Conversion complete for {input_file}. The CSV file is saved as {output_file}.")
+
+except FileNotFoundError:
+    print(f"Error: The file '{input_file}' was not found. Please check the file name and path.")
+except Exception as e:
+    print(f"An unexpected error occurred while processing '{input_file}': {e}")

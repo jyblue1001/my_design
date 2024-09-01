@@ -1,6 +1,6 @@
 * SPICE3 file created from cmdiffamp2.ext - technology: sky130A
 
-
+.subckt cmdiffamp V1 V2 Vout Vb VP VN
 X0 Vout a_210_1430# VN VN sky130_fd_pr__nfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
 X1 Vb Vb VP VP sky130_fd_pr__pfet_01v8 ad=0.375 pd=2 as=0.375 ps=2 w=1.5 l=0.5
 X2 a_410_1430# Vb VP VP sky130_fd_pr__pfet_01v8 ad=0.375 pd=2 as=0.375 ps=2 w=1.5 l=0.5

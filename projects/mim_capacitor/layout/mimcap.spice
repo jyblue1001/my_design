@@ -1,0 +1,4 @@
+* SPICE3 file created from mimcap.ext - technology: sky130A
+
+X0 top bot sky130_fd_pr__cap_mim_m3_1 l=1 w=1
+X1 top1 bot sky130_fd_pr__cap_mim_m3_1 l=1 w=1

@@ -1,0 +1,64 @@
+magic
+tech sky130A
+timestamp 1725171739
+<< error_p >>
+rect 0 25 35 223
+<< psubdiff >>
+rect -60 160 -10 175
+rect -60 40 -45 160
+rect -25 40 -10 160
+rect -60 25 -10 40
+<< psubdiffcont >>
+rect -45 40 -25 160
+<< xpolycontact >>
+rect 0 335 35 555
+rect 0 -220 35 0
+rect 60 335 95 555
+rect 60 -220 95 0
+rect 120 335 155 555
+rect 120 -220 155 0
+rect 180 335 215 555
+rect 180 -220 215 0
+rect 240 335 275 555
+rect 240 -220 275 0
+rect 300 335 335 555
+rect 300 -220 335 0
+rect 360 335 395 555
+rect 360 -220 395 0
+rect 420 335 455 555
+rect 420 -220 455 0
+rect 480 335 515 555
+rect 480 -220 515 0
+rect 540 335 575 555
+rect 540 -220 575 0
+<< xpolyres >>
+rect 0 0 35 335
+rect 60 0 95 335
+rect 120 0 155 335
+rect 180 0 215 335
+rect 240 0 275 335
+rect 300 0 335 335
+rect 360 0 395 335
+rect 420 0 455 335
+rect 480 0 515 335
+rect 540 0 575 335
+<< locali >>
+rect 95 335 120 555
+rect 215 335 240 555
+rect 335 335 360 555
+rect 455 335 480 555
+rect -55 160 -15 170
+rect -55 40 -45 160
+rect -25 40 -15 160
+rect -55 30 -15 40
+rect 35 -220 60 0
+rect 155 -220 180 0
+rect 275 -220 300 0
+rect 395 -220 420 0
+rect 515 -220 540 0
+<< labels >>
+flabel locali -35 30 -35 30 5 FreeSans 160 0 0 -80 GND
+rlabel xpolycontact 20 555 20 555 1 FreeSans
+flabel xpolycontact 20 555 20 555 1 FreeSans 160 0 0 80 top
+flabel xpolycontact 560 555 560 555 1 FreeSans 160 0 0 80 bot
+<< end >>

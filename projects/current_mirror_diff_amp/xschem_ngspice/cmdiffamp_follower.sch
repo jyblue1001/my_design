@@ -9,21 +9,25 @@ N 410 -360 530 -360 {
 lab=Vout}
 N 470 -360 470 -320 {
 lab=Vout}
+N 240 -340 290 -340 {
+lab=Vout}
+N 240 -340 240 -240 {
+lab=Vout}
+N 240 -240 430 -240 {
+lab=Vout}
+N 430 -360 430 -240 {
+lab=Vout}
 C {/foss/designs/my_design/projects/current_mirror_diff_amp/xschem_ngspice/cmdiffamp.sym} 350 -360 0 0 {name=X1}
-C {devices/vsource.sym} 60 -80 0 0 {name=Vin value=0.5 savecurrent=false}
+C {devices/vsource.sym} 60 -80 0 0 {name=Vin value="0.5 AC 1" savecurrent=false}
 C {devices/vdd.sym} 60 -400 0 0 {name=l1 lab=VDD}
 C {devices/gnd.sym} 60 -50 0 0 {name=l2 lab=GND}
-C {devices/vsource.sym} 160 -80 0 0 {name=Vref value=0.5 savecurrent=false}
-C {devices/gnd.sym} 160 -50 0 0 {name=l3 lab=GND}
 C {devices/vsource.sym} 60 -370 0 0 {name=Vdd value=1.8 savecurrent=false}
 C {devices/gnd.sym} 60 -340 0 0 {name=l4 lab=GND}
 C {devices/isource.sym} 60 -220 0 0 {name=ib value=1u}
 C {devices/gnd.sym} 60 -190 0 0 {name=l5 lab=GND}
 C {devices/lab_wire.sym} 60 -250 0 1 {name=p1 sig_type=std_logic lab=Vb}
-C {devices/lab_wire.sym} 160 -110 0 1 {name=p2 sig_type=std_logic lab=Vref}
 C {devices/lab_wire.sym} 60 -110 0 1 {name=p3 sig_type=std_logic lab=Vin}
 C {devices/lab_wire.sym} 290 -380 0 0 {name=p4 sig_type=std_logic lab=Vin}
-C {devices/lab_wire.sym} 290 -340 2 1 {name=p5 sig_type=std_logic lab=Vref}
 C {devices/gnd.sym} 350 -300 0 0 {name=l6 lab=GND}
 C {devices/lab_wire.sym} 330 -300 3 0 {name=p6 sig_type=std_logic lab=Vb}
 C {devices/vdd.sym} 350 -420 0 0 {name=l7 lab=VDD}
@@ -38,10 +42,7 @@ C {devices/code.sym} 330 -170 0 0 {name=TT_MODELS only_toplevel=false value="
 
 .lib /foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice tt
 
-.dc Vin 0 1.9 0.001
-
-.tran 0.01n 100n
-
-.save v(Vout) v(Vref) v(Vin)
+.ac dec 20 1 1e12
+.save all
 
 "}

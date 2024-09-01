@@ -5,7 +5,9 @@ K {type=subcircuit
 format="@name @pinlist @symname"
 template="name=X1"}
 V {}
-S {}
+S {type=primative
+format="@name @pinlist @symname"
+template="nmae=X1"}
 E {}
 L 4 -40 -40 -40 40 {}
 L 4 -40 -40 40 -0 {}

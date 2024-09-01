@@ -1,0 +1,17 @@
+v {xschem version=3.4.5 file_version=1.2
+}
+G {}
+K {}
+V {}
+S {}
+E {}
+T {@name} 30 -160 0 0 0.4 0.4 {}
+C {devices/code.sym} 20 -130 0 0 {type=netlist_commands
+template="name=GAUSSRESDEF only_toplevel=false value=\\".param MC_SWITCH=0.0
+.subckt gaussres pos neg
+.param nom=1k cv=0.005
+R1 pos neg \{nom + MC_SWITCH*AGAUSS(0,1,1)*cv*nom\}
+.ends\\""
+format="
+@value
+"}

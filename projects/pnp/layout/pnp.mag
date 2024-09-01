@@ -1,0 +1,19 @@
+magic
+tech sky130A
+timestamp 1725177997
+<< locali >>
+rect 190 440 995 635
+<< metal1 >>
+rect 335 320 850 635
+use sky130_fd_pr__rf_pnp_05v5_W0p68L0p68  sky130_fd_pr__rf_pnp_05v5_W0p68L0p68_0 $PDKPATH/libs.ref/sky130_fd_pr/mag
+timestamp 1704896540
+transform 1 0 175 0 1 165
+box 0 0 398 398
+use sky130_fd_pr__rf_pnp_05v5_W0p68L0p68  sky130_fd_pr__rf_pnp_05v5_W0p68L0p68_1
+timestamp 1704896540
+transform 1 0 610 0 1 165
+box 0 0 398 398
+<< labels >>
+flabel locali 925 635 925 635 1 FreeSans 160 0 0 80 GND
+flabel metal1 595 635 595 635 1 FreeSans 160 0 0 80 EMITTER
+<< end >>

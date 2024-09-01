@@ -1,0 +1,65 @@
+* SPICE3 file created from cmdiffamp2.ext - technology: sky130A
+
+.subckt cmdiffamp V1 V2 Vout Vb VDD GND
+X0 Vout a_210_1430# GND GND sky130_fd_pr__nfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X1 Vb Vb VDD VDD sky130_fd_pr__pfet_01v8 ad=0.375 pd=2 as=0.375 ps=2 w=1.5 l=0.5
+X2 a_410_1430# Vb VDD VDD sky130_fd_pr__pfet_01v8 ad=0.375 pd=2 as=0.375 ps=2 w=1.5 l=0.5
+X3 a_610_380# a_610_380# VDD VDD sky130_fd_pr__pfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X4 GND a_210_380# a_210_380# GND sky130_fd_pr__nfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X5 Vb Vb VDD VDD sky130_fd_pr__pfet_01v8 ad=0.375 pd=2 as=0.375 ps=2 w=1.5 l=0.5
+X6 Vout a_610_380# VDD VDD sky130_fd_pr__pfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X7 a_610_380# a_610_380# VDD VDD sky130_fd_pr__pfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X8 VDD Vb Vb VDD sky130_fd_pr__pfet_01v8 ad=0.375 pd=2 as=0.375 ps=2 w=1.5 l=0.5
+X9 GND a_210_380# a_610_380# GND sky130_fd_pr__nfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X10 a_210_1430# a_210_1430# GND GND sky130_fd_pr__nfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X11 VDD Vb Vb VDD sky130_fd_pr__pfet_01v8 ad=0.375 pd=2 as=0.375 ps=2 w=1.5 l=0.5
+X12 VDD Vb a_410_1430# VDD sky130_fd_pr__pfet_01v8 ad=0.375 pd=2 as=0.375 ps=2 w=1.5 l=0.5
+X13 VDD a_610_380# a_610_380# VDD sky130_fd_pr__pfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X14 VDD Vb a_410_1430# VDD sky130_fd_pr__pfet_01v8 ad=0.375 pd=2 as=0.375 ps=2 w=1.5 l=0.5
+X15 VDD Vb Vb VDD sky130_fd_pr__pfet_01v8 ad=0.375 pd=2 as=0.375 ps=2 w=1.5 l=0.5
+X16 a_410_1430# V1 a_210_1430# VDD sky130_fd_pr__pfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X17 VDD a_610_380# Vout VDD sky130_fd_pr__pfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X18 a_210_1430# GND GND GND sky130_fd_pr__nfet_01v8 ad=0.75 pd=3.5 as=1.5 ps=7 w=3 l=0.5
+X19 VDD Vb a_410_1430# VDD sky130_fd_pr__pfet_01v8 ad=0.375 pd=2 as=0.375 ps=2 w=1.5 l=0.5
+X20 a_410_1430# V2 a_210_380# VDD sky130_fd_pr__pfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X21 a_410_1430# V1 a_210_1430# VDD sky130_fd_pr__pfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X22 a_210_380# a_210_380# GND GND sky130_fd_pr__nfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X23 VDD VDD Vb VDD sky130_fd_pr__pfet_01v8 ad=0.75 pd=4 as=0.375 ps=2 w=1.5 l=0.5
+X24 a_410_1430# V2 a_210_380# VDD sky130_fd_pr__pfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X25 VDD VDD a_210_1430# VDD sky130_fd_pr__pfet_01v8 ad=1.5 pd=7 as=0.75 ps=3.5 w=3 l=0.5
+X26 GND GND a_210_1430# GND sky130_fd_pr__nfet_01v8 ad=1.5 pd=7 as=0.75 ps=3.5 w=3 l=0.5
+X27 GND a_210_380# a_210_380# GND sky130_fd_pr__nfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X28 Vout a_210_1430# GND GND sky130_fd_pr__nfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X29 GND a_210_1430# Vout GND sky130_fd_pr__nfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X30 a_610_380# a_210_380# GND GND sky130_fd_pr__nfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X31 VDD Vb Vb VDD sky130_fd_pr__pfet_01v8 ad=0.375 pd=2 as=0.375 ps=2 w=1.5 l=0.5
+X32 VDD Vb a_410_1430# VDD sky130_fd_pr__pfet_01v8 ad=0.375 pd=2 as=0.375 ps=2 w=1.5 l=0.5
+X33 a_210_380# a_210_380# GND GND sky130_fd_pr__nfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X34 a_210_1430# a_210_1430# GND GND sky130_fd_pr__nfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X35 VDD a_610_380# a_610_380# VDD sky130_fd_pr__pfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X36 GND a_210_1430# a_210_1430# GND sky130_fd_pr__nfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X37 Vb VDD VDD VDD sky130_fd_pr__pfet_01v8 ad=0.375 pd=2 as=0.75 ps=4 w=1.5 l=0.5
+X38 VDD a_610_380# Vout VDD sky130_fd_pr__pfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X39 a_410_1430# Vb VDD VDD sky130_fd_pr__pfet_01v8 ad=0.375 pd=2 as=0.375 ps=2 w=1.5 l=0.5
+X40 GND GND a_210_380# GND sky130_fd_pr__nfet_01v8 ad=1.5 pd=7 as=0.75 ps=3.5 w=3 l=0.5
+X41 Vb VDD VDD VDD sky130_fd_pr__pfet_01v8 ad=0.375 pd=2 as=0.75 ps=4 w=1.5 l=0.5
+X42 a_410_1430# Vb VDD VDD sky130_fd_pr__pfet_01v8 ad=0.375 pd=2 as=0.375 ps=2 w=1.5 l=0.5
+X43 a_610_380# VDD VDD VDD sky130_fd_pr__pfet_01v8 ad=0.75 pd=3.5 as=1.5 ps=7 w=3 l=0.5
+X44 Vout a_610_380# VDD VDD sky130_fd_pr__pfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X45 Vb Vb VDD VDD sky130_fd_pr__pfet_01v8 ad=0.375 pd=2 as=0.375 ps=2 w=1.5 l=0.5
+X46 a_410_1430# Vb VDD VDD sky130_fd_pr__pfet_01v8 ad=0.375 pd=2 as=0.375 ps=2 w=1.5 l=0.5
+X47 a_210_1430# VDD VDD VDD sky130_fd_pr__pfet_01v8 ad=0.75 pd=3.5 as=1.5 ps=7 w=3 l=0.5
+X48 Vb Vb VDD VDD sky130_fd_pr__pfet_01v8 ad=0.375 pd=2 as=0.375 ps=2 w=1.5 l=0.5
+X49 a_210_380# V2 a_410_1430# VDD sky130_fd_pr__pfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X50 a_210_1430# V1 a_410_1430# VDD sky130_fd_pr__pfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X51 a_210_380# V2 a_410_1430# VDD sky130_fd_pr__pfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X52 a_610_380# a_210_380# GND GND sky130_fd_pr__nfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X53 a_210_1430# V1 a_410_1430# VDD sky130_fd_pr__pfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X54 GND a_210_1430# Vout GND sky130_fd_pr__nfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X55 GND a_210_380# a_610_380# GND sky130_fd_pr__nfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+X56 VDD VDD Vb VDD sky130_fd_pr__pfet_01v8 ad=0.75 pd=4 as=0.375 ps=2 w=1.5 l=0.5
+X57 VDD VDD a_610_380# VDD sky130_fd_pr__pfet_01v8 ad=1.5 pd=7 as=0.75 ps=3.5 w=3 l=0.5
+X58 a_210_380# GND GND GND sky130_fd_pr__nfet_01v8 ad=0.75 pd=3.5 as=1.5 ps=7 w=3 l=0.5
+X59 GND a_210_1430# a_210_1430# GND sky130_fd_pr__nfet_01v8 ad=0.75 pd=3.5 as=0.75 ps=3.5 w=3 l=0.5
+.ends
+

@@ -1,0 +1,3 @@
+* SPICE3 file created from resistor20k.ext - technology: sky130A
+
+X0 top bot GND sky130_fd_pr__res_xhigh_po_0p35 l=3.51

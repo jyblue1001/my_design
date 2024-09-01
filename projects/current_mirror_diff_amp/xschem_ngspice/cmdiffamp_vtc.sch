@@ -34,19 +34,13 @@ footprint=1206
 device="ceramic capacitor"}
 C {devices/gnd.sym} 470 -260 0 0 {name=l8 lab=GND}
 C {devices/lab_wire.sym} 530 -360 0 1 {name=p7 sig_type=std_logic lab=Vout}
-C {devices/code.sym} 330 -170 0 0 {name=TT_MODELS only_toplevel=false value="
+C {devices/code.sym} 320 -170 0 0 {name=TT_MODELS only_toplevel=false value="
 
 .lib /foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice tt
 
-* .dc Vin 0 1.8 0.001 Vref 0.25 0.75 0.25
-
-* .save v(Vout) v(Vref) v(Vin)
+*.include /foss/designs/my_design/projects/current_mirror_diff_amp/xschem_ngspice/cmdiffamp.spice
 
 .control
-compose Vref start=0.25 stop=0.75 step=0.25
-foreach val $&Vref
-  alter vref $val
-  dc vin 0 1.8 0.001
-  run
-end
+dc Vin 0 1.8 0.001 Vref 0.25 0.75 0.25
+plot v(Vout)
 .endc"}

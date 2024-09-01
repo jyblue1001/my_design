@@ -1,0 +1,6 @@
+** sch_path: /foss/designs/my_design/projects/mim_capacitor/xschem_ngspice/mimcap_xschem.sch
+**.subckt mimcap_xschem
+XC1 top bot sky130_fd_pr__cap_mim_m3_1 W=1 L=1 MF=1 m=1
+XC2 top1 bot sky130_fd_pr__cap_mim_m3_1 W=1 L=1 MF=1 m=1
+**.ends
+.end
