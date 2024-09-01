@@ -5,6 +5,54 @@ K {}
 V {}
 S {}
 E {}
+B 2 60 -860 860 -460 {flags=graph
+y1=1.1e-08
+y2=1.9
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=0
+x2=1.8
+divx=5
+subdivx=1
+xlabmag=1.0
+ylabmag=1.0
+
+
+dataset=-1
+unitx=1
+logx=0
+logy=0
+
+
+
+color=4
+node=vout}
+B 2 60 -1280 860 -880 {flags=graph
+y1=1.1e-08
+y2=1.9
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=0
+x2=1.8
+divx=5
+subdivx=1
+xlabmag=1.0
+ylabmag=1.0
+
+
+dataset=-1
+unitx=1
+logx=0
+logy=0
+color=4
+node=vout
+rawfile=$netlist_dir/inverter_monte_carlo_tt_mm.raw}
 N 450 -220 450 -180 {
 lab=Vout}
 N 450 -200 560 -200 {
@@ -70,29 +118,26 @@ C {devices/gnd.sym} 80 -90 0 0 {name=l3 lab=GND}
 C {devices/vdd.sym} 80 -150 0 0 {name=l4 lab=VDD}
 C {devices/vsource.sym} 160 -120 0 0 {name=Vin value=0.5 savecurrent=false}
 C {devices/gnd.sym} 160 -90 0 0 {name=l5 lab=GND}
-C {devices/code.sym} 60 -400 0 0 {name=TT_MODELS only_toplevel=false value="
-
-
-.lib /foss/pdks/sky130A/libs.tech/combined/sky130.lib.spice mc
-.param mc_mm_switch=1
+C {devices/code.sym} 60 -400 0 0 {name=COMMANDS only_toplevel=false value="
 
 .option wnflag=1
 
 .control
-set wr_vecnames
-set wr_singlescale
 
-let mc_runs=10
-let run=1
+  let runs=10
+  let run=1
 
-dowhile run <= mc_runs
-  dc vin 0 1.8 0.01
-  wrdata /foss/designs/my_design/projects/montecarlo/xschem_ngspice/inverter\{$&run\}.txt v(Vout)
-  reset
-  let run = run + 1
-end
+  dowhile run <= runs
+    save all
+    dc vin 0 1.8 0.01
+    write inverter_monte_carlo_mc.raw
+    set appendwrite
+    reset
+    let run = run + 1
+  end
+
 .endc
-
 
 "}
 C {devices/lab_pin.sym} 160 -150 1 0 {name=p3 sig_type=std_logic lab=Vin}
+C {sky130_fd_pr/corner.sym} 220 -400 0 0 {name=CORNER only_toplevel=false corner=mc}

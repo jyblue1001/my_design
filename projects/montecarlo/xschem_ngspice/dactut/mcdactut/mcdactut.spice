@@ -27,15 +27,17 @@ XR12 Vout net6 gaussres nom=10k
 B7 GND Vout I={Iref}*v(b6)
 XR13 Vout GND gaussres nom=10k
 Vb6 b6 GND 1
+Viout Vout net7 0
+.save i(viout)
 **** begin user architecture code
 
 
 
-.param MC_SWITCH=1.0
+.option wnflag=1
 
 .subckt gaussres pos neg
 .param nom=1k cv=0.005
-R1 pos neg {nom + MC_SWITCH*AGAUSS(0,1,1)*cv*nom}
+R1 pos neg {nom + MC_MM_SWITCH*AGAUSS(0,1,1)*cv*nom}
 .ends
 
 .option wnflag=1
@@ -43,12 +45,10 @@ R1 pos neg {nom + MC_SWITCH*AGAUSS(0,1,1)*cv*nom}
 .param Iref=100u
 
 .control
-  set wr_singlescale
   let runs = 10
   let run = 1
   while run <= runs
     set appendwrite = FALSE
-    set wr_vecnames
     let code = 0
     while code < 128
       if code eq 0
@@ -102,7 +102,8 @@ R1 pos neg {nom + MC_SWITCH*AGAUSS(0,1,1)*cv*nom}
       alter vb6 $&b6
       save all
       op
-      wrdata /foss/designs/my_design/projects/montecarlo/xschem_ngspice/dactut/mcdactut/mcdactut{$&run}.txt v(b0) v(b1) v(b2) v(b3) v(b4) v(b5) v(b6) v(Vout)/1e4 v(Vout)
+      write mcdactut.raw
+      save i(Viout)
       if code eq 0
         set appendwrite
         set wr_vecnames = FALSE
@@ -119,6 +120,14 @@ R1 pos neg {nom + MC_SWITCH*AGAUSS(0,1,1)*cv*nom}
 
 
 
+
+
+.param mc_mm_switch=1
+.param mc_pr_switch=0
+.include /foss/pdks/sky130A/libs.tech/ngspice/corners/tt.spice
+.include /foss/pdks/sky130A/libs.tech/ngspice/r+c/res_typical__cap_typical.spice
+.include /foss/pdks/sky130A/libs.tech/ngspice/r+c/res_typical__cap_typical__lin.spice
+.include /foss/pdks/sky130A/libs.tech/ngspice/corners/tt/specialized_cells.spice
 
 **** end user architecture code
 **.ends
