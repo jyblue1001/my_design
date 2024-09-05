@@ -1,0 +1,20 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1725545253
+<< error_p >>
+rect 35091 2588 35149 2594
+rect 35091 2554 35103 2588
+rect 35091 2548 35149 2554
+rect 35091 2278 35149 2284
+rect 35091 2244 35103 2278
+rect 35091 2238 35149 2244
+use sky130_fd_pr__cap_var_lvt_VWVA55  sky130_fd_pr__cap_var_lvt_VWVA55_0
+timestamp 0
+transform 1 0 35120 0 1 2416
+box -261 -301 261 301
+use sky130_fd_pr__rf_test_coil1  sky130_fd_pr__rf_test_coil1_0 $PDKPATH/libs.ref/sky130_fd_pr/mag
+timestamp 1704896540
+transform 1 0 14504 0 1 14504
+box -14504 -14504 15500 14504
+<< end >>

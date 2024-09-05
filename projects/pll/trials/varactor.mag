@@ -1,0 +1,16 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1725545806
+<< error_p >>
+rect 179 420 237 426
+rect 179 386 191 420
+rect 179 380 237 386
+rect 179 110 237 116
+rect 179 76 191 110
+rect 179 70 237 76
+use sky130_fd_pr__cap_var_lvt_VWVA55  sky130_fd_pr__cap_var_lvt_VWVA55_0
+timestamp 0
+transform 1 0 208 0 1 248
+box -261 -301 261 301
+<< end >>
