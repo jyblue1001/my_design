@@ -6,8 +6,8 @@ V {}
 S {}
 E {}
 B 2 640 -610 1350 -70 {flags=graph
-y1=0
-y2=0.00001
+y1=2.1371788e-06
+y2=2.9666188e-06
 ypos1=0
 ypos2=2
 divy=5
@@ -96,7 +96,7 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {sky130_fd_pr/nfet3_01v8.sym} 520 -320 0 0 {name=M3
+C {sky130_fd_pr/nfet3_01v8.sym} 1300 -760 0 0 {name=M3
 L=0.15
 W=1
 body=GND
@@ -151,17 +151,32 @@ value=200k
 footprint=1206
 device=resistor
 m=1}
-C {sky130_fd_pr/corner.sym} 40 -400 0 0 {name=CORNER only_toplevel=false corner=tt}
+C {sky130_fd_pr/corner.sym} 40 -400 0 0 {name=CORNER only_toplevel=false corner=tt_mm}
 C {devices/code.sym} 40 -570 0 0 {name=STIMULI only_toplevel=false value="
 
 .option wnflag=1
 
+.param VDDGAUSS = agauss(1.8, 0.05, 1)
+.param VDD = VDDGAUSS
+* .param VDD = 1.8
+
+.param TEMPGAUSS = agauss(40, 30, 1)
+.param temp = TEMPGAUSS
+* .option temp = 25
+
 .control
 
-  save all
-  dc Vin 0 1.8 0.1
-  write mos_bandgap1.raw
-  set appendwrite
+  option seed=9
+  let run=0
+  dowhile run <= 20
+    save all
+    dc Vin 0 1.8 0.2
+    remzerovec
+    write mos_bandgap1.raw
+    set appendwrite
+    reset
+    let run = run + 1
+  end
 
 .endc
 
