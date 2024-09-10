@@ -10,7 +10,7 @@ Vin Vin GND 0.5
 
 
 
-* .option wnflag=1
+.option wnflag=1
 
 .control
 

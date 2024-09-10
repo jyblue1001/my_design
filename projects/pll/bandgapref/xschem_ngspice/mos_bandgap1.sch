@@ -5,9 +5,9 @@ K {}
 V {}
 S {}
 E {}
-B 2 640 -610 1350 -70 {flags=graph
-y1=2.1371788e-06
-y2=2.9666188e-06
+B 2 940 -760 1780 -70 {flags=graph
+y1=9.4e-07
+y2=1.1e-06
 ypos1=0
 ypos2=2
 divy=5
@@ -26,49 +26,55 @@ unitx=1
 logx=0
 logy=0
 }
-N 280 -290 280 -190 {
-lab=#net1}
-N 320 -320 500 -320 {
+N 450 -400 630 -400 {
 lab=Vfloating}
-N 280 -130 280 -70 {
+N 410 -130 410 -70 {
 lab=GND}
-N 280 -70 540 -70 {
+N 410 -70 670 -70 {
 lab=GND}
-N 280 -490 280 -350 {
-lab=Vfloating}
-N 540 -490 540 -350 {
-lab=#net2}
-N 320 -520 500 -520 {
-lab=#net2}
-N 320 -160 350 -160 {
+N 450 -680 630 -680 {
 lab=#net1}
-N 350 -230 350 -160 {
-lab=#net1}
-N 280 -230 350 -230 {
-lab=#net1}
-N 280 -600 280 -550 {
+N 450 -160 480 -160 {
+lab=Vdel_Vth}
+N 480 -230 480 -160 {
+lab=Vdel_Vth}
+N 410 -230 480 -230 {
+lab=Vdel_Vth}
+N 410 -760 410 -710 {
 lab=VDD}
-N 280 -600 540 -600 {
+N 410 -760 670 -760 {
 lab=VDD}
-N 540 -600 540 -550 {
+N 670 -760 670 -710 {
 lab=VDD}
-N 540 -90 540 -70 {
+N 670 -140 670 -70 {
 lab=GND}
-N 540 -180 540 -150 {
-lab=#net3}
-N 540 -290 540 -240 {
+N 670 -370 670 -320 {
 lab=Vout}
-N 460 -520 460 -460 {
-lab=#net2}
-N 460 -460 540 -460 {
-lab=#net2}
-N 280 -400 360 -400 {
+N 590 -680 590 -620 {
+lab=#net1}
+N 590 -620 670 -620 {
+lab=#net1}
+N 410 -480 490 -480 {
 lab=Vfloating}
-N 360 -400 360 -320 {
+N 490 -480 490 -400 {
 lab=Vfloating}
-C {sky130_fd_pr/nfet3_01v8.sym} 300 -160 0 1 {name=M1
+N 670 -650 670 -580 {
+lab=#net1}
+N 670 -520 670 -430 {
+lab=#net2}
+N 410 -650 410 -580 {
+lab=#net3}
+N 410 -520 410 -430 {
+lab=Vfloating}
+N 410 -290 410 -190 {
+lab=Vdel_Vth}
+N 410 -370 410 -350 {
+lab=#net4}
+N 670 -260 670 -200 {
+lab=#net5}
+C {sky130_fd_pr/nfet3_01v8.sym} 430 -160 0 1 {name=M1
 L=0.15
-W=4
+W=10
 body=GND
 nf=1
 mult=1
@@ -81,9 +87,9 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {sky130_fd_pr/nfet3_01v8.sym} 300 -320 0 1 {name=M2
+C {sky130_fd_pr/nfet3_01v8.sym} 430 -400 0 1 {name=M2
 L=0.15
-W=4
+W=10
 body=GND
 nf=1
 mult=1
@@ -96,9 +102,9 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {sky130_fd_pr/nfet3_01v8.sym} 1300 -760 0 0 {name=M3
+C {sky130_fd_pr/nfet3_01v8.sym} 650 -400 0 0 {name=M3
 L=0.15
-W=1
+W=2.5
 body=GND
 nf=1
 mult=1
@@ -111,9 +117,9 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {sky130_fd_pr/pfet3_01v8.sym} 300 -520 0 1 {name=M4
+C {sky130_fd_pr/pfet3_01v8.sym} 430 -680 0 1 {name=M4
 L=0.15
-W=8
+W=20
 body=VDD
 nf=1
 mult=1
@@ -126,10 +132,10 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {devices/gnd.sym} 410 -70 0 0 {name=l1 lab=GND}
-C {sky130_fd_pr/pfet3_01v8.sym} 520 -520 0 0 {name=M5
+C {devices/gnd.sym} 540 -70 0 0 {name=l1 lab=GND}
+C {sky130_fd_pr/pfet3_01v8.sym} 650 -680 0 0 {name=M5
 L=0.15
-W=8
+W=20
 body=VDD
 nf=1
 mult=1
@@ -142,17 +148,17 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {devices/vdd.sym} 410 -600 0 0 {name=l2 lab=VDD}
+C {devices/vdd.sym} 540 -760 0 0 {name=l2 lab=VDD}
 C {devices/vsource.sym} 60 -130 0 0 {name=V1 value=1.8 savecurrent=false}
 C {devices/gnd.sym} 60 -100 0 0 {name=l3 lab=GND}
 C {devices/vdd.sym} 60 -160 0 0 {name=l4 lab=VDD}
-C {devices/res.sym} 540 -210 0 0 {name=R1
-value=200k
+C {devices/res.sym} 670 -170 0 0 {name=R1
+value=50k
 footprint=1206
 device=resistor
 m=1}
-C {sky130_fd_pr/corner.sym} 40 -400 0 0 {name=CORNER only_toplevel=false corner=tt_mm}
-C {devices/code.sym} 40 -570 0 0 {name=STIMULI only_toplevel=false value="
+C {sky130_fd_pr/corner.sym} 70 -360 0 0 {name=CORNER only_toplevel=false corner=tt}
+C {devices/code.sym} 70 -550 0 0 {name=STIMULI only_toplevel=false value="
 
 .option wnflag=1
 
@@ -181,9 +187,13 @@ C {devices/code.sym} 40 -570 0 0 {name=STIMULI only_toplevel=false value="
 .endc
 
 "}
-C {devices/lab_pin.sym} 540 -270 0 1 {name=p2 sig_type=std_logic lab=Vout}
-C {devices/vsource.sym} 140 -130 0 0 {name=Vin value=1.8 savecurrent=false}
-C {devices/gnd.sym} 140 -100 0 0 {name=l5 lab=GND}
-C {devices/lab_pin.sym} 140 -160 0 1 {name=p1 sig_type=std_logic lab=Vin}
-C {devices/ammeter.sym} 540 -120 0 0 {name=Vmeas savecurrent=true spice_ignore=0}
-C {devices/lab_pin.sym} 410 -320 1 1 {name=p3 sig_type=std_logic lab=Vfloating}
+C {devices/lab_pin.sym} 670 -350 0 1 {name=p2 sig_type=std_logic lab=Vout}
+C {devices/vsource.sym} 180 -130 0 0 {name=Vin value=1.8 savecurrent=false}
+C {devices/gnd.sym} 180 -100 0 0 {name=l5 lab=GND}
+C {devices/lab_pin.sym} 180 -160 0 1 {name=p1 sig_type=std_logic lab=Vin}
+C {devices/ammeter.sym} 670 -290 0 0 {name=Vmeas savecurrent=true spice_ignore=0}
+C {devices/lab_pin.sym} 540 -400 1 1 {name=p3 sig_type=std_logic lab=Vfloating}
+C {devices/ammeter.sym} 410 -550 0 0 {name=Vmeas1 savecurrent=true spice_ignore=0}
+C {devices/ammeter.sym} 670 -550 0 0 {name=Vmeas2 savecurrent=true spice_ignore=0}
+C {devices/ammeter.sym} 410 -320 0 0 {name=Vmeas3 savecurrent=true spice_ignore=0}
+C {devices/lab_pin.sym} 410 -260 2 0 {name=p4 sig_type=std_logic lab=Vdel_Vth}
