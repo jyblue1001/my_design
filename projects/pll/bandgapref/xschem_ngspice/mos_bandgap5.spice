@@ -8,7 +8,7 @@ XM4 Vfloating V_top_mirror VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=2 nf=1 ad='i
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
 XM5 V_top_mirror V_top_mirror VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=2 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
-VDD VDD GND 3.3
+VDD VDD GND pwl(0 0 100us 0 200us 3.3)
 Vmeas net1 Vbe 0
 .save i(vmeas)
 Vmeas1 Vout net3 0
@@ -44,19 +44,20 @@ XQ3 GND GND Vbe3 sky130_fd_pr__pnp_05v5_W0p68L0p68 m=1
 * .param VDD = 3.3
 
 .control
-  option seed=9
-  let run=0
-  dowhile run <= 10
-    save all
-    op
-    dc temp -40 120 1 VDD 3.2 3.4 0.01
+*  option seed=9
+*  let run=0
+*  dowhile run <= 10
+save all
+op
+tran 10ns 500us
+    * VDD 3.2 3.4 0.01
     * dc temp -40 120 1 VDD 1.8 3.3 1.5
-    remzerovec
-    write mos_bandgap5.raw
-    set appendwrite
-    reset
-    let run = run + 1
-  end
+remzerovec
+write mos_bandgap5.raw
+set appendwrite
+*    reset
+*    let run = run + 1
+*  end
 .endc
 
 

@@ -1,0 +1,67 @@
+** sch_path: /foss/designs/my_design/projects/pll/bandgapref/xschem_ngspice/mos_bandgap6.sch
+**.subckt mos_bandgap6
+XM2 Vfloating Vfloating net1 GND sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM3 V_top_mirror Vfloating Vout GND sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM4 Vfloating V_top_mirror VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=2 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM5 V_top_mirror V_top_mirror VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=2 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+VDD VDD GND pwl(0 0 100us 0 200us 3.3)
+Vmeas net1 Vbe 0
+.save i(vmeas)
+Vmeas1 Vout net3 0
+.save i(vmeas1)
+Vmeas2 net2 Vbe3 0
+.save i(vmeas2)
+XM1 Vref V_top_mirror VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=2 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XR1 Vbe2 net3 GND sky130_fd_pr__res_xhigh_po_0p35 L=0.7 mult=1 m=1
+XQ1 GND GND Vbe sky130_fd_pr__pnp_05v5_W0p68L0p68 m=1
+XQ2 GND GND Vbe2 sky130_fd_pr__pnp_05v5_W0p68L0p68 m=2
+XQ3 GND GND Vbe3 sky130_fd_pr__pnp_05v5_W0p68L0p68 m=1
+XM6 V_top_mirror net4 net5 GND sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM7 net4 Vfloating GND GND sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM8 net4 net4 VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=2 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XR2 net2 Vref GND sky130_fd_pr__res_xhigh_po_0p35 L=2.1 mult=1 m=1
+Vmeas3 net5 Vfloating 0
+.save i(vmeas3)
+**** begin user architecture code
+
+.param mc_mm_switch=0
+.param mc_pr_switch=1
+.include /foss/pdks/sky130A/libs.tech/ngspice/parameters/critical.spice
+.include /foss/pdks/sky130A/libs.tech/ngspice/parameters/montecarlo.spice
+
+
+
+
+.option method=gear
+.option wnflag=1
+.option savecurrents
+
+*  .param VDDGAUSS = agauss(3.3, 0.05, 1)
+*  .param VDD = VDDGAUSS
+** use following line to remove VCC variations
+* .param VDD = 3.3
+
+.control
+save all
+op
+tran 20ns 500us
+remzerovec
+write mos_bandgap6.raw
+set appendwrite
+.endc
+
+
+
+**** end user architecture code
+**.ends
+.GLOBAL GND
+.GLOBAL VDD
+.end

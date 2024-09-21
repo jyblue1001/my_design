@@ -5,49 +5,23 @@ K {}
 V {}
 S {}
 E {}
-B 2 1260 -870 2220 -60 {flags=graph
-y1=0.47
-y2=0.53
+B 2 1260 -880 2220 -70 {flags=graph
+y1=-7.1e-12
+y2=2.4
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=-40
-x2=120
+x1=0
+x2=3.3
 divx=5
 subdivx=1
 xlabmag=1.0
 ylabmag=1.0
 
 
-dataset=24
-unitx=1
-logx=0
-logy=0
-
-
-
-
-color=5
-node=v_ctat_mirror}
-B 2 1260 -1710 2220 -900 {flags=graph
-y1=3.4
-y2=3.6
-ypos1=0
-ypos2=2
-divy=5
-subdivy=1
-unity=1
-x1=-40
-x2=120
-divx=5
-subdivx=1
-xlabmag=1.0
-ylabmag=1.0
-
-
-dataset=24
+dataset=-1
 unitx=1
 logx=0
 logy=0
@@ -57,8 +31,70 @@ logy=0
 
 
 
+
+
+linewidth_mult=6
+color="19 6"
+node="v_ctat_mirror
+vbe2"}
+B 2 1260 -1780 2220 -970 {flags=graph
+y1=-7e-74
+y2=3.1
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=0
+x2=3.3
+divx=5
+subdivx=1
+xlabmag=1.0
+ylabmag=1.0
+
+
+dataset=-1
+unitx=1
+logx=0
+logy=0
+
+
+
+
+
+
 color=5
-node=vout}
+node=vout
+linewidth_mult=5}
+B 2 190 -1780 1150 -970 {flags=graph
+y1=-1.7e-77
+y2=0.00071
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=0
+x2=3.3
+divx=5
+subdivx=1
+xlabmag=1.0
+ylabmag=1.0
+
+
+dataset=-1
+unitx=1
+logx=0
+logy=0
+
+
+
+
+
+
+color=5
+node=i(vmeas4)
+linewidth_mult=5}
 N 330 -150 330 -90 {
 lab=GND}
 N 330 -90 590 -90 {
@@ -73,8 +109,6 @@ N 590 -880 590 -830 {
 lab=VDD}
 N 590 -160 590 -90 {
 lab=GND}
-N 330 -330 330 -210 {
-lab=Vbe1}
 N 550 -190 550 -90 {
 lab=GND}
 N 290 -180 290 -90 {
@@ -102,7 +136,7 @@ lab=Vin1}
 N 460 -800 460 -650 {
 lab=V_PTAT_mirror}
 N 330 -410 330 -330 {
-lab=Vbe1}
+lab=#net2}
 N 330 -490 330 -470 {
 lab=Vin1}
 N 730 -370 850 -370 {
@@ -141,17 +175,17 @@ N 590 -580 590 -410 {
 lab=Vbe2}
 N 590 -770 590 -640 {
 lab=Vin2}
-N 850 -150 850 -90 {
-lab=GND}
-N 810 -180 810 -90 {
-lab=GND}
 N 850 -370 850 -330 {
 lab=Vin3}
 N 850 -270 850 -210 {
-lab=#net2}
+lab=#net3}
+N 850 -150 850 -90 {
+lab=GND}
+N 330 -270 330 -210 {
+lab=#net4}
 C {sky130_fd_pr/pfet3_01v8.sym} 350 -800 0 1 {name=M4
 L=0.15
-W=4
+W=10
 body=VDD
 nf=1
 mult=1
@@ -167,7 +201,7 @@ spiceprefix=X
 C {devices/gnd.sym} 460 -90 0 0 {name=l1 lab=GND}
 C {sky130_fd_pr/pfet3_01v8.sym} 570 -800 0 0 {name=M5
 L=0.15
-W=4
+W=10
 body=VDD
 nf=1
 mult=1
@@ -185,25 +219,20 @@ C {sky130_fd_pr/corner.sym} 80 -480 0 0 {name=CORNER only_toplevel=false corner=
 C {devices/code.sym} 80 -650 0 0 {name=STIMULI only_toplevel=false value="
 
 .option wnflag=1
-
-* .param VDDGAUSS = agauss(1.8, 0.05, 1)
-* .param VDD = VDDGAUSS
-.param VDD = 1.8
-
-* .param TEMPGAUSS = agauss(40, 30, 1)
-* .param temp = TEMPGAUSS
-.option temp = 26
+.option method=gear
 
 .control
   save all
-  op
-  dc temp -40 120 1 VDD 1.8 5 0.1
+   op
+*  dc temp -40 120 2 VDD 1.8 3.3 0.2
+  *dc VDD 0 3.3 0.1 temp -0 100 4
+  tran 5ns 50us
   write mos_bandgap4.raw
   set appendwrite
 .endc
 
 "}
-C {devices/lab_pin.sym} 590 -250 0 1 {name=p2 sig_type=std_logic lab=Vbe2}
+C {devices/lab_pin.sym} 590 -310 0 1 {name=p2 sig_type=std_logic lab=Vbe2}
 C {sky130_fd_pr/pnp_05v5.sym} 310 -180 0 0 {name=Q1
 model=pnp_05v5_W3p40L3p40
 m=1
@@ -216,7 +245,7 @@ spiceprefix=X
 }
 C {sky130_fd_pr/pfet3_01v8.sym} 1100 -800 0 0 {name=M1
 L=0.15
-W=4
+W=10
 body=VDD
 nf=1
 mult=1
@@ -229,17 +258,11 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {devices/res.sym} 1120 -260 0 0 {name=R2
-value=4k
-footprint=1206
-device=resistor
-m=1}
 C {devices/lab_pin.sym} 1120 -570 0 1 {name=p5 sig_type=std_logic lab=Vout}
 C {devices/ammeter.sym} 1120 -460 0 0 {name=Vmeas4 savecurrent=true spice_ignore=0}
 C {/foss/designs/my_design/projects/pll/bandgapref/xschem_ngspice/opamp_bandgap.sym} 460 -580 3 0 {name=x1}
 C {devices/vdd.sym} 400 -580 3 0 {name=l6 lab=VDD}
 C {devices/gnd.sym} 520 -580 3 1 {name=l7 lab=GND}
-C {devices/lab_pin.sym} 330 -360 0 1 {name=p1 sig_type=std_logic lab=Vbe1}
 C {devices/ammeter.sym} 330 -440 0 0 {name=Vmeas1 savecurrent=true spice_ignore=0}
 C {devices/ammeter.sym} 590 -610 0 0 {name=Vmeas2 savecurrent=true spice_ignore=0}
 C {devices/lab_pin.sym} 590 -690 0 1 {name=p4 sig_type=std_logic lab=Vin2}
@@ -251,7 +274,7 @@ C {devices/gnd.sym} 780 -430 3 1 {name=l8 lab=GND}
 C {devices/ammeter.sym} 850 -300 0 0 {name=Vmeas3 savecurrent=true spice_ignore=0}
 C {sky130_fd_pr/pfet3_01v8.sym} 830 -710 0 0 {name=M2
 L=0.15
-W=4
+W=10
 body=VDD
 nf=1
 mult=1
@@ -266,7 +289,7 @@ spiceprefix=X
 }
 C {sky130_fd_pr/pfet3_01v8.sym} 940 -710 0 0 {name=M3
 L=0.15
-W=4
+W=10
 body=VDD
 nf=1
 mult=1
@@ -280,12 +303,25 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {devices/lab_pin.sym} 740 -710 3 1 {name=p8 sig_type=std_logic lab=V_CTAT_mirror}
-C {devices/vsource.sym} 140 -220 0 0 {name=VDD value=1.8 savecurrent=false}
+C {devices/vsource.sym} 140 -220 0 0 {name=VDD value="pwl(0 0 10us 0 20us 3)" savecurrent=false}
 C {devices/gnd.sym} 140 -190 0 0 {name=l9 lab=GND}
 C {devices/vdd.sym} 140 -250 0 0 {name=l10 lab=VDD}
-C {sky130_fd_pr/pnp_05v5.sym} 830 -180 0 0 {name=Q3
-model=pnp_05v5_W3p40L3p40
-m=1
-spiceprefix=X
-}
 C {devices/lab_pin.sym} 850 -410 0 1 {name=p3 sig_type=std_logic lab=Vin3}
+C {devices/gnd.sym} 830 -180 1 0 {name=l3 lab=GND}
+C {sky130_fd_pr/res_xhigh_po_0p35.sym} 330 -300 0 0 {name=R1
+L=0.35
+model=res_xhigh_po_0p35
+spiceprefix=X
+mult=1}
+C {devices/gnd.sym} 310 -300 1 0 {name=l4 lab=GND}
+C {sky130_fd_pr/res_xhigh_po_0p35.sym} 850 -180 0 0 {name=R2
+L=0.35
+model=res_xhigh_po_0p35
+spiceprefix=X
+mult=1}
+C {devices/gnd.sym} 1100 -260 1 0 {name=l11 lab=GND}
+C {sky130_fd_pr/res_xhigh_po_0p35.sym} 1120 -260 0 0 {name=R3
+L=0.7
+model=res_xhigh_po_0p35
+spiceprefix=X
+mult=1}
