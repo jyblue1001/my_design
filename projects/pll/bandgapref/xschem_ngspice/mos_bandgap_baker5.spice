@@ -78,7 +78,7 @@ XM12 net10 net10 GND GND sky130_fd_pr__nfet_01v8 L=5 W=0.5 nf=1 ad='int((nf+1)/2
 .control
   save all
   op
-  dc temp -40 120 1 VDD 1.4 3.3 0.1
+  dc VDD 1.4 3.3 0.1 temp -40 120 1
   * tran 1ns 40us
   remzerovec
   write mos_bandgap_baker5.raw

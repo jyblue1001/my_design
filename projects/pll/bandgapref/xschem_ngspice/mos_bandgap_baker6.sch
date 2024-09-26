@@ -291,7 +291,7 @@ C {devices/code.sym} 250 -1160 0 0 {name=STIMULI only_toplevel=false value="
   dc VDD 0 3.3 0.1 temp -40 120 1  
   * tran 4ns 40us
   remzerovec
-  write mos_bandgap_baker5.raw
+  write mos_bandgap_baker6.raw
   set appendwrite
 .endc
 

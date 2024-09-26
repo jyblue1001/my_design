@@ -31,7 +31,7 @@ N 250 -470 370 -470 {
 lab=#net2}
 N 310 -570 310 -550 {
 lab=VDDA}
-N 610 -300 720 -300 {
+N 410 -390 520 -390 {
 lab=Vout}
 N 210 -400 210 -350 {
 lab=#net2}
@@ -45,16 +45,6 @@ N 210 -410 300 -410 {
 lab=#net2}
 N 300 -470 300 -410 {
 lab=#net2}
-N 410 -400 570 -400 {
-lab=Vout}
-N 410 -550 610 -550 {
-lab=VDDA}
-N 310 -160 610 -160 {
-lab=GNDA}
-N 270 -190 570 -190 {
-lab=#net1}
-N 570 -400 610 -300 {
-lab=Vout}
 C {sky130_fd_pr/nfet3_01v8.sym} 190 -320 0 0 {name=M2
 L=0.6
 W=2
@@ -86,7 +76,7 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {devices/ipin.sym} 450 -320 2 0 {name=p1 lab=Vin+}
-C {devices/opin.sym} 720 -300 0 0 {name=p5 lab=Vout}
+C {devices/opin.sym} 520 -390 0 0 {name=p5 lab=Vout}
 C {devices/ipin.sym} 170 -320 2 1 {name=p2 lab=Vin-}
 C {devices/ipin.sym} 310 -120 1 1 {name=p3 lab=GNDA
 }
