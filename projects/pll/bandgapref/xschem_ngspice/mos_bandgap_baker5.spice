@@ -1,6 +1,6 @@
 ** sch_path: /foss/designs/my_design/projects/pll/bandgapref/xschem_ngspice/mos_bandgap_baker5.sch
 **.subckt mos_bandgap_baker5
-VDD VDD GND 3
+VDD VDD GND pwl(0 0 10us 0 20us 3)
 Vmeas Vin- net1 0
 .save i(vmeas)
 Vmeas1 Vin+ Vbe2 0
@@ -78,8 +78,8 @@ XM12 net10 net10 GND GND sky130_fd_pr__nfet_01v8 L=5 W=0.5 nf=1 ad='int((nf+1)/2
 .control
   save all
   op
-  dc VDD 1.4 3.3 0.1 temp -40 120 1
-  * tran 1ns 40us
+  * dc VDD 1.4 3.3 0.1 temp -40 120 1
+  tran 1ns 40us
   remzerovec
   write mos_bandgap_baker5.raw
   set appendwrite

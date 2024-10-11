@@ -1,0 +1,54 @@
+`include "constants.vams"
+`include "disciplines.vams"
+
+module measure_Kvco(in, freq2);
+    parameter real thresh = 0.9;  // Threshold value in volts
+    parameter integer dir = 1 from [-1:1] exclude 0;  // 1 for rising edges, -1 for falling edges
+
+    input in;  // Input signal
+    output freq2;  // Frequency output
+
+    voltage in, freq2;
+    real t0, t1, period, freq;
+    integer timing;
+    integer prev_state, curr_state;
+
+    analog begin
+        // Initialize values
+        timing = 0;
+        freq = 0;
+        prev_state = 0;
+        curr_state = 0;
+
+        // Continuous analog block to manually detect threshold crossing
+        @(initial_step) begin
+            t0 = $abstime;  // Set initial time
+        end
+
+        // Manual detection of the threshold crossing
+        if (dir == 1) begin
+            curr_state = V(in) > thresh ? 1 : 0;
+        end else if (dir == -1) begin
+            curr_state = V(in) < thresh ? 1 : 0;
+        end
+
+        // If crossing is detected (rising or falling edge as per `dir`)
+        if (prev_state != curr_state && curr_state == 1) begin
+            t1 = $abstime;  // Record the current time of crossing
+            if (timing) begin
+                period = t1 - t0;
+                if (period > 0) begin
+                    freq = 1.0 / period;
+                end
+            end
+            t0 = t1;  // Update the last crossing time
+            timing = 1;  // Indicate that timing has started
+        end
+
+        // Update previous state to current state
+        prev_state = curr_state;
+
+        // Set the output voltage representing frequency
+        V(freq2) <+ freq;
+    end
+endmodule

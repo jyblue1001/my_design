@@ -41,7 +41,7 @@ let run=1
 
 dowhile run <= mc_runs
   dc vin 0 1 0.01
-  wrdata /foss/designs/my_design/projects/montecarlo/xschem_ngspice/mcvdivider\{$&run\}.txt v(Vout)
+  wrdata /foss/designs/my_design/projects/montecarlo/xschem_ngspice/mcvdivider/mcvdivider\{$&run\}.txt v(Vout)
   reset
   let run = run + 1
 end
@@ -54,3 +54,4 @@ C {/foss/designs/my_design/projects/montecarlo/xschem_ngspice/mcvdivider/gaussre
 value=1k}
 C {/foss/designs/my_design/projects/montecarlo/xschem_ngspice/mcvdivider/gaussres.sym} 310 -100 2 0 {name=XR2
 value=1k}
+C {sky130_fd_pr/corner.sym} 270 -320 0 0 {name=CORNER only_toplevel=false corner=mc}

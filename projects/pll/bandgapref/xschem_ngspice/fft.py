@@ -1,61 +1,104 @@
-import struct
 import numpy as np
 import matplotlib.pyplot as plt
+from scipy.fft import fft
+from scipy.signal import get_window
+import pandas as pd
 
-# Function to parse the ngspice .raw file
-def parse_rawfile(path):
-    with open(path, 'rb') as file:
-        # Read and parse header information (ASCII part)
-        header_lines = []
-        while True:
-            line = file.readline().decode('ascii', errors='ignore')
-            if line.startswith('Binary:'):
-                break  # End of header
-            header_lines.append(line)
+# Function to add white Gaussian noise to a signal
+def awgn(signal, snr):
+    """Additive White Gaussian Noise (AWGN)"""
+    signal_power = np.mean(signal ** 2)
+    noise_power = signal_power / (10 ** (snr / 10))
+    noise = np.sqrt(noise_power) * np.random.randn(len(signal))
+    return signal + noise
 
-        # Print header for reference
-        for line in header_lines:
-            print(line.strip())
-        
-        # Extract some metadata from the header
-        num_points = int([line for line in header_lines if 'No. Points' in line][0].split()[-1])
-        num_vars = int([line for line in header_lines if 'No. Variables' in line][0].split()[-1])
-        
-        # Read and parse binary data (binary part)
-        data = []
-        for _ in range(num_points):
-            point = struct.unpack(f'{num_vars}d', file.read(num_vars * 8))  # Read 'num_vars' doubles per point
-            data.append(point)
-        
-    # Convert the list to a NumPy array
-    data = np.array(data)
-    
-    # Separate the time and voltage columns
-    time = data[:, 0]  # Assuming time is the first variable (column 0)
-    voltage = data[:, 33]  # Assuming v(osc) is in column 33 (adjust if needed)
-    
-    return time, voltage
+# 1. READ IN DATA
+# Load the data from a CSV file
+# Replace 'oscillator30ns.csv' with your actual file path
+data = pd.read_csv('oscillator30ns_noise.csv', header=None)
+time = data.iloc[:, 0].values  # Time values
+original_data = data.iloc[:, 1].values  # Original signal
 
-# Path to the .raw file
-path = "test_inverter_speed.raw"
+# 2. ADD WHITE NOISE TO THE ORIGINAL SIGNAL USING AWGN
+SNR = 40  # Signal-to-noise ratio in dB
+noisy_data = awgn(original_data, SNR)
 
-# Parse the data
-time, voltage = parse_rawfile(path)
+# 3. PERFORM THE FFT
 
-# Perform FFT on the voltage signal
-N = len(voltage)
-fft_result = np.fft.fft(voltage, N)
-s = np.abs(fft_result)  # Magnitude of FFT
+# Choose the window type using `get_window`
+window_type = 'hann'  # Options: 'hann', 'hamming', 'blackman', 'bartlett', 'rectangular'
+if window_type == 'rectangular':
+    fft_win = np.ones(len(noisy_data))  # Rectangular window
+else:
+    fft_win = get_window(window_type, len(noisy_data))
 
-# Frequency axis for plotting
-f = np.fft.fftfreq(N, d=(time[1] - time[0]))  # d is the sample spacing
-sdb = 20 * np.log10(s)
+# Multiply the noisy data by the window
+win_data = fft_win * noisy_data
 
-# Plot FFT results
-plt.figure()
-plt.plot(f[:N // 2], sdb[:N // 2])  # Only positive frequencies
-plt.title('FFT of Transient Response')
-plt.xlabel('Frequency [Hz]')
-plt.ylabel('Amplitude [dB]')
-plt.grid(True)
+# 4. COMPUTE FFT
+
+# Compute the sampling frequency from the time step
+Fs = 1 / (time[1] - time[0])
+L = len(win_data)  # Length of the signal
+
+# FFT of windowed noisy data
+Y = fft(win_data)
+# FFT of original data
+Y_original = fft(original_data)
+
+# Compute two-sided spectrum and single-sided spectrum for noisy data
+P2 = np.abs(Y / L)
+P1 = P2[:L//2 + 1]
+P1[1:-1] = 2 * P1[1:-1]
+f = Fs * np.arange(0, L//2 + 1) / L
+
+# Compute two-sided spectrum and single-sided spectrum for original data
+P2_original = np.abs(Y_original / L)
+P1_original = P2_original[:L//2 + 1]
+P1_original[1:-1] = 2 * P1_original[1:-1]
+
+# 5. PLOT ALL IN 3x2 SUBPLOTS
+
+fig, axs = plt.subplots(3, 2, figsize=(14, 12))
+
+# Plot the original data (top left)
+axs[0, 0].plot(original_data)
+axs[0, 0].set_title('Time Domain View of Original Data')
+axs[0, 0].set_xlabel('Sample (#)')
+axs[0, 0].set_ylabel('Amplitude (V)')
+axs[0, 0].grid(True)
+
+# Plot the noisy data (top right)
+axs[0, 1].plot(noisy_data)
+axs[0, 1].set_title('Time Domain View of Noisy Data')
+axs[0, 1].set_xlabel('Sample (#)')
+axs[0, 1].set_ylabel('Amplitude (V)')
+axs[0, 1].grid(True)
+
+# Plot the windowed noisy data (middle left)
+axs[1, 0].plot(win_data)
+axs[1, 0].set_title('Time Domain View of Windowed Noisy Data')
+axs[1, 0].set_xlabel('Sample (#)')
+axs[1, 0].set_ylabel('Amplitude (V)')
+axs[1, 0].grid(True)
+
+# Plot the FFT of windowed noisy data (middle right)
+axs[1, 1].plot(f / 1000, 20 * np.log10(P1))  # Frequency in kHz
+axs[1, 1].set_title('FFT of Windowed Noisy Data')
+axs[1, 1].set_xlabel('Frequency (kHz)')
+axs[1, 1].set_ylabel('|Magnitude| (dB)')
+axs[1, 1].grid(True)
+
+# Plot the FFT of the original data (bottom left)
+axs[2, 0].plot(f / 1000, 20 * np.log10(P1_original))  # Frequency in kHz
+axs[2, 0].set_title('FFT of Original Data (No Noise)')
+axs[2, 0].set_xlabel('Frequency (kHz)')
+axs[2, 0].set_ylabel('|Magnitude| (dB)')
+axs[2, 0].grid(True)
+
+# Hide the bottom-right subplot (not used)
+axs[2, 1].axis('off')
+
+# Adjust layout
+plt.tight_layout()
 plt.show()

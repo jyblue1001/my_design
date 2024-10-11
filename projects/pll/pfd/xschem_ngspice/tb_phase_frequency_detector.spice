@@ -1,0 +1,91 @@
+** sch_path: /foss/designs/my_design/projects/pll/pfd/xschem_ngspice/tb_phase_frequency_detector.sch
+**.subckt tb_phase_frequency_detector
+V1 F_REF GND pulse(0 1.8 0 0.25ns 0.25ns 25ns 50ns)
+V2 F_VCO GND pulse(0 1.8 1ns 0.25ns 0.25ns 25ns 50ns)
+VDD VDDA GND 1.8
+x1 F_REF F_VCO VDDA QA QB GND phase_frequency_detector
+**** begin user architecture code
+
+.param mc_mm_switch=0
+.param mc_pr_switch=0
+.include /foss/pdks/sky130A/libs.tech/ngspice/corners/tt.spice
+.include /foss/pdks/sky130A/libs.tech/ngspice/r+c/res_typical__cap_typical.spice
+.include /foss/pdks/sky130A/libs.tech/ngspice/r+c/res_typical__cap_typical__lin.spice
+.include /foss/pdks/sky130A/libs.tech/ngspice/corners/tt/specialized_cells.spice
+
+
+
+
+.include /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
+
+
+.option wnflag=1
+.option method=gear trtol=1
+
+* .ic v(osc)=0
+* .temp = 75
+
+.save v(x1.reset)
+.save v(x1.qb_b)
+.save v(x1.qa_b)
+.save v(x1.f_b)
+.save v(x1.f)
+.save v(x1.e_b)
+.save v(x1.e)
+.save v(x1.before_reset)
+.save v(qb)
+.save v(qa)
+.save v(f_vco)
+.save v(f_ref)
+.save v(f_vco)
+
+
+.control
+
+  tran 1ns 10us
+  remzerovec
+  write tb_phase_frequency_detector.raw
+  linearize v(qa) v(qb)
+  wrdata /foss/designs/my_design/projects/pll/pfd/xschem_ngspice/tb_phase_frequency_detector_QA.txt v(qa)
+  wrdata /foss/designs/my_design/projects/pll/pfd/xschem_ngspice/tb_phase_frequency_detector_QB.txt v(qb)
+
+  set appendwrite
+
+.endc
+
+
+
+
+
+
+**** end user architecture code
+**.ends
+
+* expanding   symbol:  /foss/designs/my_design/projects/pll/pfd/xschem_ngspice/phase_frequency_detector.sym # of pins=6
+** sym_path: /foss/designs/my_design/projects/pll/pfd/xschem_ngspice/phase_frequency_detector.sym
+** sch_path: /foss/designs/my_design/projects/pll/pfd/xschem_ngspice/phase_frequency_detector.sch
+.subckt phase_frequency_detector F_REF F_VCO VDDA QA QB GNDA
+*.ipin F_REF
+*.opin QA
+*.ipin F_VCO
+*.opin QB
+*.ipin VDDA
+*.ipin GNDA
+x1 F_REF QA GNDA GNDA VDDA VDDA QA_b sky130_fd_sc_hd__nor2_1
+x2 QA_b E GNDA GNDA VDDA VDDA QA sky130_fd_sc_hd__nor2_1
+x3 QA_b E_b GNDA GNDA VDDA VDDA E sky130_fd_sc_hd__nor2_1
+x4 E Reset GNDA GNDA VDDA VDDA E_b sky130_fd_sc_hd__nor2_1
+x5 F_VCO QB GNDA GNDA VDDA VDDA QB_b sky130_fd_sc_hd__nor2_1
+x6 QB_b F GNDA GNDA VDDA VDDA QB sky130_fd_sc_hd__nor2_1
+x7 QB_b F_b GNDA GNDA VDDA VDDA F sky130_fd_sc_hd__nor2_1
+x8 F Reset GNDA GNDA VDDA VDDA F_b sky130_fd_sc_hd__nor2_1
+x9 QA QB GNDA GNDA VDDA VDDA before_Reset sky130_fd_sc_hd__nand2_1
+x10 before_Reset GNDA GNDA VDDA VDDA net1 sky130_fd_sc_hd__inv_1
+x11 net1 GNDA GNDA VDDA VDDA net2 sky130_fd_sc_hd__inv_1
+x12 net2 GNDA GNDA VDDA VDDA net3 sky130_fd_sc_hd__inv_1
+x13 net3 GNDA GNDA VDDA VDDA net4 sky130_fd_sc_hd__inv_1
+x14 net4 GNDA GNDA VDDA VDDA Reset sky130_fd_sc_hd__inv_1
+.ends
+
+.GLOBAL GND
+.end

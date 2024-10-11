@@ -294,8 +294,8 @@ N 440 -260 440 -190 {
 lab=#net10}
 N 440 -130 440 -90 {
 lab=GND}
-C {devices/vsource.sym} 120 -150 0 0 {name=VDD value=3 savecurrent=false
-* "pwl(0 0 10us 0 20us 3)"}
+C {devices/vsource.sym} 120 -150 0 0 {name=VDD value="pwl(0 0 10us 0 20us 3)" savecurrent=false
+* }
 C {devices/gnd.sym} 120 -120 0 0 {name=l3 lab=GND}
 C {devices/vdd.sym} 120 -180 0 0 {name=l4 lab=VDD}
 C {sky130_fd_pr/corner.sym} 70 -700 0 0 {name=CORNER only_toplevel=false corner=tt}
@@ -323,8 +323,8 @@ C {devices/code.sym} 70 -500 0 0 {name=STIMULI only_toplevel=false value="
 .control
   save all
   op
-  dc VDD 1.4 3.3 0.1 temp -40 120 1   
-  * tran 1ns 40us
+  * dc VDD 1.4 3.3 0.1 temp -40 120 1   
+  tran 1ns 40us
   remzerovec
   write mos_bandgap_baker5.raw
   set appendwrite
