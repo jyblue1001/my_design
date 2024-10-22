@@ -79,50 +79,8 @@ linewidth_mult=2
 color=10
 node=ck}
 B 2 1100 -1150 1890 -880 {flags=graph
-y1=0.025
-y2=1.9
-ypos1=0
-ypos2=2
-divy=5
-subdivy=4
-unity=1
-x1=0
-x2=1e-08
-divx=5
-subdivx=4
-xlabmag=1.0
-ylabmag=1.0
-
-
-dataset=-1
-unitx=1
-logx=0
-logy=0
-
-
-
-
-
-
-
-
-
-
-
-linewidth_mult=2
-
-
-
-
-
-
-
-
-color=5
-node=q1}
-B 2 1100 -870 1890 -600 {flags=graph
-y1=0.19
-y2=1.9
+y1=-0.16
+y2=0.88
 ypos1=0
 ypos2=2
 divy=5
@@ -162,6 +120,48 @@ linewidth_mult=2
 
 color=5
 node=d1}
+B 2 1100 -870 1890 -600 {flags=graph
+y1=-0.17
+y2=1.2
+ypos1=0
+ypos2=2
+divy=5
+subdivy=4
+unity=1
+x1=0
+x2=1e-08
+divx=5
+subdivx=4
+xlabmag=1.0
+ylabmag=1.0
+
+
+dataset=-1
+unitx=1
+logx=0
+logy=0
+
+
+
+
+
+
+
+
+
+
+
+linewidth_mult=2
+
+
+
+
+
+
+
+
+color=5
+node=d2}
 B 2 1100 -1430 1890 -1160 {flags=graph
 y1=-0.23
 y2=2
@@ -201,8 +201,52 @@ linewidth_mult=2
 color=5
 node=ck1_b}
 B 2 1100 -590 1890 -320 {flags=graph
-y1=-0.064
-y2=0.3
+y1=0.22
+y2=1.9
+ypos1=0
+ypos2=2
+divy=5
+subdivy=4
+unity=1
+x1=0
+x2=1e-08
+divx=5
+subdivx=4
+xlabmag=1.0
+ylabmag=1.0
+
+
+dataset=-1
+unitx=1
+logx=0
+logy=0
+
+
+
+
+
+
+
+
+
+
+
+linewidth_mult=2
+
+
+
+
+
+
+
+
+
+
+color=4
+node=d1_b}
+B 2 1100 -310 1890 -40 {flags=graph
+y1=0.2
+y2=1.9
 ypos1=0
 ypos2=2
 divy=5
@@ -242,49 +286,7 @@ linewidth_mult=2
 
 
 color=4
-node=d2}
-B 2 1100 -310 1890 -40 {flags=graph
-y1=0
-y2=0.01
-ypos1=0
-ypos2=2
-divy=5
-subdivy=4
-unity=1
-x1=0
-x2=1e-08
-divx=5
-subdivx=4
-xlabmag=1.0
-ylabmag=1.0
-
-
-dataset=-1
-unitx=1
-logx=0
-logy=0
-
-
-
-
-
-
-
-
-
-
-
-linewidth_mult=2
-
-
-
-
-
-
-
-
-
-}
+node=d2_b}
 N 820 -1970 820 -1940 {
 lab=CK}
 N 630 -1690 630 -1560 {
@@ -327,48 +329,54 @@ N 520 -1620 630 -1620 {
 lab=CK}
 N 690 -1620 770 -1620 {
 lab=CK1}
-N 360 -850 360 -810 {
+N 520 -860 520 -820 {
 lab=CK1_b}
-N 340 -850 340 -810 {
+N 550 -860 550 -820 {
 lab=CK1}
-N 850 -850 850 -810 {
+N 760 -870 760 -830 {
 lab=CK1_b}
-N 830 -850 830 -810 {
+N 790 -870 790 -830 {
 lab=CK1}
-N 230 -1120 230 -940 {
-lab=D1}
-N 230 -940 290 -940 {
-lab=D1}
-N 960 -940 990 -940 {
+N 610 -1090 910 -1090 {
 lab=D2}
-N 230 -900 230 -760 {
-lab=D1_b}
-N 230 -900 290 -900 {
-lab=D1_b}
-N 230 -1120 490 -1120 {
+N 610 -750 910 -750 {
+lab=D2_b}
+N 630 -950 710 -950 {
 lab=D1}
-N 990 -1140 990 -940 {
-lab=D2}
-N 610 -1140 990 -1140 {
-lab=D2}
-N 610 -1100 610 -940 {
-lab=Q1}
-N 470 -940 780 -940 {
-lab=Q1}
-N 470 -900 780 -900 {
-lab=Q1_b}
-N 610 -900 610 -740 {
-lab=Q1_b}
-N 960 -900 990 -900 {
-lab=#net1}
-N 990 -900 990 -700 {
-lab=#net1}
-N 610 -700 990 -700 {
-lab=#net1}
-N 230 -720 490 -720 {
+N 630 -910 710 -910 {
 lab=D1_b}
-N 230 -760 230 -720 {
+N 650 -1050 650 -950 {
+lab=D1}
+N 470 -1050 650 -1050 {
+lab=D1}
+N 470 -1050 470 -960 {
+lab=D1}
+N 650 -910 650 -790 {
 lab=D1_b}
+N 470 -790 650 -790 {
+lab=D1_b}
+N 470 -900 470 -790 {
+lab=D1_b}
+N 410 -1090 610 -1090 {
+lab=D2}
+N 410 -1090 410 -940 {
+lab=D2}
+N 410 -940 470 -940 {
+lab=D2}
+N 410 -920 470 -920 {
+lab=D2_b}
+N 410 -920 410 -750 {
+lab=D2_b}
+N 410 -750 610 -750 {
+lab=D2_b}
+N 870 -950 910 -950 {
+lab=D2}
+N 910 -1090 910 -950 {
+lab=D2}
+N 870 -910 910 -910 {
+lab=D2_b}
+N 910 -910 910 -750 {
+lab=D2_b}
 C {devices/vsource.sym} 730 -1910 0 0 {name=VDD value=1.8 savecurrent=false}
 C {devices/gnd.sym} 730 -1880 0 0 {name=l1 lab=GND}
 C {devices/code.sym} 520 -1960 0 0 {name=Stimuli only_toplevel=false value="
@@ -408,7 +416,7 @@ C {devices/code.sym} 520 -1960 0 0 {name=Stimuli only_toplevel=false value="
   tran 0.2p 10n
   *ac dec 20 1 1T
   remzerovec
-  write tb_xcp_latch_divide3.raw
+  write tb_xcp_FF_nand_divide3.raw
 
 .endc
 
@@ -484,21 +492,17 @@ C {devices/lab_pin.sym} 440 -1480 0 0 {name=p14 sig_type=std_logic lab=CK}
 C {devices/vdd.sym} 660 -1560 0 0 {name=l10 lab=VDD}
 C {devices/gnd.sym} 660 -1690 0 0 {name=l13 lab=GND}
 C {devices/lab_pin.sym} 770 -1620 0 1 {name=p15 sig_type=std_logic lab=CK1}
-C {/foss/designs/my_design/projects/pll/divider/xschem_ngspice/xcp_FF.sym} 380 -920 0 0 {name=x1}
-C {devices/lab_pin.sym} 290 -940 0 0 {name=p2 lab=D1}
-C {devices/lab_pin.sym} 290 -900 0 0 {name=p5 lab=D1_b}
-C {devices/lab_pin.sym} 360 -810 0 1 {name=p6 lab=CK1_b}
-C {devices/lab_pin.sym} 340 -810 0 0 {name=p7 lab=CK1}
-C {devices/gnd.sym} 410 -850 0 0 {name=l2 lab=GND}
-C {devices/vdd.sym} 380 -990 0 0 {name=l4 lab=VDD}
-C {/foss/designs/my_design/projects/pll/divider/xschem_ngspice/xcp_FF.sym} 870 -920 0 0 {name=x2}
-C {devices/lab_pin.sym} 850 -810 0 1 {name=p12 lab=CK1_b}
-C {devices/lab_pin.sym} 830 -810 0 0 {name=p16 lab=CK1}
-C {devices/gnd.sym} 900 -850 0 0 {name=l5 lab=GND}
-C {devices/vdd.sym} 870 -990 0 0 {name=l8 lab=VDD}
-C {devices/lab_wire.sym} 510 -940 0 1 {name=p17 sig_type=std_logic lab=Q1}
-C {devices/lab_wire.sym} 510 -900 2 0 {name=p3 sig_type=std_logic lab=Q1_b}
-C {devices/lab_wire.sym} 770 -1140 0 1 {name=p4 sig_type=std_logic lab=D2}
-C {devices/lab_wire.sym} 760 -700 2 0 {name=p1 sig_type=std_logic lab=D2_b}
-C {sky130_stdcells/nand2_1.sym} 550 -1120 0 1 {name=x5 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ }
-C {sky130_stdcells/nand2_1.sym} 550 -720 0 1 {name=x3 VGND=VGND VNB=VNB VPB=VPB VPWR=VPWR prefix=sky130_fd_sc_hd__ }
+C {devices/lab_pin.sym} 470 -980 0 0 {name=p2 lab=D1}
+C {devices/lab_pin.sym} 470 -900 0 0 {name=p5 lab=D1_b}
+C {devices/lab_pin.sym} 520 -820 0 0 {name=p6 lab=CK1_b}
+C {devices/lab_pin.sym} 550 -820 0 1 {name=p7 lab=CK1}
+C {devices/gnd.sym} 580 -860 0 0 {name=l2 lab=GND}
+C {devices/vdd.sym} 550 -1000 0 0 {name=l4 lab=VDD}
+C {devices/lab_pin.sym} 760 -830 0 0 {name=p12 lab=CK1_b}
+C {devices/lab_pin.sym} 790 -830 0 1 {name=p16 lab=CK1}
+C {devices/gnd.sym} 820 -870 0 0 {name=l5 lab=GND}
+C {devices/vdd.sym} 790 -990 0 0 {name=l8 lab=VDD}
+C {devices/lab_wire.sym} 410 -940 0 0 {name=p4 sig_type=std_logic lab=D2}
+C {devices/lab_wire.sym} 410 -920 2 1 {name=p1 sig_type=std_logic lab=D2_b}
+C {/foss/designs/my_design/projects/pll/divider/xschem_ngspice/xcp_FF_nand.sym} 550 -930 0 0 {name=x1}
+C {/foss/designs/my_design/projects/pll/divider/xschem_ngspice/xcp_FF.sym} 790 -930 0 0 {name=x2}

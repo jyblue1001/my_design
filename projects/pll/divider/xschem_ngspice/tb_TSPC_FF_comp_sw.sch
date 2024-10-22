@@ -416,7 +416,7 @@ C {devices/code.sym} 260 -170 0 0 {name=Stimuli only_toplevel=false value="
   * save v(a) v(b) v(v1) v(v2) v(ck) v(ck_b)
   save all
   *tran 0.1n 1u
-  tran 0.2p 10n
+  tran 1p 20n
   remzerovec
   write tb_TSPC_FF_comp_sw.raw
   set appendwrite
