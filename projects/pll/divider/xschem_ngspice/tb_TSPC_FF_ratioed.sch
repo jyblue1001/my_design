@@ -188,8 +188,6 @@ node="a
 a_b"}
 N 580 -390 580 -360 {
 lab=CK}
-N 760 -630 800 -630 {
-lab=B}
 N 360 -770 360 -630 {
 lab=A}
 N 360 -630 400 -630 {
@@ -204,12 +202,6 @@ N 560 -630 560 -590 {
 lab=A}
 N 540 -630 560 -630 {
 lab=A}
-N 620 -770 620 -630 {
-lab=B}
-N 620 -770 770 -770 {
-lab=B}
-N 770 -770 770 -630 {
-lab=B}
 C {devices/vsource.sym} 470 -330 0 0 {name=VDD value=1.8 savecurrent=false}
 C {devices/gnd.sym} 470 -300 0 0 {name=l1 lab=GND}
 C {devices/code.sym} 260 -400 0 0 {name=Stimuli only_toplevel=false value="
@@ -245,7 +237,7 @@ C {devices/code.sym} 260 -400 0 0 {name=Stimuli only_toplevel=false value="
 
 .control
 
-  * save v(a) v(a_b) v(b) v(b_b) v(ck)
+  * save v(a) v(ck)
   save all
   *tran 0.1n 1u
   tran 0.2p 10n
@@ -266,9 +258,5 @@ C {devices/vsource.sym} 580 -330 0 0 {name=V3 value="pulse(0 1.8 0ps 8.34ps 8.34
 C {devices/lab_pin.sym} 400 -590 0 0 {name=p11 lab=CK}
 C {devices/gnd.sym} 470 -550 0 0 {name=l2 lab=GND}
 C {devices/vdd.sym} 470 -670 0 0 {name=l5 lab=VDD}
-C {devices/gnd.sym} 690 -550 0 0 {name=l8 lab=GND}
-C {devices/vdd.sym} 690 -670 0 0 {name=l9 lab=VDD}
 C {devices/lab_wire.sym} 560 -630 0 1 {name=p5 sig_type=std_logic lab=A}
-C {devices/lab_wire.sym} 800 -630 0 1 {name=p6 sig_type=std_logic lab=B}
 C {/foss/designs/my_design/projects/pll/divider/xschem_ngspice/TSPC_FF_ratioed.sym} 470 -610 0 0 {name=x1}
-C {/foss/designs/my_design/projects/pll/divider/xschem_ngspice/TSPC_FF_ratioed.sym} 690 -610 0 0 {name=x2}

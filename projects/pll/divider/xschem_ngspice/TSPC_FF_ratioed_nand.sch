@@ -5,117 +5,135 @@ K {}
 V {}
 S {}
 E {}
-N 750 -630 750 -590 {
+N 1000 -770 1000 -730 {
 lab=VDDA}
-N 750 -560 790 -560 {
+N 1000 -700 1040 -700 {
 lab=VDDA}
-N 790 -610 790 -560 {
+N 1040 -750 1040 -700 {
 lab=VDDA}
-N 750 -610 790 -610 {
+N 1000 -750 1040 -750 {
 lab=VDDA}
-N 750 -140 790 -140 {
+N 1000 -130 1040 -130 {
 lab=GNDA}
-N 750 -160 750 -110 {
+N 1000 -150 1000 -100 {
 lab=GNDA}
-N 750 -190 790 -190 {
+N 1000 -180 1040 -180 {
 lab=GNDA}
-N 750 -530 750 -420 {
+N 780 -770 780 -730 {
+lab=VDDA}
+N 780 -700 820 -700 {
+lab=VDDA}
+N 820 -750 820 -700 {
+lab=VDDA}
+N 780 -750 820 -750 {
+lab=VDDA}
+N 780 -130 820 -130 {
+lab=GNDA}
+N 780 -150 780 -100 {
+lab=GNDA}
+N 780 -180 820 -180 {
+lab=GNDA}
+N 550 -770 550 -730 {
+lab=VDDA}
+N 550 -700 590 -700 {
+lab=VDDA}
+N 590 -750 590 -700 {
+lab=VDDA}
+N 550 -750 590 -750 {
+lab=VDDA}
+N 550 -490 590 -490 {
+lab=GNDA}
+N 550 -130 590 -130 {
+lab=GNDA}
+N 550 -150 550 -100 {
+lab=GNDA}
+N 550 -180 590 -180 {
+lab=GNDA}
+N 890 -180 960 -180 {
+lab=B}
+N 470 -490 510 -490 {
+lab=CK}
+N 110 -490 150 -490 {
+lab=D1}
+N 1000 -610 1100 -610 {
 lab=Q}
-N 530 -630 530 -590 {
-lab=VDDA}
-N 530 -560 570 -560 {
-lab=VDDA}
-N 570 -610 570 -560 {
-lab=VDDA}
-N 530 -610 570 -610 {
-lab=VDDA}
-N 530 -140 570 -140 {
+N 590 -180 590 -130 {
 lab=GNDA}
-N 530 -160 530 -110 {
-lab=GNDA}
-N 530 -190 570 -190 {
-lab=GNDA}
-N 300 -630 300 -590 {
-lab=VDDA}
-N 300 -560 340 -560 {
-lab=VDDA}
-N 340 -610 340 -560 {
-lab=VDDA}
-N 300 -610 340 -610 {
-lab=VDDA}
-N 300 -320 340 -320 {
-lab=GNDA}
-N 300 -140 340 -140 {
-lab=GNDA}
-N 300 -160 300 -110 {
-lab=GNDA}
-N 300 -290 300 -220 {
+N 890 -240 890 -180 {
+lab=B}
+N 780 -240 890 -240 {
+lab=B}
+N 660 -700 740 -700 {
 lab=#net1}
-N 300 -190 340 -190 {
+N 660 -700 660 -640 {
+lab=#net1}
+N 550 -640 660 -640 {
+lab=#net1}
+N 1040 -180 1040 -130 {
 lab=GNDA}
-N 640 -190 710 -190 {
-lab=B}
-N 150 -560 260 -560 {
-lab=D}
-N 150 -560 150 -190 {
-lab=D}
-N 150 -190 260 -190 {
-lab=D}
-N 220 -320 260 -320 {
+N 920 -700 960 -700 {
 lab=CK}
-N 110 -380 150 -380 {
-lab=D}
-N 750 -470 850 -470 {
-lab=Q}
-N 340 -190 340 -140 {
+N 820 -180 820 -130 {
 lab=GNDA}
-N 750 -360 750 -220 {
+N 700 -180 740 -180 {
+lab=CK}
+N 590 -490 590 -180 {
+lab=GNDA}
+N 550 -100 1000 -100 {
+lab=GNDA}
+N 780 -100 780 -70 {
+lab=GNDA}
+N 550 -770 1000 -770 {
+lab=VDDA}
+N 780 -800 780 -770 {
+lab=VDDA}
+N 920 -700 920 -560 {
+lab=CK}
+N 490 -560 920 -560 {
+lab=CK}
+N 490 -560 490 -490 {
+lab=CK}
+N 700 -560 700 -180 {
+lab=CK}
+N 250 -770 250 -730 {
+lab=VDDA}
+N 250 -770 550 -770 {
+lab=VDDA}
+N 250 -700 290 -700 {
+lab=VDDA}
+N 290 -770 290 -700 {
+lab=VDDA}
+N 550 -320 590 -320 {
+lab=GNDA}
+N 550 -460 550 -350 {
 lab=#net2}
-N 640 -250 640 -190 {
-lab=B}
-N 530 -250 640 -250 {
-lab=B}
-N 410 -560 490 -560 {
-lab=A}
-N 410 -560 410 -500 {
-lab=A}
-N 300 -500 410 -500 {
-lab=A}
-N 530 -530 530 -480 {
+N 550 -290 550 -210 {
 lab=#net3}
-N 790 -190 790 -140 {
-lab=GNDA}
-N 300 -530 300 -480 {
-lab=A}
-N 300 -420 300 -350 {
-lab=#net4}
-N 670 -560 710 -560 {
-lab=CK}
-N 530 -420 530 -220 {
+N 550 -670 550 -520 {
+lab=#net1}
+N 250 -670 250 -640 {
+lab=#net1}
+N 250 -640 550 -640 {
+lab=#net1}
+N 400 -320 510 -320 {
+lab=D2}
+N 400 -700 400 -320 {
+lab=D2}
+N 400 -700 510 -700 {
+lab=D2}
+N 1000 -670 1000 -210 {
+lab=Q}
+N 780 -670 780 -210 {
 lab=B}
-N 570 -190 570 -140 {
-lab=GNDA}
-N 450 -190 490 -190 {
-lab=CK}
-N 340 -320 340 -190 {
-lab=GNDA}
-N 300 -110 750 -110 {
-lab=GNDA}
-N 530 -110 530 -80 {
-lab=GNDA}
-N 300 -630 750 -630 {
-lab=VDDA}
-N 530 -660 530 -630 {
-lab=VDDA}
-N 670 -560 670 -390 {
-lab=CK}
-N 240 -390 670 -390 {
-lab=CK}
-N 240 -390 240 -320 {
-lab=CK}
-N 450 -390 450 -190 {
-lab=CK}
-C {sky130_fd_pr/pfet_01v8.sym} 730 -560 0 0 {name=M1
+N 150 -700 210 -700 {
+lab=D1}
+N 150 -700 150 -180 {
+lab=D1}
+N 150 -180 510 -180 {
+lab=D1}
+N 360 -490 400 -490 {
+lab=D2}
+C {sky130_fd_pr/pfet_01v8.sym} 980 -700 0 0 {name=M1
 L=0.15
 W=1
 nf=1
@@ -129,8 +147,7 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {devices/ammeter.sym} 750 -390 0 0 {name=Vmeas savecurrent=true spice_ignore=0}
-C {sky130_fd_pr/nfet_01v8.sym} 730 -190 0 0 {name=M2
+C {sky130_fd_pr/nfet_01v8.sym} 980 -180 0 0 {name=M2
 L=0.15
 W=1
 nf=1 
@@ -144,7 +161,7 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {sky130_fd_pr/pfet_01v8.sym} 510 -560 0 0 {name=M3
+C {sky130_fd_pr/pfet_01v8.sym} 760 -700 0 0 {name=M3
 L=0.15
 W=1
 nf=1
@@ -158,7 +175,7 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {sky130_fd_pr/nfet_01v8.sym} 510 -190 0 0 {name=M4
+C {sky130_fd_pr/nfet_01v8.sym} 760 -180 0 0 {name=M4
 L=0.15
 W=2
 nf=2 
@@ -172,11 +189,10 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {devices/ammeter.sym} 530 -450 0 0 {name=Vmeas1 savecurrent=true spice_ignore=0}
-C {sky130_fd_pr/pfet_01v8.sym} 280 -560 0 0 {name=M5
+C {sky130_fd_pr/pfet_01v8.sym} 530 -700 0 0 {name=M5
 L=0.15
-W=1
-nf=1
+W=2
+nf=2
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
@@ -187,7 +203,7 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {sky130_fd_pr/nfet_01v8.sym} 280 -190 0 0 {name=M7
+C {sky130_fd_pr/nfet_01v8.sym} 530 -180 0 0 {name=M9
 L=0.15
 W=1
 nf=1 
@@ -201,13 +217,11 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {devices/ammeter.sym} 300 -450 0 0 {name=Vmeas2 savecurrent=true spice_ignore=0}
-C {devices/ipin.sym} 220 -320 0 0 {name=p4 lab=CK}
-C {devices/ipin.sym} 110 -380 0 0 {name=p5 lab=D}
-C {devices/opin.sym} 850 -470 0 0 {name=p6 lab=Q}
-C {devices/lab_pin.sym} 410 -500 0 1 {name=p7 sig_type=std_logic lab=A}
-C {devices/lab_pin.sym} 640 -250 0 1 {name=p10 sig_type=std_logic lab=B}
-C {sky130_fd_pr/nfet_01v8.sym} 280 -320 0 0 {name=M6
+C {devices/ipin.sym} 470 -490 0 0 {name=p4 lab=CK}
+C {devices/ipin.sym} 110 -490 0 0 {name=p5 lab=D1}
+C {devices/opin.sym} 1100 -610 0 0 {name=p6 lab=Q_b}
+C {devices/lab_pin.sym} 890 -240 0 1 {name=p10 sig_type=std_logic lab=B}
+C {sky130_fd_pr/nfet_01v8.sym} 530 -490 0 0 {name=M7
 L=0.15
 W=1
 nf=1 
@@ -221,5 +235,34 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {devices/ipin.sym} 530 -660 0 0 {name=p8 lab=VDDA}
-C {devices/ipin.sym} 530 -80 0 0 {name=p12 lab=GNDA}
+C {devices/ipin.sym} 780 -800 0 0 {name=p8 lab=VDDA}
+C {devices/ipin.sym} 780 -70 0 0 {name=p12 lab=GNDA}
+C {sky130_fd_pr/pfet_01v8.sym} 230 -700 0 0 {name=M6
+L=0.15
+W=2
+nf=2
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=pfet_01v8
+spiceprefix=X
+}
+C {sky130_fd_pr/nfet_01v8.sym} 530 -320 0 0 {name=M8
+L=0.15
+W=1
+nf=1 
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=nfet_01v8
+spiceprefix=X
+}
+C {devices/ipin.sym} 360 -490 0 0 {name=p1 lab=D2}

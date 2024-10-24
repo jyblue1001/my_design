@@ -6,15 +6,15 @@ V {}
 S {}
 E {}
 B 2 100 -1050 1150 -820 {flags=graph
-y1=-0.047
-y2=1.9
+y1=0
+y2=1.8
 ypos1=0
 ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=1.2398546e-08
-x2=1.6592849e-08
+x1=1.2369522e-08
+x2=1.4144351e-08
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -42,7 +42,7 @@ linewidth_mult=2
 
 
 color=4
-node=ck1}
+node=ck}
 B 2 100 -570 1150 -340 {flags=graph
 y1=-0.2
 y2=2.1
@@ -51,8 +51,8 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=1.2398546e-08
-x2=1.6592849e-08
+x1=1.2369522e-08
+x2=1.4144351e-08
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -90,15 +90,15 @@ linewidth_mult=2
 color=5
 node=q1_b}
 B 2 100 -810 1150 -580 {flags=graph
-y1=-0.12
-y2=2
+y1=-0.047
+y2=1.9
 ypos1=0
 ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=1.2398546e-08
-x2=1.6592849e-08
+x1=1.2369522e-08
+x2=1.4144351e-08
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -140,8 +140,8 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=1.2398546e-08
-x2=1.6592849e-08
+x1=1.2369522e-08
+x2=1.4144351e-08
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -185,6 +185,229 @@ linewidth_mult=2
 
 color=5
 node=q2_b}
+B 2 100 -90 1150 140 {flags=graph
+y1=-0.00028
+y2=0.00043
+ypos1=0
+ypos2=2
+divy=5
+subdivy=4
+unity=1
+x1=1.2369522e-08
+x2=1.4144351e-08
+divx=5
+subdivx=4
+xlabmag=1.0
+ylabmag=1.0
+
+
+dataset=-1
+unitx=1
+logx=0
+logy=0
+
+
+
+
+
+
+
+
+
+
+
+linewidth_mult=2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+color=4
+node=x1.power}
+B 2 100 150 1150 380 {flags=graph
+y1=-0.00027
+y2=0.00041
+ypos1=0
+ypos2=2
+divy=5
+subdivy=4
+unity=1
+x1=1.2369522e-08
+x2=1.4144351e-08
+divx=5
+subdivx=4
+xlabmag=1.0
+ylabmag=1.0
+
+
+dataset=-1
+unitx=1
+logx=0
+logy=0
+
+
+
+
+
+
+
+
+
+
+
+linewidth_mult=2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+color=4
+node=x2.power}
+B 2 100 390 1150 620 {flags=graph
+y1=-9.2e-05
+y2=0.00037
+ypos1=0
+ypos2=2
+divy=5
+subdivy=4
+unity=1
+x1=1.2369522e-08
+x2=1.4144351e-08
+divx=5
+subdivx=4
+xlabmag=1.0
+ylabmag=1.0
+
+
+dataset=-1
+unitx=1
+logx=0
+logy=0
+
+
+
+
+
+
+
+
+
+
+
+linewidth_mult=2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+color=4
+node=x3.power}
+B 2 100 630 1150 860 {flags=graph
+y1=-0.00055
+y2=0.00064
+ypos1=0
+ypos2=2
+divy=5
+subdivy=4
+unity=1
+x1=1.2369522e-08
+x2=1.4144351e-08
+divx=5
+subdivx=4
+xlabmag=1.0
+ylabmag=1.0
+
+
+dataset=-1
+unitx=1
+logx=0
+logy=0
+
+
+
+
+
+
+
+
+
+
+
+linewidth_mult=2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+color=5
+node="\\"x1.power x2.power + x3.power +\\""}
 N 1770 -820 1820 -820 {
 lab=CK1_b}
 N 1490 -960 1570 -960 {
@@ -233,32 +456,24 @@ C {devices/code.sym} 320 -1230 0 0 {name=Stimuli only_toplevel=false value="
 .option wnflag=1
 .option savecurrents
 
-.save
-+@m.xm1.msky130_fd_pr__pfet_01v8[gm]
-+@m.xm2.msky130_fd_pr__nfet_01v8[gm]
-+@m.xm3.msky130_fd_pr__pfet_01v8[gm]
-+@m.xm4.msky130_fd_pr__nfet_01v8[gm]
-+@m.xm4_c.msky130_fd_pr__pfet_01v8[gm]
-+@m.xm5.msky130_fd_pr__nfet_01v8[gm]
-+@m.xm6.msky130_fd_pr__pfet_01v8[gm]
-+@m.xm7.msky130_fd_pr__pfet_01v8[gm]
-+@m.xm7_c.msky130_fd_pr__nfet_01v8[gm]
-+@m.xm8.msky130_fd_pr__nfet_01v8[gm]
-
 *.ic v(d)=0
 *.ic v(q)=0
 *.ic v(q1)=0
 
+.probe p(x1) p(x2) p(x3)
+
 .control
 
-  save v(d1) (q1) v(q1_b) v(q2_b) v(ck) v(ck1) v(ck1_b)
-  * save all
+  * save v(d1) (q1) v(q1_b) v(q2_b) v(ck)
+  save all
   * tran 0.1n 1u
-  tran 1p 20n
+  tran 0.05p 20n
 
   remzerovec
+  *linearize v(ck) v(d1) (q1) v(q1_b) v(q2_b) p(x1:power) p(x2:power) p(x3:power)
   write tb_TSPC_FF_comp_sw_divide3_7.raw
-  * set appendwrite
+  wrdata /foss/designs/my_design/projects/pll/divider/xschem_ngspice/tb_TSPC_FF_comp_sw_divide3_7.txt p(x1:power) p(x2:power) p(x3:power)
+  set appendwrite
 
 .endc
 
