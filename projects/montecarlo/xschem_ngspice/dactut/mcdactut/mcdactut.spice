@@ -1,0 +1,135 @@
+** sch_path: /foss/designs/my_design/projects/montecarlo/xschem_ngspice/dactut/mcdactut/mcdactut.sch
+**.subckt mcdactut
+B1 GND net1 I={Iref}*v(b0)
+XR1 net1 GND gaussres nom=10k
+Vb0 b0 GND 1
+XR2 net2 net1 gaussres nom=10k
+B2 GND net2 I={Iref}*v(b1)
+XR3 net2 GND gaussres nom=20k
+Vb1 b1 GND 1
+XR4 net3 net2 gaussres nom=10k
+B3 GND net3 I={Iref}*v(b2)
+XR5 net3 GND gaussres nom=20k
+Vb2 b2 GND 1
+XR6 net4 net3 gaussres nom=10k
+B4 GND net4 I={Iref}*v(b3)
+XR7 net4 GND gaussres nom=20k
+Vb3 b3 GND 1
+XR8 net5 net4 gaussres nom=10k
+B5 GND net5 I={Iref}*v(b4)
+XR9 net5 GND gaussres nom=20k
+Vb4 b4 GND 1
+XR10 net6 net5 gaussres nom=10k
+B6 GND net6 I={Iref}*v(b5)
+XR11 net6 GND gaussres nom=20k
+Vb5 b5 GND 1
+XR12 Vout net6 gaussres nom=10k
+B7 GND Vout I={Iref}*v(b6)
+XR13 Vout GND gaussres nom=10k
+Vb6 b6 GND 1
+Viout Vout net7 0
+.save i(viout)
+**** begin user architecture code
+
+
+
+.option wnflag=1
+
+.subckt gaussres pos neg
+.param nom=1k cv=0.005
+R1 pos neg {nom + MC_MM_SWITCH*AGAUSS(0,1,1)*cv*nom}
+.ends
+
+.option wnflag=1
+
+.param Iref=100u
+
+.control
+  let runs = 10
+  let run = 1
+  while run <= runs
+    set appendwrite = FALSE
+    let code = 0
+    while code < 128
+      if code eq 0
+        let b0 = 0
+      else
+        let b0 = code % 2
+      end
+
+      if floor(code / 2) eq 0
+        let b1 = 0
+      else
+        let b1 = floor(code / 2) % 2
+      end
+
+      if floor(code / 4) eq 0
+        let b2 = 0
+      else
+        let b2 = floor(code / 4) % 2
+      end
+
+      if floor(code / 8) eq 0
+        let b3 = 0
+      else
+        let b3 = floor(code / 8) % 2
+      end
+
+      if floor(code / 16) eq 0
+        let b4 = 0
+      else
+        let b4 = floor(code / 16) % 2
+      end
+
+      if floor(code / 32) eq 0
+        let b5 = 0
+      else
+        let b5 = floor(code / 32) % 2
+      end
+
+      if floor(code / 64) eq 0
+        let b6 = 0
+      else
+        let b6 = floor(code / 64) % 2
+      end
+
+      alter vb0 $&b0
+      alter vb1 $&b1
+      alter vb2 $&b2
+      alter vb3 $&b3
+      alter vb4 $&b4
+      alter vb5 $&b5
+      alter vb6 $&b6
+      save all
+      op
+      write mcdactut.raw
+      save i(Viout)
+      if code eq 0
+        set appendwrite
+        set wr_vecnames = FALSE
+      end
+      let code = code + 1
+    end
+    reset
+    let run = run + 1
+  end
+  * quit
+.endc
+
+
+
+
+
+
+
+.param mc_mm_switch=1
+.param mc_pr_switch=0
+.include /foss/pdks/sky130A/libs.tech/ngspice/corners/tt.spice
+.include /foss/pdks/sky130A/libs.tech/ngspice/r+c/res_typical__cap_typical.spice
+.include /foss/pdks/sky130A/libs.tech/ngspice/r+c/res_typical__cap_typical__lin.spice
+.include /foss/pdks/sky130A/libs.tech/ngspice/corners/tt/specialized_cells.spice
+
+**** end user architecture code
+**.ends
+.GLOBAL GND
+.end

@@ -1,0 +1,48 @@
+
+Circuit 1 cell sky130_fd_pr__cap_mim_m3_1 and Circuit 2 cell sky130_fd_pr__cap_mim_m3_1 are black boxes.
+Equate elements:  no current cell.
+Device classes sky130_fd_pr__cap_mim_m3_1 and sky130_fd_pr__cap_mim_m3_1 are equivalent.
+
+Subcircuit summary:
+Circuit 1: mimcap_1pF.spice                |Circuit 2: mimcap_1pF_xschem.spice         
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__cap_mim_m3_1 (1)             |sky130_fd_pr__cap_mim_m3_1 (1)             
+**FLOATING (1)                             |(no matching element)                      
+Number of devices: 2 **Mismatch**          |Number of devices: 1 **Mismatch**          
+Number of nets: 3 **Mismatch**             |Number of nets: 2 **Mismatch**             
+---------------------------------------------------------------------------------------
+NET mismatches: Class fragments follow (with fanout counts):
+Circuit 1: mimcap_1pF.spice                |Circuit 2: mimcap_1pF_xschem.spice         
+
+---------------------------------------------------------------------------------------
+Net: bot                                   |(no matching net)                          
+  sky130_fd_pr__cap_mim_m3_1/2 = 1         |                                           
+  **FLOATING/top = 1                       |                                           
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: VSUBS                                 |Net: bot                                   
+  **FLOATING/bottom = 1                    |  sky130_fd_pr__cap_mim_m3_1/2 = 1         
+                                           |                                           
+Net: top                                   |Net: top                                   
+  sky130_fd_pr__cap_mim_m3_1/1 = 1         |  sky130_fd_pr__cap_mim_m3_1/1 = 1         
+---------------------------------------------------------------------------------------
+DEVICE mismatches: Class fragments follow (with node fanout counts):
+Circuit 1: mimcap_1pF.spice                |Circuit 2: mimcap_1pF_xschem.spice         
+
+---------------------------------------------------------------------------------------
+Instance: **FLOATING:0                     |(no matching instance)                     
+  top = 2                                  |                                           
+  bottom = 1                               |                                           
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Instance: sky130_fd_pr__cap_mim_m3_1:0     |Instance: sky130_fd_pr__cap_mim_m3_1:C1    
+  1 = 1                                    |  1 = 1                                    
+  2 = 2                                    |  2 = 1                                    
+---------------------------------------------------------------------------------------
+Netlists do not match.
+Cells have no pins;  pin matching not needed.
+Device classes mimcap_1pF.spice and mimcap_1pF_xschem.spice are equivalent.
+
+Final result: Netlists do not match.

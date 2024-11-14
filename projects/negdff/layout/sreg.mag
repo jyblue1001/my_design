@@ -1,0 +1,38 @@
+magic
+tech sky130A
+timestamp 1723467390
+<< locali >>
+rect 425 865 465 905
+rect 950 865 990 905
+rect 1475 865 1515 905
+rect 2000 865 2040 905
+<< metal1 >>
+rect -195 535 -175 850
+rect -195 450 -175 470
+rect -195 95 -175 410
+rect -195 0 10 40
+use negdff3  negdff3_0
+timestamp 1723040051
+transform 1 0 75 0 1 -115
+box -75 115 460 1020
+use negdff3  negdff3_1
+timestamp 1723040051
+transform 1 0 600 0 1 -115
+box -75 115 460 1020
+use negdff3  negdff3_2
+timestamp 1723040051
+transform 1 0 1125 0 1 -115
+box -75 115 460 1020
+use negdff3  negdff3_3
+timestamp 1723040051
+transform 1 0 1650 0 1 -115
+box -75 115 460 1020
+use sreginv  sreginv_0
+timestamp 1723040855
+transform 1 0 75 0 1 -115
+box -270 210 -65 985
+<< labels >>
+flabel metal1 -195 20 -195 20 7 FreeSans 80 0 -40 0 CLK
+flabel metal1 -195 255 -195 255 7 FreeSans 80 0 -40 0 GND
+flabel metal1 -195 690 -195 690 7 FreeSans 80 0 -40 0 VDD
+<< end >>

@@ -1,0 +1,9 @@
+* SPICE3 file created from long_channel.ext - technology: sky130A
+
+.subckt long_channel
+X0 a_2770_n3034# a_2770_n4080# a_n180_200# sky130_fd_pr__res_xhigh_po_0p69 l=3.19
+X1 a_n180_200# a_n10_n640# a_n110_n610# a_n180_200# sky130_fd_pr__nfet_01v8 ad=0.9 pd=4.9 as=1 ps=5 w=2 l=30
+X2 a_2570_n3534# a_2570_n4080# a_n180_200# sky130_fd_pr__res_xhigh_po_0p69 l=0.69
+X3 a_1450_n1760# a_n180_n3650# a_n180_200# a_n180_200# sky130_fd_pr__nfet_01v8 ad=1 pd=5 as=0.9 ps=4.9 w=2 l=31.75
+.ends
+

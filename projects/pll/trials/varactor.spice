@@ -1,0 +1,10 @@
+* SPICE3 file created from varactor.ext - technology: sky130A
+
+.subckt sky130_fd_pr__cap_var_lvt_VWVA55 a_n225_n265#
+X0 a_n33_n188# w_n151_n191# a_n225_n265# sky130_fd_pr__cap_var_lvt w=1 l=0.18
+.ends
+
+.subckt varactor
+Xsky130_fd_pr__cap_var_lvt_VWVA55_0 VSUBS sky130_fd_pr__cap_var_lvt_VWVA55
+.ends
+

@@ -1,0 +1,174 @@
+** sch_path: /foss/designs/my_design/projects/pll/divider/xschem_ngspice/tb_xcp_FF_nand_divide3.sch
+**.subckt tb_xcp_FF_nand_divide3
+VDD VDD GND 1.8
+V3 CK GND pulse(0 1.8 0ps 8.34ps 8.34ps 200.16ps 417ps)
+XM12 CK1 GND CK VDD sky130_fd_pr__pfet_01v8 L=0.15 W=4 nf=4 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM13 CK1 VDD CK GND sky130_fd_pr__nfet_01v8 L=0.15 W=2 nf=2 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM9 CK1_b CK VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=2 nf=2 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM10 CK1_b CK GND GND sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+x1 VDD D1 D1 D2 D2_b D1_b D1_b CK1_b CK1 GND xcp_FF_nand
+x2 VDD D1 D2 D2_b D1_b CK1_b CK1 GND xcp_FF
+**** begin user architecture code
+
+
+
+.include /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
+
+.option method=gear
+.option wnflag=1
+* .option savecurrents
+
+.save
++@m.x1.xm1.msky130_fd_pr__nfet_01v8[gm]
++@m.x1.xm2.msky130_fd_pr__nfet_01v8[gm]
++@m.x1.xm3.msky130_fd_pr__pfet_01v8[gm]
++@m.x1.xm4.msky130_fd_pr__pfet_01v8[gm]
++@m.x1.xm5.msky130_fd_pr__nfet_01v8[gm]
++@m.x2.xm1.msky130_fd_pr__nfet_01v8[gm]
++@m.x2.xm2.msky130_fd_pr__nfet_01v8[gm]
++@m.x2.xm3.msky130_fd_pr__pfet_01v8[gm]
++@m.x2.xm4.msky130_fd_pr__pfet_01v8[gm]
++@m.x2.xm5.msky130_fd_pr__nfet_01v8[gm]
++@v.x1.vmeas
++@v.x1.vmeas1
++@v.x1.vmeas2
++@v.x5.vmeas
++@v.x5.vmeas1
++@v.x5.vmeas2
+
+
+*.ic v(b)=0
+
+.control
+
+  save v(d1) v(d1_b) v(d2) v(d2_b) v(q1) v(q1_b) v(ck) v(ck1) v(ck1_b)
+  * save all
+  *tran 0.1n 1u
+  tran 0.2p 10n
+  *ac dec 20 1 1T
+  remzerovec
+  write tb_xcp_FF_nand_divide3.raw
+
+.endc
+
+
+
+
+.param mc_mm_switch=0
+.param mc_pr_switch=0
+.include /foss/pdks/sky130A/libs.tech/ngspice/corners/tt.spice
+.include /foss/pdks/sky130A/libs.tech/ngspice/r+c/res_typical__cap_typical.spice
+.include /foss/pdks/sky130A/libs.tech/ngspice/r+c/res_typical__cap_typical__lin.spice
+.include /foss/pdks/sky130A/libs.tech/ngspice/corners/tt/specialized_cells.spice
+
+**** end user architecture code
+**.ends
+
+* expanding   symbol:  /foss/designs/my_design/projects/pll/divider/xschem_ngspice/xcp_FF_nand.sym # of pins=10
+** sym_path: /foss/designs/my_design/projects/pll/divider/xschem_ngspice/xcp_FF_nand.sym
+** sch_path: /foss/designs/my_design/projects/pll/divider/xschem_ngspice/xcp_FF_nand.sch
+.subckt xcp_FF_nand VDDA D1 Q D2 D2_b Q_b D1_b CK_b CK GNDA
+*.ipin VDDA
+*.opin Q
+*.ipin CK
+*.ipin GNDA
+*.ipin D2
+*.opin Q_b
+*.ipin CK_b
+*.ipin D2_b
+*.ipin D1
+*.ipin D1_b
+x2 VDDA Q_b Q A_b A CK_b GNDA xcp_latch
+x1 VDDA A_b A D1 D1_b D2_b D2 CK GNDA xcp_latch_nand
+.ends
+
+
+* expanding   symbol:  /foss/designs/my_design/projects/pll/divider/xschem_ngspice/xcp_FF.sym # of pins=8
+** sym_path: /foss/designs/my_design/projects/pll/divider/xschem_ngspice/xcp_FF.sym
+** sch_path: /foss/designs/my_design/projects/pll/divider/xschem_ngspice/xcp_FF.sch
+.subckt xcp_FF VDDA D Q Q_b D_b CK_b CK GNDA
+*.ipin VDDA
+*.opin Q
+*.ipin CK
+*.ipin GNDA
+*.opin Q_b
+*.ipin CK_b
+*.ipin D
+*.ipin D_b
+x2 VDDA Q_b Q A_b A CK_b GNDA xcp_latch
+x1 VDDA A_b A D_b D CK GNDA xcp_latch
+.ends
+
+
+* expanding   symbol:  /foss/designs/my_design/projects/pll/divider/xschem_ngspice/xcp_latch.sym # of pins=7
+** sym_path: /foss/designs/my_design/projects/pll/divider/xschem_ngspice/xcp_latch.sym
+** sch_path: /foss/designs/my_design/projects/pll/divider/xschem_ngspice/xcp_latch.sch
+.subckt xcp_latch VDDA Q_b Q D_b D CK GNDA
+*.ipin D
+*.opin Q
+*.ipin D_b
+*.ipin CK
+*.opin Q_b
+*.ipin VDDA
+*.ipin GNDA
+XM5 net1 CK GNDA GNDA sky130_fd_pr__nfet_01v8 L=0.15 W=2 nf=2 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM1 net3 D V_common GNDA sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM2 net2 D_b V_common GNDA sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+Vmeas V_common net1 0
+.save i(vmeas)
+Vmeas1 Q_b net3 0
+.save i(vmeas1)
+Vmeas2 Q net2 0
+.save i(vmeas2)
+XM3 Q_b Q VDDA VDDA sky130_fd_pr__pfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM4 Q Q_b VDDA VDDA sky130_fd_pr__pfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+.ends
+
+
+* expanding   symbol:  /foss/designs/my_design/projects/pll/divider/xschem_ngspice/xcp_latch_nand.sym # of pins=9
+** sym_path: /foss/designs/my_design/projects/pll/divider/xschem_ngspice/xcp_latch_nand.sym
+** sch_path: /foss/designs/my_design/projects/pll/divider/xschem_ngspice/xcp_latch_nand.sch
+.subckt xcp_latch_nand VDDA Q_b Q D1 D1_b D2_b D2 CK GNDA
+*.ipin D2
+*.opin Q
+*.ipin D1_b
+*.ipin CK
+*.opin Q_b
+*.ipin VDDA
+*.ipin GNDA
+*.ipin D1
+*.ipin D2_b
+XM5 net1 CK GNDA GNDA sky130_fd_pr__nfet_01v8 L=0.15 W=2 nf=2 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM1 net4 D2 V_common GNDA sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM2 net2 D1_b V_common GNDA sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+Vmeas V_common net1 0
+.save i(vmeas)
+Vmeas1 Q_b net3 0
+.save i(vmeas1)
+Vmeas2 Q net2 0
+.save i(vmeas2)
+XM3 Q_b Q VDDA VDDA sky130_fd_pr__pfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM4 Q Q_b VDDA VDDA sky130_fd_pr__pfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM6 net3 D1 net4 GNDA sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM7 net2 D2_b V_common GNDA sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+.ends
+
+.GLOBAL GND
+.GLOBAL VDD
+.end

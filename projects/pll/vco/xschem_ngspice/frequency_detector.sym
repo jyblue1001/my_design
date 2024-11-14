@@ -1,0 +1,22 @@
+v {xschem version=3.4.5 file_version=1.2
+}
+G {}
+K {type=primitive
+format="@name @pinlist @symname"
+template="name=XQ1"}
+}
+V {}
+S {}
+E {}
+L 4 -90 -50 90 -50 {}
+L 4 -90 50 90 50 {}
+L 4 -90 -50 -90 50 {}
+L 4 90 -50 90 50 {}
+L 4 90 0 110 0 {}
+L 4 -110 0 -90 0 {}
+B 5 107.5 -2.5 112.5 2.5 {name=freq2 dir=out}
+B 5 -112.5 -2.5 -107.5 2.5 {name=in dir=in}
+T {@symname} 92.5 -96 0 0 0.3 0.3 {}
+T {@name} 95 -72 0 0 0.2 0.2 {}
+T {freq2} 85 -4 0 1 0.2 0.2 {}
+T {in} -85 -4 0 0 0.2 0.2 {}

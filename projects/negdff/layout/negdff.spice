@@ -1,0 +1,27 @@
+* SPICE3 file created from negdff.ext - technology: sky130A
+
+X0 VP Q Qb1 VP sky130_fd_pr__pfet_01v8 ad=0.5 pd=3 as=0.25 ps=1.5 w=1 l=0.15
+X1 VN a_110_300# a_110_n130# VN sky130_fd_pr__nfet_01v8 ad=0.5 pd=3 as=0.25 ps=1.5 w=1 l=0.15
+X2 VN a_110_n130# a_110_300# VN sky130_fd_pr__nfet_01v8 ad=0.5 pd=3 as=0.25 ps=1.5 w=1 l=0.15
+X3 a_580_720# a_110_300# VP VP sky130_fd_pr__pfet_01v8 ad=0.125 pd=1.25 as=0.5 ps=3 w=1 l=0.15
+X4 a_110_n130# CLK a_30_n130# VN sky130_fd_pr__nfet_01v8 ad=0.25 pd=1.5 as=0.125 ps=1.25 w=1 l=0.15
+X5 Qb1 CLK a_580_1150# VP sky130_fd_pr__pfet_01v8 ad=0.25 pd=1.5 as=0.125 ps=1.25 w=1 l=0.15
+X6 a_110_n130# a_110_300# a_n100_1150# VP sky130_fd_pr__pfet_01v8 ad=0.5 pd=3 as=0.25 ps=1.5 w=1 l=0.15
+X7 VP Qb1 Q VP sky130_fd_pr__pfet_01v8 ad=0.5 pd=3 as=0.25 ps=1.5 w=1 l=0.15
+X8 a_110_300# CLK a_30_300# VN sky130_fd_pr__nfet_01v8 ad=0.25 pd=1.5 as=0.125 ps=1.25 w=1 l=0.15
+X9 Q Qb1 a_400_300# VN sky130_fd_pr__nfet_01v8 ad=0.5 pd=3 as=0.25 ps=1.5 w=1 l=0.15
+X10 Q CLK a_580_720# VP sky130_fd_pr__pfet_01v8 ad=0.25 pd=1.5 as=0.125 ps=1.25 w=1 l=0.15
+X11 Qb1 Q a_400_n130# VN sky130_fd_pr__nfet_01v8 ad=0.5 pd=3 as=0.25 ps=1.5 w=1 l=0.15
+X12 a_n100_1150# CLK VP VP sky130_fd_pr__pfet_01v8 ad=0.25 pd=1.5 as=0.25 ps=1.5 w=1 l=0.15
+X13 a_400_300# CLK VN VN sky130_fd_pr__nfet_01v8 ad=0.25 pd=1.5 as=0.25 ps=1.5 w=1 l=0.15
+X14 VN a_110_300# a_400_300# VN sky130_fd_pr__nfet_01v8 ad=0.25 pd=1.5 as=0.5 ps=3 w=1 l=0.15
+X15 a_400_n130# CLK VN VN sky130_fd_pr__nfet_01v8 ad=0.25 pd=1.5 as=0.25 ps=1.5 w=1 l=0.15
+X16 VP D a_n100_720# VP sky130_fd_pr__pfet_01v8 ad=0.25 pd=1.5 as=0.5 ps=3 w=1 l=0.15
+X17 VP Dn1 a_n100_1150# VP sky130_fd_pr__pfet_01v8 ad=0.25 pd=1.5 as=0.5 ps=3 w=1 l=0.15
+X18 a_30_300# D VN VN sky130_fd_pr__nfet_01v8 ad=0.125 pd=1.25 as=0.5 ps=3 w=1 l=0.15
+X19 VN a_110_n130# a_400_n130# VN sky130_fd_pr__nfet_01v8 ad=0.25 pd=1.5 as=0.5 ps=3 w=1 l=0.15
+X20 a_110_300# a_110_n130# a_n100_720# VP sky130_fd_pr__pfet_01v8 ad=0.5 pd=3 as=0.25 ps=1.5 w=1 l=0.15
+X21 a_580_1150# a_110_n130# VP VP sky130_fd_pr__pfet_01v8 ad=0.125 pd=1.25 as=0.5 ps=3 w=1 l=0.15
+X22 a_n100_720# CLK VP VP sky130_fd_pr__pfet_01v8 ad=0.25 pd=1.5 as=0.25 ps=1.5 w=1 l=0.15
+X23 a_30_n130# Dn2 VN VN sky130_fd_pr__nfet_01v8 ad=0.125 pd=1.25 as=0.5 ps=3 w=1 l=0.15
+C0 VP VN 3.05915f **FLOATING

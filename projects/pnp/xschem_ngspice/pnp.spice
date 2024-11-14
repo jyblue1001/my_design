@@ -1,0 +1,7 @@
+** sch_path: /foss/designs/my_design/projects/pnp/xschem_ngspice/pnp.sch
+**.subckt pnp
+XQ1 GND GND EMITTER sky130_fd_pr__pnp_05v5_W0p68L0p68
+XQ2 GND GND EMITTER sky130_fd_pr__pnp_05v5_W0p68L0p68
+**.ends
+.GLOBAL GND
+.end

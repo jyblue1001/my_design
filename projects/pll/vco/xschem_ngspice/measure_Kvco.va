@@ -1,0 +1,58 @@
+`include "constants.vams"
+`include "disciplines.vams"
+
+module measure_Kvco(in, freq2);
+    parameter real thresh = 0.9;
+    parameter integer dir = 1;
+
+    // Declare input and output as electrical with explicit direction
+    input electrical in;
+    output electrical freq2;
+
+    // Declare real variables (initialization inside the analog block)
+    real timing, t0, t, period, freq;
+    real v_old, v_new;
+
+    analog begin
+        // Initialize variables at the start of the simulation
+        @(initial_step) begin
+            timing = 0;
+            t0 = 0;
+            period = 0;
+            freq = 0;  // Initialize frequency inside analog block
+            v_old = V(in);  // Initialize v_old to the initial input voltage
+        end
+
+        // Update the input voltage
+        v_new = V(in);
+
+        // Check for threshold crossing
+        if (v_old < thresh && v_new >= thresh && dir == 1) begin
+            t = $abstime; // Capture the current time
+            if (timing) begin
+                period = t - t0;
+                if (period > 0) begin
+                    freq = 1 / period;  // Calculate frequency
+                end
+            end
+            t0 = t;  // Update t0 for the next period calculation
+            timing = 1;  // Enable timing for the next cycle
+        end else if (v_old > thresh && v_new <= thresh && dir == -1) begin
+            t = $abstime; // Capture the current time for falling edge
+            if (timing) begin
+                period = t - t0;
+                if (period > 0) begin
+                    freq = 1 / period;  // Calculate frequency on falling edge
+                end
+            end
+            t0 = t;  // Update t0 for the next period calculation
+            timing = 1;  // Enable timing for the next cycle
+        end
+
+        // Update the old value of the input signal for the next iteration
+        v_old = v_new;
+
+        // Output the frequency as a voltage
+        V(freq2) <+ freq;
+    end
+endmodule

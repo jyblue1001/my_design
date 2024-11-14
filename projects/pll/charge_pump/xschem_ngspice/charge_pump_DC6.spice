@@ -1,0 +1,128 @@
+** sch_path: /foss/designs/my_design/projects/pll/charge_pump/xschem_ngspice/charge_pump_DC6.sch
+**.subckt charge_pump_DC6
+XM1 DOWN_gate DOWN_gate GND GND sky130_fd_pr__nfet_01v8 L=0.15 W=5 nf=5 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM2 X DOWN_gate GND GND sky130_fd_pr__nfet_01v8 L=0.15 W=5 nf=5 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM3 VDD net1 net1 VDD sky130_fd_pr__pfet_01v8 L=0.15 W=10 nf=10 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+V1 VDD GND 1.8
+I0 VDD DOWN_gate 100u
+Vmeas1 net1 X 0
+.save i(vmeas1)
+XM4 UP_input UP_b net1 VDD sky130_fd_pr__pfet_01v8 L=0.15 W=4 nf=4 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM5 net2 UP VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=5 nf=5 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM6 net3 UP_input VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=10 nf=10 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+Vmeas2 net3 net5 0
+.save i(vmeas2)
+XM7 DOWN_input DOWN DOWN_gate GND sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM8 DOWN_input DOWN_b GND GND sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+Vmeas3 net5 net4 0
+.save i(vmeas3)
+XM9 net4 DOWN_input GND GND sky130_fd_pr__nfet_01v8 L=0.15 W=5 nf=5 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM12 DOWN_b GND DOWN_PFD_b VDD sky130_fd_pr__pfet_01v8 L=0.15 W=2 nf=2 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM13 DOWN_b VDD DOWN_PFD_b GND sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+x7 UP_PFD_b GND GND VDD VDD UP sky130_fd_sc_hd__inv_1
+x8 UP_PFD GND GND VDD VDD UP_PFD_b sky130_fd_sc_hd__inv_1
+x9 DOWN_PFD GND GND VDD VDD DOWN_PFD_b sky130_fd_sc_hd__inv_1
+x3 UP GND GND VDD VDD UP_b sky130_fd_sc_hd__inv_2
+x1 DOWN_b GND GND VDD VDD DOWN sky130_fd_sc_hd__inv_2
+V3 UP_PFD GND 1.8
+V5 DOWN_PFD GND 1.8
+V2 VCP GND 1.8
+Vmeas4 net5 VCP 0
+.save i(vmeas4)
+XC1 DOWN DOWN_input sky130_fd_pr__cap_mim_m3_1 W=1.5 L=1 MF=1 m=1
+XC2 UP_input UP_b sky130_fd_pr__cap_mim_m3_1 W=6 L=1 MF=1 m=1
+**** begin user architecture code
+
+.param mc_mm_switch=0
+.param mc_pr_switch=0
+.include /foss/pdks/sky130A/libs.tech/ngspice/corners/tt.spice
+.include /foss/pdks/sky130A/libs.tech/ngspice/r+c/res_typical__cap_typical.spice
+.include /foss/pdks/sky130A/libs.tech/ngspice/r+c/res_typical__cap_typical__lin.spice
+.include /foss/pdks/sky130A/libs.tech/ngspice/corners/tt/specialized_cells.spice
+
+
+
+
+.include /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
+
+.option method=gear trtol1
+.option wnflag=1
+* .option savecurrents
+
+* .temp = 75
+
+* .ic v(vout) = 0
+
+.save
++v(up_pfd)
++v(down_pfd)
++v(up_pfd_b)
++v(down_pfd_b)
++v(up)
++v(up_b)
++v(down)
++v(down_b)
++v(v2)
++v(x)
++v(vcp)
++v(up_input)
++v(down_input)
++v(down_gate)
++v(opamp_out)
++v(x2.p_bias)
++v(x2.n_bias)
++v(x2.v_common_p)
++v(x2.v_common_n)
++v(x2.p_left)
++v(x2.p_right)
++v(x2.n_left)
++v(x2.n_right)
++v(f_ref)
++v(f_vco)
++v(x4.qa)
++v(x4.qa_b)
++v(x4.qb)
++v(x4.qb_b)
++v(x4.qa)
++v(x4.e)
++v(x4.e_b)
++v(x4.f)
++v(x4.f_b)
++v(x4.before_reset)
++v(x4.reset)
+
+
+.control
+  * save v(up_pfd) v(down_pfd) v(up_pfd_b) v(down_pfd_b) v(up) v(up_b) v(down) v(down_b) v(x) v(vout) v(up_input) v(down_input)
+  * save all
+
+  * tran 1ns 10us
+  dc v2 0 1.8 0.01 v3 0 1.8 1.8
+  remzerovec
+  write charge_pump_DC6.raw
+  * wrdata /foss/designs/my_design/projects/pll/pfd/xschem_ngspice/charge_pump2_QA.txt v(osc)
+  set appendwrite
+
+.endc
+
+
+
+
+
+
+**** end user architecture code
+**.ends
+.GLOBAL VDD
+.GLOBAL GND
+.end

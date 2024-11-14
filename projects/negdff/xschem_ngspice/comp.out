@@ -1,0 +1,27 @@
+
+Circuit 1 cell sky130_fd_pr__nfet_01v8 and Circuit 2 cell sky130_fd_pr__nfet_01v8 are black boxes.
+Equate elements:  no current cell.
+Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__pfet_01v8 and Circuit 2 cell sky130_fd_pr__pfet_01v8 are black boxes.
+Equate elements:  no current cell.
+Device classes sky130_fd_pr__pfet_01v8 and sky130_fd_pr__pfet_01v8 are equivalent.
+Flattening unmatched subcell negdff2 in circuit sreg.spice (0)(4 instances)
+Flattening unmatched subcell inverter in circuit sreg.spice (0)(1 instance)
+Flattening unmatched subcell sreginv in circuit sreg_layout.spice (1)(1 instance)
+Flattening unmatched subcell negdff3 in circuit sreg_layout.spice (1)(4 instances)
+
+Subcircuit summary:
+Circuit 1: sreg.spice                      |Circuit 2: sreg_layout.spice               
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_01v8 (49)               |sky130_fd_pr__nfet_01v8 (49)               
+sky130_fd_pr__pfet_01v8 (49)               |sky130_fd_pr__pfet_01v8 (49)               
+Number of devices: 98                      |Number of devices: 98                      
+Number of nets: 53                         |Number of nets: 53                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+Cells have no pins;  pin matching not needed.
+Device classes sreg.spice and sreg_layout.spice are equivalent.
+
+Final result: Circuits match uniquely.
+.

@@ -1,0 +1,12 @@
+* SPICE3 file created from resistor200k.ext - technology: sky130A
+
+X0 FreeSans a_0_n440# GND sky130_fd_pr__res_xhigh_po_0p35 l=3.51
+X1 a_2170_670# a_1860_n440# GND sky130_fd_pr__res_xhigh_po_0p35 l=3.51
+X2 bot a_2480_n440# GND sky130_fd_pr__res_xhigh_po_0p35 l=3.51
+X3 a_1550_670# a_1240_n440# GND sky130_fd_pr__res_xhigh_po_0p35 l=3.51
+X4 a_310_670# a_0_n440# GND sky130_fd_pr__res_xhigh_po_0p35 l=3.51
+X5 a_930_670# a_620_n440# GND sky130_fd_pr__res_xhigh_po_0p35 l=3.51
+X6 a_2170_670# a_2480_n440# GND sky130_fd_pr__res_xhigh_po_0p35 l=3.51
+X7 a_930_670# a_1240_n440# GND sky130_fd_pr__res_xhigh_po_0p35 l=3.51
+X8 a_1550_670# a_1860_n440# GND sky130_fd_pr__res_xhigh_po_0p35 l=3.51
+X9 a_310_670# a_620_n440# GND sky130_fd_pr__res_xhigh_po_0p35 l=3.51

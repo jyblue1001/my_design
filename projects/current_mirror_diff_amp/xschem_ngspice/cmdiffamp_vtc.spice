@@ -1,0 +1,26 @@
+** sch_path: /foss/designs/my_design/projects/current_mirror_diff_amp/xschem_ngspice/cmdiffamp_vtc.sch
+**.subckt cmdiffamp_vtc
+X1 Vin Vref Vout VDD GND Vb cmdiffamp
+Vin Vin GND 0.5
+Vref Vref GND 0.5
+Vdd VDD GND 1.8
+ib Vb GND 1u
+C1 Vout GND 2p m=1
+**** begin user architecture code
+
+
+
+.lib /foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+
+.include /foss/designs/my_design/projects/current_mirror_diff_amp/xschem_ngspice/cmdiffamp.spice
+
+.control
+dc Vin 0 1.8 0.001 Vref 0.25 0.75 0.25
+plot v(Vout)
+.endc
+
+**** end user architecture code
+**.ends
+.GLOBAL VDD
+.GLOBAL GND
+.end

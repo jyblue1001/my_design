@@ -1,0 +1,46 @@
+** sch_path: /foss/designs/my_design/projects/montecarlo/xschem_ngspice/mcvdivider/mcvdivider.sch
+**.subckt mcvdivider
+Vin net1 GND 1
+XR1 Vout net1 gaussres nom=1k
+XR2 GND Vout gaussres nom=1k
+**** begin user architecture code
+
+.param MC_SWITCH=1.0
+.subckt gaussres pos neg
+.param nom=1k cv=0.005
+R1 pos neg {nom + MC_SWITCH*AGAUSS(0,1,1)*cv*nom}
+.ends
+
+.option wnflag=1
+
+
+
+
+.control
+
+
+let mc_runs=10
+let run=1
+
+dowhile run <= mc_runs
+  dc vin 0 1 0.01
+  wrdata /foss/designs/my_design/projects/montecarlo/xschem_ngspice/mcvdivider/mcvdivider{$&run}.txt v(Vout)
+  reset
+  let run = run + 1
+end
+.endc
+
+
+
+
+
+
+.param mc_mm_switch=0
+.param mc_pr_switch=1
+.include /foss/pdks/sky130A/libs.tech/ngspice/parameters/critical.spice
+.include /foss/pdks/sky130A/libs.tech/ngspice/parameters/montecarlo.spice
+
+**** end user architecture code
+**.ends
+.GLOBAL GND
+.end

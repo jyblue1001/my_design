@@ -1,0 +1,58 @@
+** sch_path: /foss/designs/my_design/projects/pll/pfd/xschem_ngspice/phase_frequency_detector.sch
+**.subckt phase_frequency_detector
+x1 F_REF QA GND GND VPWR VPWR QA_b sky130_fd_sc_hd__nor2_1
+x2 QA_b E GND GND VPWR VPWR QA sky130_fd_sc_hd__nor2_1
+x3 QA_b E_b GND GND VPWR VPWR E sky130_fd_sc_hd__nor2_1
+x4 E Reset GND GND VPWR VPWR E_b sky130_fd_sc_hd__nor2_1
+x5 F_VCO QB GND GND VPWR VPWR QB_b sky130_fd_sc_hd__nor2_1
+x6 QB_b F GND GND VPWR VPWR QB sky130_fd_sc_hd__nor2_1
+x7 QB_b F_b GND GND VPWR VPWR F sky130_fd_sc_hd__nor2_1
+x8 F Reset GND GND VPWR VPWR F_b sky130_fd_sc_hd__nor2_1
+x9 QA QB GND GND VPWR VPWR before_Reset sky130_fd_sc_hd__nand2_1
+x10 before_Reset GND GND VPWR VPWR Reset sky130_fd_sc_hd__inv_1
+V1 F_REF GND pulse(0 1.8 0 0.25ns 0.25ns 25ns 50ns)
+V2 F_VCO GND pulse(0 1.8 0 0.25ns 0.25ns 24.875ns 49.75ns)
+VDD VPWR GND 1.8
+**** begin user architecture code
+
+.param mc_mm_switch=0
+.param mc_pr_switch=0
+.include /foss/pdks/sky130A/libs.tech/ngspice/corners/tt.spice
+.include /foss/pdks/sky130A/libs.tech/ngspice/r+c/res_typical__cap_typical.spice
+.include /foss/pdks/sky130A/libs.tech/ngspice/r+c/res_typical__cap_typical__lin.spice
+.include /foss/pdks/sky130A/libs.tech/ngspice/corners/tt/specialized_cells.spice
+
+
+
+
+* .lib /foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+.include /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
+
+
+.option wnflag=1
+.option method=gear trtol=1
+
+* .ic v(osc)=0
+
+* .temp = 75
+
+.control
+
+    save all
+    tran 1ns 10us
+    remzerovec
+    write phase_frequency_detector.raw
+    * wrdata /foss/designs/my_design/projects/pll/pfd/xschem_ngspice/phase_frequency_detector.txt
+    set appendwrite
+
+.endc
+
+
+
+
+
+
+**** end user architecture code
+**.ends
+.GLOBAL GND
+.end

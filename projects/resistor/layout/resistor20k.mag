@@ -1,0 +1,25 @@
+magic
+tech sky130A
+timestamp 1725170164
+<< psubdiff >>
+rect -215 160 -165 175
+rect -215 40 -200 160
+rect -180 40 -165 160
+rect -215 25 -165 40
+<< psubdiffcont >>
+rect -200 40 -180 160
+<< xpolycontact >>
+rect 0 335 35 555
+rect 0 -220 35 0
+<< xpolyres >>
+rect 0 0 35 335
+<< locali >>
+rect -210 160 -170 170
+rect -210 40 -200 160
+rect -180 40 -170 160
+rect -210 30 -170 40
+<< labels >>
+flabel xpolycontact 20 -220 20 -220 5 FreeSans 160 0 0 -80 bot
+flabel locali -190 30 -190 30 5 FreeSans 160 0 0 -80 GND
+flabel xpolycontact 20 555 20 555 1 FreeSans 160 0 0 80 top
+<< end >>

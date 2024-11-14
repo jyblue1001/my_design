@@ -1,0 +1,20 @@
+
+Circuit 1 cell sky130_fd_pr__pnp_05v5_W0p68L0p68 and Circuit 2 cell sky130_fd_pr__pnp_05v5_W0p68L0p68 are black boxes.
+Equate elements:  no current cell.
+Device classes sky130_fd_pr__pnp_05v5_W0p68L0p68 and sky130_fd_pr__pnp_05v5_W0p68L0p68 are equivalent.
+
+Class pnp.spice (0):  Merged 1 parallel devices.
+Class pnp_layout.spice (1):  Merged 1 parallel devices.
+Subcircuit summary:
+Circuit 1: pnp.spice                       |Circuit 2: pnp_layout.spice                
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pnp_05v5_W0p68L0p68 (2->1)   |sky130_fd_pr__pnp_05v5_W0p68L0p68 (2->1)   
+Number of devices: 1                       |Number of devices: 1                       
+Number of nets: 2                          |Number of nets: 2                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+Cells have no pins;  pin matching not needed.
+Device classes pnp.spice and pnp_layout.spice are equivalent.
+
+Final result: Circuits match uniquely.
+.

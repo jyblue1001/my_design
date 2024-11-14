@@ -1,0 +1,57 @@
+`include "constants.vams"
+`include "disciplines.vams"
+
+module measure_Kvco(in, freq2);
+    parameter real thresh = 0.9;
+    parameter integer dir = 1;
+
+    // Declare input and output as electrical with explicit direction
+    input electrical in;
+    output electrical freq2;
+
+    // Change integer to real for compatibility with NGSPICE
+    real timing;
+    real t0, t, period, freq;
+    real v_old, v_new;
+
+    analog begin
+        // Ensure 'dir' is either 1 or -1
+        if (dir != 1 && dir != -1) begin
+            $strobe("Error: dir must be either 1 or -1");
+            $finish;
+        end
+
+        // Initialize variables at the start of the simulation
+        if ($abstime == 0) begin
+            timing = 0;
+            t0 = 0;
+            period = 0;
+            freq = 0;    // Initialize freq
+            v_old = V(in);
+        end
+
+        // Update the input voltage
+        v_new = V(in);
+
+        // Check for threshold crossing
+        if ((v_old < thresh && v_new >= thresh && dir == 1) ||
+            (v_old > thresh && v_new <= thresh && dir == -1)) begin
+
+            t = $abstime; // Capture the current time
+            if (timing) begin
+                period = t - t0;
+                if (period > 0) begin
+                    freq = 1 / period;
+                end
+            end
+            t0 = t;
+            timing = 1;
+        end
+
+        // Update the old value of the input signal
+        v_old = v_new;
+
+        // Output the frequency as a voltage
+        V(freq2) <+ freq;
+    end
+endmodule
