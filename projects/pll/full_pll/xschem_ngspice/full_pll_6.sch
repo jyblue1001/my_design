@@ -6,15 +6,15 @@ V {}
 S {}
 E {}
 B 2 160 -3390 5790 -1840 {flags=graph
-y1=-0.00013
-y2=1.7
+y1=0.79
+y2=1.8
 ypos1=0
 ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=0
-x2=9e-06
+x1=1.1871855e-06
+x2=1.1982963e-06
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -58,8 +58,8 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=0
-x2=9e-06
+x1=1.1871855e-06
+x2=1.1982963e-06
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -149,21 +149,19 @@ N 4220 -4140 4220 -4080 {
 lab=V_CONT}
 N 4220 -3890 4220 -3830 {
 lab=GND}
-N 2310 -3960 2310 -3920 {
-lab=VDD_FM}
 N 2880 -3920 2960 -3920 {
-lab=VDD_FM}
+lab=VDD}
 C {devices/vsource.sym} 1320 -3890 0 0 {name=VDD value=1.8 savecurrent=false}
 C {devices/gnd.sym} 1320 -3860 0 0 {name=l1 lab=GND}
-C {devices/code.sym} 1100 -3960 0 0 {name=Stimuli only_toplevel=false value="
+C {devices/code.sym} 1100 -3970 0 0 {name=Stimuli only_toplevel=false value="
 
 .include /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
 
 .option method=gear
 .option wnflag=1
 *.option savecurrents
-.option trtol=1
-.option abstol=1e-13
+*.option trtol=1
+*.option abstol=1e-13
 
 .ic v(v_cont)=0
 
@@ -173,9 +171,9 @@ C {devices/code.sym} 1100 -3960 0 0 {name=Stimuli only_toplevel=false value="
     * tran 0.2p 9u 7u
     tran 20p 9u
     remzerovec
-    write full_pll_6_3.raw
-    linearize v(v_cont) v(v_osc) v(vdd_fm)
-    wrdata /foss/designs/my_design/projects/pll/full_pll/xschem_ngspice/full_pll_6_3.txt v(v_osc)
+    write full_pll_6.raw
+    linearize v(v_cont) v(v_osc)
+    wrdata /foss/designs/my_design/projects/pll/full_pll/xschem_ngspice/full_pll_6.txt v(v_osc)
     set appendwrite
  .endc
 
@@ -258,17 +256,14 @@ C {/foss/designs/my_design/projects/pll/divider/xschem_ngspice/inverter.sym} 302
 C {devices/gnd.sym} 3080 -3920 3 0 {name=l15 lab=GND}
 C {devices/lab_wire.sym} 2960 -4180 0 1 {name=p1 sig_type=std_logic lab=F_REF_INV}
 C {devices/lab_wire.sym} 3020 -4060 0 1 {name=p6 sig_type=std_logic lab=V_OUT120_INV}
-C {sky130_fd_pr/cap_mim_m3_1.sym} 4020 -4050 0 1 {name=C2 model=cap_mim_m3_1 W=45 L=100 MF=1 spiceprefix=X}
-C {sky130_fd_pr/cap_mim_m3_1.sym} 4220 -3920 0 1 {name=C1 model=cap_mim_m3_1 W=230 L=100 MF=1 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 4020 -4050 0 1 {name=C2 model=cap_mim_m3_1 W=68 L=13 MF=1 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 4220 -3920 0 1 {name=C1 model=cap_mim_m3_1 W=68 L=6.3 MF=1 spiceprefix=X}
 C {sky130_fd_pr/res_xhigh_po_0p35.sym} 4220 -4050 0 1 {name=R1
-L=4
+L=6.3
 model=res_xhigh_po_0p35
 spiceprefix=X
 mult=1}
-C {devices/gnd.sym} 4020 -3960 0 0 {name=l16 lab=GND}
+C {devices/gnd.sym} 4020 -3960 0 0 {name=l16 lab=GND
+L=13}
 C {devices/gnd.sym} 4220 -3830 0 0 {name=l18 lab=GND}
-C {devices/gnd.sym} 2310 -3860 0 0 {name=l19 lab=GND}
-C {devices/lab_pin.sym} 2310 -3960 0 1 {name=p8 sig_type=std_logic lab=VDD_FM}
-C {devices/vsource.sym} 2310 -3890 0 0 {name=V2 value="sin(1.8 10m 1Meg)" savecurrent=false
-* }
-C {devices/lab_pin.sym} 2880 -3920 0 0 {name=p12 sig_type=std_logic lab=VDD_FM}
+C {devices/vdd.sym} 2880 -3920 3 0 {name=l7 lab=VDD}

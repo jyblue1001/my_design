@@ -2,7 +2,7 @@
 **.subckt tb_current_starved_VCO13
 Vdd VDD GND 1.8
 V1 V_CONT GND 0.962
-x1 VDD_FM V_OSC V_CONT GND current_starved_VCO5
+x1 VDD V_OSC V_CONT GND current_starved_VCO5
 x2 V_OUT V_OSC VDD GND TSPC_FF_comp_sw_divide2
 V2 VDD_FM GND sin(1.8 10m 1Meg)
 **** begin user architecture code
@@ -36,8 +36,8 @@ V2 VDD_FM GND sin(1.8 10m 1Meg)
 
   * dowhile v_cont_start <= v_cont_stop
     * alter v1 $&v_cont_start
-    * save v(v_osc) v(v_cont)
-    save v(v_osc) v(v_cont) v(vdd_fm)
+    save v(v_osc) v(v_cont)
+    * save v(v_osc) v(v_cont) v(vdd_fm)
     * save all
     * tran 0.2ps 100ns 10ns
     * tran 0.5ps 8us 5us
@@ -46,7 +46,7 @@ V2 VDD_FM GND sin(1.8 10m 1Meg)
     remzerovec
     * write tb_current_starved_VCO13_{$&v_cont_start}.raw
     write tb_current_starved_VCO13_2.raw
-    linearize v(v_osc) v(vdd_fm)
+    linearize v(v_osc)
     * set specwindow=blackman
     * fft v(v_osc)
     * let filename = v_cont_start * 100

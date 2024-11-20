@@ -60,7 +60,7 @@ XC2 VDD opamp_out sky130_fd_pr__cap_mim_m3_1 W=15 L=15 MF=1 m=1
 
 .option method=gear trtol1
 .option wnflag=1
-* .option savecurrents
+.option savecurrents
 
 * .temp = 75
 

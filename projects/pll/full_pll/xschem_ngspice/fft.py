@@ -68,7 +68,7 @@ zc_frequency = zero_crossing_freq(time_filtered, signal_filtered)
 plt.figure(figsize=(10, 10))
 
 plt.subplot(4, 1, 1)
-plt.plot(time_filtered, signal_filtered)
+plt.plot(time_filtered, filtered_data[1])
 plt.title('Time-Domain Signal After 7 µs')
 plt.xlabel('Time (s)')
 plt.ylabel('Amplitude')

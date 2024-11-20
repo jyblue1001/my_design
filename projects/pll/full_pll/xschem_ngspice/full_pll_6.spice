@@ -8,11 +8,10 @@ x3 F_REF_INV V_OUT120_INV VDD UP_PFD DOWN_PFD GND phase_frequency_detector
 x4 V_CONT VDD GND UP_PFD DOWN_PFD I_IN charge_pump
 I1 GND I_IN 100u
 x5 VDD F_REF F_REF_INV GND inverter
-x6 VDD_FM V_OUT120 V_OUT120_INV GND inverter
-XC2 V_CONT GND sky130_fd_pr__cap_mim_m3_1 W=45 L=100 MF=1 m=1
-XC1 net1 GND sky130_fd_pr__cap_mim_m3_1 W=230 L=100 MF=1 m=1
-XR1 net1 V_CONT GND sky130_fd_pr__res_xhigh_po_0p35 L=4 mult=1 m=1
-V2 VDD_FM GND sin(1.8 10m 1Meg)
+x6 VDD V_OUT120 V_OUT120_INV GND inverter
+XC2 V_CONT GND sky130_fd_pr__cap_mim_m3_1 W=68 L=13 MF=1 m=1
+XC1 net1 GND sky130_fd_pr__cap_mim_m3_1 W=68 L=6.3 MF=1 m=1
+XR1 net1 V_CONT GND sky130_fd_pr__res_xhigh_po_0p35 L=6.3 mult=1 m=1
 **** begin user architecture code
 
 
@@ -22,8 +21,8 @@ V2 VDD_FM GND sin(1.8 10m 1Meg)
 .option method=gear
 .option wnflag=1
 *.option savecurrents
-.option trtol=1
-.option abstol=1e-13
+*.option trtol=1
+*.option abstol=1e-13
 
 .ic v(v_cont)=0
 
@@ -33,9 +32,9 @@ V2 VDD_FM GND sin(1.8 10m 1Meg)
     * tran 0.2p 9u 7u
     tran 20p 9u
     remzerovec
-    write full_pll_6_3.raw
-    linearize v(v_cont) v(v_osc) v(vdd_fm)
-    wrdata /foss/designs/my_design/projects/pll/full_pll/xschem_ngspice/full_pll_6_3.txt v(v_osc)
+    write full_pll_6.raw
+    linearize v(v_cont) v(v_osc)
+    wrdata /foss/designs/my_design/projects/pll/full_pll/xschem_ngspice/full_pll_6.txt v(v_osc)
     set appendwrite
  .endc
 

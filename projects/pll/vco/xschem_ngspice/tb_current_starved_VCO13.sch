@@ -40,7 +40,7 @@ lab=V_CONT}
 N 1150 -330 1280 -330 {
 lab=V_OSC}
 N 1050 -470 1050 -430 {
-lab=VDD_FM}
+lab=VDD}
 N 1360 -430 1360 -390 {
 lab=VDD}
 N 1360 -270 1360 -230 {
@@ -119,8 +119,8 @@ C {devices/code.sym} 210 -408.75 0 0 {name=STIMULI only_toplevel=false value="
 
   * dowhile v_cont_start <= v_cont_stop
     * alter v1 $&v_cont_start
-    * save v(v_osc) v(v_cont) 
-    save v(v_osc) v(v_cont) v(vdd_fm)
+    save v(v_osc) v(v_cont) 
+    * save v(v_osc) v(v_cont) v(vdd_fm)
     * save all
     * tran 0.2ps 100ns 10ns
     * tran 0.5ps 8us 5us
@@ -129,7 +129,7 @@ C {devices/code.sym} 210 -408.75 0 0 {name=STIMULI only_toplevel=false value="
     remzerovec
     * write tb_current_starved_VCO13_\{$&v_cont_start\}.raw
     write tb_current_starved_VCO13_2.raw
-    linearize v(v_osc) v(vdd_fm)
+    linearize v(v_osc)
     * set specwindow=blackman
     * fft v(v_osc)
     * let filename = v_cont_start * 100
@@ -157,4 +157,4 @@ C {devices/gnd.sym} 670 -330 0 0 {name=l8 lab=GND}
 C {devices/lab_pin.sym} 670 -430 0 1 {name=p5 sig_type=std_logic lab=VDD_FM}
 C {devices/vsource.sym} 670 -360 0 0 {name=V2 value="sin(1.8 10m 1Meg)" savecurrent=false
 * }
-C {devices/lab_pin.sym} 1050 -470 0 1 {name=p6 sig_type=std_logic lab=VDD_FM}
+C {devices/vdd.sym} 1050 -470 0 0 {name=l1 lab=VDD}

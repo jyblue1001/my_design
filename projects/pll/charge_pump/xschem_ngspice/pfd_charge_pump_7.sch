@@ -7,7 +7,7 @@ S {}
 E {}
 B 2 940 -2260 1700 -1780 {flags=graph
 y1=0
-y2=0.00019
+y2=0.00018
 ypos1=0
 ypos2=2
 divy=5
@@ -148,7 +148,7 @@ linewidth_mult=5
 color="6 5"
 node="up_pfd
 down_pfd"}
-B 2 2050 670 2820 1030 {flags=graph
+B 2 40 -2090 810 -1730 {flags=graph
 y1=-0.093
 y2=1.9
 ypos1=0
@@ -185,8 +185,8 @@ color="6 5"
 node="up_input
 down_input"}
 B 2 2120 -2870 2970 -2210 {flags=graph
-y1=-8.1e-05
-y2=0.58
+y1=-0.042151456
+y2=0.65876329
 ypos1=0
 ypos2=2
 divy=5
@@ -218,7 +218,7 @@ linewidth_mult=5
 
 color=6
 node=vout}
-B 2 2050 0 2810 380 {flags=graph
+B 2 40 -2760 800 -2380 {flags=graph
 y1=-0.029
 y2=1.9
 ypos1=0
@@ -260,7 +260,7 @@ down_input
 
 
 x"}
-B 2 2050 400 2690 660 {flags=graph
+B 2 40 -2360 680 -2100 {flags=graph
 y1=-0.038
 y2=1.9
 ypos1=0
@@ -295,8 +295,8 @@ color="6 5"
 node="up_b
 down"}
 B 2 940 -2760 1700 -2280 {flags=graph
-y1=7.9969411e-05
-y2=0.00018372516
+y1=3.3e-05
+y2=0.66
 ypos1=0
 ypos2=2
 divy=5
@@ -670,10 +670,12 @@ N 1590 -1040 1590 -980 {
 lab=Vout}
 N 940 -990 940 -930 {
 lab=x}
+N 1580 -1340 1590 -1340 {
+lab=VDD}
 C {sky130_fd_pr/nfet_01v8.sym} 750 -220 0 1 {name=M1
-L=0.15
-W=5
-nf=5 
+L=0.3
+W=4
+nf=1 
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
@@ -685,9 +687,9 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {sky130_fd_pr/nfet_01v8.sym} 920 -220 0 0 {name=M2
-L=0.15
-W=5
-nf=5 
+L=0.3
+W=4
+nf=1 
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
@@ -700,8 +702,8 @@ spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8.sym} 960 -1340 2 0 {name=M3
 L=0.15
-W=10
-nf=10
+W=4
+nf=4
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
@@ -774,7 +776,7 @@ C {devices/code.sym} 960 128.75 0 0 {name=STIMULI only_toplevel=false value="
   * save v(up_pfd) v(down_pfd) v(up_pfd_b) v(down_pfd_b) v(up) v(up_b) v(down) v(down_b) v(x) v(vout) v(up_input) v(down_input)
   * save all
   
-  tran 0.02ns 1us
+  tran 0.05ns 1us
   * dc v2 0 1.8 0.01
   remzerovec
   write pfd_charge_pump_7.raw
@@ -821,8 +823,8 @@ spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8.sym} 1570 -1340 0 0 {name=M6
 L=0.15
-W=10
-nf=10
+W=4
+nf=4
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
@@ -866,9 +868,9 @@ spiceprefix=X
 C {devices/lab_wire.sym} 1410 -500 0 1 {name=p6 sig_type=std_logic lab=DOWN}
 C {devices/lab_wire.sym} 1050 -190 2 1 {name=p8 sig_type=std_logic lab=DOWN_b}
 C {sky130_fd_pr/nfet_01v8.sym} 1570 -270 0 0 {name=M9
-L=0.15
-W=5
-nf=5 
+L=0.3
+W=4
+nf=1 
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
