@@ -19,7 +19,7 @@ for filename in os.listdir(directory):
     # if filename.startswith('tb_current_starved_VCO10_') and filename.endswith('.txt'):
     # if filename.startswith('tb_current_starved_VCO11_') and filename.endswith('.txt'):
     # if filename.startswith('tb_current_starved_VCO12_') and filename.endswith('.txt'):
-    if filename.startswith('tb_current_starved_VCO13_2') and filename.endswith('.txt'):
+    if filename.startswith('tb_current_starved_VCO13_') and filename.endswith('.txt'):
         # Define CSV filename
         csv_filename = filename.replace('.txt', '.csv')
         csv_path = os.path.join(directory, csv_filename)

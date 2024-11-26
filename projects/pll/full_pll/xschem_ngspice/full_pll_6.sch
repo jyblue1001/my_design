@@ -6,15 +6,15 @@ V {}
 S {}
 E {}
 B 2 160 -3390 5790 -1840 {flags=graph
-y1=0.79
-y2=1.8
+y1=0.94
+y2=0.95
 ypos1=0
 ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=1.1871855e-06
-x2=1.1982963e-06
+x1=0
+x2=9e-06
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -48,55 +48,13 @@ logy=0
 
 linewidth_mult=2
 
-color=5
+
+
+
+
+
+color=4
 node=v_cont}
-B 2 160 -1700 5790 -150 {flags=graph
-y1=-0.046
-y2=1.8
-ypos1=0
-ypos2=2
-divy=5
-subdivy=4
-unity=1
-x1=1.1871855e-06
-x2=1.1982963e-06
-divx=5
-subdivx=4
-xlabmag=1.0
-ylabmag=1.0
-
-
-dataset=-1
-unitx=1
-logx=0
-logy=0
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-linewidth_mult=2
-
-
-
-color=6
-node=v_osc}
 N 3410 -3640 3480 -3640 {
 lab=V_OUT120}
 N 3660 -3640 4860 -3640 {
@@ -153,7 +111,7 @@ N 2880 -3920 2960 -3920 {
 lab=VDD}
 C {devices/vsource.sym} 1320 -3890 0 0 {name=VDD value=1.8 savecurrent=false}
 C {devices/gnd.sym} 1320 -3860 0 0 {name=l1 lab=GND}
-C {devices/code.sym} 1100 -3970 0 0 {name=Stimuli only_toplevel=false value="
+C {devices/code.sym} 1110 -3960 0 0 {name=Stimuli only_toplevel=false value="
 
 .include /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
 
@@ -167,9 +125,9 @@ C {devices/code.sym} 1100 -3970 0 0 {name=Stimuli only_toplevel=false value="
 
 .control
     * save v(v_cont) v(v_osc)
-    save v(v_cont) v(v_osc) v(vdd_fm)
+    save v(v_cont) v(v_osc)
     * tran 0.2p 9u 7u
-    tran 20p 9u
+    tran 5p 9u
     remzerovec
     write full_pll_6.raw
     linearize v(v_cont) v(v_osc)
@@ -178,7 +136,7 @@ C {devices/code.sym} 1100 -3970 0 0 {name=Stimuli only_toplevel=false value="
  .endc
 
 "}
-C {sky130_fd_pr/corner.sym} 940 -3950 0 0 {name=CORNER only_toplevel=false corner=tt
+C {sky130_fd_pr/corner.sym} 940 -3960 0 0 {name=CORNER only_toplevel=false corner=tt
 value="
 
 .include /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
@@ -256,10 +214,10 @@ C {/foss/designs/my_design/projects/pll/divider/xschem_ngspice/inverter.sym} 302
 C {devices/gnd.sym} 3080 -3920 3 0 {name=l15 lab=GND}
 C {devices/lab_wire.sym} 2960 -4180 0 1 {name=p1 sig_type=std_logic lab=F_REF_INV}
 C {devices/lab_wire.sym} 3020 -4060 0 1 {name=p6 sig_type=std_logic lab=V_OUT120_INV}
-C {sky130_fd_pr/cap_mim_m3_1.sym} 4020 -4050 0 1 {name=C2 model=cap_mim_m3_1 W=68 L=13 MF=1 spiceprefix=X}
-C {sky130_fd_pr/cap_mim_m3_1.sym} 4220 -3920 0 1 {name=C1 model=cap_mim_m3_1 W=68 L=6.3 MF=1 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 4020 -4050 0 1 {name=C2 model=cap_mim_m3_1 W=45 L=100 MF=1 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 4220 -3920 0 1 {name=C1 model=cap_mim_m3_1 W=230 L=100 MF=1 spiceprefix=X}
 C {sky130_fd_pr/res_xhigh_po_0p35.sym} 4220 -4050 0 1 {name=R1
-L=6.3
+L=4
 model=res_xhigh_po_0p35
 spiceprefix=X
 mult=1}

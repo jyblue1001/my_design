@@ -19,8 +19,8 @@ V2 VDD_FM GND sin(1.8 10m 1Meg)
 
 .option method=gear
 .option wnflag=1
-.option trtol=1
-.option abstol=1e-13
+* .option trtol=1
+* .option abstol=1e-13
 
 
 * .option savecurrents
@@ -31,32 +31,31 @@ V2 VDD_FM GND sin(1.8 10m 1Meg)
 
 .control
 
-  * let v_cont_start = 0.0
-  * let v_cont_stop = 1.9
+  let v_cont_start = 0.0
+  let v_cont_stop = 1.9
 
-  * dowhile v_cont_start <= v_cont_stop
-    * alter v1 $&v_cont_start
+  dowhile v_cont_start <= v_cont_stop
+    alter v1 $&v_cont_start
     save v(v_osc) v(v_cont)
     * save v(v_osc) v(v_cont) v(vdd_fm)
     * save all
     * tran 0.2ps 100ns 10ns
     * tran 0.5ps 8us 5us
-    * tran 0.2ps 9us 7us
-    tran 20ps 9us
+    tran 1ps 60ns
     remzerovec
-    * write tb_current_starved_VCO13_{$&v_cont_start}.raw
-    write tb_current_starved_VCO13_2.raw
+    write tb_current_starved_VCO13_{$&v_cont_start}.raw
+    * write tb_current_starved_VCO13_2.raw
     linearize v(v_osc)
     * set specwindow=blackman
     * fft v(v_osc)
-    * let filename = v_cont_start * 100
-    * wrdata /foss/designs/my_design/projects/pll/vco/xschem_ngspice/tb_current_starved_VCO13_{$&filename}.txt v(v_osc)
-    wrdata /foss/designs/my_design/projects/pll/vco/xschem_ngspice/tb_current_starved_VCO13_2.txt v(v_osc)
+    let filename = v_cont_start * 100
+    wrdata /foss/designs/my_design/projects/pll/vco/xschem_ngspice/tb_current_starved_VCO13_{$&filename}.txt v(v_osc)
+    * wrdata /foss/designs/my_design/projects/pll/vco/xschem_ngspice/tb_current_starved_VCO13_2.txt v(v_osc)
     set appendwrite
 
-    * reset
-    * let v_cont_start = v_cont_start + 0.1
-   * end
+    reset
+    let v_cont_start = v_cont_start + 0.1
+   end
 .endc
 
 
