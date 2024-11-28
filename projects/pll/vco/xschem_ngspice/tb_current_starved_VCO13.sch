@@ -6,15 +6,15 @@ V {}
 S {}
 E {}
 B 2 70 -1340 1990 -560 {flags=graph
-y1=-0.043
-y2=1.9
+y1=-0.13
+y2=2.1
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=6.7519033e-06
-x2=6.7548239e-06
+x1=1.1460519e-08
+x2=1.3522103e-08
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -30,9 +30,8 @@ logy=0
 
 linewidth_mult=3
 
-color="5 6"
-node="v_osc
-vdd_fm"}
+color=5
+node=v_osc}
 N 540 -430 540 -390 {
 lab=V_CONT}
 N 910 -330 950 -330 {
@@ -100,7 +99,7 @@ value="
 "}
 C {devices/code.sym} 210 -408.75 0 0 {name=STIMULI only_toplevel=false value="
 
-.option method=gear
+.option method=trap
 .option wnflag=1
 * .option trtol=1
 * .option abstol=1e-13
@@ -119,12 +118,13 @@ C {devices/code.sym} 210 -408.75 0 0 {name=STIMULI only_toplevel=false value="
 
   dowhile v_cont_start <= v_cont_stop
     alter v1 $&v_cont_start
-    save v(v_osc) v(v_cont) 
+    save v(v_osc) v(v_cont) v(v_out) 
     * save v(v_osc) v(v_cont) v(vdd_fm)
     * save all
     * tran 0.2ps 100ns 10ns
     * tran 0.5ps 8us 5us
-    tran 1ps 60ns
+    * tran 0.2ps 9us 7us
+    tran 1ps 30ns
     remzerovec
     write tb_current_starved_VCO13_\{$&v_cont_start\}.raw
     * write tb_current_starved_VCO13_2.raw

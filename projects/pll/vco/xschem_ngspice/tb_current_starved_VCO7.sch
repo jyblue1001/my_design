@@ -5,16 +5,16 @@ K {}
 V {}
 S {}
 E {}
-B 2 20 -1260 1120 -560 {flags=graph
-y1=-0.068
+B 2 20 -1250 2560 -560 {flags=graph
+y1=-0.094
 y2=2
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=1.5746177e-08
-x2=1.7395445e-08
+x1=2.0512265e-08
+x2=2.373349e-08
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -470,9 +470,9 @@ C {devices/vdd.sym} 710 -500 0 0 {name=l1 lab=VDD}
 C {devices/gnd.sym} 750 -90 0 0 {name=l2 lab=GND}
 C {sky130_fd_pr/nfet_01v8.sym} 620 -240 0 0 {name=M1
 L=0.15
-W=0.5
+W=0.43
 nf=1 
-mult=2
+mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
@@ -484,9 +484,9 @@ spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8.sym} 620 -340 0 0 {name=M2
 L=0.15
-W=1
+W=0.86
 nf=2
-mult=2
+mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
@@ -498,9 +498,9 @@ spiceprefix=X
 }
 C {sky130_fd_pr/nfet_01v8.sym} 810 -240 0 0 {name=M3
 L=0.15
-W=0.5
+W=0.43
 nf=1 
-mult=2
+mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
@@ -512,9 +512,9 @@ spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8.sym} 810 -340 0 0 {name=M4
 L=0.15
-W=1
+W=0.86
 nf=2
-mult=2
+mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
@@ -526,9 +526,9 @@ spiceprefix=X
 }
 C {sky130_fd_pr/nfet_01v8.sym} 1000 -240 0 0 {name=M5
 L=0.15
-W=0.5
+W=0.43
 nf=1 
-mult=2
+mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
@@ -540,9 +540,9 @@ spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8.sym} 1000 -340 0 0 {name=M6
 L=0.15
-W=1
+W=0.86
 nf=2
-mult=2
+mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
@@ -554,7 +554,7 @@ spiceprefix=X
 }
 C {sky130_fd_pr/nfet_01v8.sym} 620 -150 0 0 {name=M7
 L=0.15
-W=4
+W=8
 nf=8 
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -568,7 +568,7 @@ spiceprefix=X
 }
 C {sky130_fd_pr/nfet_01v8.sym} 810 -150 0 0 {name=M8
 L=0.15
-W=4
+W=8
 nf=8 
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -582,7 +582,7 @@ spiceprefix=X
 }
 C {sky130_fd_pr/nfet_01v8.sym} 1000 -150 0 0 {name=M9
 L=0.15
-W=4
+W=8
 nf=8 
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -596,7 +596,7 @@ spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8.sym} 620 -440 0 0 {name=M10
 L=0.15
-W=8
+W=16
 nf=16
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -610,7 +610,7 @@ spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8.sym} 810 -440 0 0 {name=M11
 L=0.15
-W=8
+W=16
 nf=16
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -624,7 +624,7 @@ spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8.sym} 1000 -440 0 0 {name=M12
 L=0.15
-W=8
+W=16
 nf=16
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -644,7 +644,7 @@ C {devices/vsource.sym} 170 -130 0 0 {name=Vcont value=0.9 savecurrent=false}
 C {devices/gnd.sym} 170 -100 0 0 {name=l5 lab=GND}
 C {sky130_fd_pr/pfet_01v8.sym} 520 -440 0 1 {name=M13
 L=0.15
-W=8
+W=16
 nf=16
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -659,7 +659,7 @@ spiceprefix=X
 C {sky130_fd_pr/nfet_01v8.sym} 480 -150 0 0 {name=M14
 L=0.15
 W=4
-nf=8 
+nf=4 
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
@@ -714,9 +714,9 @@ C {devices/lab_pin.sym} 500 -320 0 0 {name=p4 sig_type=std_logic lab=v1}
 C {devices/ammeter.sym} 500 -260 0 0 {name=Vmeas savecurrent=true spice_ignore=0}
 C {sky130_fd_pr/nfet_01v8.sym} 1190 -240 0 0 {name=M15
 L=0.15
-W=0.5
+W=0.43
 nf=1 
-mult=2
+mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
@@ -728,9 +728,9 @@ spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8.sym} 1190 -340 0 0 {name=M16
 L=0.15
-W=1
+W=0.86
 nf=2
-mult=2
+mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
@@ -742,7 +742,7 @@ spiceprefix=X
 }
 C {sky130_fd_pr/nfet_01v8.sym} 1190 -150 0 0 {name=M17
 L=0.15
-W=4
+W=8
 nf=8 
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -756,7 +756,7 @@ spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8.sym} 1190 -440 0 0 {name=M18
 L=0.15
-W=8
+W=16
 nf=16
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -770,9 +770,9 @@ spiceprefix=X
 }
 C {sky130_fd_pr/nfet_01v8.sym} 1380 -240 0 0 {name=M19
 L=0.15
-W=0.5
+W=0.43
 nf=1 
-mult=2
+mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
@@ -784,9 +784,9 @@ spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8.sym} 1380 -340 0 0 {name=M20
 L=0.15
-W=1
+W=0.86
 nf=2
-mult=2
+mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
@@ -798,7 +798,7 @@ spiceprefix=X
 }
 C {sky130_fd_pr/nfet_01v8.sym} 1380 -150 0 0 {name=M21
 L=0.15
-W=4
+W=8
 nf=8 
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -812,7 +812,7 @@ spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8.sym} 1380 -440 0 0 {name=M22
 L=0.15
-W=8
+W=16
 nf=16
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -826,9 +826,9 @@ spiceprefix=X
 }
 C {sky130_fd_pr/nfet_01v8.sym} 1570 -240 0 0 {name=M23
 L=0.15
-W=0.5
+W=0.43
 nf=1 
-mult=2
+mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
@@ -840,9 +840,9 @@ spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8.sym} 1570 -340 0 0 {name=M24
 L=0.15
-W=1
+W=0.86
 nf=2
-mult=2
+mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
@@ -854,7 +854,7 @@ spiceprefix=X
 }
 C {sky130_fd_pr/nfet_01v8.sym} 1570 -150 0 0 {name=M25
 L=0.15
-W=4
+W=8
 nf=8 
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -868,7 +868,7 @@ spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8.sym} 1570 -440 0 0 {name=M26
 L=0.15
-W=8
+W=16
 nf=16
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -882,9 +882,9 @@ spiceprefix=X
 }
 C {sky130_fd_pr/nfet_01v8.sym} 1760 -240 0 0 {name=M27
 L=0.15
-W=0.5
+W=0.43
 nf=1 
-mult=2
+mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
@@ -896,9 +896,9 @@ spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8.sym} 1760 -340 0 0 {name=M28
 L=0.15
-W=1
+W=0.86
 nf=2
-mult=2
+mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
@@ -910,7 +910,7 @@ spiceprefix=X
 }
 C {sky130_fd_pr/nfet_01v8.sym} 1760 -150 0 0 {name=M29
 L=0.15
-W=4
+W=8
 nf=8 
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -924,7 +924,7 @@ spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8.sym} 1760 -440 0 0 {name=M30
 L=0.15
-W=8
+W=16
 nf=16
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -938,9 +938,9 @@ spiceprefix=X
 }
 C {sky130_fd_pr/nfet_01v8.sym} 1950 -240 0 0 {name=M31
 L=0.15
-W=0.5
+W=0.43
 nf=1 
-mult=2
+mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
@@ -952,9 +952,9 @@ spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8.sym} 1950 -340 0 0 {name=M32
 L=0.15
-W=1
+W=0.86
 nf=2
-mult=2
+mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
@@ -966,7 +966,7 @@ spiceprefix=X
 }
 C {sky130_fd_pr/nfet_01v8.sym} 1950 -150 0 0 {name=M33
 L=0.15
-W=4
+W=8
 nf=8 
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -980,7 +980,7 @@ spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8.sym} 1950 -440 0 0 {name=M34
 L=0.15
-W=8
+W=16
 nf=16
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -994,9 +994,9 @@ spiceprefix=X
 }
 C {sky130_fd_pr/nfet_01v8.sym} 2140 -240 0 0 {name=M35
 L=0.15
-W=0.5
+W=0.43
 nf=1 
-mult=2
+mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
@@ -1008,9 +1008,9 @@ spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8.sym} 2140 -340 0 0 {name=M36
 L=0.15
-W=1
+W=0.86
 nf=2
-mult=2
+mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
@@ -1022,7 +1022,7 @@ spiceprefix=X
 }
 C {sky130_fd_pr/nfet_01v8.sym} 2140 -150 0 0 {name=M37
 L=0.15
-W=4
+W=8
 nf=8 
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -1036,7 +1036,7 @@ spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8.sym} 2140 -440 0 0 {name=M38
 L=0.15
-W=8
+W=16
 nf=16
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -1050,9 +1050,9 @@ spiceprefix=X
 }
 C {sky130_fd_pr/nfet_01v8.sym} 2330 -240 0 0 {name=M39
 L=0.15
-W=0.5
+W=0.43
 nf=1 
-mult=2
+mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
@@ -1064,9 +1064,9 @@ spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8.sym} 2330 -340 0 0 {name=M40
 L=0.15
-W=1
+W=0.86
 nf=2
-mult=2
+mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
@@ -1078,7 +1078,7 @@ spiceprefix=X
 }
 C {sky130_fd_pr/nfet_01v8.sym} 2330 -150 0 0 {name=M41
 L=0.15
-W=4
+W=8
 nf=8 
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -1092,7 +1092,7 @@ spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8.sym} 2330 -440 0 0 {name=M42
 L=0.15
-W=8
+W=16
 nf=16
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -1106,9 +1106,9 @@ spiceprefix=X
 }
 C {sky130_fd_pr/nfet_01v8.sym} 2520 -240 0 0 {name=M43
 L=0.15
-W=0.5
+W=0.43
 nf=1 
-mult=2
+mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
@@ -1120,9 +1120,9 @@ spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8.sym} 2520 -340 0 0 {name=M44
 L=0.15
-W=1
+W=0.86
 nf=2
-mult=2
+mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
@@ -1134,7 +1134,7 @@ spiceprefix=X
 }
 C {sky130_fd_pr/nfet_01v8.sym} 2520 -150 0 0 {name=M45
 L=0.15
-W=4
+W=8
 nf=8 
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -1148,7 +1148,7 @@ spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8.sym} 2520 -440 0 0 {name=M46
 L=0.15
-W=8
+W=16
 nf=16
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 

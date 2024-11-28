@@ -5,7 +5,7 @@ K {}
 V {}
 S {}
 E {}
-B 2 20 -1720 1940 -940 {flags=graph
+B 2 20 -1730 1940 -950 {flags=graph
 y1=-0.074
 y2=1.8
 ypos1=0
@@ -96,14 +96,10 @@ N 1630 -890 1630 -860 {
 lab=VDD}
 N 1250 -890 1250 -860 {
 lab=VDD}
-N 690 -890 690 -860 {
-lab=VDD}
-N 690 -890 830 -890 {
-lab=VDD}
 N 760 -830 760 -770 {
-lab=v1}
+lab=Vcont}
 N 690 -770 760 -770 {
-lab=v1}
+lab=Vcont}
 N 690 -510 690 -480 {
 lab=GND}
 N 690 -480 830 -480 {
@@ -141,7 +137,7 @@ lab=GND}
 N 1630 -540 1670 -540 {
 lab=GND}
 N 730 -830 790 -830 {
-lab=v1}
+lab=Vcont}
 N 830 -830 870 -830 {
 lab=VDD}
 N 1250 -830 1290 -830 {
@@ -159,13 +155,13 @@ lab=VDD}
 N 1630 -730 1670 -730 {
 lab=VDD}
 N 760 -870 760 -830 {
-lab=v1}
+lab=Vcont}
 N 760 -870 1590 -870 {
-lab=v1}
+lab=Vcont}
 N 1590 -870 1590 -830 {
-lab=v1}
+lab=Vcont}
 N 1210 -870 1210 -830 {
-lab=v1}
+lab=Vcont}
 N 640 -540 640 -500 {
 lab=Vcont}
 N 640 -500 1590 -500 {
@@ -176,20 +172,6 @@ N 1210 -540 1210 -500 {
 lab=Vcont}
 N 790 -540 790 -500 {
 lab=Vcont}
-N 650 -830 690 -830 {
-lab=VDD}
-N 650 -890 650 -830 {
-lab=VDD}
-N 650 -890 690 -890 {
-lab=VDD}
-N 690 -540 730 -540 {
-lab=GND}
-N 730 -540 730 -480 {
-lab=GND}
-N 690 -620 690 -570 {
-lab=#net9}
-N 690 -800 690 -680 {
-lab=v1}
 N 820 -630 830 -630 {
 lab=GND}
 N 1020 -890 1020 -860 {
@@ -244,6 +226,10 @@ N 1820 -510 1820 -480 {
 lab=GND}
 N 1670 -480 1820 -480 {
 lab=GND}
+N 640 -770 640 -540 {
+lab=Vcont}
+N 640 -770 690 -770 {
+lab=Vcont}
 C {devices/vsource.sym} 240 -600 0 0 {name=Vdd value=1.8 savecurrent=false
 * "pwl()"}
 C {devices/gnd.sym} 240 -570 0 0 {name=l3 lab=GND}
@@ -275,11 +261,11 @@ C {devices/code.sym} 320 -878.75 0 0 {name=STIMULI only_toplevel=false value="
     * save all
     tran 2ps 30ns
     remzerovec
-    write tb_current_starved_VCO6_\{$&v_cont_start\}.raw
-    * write tb_current_starved_VCO6.raw
+    write tb_current_starved_VCO4_1_\{$&v_cont_start\}.raw
+    * write tb_current_starved_VCO4_1_.raw
     linearize v(osc)
     let filename = v_cont_start * 100
-    wrdata /foss/designs/my_design/projects/pll/vco/xschem_ngspice/tb_current_starved_VCO6_\{$&filename\}.txt v(osc)
+    wrdata /foss/designs/my_design/projects/pll/vco/xschem_ngspice/tb_current_starved_VCO4_1_\{$&filename\}.txt v(osc)
     set appendwrite
 
     reset
@@ -293,7 +279,7 @@ C {devices/vdd.sym} 900 -890 0 0 {name=l1 lab=VDD}
 C {devices/gnd.sym} 890 -480 0 0 {name=l2 lab=GND}
 C {sky130_fd_pr/nfet_01v8.sym} 810 -630 0 0 {name=M1
 L=0.15
-W=0.86
+W=0.43
 nf=1 
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -321,7 +307,7 @@ spiceprefix=X
 }
 C {sky130_fd_pr/nfet_01v8.sym} 1230 -630 0 0 {name=M3
 L=0.15
-W=0.86
+W=0.43
 nf=1 
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -349,7 +335,7 @@ spiceprefix=X
 }
 C {sky130_fd_pr/nfet_01v8.sym} 1610 -630 0 0 {name=M5
 L=0.15
-W=0.86
+W=0.43
 nf=1 
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -377,7 +363,7 @@ spiceprefix=X
 }
 C {sky130_fd_pr/nfet_01v8.sym} 810 -540 0 0 {name=M7
 L=0.15
-W=0.86
+W=0.43
 nf=1 
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -391,7 +377,7 @@ spiceprefix=X
 }
 C {sky130_fd_pr/nfet_01v8.sym} 1230 -540 0 0 {name=M8
 L=0.15
-W=0.86
+W=0.43
 nf=1 
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -405,7 +391,7 @@ spiceprefix=X
 }
 C {sky130_fd_pr/nfet_01v8.sym} 1610 -540 0 0 {name=M9
 L=0.15
-W=0.86
+W=0.43
 nf=1 
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -459,42 +445,12 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {sky130_fd_pr/pfet_01v8.sym} 710 -830 0 1 {name=M16
-L=0.15
-W=0.86
-nf=2
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=pfet_01v8
-spiceprefix=X
-}
-C {sky130_fd_pr/nfet_01v8.sym} 670 -540 0 0 {name=M17
-L=0.15
-W=0.86
-nf=1 
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=nfet_01v8
-spiceprefix=X
-}
 C {devices/lab_pin.sym} 600 -540 0 0 {name=p2 sig_type=std_logic lab=Vcont}
 C {devices/lab_pin.sym} 760 -710 0 0 {name=p3 sig_type=std_logic lab=osc}
-C {devices/lab_pin.sym} 690 -710 0 0 {name=p4 sig_type=std_logic lab=v1}
-C {devices/ammeter.sym} 690 -650 0 0 {name=Vmeas1 savecurrent=true spice_ignore=0}
 C {sky130_fd_pr/pfet_01v8.sym} 1040 -830 0 1 {name=M13
 L=0.15
-W=0.86
-nf=2
+W=1
+nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
@@ -508,8 +464,8 @@ spiceprefix=X
 C {devices/gnd.sym} 1060 -830 0 0 {name=l6 lab=GND}
 C {sky130_fd_pr/pfet_01v8.sym} 1460 -830 0 1 {name=M14
 L=0.15
-W=0.86
-nf=2
+W=1
+nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
@@ -523,8 +479,8 @@ spiceprefix=X
 C {devices/gnd.sym} 1480 -830 0 0 {name=l7 lab=GND}
 C {sky130_fd_pr/pfet_01v8.sym} 1840 -830 0 1 {name=M15
 L=0.15
-W=0.86
-nf=2
+W=1
+nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
@@ -537,8 +493,8 @@ spiceprefix=X
 }
 C {devices/gnd.sym} 1860 -830 0 0 {name=l8 lab=GND}
 C {sky130_fd_pr/nfet_01v8.sym} 1040 -540 0 1 {name=M18
-L=0.15
-W=0.86
+L=1.5
+W=1
 nf=1 
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -552,8 +508,8 @@ spiceprefix=X
 }
 C {devices/vdd.sym} 1060 -540 0 0 {name=l9 lab=VDD}
 C {sky130_fd_pr/nfet_01v8.sym} 1460 -540 0 1 {name=M19
-L=0.15
-W=0.86
+L=1.5
+W=1
 nf=1 
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -567,8 +523,8 @@ spiceprefix=X
 }
 C {devices/vdd.sym} 1480 -540 0 0 {name=l10 lab=VDD}
 C {sky130_fd_pr/nfet_01v8.sym} 1840 -540 0 1 {name=M20
-L=0.15
-W=0.86
+L=1.5
+W=1
 nf=1 
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 

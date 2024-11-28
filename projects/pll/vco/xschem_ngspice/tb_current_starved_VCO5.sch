@@ -272,7 +272,7 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {sky130_fd_pr/nfet_01v8.sym} 1210 -340 0 0 {name=M3
+C {sky130_fd_pr/nfet_01v8.sym} 1200 -340 0 0 {name=M3
 L=0.15
 W=0.5
 nf=1 
