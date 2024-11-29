@@ -6,24 +6,24 @@ V {}
 S {}
 E {}
 B 2 1760 -1720 3230 -960 {flags=graph
-y1=0
-y2=1.8
+y1=0.0018
+y2=0.023
 ypos1=0
 ypos2=2
 divy=5
 subdivy=4
 unity=1
 x1=0
-x2=1.8
+x2=12
 divx=5
-subdivx=4
+subdivx=8
 xlabmag=1.0
 ylabmag=1.0
 
 
 dataset=-1
 unitx=1
-logx=0
+logx=1
 logy=0
 
 
@@ -38,9 +38,8 @@ logy=0
 
 
 
-color="6 5"
-node="vout
-vin+"
+color=6
+node=vout
 linewidth_mult=8}
 B 2 2210 -810 3680 -50 {flags=graph
 y1=3.8e-12
@@ -50,8 +49,8 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=0
-x2=1.8
+x1=1
+x2=1e+12
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -91,8 +90,8 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=0
-x2=1.8
+x1=1
+x2=1e+12
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -123,9 +122,9 @@ color="6 5"
 node="i(@m.xm1.msky130_fd_pr__nfet_01v8[id])
 i(@m.xm6.msky130_fd_pr__pfet_01v8[id])"}
 N 130 -410 130 -380 {
-lab=Vin-}
-N 260 -410 260 -380 {
 lab=Vin+}
+N 260 -410 260 -380 {
+lab=Vin-}
 N 910 -90 1110 -90 {
 lab=GND}
 N 1000 -90 1000 -70 {
@@ -389,12 +388,12 @@ lab=GND}
 N 630 -490 630 -90 {
 lab=GND}
 C {devices/vsource.sym} 270 -540 0 0 {name=V1 value=1.8 savecurrent=false}
-C {devices/vsource.sym} 130 -350 0 0 {name=V3 value="sin(0.9 0.001 1k)" savecurrent=false
-*  0.9 AC 1}
+C {devices/vsource.sym} 130 -350 0 0 {name=V3 value="0.9 AC 1" savecurrent=false
+*  sin(0.9 0.001 1k)}
 C {devices/gnd.sym} 130 -320 0 0 {name=l3 lab=GND}
-C {devices/lab_pin.sym} 260 -410 0 1 {name=p2 sig_type=std_logic lab=Vin+}
+C {devices/lab_pin.sym} 130 -410 0 1 {name=p2 sig_type=std_logic lab=Vin+}
 C {devices/gnd.sym} 260 -320 0 0 {name=l4 lab=GND}
-C {devices/lab_pin.sym} 130 -410 0 1 {name=p3 sig_type=std_logic lab=Vin-}
+C {devices/lab_pin.sym} 260 -410 0 1 {name=p3 sig_type=std_logic lab=Vin-}
 C {devices/vsource.sym} 260 -350 0 0 {name=V2 value=0.9 savecurrent=false}
 C {devices/code.sym} 50 -190 0 0 {name=Stimuli only_toplevel=false value="
 
@@ -405,8 +404,8 @@ C {devices/code.sym} 50 -190 0 0 {name=Stimuli only_toplevel=false value="
 
     save all
   * tran 1u 8m
-  * ac dec 20 1 1T
-    dc V2 0 1.8 0.01 
+  ac dec 20 1 1T
+  * dc V2 0 1.8 0.01 
   write tb_rail_to_rail_opamp2.raw
     set appendwrite
 

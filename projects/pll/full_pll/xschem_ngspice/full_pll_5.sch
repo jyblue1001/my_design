@@ -182,7 +182,7 @@ C {devices/vdd.sym} 1320 -3920 0 0 {name=l6 lab=VDD}
 C {devices/vdd.sym} 4540 -4240 0 0 {name=l8 lab=VDD}
 C {devices/gnd.sym} 4540 -4040 0 0 {name=l9 lab=GND}
 C {devices/lab_wire.sym} 4710 -4140 0 1 {name=p2 sig_type=std_logic lab=V_OSC}
-C {/foss/designs/my_design/projects/pll/vco/xschem_ngspice/current_starved_VCO5.sym} 4540 -4140 0 0 {name=x1}
+C {/foss/designs/my_design/projects/pll/vco/xschem_ngspice/current_starved_VCO6.sym} 4540 -4140 0 0 {name=x1}
 C {/foss/designs/my_design/projects/pll/divider/xschem_ngspice/divide_by_120/divide_by_120_2.sym} 3570 -3640 0 1 {name=x2}
 C {devices/vdd.sym} 3570 -3690 0 1 {name=l2 lab=VDD}
 C {devices/gnd.sym} 3570 -3590 0 1 {name=l3 lab=GND}

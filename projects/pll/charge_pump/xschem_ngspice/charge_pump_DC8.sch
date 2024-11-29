@@ -632,8 +632,8 @@ spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8.sym} 1000 -1150 2 0 {name=M14
 L=0.15
-W=6
-nf=6
+W=5
+nf=5
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
@@ -677,8 +677,8 @@ spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8.sym} 1610 -1150 0 0 {name=M17
 L=0.15
-W=6
-nf=6
+W=5
+nf=5
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
@@ -784,8 +784,8 @@ spiceprefix=X
 }
 C {devices/vdd.sym} 570 -480 0 0 {name=l19 lab=VDD}
 C {devices/gnd.sym} 570 -230 0 0 {name=l20 lab=GND}
-C {sky130_fd_pr/cap_mim_m3_1.sym} 1540 -150 0 0 {name=C6 model=cap_mim_m3_1 W=1 L=1 MF=1 spiceprefix=X}
-C {sky130_fd_pr/cap_mim_m3_1.sym} 1560 -920 0 0 {name=C7 model=cap_mim_m3_1 W=2 L=1.2 MF=1 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 1540 -150 0 0 {name=C6 model=cap_mim_m3_1 W=2.2 L=3.2 MF=1 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 1560 -920 0 0 {name=C7 model=cap_mim_m3_1 W=2.2 L=2.2 MF=1 spiceprefix=X}
 C {sky130_fd_pr/cap_mim_m3_1.sym} 1060 -1260 0 0 {name=C8 model=cap_mim_m3_1 W=20 L=20 MF=1 spiceprefix=X}
 C {sky130_fd_pr/pfet_01v8.sym} 310 -410 0 0 {name=M23
 L=0.15

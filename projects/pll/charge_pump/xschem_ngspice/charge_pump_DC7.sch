@@ -145,8 +145,8 @@ color="6 5"
 node="x
 vcp"}
 B 2 3640 -1210 5010 -570 {flags=graph
-y1=-5e-07
-y2=7.8e-07
+y1=-5.9e-07
+y2=3.9e-07
 ypos1=0
 ypos2=2
 divy=5
@@ -173,8 +173,8 @@ logy=0
 color=6
 node="\\"i(@m.xm17.msky130_fd_pr__pfet_01v8[id]) i(@m.xm20.msky130_fd_pr__nfet_01v8[id]) -\\""
 linewidth_mult=4
-x1=0
-x2=1.8}
+x1=0.3
+x2=1.2}
 N 1240 -1710 1240 -1670 {
 lab=UP_PFD}
 N 1320 -1710 1320 -1670 {
@@ -632,8 +632,8 @@ spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8.sym} 1000 -1150 2 0 {name=M14
 L=0.15
-W=6
-nf=6
+W=4
+nf=4
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
@@ -677,8 +677,8 @@ spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8.sym} 1610 -1150 0 0 {name=M17
 L=0.15
-W=6
-nf=6
+W=4
+nf=4
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
@@ -742,7 +742,7 @@ C {devices/gnd.sym} 1030 -740 0 1 {name=l9 lab=GND}
 C {devices/lab_wire.sym} 1050 -1150 0 1 {name=p26 sig_type=std_logic lab=opamp_out}
 C {devices/lab_wire.sym} 130 -830 0 0 {name=p28 sig_type=std_logic lab=UP_PFD}
 C {devices/lab_wire.sym} 170 -360 2 1 {name=p29 sig_type=std_logic lab=DOWN_PFD}
-C {sky130_fd_pr/cap_mim_m3_1.sym} 1740 -330 0 0 {name=C3 model=cap_mim_m3_1 W=14 L=68 MF=1 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 1740 -330 0 0 {name=C3 model=cap_mim_m3_1 W=13 L=68 MF=1 spiceprefix=X}
 C {sky130_fd_pr/cap_mim_m3_1.sym} 1890 -220 0 0 {name=C5 model=cap_mim_m3_1 W=68 L=68 MF=1 spiceprefix=X}
 C {devices/gnd.sym} 1890 -130 0 0 {name=l16 lab=GND}
 C {devices/gnd.sym} 1740 -240 0 0 {name=l17 lab=GND}
@@ -784,8 +784,8 @@ spiceprefix=X
 }
 C {devices/vdd.sym} 570 -480 0 0 {name=l19 lab=VDD}
 C {devices/gnd.sym} 570 -230 0 0 {name=l20 lab=GND}
-C {sky130_fd_pr/cap_mim_m3_1.sym} 1540 -150 0 0 {name=C6 model=cap_mim_m3_1 W=1 L=1 MF=1 spiceprefix=X}
-C {sky130_fd_pr/cap_mim_m3_1.sym} 1560 -920 0 0 {name=C7 model=cap_mim_m3_1 W=2 L=1.2 MF=1 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 1540 -150 0 0 {name=C6 model=cap_mim_m3_1 W=2.2 L=3.2 MF=1 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 1560 -920 0 0 {name=C7 model=cap_mim_m3_1 W=2.2 L=2.2 MF=1 spiceprefix=X}
 C {sky130_fd_pr/cap_mim_m3_1.sym} 1060 -1260 0 0 {name=C8 model=cap_mim_m3_1 W=20 L=20 MF=1 spiceprefix=X}
 C {sky130_fd_pr/pfet_01v8.sym} 310 -410 0 0 {name=M23
 L=0.15

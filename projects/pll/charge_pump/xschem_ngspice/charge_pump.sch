@@ -40,7 +40,7 @@ lab=VDDA}
 N 2460 -1380 2510 -1380 {
 lab=VDDA}
 N 2460 -1350 2460 -1160 {
-lab=V_OUT}
+lab=#net1}
 N 2010 -450 2420 -450 {
 lab=DOWN_input}
 N 1580 -120 2200 -120 {
@@ -62,7 +62,7 @@ lab=GNDA}
 N 390 -1140 490 -1140 {
 lab=UP_PFD_b}
 N 430 -670 580 -670 {
-lab=#net1}
+lab=#net2}
 N 130 -1140 170 -1140 {
 lab=UP_PFD}
 N 170 -670 210 -670 {
@@ -120,7 +120,7 @@ lab=VDDA}
 N 1380 -1380 2130 -1380 {
 lab=opamp_out}
 N 580 -710 580 -630 {
-lab=#net1}
+lab=#net2}
 N 640 -710 640 -630 {
 lab=DOWN_b}
 N 610 -790 610 -750 {
@@ -144,7 +144,7 @@ lab=GNDA}
 N 610 -590 610 -540 {
 lab=GNDA}
 N 330 -690 330 -650 {
-lab=#net1}
+lab=#net2}
 N 260 -720 290 -720 {
 lab=DOWN_PFD}
 N 260 -720 260 -620 {
@@ -152,7 +152,7 @@ lab=DOWN_PFD}
 N 260 -620 290 -620 {
 lab=DOWN_PFD}
 N 330 -670 430 -670 {
-lab=#net1}
+lab=#net2}
 N 210 -670 260 -670 {
 lab=DOWN_PFD}
 N 330 -590 330 -550 {
@@ -285,8 +285,6 @@ N 2260 -1380 2260 -1320 {
 lab=UP_input}
 N 2530 -840 2740 -840 {
 lab=V_OUT}
-N 2460 -1160 2460 -1100 {
-lab=V_OUT}
 N 1340 -960 1340 -900 {
 lab=x}
 N 1620 -120 1620 -50 {
@@ -297,8 +295,6 @@ N 2160 -1340 2160 -1140 {
 lab=UP_b}
 N 2460 -420 2460 -120 {
 lab=GNDA}
-N 2460 -1100 2460 -480 {
-lab=V_OUT}
 N 1630 -840 2460 -840 {
 lab=V_OUT}
 N 1340 -840 1590 -840 {
@@ -319,6 +315,10 @@ N 1970 -1140 2160 -1140 {
 lab=UP_b}
 N 2160 -1200 2260 -1200 {
 lab=UP_b}
+N 2460 -1100 2460 -690 {
+lab=V_OUT}
+N 2460 -630 2460 -480 {
+lab=#net3}
 C {sky130_fd_pr/nfet_01v8.sym} 1000 -250 0 1 {name=M1
 L=0.6
 W=4
@@ -349,8 +349,8 @@ spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8.sym} 1360 -1380 2 0 {name=M3
 L=0.15
-W=6
-nf=6
+W=5
+nf=5
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
@@ -392,8 +392,8 @@ spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8.sym} 2440 -1380 0 0 {name=M6
 L=0.15
-W=6
-nf=6
+W=5
+nf=5
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
@@ -486,8 +486,8 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {sky130_fd_pr/cap_mim_m3_1.sym} 2090 -530 0 0 {name=C3 model=cap_mim_m3_1 W=2.4 L=2.95 MF=1 spiceprefix=X}
-C {sky130_fd_pr/cap_mim_m3_1.sym} 2260 -1290 0 0 {name=C4 model=cap_mim_m3_1 W=2.4 L=2 MF=1 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 2090 -530 0 0 {name=C3 model=cap_mim_m3_1 W=2.2 L=3.3 MF=1 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 2260 -1290 0 0 {name=C4 model=cap_mim_m3_1 W=2.2 L=2.2 MF=1 spiceprefix=X}
 C {sky130_fd_pr/cap_mim_m3_1.sym} 1550 -1580 0 0 {name=C5 model=cap_mim_m3_1 W=20 L=20 MF=1 spiceprefix=X}
 C {sky130_fd_pr/pfet_01v8.sym} 310 -720 0 0 {name=M10
 L=0.15
@@ -653,3 +653,5 @@ C {devices/ipin.sym} 510 -1500 0 0 {name=p35 lab=GNDA}
 C {devices/ipin.sym} 510 -1460 0 0 {name=p36 lab=UP_PFD}
 C {devices/ipin.sym} 510 -1420 0 0 {name=p37 lab=DOWN_PFD}
 C {devices/ipin.sym} 510 -1380 0 0 {name=p38 lab=I_IN}
+C {devices/ammeter.sym} 2460 -1130 0 0 {name=Vmeas savecurrent=true spice_ignore=0}
+C {devices/ammeter.sym} 2460 -660 0 0 {name=Vmeas1 savecurrent=true spice_ignore=0}

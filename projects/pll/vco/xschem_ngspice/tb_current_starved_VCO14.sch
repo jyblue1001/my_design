@@ -13,8 +13,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=1.6750734e-08
-x2=1.7268125e-08
+x1=1.7792453e-08
+x2=1.8440971e-08
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -102,41 +102,40 @@ C {devices/code.sym} 210 -408.75 0 0 {name=STIMULI only_toplevel=false value="
 * .option trtol=1
 * .option abstol=1e-13
 
+.save
++v(x1.v1)
++v(x1.v2)
++v(x1.v3)
 
-* .option savecurrents
-
-* .ic v(v_cont)=1.0
-
-*.temp = 75
 
 .control
 
-  * let v_cont_start = 0.0
-  * let v_cont_stop = 1.9
+  let v_cont_start = 0.0
+  let v_cont_stop = 1.9
 
-  * dowhile v_cont_start <= v_cont_stop
-    * alter v1 $&v_cont_start
-    save v(v_osc) v(v_cont) v(v_out) 
+  dowhile v_cont_start <= v_cont_stop
+    alter v1 $&v_cont_start
+    save v(v_osc) v(v_cont) v(x1.v1) v(x1.v2) v(x1.v3)
     * save v(v_osc) v(v_cont) v(vdd_fm)
     * save all
     * tran 0.2ps 100ns 10ns
     * tran 0.5ps 8us 5us
     * tran 0.2ps 9us 7us
-    tran 1ps 30ns
+    tran 5ps 30ns
     remzerovec
-    * write tb_current_starved_VCO14_\{$&v_cont_start\}.raw
-    write tb_current_starved_VCO14.raw
-    linearize v(v_osc)
+    write tb_current_starved_VCO14_\{$&v_cont_start\}.raw
+    * write tb_current_starved_VCO14.raw
+    linearize v(v_osc) v(x1.v1) v(x1.v2) v(x1.v3)
     * set specwindow=blackman
     * fft v(v_osc)
-    * let filename = v_cont_start * 100
-    * wrdata /foss/designs/my_design/projects/pll/vco/xschem_ngspice/tb_current_starved_VCO14_\{$&filename\}.txt v(v_osc)
-    wrdata /foss/designs/my_design/projects/pll/vco/xschem_ngspice/tb_current_starved_VCO14.txt v(v_osc)
-    * set appendwrite
+    let filename = v_cont_start * 100
+    wrdata /foss/designs/my_design/projects/pll/vco/xschem_ngspice/tb_current_starved_VCO14_\{$&filename\}.txt v(v_osc)
+    * wrdata /foss/designs/my_design/projects/pll/vco/xschem_ngspice/tb_current_starved_VCO14.txt v(v_osc)
+    set appendwrite
 
-    * reset
-    * let v_cont_start = v_cont_start + 0.1
-   * end
+    reset
+    let v_cont_start = v_cont_start + 0.1
+   end
 .endc
 
 
