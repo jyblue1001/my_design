@@ -121,7 +121,7 @@ C {devices/code.sym} 210 -408.75 0 0 {name=STIMULI only_toplevel=false value="
     * tran 0.2ps 100ns 10ns
     * tran 0.5ps 8us 5us
     * tran 0.2ps 9us 7us
-    tran 5ps 30ns
+    tran 2ps 30ns
     remzerovec
     write tb_current_starved_VCO14_\{$&v_cont_start\}.raw
     * write tb_current_starved_VCO14.raw

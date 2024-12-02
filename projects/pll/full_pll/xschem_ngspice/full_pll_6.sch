@@ -7,7 +7,7 @@ S {}
 E {}
 B 2 160 -3400 5790 -1850 {flags=graph
 y1=-0.00032
-y2=1.8
+y2=1.3
 ypos1=0
 ypos2=2
 divy=5
@@ -62,9 +62,9 @@ linewidth_mult=2
 
 
 
-color="5 6"
-node="x4.x
-v_cont"}
+
+color=4
+node=v_cont}
 N 3410 -3640 3480 -3640 {
 lab=V_OUT120}
 N 3660 -3640 4860 -3640 {
@@ -121,7 +121,7 @@ N 2880 -3920 2960 -3920 {
 lab=VDD}
 C {devices/vsource.sym} 1320 -3890 0 0 {name=VDD value=1.8 savecurrent=false}
 C {devices/gnd.sym} 1320 -3860 0 0 {name=l1 lab=GND}
-C {devices/code.sym} 1110 -3950 0 0 {name=Stimuli only_toplevel=false value="
+C {devices/code.sym} 1100 -3960 0 0 {name=Stimuli only_toplevel=false value="
 
 .include /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
 
@@ -145,9 +145,9 @@ C {devices/code.sym} 1110 -3950 0 0 {name=Stimuli only_toplevel=false value="
     * tran 0.2p 9u 7u
     tran 5p 9u
     remzerovec
-    write full_pll_6_3.raw
+    write full_pll_6_6.raw
     linearize v(v_cont) v(v_osc) v(x4.x) v(x4.opamp_out) i(x4.vmeas) i(x4.vmeas1)
-    wrdata /foss/designs/my_design/projects/pll/full_pll/xschem_ngspice/full_pll_6_3.txt v(v_osc)
+    wrdata /foss/designs/my_design/projects/pll/full_pll/xschem_ngspice/full_pll_6_6.txt v(v_osc)
     set appendwrite
  .endc
 

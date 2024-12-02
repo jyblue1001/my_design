@@ -406,7 +406,7 @@ C {devices/code.sym} 170 -468.75 0 0 {name=CODE only_toplevel=false value="
   dowhile v_cont_start <= v_cont_stop
     alter v1 $&v_cont_start
     save v(osc) v(vcont) v(v2)
-    tran 1ps 30ns
+    tran 2ps 30ns
     remzerovec
     write tb_current_starved_VCO4_\{$&v_cont_start\}.raw
     let filename = v_cont_start * 100

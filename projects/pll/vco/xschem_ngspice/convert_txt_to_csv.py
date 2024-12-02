@@ -11,11 +11,15 @@ for filename in os.listdir(directory):
     # if filename.startswith('tb_current_starved_VCO2_') and filename.endswith('.txt'):
     # if filename.startswith('tb_current_starved_VCO3') and filename.endswith('.txt'):
     # if filename.startswith('tb_current_starved_VCO3_') and filename.endswith('.txt'):
-    # if filename.startswith('tb_current_starved_VCO4_') and filename.endswith('.txt'):
+    if filename.startswith('tb_current_starved_VCO4_') and filename.endswith('.txt'):
     # if filename.startswith('tb_current_starved_VCO4_1_') and filename.endswith('.txt'):
     # if filename.startswith('tb_current_starved_VCO4_2_') and filename.endswith('.txt'):
     # if filename.startswith('tb_current_starved_VCO4_3_') and filename.endswith('.txt'):  
     # if filename.startswith('tb_current_starved_VCO4_4_') and filename.endswith('.txt'):  
+    # if filename.startswith('tb_current_starved_VCO4_5_') and filename.endswith('.txt'):  
+    # if filename.startswith('tb_current_starved_VCO4_6_') and filename.endswith('.txt'):
+    # if filename.startswith('tb_current_starved_VCO4_7_') and filename.endswith('.txt'):
+    # if filename.startswith('tb_current_starved_VCO4_8_') and filename.endswith('.txt'):
     # if filename.startswith('tb_current_starved_VCO5_') and filename.endswith('.txt'):
     # if filename.startswith('tb_current_starved_VCO6_') and filename.endswith('.txt'):
     # if filename.startswith('tb_current_starved_VCO7') and filename.endswith('.txt'):
@@ -26,7 +30,7 @@ for filename in os.listdir(directory):
     # if filename.startswith('tb_current_starved_VCO12_') and filename.endswith('.txt'):
     # if filename.startswith('tb_current_starved_VCO13') and filename.endswith('.txt'):
     # if filename.startswith('tb_current_starved_VCO13_2') and filename.endswith('.txt'):
-    if filename.startswith('tb_current_starved_VCO14') and filename.endswith('.txt'):
+    # if filename.startswith('tb_current_starved_VCO14') and filename.endswith('.txt'):
     # if filename.startswith('tb_current_starved_VCO15_') and filename.endswith('.txt'):
 
         # Define CSV filename

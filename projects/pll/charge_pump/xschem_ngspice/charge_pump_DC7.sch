@@ -173,8 +173,8 @@ logy=0
 color=6
 node="\\"i(@m.xm17.msky130_fd_pr__pfet_01v8[id]) i(@m.xm20.msky130_fd_pr__nfet_01v8[id]) -\\""
 linewidth_mult=4
-x1=0.3
-x2=1.2}
+x1=0
+x2=1.8}
 N 1240 -1710 1240 -1670 {
 lab=UP_PFD}
 N 1320 -1710 1320 -1670 {
@@ -215,8 +215,6 @@ N 1650 -1340 1650 -1150 {
 lab=VDD}
 N 1630 -1150 1650 -1150 {
 lab=VDD}
-N 1630 -1120 1630 -850 {
-lab=VCP}
 N 1480 -80 1590 -80 {
 lab=DOWN_input}
 N 1070 80 1180 80 {
@@ -224,7 +222,7 @@ lab=GND}
 N 1180 30 1180 80 {
 lab=GND}
 N 1630 -200 1630 -110 {
-lab=VCP}
+lab=#net1}
 N 1630 -50 1630 80 {
 lab=GND}
 N 1180 80 1630 80 {
@@ -242,13 +240,11 @@ lab=GND}
 N 390 -830 490 -830 {
 lab=UP_PFD_b}
 N 430 -360 540 -360 {
-lab=#net1}
+lab=#net2}
 N 130 -830 170 -830 {
 lab=UP_PFD}
 N 170 -360 210 -360 {
 lab=DOWN_PFD}
-N 1630 -790 1630 -260 {
-lab=VCP}
 N 980 -1120 980 -800 {
 lab=x}
 N 980 -680 1080 -680 {
@@ -258,7 +254,7 @@ lab=VCP}
 N 1100 -1150 1100 -810 {
 lab=opamp_out}
 N 1890 -300 1890 -250 {
-lab=#net2}
+lab=#net3}
 N 1890 -680 1890 -360 {
 lab=VCP}
 N 1890 -190 1890 -130 {
@@ -321,10 +317,6 @@ N 1090 0 1140 0 {
 lab=DOWN_b}
 N 1450 -80 1450 80 {
 lab=GND}
-N 770 -1000 770 -60 {
-lab=DOWN_gate}
-N 980 -740 980 -60 {
-lab=x}
 N 1060 -1230 1060 -1150 {
 lab=opamp_out}
 N 1060 -1340 1060 -1290 {
@@ -338,7 +330,7 @@ lab=DOWN}
 N 1020 -1150 1470 -1150 {
 lab=opamp_out}
 N 540 -400 540 -320 {
-lab=#net1}
+lab=#net2}
 N 600 -400 600 -320 {
 lab=DOWN_b}
 N 570 -480 570 -440 {
@@ -362,7 +354,7 @@ lab=GND}
 N 570 -280 570 -230 {
 lab=GND}
 N 330 -380 330 -340 {
-lab=#net1}
+lab=#net2}
 N 260 -410 290 -410 {
 lab=DOWN_PFD}
 N 260 -410 260 -310 {
@@ -370,7 +362,7 @@ lab=DOWN_PFD}
 N 260 -310 290 -310 {
 lab=DOWN_PFD}
 N 330 -360 430 -360 {
-lab=#net1}
+lab=#net2}
 N 210 -360 260 -360 {
 lab=DOWN_PFD}
 N 330 -280 330 -240 {
@@ -508,15 +500,27 @@ lab=UP_b}
 N 1560 -1150 1560 -950 {
 lab=UP_input}
 N 1630 -260 1630 -200 {
-lab=VCP}
+lab=#net1}
 N 1670 -680 1730 -680 {
-lab=VCP}
-N 1630 -850 1630 -790 {
 lab=VCP}
 N 980 -800 980 -740 {
 lab=x}
 N 1620 -80 1630 -80 {
 lab=GND}
+N 1700 -1710 1700 -1670 {
+lab=DOWN_gate}
+N 980 -540 980 -60 {
+lab=#net4}
+N 980 -740 980 -600 {
+lab=x}
+N 1630 -1120 1630 -1040 {
+lab=#net5}
+N 1630 -980 1630 -580 {
+lab=VCP}
+N 1630 -520 1630 -260 {
+lab=#net1}
+N 770 -1000 770 -60 {
+lab=DOWN_gate}
 C {sky130_fd_pr/corner.sym} 850 -1720 0 0 {name=CORNER only_toplevel=false corner=tt}
 C {devices/code.sym} 660 -1721.25 0 0 {name=STIMULI only_toplevel=false value="
 
@@ -632,8 +636,8 @@ spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8.sym} 1000 -1150 2 0 {name=M14
 L=0.15
-W=4
-nf=4
+W=5
+nf=5
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
@@ -677,8 +681,8 @@ spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8.sym} 1610 -1150 0 0 {name=M17
 L=0.15
-W=4
-nf=4
+W=5
+nf=5
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
@@ -939,4 +943,7 @@ C {devices/gnd.sym} 1300 -710 0 0 {name=l29 lab=GND}
 C {devices/vdd.sym} 1300 -950 0 0 {name=l30 lab=VDD}
 C {devices/lab_wire.sym} 770 -1000 0 1 {name=p31 sig_type=std_logic lab=DOWN_gate}
 C {devices/gnd.sym} 1700 -1610 0 0 {name=l5 lab=GND}
-C {devices/lab_pin.sym} 1700 -1670 0 1 {name=p1 sig_type=std_logic lab=DOWN_gate}
+C {devices/lab_pin.sym} 1700 -1710 0 1 {name=p1 sig_type=std_logic lab=DOWN_gate}
+C {devices/ammeter.sym} 980 -570 0 0 {name=Vmeas1 savecurrent=true spice_ignore=0}
+C {devices/ammeter.sym} 1630 -1010 0 0 {name=Vmeas2 savecurrent=true spice_ignore=0}
+C {devices/ammeter.sym} 1630 -550 0 0 {name=Vmeas3 savecurrent=true spice_ignore=0}
