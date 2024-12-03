@@ -349,8 +349,8 @@ spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8.sym} 1360 -1380 2 0 {name=M3
 L=0.15
-W=5
-nf=5
+W=8
+nf=8
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
@@ -392,8 +392,8 @@ spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8.sym} 2440 -1380 0 0 {name=M6
 L=0.15
-W=5
-nf=5
+W=8
+nf=8
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
