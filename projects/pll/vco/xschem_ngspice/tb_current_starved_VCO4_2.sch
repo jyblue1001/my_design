@@ -13,8 +13,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=8.9408461e-09
-x2=9.2728878e-09
+x1=1.5559164e-08
+x2=1.5891205e-08
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -261,7 +261,7 @@ C {devices/lab_pin.sym} 350 -670 0 1 {name=p1 sig_type=std_logic lab=Vcont}
 C {sky130_fd_pr/corner.sym} 180 -880 0 0 {name=CORNER only_toplevel=false corner=tt}
 C {devices/code.sym} 320 -878.75 0 0 {name=STIMULI only_toplevel=false value="
 
-.option method=trap
+.option method=gear
 .option wnflag=1
 
 

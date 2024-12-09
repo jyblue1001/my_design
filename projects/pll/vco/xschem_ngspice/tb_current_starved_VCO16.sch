@@ -6,15 +6,15 @@ V {}
 S {}
 E {}
 B 2 70 -1340 1990 -560 {flags=graph
-y1=-0.1
-y2=2
+y1=-0.039
+y2=1.8
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=1.8134627e-08
-x2=1.8517137e-08
+x1=2.1891274e-08
+x2=2.2431706e-08
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -40,6 +40,12 @@ N 1150 -330 1280 -330 {
 lab=V_OSC}
 N 1050 -470 1050 -430 {
 lab=VDD}
+N 1360 -430 1360 -390 {
+lab=VDD}
+N 1360 -270 1360 -230 {
+lab=GND}
+N 1430 -330 1560 -330 {
+lab=V_OUT}
 C {devices/gnd.sym} 1050 -230 0 0 {name=l2 lab=GND}
 C {devices/vsource.sym} 420 -360 0 0 {name=Vdd value=1.8 savecurrent=false
 * "sin(1.8 10m 1Meg)"}
@@ -91,7 +97,7 @@ value="
 "}
 C {devices/code.sym} 210 -408.75 0 0 {name=STIMULI only_toplevel=false value="
 
-.option method=gear
+.option method=trap
 .option wnflag=1
 * .option trtol=1
 * .option abstol=1e-13
@@ -117,14 +123,14 @@ C {devices/code.sym} 210 -408.75 0 0 {name=STIMULI only_toplevel=false value="
     * tran 0.2ps 9us 7us
     tran 2ps 30ns
     remzerovec
-    write tb_current_starved_VCO15_\{$&v_cont_start\}.raw
-    * write tb_current_starved_VCO15.raw
+    write tb_current_starved_VCO16_\{$&v_cont_start\}.raw
+    * write tb_current_starved_VCO16.raw
     linearize v(v_osc) v(x1.v1) v(x1.v2) v(x1.v3)
     * set specwindow=blackman
     * fft v(v_osc)
     let filename = v_cont_start * 100
-    wrdata /foss/designs/my_design/projects/pll/vco/xschem_ngspice/tb_current_starved_VCO15_\{$&filename\}.txt v(v_osc)
-    * wrdata /foss/designs/my_design/projects/pll/vco/xschem_ngspice/tb_current_starved_VCO15.txt v(v_osc)
+    wrdata /foss/designs/my_design/projects/pll/vco/xschem_ngspice/tb_current_starved_VCO16_\{$&filename\}.txt v(v_osc)
+    * wrdata /foss/designs/my_design/projects/pll/vco/xschem_ngspice/tb_current_starved_VCO16.txt v(v_osc)
     set appendwrite
 
     reset
@@ -139,4 +145,8 @@ C {devices/code.sym} 210 -408.75 0 0 {name=STIMULI only_toplevel=false value="
 C {devices/lab_pin.sym} 540 -430 0 1 {name=p1 sig_type=std_logic lab=V_CONT}
 C {devices/lab_wire.sym} 1210 -330 2 0 {name=p4 sig_type=std_logic lab=V_OSC}
 C {/foss/designs/my_design/projects/pll/vco/xschem_ngspice/current_starved_VCO8.sym} 1050 -330 0 0 {name=x1}
+C {devices/vdd.sym} 1360 -430 0 0 {name=l6 lab=VDD}
+C {devices/gnd.sym} 1360 -230 0 0 {name=l7 lab=GND}
+C {devices/lab_pin.sym} 1560 -330 0 1 {name=p3 sig_type=std_logic lab=V_OUT}
+C {/foss/designs/my_design/projects/pll/divider/xschem_ngspice/TSPC_FF_comp_sw_divide2.sym} 1360 -330 0 0 {name=x2}
 C {devices/vdd.sym} 1050 -470 0 0 {name=l1 lab=VDD}

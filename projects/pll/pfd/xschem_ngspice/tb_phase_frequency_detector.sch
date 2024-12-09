@@ -5,7 +5,7 @@ K {}
 V {}
 S {}
 E {}
-B 2 60 -1020 1970 -620 {flags=graph
+B 2 60 -1450 1970 -1050 {flags=graph
 y1=-0.16
 y2=2
 ypos1=0
@@ -13,8 +13,79 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=3.8823116e-06
-x2=3.905523e-06
+x1=5.5924347e-07
+x2=5.670773e-07
+divx=5
+subdivx=1
+xlabmag=1.0
+ylabmag=1.0
+
+
+dataset=-1
+unitx=1
+logx=0
+logy=0
+
+
+linewidth_mult=4
+
+
+color="5 12 11"
+node="f_ref
+qa
+x1.qa_b"}
+B 2 60 -1880 1970 -1480 {flags=graph
+y1=-0.0065
+y2=1.9
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=5.5924347e-07
+x2=5.670773e-07
+divx=5
+subdivx=1
+xlabmag=1.0
+ylabmag=1.0
+node=qb
+color=4
+dataset=-1
+unitx=1
+logx=0
+logy=0
+linewidth_mult=3}
+B 2 60 -2310 1970 -1910 {flags=graph
+y1=-0.18
+y2=1.9
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=5.5924347e-07
+x2=5.670773e-07
+divx=5
+subdivx=1
+xlabmag=1.0
+ylabmag=1.0
+node=qa
+color=6
+dataset=-1
+unitx=1
+logx=0
+logy=0
+linewidth_mult=3}
+B 2 60 860 1970 1260 {flags=graph
+y1=-0.16
+y2=2
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=5.5924347e-07
+x2=5.670773e-07
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -37,37 +108,16 @@ x1.before_reset
 x1.reset
 x1.f_b
 x1.f"}
-B 2 60 -1450 1970 -1050 {flags=graph
-y1=-0.0065
-y2=1.9
+B 2 60 -1020 1970 -620 {flags=graph
+y1=-0.16
+y2=2
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=3.8823116e-06
-x2=3.905523e-06
-divx=5
-subdivx=1
-xlabmag=1.0
-ylabmag=1.0
-node=qb
-color=4
-dataset=-1
-unitx=1
-logx=0
-logy=0
-linewidth_mult=3}
-B 2 1170 -580 1970 -70 {flags=graph
-y1=0
-y2=1.8
-ypos1=0
-ypos2=2
-divy=5
-subdivy=1
-unity=1
-x1=3.8823116e-06
-x2=3.905523e-06
+x1=5.5924347e-07
+x2=5.670773e-07
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -80,11 +130,14 @@ logx=0
 logy=0
 
 
-linewidth_mult=3
-color="6 5"
+linewidth_mult=4
+
+
+color="5 12 11"
 node="f_vco
-f_ref"}
-B 2 60 -1880 1970 -1480 {flags=graph
+qb
+x1.qb_b"}
+B 2 60 -2730 1970 -2330 {flags=graph
 y1=-0.18
 y2=1.9
 ypos1=0
@@ -92,26 +145,108 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=3.8823116e-06
-x2=3.905523e-06
+x1=5.5924347e-07
+x2=5.670773e-07
 divx=5
 subdivx=1
 xlabmag=1.0
 ylabmag=1.0
-node=qa
-color=6
+
+
 dataset=-1
 unitx=1
 logx=0
 logy=0
-linewidth_mult=3}
+linewidth_mult=3
+color="6 5"
+node="f_ref
+f_vco"}
+B 2 1170 -440 1960 -140 {flags=graph
+y1=-0.11088888
+y2=1.9632155
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=0.0096086e-06
+x2=0.01651e-06
+divx=5
+subdivx=1
+xlabmag=1.0
+ylabmag=1.0
+
+
+dataset=-1
+unitx=1
+logx=0
+logy=0
+
+
+linewidth_mult=4
+color="6 5"
+node="f_ref
+f_vco"}
+B 2 1170 -120 1960 180 {flags=graph
+y1=-0.11088888
+y2=1.9632155
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=0.0096086e-06
+x2=0.01651e-06
+divx=5
+subdivx=1
+xlabmag=1.0
+ylabmag=1.0
+
+
+dataset=-1
+unitx=1
+logx=0
+logy=0
+
+
+linewidth_mult=4
+
+
+color=6
+node=qa}
+B 2 1170 200 1960 500 {flags=graph
+y1=-0.11088888
+y2=1.9632155
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=0.0096086e-06
+x2=0.01651e-06
+divx=5
+subdivx=1
+xlabmag=1.0
+ylabmag=1.0
+
+
+dataset=-1
+unitx=1
+logx=0
+logy=0
+
+
+linewidth_mult=4
+
+color=5
+node=qb}
 N 60 -180 60 -140 {
 lab=F_REF}
 N 290 -180 290 -140 {
 lab=F_VCO}
 N 70 -390 70 -350 {
 lab=VDDA}
-C {devices/vsource.sym} 60 -110 0 0 {name=V1 value="pulse(0 1.8 0 0.25ns 0.25ns 25ns 50ns)" savecurrent=false
+C {devices/vsource.sym} 60 -110 0 0 {name=V1 value="pulse(0 1.8 12ns 1ns 1ns 24ns 50ns)" savecurrent=false
 *}
 C {devices/gnd.sym} 60 -80 0 0 {name=l5 lab=GND}
 C {devices/lab_pin.sym} 60 -180 0 1 {name=p13 sig_type=std_logic lab=F_REF}
@@ -144,7 +279,7 @@ C {devices/code.sym} 230 -388.75 0 0 {name=STIMULI only_toplevel=false value="
 
 .control
 
-  tran 1ns 10us
+  tran 1ns 1us
   remzerovec
   write tb_phase_frequency_detector.raw
   linearize v(qa) v(qb)
@@ -159,7 +294,7 @@ C {devices/code.sym} 230 -388.75 0 0 {name=STIMULI only_toplevel=false value="
 
 
 "}
-C {devices/vsource.sym} 290 -110 0 0 {name=V2 value="pulse(0 1.8 1ns 0.25ns 0.25ns 25ns 50ns)" savecurrent=false
+C {devices/vsource.sym} 290 -110 0 0 {name=V2 value="pulse(0 1.8 13ns 1ns 1ns 24ns 50ns)" savecurrent=false
 * "sin(0.9 0.9 20.1MEG)" 
 * pulse(0 1.8 1ns 0.25ns 0.25ns 24.875ns 49.75ns)}
 C {devices/gnd.sym} 290 -80 0 0 {name=l1 lab=GND}

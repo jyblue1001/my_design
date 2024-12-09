@@ -58,7 +58,7 @@ Vmeas2 v3 net8 0
 
 
 
-.option method=trap
+.option method=gear
 .option wnflag=1
 
 

@@ -13,8 +13,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=0.80128989
-x2=0.88045474
+x1=0.69407188
+x2=1.0715592
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -43,8 +43,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=0.80128989
-x2=0.88045474
+x1=0.69407188
+x2=1.0715592
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -81,8 +81,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=0.80128989
-x2=0.88045474
+x1=0.69407188
+x2=1.0715592
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -117,8 +117,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=0.80128989
-x2=0.88045474
+x1=0.69407188
+x2=1.0715592
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -145,8 +145,8 @@ color="6 5"
 node="x
 vcp"}
 B 2 3640 -1210 5010 -570 {flags=graph
-y1=-7.8533414e-08
-y2=8.3995866e-08
+y1=-6.3847358e-07
+y2=6.0668155e-07
 ypos1=0
 ypos2=2
 divy=5
@@ -173,8 +173,8 @@ logy=0
 color=6
 node="\\"i(@m.xm17.msky130_fd_pr__pfet_01v8[id]) i(@m.xm20.msky130_fd_pr__nfet_01v8[id]) -\\""
 linewidth_mult=4
-x1=0.80128989
-x2=0.88045474}
+x1=0.69407188
+x2=1.0715592}
 N 1240 -1710 1240 -1670 {
 lab=UP_PFD}
 N 1320 -1710 1320 -1670 {
@@ -576,8 +576,8 @@ C {devices/code.sym} 660 -1721.25 0 0 {name=STIMULI only_toplevel=false value="
   * tran 1ns 10us
   dc v2 0 1.8 0.01 v3 0 1.8 1.8
   remzerovec
-  write charge_pump_DC8.raw
-  * wrdata /foss/designs/my_design/projects/pll/pfd/xschem_ngspice/charge_pump7_QA.txt v(osc)
+  write charge_pump_DC9.raw
+  * wrdata /foss/designs/my_design/projects/pll/pfd/xschem_ngspice/charge_pump9_QA.txt v(osc)
   set appendwrite
 
 .endc
@@ -632,8 +632,8 @@ spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8.sym} 1000 -1150 2 0 {name=M14
 L=0.15
-W=6
-nf=6
+W=8
+nf=8
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
@@ -677,8 +677,8 @@ spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8.sym} 1610 -1150 0 0 {name=M17
 L=0.15
-W=6
-nf=6
+W=8
+nf=8
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
@@ -742,15 +742,15 @@ C {devices/gnd.sym} 1030 -740 0 1 {name=l9 lab=GND}
 C {devices/lab_wire.sym} 1050 -1150 0 1 {name=p26 sig_type=std_logic lab=opamp_out}
 C {devices/lab_wire.sym} 130 -830 0 0 {name=p28 sig_type=std_logic lab=UP_PFD}
 C {devices/lab_wire.sym} 170 -360 2 1 {name=p29 sig_type=std_logic lab=DOWN_PFD}
-C {sky130_fd_pr/cap_mim_m3_1.sym} 1740 -330 0 0 {name=C3 model=cap_mim_m3_1 W=60 L=11.5 MF=1 spiceprefix=X}
-C {sky130_fd_pr/cap_mim_m3_1.sym} 1890 -220 0 0 {name=C5 model=cap_mim_m3_1 W=60 L=59.5 MF=1 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 1740 -330 0 0 {name=C3 model=cap_mim_m3_1 W=25 L=8 MF=1 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 1890 -220 0 0 {name=C5 model=cap_mim_m3_1 W=25 L=40 MF=1 spiceprefix=X}
 C {devices/gnd.sym} 1890 -130 0 0 {name=l16 lab=GND}
 C {devices/gnd.sym} 1740 -240 0 0 {name=l17 lab=GND}
 C {devices/lab_wire.sym} 935 -80 0 0 {name=p30 sig_type=std_logic lab=DOWN_gate}
 C {/foss/designs/my_design/projects/pll/charge_pump/xschem_ngspice/rail_to_rail_opamp3.sym} 1100 -740 1 1 {name=x4}
 C {devices/vdd.sym} 1170 -740 0 0 {name=l18 lab=VDD}
 C {sky130_fd_pr/res_xhigh_po_0p35.sym} 1890 -330 0 0 {name=R1
-L=8.14
+L=29.3
 model=res_xhigh_po_0p35
 spiceprefix=X
 mult=1}

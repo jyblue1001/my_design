@@ -1,7 +1,7 @@
 ** sch_path: /foss/designs/my_design/projects/pll/pfd/xschem_ngspice/tb_phase_frequency_detector.sch
 **.subckt tb_phase_frequency_detector
-V1 F_REF GND pulse(0 1.8 0 0.25ns 0.25ns 25ns 50ns)
-V2 F_VCO GND pulse(0 1.8 1ns 0.25ns 0.25ns 25ns 50ns)
+V1 F_REF GND pulse(0 1.8 12ns 1ns 1ns 24ns 50ns)
+V2 F_VCO GND pulse(0 1.8 13ns 1ns 1ns 24ns 50ns)
 VDD VDDA GND 1.8
 x1 F_REF F_VCO VDDA QA QB GND phase_frequency_detector
 **** begin user architecture code
@@ -42,7 +42,7 @@ x1 F_REF F_VCO VDDA QA QB GND phase_frequency_detector
 
 .control
 
-  tran 1ns 10us
+  tran 1ns 1us
   remzerovec
   write tb_phase_frequency_detector.raw
   linearize v(qa) v(qb)

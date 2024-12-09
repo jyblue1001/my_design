@@ -6,8 +6,8 @@ V {}
 S {}
 E {}
 B 2 160 -3400 5790 -1850 {flags=graph
-y1=-0.00032
-y2=1.3
+y1=0.69
+y2=0.8
 ypos1=0
 ypos2=2
 divy=5
@@ -63,8 +63,143 @@ linewidth_mult=2
 
 
 
-color=4
-node=v_cont}
+
+
+color="5 6"
+node="v_cont
+x4.x"}
+B 2 160 -1740 5790 -190 {flags=graph
+y1=-0.0002
+y2=0.0002
+ypos1=0
+ypos2=2
+divy=5
+subdivy=4
+unity=1
+x1=0
+x2=9e-06
+divx=5
+subdivx=4
+xlabmag=1.0
+ylabmag=1.0
+
+
+dataset=-1
+unitx=1
+logx=0
+logy=0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+linewidth_mult=18
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+color="5 6 11"
+node="i(v.x4.vmeas)
+i(v.x4.vmeas1)
+
+\\"i(v.x4.vmeas) i(v.x4.vmeas1) -\\""}
+B 2 160 -120 5790 1430 {flags=graph
+y1=-0.041
+y2=1.9
+ypos1=0
+ypos2=2
+divy=5
+subdivy=4
+unity=1
+x1=0
+x2=9e-06
+divx=5
+subdivx=4
+xlabmag=1.0
+ylabmag=1.0
+
+
+dataset=-1
+unitx=1
+logx=0
+logy=0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+linewidth_mult=20
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+color="5 6"
+node="f_ref_inv
+v_out120_inv"}
 N 3410 -3640 3480 -3640 {
 lab=V_OUT120}
 N 3660 -3640 4860 -3640 {
@@ -136,6 +271,8 @@ C {devices/code.sym} 1100 -3960 0 0 {name=Stimuli only_toplevel=false value="
 .save
 +v(x4.x)
 +v(x4.opamp_out)
++v(f_ref_inv)
++v(v_out120_inv)
 +i(x4.vmeas)
 +i(x4.vmeas1)
 
@@ -145,9 +282,9 @@ C {devices/code.sym} 1100 -3960 0 0 {name=Stimuli only_toplevel=false value="
     * tran 0.2p 9u 7u
     tran 5p 9u
     remzerovec
-    write full_pll_6_6.raw
+    write full_pll_6_7.raw
     linearize v(v_cont) v(v_osc) v(x4.x) v(x4.opamp_out) i(x4.vmeas) i(x4.vmeas1)
-    wrdata /foss/designs/my_design/projects/pll/full_pll/xschem_ngspice/full_pll_6_6.txt v(v_osc)
+    wrdata /foss/designs/my_design/projects/pll/full_pll/xschem_ngspice/full_pll_6_7.txt v(v_osc)
     set appendwrite
  .endc
 
@@ -230,10 +367,10 @@ C {/foss/designs/my_design/projects/pll/divider/xschem_ngspice/inverter.sym} 302
 C {devices/gnd.sym} 3080 -3920 3 0 {name=l15 lab=GND}
 C {devices/lab_wire.sym} 2960 -4180 0 1 {name=p1 sig_type=std_logic lab=F_REF_INV}
 C {devices/lab_wire.sym} 3020 -4060 0 1 {name=p6 sig_type=std_logic lab=V_OUT120_INV}
-C {sky130_fd_pr/cap_mim_m3_1.sym} 4020 -4050 0 1 {name=C2 model=cap_mim_m3_1 W=68 L=13 MF=1 spiceprefix=X}
-C {sky130_fd_pr/cap_mim_m3_1.sym} 4220 -3920 0 1 {name=C1 model=cap_mim_m3_1 W=68 L=68 MF=1 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 4020 -4050 0 1 {name=C2 model=cap_mim_m3_1 W=45 L=100 MF=1 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 4220 -3920 0 1 {name=C1 model=cap_mim_m3_1 W=230 L=100 MF=1 spiceprefix=X}
 C {sky130_fd_pr/res_xhigh_po_0p35.sym} 4220 -4050 0 1 {name=R1
-L=6.3
+L=4
 model=res_xhigh_po_0p35
 spiceprefix=X
 mult=1}

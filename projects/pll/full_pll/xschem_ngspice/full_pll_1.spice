@@ -4,14 +4,9 @@ VDD VDD GND 1.8
 x1 VDD V_OSC V_CONT GND current_starved_VCO3
 x2 VDD V_OUT120 V_OSC GND divide_by_120
 V3 F_REF GND pulse(0 1.8 12ns 1ns 1ns 24ns 50ns)
-x3 F_REF_INV V_OUT120_INV VDD UP_PFD DOWN_PFD GND phase_frequency_detector
+x3 F_REF V_OUT120 VDD UP_PFD DOWN_PFD GND phase_frequency_detector
 x4 V_CONT VDD GND UP_PFD DOWN_PFD I_IN charge_pump
 I1 GND I_IN 100u
-x5 VDD F_REF F_REF_INV GND inverter
-x6 VDD V_OUT120 V_OUT120_INV GND inverter
-XC2 V_CONT GND sky130_fd_pr__cap_mim_m3_1 W=45 L=100 MF=1 m=1
-XC1 net1 GND sky130_fd_pr__cap_mim_m3_1 W=230 L=100 MF=1 m=1
-XR1 net1 V_CONT GND sky130_fd_pr__res_xhigh_po_0p35 L=4 mult=1 m=1
 **** begin user architecture code
 
 
@@ -20,27 +15,17 @@ XR1 net1 V_CONT GND sky130_fd_pr__res_xhigh_po_0p35 L=4 mult=1 m=1
 
 .option method=gear
 .option wnflag=1
-*.option savecurrents
-*.option trtol=1
-*.option abstol=1e-13
-
-.ic v(v_cont)=0
-
-.save
-
-+@m.x4.xm6.msky130_fd_pr__pfet_01v8[id]
-+@m.x4.xm9.msky130_fd_pr__nfet_01v8[id]
-
-.probe p(x1) p(x2) p(x3) p(x4) p(xr1) p(xc1) p(xc2)
+* .option savecurrents
+.option trtol=1
 
 .control
-    save v(v_cont) v(v_osc) v(v_out120) v(v_out120_inv) v(f_ref) v(f_ref_inv) v(up_pfd) v(down_pfd) v(x4.x) v(x4.opamp_out) p(x1:power) p(x2:power) p(x3:power) p(x4:power) p(xr1:power) p(xc1:power) p(xc2:power)
-    * save all
-    tran 1p 9u
+    probe p(x1) p(x2) p(x3) p(x4)
+    save v(v_cont) v(v_osc) v(v_out120) v(f_ref) v(up_pfd) v(down_pfd) p(x1:power) p(x2:power) p(x3:power) p(x4:power)
+    tran 0.5p 400n
     remzerovec
     write full_pll_1.raw
-    linearize v(v_cont) v(v_osc) v(v_out120) v(v_out120_inv) v(f_ref) v(f_ref_inv) v(up_pfd) v(down_pfd) p(x1:power) p(x2:power) p(x3:power) p(x4:power) p(xr1:power) p(xc1:power) p(xc2:power)
-    wrdata /foss/designs/my_design/projects/pll/full_pll/xschem_ngspice/full_pll_1.txt v(v_cont) v(v_osc) p(x1:power) p(x2:power) p(x3:power) p(x4:power) p(xr1:power) p(xc1:power) p(xc2:power)
+    linearize v(v_cont) v(v_osc) v(v_out120) v(f_ref) v(up_pfd) v(down_pfd) p(x1:power) p(x2:power) p(x3:power) p(x4:power)
+    wrdata /foss/designs/my_design/projects/pll/full_pll/xschem_ngspice/full_pll_1.txt v(v_osc)
     set appendwrite
  .endc
 
@@ -179,7 +164,10 @@ XM8 DOWN_input DOWN_b GNDA GNDA sky130_fd_pr__nfet_01v8 L=0.15 W=2 nf=2 ad='int(
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
 XM9 V_OUT DOWN_input GNDA GNDA sky130_fd_pr__nfet_01v8 L=0.15 W=5 nf=5 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XC2 V_OUT GNDA sky130_fd_pr__cap_mim_m3_1 W=45 L=100 MF=1 m=1
+XC1 net2 GNDA sky130_fd_pr__cap_mim_m3_1 W=230 L=100 MF=1 m=1
 x2 VDDA V_OUT x opamp_out GNDA rail_to_rail_opamp3
+XR1 net2 V_OUT GNDA sky130_fd_pr__res_xhigh_po_0p35 L=4 mult=1 m=1
 XM12 DOWN_b GNDA net1 VDDA sky130_fd_pr__pfet_01v8 L=0.15 W=2 nf=2 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
 XM13 DOWN_b VDDA net1 GNDA sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
@@ -206,21 +194,6 @@ XM19 GNDA DOWN_b DOWN GNDA sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1
 XM20 UP_b UP VDDA VDDA sky130_fd_pr__pfet_01v8 L=0.15 W=2 nf=2 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
 + ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
 XM21 GNDA UP UP_b GNDA sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
-+ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
-.ends
-
-
-* expanding   symbol:  /foss/designs/my_design/projects/pll/divider/xschem_ngspice/inverter.sym # of pins=4
-** sym_path: /foss/designs/my_design/projects/pll/divider/xschem_ngspice/inverter.sym
-** sch_path: /foss/designs/my_design/projects/pll/divider/xschem_ngspice/inverter.sch
-.subckt inverter VDDA VIN VOUT GNDA
-*.ipin VIN
-*.ipin VDDA
-*.ipin GNDA
-*.opin VOUT
-XM31 VOUT VIN VDDA VDDA sky130_fd_pr__pfet_01v8 L=0.15 W=2 nf=2 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
-+ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
-XM32 VOUT VIN GNDA GNDA sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
 + ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
 .ends
 
