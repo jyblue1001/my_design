@@ -7,7 +7,7 @@ XM2 x DOWN_gate GND GND sky130_fd_pr__nfet_01v8 L=0.6 W=4 nf=1 ad='int((nf+1)/2)
 XM3 VDD opamp_out net4 VDD sky130_fd_pr__pfet_01v8 L=0.15 W=8 nf=8 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
 V1 VDD GND 1.8
-I0 VDD DOWN_gate 100u
+I0 GND DOWN_gate 100u
 Vmeas1 net4 x 0
 .save i(vmeas1)
 XM4 UP_input UP_b opamp_out VDD sky130_fd_pr__pfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
@@ -39,7 +39,7 @@ x4 F_REF F_VCO VDD UP_PFD DOWN_PFD GND phase_frequency_detector
 Vmeas4 net3 Vout 0
 .save i(vmeas4)
 x2 VDD net3 x opamp_out GND rail_to_rail_opamp3
-XC4 VDD opamp_out sky130_fd_pr__cap_mim_m3_1 W=15 L=15 MF=1 m=1
+XC4 VDD opamp_out sky130_fd_pr__cap_mim_m3_1 W=30 L=30 MF=1 m=1
 XC3 UP_input UP_b sky130_fd_pr__cap_mim_m3_1 W=2 L=2 MF=1 m=1
 XC5 DOWN DOWN_input sky130_fd_pr__cap_mim_m3_1 W=3 L=2.4 MF=1 m=1
 XR1 net5 Vout GND sky130_fd_pr__res_xhigh_po_5p73 L=16 mult=1 m=1
@@ -57,15 +57,10 @@ XR1 net5 Vout GND sky130_fd_pr__res_xhigh_po_5p73 L=16 mult=1 m=1
 
 .include /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
 
-.option method=gear trtol1
+.option method=gear
 .option wnflag=1
-* .option savecurrents
 
-* .temp = 75
-
-.ic v(vout) = 1.0
-
-
+.ic v(vout) = 0.9
 
 .control
   let start_delay = 0ns
@@ -75,12 +70,12 @@ XR1 net5 Vout GND sky130_fd_pr__res_xhigh_po_5p73 L=16 mult=1 m=1
 
     alter @V3[pulse] = [ 0 1.8 $&start_delay 1ns 1ns 24ns 50ns ]
     save i(vmeas4#branch) v(F_REF) v(F_VCO) v(vout)
-    tran 0.01ns 1us
+    tran 5ps 1us
     remzerovec
     linearize i(vmeas4) v(F_REF) v(F_VCO) v(vout)
     echo $&start_delay
-    write pfd_charge_pump_dead_zone_check_{$&index}.raw
-    wrdata /foss/designs/my_design/projects/pll/charge_pump/xschem_ngspice/pfd_charge_pump_dead_zone_check_{$&index}.txt i(vmeas4)
+    write pfd_charge_pump_dead_zone_check_1_{$&index}.raw
+    wrdata /foss/designs/my_design/projects/pll/charge_pump/xschem_ngspice/pfd_charge_pump_dead_zone_check_1_{$&index}.txt i(vmeas4)
     set appendwrite
     reset
     let index = index + 1
@@ -131,9 +126,9 @@ x14 net4 GNDA GNDA VDDA VDDA Reset sky130_fd_sc_hd__inv_1
 *.ipin Vin-
 *.ipin VDDA
 *.ipin GNDA
-XM2 n_left Vin+ v_common_n GNDA sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=2 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
+XM2 n_left Vin+ v_common_n GNDA sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
-XM3 n_right Vin- v_common_n GNDA sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=2 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
+XM3 n_right Vin- v_common_n GNDA sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
 XM5 n_left n_left VDDA VDDA sky130_fd_pr__pfet_01v8 L=0.15 W=2 nf=2 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
@@ -151,9 +146,9 @@ XM10 p_right p_left GNDA GNDA sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((n
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
 XM1 v_common_n n_bias GNDA GNDA sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
-XM11 Vout n_right VDDA VDDA sky130_fd_pr__pfet_01v8 L=0.15 W=2 nf=2 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
+XM11 Vout n_right VDDA VDDA sky130_fd_pr__pfet_01v8 L=0.15 W=16 nf=2 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
-XM12 Vout p_right GNDA GNDA sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
+XM12 Vout p_right GNDA GNDA sky130_fd_pr__nfet_01v8 L=0.15 W=8 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
 XM13 n_bias n_bias GNDA GNDA sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1

@@ -5,7 +5,7 @@ K {}
 V {}
 S {}
 E {}
-B 2 160 -1850 5790 -300 {flags=graph
+B 2 160 -100 5790 1450 {flags=graph
 y1=-0.00012
 y2=0.00015
 ypos1=0
@@ -13,8 +13,8 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=2e-06
-x2=9.0e-06
+x1=7.9176812e-06
+x2=7.9586412e-06
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -84,15 +84,15 @@ node="\\"i(v.x4.vmeas) i(v.x4.vmeas1) - \\"
 i(v.x4.vmeas)
 i(v.x4.vmeas1)"}
 B 2 160 -3460 5790 -1910 {flags=graph
-y1=0.83
-y2=0.85
+y1=0.83785
+y2=0.838
 ypos1=0
 ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=2e-06
-x2=9e-06
+
+x2=8e-06
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -161,7 +161,88 @@ linewidth_mult=2
 
 
 color=5
-node=v_cont}
+node=v_cont
+x1=7.9e-06}
+B 2 180 -1760 5810 -210 {flags=graph
+y1=0.83
+y2=0.86
+ypos1=0
+ypos2=2
+divy=5
+subdivy=4
+unity=1
+x1=7.9e-06
+x2=8e-06
+divx=5
+subdivx=4
+xlabmag=1.0
+ylabmag=1.0
+
+
+dataset=-1
+unitx=1
+logx=0
+logy=0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+linewidth_mult=2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+color="5 12"
+node="x4.x
+x4.opamp_out"}
 N 3700 -3640 3770 -3640 {
 lab=V_OUT120}
 N 3950 -3640 5150 -3640 {
@@ -252,9 +333,9 @@ C {devices/code.sym} 1110 -3960 0 0 {name=Stimuli only_toplevel=false value="
     * tran 0.2p 9u 7u
     tran 5p 9u
     remzerovec
-    write full_pll_8_15.raw
+    write full_pll_8_14.raw
     linearize v(v_cont) v(v_osc)
-    wrdata /foss/designs/my_design/projects/pll/full_pll/xschem_ngspice/full_pll_8_15.txt v(v_osc)
+    wrdata /foss/designs/my_design/projects/pll/full_pll/xschem_ngspice/full_pll_8_14.txt v(v_osc)
     set appendwrite
  .endc
 

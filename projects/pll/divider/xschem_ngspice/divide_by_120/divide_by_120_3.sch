@@ -449,17 +449,18 @@ C {devices/code.sym} 1420 -700 0 0 {name=Stimuli only_toplevel=false value="
 .option method=gear
 .option wnflag=1
 * .option savecurrents
-.option trtol=1
+* .option trtol=1
 
- .probe p(x1)
+*.probe p(x1)
 
 .control
-    save v(v_cont) v(v_osc) v(v_out2) v(v_out4) v(v_out8) v(v_out24) v(v_out120) p(x1:power)
-    tran 1p 300n
+    * save v(v_cont) v(v_osc) v(v_out2) v(v_out4) v(v_out8) v(v_out24) v(v_out120) p(x1:power)
+    save v(v_cont) v(v_osc) v(v_out2) v(v_out4) v(v_out8) v(v_out24) v(v_out120)
+    tran 10p 0.5u
     remzerovec
     write divide_by_120_3.raw
-    linearize v(v_cont) v(v_osc) v(v_out2) v(v_out4) v(v_out8) v(v_out24) v(v_out120) p(x1:power)
-    wrdata /foss/designs/my_design/projects/pll/divider/xschem_ngspice/divide_by_120/divide_by_120_3.txt v(v_osc)
+    * linearize v(v_cont) v(v_osc) v(v_out2) v(v_out4) v(v_out8) v(v_out24) v(v_out120) p(x1:power)
+    * wrdata /foss/designs/my_design/projects/pll/divider/xschem_ngspice/divide_by_120/divide_by_120_3.txt v(v_osc)
     set appendwrite
  .endc
 
@@ -540,4 +541,4 @@ C {devices/lab_wire.sym} 1530 290 0 1 {name=p4 sig_type=std_logic lab=V_OUT2}
 C {devices/lab_wire.sym} 1780 290 0 1 {name=p6 sig_type=std_logic lab=V_OUT4}
 C {devices/lab_wire.sym} 2030 290 0 1 {name=p8 sig_type=std_logic lab=V_OUT8}
 C {devices/lab_wire.sym} 2280 290 0 1 {name=p9 sig_type=std_logic lab=V_OUT24}
-C {/foss/designs/my_design/projects/pll/vco/xschem_ngspice/current_starved_VCO3.sym} 1570 -160 0 0 {name=x1}
+C {/foss/designs/my_design/projects/pll/vco/xschem_ngspice/current_starved_VCO8.sym} 1570 -160 0 0 {name=x1}

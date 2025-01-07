@@ -233,7 +233,7 @@ C {devices/code.sym} 260 -940 0 0 {name=Stimuli only_toplevel=false value="
 
   save all
   * tran 0.1n 1u
-  tran 0.5p 20n
+  tran 10p 0.5u
 
   remzerovec
   write tb_TSPC_FF_comp_sw_divide5.raw

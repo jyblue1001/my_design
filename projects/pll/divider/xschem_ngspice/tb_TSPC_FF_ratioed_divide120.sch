@@ -186,7 +186,7 @@ C {devices/code.sym} 320 -950 0 0 {name=Stimuli only_toplevel=false value="
   * save v(vin) v(vout)
   * save all
   * tran 0.1n 1u
-  tran 0.02p 200n
+  tran 10p 0.5u
 
   remzerovec
   write tb_TSPC_FF_ratioed_divide120.raw

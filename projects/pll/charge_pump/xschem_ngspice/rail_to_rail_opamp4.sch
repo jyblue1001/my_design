@@ -109,19 +109,19 @@ N 1000 -350 1100 -350 {
 lab=Vin-}
 N 1100 -440 1100 -350 {
 lab=Vin-}
-N 1050 -690 1210 -690 {
+N 1050 -690 1340 -690 {
 lab=VDDA}
-N 1210 -590 1230 -590 {
+N 1340 -590 1360 -590 {
 lab=VDDA}
-N 1210 -690 1230 -690 {
+N 1340 -690 1360 -690 {
 lab=VDDA}
-N 980 -110 1210 -110 {
+N 980 -110 1340 -110 {
 lab=GNDA}
-N 1210 -200 1230 -200 {
+N 1340 -200 1360 -200 {
 lab=GNDA}
-N 1210 -110 1230 -110 {
+N 1340 -110 1360 -110 {
 lab=GNDA}
-N 1210 -400 1270 -400 {
+N 1340 -400 1400 -400 {
 lab=Vout}
 N 420 -690 670 -690 {
 lab=VDDA}
@@ -153,27 +153,27 @@ N 460 -520 540 -520 {
 lab=p_bias}
 N 540 -520 790 -520 {
 lab=p_bias}
-N 960 -200 1170 -200 {
+N 960 -200 1300 -200 {
 lab=p_right}
-N 1030 -590 1170 -590 {
+N 1030 -590 1300 -590 {
 lab=n_right}
-N 1230 -690 1230 -590 {
+N 1360 -690 1360 -590 {
 lab=VDDA}
-N 1210 -690 1210 -610 {
+N 1340 -690 1340 -610 {
 lab=VDDA}
-N 1210 -170 1210 -110 {
+N 1340 -170 1340 -110 {
 lab=GNDA}
-N 1230 -200 1230 -110 {
+N 1360 -200 1360 -110 {
 lab=GNDA}
-N 1210 -280 1210 -230 {
+N 1340 -280 1340 -230 {
 lab=Vout}
-N 1210 -560 1210 -530 {
+N 1340 -560 1340 -530 {
 lab=Vout}
-N 1210 -470 1210 -340 {
+N 1340 -470 1340 -340 {
 lab=Vout}
-N 1210 -530 1210 -470 {
+N 1340 -530 1340 -470 {
 lab=Vout}
-N 1210 -340 1210 -280 {
+N 1340 -340 1340 -280 {
 lab=Vout}
 N 230 -150 230 -110 {
 lab=GNDA}
@@ -235,8 +235,8 @@ spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8.sym} 710 -630 0 1 {name=M5
 L=0.15
-W=10
-nf=20
+W=2
+nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
@@ -249,8 +249,8 @@ spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8.sym} 1010 -630 0 0 {name=M4
 L=0.15
-W=10
-nf=20
+W=2
+nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
@@ -305,8 +305,8 @@ spiceprefix=X
 }
 C {sky130_fd_pr/nfet_01v8.sym} 780 -160 0 1 {name=M9
 L=0.15
-W=5
-nf=10 
+W=1
+nf=1 
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
@@ -319,8 +319,8 @@ spiceprefix=X
 }
 C {sky130_fd_pr/nfet_01v8.sym} 940 -160 0 0 {name=M10
 L=0.15
-W=5
-nf=10 
+W=1
+nf=1 
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
@@ -345,10 +345,10 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {sky130_fd_pr/pfet_01v8.sym} 1190 -590 0 0 {name=M11
+C {sky130_fd_pr/pfet_01v8.sym} 1320 -590 0 0 {name=M11
 L=0.15
-W=20
-nf=40
+W=16
+nf=2
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
@@ -359,10 +359,10 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {sky130_fd_pr/nfet_01v8.sym} 1190 -200 0 0 {name=M12
+C {sky130_fd_pr/nfet_01v8.sym} 1320 -200 0 0 {name=M12
 L=0.15
-W=10
-nf=20
+W=8
+nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
@@ -402,7 +402,7 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {devices/ammeter.sym} 420 -390 0 1 {name=Vmeas savecurrent=true spice_ignore=0}
-C {devices/opin.sym} 1270 -400 0 0 {name=p3 lab=Vout}
+C {devices/opin.sym} 1400 -400 0 0 {name=p3 lab=Vout}
 C {devices/ipin.sym} 580 -440 0 0 {name=p4 lab=Vin+}
 C {devices/ipin.sym} 1140 -440 0 1 {name=p5 lab=Vin-}
 C {devices/ipin.sym} 880 -750 0 0 {name=p6 lab=VDDA}

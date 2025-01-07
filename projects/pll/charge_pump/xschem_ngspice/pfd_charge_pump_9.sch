@@ -13,8 +13,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=0
-x2=2e-06
+x1=-5.5767162e-08
+x2=7.6343281e-07
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -44,8 +44,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=0
-x2=2e-06
+x1=-5.5767162e-08
+x2=7.6343281e-07
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -85,8 +85,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=0
-x2=2e-06
+x1=-5.5767162e-08
+x2=7.6343281e-07
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -122,8 +122,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=0
-x2=2e-06
+x1=-5.5767162e-08
+x2=7.6343281e-07
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -155,8 +155,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=0
-x2=2e-06
+x1=-5.5767162e-08
+x2=7.6343281e-07
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -184,15 +184,15 @@ color="6 5"
 node="up_input
 down_input"}
 B 2 2120 -2880 3480 -2210 {flags=graph
-y1=0.82
-y2=0.89
+y1=-2.1e-05
+y2=1.8
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=0
-x2=2e-06
+x1=-5.5767162e-08
+x2=7.6343281e-07
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -215,18 +215,20 @@ linewidth_mult=5
 
 
 
-color=6
-node=vout}
+color="6 4 11"
+node="vout
+x
+opamp_out"}
 B 2 40 -2780 800 -2440 {flags=graph
-y1=-0.09
+y1=-0.093
 y2=1.9
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=0
-x2=2e-06
+x1=-5.5767162e-08
+x2=7.6343281e-07
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -267,8 +269,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=0
-x2=2e-06
+x1=-5.5767162e-08
+x2=7.6343281e-07
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -294,15 +296,15 @@ color="6 5"
 node="up_b
 down"}
 B 2 940 -2770 1980 -2280 {flags=graph
-y1=-4.7e-05
-y2=0.00017
+y1=-4.4e-05
+y2=0.00015
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=0
-x2=2e-06
+x1=-5.5767162e-08
+x2=7.6343281e-07
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -329,6 +331,40 @@ linewidth_mult=4
 color="6 5"
 node="i(vmeas)
 i(vmeas1)"}
+B 2 2120 -3570 3480 -2900 {flags=graph
+y1=-2.1e-05
+y2=1.8
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=-5.5767162e-08
+x2=7.6343281e-07
+divx=5
+subdivx=1
+xlabmag=1.0
+ylabmag=1.0
+
+
+dataset=0
+unitx=1
+logx=0
+logy=0
+
+
+
+
+
+
+
+
+linewidth_mult=5
+
+
+
+color=6
+node=vout}
 N 770 -220 900 -220 {
 lab=DOWN_gate}
 N 730 -190 730 -110 {
@@ -697,8 +733,8 @@ spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8.sym} 960 -1340 2 0 {name=M3
 L=0.15
-W=8
-nf=8
+W=6
+nf=6
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
@@ -722,8 +758,8 @@ C {devices/code.sym} -580 -1541.25 0 0 {name=STIMULI only_toplevel=false value="
 
 * .temp = 75
 
-* .ic v(vout) = 0.0
-.ic v(vout) = 0.875
+.ic v(vout) = 0.0
+* .ic v(vout) = 0.875
 
 .save 
 +v(up_pfd)
@@ -819,8 +855,8 @@ spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8.sym} 1570 -1340 0 0 {name=M6
 L=0.15
-W=8
-nf=8
+W=6
+nf=6
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
@@ -894,7 +930,7 @@ C {devices/vsource.sym} 240 -1450 0 0 {name=V2 value="pulse(0 1.8 12ns 1ns 1ns 2
 }
 C {devices/gnd.sym} 240 -1420 0 0 {name=l10 lab=GND}
 C {devices/lab_pin.sym} 240 -1520 0 1 {name=p11 sig_type=std_logic lab=F_REF}
-C {devices/vsource.sym} 570 -1450 0 0 {name=V3 value="pulse(0 1.8 12ns 1ns 1ns 24ns 50ns)" savecurrent=false
+C {devices/vsource.sym} 570 -1450 0 0 {name=V3 value="pulse(0 1.8 22ns 1ns 1ns 24ns 50ns)" savecurrent=false
 * "sin(0.9 0.9 20.1MEG)" pulse(0 1.8 1ns 0.25ns 0.25ns 24.875ns 49.75ns)}
 C {devices/gnd.sym} 570 -1420 0 0 {name=l15 lab=GND}
 C {devices/lab_pin.sym} 570 -1520 0 1 {name=p12 sig_type=std_logic lab=F_VCO}
@@ -943,7 +979,7 @@ spiceprefix=X
 }
 C {devices/vdd.sym} 530 -670 0 0 {name=l11 lab=VDD}
 C {devices/gnd.sym} 530 -420 0 0 {name=l12 lab=GND}
-C {sky130_fd_pr/cap_mim_m3_1.sym} 1020 -1450 0 0 {name=C5 model=cap_mim_m3_1 W=20 L=20 MF=1 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 1020 -1450 0 0 {name=C5 model=cap_mim_m3_1 W=30 L=30 MF=1 spiceprefix=X}
 C {sky130_fd_pr/pfet_01v8.sym} 270 -600 0 0 {name=M10
 L=0.15
 W=2

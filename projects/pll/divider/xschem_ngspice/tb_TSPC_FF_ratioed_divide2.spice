@@ -25,7 +25,7 @@ x1 VOUT VIN VDD GND TSPC_FF_ratioed_divide2
   save v(vin) v(vout) p(x1:power)
   * save all
   * tran 0.1n 1u
-  tran 0.02p 10n
+  tran 0.5p 10n
 
   remzerovec
   write tb_TSPC_FF_ratioed_divide2.raw

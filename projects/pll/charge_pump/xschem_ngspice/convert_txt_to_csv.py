@@ -7,7 +7,7 @@ directory = '.'
 
 # Loop through all files in the directory
 for filename in os.listdir(directory):
-    if filename.startswith('pfd_charge_pump_dead_zone_check_') and filename.endswith('.txt'):
+    if filename.startswith('pfd_charge_pump_dead_zone_check_2_') and filename.endswith('.txt'):
         # Define CSV filename
         csv_filename = filename.replace('.txt', '.csv')
         csv_path = os.path.join(directory, csv_filename)

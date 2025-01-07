@@ -7,8 +7,6 @@ S {}
 E {}
 N 520 -610 520 -570 {
 lab=before_Reset}
-N 520 -90 520 -50 {
-lab=Reset}
 N 520 -50 600 -50 {
 lab=Reset}
 N 440 -50 520 -50 {
@@ -117,14 +115,6 @@ N 440 -90 460 -90 {
 lab=E}
 N 260 -910 320 -910 {
 lab=F_REF}
-N 520 -490 520 -470 {
-lab=#net1}
-N 520 -390 520 -370 {
-lab=#net2}
-N 520 -290 520 -270 {
-lab=#net3}
-N 520 -190 520 -170 {
-lab=#net4}
 N 580 -510 580 -110 {
 lab=F}
 N 460 -510 460 -110 {
@@ -133,6 +123,16 @@ N 740 -490 740 -90 {
 lab=F_b}
 N 300 -490 300 -90 {
 lab=E_b}
+N 520 -90 520 -50 {
+lab=Reset}
+N 520 -490 520 -470 {
+lab=#net1}
+N 520 -390 520 -370 {
+lab=#net2}
+N 520 -290 520 -270 {
+lab=#net2}
+N 520 -190 520 -170 {
+lab=#net2}
 C {sky130_stdcells/nor2_1.sym} 380 -890 0 0 {name=x1 VGND=GNDA VNB=GNDA VPB=VDDA VPWR=VDDA prefix=sky130_fd_sc_hd__ }
 C {sky130_stdcells/nor2_1.sym} 380 -770 0 0 {name=x2 VGND=GNDA VNB=GNDA VPB=VDDA VPWR=VDDA prefix=sky130_fd_sc_hd__ }
 C {sky130_stdcells/nor2_1.sym} 380 -590 0 1 {name=x3 VGND=GNDA VNB=GNDA VPB=VDDA VPWR=VDDA prefix=sky130_fd_sc_hd__ }

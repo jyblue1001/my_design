@@ -520,7 +520,7 @@ N 2790 -1280 2790 -250 {
 lab=Q2_b}
 C {devices/vsource.sym} 600 -1460 0 0 {name=VDD value=1.8 savecurrent=false}
 C {devices/gnd.sym} 600 -1430 0 0 {name=l1 lab=GND}
-C {devices/code.sym} 410 -1520 0 0 {name=Stimuli only_toplevel=false value="
+C {devices/code.sym} 410 -1530 0 0 {name=Stimuli only_toplevel=false value="
 
 .include /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
 

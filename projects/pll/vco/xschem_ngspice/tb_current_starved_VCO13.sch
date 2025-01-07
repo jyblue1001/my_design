@@ -36,18 +36,16 @@ N 540 -430 540 -390 {
 lab=V_CONT}
 N 910 -330 950 -330 {
 lab=V_CONT}
-N 1150 -330 1280 -330 {
+N 1150 -330 1310 -330 {
 lab=V_OSC}
 N 1050 -470 1050 -430 {
 lab=VDD}
-N 1360 -430 1360 -390 {
+N 1390 -430 1390 -390 {
 lab=VDD}
-N 1360 -270 1360 -230 {
+N 1390 -270 1390 -230 {
 lab=GND}
-N 1430 -330 1560 -330 {
+N 1460 -330 1590 -330 {
 lab=V_OUT}
-N 670 -430 670 -390 {
-lab=VDD_FM}
 C {devices/gnd.sym} 1050 -230 0 0 {name=l2 lab=GND}
 C {devices/vsource.sym} 420 -360 0 0 {name=Vdd value=1.8 savecurrent=false
 * "sin(1.8 10m 1Meg)"}
@@ -101,15 +99,9 @@ C {devices/code.sym} 210 -408.75 0 0 {name=STIMULI only_toplevel=false value="
 
 .option method=trap
 .option wnflag=1
-* .option trtol=1
-* .option abstol=1e-13
-
-
 * .option savecurrents
 
-*.ic v(v_cont)=1.0
-
-*.temp = 75
+* .ic v(v_cont)=1.0
 
 .control
 
@@ -118,13 +110,9 @@ C {devices/code.sym} 210 -408.75 0 0 {name=STIMULI only_toplevel=false value="
 
   dowhile v_cont_start <= v_cont_stop
     alter v1 $&v_cont_start
-    save v(v_osc) v(v_cont) v(v_out) 
-    * save v(v_osc) v(v_cont) v(vdd_fm)
+    save v(v_osc) v(v_cont) v(v_out)
     * save all
-    * tran 0.2ps 100ns 10ns
-    * tran 0.5ps 8us 5us
-    * tran 0.2ps 9us 7us
-    tran 1ps 30ns
+    tran 5ps 30ns
     remzerovec
     write tb_current_starved_VCO13_\{$&v_cont_start\}.raw
     * write tb_current_starved_VCO13_2.raw
@@ -141,19 +129,12 @@ C {devices/code.sym} 210 -408.75 0 0 {name=STIMULI only_toplevel=false value="
    end
 .endc
 
-
-
-"
-}
+"}
 C {devices/lab_pin.sym} 540 -430 0 1 {name=p1 sig_type=std_logic lab=V_CONT}
 C {devices/lab_wire.sym} 1210 -330 2 0 {name=p4 sig_type=std_logic lab=V_OSC}
-C {/foss/designs/my_design/projects/pll/vco/xschem_ngspice/current_starved_VCO5.sym} 1050 -330 0 0 {name=x1}
-C {devices/vdd.sym} 1360 -430 0 0 {name=l6 lab=VDD}
-C {devices/gnd.sym} 1360 -230 0 0 {name=l7 lab=GND}
-C {devices/lab_pin.sym} 1560 -330 0 1 {name=p3 sig_type=std_logic lab=V_OUT}
-C {/foss/designs/my_design/projects/pll/divider/xschem_ngspice/TSPC_FF_comp_sw_divide2.sym} 1360 -330 0 0 {name=x2}
-C {devices/gnd.sym} 670 -330 0 0 {name=l8 lab=GND}
-C {devices/lab_pin.sym} 670 -430 0 1 {name=p5 sig_type=std_logic lab=VDD_FM}
-C {devices/vsource.sym} 670 -360 0 0 {name=V2 value="sin(1.8 10m 1Meg)" savecurrent=false
-* }
+C {/foss/designs/my_design/projects/pll/vco/xschem_ngspice/current_starved_VCO9.sym} 1050 -330 0 0 {name=x1}
+C {devices/vdd.sym} 1390 -430 0 0 {name=l6 lab=VDD}
+C {devices/gnd.sym} 1390 -230 0 0 {name=l7 lab=GND}
+C {devices/lab_pin.sym} 1590 -330 0 1 {name=p3 sig_type=std_logic lab=V_OUT}
 C {devices/vdd.sym} 1050 -470 0 0 {name=l1 lab=VDD}
+C {/foss/designs/my_design/projects/pll/divider/xschem_ngspice/TSPC_FF_ratioed_divide2.sym} 1390 -330 0 0 {name=x2}
