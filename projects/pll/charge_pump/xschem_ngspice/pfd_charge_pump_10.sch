@@ -13,8 +13,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=4.0810411e-07
-x2=4.1530987e-07
+x1=0
+x2=5e-07
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -44,8 +44,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=4.0810411e-07
-x2=4.1530987e-07
+x1=0
+x2=5e-07
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -85,8 +85,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=4.0810411e-07
-x2=4.1530987e-07
+x1=0
+x2=5e-07
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -122,8 +122,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=4.0810411e-07
-x2=4.1530987e-07
+x1=0
+x2=5e-07
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -148,15 +148,15 @@ color="6 5"
 node="up_pfd
 down_pfd"}
 B 2 2440 -1870 3800 -1200 {flags=graph
-y1=0.021
-y2=1.5
+y1=0.12
+y2=1.8
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=4.0810411e-07
-x2=4.1530987e-07
+x1=0
+x2=5e-07
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -191,8 +191,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=4.0810411e-07
-x2=4.1530987e-07
+x1=0
+x2=5e-07
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -236,8 +236,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=4.0810411e-07
-x2=4.1530987e-07
+x1=0
+x2=5e-07
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -272,8 +272,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=4.0810411e-07
-x2=4.1530987e-07
+x1=0
+x2=5e-07
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -309,8 +309,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=4.0810411e-07
-x2=4.1530987e-07
+x1=0
+x2=5e-07
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -346,8 +346,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=4.0810411e-07
-x2=4.1530987e-07
+x1=0
+x2=5e-07
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -373,15 +373,15 @@ node="i(vmeas1)
 i(vmeas2)
 i(vmeas4)"}
 B 2 2440 -2570 3800 -1900 {flags=graph
-y1=0.78
-y2=0.84
+y1=0.89
+y2=1.8
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=4.0810411e-07
-x2=4.1530987e-07
+x1=0
+x2=5e-07
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -407,15 +407,15 @@ linewidth_mult=4
 color=6
 node=vout}
 B 2 2440 -3270 3800 -2600 {flags=graph
-y1=11
-y2=26
+y1=8.8
+y2=16
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=4.0810411e-07
-x2=4.1530987e-07
+x1=0
+x2=5e-07
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -444,15 +444,15 @@ node="\\"@m.x2.xm11.msky130_fd_pr__pfet_01v8[gm] i(@m.x2.xm11.msky130_fd_pr__pfe
 
 \\"@m.x2.xm12.msky130_fd_pr__nfet_01v8[gm] i(@m.x2.xm12.msky130_fd_pr__nfet_01v8[id]) /\\""}
 B 2 2440 -3980 3800 -3310 {flags=graph
-y1=1.1e-13
-y2=8.9e-07
+y1=8.1e-06
+y2=1.4e-05
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=4.0810411e-07
-x2=4.1530987e-07
+x1=0
+x2=5e-07
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -481,15 +481,15 @@ color="6 7"
 node="i(@m.x2.xm1.msky130_fd_pr__nfet_01v8[id])
 i(@m.x2.xm6.msky130_fd_pr__pfet_01v8[id])"}
 B 2 1040 -3980 2400 -3310 {flags=graph
-y1=3.2e-10
-y2=0.00055
+y1=6.4e-05
+y2=0.00051
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=4.0810411e-07
-x2=4.1530987e-07
+x1=0
+x2=5e-07
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -517,6 +517,41 @@ node="@m.x2.xm11.msky130_fd_pr__pfet_01v8[gm]
 
 
 @m.x2.xm12.msky130_fd_pr__nfet_01v8[gm]"}
+B 2 -380 -3980 980 -3310 {flags=graph
+y1=1.3e-05
+y2=1.5e-05
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=0
+x2=5e-07
+divx=5
+subdivx=1
+xlabmag=1.0
+ylabmag=1.0
+
+
+dataset=0
+unitx=1
+logx=0
+logy=0
+
+
+
+
+
+
+
+
+linewidth_mult=4
+
+
+
+
+color=6
+node=i(v.x2.vmeas)}
 T {W_p=2um
 L_p=0.15um
 
@@ -955,7 +990,7 @@ v(vout)="0.0
 
   remzerovec
   write pfd_chargA}
-C {devices/code.sym} 3580 -761.25 0 0 {name=Testbench only_toplevel=false value="
+C {devices/code.sym} 3590 -761.25 0 0 {name=Testbench only_toplevel=false value="
 
 .include /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
 
@@ -983,10 +1018,10 @@ C {devices/code.sym} 3580 -761.25 0 0 {name=Testbench only_toplevel=false value=
 * .ic v(vout) = 1.8
 
 * V_out initial voltage value for the F_VCO delay of 12ns (lock condition)
-.ic v(vout) = 0.83
+* .ic v(vout) = 0.83
 
 * V_out initial voltage value for the F_VCO delay of 22ns (lagging)
-* .ic v(vout) = 0
+.ic v(vout) = 0.0
 
 .control
   * save v(f_ref) save v(f_vco) save v(i_in) save v(up_pfd) v(down_pfd) v(up_pfd_b) v(down_pfd_b) v(up) v(up_b) v(down) v(down_b) v(x) v(opamp_out) v(up_input) v(down_input) v(down_gate) v(vout)
@@ -999,14 +1034,16 @@ C {devices/code.sym} 3580 -761.25 0 0 {name=Testbench only_toplevel=false value=
   tran 50ps 0.5us
 
   remzerovec
-  * write pfd_charge_pump_10.raw
+  write pfd_charge_pump_10.raw
   * write pfd_charge_pump_10_2.raw
   * write pfd_charge_pump_10_3.raw
   * write pfd_charge_pump_10_4.raw
   * write pfd_charge_pump_10_5.raw
   * write pfd_charge_pump_10_6.raw
   * write pfd_charge_pump_10_7.raw
-  write pfd_charge_pump_10_8.raw
+  * write pfd_charge_pump_10_8.raw
+  * write pfd_charge_pump_10_9.raw
+  * write pfd_charge_pump_10_10.raw
   set appendwrite
 
 .endc
@@ -1058,7 +1095,7 @@ C {devices/vsource.sym} 3530 -930 0 0 {name=V2 value=pulse"(0 1.8 12ns 1ns 1ns 2
 * }
 C {devices/gnd.sym} 3530 -900 0 0 {name=l10 lab=GND}
 C {devices/lab_pin.sym} 3530 -1000 0 1 {name=p11 sig_type=std_logic lab=F_REF}
-C {devices/vsource.sym} 3860 -930 0 0 {name=V3 value="pulse(0 1.8 12ns 1ns 1ns 24ns 50ns)" savecurrent=false
+C {devices/vsource.sym} 3860 -930 0 0 {name=V3 value="pulse(0 1.8 22ns 1ns 1ns 24ns 50ns)" savecurrent=false
 * "sin(0.9 0.9 20.1MEG)" 1 AC 1}
 C {devices/gnd.sym} 3860 -900 0 0 {name=l15 lab=GND}
 C {devices/lab_pin.sym} 3860 -1000 0 1 {name=p12 sig_type=std_logic lab=F_VCO}
@@ -1351,8 +1388,8 @@ C {devices/gnd.sym} 1360 -340 0 0 {name=l14 lab=GND}
 C {devices/lab_wire.sym} 1100 -1100 0 0 {name=p2 sig_type=std_logic lab=x}
 C {sky130_fd_pr/pfet_01v8.sym} 1810 -1590 1 1 {name=M9
 L=0.15
-W=4
-nf=4
+W=2
+nf=2
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
@@ -1395,8 +1432,8 @@ C {devices/lab_wire.sym} 1470 -1360 2 0 {name=p4 sig_type=std_logic lab=UP}
 C {devices/lab_wire.sym} 1810 -1400 0 1 {name=p5 sig_type=std_logic lab=UP_b}
 C {sky130_fd_pr/nfet_01v8.sym} 1810 -740 1 0 {name=M10
 L=0.15
-W=2
-nf=2 
+W=1
+nf=1 
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
@@ -1728,8 +1765,8 @@ C {devices/ammeter.sym} 2260 -1350 0 0 {name=Vmeas2 savecurrent=true spice_ignor
 C {devices/ammeter.sym} 2370 -1100 3 0 {name=Vmeas4 savecurrent=true spice_ignore=0}
 C {sky130_fd_pr/nfet_01v8.sym} 1810 -1790 1 0 {name=M8
 L=0.15
-W=2
-nf=2 
+W=1
+nf=1 
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
@@ -1742,8 +1779,8 @@ spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8.sym} 1810 -510 1 1 {name=M11
 L=0.15
-W=4
-nf=4
+W=2
+nf=2
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
@@ -1758,8 +1795,8 @@ C {devices/vdd.sym} 1810 -1610 0 0 {name=l5 lab=VDD}
 C {devices/gnd.sym} 1810 -1770 0 0 {name=l27 lab=GND}
 C {devices/gnd.sym} 1810 -720 0 0 {name=l28 lab=GND}
 C {devices/vdd.sym} 1810 -530 0 0 {name=l29 lab=VDD}
-C {sky130_fd_pr/cap_mim_m3_1.sym} 1950 -1440 0 0 {name=C3 model=cap_mim_m3_1 W=6 L=6 MF=1 spiceprefix=X}
-C {sky130_fd_pr/cap_mim_m3_1.sym} 1950 -840 0 0 {name=C4 model=cap_mim_m3_1 W=2.7 L=2.7 MF=1 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 1950 -1440 0 0 {name=C3 model=cap_mim_m3_1 W=6 L=5.4 MF=1 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 1950 -840 0 0 {name=C4 model=cap_mim_m3_1 W=2.6 L=2.6 MF=1 spiceprefix=X}
 C {devices/gnd.sym} 670 -1020 0 0 {name=l30 lab=GND}
 C {devices/vdd.sym} 670 -830 0 0 {name=l31 lab=VDD}
 C {devices/lab_wire.sym} 1020 -620 0 0 {name=p18 sig_type=std_logic lab=DOWN_gate}

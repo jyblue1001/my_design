@@ -5,16 +5,181 @@ K {}
 V {}
 S {}
 E {}
-B 2 160 -100 5790 1450 {flags=graph
-y1=-0.00013
-y2=0.00024
+B 2 160 -3460 5790 -1910 {flags=graph
+y1=0.83785
+y2=0.83805
 ypos1=0
 ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=0
-x2=9e-06
+x1=3.2869549e-07
+x2=7.2451968e-07
+divx=5
+subdivx=4
+xlabmag=1.0
+ylabmag=1.0
+
+
+dataset=-1
+unitx=1
+logx=0
+logy=0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+linewidth_mult=5
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+color=12
+node=v_cont}
+B 2 160 -1780 5790 -230 {flags=graph
+y1=-0.0027
+y2=1.6
+ypos1=0
+ypos2=2
+divy=5
+subdivy=4
+unity=1
+x1=3.2869549e-07
+x2=7.2451968e-07
+divx=5
+subdivx=4
+xlabmag=1.0
+ylabmag=1.0
+
+
+dataset=-1
+unitx=1
+logx=0
+logy=0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+linewidth_mult=2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+color="5 6 17"
+node="x4.x
+x4.opamp_out
+v_cont"}
+B 2 160 -110 5790 1440 {flags=graph
+y1=-0.00014
+y2=0.00031
+ypos1=0
+ypos2=2
+divy=5
+subdivy=4
+unity=1
+x1=3.2869549e-07
+x2=7.2451968e-07
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -86,174 +251,15 @@ linewidth_mult=15
 
 
 
-color="6 7"
-node="i(v.x4.vmeas2)
-i(v.x4.vmeas3)"}
-B 2 160 -3460 5790 -1910 {flags=graph
-y1=0.83785
-y2=0.83805
-ypos1=0
-ypos2=2
-divy=5
-subdivy=4
-unity=1
-x1=7.2e-06
-x2=7.26e-06
-divx=5
-subdivx=4
-xlabmag=1.0
-ylabmag=1.0
-
-
-dataset=-1
-unitx=1
-logx=0
-logy=0
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-linewidth_mult=5
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-color=12
-node=v_cont}
-B 2 160 -1780 5790 -230 {flags=graph
-y1=0.021
-y2=1.5
-ypos1=0
-ypos2=2
-divy=5
-subdivy=4
-unity=1
-x1=0
-x2=9e-06
-divx=5
-subdivx=4
-xlabmag=1.0
-ylabmag=1.0
-
-
-dataset=-1
-unitx=1
-logx=0
-logy=0
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-linewidth_mult=8
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
 
 color="6 7"
-node="x4.x
-x4.opamp_out"}
+node="i(v.x4.vmeas2)
+i(v.x4.vmeas3)"}
+T {full_pll_11_12.raw = 5ps step, vcont = 0.838
+full_pll_11_13.raw = 2ps step, vcont = 0.835} 140 -4360 0 0 2 2 {}
 N 3700 -3640 3770 -3640 {
 lab=V_OUT120}
 N 3950 -3640 5150 -3640 {
@@ -307,15 +313,13 @@ lab=VDD}
 N 2890 -4180 3030 -4180 {
 lab=F_REF_INV}
 N 3180 -4180 3390 -4180 {
-lab=F_REF_INV}
+lab=F_REF_INV_2}
 N 3170 -3960 3250 -3960 {
 lab=VDD}
 N 3310 -3900 3310 -3810 {
 lab=V_OUT120_INV}
 N 3310 -4140 3310 -4050 {
 lab=V_OUT120_INV_2}
-N 3030 -4180 3180 -4180 {
-lab=F_REF_INV}
 C {devices/vsource.sym} 1320 -3890 0 0 {name=VDD value=1.8 savecurrent=false}
 C {devices/gnd.sym} 1320 -3860 0 0 {name=l1 lab=GND}
 C {devices/code.sym} 1110 -3960 0 0 {name=Stimuli only_toplevel=false value="
@@ -342,35 +346,34 @@ C {devices/code.sym} 1110 -3960 0 0 {name=Stimuli only_toplevel=false value="
 
 .control
     save v(v_cont) v(v_osc)
+    * tran 2p 9u
     tran 5p 9u
-    * tran 5p 9u
     remzerovec
-    * write full_pll_12.raw
-    write full_pll_12_4.raw
+    * write full_pll_14.raw
     linearize v(v_cont) v(v_osc)
-    * wrdata /foss/designs/my_design/projects/pll/full_pll/xschem_ngspice/full_pll_12.txt v(v_osc)
-    wrdata /foss/designs/my_design/projects/pll/full_pll/xschem_ngspice/full_pll_12_4.txt v(v_osc)
+    * wrdata /foss/designs/my_design/projects/pll/full_pll/xschem_ngspice/full_pll_14.txt v(v_osc)
     set appendwrite
  .endc
 
 "}
+C {sky130_fd_pr/corner.sym} 940 -3960 0 0 {name=CORNER only_toplevel=false corner=tt}
 C {devices/vdd.sym} 1320 -3920 0 0 {name=l6 lab=VDD}
 C {devices/vdd.sym} 4830 -4240 0 0 {name=l8 lab=VDD}
 C {devices/gnd.sym} 4830 -4040 0 0 {name=l9 lab=GND}
 C {devices/lab_wire.sym} 5000 -4140 0 1 {name=p2 sig_type=std_logic lab=V_OSC}
 C {/foss/designs/my_design/projects/pll/vco/xschem_ngspice/current_starved_VCO8.sym} 4830 -4140 0 0 {name=x1}
-C {/foss/designs/my_design/projects/pll/divider/xschem_ngspice/divide_by_120/divide_by_120_2.sym} 3860 -3640 0 1 {name=x2}
+C {/foss/designs/my_design/projects/pll/divider/xschem_ngspice/divide_by_120/divide_by_120_3.sym} 3860 -3640 0 1 {name=x2}
 C {devices/vdd.sym} 3860 -3690 0 1 {name=l2 lab=VDD}
 C {devices/gnd.sym} 3860 -3590 0 1 {name=l3 lab=GND}
 C {devices/gnd.sym} 3970 -4070 0 0 {name=l14 lab=GND}
-C {devices/vsource.sym} 1880 -3880 0 0 {name=V3 value="pulse(0 1.8 12ns 1ns 1ns 24ns 50ns)" savecurrent=false
+C {devices/vsource.sym} 1880 -3880 0 0 {name=V3 value="pulse(0 1.8 0ns 1ns 1ns 24ns 50ns)" savecurrent=false
 }
 C {devices/gnd.sym} 1880 -3850 0 0 {name=l10 lab=GND}
 C {devices/lab_pin.sym} 1880 -3950 0 1 {name=p11 sig_type=std_logic lab=F_REF}
 C {/foss/designs/my_design/projects/pll/pfd/xschem_ngspice/phase_frequency_detector.sym} 3540 -4160 0 0 {name=x3}
 C {devices/lab_pin.sym} 2570 -4180 0 0 {name=p19 lab=F_REF}
 C {devices/vdd.sym} 3970 -4210 0 0 {name=l17 lab=VDD}
-C {/foss/designs/my_design/projects/pll/charge_pump/xschem_ngspice/charge_pump8.sym} 3970 -4140 0 0 {name=x4}
+C {/foss/designs/my_design/projects/pll/charge_pump/xschem_ngspice/charge_pump7.sym} 3970 -4140 0 0 {name=x4}
 C {devices/isource.sym} 1720 -3880 2 1 {name=I1 value=100u}
 C {devices/vdd.sym} 3540 -4220 0 0 {name=l11 lab=VDD}
 C {devices/gnd.sym} 3540 -4100 0 0 {name=l12 lab=GND}
@@ -403,4 +406,7 @@ C {/foss/designs/my_design/projects/pll/divider/xschem_ngspice/inverter.sym} 331
 C {devices/gnd.sym} 3370 -3960 3 0 {name=l19 lab=GND}
 C {devices/lab_wire.sym} 3310 -4080 0 1 {name=p12 sig_type=std_logic lab=V_OUT120_INV_2}
 C {devices/vdd.sym} 3170 -3960 3 0 {name=l20 lab=VDD}
-C {sky130_fd_pr/corner.sym} 940 -3960 0 0 {name=CORNER only_toplevel=false corner=tt}
+C {/foss/designs/my_design/projects/pll/divider/xschem_ngspice/inverter.sym} 3090 -4180 0 0 {name=x7}
+C {devices/lab_wire.sym} 3230 -4180 0 1 {name=p8 sig_type=std_logic lab=F_REF_INV_2}
+C {devices/vdd.sym} 3090 -4240 0 0 {name=l21 lab=VDD}
+C {devices/gnd.sym} 3090 -4120 0 0 {name=l22 lab=GND}
