@@ -6,15 +6,15 @@ V {}
 S {}
 E {}
 B 2 80 -770 1130 -540 {flags=graph
-y1=-0.034
-y2=1.9
+y1=0
+y2=1.8
 ypos1=0
 ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=0
-x2=1e-08
+
+x2=2e-09
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -43,18 +43,19 @@ linewidth_mult=2
 
 
 
-color=5
-node=vin}
+color=6
+node=vin
+x1=5e-13}
 B 2 80 -530 1130 -300 {flags=graph
-y1=-0.3
+y1=-0.2
 y2=2.1
 ypos1=0
 ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=0
-x2=1e-08
+x1=5e-11
+x2=2e-09
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -76,7 +77,7 @@ logy=0
 
 
 
-linewidth_mult=2
+linewidth_mult=1
 
 
 
@@ -88,7 +89,7 @@ linewidth_mult=2
 
 
 
-color=5
+color=12
 node=vout}
 N 540 -940 540 -910 {
 lab=VIN}
@@ -96,29 +97,16 @@ C {devices/vsource.sym} 450 -880 0 0 {name=VDD value=1.8 savecurrent=false}
 C {devices/gnd.sym} 450 -850 0 0 {name=l1 lab=GND}
 C {devices/code.sym} 260 -940 0 0 {name=Stimuli only_toplevel=false value="
 
-.include /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
-
 .option method=gear
 .option wnflag=1
-* .option savecurrents
-
-
-*.ic v(d)=0
-*.ic v(q)=0
-*.ic v(q1)=0
-
-.probe p(x1) 
 
 .control
-
-  save v(vin) v(vout) p(x1:power)
-  * save all
-  * tran 0.1n 1u
-  tran 0.5p 10n
-
+  
+  save all
+  tran 5p 20n
   remzerovec
   write tb_TSPC_FF_ratioed_divide2.raw
-  * set appendwrite
+  set appendwrite
 
 .endc
 

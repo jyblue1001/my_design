@@ -13,8 +13,8 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=1.9179903e-11
-x2=1.737167e-09
+x1=5e-13
+x2=2e-09
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -36,7 +36,7 @@ logy=0
 
 
 
-linewidth_mult=2
+linewidth_mult=3
 
 
 
@@ -95,8 +95,8 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=1.9179903e-11
-x2=1.737167e-09
+x1=5e-13
+x2=2e-09
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -144,7 +144,7 @@ C {devices/code.sym} 300 -940 0 0 {name=Stimuli only_toplevel=false value="
   save all
   tran 5p 20n
   remzerovec
-  write tb_TSPC_FF_comp_sw_divide2_2.raw
+  write tb_FF_comp_sw_divide2.raw
   * set appendwrite
 
 .endc
@@ -160,7 +160,6 @@ C {devices/vsource.sym} 550 -880 0 0 {name=V2 value="pulse(0 1.8 0ps 8.34ps 8.34
 * "pulse(0 1.8 12.5ns 0.5ns 0.5ns 12ns 25ns)"
 * "pulse(0 1.8 0ps 16.68ps 16.68ps 408.32ps 834ps)"
 * "pulse(0 1.8 0ps 20ps 20ps 480ps 1000ps)"}
-C {/foss/designs/my_design/projects/pll/divider/xschem_ngspice/FF_comp_sw_divide2_2.sym} 1010 -870 0 0 {name=x1
-lab=CVOUT}
+C {/foss/designs/my_design/projects/pll/divider/xschem_ngspice/FF_comp_sw_divide2.sym} 1010 -870 0 0 {name=x1}
 C {devices/gnd.sym} 1010 -810 0 0 {name=l2 lab=GND}
 C {devices/vdd.sym} 1010 -930 0 0 {name=l3 lab=VDD}

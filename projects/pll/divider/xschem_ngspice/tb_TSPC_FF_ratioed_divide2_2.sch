@@ -13,8 +13,8 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=5.3084299e-09
-x2=7.4055819e-09
+x1=2.5814816e-09
+x2=5.2029216e-09
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -53,8 +53,8 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=5.3084299e-09
-x2=7.4055819e-09
+x1=2.5814816e-09
+x2=5.2029216e-09
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -88,9 +88,8 @@ linewidth_mult=3
 
 
 
-color="5 6"
-node="vout
-c"}
+color=5
+node=vout}
 N 660 -1560 660 -1530 {
 lab=VIN}
 N 960 -760 960 -720 {
@@ -243,7 +242,7 @@ C {devices/vsource.sym} 660 -1500 0 0 {name=V1 value="pulse(0 1.8 0ps 8.34ps 8.3
 * "pulse(0 1.8 0ps 20ps 20ps 480ps 1000ps)"}
 C {sky130_fd_pr/pfet_01v8.sym} 940 -690 0 0 {name=M24
 L=0.15
-W=1
+W=0.43
 nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -257,7 +256,7 @@ spiceprefix=X
 }
 C {sky130_fd_pr/nfet_01v8.sym} 940 -230 0 0 {name=M29
 L=0.15
-W=1
+W=0.43
 nf=1 
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -271,7 +270,7 @@ spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8.sym} 690 -690 0 0 {name=M30
 L=0.15
-W=1
+W=0.43
 nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -285,8 +284,8 @@ spiceprefix=X
 }
 C {sky130_fd_pr/nfet_01v8.sym} 690 -230 0 0 {name=M31
 L=0.15
-W=3
-nf=3 
+W=1.5
+nf=1 
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
@@ -299,7 +298,7 @@ spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8.sym} 450 -690 0 0 {name=M32
 L=0.15
-W=1
+W=0.43
 nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -313,7 +312,7 @@ spiceprefix=X
 }
 C {sky130_fd_pr/nfet_01v8.sym} 450 -230 0 0 {name=M33
 L=0.15
-W=1
+W=0.43
 nf=1 
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -329,7 +328,7 @@ C {devices/lab_pin.sym} 370 -450 0 0 {name=p31 sig_type=std_logic lab=VIN}
 C {devices/lab_pin.sym} 630 -230 0 0 {name=p36 sig_type=std_logic lab=VIN}
 C {sky130_fd_pr/nfet_01v8.sym} 450 -450 0 0 {name=M28
 L=0.15
-W=1
+W=0.43
 nf=1 
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
