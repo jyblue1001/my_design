@@ -223,7 +223,7 @@ N 1150 -130 1150 -60 {
 lab=GNDA}
 C {devices/opin.sym} 2120 -470 0 0 {name=p5 lab=V_OSC}
 C {sky130_fd_pr/nfet_01v8.sym} 780 -420 0 0 {name=M21
-L=0.22
+L=0.18
 W=0.43
 nf=1 
 mult=1
@@ -237,7 +237,7 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8.sym} 780 -520 0 0 {name=M22
-L=0.22
+L=0.18
 W=0.86
 nf=2
 mult=1
@@ -251,7 +251,7 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {sky130_fd_pr/nfet_01v8.sym} 1240 -420 0 0 {name=M23
-L=0.22
+L=0.18
 W=0.43
 nf=1
 mult=1
@@ -265,7 +265,7 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8.sym} 1240 -520 0 0 {name=M24
-L=0.22
+L=0.18
 W=0.86
 nf=2
 mult=1
@@ -279,7 +279,7 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {sky130_fd_pr/nfet_01v8.sym} 1700 -420 0 0 {name=M25
-L=0.22
+L=0.18
 W=0.43
 nf=1 
 mult=1
@@ -293,7 +293,7 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8.sym} 1700 -520 0 0 {name=M26
-L=0.22
+L=0.18
 W=0.86
 nf=2
 mult=1

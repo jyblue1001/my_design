@@ -6,10 +6,8 @@ import pandas as pd
 directory = '.'
 
 # Loop through all files in the directory
-for filename in os.listdir(directory):
-    # if filename.startswith('divide_by_120_1') and filename.endswith('.txt'):
-    # if filename.startswith('divide_by_120_2') and filename.endswith('.txt'):
-    if filename.startswith('divide_by_120_3') and filename.endswith('.txt'):
+for filename in os.listdir(directory):  
+    if filename.startswith('tb_divide_by_120_5_') and filename.endswith('.txt'):
         # Define CSV filename
         csv_filename = filename.replace('.txt', '.csv')
         csv_path = os.path.join(directory, csv_filename)

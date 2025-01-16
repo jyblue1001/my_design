@@ -6,15 +6,15 @@ V {}
 S {}
 E {}
 B 2 160 -3460 5790 -1910 {flags=graph
-y1=0.83785
-y2=0.83805
+y1=-0.0027
+y2=1.9
 ypos1=0
 ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=3.2869549e-07
-x2=7.2451968e-07
+x1=0
+x2=9e-06
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -90,15 +90,15 @@ linewidth_mult=5
 color=12
 node=v_cont}
 B 2 160 -1780 5790 -230 {flags=graph
-y1=-0.0027
-y2=1.6
+y1=0.039
+y2=1.5
 ypos1=0
 ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=3.2869549e-07
-x2=7.2451968e-07
+x1=0
+x2=9e-06
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -166,20 +166,19 @@ linewidth_mult=2
 
 
 
-color="5 6 17"
-node="x4.x
-x4.opamp_out
-v_cont"}
+
+color=6
+node=v_osc}
 B 2 160 -110 5790 1440 {flags=graph
-y1=-0.00014
-y2=0.00031
+y1=-0.059
+y2=1.9
 ypos1=0
 ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=3.2869549e-07
-x2=7.2451968e-07
+x1=0
+x2=9e-06
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -255,11 +254,13 @@ linewidth_mult=15
 
 
 
-color="6 7"
-node="i(v.x4.vmeas2)
-i(v.x4.vmeas3)"}
-T {full_pll_11_12.raw = 5ps step, vcont = 0.838
-full_pll_11_13.raw = 2ps step, vcont = 0.835} 140 -4360 0 0 2 2 {}
+
+
+color="6 5"
+node="x2.v_out2
+x2.v_out4"}
+T {full_pll_14.raw - current_starved_VCO8 & divide_by_120_3
+full_pll_14_2.raw - current_starved_VCO9 & divide_by_120_4} 460 -4360 0 0 1 1 {}
 N 3700 -3640 3770 -3640 {
 lab=V_OUT120}
 N 3950 -3640 5150 -3640 {
@@ -335,6 +336,10 @@ C {devices/code.sym} 1110 -3960 0 0 {name=Stimuli only_toplevel=false value="
 .ic v(v_cont)=0
 
 .save
++v(x2.v_out2)
++v(x2.v_out4)
++v(x2.v_out8)
++v(x2.v_out24)
 +v(x4.x)
 +v(x4.opamp_out)
 +v(v_out120_inv)
@@ -349,9 +354,11 @@ C {devices/code.sym} 1110 -3960 0 0 {name=Stimuli only_toplevel=false value="
     * tran 2p 9u
     tran 5p 9u
     remzerovec
-    * write full_pll_14.raw
+    write full_pll_14.raw
+    * write full_pll_14_2.raw
     linearize v(v_cont) v(v_osc)
-    * wrdata /foss/designs/my_design/projects/pll/full_pll/xschem_ngspice/full_pll_14.txt v(v_osc)
+    wrdata /foss/designs/my_design/projects/pll/full_pll/xschem_ngspice/full_pll_14.txt v(v_osc)
+    * wrdata /foss/designs/my_design/projects/pll/full_pll/xschem_ngspice/full_pll_14_2.txt v(v_osc)
     set appendwrite
  .endc
 

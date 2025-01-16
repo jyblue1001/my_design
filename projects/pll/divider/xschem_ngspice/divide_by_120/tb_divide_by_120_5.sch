@@ -13,8 +13,8 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=2.5095295e-07
-x2=2.5150057e-07
+x1=2.5090151e-07
+x2=2.5144913e-07
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -55,8 +55,8 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=2.5095295e-07
-x2=2.5150057e-07
+x1=2.5090151e-07
+x2=2.5144913e-07
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -101,8 +101,8 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=2.5095295e-07
-x2=2.5150057e-07
+x1=2.5090151e-07
+x2=2.5144913e-07
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -143,8 +143,8 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=2.5095295e-07
-x2=2.5150057e-07
+x1=2.5090151e-07
+x2=2.5144913e-07
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -200,8 +200,8 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=2.5095295e-07
-x2=2.5150057e-07
+x1=2.5090151e-07
+x2=2.5144913e-07
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -247,8 +247,8 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=2.5095295e-07
-x2=2.5150057e-07
+x1=2.5090151e-07
+x2=2.5144913e-07
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -305,8 +305,8 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=2.5095295e-07
-x2=2.5150057e-07
+x1=2.5090151e-07
+x2=2.5144913e-07
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -364,8 +364,8 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=2.5095295e-07
-x2=2.5150057e-07
+x1=2.5090151e-07
+x2=2.5144913e-07
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -454,60 +454,42 @@ C {devices/code.sym} 1420 -700 0 0 {name=Stimuli only_toplevel=false value="
 * .probe p(x1)
 * .probe p(x2)
 
-.control
-    * save v(v_cont) v(v_osc) v(v_out2) v(v_out4) v(v_out8) v(v_out24) v(v_out120) p(x1:power) p(x2:power)
-    save v(v_cont) v(v_osc) v(v_out2) v(v_out4) v(v_out8) v(v_out24) v(v_out120)
-    tran 5p 0.5u
-    remzerovec
-    write tb_divide_by_120_3.raw
-    * linearize v(v_cont) v(v_osc) v(v_out2) v(v_out4) v(v_out8) v(v_out24) v(v_out120) p(x1:power)
-    * wrdata /foss/designs/my_design/projects/pll/divider/xschem_ngspice/divide_by_120/tb_divide_by_120_3.txt v(v_osc)
-    set appendwrite
- .endc
-
-"}
-C {sky130_fd_pr/corner.sym} 1250 -700 0 0 {name=CORNER only_toplevel=false corner=tt
-value="
-
-.include /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
-
-.option method=gear
-.option wnflag=1
-* .option savecurrents
-
-
-*.ic v(d)=0
-*.ic v(q)=0
-*.ic v(q1)=0
-
-* .probe p(x4)
 
 .control
 
-  let v_cont_start = 0.6
+  let v_cont_start = 0.0
   let v_cont_stop = 1.9
 
   dowhile v_cont_start <= v_cont_stop
     alter v1 $&v_cont_start
 
-    * save v(v_cont) v(v_osc) v(vout) p(x4:power)
-    save v(v_cont) v(v_osc) v(v_osc_b) v(v_osc_b_b) v(v_out2) v(v_out4) v(v_out8) v(v_out24) v(v_out120)
-    * save v(vin) v(vout)
-    * save all
-    * tran 0.1n 1u
-    tran 0.1p 200n
+    * save all    
+    * save v(v_cont) v(v_osc) v(v_out2) v(v_out4) v(v_out8) v(v_out24) v(v_out120) p(x1:power) p(x2:power)
+    save v(v_osc)
+
+    * tran 5p 0.5u
+    tran 5ps 30ns
 
     remzerovec
-    write divide_by_120.raw
-    write divide_by_120_\{$&v_cont_start\}.raw
+
+    write tb_divide_by_120_5_\{$&v_cont_start\}.raw
+    * write tb_divide_by_120_5.raw
+
     linearize v(v_osc)
+    * linearize v(v_cont) v(v_osc) v(v_out2) v(v_out4) v(v_out8) v(v_out24) v(v_out120) p(x1:power)
+
     let filename = v_cont_start * 100
-    wrdata /foss/designs/my_design/projects/pll/divider/xschem_ngspice/divide_by_120/divide_by_120_\{$&filename\}.txt v(v_osc)
-  * set appendwrite
+
+    wrdata /foss/designs/my_design/projects/pll/divider/xschem_ngspice/divide_by_120/tb_divide_by_120_5_\{$&filename\}.txt v(v_osc)
+    * wrdata /foss/designs/my_design/projects/pll/divider/xschem_ngspice/divide_by_120/tb_divide_by_120_5_.txt v(v_osc)
+
+    set appendwrite
+
     reset
     let v_cont_start = v_cont_start + 0.1
-  end
+   end
 .endc
+
 
 "}
 C {devices/vdd.sym} 1630 -670 0 0 {name=l6 lab=VDD}
@@ -544,3 +526,4 @@ C {devices/lab_wire.sym} 2420 290 0 1 {name=p9 sig_type=std_logic lab=V_OUT24}
 C {/foss/designs/my_design/projects/pll/vco/xschem_ngspice/current_starved_VCO8.sym} 1570 -160 0 0 {name=x1}
 C {/foss/designs/my_design/projects/pll/divider/xschem_ngspice/FF_comp_sw_divide2.sym} 1720 290 0 0 {name=x3}
 C {/foss/designs/my_design/projects/pll/divider/xschem_ngspice/FF_comp_sw_divide2.sym} 2020 290 0 0 {name=x4}
+C {sky130_fd_pr/corner.sym} 1260 -700 0 0 {name=CORNER1 only_toplevel=false corner=tt}

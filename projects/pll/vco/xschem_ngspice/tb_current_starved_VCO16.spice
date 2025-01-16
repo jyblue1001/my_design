@@ -1,7 +1,7 @@
 ** sch_path: /foss/designs/my_design/projects/pll/vco/xschem_ngspice/tb_current_starved_VCO16.sch
 **.subckt tb_current_starved_VCO16
 Vdd VDD GND 1.8
-V1 V_CONT GND 0.825
+V1 V_CONT GND 0.83
 x1 VDD V_OSC V_CONT GND current_starved_VCO8
 x2 V_OUT V_OSC VDD GND TSPC_FF_comp_sw_divide2
 **** begin user architecture code
@@ -40,7 +40,7 @@ x2 V_OUT V_OSC VDD GND TSPC_FF_comp_sw_divide2
     * tran 0.2ps 100ns 10ns
     * tran 0.5ps 8us 5us
     * tran 0.2ps 9us 7us
-    tran 2ps 30ns
+    tran 5ps 30ns
     remzerovec
     write tb_current_starved_VCO16_{$&v_cont_start}.raw
     * write tb_current_starved_VCO16.raw
