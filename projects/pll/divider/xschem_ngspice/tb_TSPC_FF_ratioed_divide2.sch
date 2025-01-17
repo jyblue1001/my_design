@@ -14,7 +14,7 @@ divy=5
 subdivy=4
 unity=1
 
-x2=2e-09
+x2=9.8825671e-09
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -45,7 +45,7 @@ linewidth_mult=2
 
 color=6
 node=vin
-x1=5e-13}
+x1=-1.1743292e-10}
 B 2 80 -530 1130 -300 {flags=graph
 y1=-0.2
 y2=2.1
@@ -54,8 +54,8 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=5e-11
-x2=2e-09
+x1=-1.1743292e-10
+x2=9.8825671e-09
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -77,7 +77,7 @@ logy=0
 
 
 
-linewidth_mult=1
+linewidth_mult=2
 
 
 

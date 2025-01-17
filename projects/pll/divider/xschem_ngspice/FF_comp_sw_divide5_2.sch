@@ -585,117 +585,65 @@ N 2160 -1340 2220 -1340 {
 lab=VDDA}
 N 2220 -1620 2220 -1340 {
 lab=VDDA}
-N 4630 -2330 4630 -2200 {
+N 4330 -2370 4330 -2160 {
+lab=VIN2}
+N 4390 -2370 4390 -2160 {
 lab=#net16}
-N 4690 -2330 4690 -2200 {
+N 4360 -1880 4360 -1860 {
 lab=CK2_b}
-N 4660 -1880 4660 -1860 {
-lab=CK2}
-N 4590 -1910 4620 -1910 {
-lab=#net17}
-N 4590 -1910 4590 -1830 {
-lab=#net17}
-N 4590 -1830 4620 -1830 {
-lab=#net17}
-N 4660 -1800 4660 -1780 {
+N 4290 -1910 4320 -1910 {
+lab=VIN2}
+N 4290 -1910 4290 -1830 {
+lab=VIN2}
+N 4290 -1830 4320 -1830 {
+lab=VIN2}
+N 4360 -1800 4360 -1780 {
 lab=GNDA}
-N 4660 -1830 4680 -1830 {
+N 4360 -1830 4380 -1830 {
 lab=GNDA}
-N 4680 -1830 4680 -1790 {
+N 4380 -1830 4380 -1790 {
 lab=GNDA}
-N 4660 -1790 4680 -1790 {
+N 4360 -1790 4380 -1790 {
 lab=GNDA}
-N 4660 -1960 4660 -1940 {
+N 4360 -1960 4360 -1940 {
 lab=VDDA}
-N 4660 -1950 4680 -1950 {
+N 4360 -1950 4380 -1950 {
 lab=VDDA}
-N 4680 -1950 4680 -1910 {
+N 4380 -1950 4380 -1910 {
 lab=VDDA}
-N 4660 -1910 4680 -1910 {
+N 4360 -1910 4380 -1910 {
 lab=VDDA}
-N 4660 -1870 4770 -1870 {
-lab=CK2}
+N 4360 -1870 4470 -1870 {
+lab=CK2_b}
 N 4110 -2080 4190 -2080 {
 lab=VIN2}
-N 4690 -2260 4770 -2260 {
-lab=CK2_b}
-N 4660 -2410 4660 -2370 {
-lab=VDDA}
-N 4660 -2160 4660 -2110 {
-lab=GNDA}
-N 4660 -2330 4660 -2300 {
-lab=GNDA}
-N 4660 -2300 4720 -2300 {
-lab=GNDA}
-N 4720 -2300 4720 -2140 {
-lab=GNDA}
-N 4660 -2140 4720 -2140 {
-lab=GNDA}
-N 4660 -2220 4660 -2200 {
-lab=VDDA}
-N 4600 -2220 4660 -2220 {
-lab=VDDA}
-N 4600 -2380 4600 -2220 {
-lab=VDDA}
-N 4600 -2380 4660 -2380 {
-lab=VDDA}
-N 4370 -1880 4370 -1860 {
-lab=#net17}
-N 4300 -1910 4330 -1910 {
-lab=VIN2}
-N 4300 -1910 4300 -1830 {
-lab=VIN2}
-N 4300 -1830 4330 -1830 {
-lab=VIN2}
-N 4370 -1800 4370 -1780 {
-lab=GNDA}
-N 4370 -1830 4390 -1830 {
-lab=GNDA}
-N 4390 -1830 4390 -1790 {
-lab=GNDA}
-N 4370 -1790 4390 -1790 {
-lab=GNDA}
-N 4370 -1960 4370 -1940 {
-lab=VDDA}
-N 4370 -1950 4390 -1950 {
-lab=VDDA}
-N 4390 -1950 4390 -1910 {
-lab=VDDA}
-N 4370 -1910 4390 -1910 {
-lab=VDDA}
-N 4370 -1870 4590 -1870 {
-lab=#net17}
-N 4370 -2270 4370 -2250 {
+N 4390 -2260 4470 -2260 {
 lab=#net16}
-N 4300 -2300 4330 -2300 {
+N 4360 -2450 4360 -2410 {
+lab=VDDA}
+N 4360 -2120 4360 -2070 {
+lab=GNDA}
+N 4360 -2370 4360 -2340 {
+lab=GNDA}
+N 4360 -2340 4420 -2340 {
+lab=GNDA}
+N 4420 -2340 4420 -2100 {
+lab=GNDA}
+N 4360 -2100 4420 -2100 {
+lab=GNDA}
+N 4360 -2180 4360 -2160 {
+lab=VDDA}
+N 4300 -2180 4360 -2180 {
+lab=VDDA}
+N 4300 -2420 4300 -2180 {
+lab=VDDA}
+N 4300 -2420 4360 -2420 {
+lab=VDDA}
+N 4190 -1870 4290 -1870 {
 lab=VIN2}
-N 4300 -2300 4300 -2220 {
-lab=VIN2}
-N 4300 -2220 4330 -2220 {
-lab=VIN2}
-N 4370 -2190 4370 -2170 {
-lab=GNDA}
-N 4370 -2220 4390 -2220 {
-lab=GNDA}
-N 4390 -2220 4390 -2180 {
-lab=GNDA}
-N 4370 -2180 4390 -2180 {
-lab=GNDA}
-N 4370 -2350 4370 -2330 {
-lab=VDDA}
-N 4370 -2340 4390 -2340 {
-lab=VDDA}
-N 4390 -2340 4390 -2300 {
-lab=VDDA}
-N 4370 -2300 4390 -2300 {
-lab=VDDA}
-N 4370 -2260 4630 -2260 {
-lab=#net16}
-N 4190 -2260 4300 -2260 {
+N 4190 -2260 4330 -2260 {
 lab=VIN2}
 N 4190 -2260 4190 -1870 {
-lab=VIN2}
-N 4190 -1870 4300 -1870 {
 lab=VIN2}
 C {devices/ipin.sym} 370 -2030 0 0 {name=p9 lab=VIN}
 C {devices/opin.sym} 440 -2030 0 0 {name=p10 lab=VOUT}
@@ -1222,8 +1170,8 @@ spiceprefix=X
 }
 C {devices/lab_pin.sym} 3630 -1180 0 1 {name=p47 sig_type=std_logic lab=VIN2}
 C {devices/lab_pin.sym} 5050 -1230 0 1 {name=p48 sig_type=std_logic lab=VOUT}
-C {devices/lab_pin.sym} 4770 -2260 0 1 {name=p2 sig_type=std_logic lab=CK2_b}
-C {devices/lab_pin.sym} 4770 -1870 0 1 {name=p3 sig_type=std_logic lab=CK2}
+C {devices/lab_pin.sym} 4470 -1870 0 1 {name=p2 sig_type=std_logic lab=CK2_b}
+C {devices/lab_pin.sym} 4470 -2260 0 1 {name=p3 sig_type=std_logic lab=CK2}
 C {devices/lab_pin.sym} 4110 -2080 0 0 {name=p4 sig_type=std_logic lab=VIN2}
 C {sky130_fd_pr/pfet_01v8.sym} 2940 -2220 3 0 {name=M13
 L=0.15
@@ -1295,7 +1243,7 @@ C {devices/lab_pin.sym} 1000 -780 0 1 {name=p31 sig_type=std_logic lab=GNDA}
 C {devices/lab_pin.sym} 1000 -1450 0 0 {name=p32 sig_type=std_logic lab=VDDA}
 C {devices/lab_pin.sym} 3120 -1650 0 0 {name=p36 sig_type=std_logic lab=VDDA}
 C {devices/lab_pin.sym} 4540 -1490 0 0 {name=p40 sig_type=std_logic lab=VDDA}
-C {sky130_fd_pr/pfet_01v8.sym} 4660 -2180 3 0 {name=M24
+C {sky130_fd_pr/pfet_01v8.sym} 4360 -2140 3 0 {name=M24
 L=0.15
 W=0.86
 nf=2
@@ -1309,7 +1257,7 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {sky130_fd_pr/nfet_01v8.sym} 4660 -2350 1 0 {name=M28
+C {sky130_fd_pr/nfet_01v8.sym} 4360 -2390 1 0 {name=M28
 L=0.15
 W=0.43
 nf=1 
@@ -1323,7 +1271,7 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {sky130_fd_pr/pfet_01v8.sym} 4640 -1910 0 0 {name=M29
+C {sky130_fd_pr/pfet_01v8.sym} 4340 -1910 0 0 {name=M29
 L=0.15
 W=0.86
 nf=2
@@ -1337,7 +1285,7 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {sky130_fd_pr/nfet_01v8.sym} 4640 -1830 0 0 {name=M30
+C {sky130_fd_pr/nfet_01v8.sym} 4340 -1830 0 0 {name=M30
 L=0.15
 W=0.43
 nf=1 
@@ -1351,67 +1299,7 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {devices/lab_pin.sym} 4660 -1960 0 0 {name=p44 sig_type=std_logic lab=VDDA}
-C {devices/lab_pin.sym} 4660 -1780 0 0 {name=p45 sig_type=std_logic lab=GNDA}
-C {devices/lab_pin.sym} 4660 -2410 0 0 {name=p46 sig_type=std_logic lab=VDDA}
-C {devices/lab_pin.sym} 4660 -2110 0 0 {name=p49 sig_type=std_logic lab=GNDA}
-C {sky130_fd_pr/pfet_01v8.sym} 4350 -1910 0 0 {name=M31
-L=0.15
-W=0.86
-nf=2
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=pfet_01v8
-spiceprefix=X
-}
-C {sky130_fd_pr/nfet_01v8.sym} 4350 -1830 0 0 {name=M32
-L=0.15
-W=0.43
-nf=1 
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=nfet_01v8
-spiceprefix=X
-}
-C {devices/lab_pin.sym} 4370 -1960 0 0 {name=p50 sig_type=std_logic lab=VDDA}
-C {devices/lab_pin.sym} 4370 -1780 0 0 {name=p51 sig_type=std_logic lab=GNDA}
-C {sky130_fd_pr/pfet_01v8.sym} 4350 -2300 0 0 {name=M33
-L=0.15
-W=0.86
-nf=2
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=pfet_01v8
-spiceprefix=X
-}
-C {sky130_fd_pr/nfet_01v8.sym} 4350 -2220 0 0 {name=M34
-L=0.15
-W=0.43
-nf=1 
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=nfet_01v8
-spiceprefix=X
-}
-C {devices/lab_pin.sym} 4370 -2350 0 0 {name=p52 sig_type=std_logic lab=VDDA}
-C {devices/lab_pin.sym} 4370 -2170 0 0 {name=p53 sig_type=std_logic lab=GNDA}
+C {devices/lab_pin.sym} 4360 -1960 0 0 {name=p44 sig_type=std_logic lab=VDDA}
+C {devices/lab_pin.sym} 4360 -1780 0 0 {name=p45 sig_type=std_logic lab=GNDA}
+C {devices/lab_pin.sym} 4360 -2450 0 0 {name=p46 sig_type=std_logic lab=VDDA}
+C {devices/lab_pin.sym} 4360 -2070 0 0 {name=p49 sig_type=std_logic lab=GNDA}

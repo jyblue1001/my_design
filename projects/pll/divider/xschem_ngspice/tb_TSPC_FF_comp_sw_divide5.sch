@@ -13,8 +13,8 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=9.9706944e-09
-x2=1.4802532e-08
+x1=0
+x2=5e-07
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -52,8 +52,8 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=9.9706944e-09
-x2=1.4802532e-08
+x1=0
+x2=5e-07
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -96,8 +96,8 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=9.9706944e-09
-x2=1.4802532e-08
+x1=0
+x2=5e-07
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -139,8 +139,8 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=9.9706944e-09
-x2=1.4802532e-08
+x1=0
+x2=5e-07
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -173,15 +173,15 @@ linewidth_mult=2
 color=6
 node=vout}
 B 2 20 -260 1070 -30 {flags=graph
-y1=5.7e-17
-y2=1.9
+y1=-0.32
+y2=2
 ypos1=0
 ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=9.9706944e-09
-x2=1.4802532e-08
+x1=0
+x2=5e-07
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -233,7 +233,7 @@ C {devices/code.sym} 260 -940 0 0 {name=Stimuli only_toplevel=false value="
 
   save all
   * tran 0.1n 1u
-  tran 10p 0.5u
+  tran 5p 0.1u
 
   remzerovec
   write tb_TSPC_FF_comp_sw_divide5.raw

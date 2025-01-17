@@ -13,8 +13,8 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=2.8933271e-10
-x2=2.4368164e-09
+x1=4.8339884e-10
+x2=2.0666956e-09
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -52,8 +52,8 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=2.8933271e-10
-x2=2.4368164e-09
+x1=4.8339884e-10
+x2=2.0666956e-09
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -97,8 +97,8 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=2.8933271e-10
-x2=2.4368164e-09
+x1=4.8339884e-10
+x2=2.0666956e-09
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -280,62 +280,38 @@ N 3450 -1190 3450 -1030 {
 lab=#net2}
 N 3820 -1430 3820 -1030 {
 lab=VOUT}
-N 2440 -1540 2440 -1410 {
+N 2150 -1540 2150 -1410 {
+lab=CK}
+N 2210 -1540 2210 -1410 {
+lab=CK1}
+N 2180 -1080 2290 -1080 {
 lab=#net5}
-N 2500 -1540 2500 -1410 {
-lab=CK1_b}
-N 2470 -1090 2470 -1070 {
-lab=CK1}
-N 2400 -1120 2430 -1120 {
-lab=#net6}
-N 2400 -1120 2400 -1040 {
-lab=#net6}
-N 2400 -1040 2430 -1040 {
-lab=#net6}
-N 2470 -1010 2470 -990 {
-lab=GND}
-N 2470 -1040 2490 -1040 {
-lab=GND}
-N 2490 -1040 2490 -1000 {
-lab=GND}
-N 2470 -1000 2490 -1000 {
-lab=GND}
-N 2470 -1170 2470 -1150 {
-lab=VDD}
-N 2470 -1160 2490 -1160 {
-lab=VDD}
-N 2490 -1160 2490 -1120 {
-lab=VDD}
-N 2470 -1120 2490 -1120 {
-lab=VDD}
-N 2470 -1080 2580 -1080 {
-lab=CK1}
 N 1920 -1290 2000 -1290 {
 lab=CK}
-N 2500 -1470 2580 -1470 {
-lab=CK1_b}
-N 2470 -1620 2470 -1580 {
+N 2210 -1470 2290 -1470 {
+lab=CK1}
+N 2180 -1620 2180 -1580 {
 lab=VDD}
-N 2470 -1370 2470 -1320 {
+N 2180 -1370 2180 -1320 {
 lab=GND}
-N 2470 -1540 2470 -1510 {
+N 2180 -1540 2180 -1510 {
 lab=GND}
-N 2470 -1510 2530 -1510 {
+N 2180 -1510 2240 -1510 {
 lab=GND}
-N 2530 -1510 2530 -1350 {
+N 2240 -1510 2240 -1350 {
 lab=GND}
-N 2470 -1350 2530 -1350 {
+N 2180 -1350 2240 -1350 {
 lab=GND}
-N 2470 -1430 2470 -1410 {
+N 2180 -1430 2180 -1410 {
 lab=VDD}
-N 2410 -1430 2470 -1430 {
+N 2120 -1430 2180 -1430 {
 lab=VDD}
-N 2410 -1590 2410 -1430 {
+N 2120 -1590 2120 -1430 {
 lab=VDD}
-N 2410 -1590 2470 -1590 {
+N 2120 -1590 2180 -1590 {
 lab=VDD}
 N 2180 -1090 2180 -1070 {
-lab=#net6}
+lab=#net5}
 N 2110 -1120 2140 -1120 {
 lab=CK}
 N 2110 -1120 2110 -1040 {
@@ -358,35 +334,7 @@ N 2200 -1160 2200 -1120 {
 lab=VDD}
 N 2180 -1120 2200 -1120 {
 lab=VDD}
-N 2180 -1080 2400 -1080 {
-lab=#net6}
-N 2180 -1480 2180 -1460 {
-lab=#net5}
-N 2110 -1510 2140 -1510 {
-lab=CK}
-N 2110 -1510 2110 -1430 {
-lab=CK}
-N 2110 -1430 2140 -1430 {
-lab=CK}
-N 2180 -1400 2180 -1380 {
-lab=GND}
-N 2180 -1430 2200 -1430 {
-lab=GND}
-N 2200 -1430 2200 -1390 {
-lab=GND}
-N 2180 -1390 2200 -1390 {
-lab=GND}
-N 2180 -1560 2180 -1540 {
-lab=VDD}
-N 2180 -1550 2200 -1550 {
-lab=VDD}
-N 2200 -1550 2200 -1510 {
-lab=VDD}
-N 2180 -1510 2200 -1510 {
-lab=VDD}
-N 2180 -1470 2440 -1470 {
-lab=#net5}
-N 2000 -1470 2110 -1470 {
+N 2000 -1470 2150 -1470 {
 lab=CK}
 N 2000 -1470 2000 -1080 {
 lab=CK}
@@ -567,7 +515,7 @@ C {devices/lab_pin.sym} 2930 -1220 0 0 {name=p18 sig_type=std_logic lab=CK1}
 C {devices/lab_pin.sym} 3370 -1220 0 0 {name=p2 sig_type=std_logic lab=CK1}
 C {devices/lab_pin.sym} 3260 -1220 0 1 {name=p20 sig_type=std_logic lab=CK1_b}
 C {devices/lab_pin.sym} 3700 -1220 0 1 {name=p21 sig_type=std_logic lab=CK1_b}
-C {sky130_fd_pr/pfet_01v8.sym} 2470 -1390 3 0 {name=M13
+C {sky130_fd_pr/pfet_01v8.sym} 2180 -1390 3 0 {name=M13
 L=0.15
 W=0.86
 nf=2
@@ -581,7 +529,7 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {sky130_fd_pr/nfet_01v8.sym} 2470 -1560 1 0 {name=M14
+C {sky130_fd_pr/nfet_01v8.sym} 2180 -1560 1 0 {name=M14
 L=0.15
 W=0.43
 nf=1 
@@ -595,36 +543,8 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {sky130_fd_pr/pfet_01v8.sym} 2450 -1120 0 0 {name=M15
-L=0.15
-W=0.86
-nf=2
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=pfet_01v8
-spiceprefix=X
-}
-C {sky130_fd_pr/nfet_01v8.sym} 2450 -1040 0 0 {name=M16
-L=0.15
-W=0.43
-nf=1 
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=nfet_01v8
-spiceprefix=X
-}
-C {devices/lab_pin.sym} 2580 -1470 0 1 {name=p22 sig_type=std_logic lab=CK1_b}
-C {devices/lab_pin.sym} 2580 -1080 0 1 {name=p24 sig_type=std_logic lab=CK1}
+C {devices/lab_pin.sym} 2290 -1080 0 1 {name=p22 sig_type=std_logic lab=CK1_b}
+C {devices/lab_pin.sym} 2290 -1470 0 1 {name=p24 sig_type=std_logic lab=CK1}
 C {devices/lab_pin.sym} 1920 -1290 0 0 {name=p3 sig_type=std_logic lab=CK}
 C {sky130_fd_pr/pfet_01v8.sym} 2160 -1120 0 0 {name=M11
 L=0.15
@@ -654,42 +574,10 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {sky130_fd_pr/pfet_01v8.sym} 2160 -1510 0 0 {name=M9
-L=0.15
-W=0.86
-nf=2
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=pfet_01v8
-spiceprefix=X
-}
-C {sky130_fd_pr/nfet_01v8.sym} 2160 -1430 0 0 {name=M10
-L=0.15
-W=0.43
-nf=1 
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=nfet_01v8
-spiceprefix=X
-}
-C {devices/vdd.sym} 2180 -1560 0 0 {name=l4 lab=VDD}
-C {devices/gnd.sym} 2180 -1380 0 0 {name=l5 lab=GND}
 C {devices/vdd.sym} 2180 -1170 0 0 {name=l7 lab=VDD}
 C {devices/gnd.sym} 2180 -990 0 0 {name=l8 lab=GND}
-C {devices/vdd.sym} 2470 -1170 0 0 {name=l9 lab=VDD}
-C {devices/gnd.sym} 2470 -990 0 0 {name=l10 lab=GND}
-C {devices/gnd.sym} 2470 -1320 0 0 {name=l11 lab=GND}
-C {devices/vdd.sym} 2470 -1620 0 0 {name=l12 lab=VDD}
+C {devices/gnd.sym} 2180 -1320 0 0 {name=l11 lab=GND}
+C {devices/vdd.sym} 2180 -1620 0 0 {name=l12 lab=VDD}
 C {devices/gnd.sym} 850 -1340 0 0 {name=l13 lab=GND}
 C {devices/lab_pin.sym} 850 -1430 0 1 {name=p1 sig_type=std_logic lab=VIN}
 C {devices/vsource.sym} 850 -1370 0 0 {name=V1 value="pulse(0 1.8 0ps 20ps 20ps 480ps 1000ps)" savecurrent=false

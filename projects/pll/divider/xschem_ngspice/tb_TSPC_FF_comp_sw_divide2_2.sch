@@ -44,49 +44,6 @@ linewidth_mult=2
 
 color=6
 node=vin}
-B 2 120 630 1170 860 {flags=graph
-y1=-0.17
-y2=2.1
-ypos1=0
-ypos2=2
-divy=5
-subdivy=4
-unity=1
-x1=1.9179903e-11
-x2=1.737167e-09
-divx=5
-subdivx=4
-xlabmag=1.0
-ylabmag=1.0
-
-
-dataset=-1
-unitx=1
-logx=0
-logy=0
-
-
-
-
-
-
-
-
-
-
-
-linewidth_mult=2
-
-
-
-
-
-
-
-
-color="6 5"
-node="x1.ck1
-x1.ck1_b"}
 B 2 120 -500 1170 -270 {flags=graph
 y1=-0.12
 y2=2.1

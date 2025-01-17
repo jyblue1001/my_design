@@ -355,10 +355,10 @@ C {devices/code.sym} 1110 -3960 0 0 {name=Stimuli only_toplevel=false value="
     tran 5p 9u
     remzerovec
     write full_pll_14.raw
-    * write full_pll_14_2.raw
+    * write full_pll_14_3.raw
     linearize v(v_cont) v(v_osc)
     wrdata /foss/designs/my_design/projects/pll/full_pll/xschem_ngspice/full_pll_14.txt v(v_osc)
-    * wrdata /foss/designs/my_design/projects/pll/full_pll/xschem_ngspice/full_pll_14_2.txt v(v_osc)
+    * wrdata /foss/designs/my_design/projects/pll/full_pll/xschem_ngspice/full_pll_14_3.txt v(v_osc)
     set appendwrite
  .endc
 
@@ -368,8 +368,8 @@ C {devices/vdd.sym} 1320 -3920 0 0 {name=l6 lab=VDD}
 C {devices/vdd.sym} 4830 -4240 0 0 {name=l8 lab=VDD}
 C {devices/gnd.sym} 4830 -4040 0 0 {name=l9 lab=GND}
 C {devices/lab_wire.sym} 5000 -4140 0 1 {name=p2 sig_type=std_logic lab=V_OSC}
-C {/foss/designs/my_design/projects/pll/vco/xschem_ngspice/current_starved_VCO8.sym} 4830 -4140 0 0 {name=x1}
-C {/foss/designs/my_design/projects/pll/divider/xschem_ngspice/divide_by_120/divide_by_120_3.sym} 3860 -3640 0 1 {name=x2}
+C {/foss/designs/my_design/projects/pll/vco/xschem_ngspice/current_starved_VCO9.sym} 4830 -4140 0 0 {name=x1}
+C {/foss/designs/my_design/projects/pll/divider/xschem_ngspice/divide_by_120/divide_by_120_4.sym} 3860 -3640 0 1 {name=x2}
 C {devices/vdd.sym} 3860 -3690 0 1 {name=l2 lab=VDD}
 C {devices/gnd.sym} 3860 -3590 0 1 {name=l3 lab=GND}
 C {devices/gnd.sym} 3970 -4070 0 0 {name=l14 lab=GND}

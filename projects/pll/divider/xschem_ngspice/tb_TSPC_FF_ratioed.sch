@@ -14,7 +14,7 @@ divy=5
 subdivy=4
 unity=1
 
-x2=6.2541172e-09
+x2=1.075975e-08
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -45,7 +45,7 @@ linewidth_mult=3
 
 color=6
 node=ck
-x1=2.7684791e-09}
+x1=9.0417634e-09}
 B 2 80 -530 1130 -300 {flags=graph
 y1=0
 y2=1.8
@@ -54,8 +54,8 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=2.7684791e-09
-x2=6.2541172e-09
+x1=9.0417634e-09
+x2=1.075975e-08
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -93,15 +93,15 @@ linewidth_mult=3
 color=12
 node=vin}
 B 2 80 -290 1130 -60 {flags=graph
-y1=-0.54
-y2=2.3
+y1=-0.33
+y2=0.43
 ypos1=0
 ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=2.7684791e-09
-x2=6.2541172e-09
+x1=9.0417634e-09
+x2=1.075975e-08
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -138,13 +138,13 @@ linewidth_mult=3
 color=5
 node=vout}
 N 2150 -970 2150 -930 {
-lab=VDD}
+lab=#net1}
 N 2150 -900 2190 -900 {
-lab=VDD}
+lab=#net1}
 N 2190 -950 2190 -900 {
-lab=VDD}
+lab=#net1}
 N 2150 -950 2190 -950 {
-lab=VDD}
+lab=#net1}
 N 2150 -390 2190 -390 {
 lab=GND}
 N 2150 -410 2150 -360 {
@@ -152,13 +152,13 @@ lab=GND}
 N 2150 -440 2190 -440 {
 lab=GND}
 N 1900 -970 1900 -930 {
-lab=VDD}
+lab=#net1}
 N 1900 -900 1940 -900 {
-lab=VDD}
+lab=#net1}
 N 1940 -950 1940 -900 {
-lab=VDD}
+lab=#net1}
 N 1900 -950 1940 -950 {
-lab=VDD}
+lab=#net1}
 N 1900 -390 1940 -390 {
 lab=GND}
 N 1900 -410 1900 -360 {
@@ -166,13 +166,13 @@ lab=GND}
 N 1900 -440 1940 -440 {
 lab=GND}
 N 1660 -970 1660 -930 {
-lab=VDD}
+lab=#net1}
 N 1660 -900 1700 -900 {
-lab=VDD}
+lab=#net1}
 N 1700 -950 1700 -900 {
-lab=VDD}
+lab=#net1}
 N 1660 -950 1700 -950 {
-lab=VDD}
+lab=#net1}
 N 1660 -390 1700 -390 {
 lab=GND}
 N 1660 -410 1660 -360 {
@@ -180,7 +180,7 @@ lab=GND}
 N 1660 -440 1700 -440 {
 lab=GND}
 N 1900 -660 2040 -660 {
-lab=#net1}
+lab=#net2}
 N 1450 -900 1620 -900 {
 lab=VIN}
 N 1450 -900 1450 -530 {
@@ -192,9 +192,9 @@ lab=GND}
 N 2190 -440 2190 -390 {
 lab=GND}
 N 1660 -970 2150 -970 {
-lab=VDD}
+lab=#net1}
 N 1900 -990 1900 -970 {
-lab=VDD}
+lab=#net1}
 N 1660 -360 2150 -360 {
 lab=GND}
 N 1900 -360 1900 -340 {
@@ -208,27 +208,27 @@ lab=CK}
 N 1940 -440 1940 -390 {
 lab=GND}
 N 2040 -440 2110 -440 {
-lab=#net1}
+lab=#net2}
 N 1660 -660 1700 -660 {
 lab=GND}
 N 1700 -660 1700 -440 {
 lab=GND}
 N 1660 -850 1790 -850 {
-lab=#net2}
+lab=#net3}
 N 1790 -900 1790 -850 {
-lab=#net2}
+lab=#net3}
 N 1790 -900 1860 -900 {
-lab=#net2}
+lab=#net3}
 N 2070 -900 2110 -900 {
 lab=CK}
 N 1660 -870 1660 -690 {
-lab=#net2}
-N 1660 -630 1660 -470 {
 lab=#net3}
+N 1660 -630 1660 -470 {
+lab=#net4}
 N 1900 -870 1900 -470 {
-lab=#net1}
+lab=#net2}
 N 2040 -660 2040 -440 {
-lab=#net1}
+lab=#net2}
 N 2150 -870 2150 -470 {
 lab=VOUT}
 N 540 -940 540 -910 {
@@ -260,7 +260,7 @@ C {devices/code.sym} 260 -940 0 0 {name=Testbench only_toplevel=false value="
 C {sky130_fd_pr/corner.sym} 70 -940 0 0 {name=CORNER only_toplevel=false corner=tt}
 C {devices/vdd.sym} 450 -910 0 0 {name=l6 lab=VDD}
 C {devices/gnd.sym} 1900 -340 0 0 {name=l20 lab=GND}
-C {devices/vdd.sym} 1900 -990 0 0 {name=l25 lab=VDD}
+C {devices/vdd.sym} 1900 -1000 0 0 {name=l25 lab=VDD}
 C {devices/lab_pin.sym} 2220 -660 0 1 {name=p1 sig_type=std_logic lab=VOUT}
 C {sky130_fd_pr/pfet_01v8.sym} 2130 -900 0 0 {name=M6
 L=0.15
