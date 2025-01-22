@@ -11,7 +11,7 @@ start_time = time.time()
 # Load the provided CSV file
 # file_path = 'full_pll_1.csv'
 # file_path = 'full_pll_2.csv'
-file_path = 'full_pll_5.csv'
+file_path = 'full_pll_15_3.csv'
 
 # Load the data from the CSV file
 data = pd.read_csv(file_path)
@@ -21,7 +21,7 @@ time = data.iloc[:, 0].values  # Assuming first column is time
 voltage = data.iloc[:, 1].values  # Assuming second column is voltage
 
 # Define the time intervals
-interval = 40e-9  # 40 ns
+interval = 5e-9  # 40 ns
 start_times = np.arange(0, time[-1], interval)
 end_times = start_times + interval
 
@@ -51,7 +51,7 @@ for start_time, end_time in zip(start_times, end_times):
 
 # Plot the frequencies over time
 plt.figure(figsize=(10, 6))
-plt.plot(start_times, frequencies, marker='o', markersize=2,  linestyle='-', color='b')
+plt.plot(start_times, frequencies, marker='o', markersize=1,  linestyle='-', color='b')
 plt.xlabel('Time (s)')
 plt.ylabel('Frequency (Hz)')
 plt.title('Frequency vs Time (40ns intervals)')

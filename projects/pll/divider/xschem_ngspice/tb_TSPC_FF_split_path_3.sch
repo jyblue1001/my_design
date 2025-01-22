@@ -13,8 +13,8 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=1.3906108e-09
-x2=8.7634108e-09
+x1=8.1842621e-09
+x2=1.1405488e-08
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -46,15 +46,15 @@ linewidth_mult=2
 color=5
 node=vin}
 B 2 80 -1140 1130 -910 {flags=graph
-y1=-0.43
-y2=2.2
+y1=-0.055
+y2=2
 ypos1=0
 ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=1.3906108e-09
-x2=8.7634108e-09
+x1=8.1842621e-09
+x2=1.1405488e-08
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -93,152 +93,138 @@ node="vout
 c"}
 N 660 -1560 660 -1530 {
 lab=VIN}
-N 820 -750 820 -710 {
+N 950 -800 950 -760 {
 lab=VDD}
-N 820 -680 860 -680 {
+N 950 -730 990 -730 {
 lab=VDD}
-N 860 -730 860 -680 {
+N 990 -780 990 -730 {
 lab=VDD}
-N 820 -730 860 -730 {
+N 950 -780 990 -780 {
 lab=VDD}
-N 820 -260 860 -260 {
+N 950 -310 990 -310 {
 lab=GND}
-N 820 -280 820 -230 {
+N 950 -330 950 -280 {
 lab=GND}
-N 820 -310 860 -310 {
+N 950 -360 990 -360 {
 lab=GND}
-N 640 -750 640 -710 {
+N 770 -800 770 -760 {
 lab=VDD}
-N 640 -680 680 -680 {
+N 770 -730 810 -730 {
 lab=VDD}
-N 680 -730 680 -680 {
+N 810 -780 810 -730 {
 lab=VDD}
-N 640 -730 680 -730 {
+N 770 -780 810 -780 {
 lab=VDD}
-N 640 -430 680 -430 {
+N 770 -540 810 -540 {
 lab=GND}
-N 680 -430 680 -260 {
+N 810 -540 810 -310 {
 lab=GND}
-N 640 -260 680 -260 {
+N 770 -310 810 -310 {
 lab=GND}
-N 640 -280 640 -230 {
+N 770 -330 770 -280 {
 lab=GND}
-N 640 -400 640 -340 {
+N 770 -510 770 -390 {
 lab=B2}
-N 640 -310 680 -310 {
+N 770 -360 810 -360 {
 lab=GND}
-N 410 -750 410 -710 {
+N 540 -800 540 -760 {
 lab=VDD}
-N 410 -680 450 -680 {
+N 540 -730 580 -730 {
 lab=VDD}
-N 450 -730 450 -680 {
+N 580 -780 580 -730 {
 lab=VDD}
-N 410 -730 450 -730 {
+N 540 -780 580 -780 {
 lab=VDD}
-N 410 -430 450 -430 {
+N 540 -540 580 -540 {
 lab=VDD}
-N 410 -260 450 -260 {
+N 540 -310 580 -310 {
 lab=GND}
-N 410 -280 410 -230 {
+N 540 -330 540 -280 {
 lab=GND}
-N 410 -400 410 -340 {
+N 540 -510 540 -390 {
 lab=A2}
-N 410 -310 450 -310 {
+N 540 -360 580 -360 {
 lab=GND}
-N 450 -680 450 -430 {
+N 580 -730 580 -540 {
 lab=VDD}
-N 720 -680 780 -680 {
+N 850 -730 910 -730 {
 lab=B1}
-N 720 -310 780 -310 {
+N 850 -360 910 -360 {
 lab=B2}
-N 640 -620 720 -620 {
+N 770 -670 850 -670 {
 lab=B1}
-N 260 -680 370 -680 {
+N 390 -730 500 -730 {
 lab=VOUT}
-N 260 -680 260 -310 {
+N 390 -730 390 -360 {
 lab=VOUT}
-N 260 -310 370 -310 {
+N 390 -360 500 -360 {
 lab=VOUT}
-N 560 -430 600 -430 {
+N 690 -540 730 -540 {
 lab=VIN}
-N 330 -430 370 -430 {
+N 460 -540 500 -540 {
 lab=VIN}
-N 450 -310 450 -260 {
+N 580 -360 580 -310 {
 lab=GND}
-N 720 -370 720 -310 {
+N 850 -420 850 -360 {
 lab=B2}
-N 640 -370 720 -370 {
+N 770 -420 850 -420 {
 lab=B2}
-N 500 -310 600 -310 {
+N 630 -360 730 -360 {
 lab=A2}
-N 500 -370 500 -310 {
+N 630 -420 630 -360 {
 lab=A2}
-N 410 -370 500 -370 {
+N 540 -420 630 -420 {
 lab=A2}
-N 500 -680 600 -680 {
+N 630 -730 730 -730 {
 lab=A1}
-N 500 -680 500 -620 {
+N 630 -730 630 -670 {
 lab=A1}
-N 410 -620 500 -620 {
+N 540 -670 630 -670 {
 lab=A1}
-N 720 -680 720 -620 {
+N 850 -730 850 -670 {
 lab=B1}
-N 860 -310 860 -260 {
+N 990 -360 990 -310 {
 lab=GND}
-N 410 -230 820 -230 {
+N 540 -280 950 -280 {
 lab=GND}
-N 640 -230 640 -200 {
+N 770 -280 770 -250 {
 lab=GND}
-N 410 -750 820 -750 {
+N 540 -800 950 -800 {
 lab=VDD}
-N 640 -780 640 -750 {
+N 770 -830 770 -800 {
 lab=VDD}
-N 820 -590 940 -590 {
+N 950 -640 1070 -640 {
 lab=VOUT}
-N 190 -590 260 -590 {
+N 320 -640 390 -640 {
 lab=VOUT}
-N 100 -590 190 -590 {
+N 230 -640 320 -640 {
 lab=VOUT}
-N 940 -590 940 -110 {
+N 1070 -640 1070 -160 {
 lab=VOUT}
-N 160 -110 940 -110 {
+N 290 -160 1070 -160 {
 lab=VOUT}
-N 160 -590 160 -110 {
+N 290 -640 290 -160 {
 lab=VOUT}
-N 410 -650 410 -460 {
+N 540 -700 540 -570 {
 lab=A1}
-N 640 -650 640 -460 {
+N 770 -700 770 -570 {
 lab=B1}
-N 820 -650 820 -340 {
+N 950 -700 950 -390 {
 lab=VOUT}
 C {devices/vsource.sym} 510 -1500 0 0 {name=VDD value=1.8 savecurrent=false}
 C {devices/gnd.sym} 510 -1470 0 0 {name=l1 lab=GND}
 C {devices/code.sym} 320 -1560 0 0 {name=Stimuli only_toplevel=false value="
 
-.include /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
-
 .option method=gear
 .option wnflag=1
-.option savecurrents
-
-
-*.ic v(d)=0
-*.ic v(q)=0
-*.ic v(q1)=0
-
-* .probe p(x1) 
 
 .control
 
-*  save v(vin) v(vout) p(x1:power)
   save all
-  * save all
-  * tran 0.1n 1u
-  tran 0.05p 10n
-
+  tran 5p 20n
   remzerovec
   write tb_TSPC_FF_split_path_3.raw
-  * set appendwrite
+  set appendwrite
 
 .endc
 
@@ -247,15 +233,17 @@ C {sky130_fd_pr/corner.sym} 130 -1560 0 0 {name=CORNER only_toplevel=false corne
 C {devices/vdd.sym} 510 -1530 0 0 {name=l6 lab=VDD}
 C {devices/gnd.sym} 660 -1470 0 0 {name=l7 lab=GND}
 C {devices/lab_pin.sym} 660 -1560 0 1 {name=p27 sig_type=std_logic lab=VIN}
-C {devices/vsource.sym} 660 -1500 0 0 {name=V1 value="pulse(0 1.8 0ps 40ps 40ps 960ps 2000ps)" savecurrent=false
+C {devices/vsource.sym} 660 -1500 0 0 {name=V1 value="pulse(0 1.8 0ps 8.34ps 8.34ps 200.16ps 417ps)" savecurrent=false
+
+* "pulse(0 1.8 0ps 40ps 40ps 960ps 2000ps)"
 * "pulse(0 1.8 12.5ns 0.5ns 0.5ns 12ns 25ns)"
 * "pulse(0 1.8 0ps 16.68ps 16.68ps 408.32ps 834ps)"
-* "pulse(0 1.8 0ps 8.34ps 8.34ps 200.16ps 417ps)"}
-C {devices/gnd.sym} 640 -200 0 0 {name=l3 lab=GND}
-C {devices/vdd.sym} 640 -780 0 0 {name=l5 lab=VDD}
-C {sky130_fd_pr/pfet_01v8.sym} 800 -680 0 0 {name=M1
+}
+C {devices/gnd.sym} 770 -250 0 0 {name=l3 lab=GND}
+C {devices/vdd.sym} 770 -830 0 0 {name=l5 lab=VDD}
+C {sky130_fd_pr/pfet_01v8.sym} 930 -730 0 0 {name=M1
 L=0.15
-W=0.43
+W=1
 nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -267,9 +255,9 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {sky130_fd_pr/nfet_01v8.sym} 620 -430 0 0 {name=M4
+C {sky130_fd_pr/nfet_01v8.sym} 750 -540 0 0 {name=M4
 L=0.15
-W=0.43
+W=1
 nf=1 
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -281,9 +269,9 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {sky130_fd_pr/nfet_01v8.sym} 800 -310 0 0 {name=M2
+C {sky130_fd_pr/nfet_01v8.sym} 930 -360 0 0 {name=M2
 L=0.15
-W=0.43
+W=1
 nf=1 
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -295,9 +283,9 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {sky130_fd_pr/pfet_01v8.sym} 620 -680 0 0 {name=M3
+C {sky130_fd_pr/pfet_01v8.sym} 750 -730 0 0 {name=M3
 L=0.15
-W=0.43
+W=1
 nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -309,9 +297,9 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {sky130_fd_pr/nfet_01v8.sym} 620 -310 0 0 {name=M5
+C {sky130_fd_pr/nfet_01v8.sym} 750 -360 0 0 {name=M5
 L=0.15
-W=0.43
+W=1
 nf=1 
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -323,9 +311,9 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {sky130_fd_pr/pfet_01v8.sym} 390 -680 0 0 {name=M6
+C {sky130_fd_pr/pfet_01v8.sym} 520 -730 0 0 {name=M6
 L=0.15
-W=0.43
+W=1
 nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -337,9 +325,9 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {sky130_fd_pr/nfet_01v8.sym} 390 -310 0 0 {name=M8
+C {sky130_fd_pr/nfet_01v8.sym} 520 -360 0 0 {name=M8
 L=0.15
-W=0.43
+W=1
 nf=1 
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -351,9 +339,9 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {sky130_fd_pr/pfet_01v8.sym} 390 -430 0 0 {name=M7
+C {sky130_fd_pr/pfet_01v8.sym} 520 -540 0 0 {name=M7
 L=0.15
-W=0.43
+W=1
 nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -365,10 +353,10 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {devices/lab_pin.sym} 500 -620 0 1 {name=p7 sig_type=std_logic lab=A1}
-C {devices/lab_pin.sym} 500 -370 0 1 {name=p9 sig_type=std_logic lab=A2}
-C {devices/lab_pin.sym} 720 -620 0 1 {name=p10 sig_type=std_logic lab=B1}
-C {devices/lab_pin.sym} 720 -370 0 1 {name=p12 sig_type=std_logic lab=B2}
-C {devices/lab_pin.sym} 100 -590 0 0 {name=p4 sig_type=std_logic lab=VOUT}
-C {devices/lab_pin.sym} 330 -430 0 0 {name=p1 sig_type=std_logic lab=VIN}
-C {devices/lab_pin.sym} 560 -430 0 0 {name=p2 sig_type=std_logic lab=VIN}
+C {devices/lab_pin.sym} 630 -670 0 1 {name=p7 sig_type=std_logic lab=A1}
+C {devices/lab_pin.sym} 630 -420 0 1 {name=p9 sig_type=std_logic lab=A2}
+C {devices/lab_pin.sym} 850 -670 0 1 {name=p10 sig_type=std_logic lab=B1}
+C {devices/lab_pin.sym} 850 -420 0 1 {name=p12 sig_type=std_logic lab=B2}
+C {devices/lab_pin.sym} 230 -640 0 0 {name=p4 sig_type=std_logic lab=VOUT}
+C {devices/lab_pin.sym} 460 -540 0 0 {name=p1 sig_type=std_logic lab=VIN}
+C {devices/lab_pin.sym} 690 -540 0 0 {name=p2 sig_type=std_logic lab=VIN}

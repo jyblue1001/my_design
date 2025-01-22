@@ -32,7 +32,7 @@ def zero_crossing_freq(time, signal):
 
 # Reload the data
 # file_path = 'full_pll_6.csv'
-file_path = 'full_pll_6_2.csv'
+file_path = 'full_pll_15_3.csv'
 data = pd.read_csv(file_path, header=None)
 
 # Convert time from seconds to microseconds (us) for easier visualization

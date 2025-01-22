@@ -1,5 +1,4 @@
-v {xschem version=3.4.5 file_version=1.2
-}
+v {xschem version=3.4.6 file_version=1.2}
 G {}
 K {}
 V {}
@@ -13,8 +12,8 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=1.9179903e-11
-x2=1.737167e-09
+x1=1.2103707e-09
+x2=3.4840458e-09
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -36,7 +35,7 @@ logy=0
 
 
 
-linewidth_mult=2
+linewidth_mult=3
 
 
 
@@ -52,8 +51,8 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=1.9179903e-11
-x2=1.737167e-09
+x1=1.2103707e-09
+x2=3.4840458e-09
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -75,7 +74,51 @@ logy=0
 
 
 
-linewidth_mult=2
+linewidth_mult=3
+
+
+
+
+
+
+
+
+
+color="12 18"
+node="x1.ck1
+x1.ck1_b"}
+B 2 120 -240 1170 -10 {flags=graph
+y1=-0.12
+y2=2.1
+ypos1=0
+ypos2=2
+divy=5
+subdivy=4
+unity=1
+x1=1.2103707e-09
+x2=3.4840458e-09
+divx=5
+subdivx=4
+xlabmag=1.0
+ylabmag=1.0
+
+
+dataset=-1
+unitx=1
+logx=0
+logy=0
+
+
+
+
+
+
+
+
+
+
+
+linewidth_mult=3
 
 
 
@@ -91,7 +134,7 @@ N 550 -940 550 -910 {
 lab=VIN}
 C {devices/vsource.sym} 460 -880 0 0 {name=VDD value=1.8 savecurrent=false}
 C {devices/gnd.sym} 460 -850 0 0 {name=l1 lab=GND}
-C {devices/code.sym} 300 -940 0 0 {name=Stimuli only_toplevel=false value="
+C {devices/code.sym} 300 -940 0 0 {name=Testbench only_toplevel=false value="
 
 .option method=gear
 .option wnflag=1
@@ -102,7 +145,7 @@ C {devices/code.sym} 300 -940 0 0 {name=Stimuli only_toplevel=false value="
   tran 5p 20n
   remzerovec
   write tb_TSPC_FF_comp_sw_divide2_2.raw
-  * set appendwrite
+  set appendwrite
 
 .endc
 

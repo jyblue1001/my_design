@@ -31,7 +31,7 @@ def main():
 
     # Loop through all files in the directory
     for filename in os.listdir(directory):
-        if filename.startswith('full_pll_6') and filename.endswith('.txt'):
+        if filename.startswith('full_pll_') and filename.endswith('.txt'):
             convert_and_delete(filename, directory)
 
     # Stop the timer

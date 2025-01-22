@@ -41,7 +41,7 @@ V1 VIN GND pulse(0 1.8 0ps 20ps 20ps 480ps 1000ps)
 .control
 
   save all
-  tran 5p 20n
+  tran 2p 20n
   remzerovec
   write tb_FF_comp_sw.raw
   * set appendwrite

@@ -1,12 +1,12 @@
 ** sch_path: /foss/designs/my_design/projects/pll/charge_pump/xschem_ngspice/pfd_charge_pump_10.sch
 **.subckt pfd_charge_pump_10
 V1 VDD GND 1.8
-XC2 Vout GND sky130_fd_pr__cap_mim_m3_1 W=60 L=11.5 MF=1 m=1
-XC1 net1 GND sky130_fd_pr__cap_mim_m3_1 W=60 L=59.5 MF=1 m=1
+XC2 Vout GND sky130_fd_pr__cap_mim_m3_1 W=60 L=13.8 MF=1 m=1
+XC1 net1 GND sky130_fd_pr__cap_mim_m3_1 W=60 L=69.8 MF=1 m=1
 V2 F_REF GND pulse(0 1.8 12ns 1ns 1ns 24ns 50ns)
 V3 F_VCO GND pulse(0 1.8 22ns 1ns 1ns 24ns 50ns)
 x4 F_REF F_VCO VDD UP_PFD DOWN_PFD GND phase_frequency_detector
-XR1 net1 Vout GND sky130_fd_pr__res_xhigh_po_0p35 L=8.14 mult=1 m=1
+XR1 net1 Vout GND sky130_fd_pr__res_xhigh_po_0p35 L=7.52 mult=1 m=1
 I1 GND I_IN 100u
 Vmeas3 net3 net5 0
 .save i(vmeas3)
@@ -65,17 +65,10 @@ XM8 UP_input UP opamp_out GND sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((n
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
 XM11 DOWN_gate DOWN_b DOWN_input VDD sky130_fd_pr__pfet_01v8 L=0.15 W=2 nf=2 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
-XC3 UP_input UP_b sky130_fd_pr__cap_mim_m3_1 W=6 L=5.4 MF=1 m=1
+XC3 UP_input UP_b sky130_fd_pr__cap_mim_m3_1 W=6 L=4.2 MF=1 m=1
 XC4 DOWN DOWN_input sky130_fd_pr__cap_mim_m3_1 W=2.6 L=2.6 MF=1 m=1
 **** begin user architecture code
-
-.param mc_mm_switch=0
-.param mc_pr_switch=0
-.include /foss/pdks/sky130A/libs.tech/ngspice/corners/tt.spice
-.include /foss/pdks/sky130A/libs.tech/ngspice/r+c/res_typical__cap_typical.spice
-.include /foss/pdks/sky130A/libs.tech/ngspice/r+c/res_typical__cap_typical__lin.spice
-.include /foss/pdks/sky130A/libs.tech/ngspice/corners/tt/specialized_cells.spice
-
+.lib /foss/pdks/sky130A/libs.tech/combined/sky130.lib.spice tt
 
 
 
@@ -105,7 +98,7 @@ XC4 DOWN DOWN_input sky130_fd_pr__cap_mim_m3_1 W=2.6 L=2.6 MF=1 m=1
 * .ic v(vout) = 1.8
 
 * V_out initial voltage value for the F_VCO delay of 12ns (lock condition)
-* .ic v(vout) = 0.83
+* .ic v(vout) = 0.887
 
 * V_out initial voltage value for the F_VCO delay of 22ns (lagging)
 .ic v(vout) = 0.0
@@ -115,10 +108,10 @@ XC4 DOWN DOWN_input sky130_fd_pr__cap_mim_m3_1 W=2.6 L=2.6 MF=1 m=1
   save all
 
   * timestep for exact simulation results
-  * tran 5ps 0.5us
+  tran 5ps 0.5us
 
   * timestep for faster simulation results
-  tran 50ps 0.5us
+  * tran 50ps 0.5us
 
   remzerovec
   write pfd_charge_pump_10.raw

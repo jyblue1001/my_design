@@ -1,5 +1,4 @@
-v {xschem version=3.4.5 file_version=1.2
-}
+v {xschem version=3.4.6 file_version=1.2}
 G {}
 K {}
 V {}
@@ -13,29 +12,29 @@ N 130 -1140 170 -1140 {
 lab=UP_PFD}
 N 170 -670 210 -670 {
 lab=DOWN_PFD}
-N 580 -710 580 -630 {
+N 580 -760 580 -590 {
 lab=#net1}
-N 640 -710 640 -630 {
+N 640 -760 640 -590 {
 lab=DOWN_b}
-N 610 -790 610 -750 {
+N 610 -840 610 -800 {
 lab=VDDA}
-N 610 -640 610 -630 {
+N 610 -600 610 -590 {
 lab=VDDA}
-N 610 -640 650 -640 {
+N 610 -600 650 -600 {
 lab=VDDA}
-N 650 -760 650 -640 {
+N 650 -810 650 -600 {
 lab=VDDA}
-N 610 -760 650 -760 {
+N 610 -810 650 -810 {
 lab=VDDA}
-N 610 -710 610 -700 {
+N 610 -760 610 -750 {
 lab=GNDA}
-N 570 -700 610 -700 {
+N 570 -750 610 -750 {
 lab=GNDA}
-N 570 -700 570 -580 {
+N 570 -750 570 -540 {
 lab=GNDA}
-N 570 -580 610 -580 {
+N 570 -540 610 -540 {
 lab=GNDA}
-N 610 -590 610 -540 {
+N 610 -550 610 -500 {
 lab=GNDA}
 N 330 -690 330 -650 {
 lab=#net1}
@@ -358,7 +357,7 @@ lab=GNDA}
 C {devices/lab_wire.sym} 390 -1140 0 1 {name=p15 sig_type=std_logic lab=UP_PFD_b}
 C {devices/lab_wire.sym} 130 -1140 0 0 {name=p2 sig_type=std_logic lab=UP_PFD}
 C {devices/lab_wire.sym} 170 -670 2 1 {name=p7 sig_type=std_logic lab=DOWN_PFD}
-C {sky130_fd_pr/pfet_01v8.sym} 610 -610 3 0 {name=M12
+C {sky130_fd_pr/pfet_01v8.sym} 610 -570 3 0 {name=M12
 L=0.15
 W=2
 nf=2
@@ -372,7 +371,7 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {sky130_fd_pr/nfet_01v8.sym} 610 -730 1 0 {name=M13
+C {sky130_fd_pr/nfet_01v8.sym} 610 -780 1 0 {name=M13
 L=0.15
 W=1
 nf=1 
@@ -475,8 +474,8 @@ C {devices/opin.sym} 630 -1540 0 0 {name=p11 lab=V_OUT}
 C {devices/lab_pin.sym} 2600 -920 0 1 {name=p12 sig_type=std_logic lab=V_OUT}
 C {devices/lab_pin.sym} 330 -550 0 1 {name=p27 sig_type=std_logic lab=GNDA}
 C {devices/lab_pin.sym} 330 -790 0 1 {name=p28 sig_type=std_logic lab=VDDA}
-C {devices/lab_pin.sym} 610 -540 0 1 {name=p29 sig_type=std_logic lab=GNDA}
-C {devices/lab_pin.sym} 610 -790 0 1 {name=p30 sig_type=std_logic lab=VDDA}
+C {devices/lab_pin.sym} 610 -500 0 1 {name=p29 sig_type=std_logic lab=GNDA}
+C {devices/lab_pin.sym} 610 -840 0 1 {name=p30 sig_type=std_logic lab=VDDA}
 C {devices/lab_pin.sym} 290 -1020 0 1 {name=p31 sig_type=std_logic lab=GNDA}
 C {devices/lab_pin.sym} 290 -1260 0 1 {name=p32 sig_type=std_logic lab=VDDA}
 C {devices/lab_pin.sym} 650 -1020 0 1 {name=p33 sig_type=std_logic lab=GNDA}
@@ -709,7 +708,7 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {sky130_fd_pr/cap_mim_m3_1.sym} 2000 -1300 0 0 {name=C1 model=cap_mim_m3_1 W=6 L=6 MF=1 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 2000 -1300 0 0 {name=C1 model=cap_mim_m3_1 W=6 L=4.2 MF=1 spiceprefix=X}
 C {sky130_fd_pr/cap_mim_m3_1.sym} 2000 -500 0 0 {name=C2 model=cap_mim_m3_1 W=2.6 L=2.6 MF=1 spiceprefix=X}
 C {devices/lab_pin.sym} 1660 -1810 0 1 {name=p26 sig_type=std_logic lab=VDDA}
 C {devices/lab_pin.sym} 1660 -30 0 1 {name=p18 sig_type=std_logic lab=GNDA}

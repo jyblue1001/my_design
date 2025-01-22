@@ -22,14 +22,7 @@ x1 VOUT VIN VDD GND TSPC_FF_ratioed_divide2
 
 
 
-
-.param mc_mm_switch=0
-.param mc_pr_switch=0
-.include /foss/pdks/sky130A/libs.tech/ngspice/corners/tt.spice
-.include /foss/pdks/sky130A/libs.tech/ngspice/r+c/res_typical__cap_typical.spice
-.include /foss/pdks/sky130A/libs.tech/ngspice/r+c/res_typical__cap_typical__lin.spice
-.include /foss/pdks/sky130A/libs.tech/ngspice/corners/tt/specialized_cells.spice
-
+.lib /foss/pdks/sky130A/libs.tech/combined/sky130.lib.spice tt
 **** end user architecture code
 **.ends
 
