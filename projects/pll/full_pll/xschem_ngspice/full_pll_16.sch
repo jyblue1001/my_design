@@ -5,15 +5,15 @@ V {}
 S {}
 E {}
 B 2 160 -3430 5790 -1880 {flags=graph
-y1=-0.002
-y2=1.7
+y1=0.86
+y2=0.9
 ypos1=0
 ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=0
-x2=6e-06
+x1=3.1391351e-06
+x2=6.2111351e-06
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -99,18 +99,20 @@ linewidth_mult=4
 
 
 
-color=6
-node=v_cont}
+
+
+color=7
+node=v_cp}
 B 2 160 -1820 5790 -270 {flags=graph
-y1=-0.19
-y2=1.9
+y1=-0.45
+y2=1.5
 ypos1=0
 ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=0
-x2=6e-06
+x1=3.1391351e-06
+x2=6.2111351e-06
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -196,9 +198,12 @@ linewidth_mult=10
 
 
 
-color="6 7"
-node="x4.up_input
-x4.down_input"}
+
+
+
+
+color=6
+node=v_cont}
 T {current_starved_VCO10 & divide_by_120_6, 5ps 6us, CP 6*4.2, one inverter, More CP Signals
 
 full_pll_16.raw: CP-OPAMP-VCO} 80 -4350 0 0 1 1 {}
@@ -257,7 +262,7 @@ N 4920 -4120 5220 -4120 {lab=V_CONT}
 N 4080 -4140 4790 -4140 {lab=V_CP}
 C {devices/vsource.sym} 1320 -3690 0 0 {name=VDD value=1.8 savecurrent=false}
 C {devices/gnd.sym} 1320 -3660 0 0 {name=l1 lab=GND}
-C {devices/code.sym} 1110 -3760 0 0 {name=Testbench only_toplevel=false value="
+C {devices/code.sym} 1120 -3760 0 0 {name=Testbench only_toplevel=false value="
 
 .include /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
 
@@ -306,9 +311,9 @@ C {devices/code.sym} 1110 -3760 0 0 {name=Testbench only_toplevel=false value="
 .control
     tran 5p 9u
     remzerovec
-    write full_pll_16.raw
+    write full_pll_16_2.raw
     linearize v(v_osc)
-    wrdata /foss/designs/my_design/projects/pll/full_pll/xschem_ngspice/full_pll_16.txt v(v_osc)
+    wrdata /foss/designs/my_design/projects/pll/full_pll/xschem_ngspice/full_pll_16_2.txt v(v_osc)
     set appendwrite
  .endc
 
@@ -359,7 +364,7 @@ C {devices/vdd.sym} 3250 -3850 3 0 {name=l7 lab=VDD}
 C {/foss/designs/my_design/projects/pll/divider/xschem_ngspice/inverter.sym} 2960 -4180 0 0 {name=x9}
 C {/foss/designs/my_design/projects/pll/divider/xschem_ngspice/inverter.sym} 3310 -3850 3 0 {name=x7}
 C {/foss/designs/my_design/projects/pll/divider/xschem_ngspice/divide_by_120/divide_by_120_6.sym} 3860 -3640 0 1 {name=x2}
-C {/foss/designs/my_design/projects/pll/charge_pump/xschem_ngspice/rail_to_rail_opamp6.sym} 4850 -4120 2 1 {name=x5}
+C {/foss/designs/my_design/projects/pll/charge_pump/xschem_ngspice/rail_to_rail_opamp6.sym} 4850 -4120 0 0 {name=x5}
 C {devices/vdd.sym} 4850 -4190 0 0 {name=l36 lab=VDD}
 C {devices/gnd.sym} 4850 -4050 0 0 {name=l37 lab=GND}
 C {devices/lab_wire.sym} 4190 -4140 0 1 {name=p8 sig_type=std_logic lab=V_CP}

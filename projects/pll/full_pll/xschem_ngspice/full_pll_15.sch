@@ -5,15 +5,15 @@ V {}
 S {}
 E {}
 B 2 160 -3430 5790 -1880 {flags=graph
-y1=-0.002
-y2=1.7
+y1=-0.17857236
+y2=2.1044276
 ypos1=0
 ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=0
-x2=6e-06
+x1=2.798922e-08
+x2=8.3329451e-08
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -45,7 +45,7 @@ logy=0
 
 
 
-linewidth_mult=4
+linewidth_mult=12
 
 
 
@@ -99,8 +99,11 @@ linewidth_mult=4
 
 
 
-color=6
-node=v_cont}
+
+
+color="6 7"
+node="f_ref
+f_ref_inv"}
 B 2 160 -1820 5790 -270 {flags=graph
 y1=-0.19
 y2=1.9
@@ -109,8 +112,8 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=0
-x2=6e-06
+x1=2.798922e-08
+x2=8.3329451e-08
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -196,9 +199,10 @@ linewidth_mult=10
 
 
 
-color="6 7"
-node="x4.up_input
-x4.down_input"}
+
+
+
+}
 T {full_pll_15.raw - current_starved_VCO10 & divide_by_120_6  , 5ps 9us
 full_pll_15_2.raw - current_starved_VCO10 & divide_by_120_6, 2ps 9us
 full_pll_15_3.raw - current_starved_VCO10 & divide_by_120_6, 5ps 9us, CP 6*4.2
@@ -330,7 +334,7 @@ C {devices/lab_pin.sym} 1880 -3950 0 1 {name=p11 sig_type=std_logic lab=F_REF}
 C {/foss/designs/my_design/projects/pll/pfd/xschem_ngspice/phase_frequency_detector.sym} 3540 -4160 0 0 {name=x3}
 C {devices/lab_pin.sym} 2730 -4180 0 0 {name=p19 lab=F_REF}
 C {devices/vdd.sym} 3970 -4210 0 0 {name=l17 lab=VDD}
-C {/foss/designs/my_design/projects/pll/charge_pump/xschem_ngspice/charge_pump7.sym} 3970 -4140 0 0 {name=x4}
+C {charge_pump7.sym} 3970 -4140 0 0 {name=x4}
 C {devices/isource.sym} 1720 -3880 2 1 {name=I1 value=100u}
 C {devices/vdd.sym} 3540 -4220 0 0 {name=l11 lab=VDD}
 C {devices/gnd.sym} 3540 -4100 0 0 {name=l12 lab=GND}

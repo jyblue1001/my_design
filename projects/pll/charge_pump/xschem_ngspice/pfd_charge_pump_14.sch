@@ -5,15 +5,15 @@ V {}
 S {}
 E {}
 B 2 2860 -2340 4220 -1670 {flags=graph
-y1=0.88424229
-y2=0.88833829
+y1=0.88674319
+y2=0.88702467
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=1.1050946e-07
-x2=1.1771522e-07
+x1=0
+x2=3e-07
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -41,15 +41,15 @@ linewidth_mult=1
 color=6
 node=vout}
 B 2 2860 -3040 4220 -2370 {flags=graph
-y1=-0.036
-y2=1.7
+y1=-0.082
+y2=2
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=1.1050946e-07
-x2=1.1771522e-07
+x1=0
+x2=3e-07
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -73,7 +73,10 @@ linewidth_mult=1
 
 
 
-color=7
+
+
+
+color=5
 node=v_osc}
 T {W_p=2um
 L_p=0.15um
@@ -470,14 +473,8 @@ lab=DOWN_b}
 N 3880 -1430 4050 -1430 {lab=V_OSC}
 N 4230 -1430 4400 -1430 {lab=V_OUT120}
 N 3040 -1430 3260 -1430 {lab=Vout}
-N 3260 -1430 3330 -1430 {lab=Vout}
-N 3460 -1410 3590 -1410 {lab=#net6}
-N 3590 -1430 3590 -1410 {lab=#net6}
-N 3590 -1430 3680 -1430 {lab=#net6}
-N 3520 -1410 3520 -1270 {lab=#net6}
-N 3270 -1270 3520 -1270 {lab=#net6}
-N 3270 -1390 3270 -1270 {lab=#net6}
-N 3270 -1390 3330 -1390 {lab=#net6}
+N 3590 -1430 3680 -1430 {lab=Vout}
+N 3260 -1430 3590 -1430 {lab=Vout}
 C {sky130_fd_pr/corner.sym} 3640 -870 0 0 {name=CORNER only_toplevel=false corner=tt
 value="
 
@@ -584,7 +581,7 @@ C {devices/code.sym} 3790 -871.25 0 0 {name=Testbench only_toplevel=false value=
   * save all
 
   * timestep for exact simulation results
-  tran 5ps 0.5us
+  tran 5ps 0.3us
 
   * timestep for faster simulation results
   * tran 50ps 0.5us
@@ -1117,12 +1114,12 @@ value="
 .endc
 
 "}
-C {devices/gnd.sym} 1560 -1490 0 1 {name=l7 lab=GND}
+C {devices/gnd.sym} 1700 -1490 0 0 {name=l7 lab=GND}
 C {devices/lab_wire.sym} 1730 -2020 0 0 {name=p17 sig_type=std_logic lab=opamp_out}
 C {devices/lab_wire.sym} 530 -1690 0 0 {name=p7 sig_type=std_logic lab=UP_PFD}
 C {devices/lab_wire.sym} 570 -1250 2 1 {name=p8 sig_type=std_logic lab=DOWN_PFD}
-C {/foss/designs/my_design/projects/pll/charge_pump/xschem_ngspice/rail_to_rail_opamp6.sym} 1630 -1490 1 1 {name=x2}
-C {devices/vdd.sym} 1700 -1490 0 0 {name=l6 lab=VDD}
+C {rail_to_rail_opamp6.sym} 1630 -1490 3 0 {name=x2}
+C {devices/vdd.sym} 1560 -1490 0 1 {name=l6 lab=VDD}
 C {sky130_fd_pr/pfet_01v8.sym} 1010 -1140 3 0 {name=M19
 L=0.15
 W=2
@@ -1348,13 +1345,10 @@ C {devices/gnd.sym} 1010 -1350 0 0 {name=l30 lab=GND}
 C {devices/vdd.sym} 1010 -1160 0 0 {name=l31 lab=VDD}
 C {devices/lab_wire.sym} 1360 -950 0 0 {name=p18 sig_type=std_logic lab=DOWN_gate}
 C {devices/lab_wire.sym} 3950 -1430 0 1 {name=p1 sig_type=std_logic lab=V_OSC}
-C {/foss/designs/my_design/projects/pll/vco/xschem_ngspice/current_starved_VCO10.sym} 3780 -1430 0 0 {name=x1}
 C {devices/lab_wire.sym} 4400 -1430 2 0 {name=p24 sig_type=std_logic lab=V_OUT120}
 C {/foss/designs/my_design/projects/pll/divider/xschem_ngspice/divide_by_120/divide_by_120_6.sym} 4140 -1430 0 0 {name=x3}
 C {devices/gnd.sym} 3780 -1330 0 0 {name=l32 lab=GND}
 C {devices/vdd.sym} 3780 -1530 0 0 {name=l33 lab=VDD}
 C {devices/gnd.sym} 4140 -1380 0 0 {name=l34 lab=GND}
 C {devices/vdd.sym} 4140 -1480 0 0 {name=l35 lab=VDD}
-C {/foss/designs/my_design/projects/pll/charge_pump/xschem_ngspice/rail_to_rail_opamp6.sym} 3390 -1410 2 1 {name=x5}
-C {devices/vdd.sym} 3390 -1480 0 0 {name=l36 lab=VDD}
-C {devices/gnd.sym} 3390 -1340 0 0 {name=l37 lab=GND}
+C {/foss/designs/my_design/projects/pll/vco/xschem_ngspice/current_starved_VCO10.sym} 3780 -1430 0 0 {name=x1}

@@ -99,15 +99,15 @@ lab=VDDA}
 N 610 -730 610 -390 {
 lab=VDDA}
 N 380 -390 480 -390 {
-lab=Vin+}
+lab=Vin-}
 N 380 -480 380 -390 {
-lab=Vin+}
+lab=Vin-}
 N 830 -480 900 -480 {
-lab=Vin-}
+lab=Vin+}
 N 760 -390 860 -390 {
-lab=Vin-}
+lab=Vin+}
 N 860 -480 860 -390 {
-lab=Vin-}
+lab=Vin+}
 N 810 -730 1290 -730 {
 lab=VDDA}
 N 1290 -630 1310 -630 {
@@ -151,7 +151,7 @@ lab=VDDA}
 N 600 -150 600 -110 {
 lab=GNDA}
 N 340 -480 410 -480 {
-lab=Vin+}
+lab=Vin-}
 N 220 -660 300 -660 {
 lab=p_bias}
 N 300 -660 300 -560 {
@@ -405,8 +405,8 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {devices/opin.sym} 1350 -400 0 0 {name=p3 lab=Vout}
-C {devices/ipin.sym} 340 -480 0 0 {name=p4 lab=Vin+}
-C {devices/ipin.sym} 900 -480 0 1 {name=p5 lab=Vin-}
+C {devices/ipin.sym} 900 -480 0 1 {name=p4 lab=Vin+}
+C {devices/ipin.sym} 340 -480 0 0 {name=p5 lab=Vin-}
 C {devices/ipin.sym} 640 -790 0 0 {name=p6 lab=VDDA}
 C {devices/ipin.sym} 600 -110 0 0 {name=p7 lab=GNDA}
 C {devices/lab_wire.sym} 610 -340 0 1 {name=p2 sig_type=std_logic lab=v_common_n}
