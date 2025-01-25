@@ -1,0 +1,12 @@
+** sch_path: /foss/designs/my_design/projects/pll/pfd/xschem_ngspice/phase_frequency_detector_4.sch
+**.subckt phase_frequency_detector_4 F_REF QA VPWR F_VCO VPB VPB VGND
+*.ipin F_REF
+*.opin QA
+*.ipin VPWR
+*.ipin F_VCO
+*.ipin VPB
+*.ipin VPB
+*.ipin VGND
+x1 F_REF F_VCO GNDA VNB VPB VDDA QA sky130_fd_sc_hd__nor2_1
+**.ends
+.end

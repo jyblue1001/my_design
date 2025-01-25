@@ -1,0 +1,37 @@
+magic
+tech sky130A
+timestamp 1737805272
+<< nwell >>
+rect 120 215 525 380
+<< pwell >>
+rect 140 105 505 190
+<< poly >>
+rect 315 320 355 330
+rect 315 300 325 320
+rect 345 300 355 320
+rect 315 290 355 300
+rect 340 215 355 290
+rect 340 200 385 215
+<< polycont >>
+rect 325 300 345 320
+<< locali >>
+rect 265 320 355 330
+rect 265 310 325 320
+rect 315 300 325 310
+rect 345 300 355 320
+rect 315 290 355 300
+rect 290 250 375 270
+rect 290 215 310 250
+rect 265 195 310 215
+<< metal1 >>
+rect 140 335 505 380
+rect 140 60 505 110
+use sky130_fd_sc_hd__nor2_1  sky130_fd_sc_hd__nor2_1_0 $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
+timestamp 1723858470
+transform 1 0 365 0 1 85
+box -19 -24 157 296
+use sky130_fd_sc_hd__nor2_1  sky130_fd_sc_hd__nor2_1_1
+timestamp 1723858470
+transform -1 0 278 0 1 85
+box -19 -24 157 296
+<< end >>

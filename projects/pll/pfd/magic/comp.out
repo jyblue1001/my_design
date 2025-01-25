@@ -1,0 +1,28 @@
+
+Circuit 2 cell sky130_fd_sc_hd__inv_1 is a black box; will not flatten Circuit 1
+Equate elements:  no current cell.
+Device classes sky130_fd_sc_hd__inv_1 and sky130_fd_sc_hd__inv_1 are equivalent.
+
+Circuit 2 cell sky130_fd_sc_hd__nor2_1 is a black box; will not flatten Circuit 1
+Equate elements:  no current cell.
+Device classes sky130_fd_sc_hd__nor2_1 and sky130_fd_sc_hd__nor2_1 are equivalent.
+
+Circuit 2 cell sky130_fd_sc_hd__nand2_1 is a black box; will not flatten Circuit 1
+Equate elements:  no current cell.
+Device classes sky130_fd_sc_hd__nand2_1 and sky130_fd_sc_hd__nand2_1 are equivalent.
+
+Subcircuit summary:
+Circuit 1: pfd_3.spice                     |Circuit 2: phase_frequency_detector.spice  
+-------------------------------------------|-------------------------------------------
+sky130_fd_sc_hd__inv_1 (5)                 |sky130_fd_sc_hd__inv_1 (5)                 
+sky130_fd_sc_hd__nor2_1 (8)                |sky130_fd_sc_hd__nor2_1 (8)                
+sky130_fd_sc_hd__nand2_1 (1)               |sky130_fd_sc_hd__nand2_1 (1)               
+Number of devices: 14                      |Number of devices: 14                      
+Number of nets: 20                         |Number of nets: 20                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+Cells have no pins;  pin matching not needed.
+Device classes pfd_3.spice and phase_frequency_detector.spice are equivalent.
+
+Final result: Circuits match uniquely.
+.

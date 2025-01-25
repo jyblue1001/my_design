@@ -1,0 +1,304 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1737744276
+<< nwell >>
+rect 1932 362 1976 430
+rect -38 -838 314 -517
+rect 592 -838 944 -517
+rect 1222 -838 1574 -517
+rect 1852 -838 2204 -517
+<< pwell >>
+rect 212 -277 246 -239
+rect 660 -277 694 -239
+rect 1472 -277 1506 -239
+rect 1920 -277 1954 -239
+rect 5 -459 275 -277
+rect 631 -459 901 -277
+rect 1265 -459 1535 -277
+rect 1891 -459 2161 -277
+<< poly >>
+rect 650 460 4178 490
+rect 650 426 715 460
+rect 510 386 588 424
+rect 348 346 588 386
+rect 1608 346 1848 386
+rect 348 292 386 346
+rect 1608 292 1646 346
+rect 1770 308 1848 346
+rect 308 214 386 292
+rect 938 214 1016 292
+rect 1568 214 1646 292
+rect 976 178 1016 214
+rect 2332 192 2404 264
+rect 2790 216 2862 288
+rect 976 140 1432 178
+rect 1368 124 1432 140
+rect 734 82 798 110
+rect 2332 82 2362 192
+rect 2832 148 2862 216
+rect 734 52 2362 82
+rect 2404 118 2862 148
+rect 2404 -308 2434 118
+rect 734 -338 2434 -308
+rect 734 -366 798 -338
+rect 1368 -396 1432 -380
+rect 976 -434 1432 -396
+rect 976 -470 1016 -434
+rect 308 -548 386 -470
+rect 938 -548 1016 -470
+rect 1568 -548 1646 -470
+rect 348 -602 386 -548
+rect 1608 -602 1646 -548
+rect 1770 -602 1848 -564
+rect 348 -642 588 -602
+rect 1608 -642 1848 -602
+rect 510 -680 588 -642
+rect 650 -716 715 -682
+rect 650 -746 4178 -716
+<< locali >>
+rect 252 438 470 488
+rect 1451 438 1730 488
+rect 308 260 386 292
+rect 258 214 386 260
+rect 436 252 470 438
+rect 510 380 650 424
+rect 510 346 588 380
+rect 819 260 889 265
+rect 938 260 1016 292
+rect 1568 260 1646 292
+rect 436 214 650 252
+rect 819 215 1016 260
+rect 888 214 1016 215
+rect 1518 214 1646 260
+rect 1696 252 1730 438
+rect 1910 386 1975 424
+rect 1770 380 1975 386
+rect 1770 342 1910 380
+rect 1770 308 1848 342
+rect 1696 214 1910 252
+rect 2148 224 2282 264
+rect 107 -435 173 -307
+rect 733 -435 799 -307
+rect 1367 -435 1433 -307
+rect 1993 -435 2059 -307
+rect 17 -521 87 -471
+rect 121 -555 155 -435
+rect 258 -471 386 -470
+rect 189 -516 386 -471
+rect 189 -521 259 -516
+rect 308 -548 386 -516
+rect 436 -471 650 -470
+rect 436 -508 717 -471
+rect 121 -589 257 -555
+rect 191 -694 257 -589
+rect 436 -694 470 -508
+rect 647 -521 717 -508
+rect 751 -555 785 -435
+rect 888 -471 1016 -470
+rect 819 -516 1016 -471
+rect 819 -521 889 -516
+rect 938 -548 1016 -516
+rect 1277 -521 1347 -471
+rect 649 -589 785 -555
+rect 1381 -555 1415 -435
+rect 1518 -471 1646 -470
+rect 1449 -516 1646 -471
+rect 1449 -521 1519 -516
+rect 1568 -548 1646 -516
+rect 1696 -471 1910 -470
+rect 1696 -508 1977 -471
+rect 1381 -589 1517 -555
+rect 510 -636 588 -602
+rect 649 -636 715 -589
+rect 510 -680 715 -636
+rect 191 -744 470 -694
+rect 191 -746 257 -744
+rect 649 -746 715 -680
+rect 1451 -694 1517 -589
+rect 1696 -694 1730 -508
+rect 1907 -521 1977 -508
+rect 2011 -555 2045 -435
+rect 2079 -472 2149 -471
+rect 2242 -472 2282 224
+rect 2332 226 2520 264
+rect 2790 260 2862 288
+rect 2332 192 2404 226
+rect 2750 216 2862 260
+rect 2930 258 3166 260
+rect 2928 218 3166 258
+rect 3312 220 3772 262
+rect 2928 174 2978 218
+rect 3908 216 4090 256
+rect 2754 126 2978 174
+rect 4050 -472 4090 216
+rect 2079 -514 3168 -472
+rect 3314 -514 3774 -472
+rect 3920 -512 4090 -472
+rect 2079 -521 2149 -514
+rect 1770 -598 1848 -564
+rect 1909 -589 2045 -555
+rect 1909 -598 1975 -589
+rect 1770 -642 1975 -598
+rect 1451 -744 1730 -694
+rect 1451 -746 1517 -744
+rect 1909 -746 1975 -642
+<< metal1 >>
+rect 0 -304 276 -208
+rect 630 -304 906 -208
+rect 1260 -304 1536 -208
+rect 1890 -304 2166 -208
+rect 0 -848 276 -752
+rect 630 -848 906 -752
+rect 1260 -848 1536 -752
+rect 1890 -848 2166 -752
+use sky130_fd_sc_hd__inv_1  sky130_fd_sc_hd__inv_1_0
+timestamp 1723858470
+transform -1 0 2772 0 -1 -256
+box -38 -48 314 592
+use sky130_fd_sc_hd__inv_1  sky130_fd_sc_hd__inv_1_1
+timestamp 1723858470
+transform 1 0 3102 0 1 0
+box -38 -48 314 592
+use sky130_fd_sc_hd__inv_1  sky130_fd_sc_hd__inv_1_2
+timestamp 1723858470
+transform 1 0 3708 0 1 0
+box -38 -48 314 592
+use sky130_fd_sc_hd__inv_1  sky130_fd_sc_hd__inv_1_3
+timestamp 1723858470
+transform -1 0 3984 0 -1 -256
+box -38 -48 314 592
+use sky130_fd_sc_hd__inv_1  sky130_fd_sc_hd__inv_1_4
+timestamp 1723858470
+transform -1 0 3378 0 -1 -256
+box -38 -48 314 592
+use sky130_fd_sc_hd__nand2_1  sky130_fd_sc_hd__nand2_1_1
+timestamp 1723858470
+transform 1 0 2496 0 1 0
+box -38 -48 314 592
+use sky130_fd_sc_hd__nor2_1  sky130_fd_sc_hd__nor2_1_0
+timestamp 1737724875
+transform -1 0 276 0 1 0
+box -38 -48 314 592
+use sky130_fd_sc_hd__nor2_1  sky130_fd_sc_hd__nor2_1_1
+timestamp 1737724875
+transform 1 0 630 0 1 0
+box -38 -48 314 592
+use sky130_fd_sc_hd__nor2_1  sky130_fd_sc_hd__nor2_1_2
+timestamp 1737724875
+transform -1 0 1536 0 1 0
+box -38 -48 314 592
+use sky130_fd_sc_hd__nor2_1  sky130_fd_sc_hd__nor2_1_3
+timestamp 1737724875
+transform 1 0 1890 0 1 0
+box -38 -48 314 592
+use sky130_fd_sc_hd__nor2_1  sky130_fd_sc_hd__nor2_1_4
+timestamp 1737724875
+transform -1 0 276 0 -1 -256
+box -38 -48 314 592
+use sky130_fd_sc_hd__nor2_1  sky130_fd_sc_hd__nor2_1_5
+timestamp 1737724875
+transform 1 0 630 0 -1 -256
+box -38 -48 314 592
+use sky130_fd_sc_hd__nor2_1  sky130_fd_sc_hd__nor2_1_6
+timestamp 1737724875
+transform -1 0 1536 0 -1 -256
+box -38 -48 314 592
+use sky130_fd_sc_hd__nor2_1  sky130_fd_sc_hd__nor2_1_7
+timestamp 1737724875
+transform 1 0 1890 0 -1 -256
+box -38 -48 314 592
+<< labels >>
+rlabel locali s 819 215 889 265 4 sky130_fd_sc_hd__nor2_1_2/B
+port 2 nsew signal input
+rlabel locali s 819 -521 889 -471 2 sky130_fd_sc_hd__nor2_1_2/B
+port 2 nsew signal input
+rlabel locali s 819 -521 889 -471 8 A
+port 1 nsew signal input
+rlabel locali s 647 -521 717 -471 8 B
+port 2 nsew signal input
+rlabel metal1 s 630 -304 906 -208 6 VGND
+port 3 nsew ground bidirectional abutment
+rlabel pwell s 660 -277 694 -239 8 VNB
+port 4 nsew ground bidirectional
+rlabel pwell s 631 -459 901 -277 8 VNB
+port 4 nsew ground bidirectional
+rlabel nwell s 592 -838 944 -517 8 VPB
+port 5 nsew power bidirectional
+rlabel metal1 s 630 -848 906 -752 8 VPWR
+port 6 nsew power bidirectional abutment
+rlabel locali s 733 -435 799 -307 8 Y
+port 7 nsew signal output
+rlabel locali s 751 -555 785 -435 8 Y
+port 7 nsew signal output
+rlabel locali s 649 -589 785 -555 8 Y
+port 7 nsew signal output
+rlabel locali s 649 -746 715 -589 8 Y
+port 7 nsew signal output
+rlabel locali s 17 -521 87 -471 2 A
+port 1 nsew signal input
+rlabel locali s 189 -521 259 -471 2 B
+port 2 nsew signal input
+rlabel metal1 s 0 -304 276 -208 4 VGND
+port 3 nsew ground bidirectional abutment
+rlabel pwell s 212 -277 246 -239 2 VNB
+port 4 nsew ground bidirectional
+rlabel pwell s 5 -459 275 -277 2 VNB
+port 4 nsew ground bidirectional
+rlabel nwell s -38 -838 314 -517 2 VPB
+port 5 nsew power bidirectional
+rlabel metal1 s 0 -848 276 -752 2 VPWR
+port 6 nsew power bidirectional abutment
+rlabel locali s 107 -435 173 -307 2 Y
+port 7 nsew signal output
+rlabel locali s 121 -555 155 -435 2 Y
+port 7 nsew signal output
+rlabel locali s 121 -589 257 -555 2 Y
+port 7 nsew signal output
+rlabel locali s 191 -746 257 -589 2 Y
+port 7 nsew signal output
+rlabel locali s 1277 -521 1347 -471 2 A
+port 1 nsew signal input
+rlabel locali s 1449 -521 1519 -471 2 B
+port 2 nsew signal input
+rlabel metal1 s 1260 -304 1536 -208 4 VGND
+port 3 nsew ground bidirectional abutment
+rlabel pwell s 1472 -277 1506 -239 2 VNB
+port 4 nsew ground bidirectional
+rlabel pwell s 1265 -459 1535 -277 2 VNB
+port 4 nsew ground bidirectional
+rlabel nwell s 1222 -838 1574 -517 2 VPB
+port 5 nsew power bidirectional
+rlabel metal1 s 1260 -848 1536 -752 2 VPWR
+port 6 nsew power bidirectional abutment
+rlabel locali s 1367 -435 1433 -307 2 Y
+port 7 nsew signal output
+rlabel locali s 1381 -555 1415 -435 2 Y
+port 7 nsew signal output
+rlabel locali s 1381 -589 1517 -555 2 Y
+port 7 nsew signal output
+rlabel locali s 1451 -746 1517 -589 2 Y
+port 7 nsew signal output
+rlabel locali s 2079 -521 2149 -471 8 A
+port 1 nsew signal input
+rlabel locali s 1907 -521 1977 -471 8 B
+port 2 nsew signal input
+rlabel metal1 s 1890 -304 2166 -208 6 VGND
+port 3 nsew ground bidirectional abutment
+rlabel pwell s 1920 -277 1954 -239 8 VNB
+port 4 nsew ground bidirectional
+rlabel pwell s 1891 -459 2161 -277 8 VNB
+port 4 nsew ground bidirectional
+rlabel nwell s 1852 -838 2204 -517 8 VPB
+port 5 nsew power bidirectional
+rlabel metal1 s 1890 -848 2166 -752 8 VPWR
+port 6 nsew power bidirectional abutment
+rlabel locali s 1993 -435 2059 -307 8 Y
+port 7 nsew signal output
+rlabel locali s 2011 -555 2045 -435 8 Y
+port 7 nsew signal output
+rlabel locali s 1909 -589 2045 -555 8 Y
+port 7 nsew signal output
+rlabel locali s 1909 -746 1975 -589 8 Y
+port 7 nsew signal output
+<< end >>

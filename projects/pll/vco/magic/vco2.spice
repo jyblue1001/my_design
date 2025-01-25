@@ -1,0 +1,25 @@
+* NGSPICE file created from vco2.ext - technology: sky130A
+
+**.subckt vco2 VDDA V_OSC V_CONT
+X0 VDDA a_n230_n290# a_738_212# VDDA sky130_fd_pr__pfet_01v8 ad=0.43 pd=2.72 as=0.43 ps=2.72 w=0.86 l=0.15
+X1 V_OSC a_882_n10# a_1576_212# VDDA sky130_fd_pr__pfet_01v8 ad=0.43 pd=2.72 as=0.43 ps=2.72 w=0.86 l=0.22
+X2 a_738_212# a_n900_458# VDDA VDDA sky130_fd_pr__pfet_01v8 ad=1 pd=5 as=1 ps=5 w=2 l=1.5
+X3 a_44_n10# V_OSC a_n100_212# VDDA sky130_fd_pr__pfet_01v8 ad=0.43 pd=2.72 as=0.43 ps=2.72 w=0.86 l=0.22
+X4 a_n100_212# a_n900_458# VDDA VDDA sky130_fd_pr__pfet_01v8 ad=1 pd=5 as=0.5 ps=2.5 w=2 l=1.5
+X5 a_44_n10# V_OSC a_n100_n290# a_n230_n290# sky130_fd_pr__nfet_01v8 ad=0.215 pd=1.86 as=0.215 ps=1.86 w=0.43 l=0.22
+X6 a_1576_n290# V_CONT a_n230_n290# a_n230_n290# sky130_fd_pr__nfet_01v8 ad=0.51 pd=3.02 as=0.5 ps=3 w=1 l=0.15
+X7 a_n230_n290# V_CONT a_n900_458# a_n230_n290# sky130_fd_pr__nfet_01v8 ad=0.25 pd=1.5 as=0.5 ps=3 w=1 l=0.15
+X8 a_n230_n290# VDDA a_738_n290# a_n230_n290# sky130_fd_pr__nfet_01v8 ad=0.215 pd=1.86 as=0.215 ps=1.86 w=0.43 l=0.15
+X9 a_1576_212# a_n900_458# VDDA VDDA sky130_fd_pr__pfet_01v8 ad=1 pd=5 as=1 ps=5 w=2 l=1.5
+X10 V_OSC a_882_n10# a_1576_n290# a_n230_n290# sky130_fd_pr__nfet_01v8 ad=0.215 pd=1.86 as=0.215 ps=1.86 w=0.43 l=0.22
+X11 a_n230_n290# VDDA a_1576_n290# a_n230_n290# sky130_fd_pr__nfet_01v8 ad=0.2107 pd=1.84 as=0.2107 ps=1.84 w=0.43 l=0.16
+X12 a_n100_n290# V_CONT a_n230_n290# a_n230_n290# sky130_fd_pr__nfet_01v8 ad=0.5 pd=3 as=0.25 ps=1.5 w=1 l=0.15
+X13 VDDA a_n230_n290# a_1576_212# VDDA sky130_fd_pr__pfet_01v8 ad=0.43 pd=2.72 as=0.43 ps=2.72 w=0.86 l=0.15
+X14 a_882_n10# a_44_n10# a_738_212# VDDA sky130_fd_pr__pfet_01v8 ad=0.43 pd=2.72 as=0.43 ps=2.72 w=0.86 l=0.22
+X15 VDDA a_n230_n290# a_n100_212# VDDA sky130_fd_pr__pfet_01v8 ad=0.43 pd=2.72 as=0.43 ps=2.72 w=0.86 l=0.15
+X16 a_882_n10# a_44_n10# a_738_n290# a_n230_n290# sky130_fd_pr__nfet_01v8 ad=0.215 pd=1.86 as=0.215 ps=1.86 w=0.43 l=0.22
+X17 VDDA a_n900_458# a_n900_458# VDDA sky130_fd_pr__pfet_01v8 ad=0.5 pd=2.5 as=1 ps=5 w=2 l=1.5
+X18 a_n230_n290# VDDA a_n100_n290# a_n230_n290# sky130_fd_pr__nfet_01v8 ad=0.215 pd=1.86 as=0.215 ps=1.86 w=0.43 l=0.15
+X19 a_738_n290# V_CONT a_n230_n290# a_n230_n290# sky130_fd_pr__nfet_01v8 ad=0.5 pd=3 as=0.5 ps=3 w=1 l=0.15
+.ends
+

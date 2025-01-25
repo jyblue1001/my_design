@@ -1,0 +1,37 @@
+| units: 500000 tech: sky130A format: MIT
+x a_38_n62# V_OSC a_82_186# VDDA s=17200,544 d=17200,544 l=44 w=172 x=38 y=186 sky130_fd_pr__pfet_01v8
+x V_CONT GNDA a_636_n552# GNDA s=20000,600 d=20000,600 l=30 w=200 x=606 y=-551 sky130_fd_pr__nfet_01v8
+x V_OSC a_592_n62# a_1190_n552# GNDA s=8600,372 d=8600,372 l=44 w=86 x=1146 y=-31 sky130_fd_pr__nfet_01v8
+x GNDA VDDA a_82_186# VDDA s=17200,544 d=17200,544 l=30 w=172 x=52 y=490 sky130_fd_pr__pfet_01v8
+x V_CONT a_n746_764# GNDA GNDA s=20000,600 d=20000,600 l=30 w=200 x=-515 y=-551 sky130_fd_pr__nfet_01v8
+x a_n746_764# a_n746_764# VDDA VDDA s=40000,1000 d=40000,1000 l=300 w=400 x=-645 y=764 sky130_fd_pr__pfet_01v8
+x a_38_n62# V_OSC a_82_n552# GNDA s=8600,372 d=8600,372 l=44 w=86 x=38 y=-31 sky130_fd_pr__nfet_01v8
+x VDDA GNDA a_1190_n552# GNDA s=8600,372 d=8600,372 l=30 w=86 x=1160 y=-249 sky130_fd_pr__nfet_01v8
+x V_CONT GNDA a_1190_n552# GNDA s=20000,600 d=20000,600 l=30 w=200 x=1160 y=-551 sky130_fd_pr__nfet_01v8
+x a_592_n62# a_38_n62# a_636_186# VDDA s=17200,544 d=17200,544 l=44 w=172 x=592 y=186 sky130_fd_pr__pfet_01v8
+x VDDA GNDA a_82_n552# GNDA s=8600,372 d=8600,372 l=30 w=86 x=52 y=-249 sky130_fd_pr__nfet_01v8
+x V_CONT GNDA a_82_n552# GNDA s=20000,600 d=20000,600 l=30 w=200 x=52 y=-551 sky130_fd_pr__nfet_01v8
+x a_n746_764# VDDA a_636_186# VDDA s=40000,1000 d=40000,1000 l=300 w=400 x=462 y=764 sky130_fd_pr__pfet_01v8
+x a_592_n62# a_38_n62# a_636_n552# GNDA s=8600,372 d=8600,372 l=44 w=86 x=592 y=-31 sky130_fd_pr__nfet_01v8
+x a_n746_764# VDDA a_82_186# VDDA s=40000,1000 d=40000,1000 l=300 w=400 x=-91 y=764 sky130_fd_pr__pfet_01v8
+x V_OSC a_592_n62# a_1190_186# VDDA s=17200,544 d=17200,544 l=44 w=172 x=1146 y=186 sky130_fd_pr__pfet_01v8
+x a_n746_764# VDDA a_1190_186# VDDA s=40000,1000 d=40000,1000 l=300 w=400 x=1016 y=764 sky130_fd_pr__pfet_01v8
+x GNDA VDDA a_636_186# VDDA s=17200,544 d=17200,544 l=30 w=172 x=606 y=490 sky130_fd_pr__pfet_01v8
+x GNDA VDDA a_1190_186# VDDA s=17200,544 d=17200,544 l=30 w=172 x=1160 y=490 sky130_fd_pr__pfet_01v8
+x VDDA GNDA a_636_n552# GNDA s=8600,372 d=8600,372 l=30 w=86 x=606 y=-249 sky130_fd_pr__nfet_01v8
+C VDDA a_n746_764# 2.8
+R a_1190_n552# 1299
+R a_636_n552# 1299
+R a_82_n552# 1299
+R V_CONT 3036
+R V_OSC 3317
+R a_592_n62# 1729
+R a_38_n62# 1723
+R a_1190_186# 2657
+R a_636_186# 2657
+R a_82_186# 2657
+C a_n746_764#0 2.3
+R a_n746_764# 2676
+C VDDA0 9.9
+R VDDA 12394
+R GNDA 6953

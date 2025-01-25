@@ -1,8 +1,0 @@
-* SPICE3 file created from AND.ext - technology: sky130A
-
-X0 sky130_fd_sc_hd__and2_0_0/VPWR sky130_fd_sc_hd__and2_0_0/B sky130_fd_sc_hd__and2_0_0/a_40_47# sky130_fd_sc_hd__and2_0_0/VPB sky130_fd_pr__pfet_01v8_hvt ad=0.1841 pd=1.26 as=0.0609 ps=0.71 w=0.42 l=0.15
-X1 sky130_fd_sc_hd__and2_0_0/X sky130_fd_sc_hd__and2_0_0/a_40_47# sky130_fd_sc_hd__and2_0_0/VPWR sky130_fd_sc_hd__and2_0_0/VPB sky130_fd_pr__pfet_01v8_hvt ad=0.1696 pd=1.81 as=0.1841 ps=1.26 w=0.64 l=0.15
-X2 sky130_fd_sc_hd__and2_0_0/VGND sky130_fd_sc_hd__and2_0_0/B sky130_fd_sc_hd__and2_0_0/a_123_47# VSUBS sky130_fd_pr__nfet_01v8 ad=0.0966 pd=0.88 as=0.0441 ps=0.63 w=0.42 l=0.15
-X3 sky130_fd_sc_hd__and2_0_0/X sky130_fd_sc_hd__and2_0_0/a_40_47# sky130_fd_sc_hd__and2_0_0/VGND VSUBS sky130_fd_pr__nfet_01v8 ad=0.1113 pd=1.37 as=0.0966 ps=0.88 w=0.42 l=0.15
-X4 sky130_fd_sc_hd__and2_0_0/a_123_47# sky130_fd_sc_hd__and2_0_0/A sky130_fd_sc_hd__and2_0_0/a_40_47# VSUBS sky130_fd_pr__nfet_01v8 ad=0.0441 pd=0.63 as=0.1113 ps=1.37 w=0.42 l=0.15
-X5 sky130_fd_sc_hd__and2_0_0/a_40_47# sky130_fd_sc_hd__and2_0_0/A sky130_fd_sc_hd__and2_0_0/VPWR sky130_fd_sc_hd__and2_0_0/VPB sky130_fd_pr__pfet_01v8_hvt ad=0.0609 pd=0.71 as=0.1113 ps=1.37 w=0.42 l=0.15
