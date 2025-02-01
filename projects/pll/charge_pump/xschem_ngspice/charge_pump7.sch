@@ -617,7 +617,7 @@ spiceprefix=X
 C {devices/lab_wire.sym} 2100 -1470 2 0 {name=p41 sig_type=std_logic lab=UP_input}
 C {devices/lab_wire.sym} 2230 -330 0 0 {name=p42 sig_type=std_logic lab=DOWN_input}
 C {devices/lab_wire.sym} 1440 -1470 0 0 {name=p43 sig_type=std_logic lab=opamp_out}
-C {/foss/designs/my_design/projects/pll/charge_pump/xschem_ngspice/rail_to_rail_opamp6.sym} 1340 -980 1 1 {name=x1}
+C {rail_to_rail_opamp6.sym} 1340 -980 3 0 {name=x1}
 C {sky130_fd_pr/pfet_01v8.sym} 1690 -720 0 0 {name=M31
 L=0.15
 W=2
@@ -712,8 +712,8 @@ C {sky130_fd_pr/cap_mim_m3_1.sym} 2000 -1300 0 0 {name=C1 model=cap_mim_m3_1 W=6
 C {sky130_fd_pr/cap_mim_m3_1.sym} 2000 -500 0 0 {name=C2 model=cap_mim_m3_1 W=2.6 L=2.6 MF=1 spiceprefix=X}
 C {devices/lab_pin.sym} 1660 -1810 0 1 {name=p26 sig_type=std_logic lab=VDDA}
 C {devices/lab_pin.sym} 1660 -30 0 1 {name=p18 sig_type=std_logic lab=GNDA}
-C {devices/lab_pin.sym} 1410 -980 0 1 {name=p1 sig_type=std_logic lab=VDDA}
-C {devices/lab_pin.sym} 1270 -980 0 0 {name=p4 sig_type=std_logic lab=GNDA}
+C {devices/lab_pin.sym} 1270 -980 0 0 {name=p1 sig_type=std_logic lab=VDDA}
+C {devices/lab_pin.sym} 1410 -980 0 1 {name=p4 sig_type=std_logic lab=GNDA}
 C {devices/lab_pin.sym} 1710 -1260 0 1 {name=p5 sig_type=std_logic lab=VDDA}
 C {devices/lab_pin.sym} 1710 -1020 0 1 {name=p6 sig_type=std_logic lab=GNDA}
 C {devices/lab_pin.sym} 1710 -790 0 1 {name=p8 sig_type=std_logic lab=VDDA}

@@ -1,0 +1,30 @@
+* NGSPICE file created from charge_pump_4.ext - technology: sky130A
+
+**.subckt charge_pump_4
+X0 VDDA a_n6670_20# a_n6670_20# VDDA sky130_fd_pr__pfet_01v8 ad=1 pd=5 as=1 ps=5 w=2 l=0.15
+X1 I_IN a_n4550_20# a_n4550_20# VDDA sky130_fd_pr__nfet_01v8 ad=0.5 pd=3 as=0.5 ps=3 w=1 l=0.15
+X2 VDDA I_IN I_IN VDDA sky130_fd_pr__nfet_01v8 ad=2 pd=9 as=2 ps=9 w=4 l=0.6
+X3 c1_1560_n320# li_1180_n350# sky130_fd_pr__cap_mim_m3_1 l=2.6 w=2.6
+X4 a_n5470_20# DOWN_PFD VDDA VDDA sky130_fd_pr__pfet_01v8 ad=1 pd=5 as=1 ps=5 w=2 l=0.15
+X5 a_n4550_20# a_n5010_20# VDDA VDDA sky130_fd_pr__nfet_01v8 ad=0.5 pd=3 as=0.5 ps=3 w=1 l=0.15
+X6 a_n6370_20# a_n6670_20# VDDA VDDA sky130_fd_pr__pfet_01v8 ad=1 pd=5 as=1 ps=5 w=2 l=0.15
+X7 VDDA I_IN a_n1350_n530# VDDA sky130_fd_pr__nfet_01v8 ad=2 pd=9 as=2 ps=9 w=4 l=0.6
+X8 a_n5920_20# a_n6670_20# a_n6370_20# VDDA sky130_fd_pr__nfet_01v8 ad=0.5 pd=3 as=0.5 ps=3 w=1 l=0.15
+X9 a_n6670_20# a_n6970_20# VDDA VDDA sky130_fd_pr__pfet_01v8 ad=1 pd=5 as=1 ps=5 w=2 l=0.15
+X10 VDDA a_n5920_20# a_n1350_n530# VDDA sky130_fd_pr__pfet_01v8 ad=4 pd=17 as=4 ps=17 w=8 l=0.6
+X11 I_IN a_n5010_20# a_n4550_20# VDDA sky130_fd_pr__pfet_01v8 ad=1 pd=5 as=1 ps=5 w=2 l=0.15
+X12 VOUT a_n250_420# VDDA VDDA sky130_fd_pr__pfet_01v8 ad=4 pd=17 as=4 ps=17 w=8 l=0.6
+X13 a_n6970_20# UP_PFD VDDA VDDA sky130_fd_pr__pfet_01v8 ad=1 pd=5 as=1 ps=5 w=2 l=0.15
+X14 a_n6370_20# a_n6670_20# VDDA VDDA sky130_fd_pr__nfet_01v8 ad=0.5 pd=3 as=0.5 ps=3 w=1 l=0.15
+X15 a_n5010_20# VDDA a_n5470_20# VDDA sky130_fd_pr__nfet_01v8 ad=0.5 pd=3 as=0.5 ps=3 w=1 l=0.15
+X16 a_n5470_20# DOWN_PFD VDDA VDDA sky130_fd_pr__nfet_01v8 ad=0.5 pd=3 as=0.5 ps=3 w=1 l=0.15
+X17 VOUT a_n250_n560# VDDA VDDA sky130_fd_pr__nfet_01v8 ad=2 pd=9 as=2 ps=9 w=4 l=0.6
+X18 a_n4550_20# a_n5010_20# VDDA VDDA sky130_fd_pr__pfet_01v8 ad=1 pd=5 as=1 ps=5 w=2 l=0.15
+X19 a_n6670_20# a_n6970_20# VDDA VDDA sky130_fd_pr__nfet_01v8 ad=0.5 pd=3 as=0.5 ps=3 w=1 l=0.15
+X20 VDDA a_n5010_20# I_IN VDDA sky130_fd_pr__nfet_01v8 ad=0.5 pd=3 as=0.5 ps=3 w=1 l=0.15
+X21 c1_1560_500# li_1180_500# sky130_fd_pr__cap_mim_m3_1 l=6.6 w=4.2
+X22 a_n5010_20# VDDA a_n5470_20# VDDA sky130_fd_pr__pfet_01v8 ad=1 pd=5 as=1 ps=5 w=2 l=0.15
+X23 a_n6970_20# UP_PFD VDDA VDDA sky130_fd_pr__nfet_01v8 ad=0.5 pd=3 as=0.5 ps=3 w=1 l=0.15
+X24 a_n5920_20# a_n6370_20# a_n6370_20# VDDA sky130_fd_pr__pfet_01v8 ad=1 pd=5 as=1 ps=5 w=2 l=0.15
+.ends
+

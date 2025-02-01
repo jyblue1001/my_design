@@ -1,0 +1,46 @@
+* NGSPICE file created from opamp_6_3.ext - technology: sky130A
+
+**.subckt opamp_6_3
+X0 a_2040_n1110# a_2040_n1110# VDDA w_1890_200# sky130_fd_pr__pfet_01v8 ad=0.625 pd=3 as=0.625 ps=3 w=2.5 l=0.5
+X1 c1_4390_240# m3_4250_1780# sky130_fd_pr__cap_mim_m3_1 l=8 w=8
+X2 a_2510_n250# a_2090_n300# GNDA VSUBS sky130_fd_pr__nfet_01v8 ad=0.25 pd=2 as=0.125 ps=1 w=0.5 l=0.15
+X3 a_2810_200# VIN- a_2840_n250# VSUBS sky130_fd_pr__nfet_01v8 ad=0.125 pd=1 as=0.125 ps=1 w=0.5 l=0.15
+X4 c1_4390_n1750# m3_4250_n1780# sky130_fd_pr__cap_mim_m3_1 l=8 w=8
+X5 VDDA a_2040_n1110# a_2040_n1110# w_1890_200# sky130_fd_pr__pfet_01v8 ad=0.625 pd=3 as=0.625 ps=3 w=2.5 l=0.5
+X6 a_2090_660# VIN- a_1990_n250# w_1890_200# sky130_fd_pr__pfet_01v8 ad=0.25 pd=1.5 as=0.5 ps=3 w=1 l=0.15
+X7 a_3410_n250# a_2510_n250# GNDA VSUBS sky130_fd_pr__nfet_01v8 ad=0.25 pd=2 as=0.125 ps=1 w=0.5 l=0.15
+X8 a_2510_n250# VIN- a_2090_660# w_1890_200# sky130_fd_pr__pfet_01v8 ad=0.5 pd=3 as=0.25 ps=1.5 w=1 l=0.15
+X9 a_2840_n250# VIN+ a_2710_n250# VSUBS sky130_fd_pr__nfet_01v8 ad=0.125 pd=1 as=0.25 ps=2 w=0.5 l=0.15
+X10 GNDA a_2580_n1110# a_2580_n1110# VSUBS sky130_fd_pr__nfet_01v8 ad=0.625 pd=3 as=0.625 ps=3 w=2.5 l=0.5
+X11 GNDA a_2090_n300# a_2090_n300# VSUBS sky130_fd_pr__nfet_01v8 ad=0.125 pd=1 as=0.125 ps=1 w=0.5 l=0.15
+X12 a_2090_660# VIN+ a_2090_n300# w_1890_200# sky130_fd_pr__pfet_01v8 ad=0.25 pd=1.5 as=0.25 ps=1.5 w=1 l=0.15
+X13 a_2840_n250# VIN- a_2810_200# VSUBS sky130_fd_pr__nfet_01v8 ad=0.125 pd=1 as=0.125 ps=1 w=0.5 l=0.15
+X14 VDDA a_2040_n1110# a_2090_660# w_1890_200# sky130_fd_pr__pfet_01v8 ad=0.625 pd=3 as=1.25 ps=6 w=2.5 l=0.5
+X15 a_2090_n300# VIN+ a_2090_660# w_1890_200# sky130_fd_pr__pfet_01v8 ad=0.25 pd=1.5 as=0.25 ps=1.5 w=1 l=0.15
+X16 VDDA a_3770_220# a_3410_250# w_1890_200# sky130_fd_pr__pfet_01v8 ad=0.25 pd=1.5 as=0.25 ps=1.5 w=1 l=0.15
+X17 a_2090_n300# a_2090_n300# GNDA VSUBS sky130_fd_pr__nfet_01v8 ad=0.125 pd=1 as=0.125 ps=1 w=0.5 l=0.15
+X18 a_3410_250# a_3640_220# VDDA w_1890_200# sky130_fd_pr__pfet_01v8 ad=0.25 pd=1.5 as=0.25 ps=1.5 w=1 l=0.15
+X19 a_2580_n1110# a_2580_n1110# GNDA VSUBS sky130_fd_pr__nfet_01v8 ad=0.625 pd=3 as=0.625 ps=3 w=2.5 l=0.5
+X20 VDDA a_2810_200# a_2810_200# w_1890_200# sky130_fd_pr__pfet_01v8 ad=0.25 pd=1.5 as=0.25 ps=1.5 w=1 l=0.15
+X21 VDDA a_2040_n1110# a_2040_n1110# w_1890_200# sky130_fd_pr__pfet_01v8 ad=0.625 pd=3 as=0.625 ps=3 w=2.5 l=0.5
+X22 VDDA a_3510_220# a_3410_250# w_1890_200# sky130_fd_pr__pfet_01v8 ad=0.25 pd=1.5 as=0.5 ps=3 w=1 l=0.15
+X23 a_4140_1290# a_3410_250# VSUBS sky130_fd_pr__res_xhigh_po_0p35 l=1.31
+X24 a_2090_660# a_2040_n1110# VDDA w_1890_200# sky130_fd_pr__pfet_01v8 ad=0.625 pd=3 as=0.625 ps=3 w=2.5 l=0.5
+X25 a_3410_250# a_3230_n250# VDDA w_1890_200# sky130_fd_pr__pfet_01v8 ad=0.5 pd=3 as=0.25 ps=1.5 w=1 l=0.15
+X26 GNDA a_2580_n1110# a_2840_n250# VSUBS sky130_fd_pr__nfet_01v8 ad=0.625 pd=3 as=1.25 ps=6 w=2.5 l=0.5
+X27 GNDA a_2510_n250# a_3410_n250# VSUBS sky130_fd_pr__nfet_01v8 ad=0.125 pd=1 as=0.125 ps=1 w=0.5 l=0.15
+X28 a_3230_n250# a_2810_200# VDDA w_1890_200# sky130_fd_pr__pfet_01v8 ad=0.5 pd=3 as=0.25 ps=1.5 w=1 l=0.15
+X29 a_2040_n1110# a_2580_n1110# VSUBS sky130_fd_pr__res_xhigh_po_2p85 l=0.66
+X30 a_2040_n1110# a_2040_n1110# VDDA w_1890_200# sky130_fd_pr__pfet_01v8 ad=0.625 pd=3 as=0.625 ps=3 w=2.5 l=0.5
+X31 a_3410_n250# a_2510_n250# GNDA VSUBS sky130_fd_pr__nfet_01v8 ad=0.125 pd=1 as=0.125 ps=1 w=0.5 l=0.15
+X32 a_2810_200# a_2810_200# VDDA w_1890_200# sky130_fd_pr__pfet_01v8 ad=0.25 pd=1.5 as=0.25 ps=1.5 w=1 l=0.15
+X33 GNDA a_2090_n300# a_1990_n250# VSUBS sky130_fd_pr__nfet_01v8 ad=0.125 pd=1 as=0.25 ps=2 w=0.5 l=0.15
+X34 VDDA a_2810_200# a_2710_n250# w_1890_200# sky130_fd_pr__pfet_01v8 ad=0.25 pd=1.5 as=0.5 ps=3 w=1 l=0.15
+X35 a_2090_660# a_2040_n1110# VDDA w_1890_200# sky130_fd_pr__pfet_01v8 ad=1.25 pd=6 as=0.625 ps=3 w=2.5 l=0.5
+X36 a_3230_n250# VIN+ a_2840_n250# VSUBS sky130_fd_pr__nfet_01v8 ad=0.25 pd=2 as=0.125 ps=1 w=0.5 l=0.15
+X37 GNDA a_2510_n250# a_3410_n250# VSUBS sky130_fd_pr__nfet_01v8 ad=0.125 pd=1 as=0.25 ps=2 w=0.5 l=0.15
+X38 VDDA a_2040_n1110# a_2090_660# w_1890_200# sky130_fd_pr__pfet_01v8 ad=0.625 pd=3 as=0.625 ps=3 w=2.5 l=0.5
+X39 a_2840_n250# a_2580_n1110# GNDA VSUBS sky130_fd_pr__nfet_01v8 ad=1.25 pd=6 as=0.625 ps=3 w=2.5 l=0.5
+X40 a_3410_n250# a_4140_n1610# VSUBS sky130_fd_pr__res_xhigh_po_0p35 l=1.01
+.ends
+

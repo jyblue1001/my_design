@@ -9,8 +9,8 @@ directory = '.'
 for filename in os.listdir(directory):  
     # if filename.startswith('tb_divide_by_120_5_') and filename.endswith('.txt'):
     # if filename.startswith('tb_divide_by_120_6_') and filename.endswith('.txt'):
-    if filename.startswith('tb_divide_by_120_7_') and filename.endswith('.txt'):
-    # if filename.startswith('tb_divide_by_120_7_2_') and filename.endswith('.txt'):
+    # if filename.startswith('tb_divide_by_120_7_') and filename.endswith('.txt'):
+    if filename.startswith('tb_divide_by_120_8') and filename.endswith('.txt'):
         # Define CSV filename
         csv_filename = filename.replace('.txt', '.csv')
         csv_path = os.path.join(directory, csv_filename)

@@ -48,7 +48,7 @@ lab=GNDA}
 N 1840 -820 1880 -820 {
 lab=GNDA}
 N 2080 -1040 2220 -1040 {
-lab=#net1}
+lab=C}
 N 1630 -1280 1800 -1280 {
 lab=VOUT}
 N 1630 -1280 1630 -910 {
@@ -76,17 +76,17 @@ lab=CLK}
 N 2120 -820 2120 -770 {
 lab=GNDA}
 N 2220 -820 2290 -820 {
-lab=#net1}
+lab=C}
 N 1840 -1040 1880 -1040 {
 lab=GNDA}
 N 1880 -1040 1880 -820 {
 lab=GNDA}
 N 1840 -1230 1970 -1230 {
-lab=#net2}
+lab=A}
 N 1970 -1280 1970 -1230 {
-lab=#net2}
+lab=A}
 N 1970 -1280 2040 -1280 {
-lab=#net2}
+lab=A}
 N 2250 -1280 2290 -1280 {
 lab=CLK}
 N 3480 -1350 3480 -1310 {
@@ -126,11 +126,11 @@ lab=VDDA}
 N 2990 -1330 3030 -1330 {
 lab=VDDA}
 N 2990 -790 2990 -740 {
-lab=#net3}
+lab=G}
 N 2990 -820 3030 -820 {
 lab=GNDA}
 N 3230 -1040 3370 -1040 {
-lab=#net4}
+lab=H}
 N 2910 -1040 2950 -1040 {
 lab=CLK}
 N 3030 -820 3030 -770 {
@@ -148,27 +148,27 @@ lab=CLK}
 N 3270 -820 3270 -770 {
 lab=GNDA}
 N 3370 -820 3440 -820 {
-lab=#net4}
+lab=H}
 N 2990 -1040 3030 -1040 {
 lab=GNDA}
 N 3030 -1040 3030 -820 {
 lab=GNDA}
 N 2990 -1230 3120 -1230 {
-lab=#net5}
+lab=E}
 N 3120 -1280 3120 -1230 {
-lab=#net5}
+lab=E}
 N 3120 -1280 3190 -1280 {
-lab=#net5}
+lab=E}
 N 3400 -1280 3440 -1280 {
 lab=CLK}
 N 1460 -450 1480 -450 {
 lab=VOUT}
 N 1430 -410 1430 -380 {
-lab=#net6}
+lab=H}
 N 1430 -380 1510 -380 {
-lab=#net6}
+lab=H}
 N 1510 -410 1510 -380 {
-lab=#net6}
+lab=H}
 N 1510 -470 1510 -450 {
 lab=GNDA}
 N 1510 -470 1550 -470 {
@@ -184,11 +184,11 @@ lab=VDDA}
 N 1430 -470 1430 -450 {
 lab=VDDA}
 N 3480 -1060 3720 -1060 {
-lab=#net6}
+lab=H}
 N 3720 -1060 3720 -250 {
-lab=#net6}
+lab=H}
 N 1470 -250 3720 -250 {
-lab=#net6}
+lab=H}
 N 3230 -740 3480 -740 {
 lab=GNDA}
 N 2990 -680 2990 -630 {
@@ -210,49 +210,49 @@ lab=VDDA}
 N 2720 -1350 2720 -1280 {
 lab=VDDA}
 N 2680 -1250 2680 -1230 {
-lab=#net5}
+lab=E}
 N 2680 -1230 2990 -1230 {
-lab=#net5}
+lab=E}
 N 2790 -1280 2950 -1280 {
-lab=#net6}
+lab=H}
 N 2790 -710 2950 -710 {
-lab=#net6}
+lab=H}
 N 2600 -1280 2600 -820 {
-lab=#net7}
+lab=D}
 N 2600 -1280 2640 -1280 {
-lab=#net7}
+lab=D}
 N 1470 -1130 1630 -1130 {
 lab=VOUT}
 N 1470 -380 1470 -250 {
-lab=#net6}
+lab=H}
 N 1470 -1130 1470 -450 {
 lab=VOUT}
 N 2330 -1190 2600 -1190 {
-lab=#net7}
+lab=D}
 N 2600 -820 2950 -820 {
-lab=#net7}
+lab=D}
 N 2790 -1280 2790 -250 {
-lab=#net6}
+lab=H}
 N 1840 -1250 1840 -1070 {
-lab=#net2}
+lab=A}
 N 1840 -1010 1840 -850 {
-lab=#net8}
+lab=B}
 N 2080 -1250 2080 -850 {
-lab=#net1}
+lab=C}
 N 2220 -1040 2220 -820 {
-lab=#net1}
+lab=C}
 N 2330 -1250 2330 -850 {
-lab=#net7}
+lab=D}
 N 2990 -1010 2990 -850 {
-lab=#net9}
+lab=F}
 N 2990 -1250 2990 -1070 {
-lab=#net5}
+lab=E}
 N 3230 -1250 3230 -850 {
-lab=#net4}
+lab=H}
 N 3370 -1040 3370 -820 {
-lab=#net4}
+lab=H}
 N 3480 -1250 3480 -850 {
-lab=#net6}
+lab=H}
 N 1540 -450 1610 -450 {
 lab=GNDA}
 N 1270 -1130 1470 -1130 {
@@ -587,3 +587,12 @@ C {devices/lab_pin.sym} 2490 -1610 0 1 {name=p29 sig_type=std_logic lab=GNDA}
 C {devices/lab_pin.sym} 2490 -1890 2 0 {name=p37 sig_type=std_logic lab=VDDA}
 C {devices/lab_pin.sym} 2360 -1750 0 0 {name=p13 sig_type=std_logic lab=VIN}
 C {devices/lab_pin.sym} 2550 -1750 0 1 {name=p14 sig_type=std_logic lab=CLK}
+C {devices/lab_pin.sym} 1840 -1170 0 0 {name=p15 sig_type=std_logic lab=A}
+C {devices/lab_pin.sym} 1840 -940 0 0 {name=p16 sig_type=std_logic lab=B}
+C {devices/lab_pin.sym} 2080 -1110 0 0 {name=p17 sig_type=std_logic lab=C}
+C {devices/lab_pin.sym} 2600 -1070 0 0 {name=p18 sig_type=std_logic lab=D}
+C {devices/lab_pin.sym} 2990 -1150 0 0 {name=p19 sig_type=std_logic lab=E}
+C {devices/lab_pin.sym} 2990 -930 0 0 {name=p20 sig_type=std_logic lab=F}
+C {devices/lab_pin.sym} 3230 -960 0 0 {name=p21 sig_type=std_logic lab=H}
+C {devices/lab_pin.sym} 2990 -760 0 0 {name=p22 sig_type=std_logic lab=G}
+C {devices/lab_pin.sym} 3480 -1010 0 0 {name=p23 sig_type=std_logic lab=I}

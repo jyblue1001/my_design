@@ -1,0 +1,14 @@
+magic
+tech sky130A
+timestamp 1738244509
+<< locali >>
+rect 3145 3035 4500 3055
+use charge_pump_full_5  charge_pump_full_5_0
+timestamp 1738244200
+transform 1 0 -6050 0 1 3071
+box 6050 -3071 10630 -15
+use loop_filter  loop_filter_0
+timestamp 1738216101
+transform 1 0 3565 0 1 2785
+box 935 -5975 9720 445
+<< end >>

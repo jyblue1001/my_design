@@ -82,11 +82,11 @@ lab=GNDA}
 N 1880 -1040 1880 -820 {
 lab=GNDA}
 N 1840 -1230 1970 -1230 {
-lab=#net2}
+lab=A}
 N 1970 -1280 1970 -1230 {
-lab=#net2}
+lab=A}
 N 1970 -1280 2040 -1280 {
-lab=#net2}
+lab=A}
 N 2250 -1280 2290 -1280 {
 lab=CLK}
 N 1470 -1130 1630 -1130 {
@@ -96,9 +96,9 @@ lab=VOUT}
 N 2330 -1190 2530 -1190 {
 lab=VOUT}
 N 1840 -1250 1840 -1070 {
-lab=#net2}
+lab=A}
 N 1840 -1010 1840 -850 {
-lab=#net3}
+lab=B}
 N 2080 -1250 2080 -850 {
 lab=#net1}
 N 2220 -1040 2220 -820 {
@@ -279,3 +279,6 @@ C {devices/lab_pin.sym} 2060 -1570 0 1 {name=p29 sig_type=std_logic lab=GNDA}
 C {devices/lab_pin.sym} 2060 -1850 2 0 {name=p37 sig_type=std_logic lab=VDDA}
 C {devices/lab_pin.sym} 1930 -1710 0 0 {name=p1 sig_type=std_logic lab=VIN}
 C {devices/lab_pin.sym} 2120 -1710 0 1 {name=p2 sig_type=std_logic lab=CLK}
+C {devices/lab_pin.sym} 1840 -1170 0 0 {name=p5 sig_type=std_logic lab=A}
+C {devices/lab_pin.sym} 1840 -930 0 0 {name=p6 sig_type=std_logic lab=B}
+C {devices/lab_pin.sym} 2080 -1090 0 0 {name=p7 sig_type=std_logic lab=C}

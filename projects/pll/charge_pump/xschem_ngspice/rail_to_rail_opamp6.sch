@@ -418,25 +418,25 @@ C {devices/lab_wire.sym} 340 -560 0 1 {name=p12 sig_type=std_logic lab=p_bias}
 C {devices/lab_wire.sym} 370 -290 0 0 {name=p13 sig_type=std_logic lab=n_bias}
 C {devices/lab_pin.sym} 720 -280 2 0 {name=p8 sig_type=std_logic lab=p_right}
 C {devices/ammeter.sym} 180 -540 0 0 {name=Vmeas savecurrent=true spice_ignore=0}
-C {sky130_fd_pr/cap_mim_m3_1.sym} 1040 -570 0 0 {name=C1 model=cap_mim_m3_1 W=10 L=10 MF=1 spiceprefix=X}
-C {sky130_fd_pr/cap_mim_m3_1.sym} 1040 -310 2 1 {name=C2 model=cap_mim_m3_1 W=10 L=10 MF=1 spiceprefix=X}
-C {sky130_fd_pr/res_xhigh_po_0p35.sym} 1170 -510 3 0 {name=R1
+C {sky130_fd_pr/cap_mim_m3_1.sym} 1170 -510 3 0 {name=C1 model=cap_mim_m3_1 W=10 L=10 MF=1 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 1170 -370 1 1 {name=C2 model=cap_mim_m3_1 W=10 L=10 MF=1 spiceprefix=X}
+C {sky130_fd_pr/res_xhigh_po_0p35.sym} 1040 -570 0 0 {name=R1
 L=1.14
 model=res_xhigh_po_0p35
 spiceprefix=X
 mult=1}
-C {sky130_fd_pr/res_xhigh_po_0p35.sym} 1170 -370 3 1 {name=R2
+C {sky130_fd_pr/res_xhigh_po_0p35.sym} 1040 -300 2 1 {name=R2
 L=0.86
 model=res_xhigh_po_0p35
 spiceprefix=X
 mult=1}
-C {devices/lab_wire.sym} 1170 -490 2 1 {name=p14 sig_type=std_logic lab=GNDA
+C {devices/lab_wire.sym} 1020 -300 3 0 {name=p15 sig_type=std_logic lab=GNDA
 }
-C {devices/lab_wire.sym} 1170 -390 0 0 {name=p15 sig_type=std_logic lab=GNDA
-}
-C {sky130_fd_pr/res_xhigh_po_5p73.sym} 180 -420 0 0 {name=R3
-L=1
-model=res_xhigh_po_5p73
+C {devices/ammeter.sym} 1290 -460 0 0 {name=Vmeas1 savecurrent=true spice_ignore=0}
+C {sky130_fd_pr/res_xhigh_po_2p85.sym} 180 -420 0 0 {name=R4
+L=0.5
+model=res_xhigh_po_2p85
 spiceprefix=X
 mult=1}
-C {devices/ammeter.sym} 1290 -460 0 0 {name=Vmeas1 savecurrent=true spice_ignore=0}
+C {devices/lab_wire.sym} 1020 -570 3 1 {name=p14 sig_type=std_logic lab=GNDA
+}

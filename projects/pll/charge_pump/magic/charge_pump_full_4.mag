@@ -1,0 +1,17 @@
+magic
+tech sky130A
+timestamp 1738239713
+use A  A_0
+timestamp 1738239501
+transform 1 0 40 0 1 6305
+box -40 -6305 2255 -3675
+use B  B_0
+timestamp 1738239539
+transform 1 0 40 0 1 6305
+box 2255 -6661 4655 -3620
+<< labels >>
+flabel space 185 1485 185 1485 7 FreeSans 400 0 -200 0 GNDA
+flabel space 185 2025 185 2025 7 FreeSans 400 0 -200 0 VDDA
+flabel space 3285 2675 3285 2675 3 FreeSans 400 0 200 0 VOUT
+flabel space 140 1955 140 1955 7 FreeSans 400 0 -200 0 x
+<< end >>

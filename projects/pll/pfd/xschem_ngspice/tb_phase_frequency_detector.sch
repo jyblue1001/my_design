@@ -1,5 +1,4 @@
-v {xschem version=3.4.5 file_version=1.2
-}
+v {xschem version=3.4.6 file_version=1.2}
 G {}
 K {}
 V {}
@@ -282,6 +281,7 @@ C {devices/code.sym} 230 -388.75 0 0 {name=STIMULI only_toplevel=false value="
   tran 1ns 1us
   remzerovec
   write tb_phase_frequency_detector.raw
+  * write tb_phase_frequency_detector_2.raw
   linearize v(qa) v(qb)
   wrdata /foss/designs/my_design/projects/pll/pfd/xschem_ngspice/tb_phase_frequency_detector_QA.txt v(qa)
   wrdata /foss/designs/my_design/projects/pll/pfd/xschem_ngspice/tb_phase_frequency_detector_QB.txt v(qb)

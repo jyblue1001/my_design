@@ -8,8 +8,8 @@ import os
 intervals = np.arange(0, 190, 10)
 # file_names = [f'tb_divide_by_120_5_{i}.csv' for i in intervals]
 # file_names = [f'tb_divide_by_120_6_{i}.csv' for i in intervals]
-file_names = [f'tb_divide_by_120_7_{i}.csv' for i in intervals]
-# file_names = [f'tb_divide_by_120_7_2_{i}.csv' for i in intervals]
+# file_names = [f'tb_divide_by_120_7_{i}.csv' for i in intervals]
+file_names = [f'tb_divide_by_120_8_{i}.csv' for i in intervals]
 frequencies = []
 
 # Loop through each file and calculate the frequency

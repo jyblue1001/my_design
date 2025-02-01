@@ -1,0 +1,24 @@
+* NGSPICE file created from opamp_6_4.ext - technology: sky130A
+
+**.subckt opamp_6_4
+X0 a_2700_n50# VIN- a_2130_1020# VDDA sky130_fd_pr__pfet_01v8 ad=1 pd=5 as=1 ps=5 w=2 l=0.15
+X1 VDDA a_2930_n450# a_2930_n450# VDDA sky130_fd_pr__pfet_01v8 ad=1 pd=5 as=1 ps=5 w=2 l=0.15
+X2 a_2700_n50# a_2270_n450# GNDA GNDA sky130_fd_pr__nfet_01v8 ad=0.5 pd=3 as=0.5 ps=3 w=1 l=0.15
+X3 VOUT a_4140_1056# sky130_fd_pr__cap_mim_m3_1 l=10 w=10
+X4 a_3390_n450# VIN- a_3060_n450# GNDA sky130_fd_pr__nfet_01v8 ad=0.5 pd=3 as=0.5 ps=3 w=1 l=0.15
+X5 a_2460_n1410# a_2460_n1410# GNDA GNDA sky130_fd_pr__nfet_01v8 ad=2.5 pd=11 as=2.5 ps=11 w=5 l=0.5
+X6 a_2130_1020# VIN+ a_2270_n450# VDDA sky130_fd_pr__pfet_01v8 ad=1 pd=5 as=1 ps=5 w=2 l=0.15
+X7 a_3390_n450# a_2930_n450# VDDA VDDA sky130_fd_pr__pfet_01v8 ad=1 pd=5 as=1 ps=5 w=2 l=0.15
+X8 a_4140_1056# a_3390_n450# GNDA sky130_fd_pr__res_xhigh_po_0p35 l=1.14
+X9 a_1950_n1410# a_2460_n1410# GNDA sky130_fd_pr__res_xhigh_po_2p85 l=0.51
+X10 a_2700_n50# a_4140_n1860# GNDA sky130_fd_pr__res_xhigh_po_0p35 l=0.86
+X11 VOUT a_3390_n450# VDDA VDDA sky130_fd_pr__pfet_01v8 ad=2 pd=9 as=2 ps=9 w=4 l=0.15
+X12 GNDA a_2460_n1410# a_3060_n450# GNDA sky130_fd_pr__nfet_01v8 ad=2.5 pd=11 as=2.5 ps=11 w=5 l=0.5
+X13 a_3060_n450# VIN+ a_2930_n450# GNDA sky130_fd_pr__nfet_01v8 ad=0.5 pd=3 as=0.5 ps=3 w=1 l=0.15
+X14 VDDA a_1950_n1410# a_2130_1020# VDDA sky130_fd_pr__pfet_01v8 ad=5 pd=21 as=5 ps=21 w=10 l=0.5
+X15 a_1950_n1410# a_1950_n1410# VDDA VDDA sky130_fd_pr__pfet_01v8 ad=5 pd=21 as=5 ps=21 w=10 l=0.5
+X16 VOUT a_4140_n1860# sky130_fd_pr__cap_mim_m3_1 l=10 w=10
+X17 VOUT a_2700_n50# GNDA GNDA sky130_fd_pr__nfet_01v8 ad=1 pd=5 as=1 ps=5 w=2 l=0.15
+X18 GNDA a_2270_n450# a_2270_n450# GNDA sky130_fd_pr__nfet_01v8 ad=0.5 pd=3 as=0.5 ps=3 w=1 l=0.15
+.ends
+

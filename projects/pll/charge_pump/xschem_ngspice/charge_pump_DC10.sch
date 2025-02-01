@@ -779,8 +779,8 @@ C {devices/code.sym} 250 -401.25 0 0 {name=Teestbench only_toplevel=false value=
   save all
   dc v2 0 1.8 0.01 v3 0 1.8 1.8
   remzerovec
-  * write charge_pump_DC10.raw
-  write charge_pump_DC10_2.raw
+  write charge_pump_DC10.raw
+  * write charge_pump_DC10_2.raw
   set appendwrite
 .endc
 
@@ -939,12 +939,12 @@ spiceprefix=X
 C {devices/lab_wire.sym} 400 -1300 0 1 {name=p15 sig_type=std_logic lab=UP_PFD_b}
 C {devices/lab_wire.sym} 2000 -1630 2 0 {name=p13 sig_type=std_logic lab=UP_input}
 C {devices/lab_wire.sym} 2000 -560 0 1 {name=p14 sig_type=std_logic lab=DOWN_input}
-C {devices/gnd.sym} 1170 -1100 0 1 {name=l7 lab=GND}
+C {devices/gnd.sym} 1310 -1100 0 1 {name=l7 lab=GND}
 C {devices/lab_wire.sym} 1340 -1630 0 0 {name=p17 sig_type=std_logic lab=opamp_out}
 C {devices/lab_wire.sym} 140 -1300 0 0 {name=p7 sig_type=std_logic lab=UP_PFD}
 C {devices/lab_wire.sym} 180 -860 2 1 {name=p8 sig_type=std_logic lab=DOWN_PFD}
-C {/foss/designs/my_design/projects/pll/charge_pump/xschem_ngspice/rail_to_rail_opamp6.sym} 1240 -1100 1 1 {name=x2}
-C {devices/vdd.sym} 1310 -1100 0 0 {name=l6 lab=VDD}
+C {rail_to_rail_opamp6.sym} 1240 -1100 3 0 {name=x2}
+C {devices/vdd.sym} 1170 -1100 0 0 {name=l6 lab=VDD}
 C {sky130_fd_pr/pfet_01v8.sym} 620 -750 3 0 {name=M19
 L=0.15
 W=2

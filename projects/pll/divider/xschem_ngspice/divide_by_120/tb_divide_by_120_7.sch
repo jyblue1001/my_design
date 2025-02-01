@@ -471,4 +471,4 @@ C {/foss/designs/my_design/projects/pll/vco/xschem_ngspice/current_starved_VCO10
 C {sky130_fd_pr/corner.sym} 1260 -700 0 0 {name=CORNER1 only_toplevel=false corner=tt}
 C {devices/gnd.sym} 1840 -110 0 0 {name=l2 lab=GND}
 C {devices/vdd.sym} 1840 -210 0 0 {name=l3 lab=VDD}
-C {divide_by_120_6.sym} 1840 -160 0 0 {name=x2}
+C {/foss/designs/my_design/projects/pll/divider/xschem_ngspice/divide_by_120/divide_by_120_6.sym} 1840 -160 0 0 {name=x2}

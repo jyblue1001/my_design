@@ -1,0 +1,49 @@
+
+Circuit 1 cell sky130_fd_pr__pfet_01v8 and Circuit 2 cell sky130_fd_pr__pfet_01v8 are black boxes.
+Equate elements:  no current cell.
+Device classes sky130_fd_pr__pfet_01v8 and sky130_fd_pr__pfet_01v8 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__nfet_01v8 and Circuit 2 cell sky130_fd_pr__nfet_01v8 are black boxes.
+Equate elements:  no current cell.
+Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__cap_mim_m3_1 and Circuit 2 cell sky130_fd_pr__cap_mim_m3_1 are black boxes.
+Equate elements:  no current cell.
+Device classes sky130_fd_pr__cap_mim_m3_1 and sky130_fd_pr__cap_mim_m3_1 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__res_xhigh_po_0p35 and Circuit 2 cell sky130_fd_pr__res_xhigh_po_0p35 are black boxes.
+Equate elements:  no current cell.
+Device classes sky130_fd_pr__res_xhigh_po_0p35 and sky130_fd_pr__res_xhigh_po_0p35 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__res_xhigh_po_2p85 and Circuit 2 cell sky130_fd_pr__res_xhigh_po_2p85 are black boxes.
+Equate elements:  no current cell.
+Device classes sky130_fd_pr__res_xhigh_po_2p85 and sky130_fd_pr__res_xhigh_po_2p85 are equivalent.
+Flattening unmatched subcell loop_filter in circuit cp_lf.spice (0)(1 instance)
+Flattening unmatched subcell charge_pump_full_5 in circuit cp_lf.spice (0)(1 instance)
+Flattening unmatched subcell charge_pump_cell in circuit cp_lf.spice (0)(1 instance)
+Flattening unmatched subcell opamp_cell in circuit cp_lf.spice (0)(1 instance)
+Flattening unmatched subcell rail_to_rail_opamp6_2 in circuit cp_lf_xschem.spice (1)(1 instance)
+
+Class cp_lf.spice (0):  Merged 45 parallel devices.
+Subcircuit summary:
+Circuit 1: cp_lf.spice                     |Circuit 2: cp_lf_xschem.spice              
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__cap_mim_m3_1 (6)             |sky130_fd_pr__cap_mim_m3_1 (6)             
+sky130_fd_pr__res_xhigh_po_0p35 (3)        |sky130_fd_pr__res_xhigh_po_0p35 (3)        
+sky130_fd_pr__pfet_01v8 (45->18)           |sky130_fd_pr__pfet_01v8 (18)               
+sky130_fd_pr__nfet_01v8 (37->19)           |sky130_fd_pr__nfet_01v8 (19)               
+sky130_fd_pr__res_xhigh_po_2p85 (1)        |sky130_fd_pr__res_xhigh_po_2p85 (1)        
+Number of devices: 47                      |Number of devices: 47                      
+Number of nets: 27                         |Number of nets: 27                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely with property errors.
+charge_pump_full_5_0//opamp_cell_0/sky130_fd_pr__res_xhigh_po_2p85:35 vs. rail_to_rail_opamp6_2:1/sky130_fd_pr__res_xhigh_po_2p85:R4:
+ l circuit1: 0.51   circuit2: 0.5   (delta=1.98%, cutoff=1%)
+Cells have no pins;  pin matching not needed.
+Device classes cp_lf.spice and cp_lf_xschem.spice are equivalent.
+
+Final result: Circuits match uniquely.
+Property errors were found.
+
+The following cells had property errors:
+ cp_lf.spice

@@ -1,0 +1,9 @@
+* NGSPICE file created from passgate_3.ext - technology: sky130A
+
+.subckt passgate_3
+X0 B A VDDA VDDA sky130_fd_pr__nfet_01v8 ad=0.5 pd=3 as=0.5 ps=3 w=1 l=0.15
+X1 D a_1400_n80# C VDDA sky130_fd_pr__nfet_01v8 ad=0.5 pd=3 as=0.5 ps=3 w=1 l=0.15
+X2 B A VDDA VDDA sky130_fd_pr__pfet_01v8 ad=1 pd=5 as=1 ps=5 w=2 l=0.15
+X3 D a_1400_390# C VDDA sky130_fd_pr__pfet_01v8 ad=1 pd=5 as=1 ps=5 w=2 l=0.15
+.ends
+

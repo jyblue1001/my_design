@@ -5,14 +5,7 @@ V2 F_VCO GND pulse(0 1.8 13ns 1ns 1ns 24ns 50ns)
 VDD VDDA GND 1.8
 x1 F_REF F_VCO VDDA QA QB GND phase_frequency_detector
 **** begin user architecture code
-
-.param mc_mm_switch=0
-.param mc_pr_switch=0
-.include /foss/pdks/sky130A/libs.tech/ngspice/corners/tt.spice
-.include /foss/pdks/sky130A/libs.tech/ngspice/r+c/res_typical__cap_typical.spice
-.include /foss/pdks/sky130A/libs.tech/ngspice/r+c/res_typical__cap_typical__lin.spice
-.include /foss/pdks/sky130A/libs.tech/ngspice/corners/tt/specialized_cells.spice
-
+.lib /foss/pdks/sky130A/libs.tech/combined/sky130.lib.spice tt
 
 
 
@@ -45,6 +38,7 @@ x1 F_REF F_VCO VDDA QA QB GND phase_frequency_detector
   tran 1ns 1us
   remzerovec
   write tb_phase_frequency_detector.raw
+  * write tb_phase_frequency_detector_2.raw
   linearize v(qa) v(qb)
   wrdata /foss/designs/my_design/projects/pll/pfd/xschem_ngspice/tb_phase_frequency_detector_QA.txt v(qa)
   wrdata /foss/designs/my_design/projects/pll/pfd/xschem_ngspice/tb_phase_frequency_detector_QB.txt v(qb)
@@ -72,14 +66,14 @@ x1 F_REF F_VCO VDDA QA QB GND phase_frequency_detector
 *.ipin VDDA
 *.ipin GNDA
 x1 F_REF QA GNDA GNDA VDDA VDDA QA_b sky130_fd_sc_hd__nor2_1
-x2 QA_b E GNDA GNDA VDDA VDDA QA sky130_fd_sc_hd__nor2_1
+x2 E QA_b GNDA GNDA VDDA VDDA QA sky130_fd_sc_hd__nor2_1
 x3 QA_b E_b GNDA GNDA VDDA VDDA E sky130_fd_sc_hd__nor2_1
-x4 E Reset GNDA GNDA VDDA VDDA E_b sky130_fd_sc_hd__nor2_1
+x4 Reset E GNDA GNDA VDDA VDDA E_b sky130_fd_sc_hd__nor2_1
 x5 F_VCO QB GNDA GNDA VDDA VDDA QB_b sky130_fd_sc_hd__nor2_1
-x6 QB_b F GNDA GNDA VDDA VDDA QB sky130_fd_sc_hd__nor2_1
+x6 F QB_b GNDA GNDA VDDA VDDA QB sky130_fd_sc_hd__nor2_1
 x7 QB_b F_b GNDA GNDA VDDA VDDA F sky130_fd_sc_hd__nor2_1
-x8 F Reset GNDA GNDA VDDA VDDA F_b sky130_fd_sc_hd__nor2_1
-x9 QA QB GNDA GNDA VDDA VDDA before_Reset sky130_fd_sc_hd__nand2_1
+x8 Reset F GNDA GNDA VDDA VDDA F_b sky130_fd_sc_hd__nor2_1
+x9 QB QA GNDA GNDA VDDA VDDA before_Reset sky130_fd_sc_hd__nand2_1
 x10 before_Reset GNDA GNDA VDDA VDDA net1 sky130_fd_sc_hd__inv_1
 x11 net1 GNDA GNDA VDDA VDDA net2 sky130_fd_sc_hd__inv_1
 x12 net2 GNDA GNDA VDDA VDDA net3 sky130_fd_sc_hd__inv_1
