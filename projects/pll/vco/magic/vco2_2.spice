@@ -1,25 +1,25 @@
 * NGSPICE file created from vco2_2.ext - technology: sky130A
 
 **.subckt vco2_2
-X0 a_82_186# a_38_n62# V_OSC VDDA sky130_fd_pr__pfet_01v8 ad=0.43 pd=2.72 as=0.43 ps=2.72 w=0.86 l=0.22
-X1 a_636_n552# V_CONT GNDA GNDA sky130_fd_pr__nfet_01v8 ad=0.5 pd=3 as=0.5 ps=3 w=1 l=0.15
-X2 a_1190_n552# V_OSC a_592_n62# GNDA sky130_fd_pr__nfet_01v8 ad=0.215 pd=1.86 as=0.215 ps=1.86 w=0.43 l=0.22
-X3 a_82_186# GNDA VDDA VDDA sky130_fd_pr__pfet_01v8 ad=0.43 pd=2.72 as=0.43 ps=2.72 w=0.86 l=0.15
-X4 GNDA V_CONT a_n746_764# GNDA sky130_fd_pr__nfet_01v8 ad=0.5 pd=3 as=0.5 ps=3 w=1 l=0.15
+X0 a_636_n552# V_CONT GNDA GNDA sky130_fd_pr__nfet_01v8 ad=0.5 pd=3 as=0.5 ps=3 w=1 l=0.15
+X1 a_82_186# GNDA VDDA VDDA sky130_fd_pr__pfet_01v8 ad=0.43 pd=2.72 as=0.43 ps=2.72 w=0.86 l=0.15
+X2 GNDA V_CONT a_n746_764# GNDA sky130_fd_pr__nfet_01v8 ad=0.5 pd=3 as=0.5 ps=3 w=1 l=0.15
+X3 a_1190_186# V_OSC a_594_n62# VDDA sky130_fd_pr__pfet_01v8 ad=0.43 pd=2.72 as=0.43 ps=2.72 w=0.86 l=0.21
+X4 a_636_n552# a_594_n62# a_40_n62# GNDA sky130_fd_pr__nfet_01v8 ad=0.215 pd=1.86 as=0.215 ps=1.86 w=0.43 l=0.21
 X5 VDDA a_n746_764# a_n746_764# VDDA sky130_fd_pr__pfet_01v8 ad=1 pd=5 as=1 ps=5 w=2 l=1.5
-X6 a_82_n552# a_38_n62# V_OSC GNDA sky130_fd_pr__nfet_01v8 ad=0.215 pd=1.86 as=0.215 ps=1.86 w=0.43 l=0.22
-X7 a_1190_n552# VDDA GNDA GNDA sky130_fd_pr__nfet_01v8 ad=0.215 pd=1.86 as=0.215 ps=1.86 w=0.43 l=0.15
-X8 a_1190_n552# V_CONT GNDA GNDA sky130_fd_pr__nfet_01v8 ad=0.5 pd=3 as=0.5 ps=3 w=1 l=0.15
-X9 a_636_186# a_592_n62# a_38_n62# VDDA sky130_fd_pr__pfet_01v8 ad=0.43 pd=2.72 as=0.43 ps=2.72 w=0.86 l=0.22
-X10 a_82_n552# VDDA GNDA GNDA sky130_fd_pr__nfet_01v8 ad=0.215 pd=1.86 as=0.215 ps=1.86 w=0.43 l=0.15
-X11 a_82_n552# V_CONT GNDA GNDA sky130_fd_pr__nfet_01v8 ad=0.5 pd=3 as=0.5 ps=3 w=1 l=0.15
-X12 a_636_186# a_n746_764# VDDA VDDA sky130_fd_pr__pfet_01v8 ad=1 pd=5 as=1 ps=5 w=2 l=1.5
-X13 a_636_n552# a_592_n62# a_38_n62# GNDA sky130_fd_pr__nfet_01v8 ad=0.215 pd=1.86 as=0.215 ps=1.86 w=0.43 l=0.22
+X6 a_82_186# a_40_n62# V_OSC VDDA sky130_fd_pr__pfet_01v8 ad=0.43 pd=2.72 as=0.43 ps=2.72 w=0.86 l=0.21
+X7 a_1190_n552# V_OSC a_594_n62# GNDA sky130_fd_pr__nfet_01v8 ad=0.215 pd=1.86 as=0.215 ps=1.86 w=0.43 l=0.21
+X8 a_1190_n552# VDDA GNDA GNDA sky130_fd_pr__nfet_01v8 ad=0.215 pd=1.86 as=0.215 ps=1.86 w=0.43 l=0.15
+X9 a_1190_n552# V_CONT GNDA GNDA sky130_fd_pr__nfet_01v8 ad=0.5 pd=3 as=0.5 ps=3 w=1 l=0.15
+X10 a_82_n552# a_40_n62# V_OSC GNDA sky130_fd_pr__nfet_01v8 ad=0.215 pd=1.86 as=0.215 ps=1.86 w=0.43 l=0.21
+X11 a_82_n552# VDDA GNDA GNDA sky130_fd_pr__nfet_01v8 ad=0.215 pd=1.86 as=0.215 ps=1.86 w=0.43 l=0.15
+X12 a_82_n552# V_CONT GNDA GNDA sky130_fd_pr__nfet_01v8 ad=0.5 pd=3 as=0.5 ps=3 w=1 l=0.15
+X13 a_636_186# a_n746_764# VDDA VDDA sky130_fd_pr__pfet_01v8 ad=1 pd=5 as=1 ps=5 w=2 l=1.5
 X14 a_82_186# a_n746_764# VDDA VDDA sky130_fd_pr__pfet_01v8 ad=1 pd=5 as=1 ps=5 w=2 l=1.5
-X15 a_1190_186# V_OSC a_592_n62# VDDA sky130_fd_pr__pfet_01v8 ad=0.43 pd=2.72 as=0.43 ps=2.72 w=0.86 l=0.22
+X15 a_636_186# a_594_n62# a_40_n62# VDDA sky130_fd_pr__pfet_01v8 ad=0.43 pd=2.72 as=0.43 ps=2.72 w=0.86 l=0.21
 X16 a_1190_186# a_n746_764# VDDA VDDA sky130_fd_pr__pfet_01v8 ad=1 pd=5 as=1 ps=5 w=2 l=1.5
 X17 a_636_186# GNDA VDDA VDDA sky130_fd_pr__pfet_01v8 ad=0.43 pd=2.72 as=0.43 ps=2.72 w=0.86 l=0.15
 X18 a_1190_186# GNDA VDDA VDDA sky130_fd_pr__pfet_01v8 ad=0.43 pd=2.72 as=0.43 ps=2.72 w=0.86 l=0.15
 X19 a_636_n552# VDDA GNDA GNDA sky130_fd_pr__nfet_01v8 ad=0.215 pd=1.86 as=0.215 ps=1.86 w=0.43 l=0.15
-.ends
+**.ends
 

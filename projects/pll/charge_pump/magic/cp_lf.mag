@@ -1,14 +1,34 @@
 magic
 tech sky130A
-timestamp 1738244509
+timestamp 1738592166
+<< poly >>
+rect -20 2110 40 2125
+rect -20 1895 40 1910
 << locali >>
-rect 3145 3035 4500 3055
+rect 6465 3230 6485 3250
+rect -20 1660 65 1680
+<< metal1 >>
+rect -20 2180 30 2815
+rect -20 1695 35 2050
 use charge_pump_full_5  charge_pump_full_5_0
-timestamp 1738244200
-transform 1 0 -6050 0 1 3071
-box 6050 -3071 10630 -15
+timestamp 1738589679
+transform 1 0 -6050 0 1 3070
+box 6050 -3070 10630 -15
 use loop_filter  loop_filter_0
-timestamp 1738216101
+timestamp 1738587801
 transform 1 0 3565 0 1 2785
 box 935 -5975 9720 445
+<< labels >>
+flabel metal1 -20 2500 -20 2500 7 FreeSans 400 0 -200 0 VDDA
+port 1 w
+flabel metal1 -20 1770 -20 1770 7 FreeSans 400 0 -200 0 GNDA
+port 3 w
+flabel locali -20 1670 -20 1670 7 FreeSans 400 0 -200 0 I_IN
+port 6 w
+flabel poly -20 2120 -20 2120 7 FreeSans 400 0 -200 0 UP_PFD
+port 4 w
+flabel poly -20 1905 -20 1905 7 FreeSans 400 0 -200 0 DOWN_PFD
+port 5 w
+flabel locali 6475 3250 6475 3250 1 FreeSans 800 0 0 400 V_OUT
+port 2 n
 << end >>

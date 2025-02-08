@@ -1,17 +1,93 @@
-* SPICE3 file created from TSPC_FF_ratioed_divide2_magic.ext - technology: sky130A
+* PEX produced on Sat Feb  1 01:53:57 PM CET 2025 using /foss/tools/osic-multitool/iic-pex.sh with m=3 and s=1
+* NGSPICE file created from TSPC_FF_ratioed_divide2_magic.ext - technology: sky130A
 
-.subckt TSPC_FF_ratioed_divide2_magic
-X0 VOUT C GNDA GNDA sky130_fd_pr__nfet_01v8 ad=0.2 pd=1.8 as=0.1 ps=0.9 w=0.5 l=0.15
-X1 VOUT CLK VDDA VDDA sky130_fd_pr__pfet_01v8 ad=0.2 pd=1.8 as=0.2 ps=1.8 w=0.5 l=0.15
-X2 C CLK GNDA GNDA sky130_fd_pr__nfet_01v8 ad=0.1 pd=0.9 as=0.1 ps=0.9 w=0.5 l=0.15
-X3 C A VDDA VDDA sky130_fd_pr__pfet_01v8 ad=0.2 pd=1.8 as=0.1 ps=0.9 w=0.5 l=0.15
-X4 A CLK B GNDA sky130_fd_pr__nfet_01v8 ad=0.2 pd=1.8 as=0.1 ps=0.9 w=0.5 l=0.15
-X5 CLK VIN VDDA VDDA sky130_fd_pr__pfet_01v8 ad=0.2 pd=1.8 as=0.1 ps=0.9 w=0.5 l=0.15
-X6 GNDA VIN CLK GNDA sky130_fd_pr__nfet_01v8 ad=0.1 pd=0.9 as=0.2 ps=1.8 w=0.5 l=0.15
-X7 VDDA VOUT A VDDA sky130_fd_pr__pfet_01v8 ad=0.1 pd=0.9 as=0.2 ps=1.8 w=0.5 l=0.15
-X8 GNDA CLK C GNDA sky130_fd_pr__nfet_01v8 ad=0.1 pd=0.9 as=0.1 ps=0.9 w=0.5 l=0.15
-X9 GNDA CLK C GNDA sky130_fd_pr__nfet_01v8 ad=0.1 pd=0.9 as=0.2 ps=1.8 w=0.5 l=0.15
-X10 B VOUT GNDA GNDA sky130_fd_pr__nfet_01v8 ad=0.1 pd=0.9 as=0.1 ps=0.9 w=0.5 l=0.15
-X11 VDDA VIN CLK VDDA sky130_fd_pr__pfet_01v8 ad=0.1 pd=0.9 as=0.2 ps=1.8 w=0.5 l=0.15
+.subckt TSPC_FF_ratioed_divide2_magic VOUT VIN VDDA GNDA
+X0 VOUT.t1 C.t4 GNDA.t8 GNDA.t7 sky130_fd_pr__nfet_01v8 ad=0.2 pd=1.8 as=0.1 ps=0.9 w=0.5 l=0.15
+X1 VOUT.t0 CLK.t3 VDDA.t9 VDDA.t8 sky130_fd_pr__pfet_01v8 ad=0.2 pd=1.8 as=0.2 ps=1.8 w=0.5 l=0.15
+X2 C.t2 CLK.t4 GNDA.t10 GNDA.t9 sky130_fd_pr__nfet_01v8 ad=0.1 pd=0.9 as=0.1 ps=0.9 w=0.5 l=0.15
+X3 C.t1 A.t2 VDDA.t3 VDDA.t2 sky130_fd_pr__pfet_01v8 ad=0.2 pd=1.8 as=0.1 ps=0.9 w=0.5 l=0.15
+X4 A.t1 CLK.t5 B.t1 GNDA.t0 sky130_fd_pr__nfet_01v8 ad=0.2 pd=1.8 as=0.1 ps=0.9 w=0.5 l=0.15
+X5 CLK.t0 VIN.t0 VDDA.t5 VDDA.t4 sky130_fd_pr__pfet_01v8 ad=0.2 pd=1.8 as=0.1 ps=0.9 w=0.5 l=0.15
+X6 GNDA.t4 VIN.t1 CLK.t1 GNDA.t3 sky130_fd_pr__nfet_01v8 ad=0.1 pd=0.9 as=0.2 ps=1.8 w=0.5 l=0.15
+X7 VDDA.t1 VOUT.t2 A.t0 VDDA.t0 sky130_fd_pr__pfet_01v8 ad=0.1 pd=0.9 as=0.2 ps=1.8 w=0.5 l=0.15
+X8 GNDA.t12 CLK.t6 C.t3 GNDA.t11 sky130_fd_pr__nfet_01v8 ad=0.1 pd=0.9 as=0.1 ps=0.9 w=0.5 l=0.15
+X9 GNDA.t2 CLK.t7 C.t0 GNDA.t1 sky130_fd_pr__nfet_01v8 ad=0.1 pd=0.9 as=0.2 ps=1.8 w=0.5 l=0.15
+X10 B.t0 VOUT.t3 GNDA.t6 GNDA.t5 sky130_fd_pr__nfet_01v8 ad=0.1 pd=0.9 as=0.1 ps=0.9 w=0.5 l=0.15
+X11 VDDA.t7 VIN.t2 CLK.t2 VDDA.t6 sky130_fd_pr__pfet_01v8 ad=0.1 pd=0.9 as=0.2 ps=1.8 w=0.5 l=0.15
+R0 C.n2 C.t1 721.4
+R1 C.n1 C.t4 349.433
+R2 C.t0 C.n2 276.733
+R3 C.n1 C.n0 206.333
+R4 C.n0 C.t3 48.0005
+R5 C.n0 C.t2 48.0005
+R6 C.n2 C.n1 48.0005
+R7 GNDA.t1 GNDA.t0 4683.87
+R8 GNDA.n1 GNDA.t7 3947.35
+R9 GNDA.t7 GNDA.t11 1561.29
+R10 GNDA.t11 GNDA.t9 1561.29
+R11 GNDA.t9 GNDA.t1 1561.29
+R12 GNDA.t0 GNDA.t5 1561.29
+R13 GNDA.t5 GNDA.t3 1561.29
+R14 GNDA.n5 GNDA.n4 194.3
+R15 GNDA.n3 GNDA.n2 194.3
+R16 GNDA.n1 GNDA.n0 194.3
+R17 GNDA.n4 GNDA.t6 48.0005
+R18 GNDA.n4 GNDA.t4 48.0005
+R19 GNDA.n2 GNDA.t10 48.0005
+R20 GNDA.n2 GNDA.t2 48.0005
+R21 GNDA.n0 GNDA.t8 48.0005
+R22 GNDA.n0 GNDA.t12 48.0005
+R23 GNDA.n5 GNDA.n3 0.688
+R24 GNDA.n3 GNDA.n1 0.2755
+R25 GNDA GNDA.n5 0.238
+R26 VOUT.t2 VOUT.t3 819.4
+R27 VOUT.n0 VOUT.t0 663.801
+R28 VOUT.n0 VOUT.t2 489.168
+R29 VOUT.n1 VOUT.t1 270.12
+R30 VOUT.n1 VOUT.n0 67.2005
+R31 VOUT VOUT.n1 41.6005
+R32 CLK.n5 CLK.t2 723.534
+R33 CLK.n4 CLK.t0 723.534
+R34 CLK.n0 CLK.t3 369.534
+R35 CLK.n3 CLK.n2 366.856
+R36 CLK.t1 CLK.n5 254.333
+R37 CLK.n3 CLK.t5 190.123
+R38 CLK.n4 CLK.n3 187.201
+R39 CLK.n1 CLK.n0 176.733
+R40 CLK.n2 CLK.n1 176.733
+R41 CLK.n0 CLK.t6 112.468
+R42 CLK.n2 CLK.t7 112.468
+R43 CLK.n1 CLK.t4 112.468
+R44 CLK.n5 CLK.n4 70.4005
+R45 VDDA.t0 VDDA.t4 1130.95
+R46 VDDA.n0 VDDA.t2 927.381
+R47 VDDA.n1 VDDA.t9 667.62
+R48 VDDA.n0 VDDA.t8 610.715
+R49 VDDA.n5 VDDA.n4 594.301
+R50 VDDA.n3 VDDA.n2 594.301
+R51 VDDA.t2 VDDA.t0 497.62
+R52 VDDA.t4 VDDA.t6 497.62
+R53 VDDA.n1 VDDA.n0 373.781
+R54 VDDA.n4 VDDA.t5 78.8005
+R55 VDDA.n4 VDDA.t7 78.8005
+R56 VDDA.n2 VDDA.t3 78.8005
+R57 VDDA.n2 VDDA.t1 78.8005
+R58 VDDA.n3 VDDA.n1 3.10124
+R59 VDDA.n5 VDDA.n3 0.4505
+R60 VDDA VDDA.n5 0.238
+R61 A.n0 A.t0 713.933
+R62 A.n0 A.t2 314.233
+R63 A.t1 A.n0 308.2
+R64 B.t0 B.t1 96.0005
+R65 VIN.t2 VIN.t0 401.668
+R66 VIN.n0 VIN.t2 257.067
+R67 VIN VIN.n0 216.9
+R68 VIN.n0 VIN.t1 208.868
+C0 VDDA VIN 0.125153f
+C1 VDDA VOUT 0.397477f
+C2 VIN VOUT 0.058162f
+C3 VIN GNDA 0.291288f
+C4 VOUT GNDA 0.723109f
+C5 VDDA GNDA 1.11299f
 .ends
 

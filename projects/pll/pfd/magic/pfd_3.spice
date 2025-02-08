@@ -19,48 +19,34 @@ X2 a_113_47# B VGND VNB sky130_fd_pr__nfet_01v8 ad=0.08775 pd=0.92 as=0.169 ps=1
 X3 Y B VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0.135 pd=1.27 as=0.26 ps=2.52 w=1 l=0.15
 .ends
 
-**.subckt pfd_3
-Xsky130_fd_sc_hd__inv_1_4 sky130_fd_sc_hd__inv_1_4/A sky130_fd_sc_hd__inv_1_4/VGND
-+ VSUBS sky130_fd_sc_hd__inv_1_4/VPB sky130_fd_sc_hd__inv_1_4/VPWR sky130_fd_sc_hd__inv_1_4/Y
-+ sky130_fd_sc_hd__inv_1
+**.subckt pfd_3 F_REF F_VCO QA QB VDDA GNDA
+Xsky130_fd_sc_hd__inv_1_4 sky130_fd_sc_hd__inv_1_4/A GNDA VSUBS sky130_fd_sc_hd__inv_1_4/VPB
++ VDDA sky130_fd_sc_hd__inv_1_4/Y sky130_fd_sc_hd__inv_1
 Xsky130_fd_sc_hd__nor2_1_1 sky130_fd_sc_hd__nor2_1_3/B sky130_fd_sc_hd__nor2_1_2/A
-+ sky130_fd_sc_hd__inv_1_4/VGND VSUBS sky130_fd_sc_hd__inv_1_4/VPB sky130_fd_sc_hd__inv_1_4/VPWR
-+ sky130_fd_sc_hd__nor2_1_1/Y sky130_fd_sc_hd__nor2_1
-Xsky130_fd_sc_hd__nor2_1_0 sky130_fd_sc_hd__nor2_1_0/A sky130_fd_sc_hd__nor2_1_1/Y
-+ sky130_fd_sc_hd__inv_1_4/VGND VSUBS sky130_fd_sc_hd__inv_1_4/VPB sky130_fd_sc_hd__inv_1_4/VPWR
-+ sky130_fd_sc_hd__nor2_1_2/A sky130_fd_sc_hd__nor2_1
++ GNDA VSUBS sky130_fd_sc_hd__inv_1_4/VPB VDDA QB sky130_fd_sc_hd__nor2_1
+Xsky130_fd_sc_hd__nor2_1_0 F_VCO QB GNDA VSUBS sky130_fd_sc_hd__inv_1_4/VPB VDDA sky130_fd_sc_hd__nor2_1_2/A
++ sky130_fd_sc_hd__nor2_1
 Xsky130_fd_sc_hd__nor2_1_2 sky130_fd_sc_hd__nor2_1_2/A sky130_fd_sc_hd__nor2_1_3/Y
-+ sky130_fd_sc_hd__inv_1_4/VGND VSUBS sky130_fd_sc_hd__inv_1_4/VPB sky130_fd_sc_hd__inv_1_4/VPWR
-+ sky130_fd_sc_hd__nor2_1_3/B sky130_fd_sc_hd__nor2_1
++ GNDA VSUBS sky130_fd_sc_hd__inv_1_4/VPB VDDA sky130_fd_sc_hd__nor2_1_3/B sky130_fd_sc_hd__nor2_1
 Xsky130_fd_sc_hd__nor2_1_3 sky130_fd_sc_hd__inv_1_1/Y sky130_fd_sc_hd__nor2_1_3/B
-+ sky130_fd_sc_hd__inv_1_4/VGND VSUBS sky130_fd_sc_hd__inv_1_4/VPB sky130_fd_sc_hd__inv_1_4/VPWR
-+ sky130_fd_sc_hd__nor2_1_3/Y sky130_fd_sc_hd__nor2_1
-Xsky130_fd_sc_hd__nor2_1_4 sky130_fd_sc_hd__nor2_1_4/A sky130_fd_sc_hd__nor2_1_7/Y
-+ sky130_fd_sc_hd__inv_1_4/VGND VSUBS sky130_fd_sc_hd__inv_1_4/VPB sky130_fd_sc_hd__inv_1_4/VPWR
-+ sky130_fd_sc_hd__nor2_1_7/B sky130_fd_sc_hd__nor2_1
++ GNDA VSUBS sky130_fd_sc_hd__inv_1_4/VPB VDDA sky130_fd_sc_hd__nor2_1_3/Y sky130_fd_sc_hd__nor2_1
+Xsky130_fd_sc_hd__nor2_1_4 F_REF QA GNDA VSUBS sky130_fd_sc_hd__inv_1_4/VPB VDDA sky130_fd_sc_hd__nor2_1_7/B
++ sky130_fd_sc_hd__nor2_1
 Xsky130_fd_sc_hd__nor2_1_5 sky130_fd_sc_hd__nor2_1_7/B sky130_fd_sc_hd__nor2_1_6/Y
-+ sky130_fd_sc_hd__inv_1_4/VGND VSUBS sky130_fd_sc_hd__inv_1_4/VPB sky130_fd_sc_hd__inv_1_4/VPWR
-+ sky130_fd_sc_hd__nor2_1_7/A sky130_fd_sc_hd__nor2_1
++ GNDA VSUBS sky130_fd_sc_hd__inv_1_4/VPB VDDA sky130_fd_sc_hd__nor2_1_7/A sky130_fd_sc_hd__nor2_1
 Xsky130_fd_sc_hd__nor2_1_6 sky130_fd_sc_hd__inv_1_1/Y sky130_fd_sc_hd__nor2_1_7/A
-+ sky130_fd_sc_hd__inv_1_4/VGND VSUBS sky130_fd_sc_hd__inv_1_4/VPB sky130_fd_sc_hd__inv_1_4/VPWR
-+ sky130_fd_sc_hd__nor2_1_6/Y sky130_fd_sc_hd__nor2_1
++ GNDA VSUBS sky130_fd_sc_hd__inv_1_4/VPB VDDA sky130_fd_sc_hd__nor2_1_6/Y sky130_fd_sc_hd__nor2_1
 Xsky130_fd_sc_hd__nor2_1_7 sky130_fd_sc_hd__nor2_1_7/A sky130_fd_sc_hd__nor2_1_7/B
-+ sky130_fd_sc_hd__inv_1_4/VGND VSUBS sky130_fd_sc_hd__inv_1_4/VPB sky130_fd_sc_hd__inv_1_4/VPWR
-+ sky130_fd_sc_hd__nor2_1_7/Y sky130_fd_sc_hd__nor2_1
-Xsky130_fd_sc_hd__nand2_1_1 sky130_fd_sc_hd__nor2_1_7/Y sky130_fd_sc_hd__nor2_1_1/Y
-+ sky130_fd_sc_hd__inv_1_4/VGND VSUBS sky130_fd_sc_hd__inv_1_4/VPB sky130_fd_sc_hd__inv_1_4/VPWR
-+ sky130_fd_sc_hd__inv_1_2/A sky130_fd_sc_hd__nand2_1
-Xsky130_fd_sc_hd__inv_1_0 sky130_fd_sc_hd__inv_1_4/Y sky130_fd_sc_hd__inv_1_4/VGND
-+ VSUBS sky130_fd_sc_hd__inv_1_4/VPB sky130_fd_sc_hd__inv_1_4/VPWR sky130_fd_sc_hd__inv_1_1/A
-+ sky130_fd_sc_hd__inv_1
-Xsky130_fd_sc_hd__inv_1_1 sky130_fd_sc_hd__inv_1_1/A sky130_fd_sc_hd__inv_1_4/VGND
-+ VSUBS sky130_fd_sc_hd__inv_1_4/VPB sky130_fd_sc_hd__inv_1_4/VPWR sky130_fd_sc_hd__inv_1_1/Y
-+ sky130_fd_sc_hd__inv_1
-Xsky130_fd_sc_hd__inv_1_2 sky130_fd_sc_hd__inv_1_2/A sky130_fd_sc_hd__inv_1_4/VGND
-+ VSUBS sky130_fd_sc_hd__inv_1_4/VPB sky130_fd_sc_hd__inv_1_4/VPWR sky130_fd_sc_hd__inv_1_3/A
-+ sky130_fd_sc_hd__inv_1
-Xsky130_fd_sc_hd__inv_1_3 sky130_fd_sc_hd__inv_1_3/A sky130_fd_sc_hd__inv_1_4/VGND
-+ VSUBS sky130_fd_sc_hd__inv_1_4/VPB sky130_fd_sc_hd__inv_1_4/VPWR sky130_fd_sc_hd__inv_1_4/A
-+ sky130_fd_sc_hd__inv_1
-.ends
++ GNDA VSUBS sky130_fd_sc_hd__inv_1_4/VPB VDDA QA sky130_fd_sc_hd__nor2_1
+Xsky130_fd_sc_hd__nand2_1_1 QA QB GNDA VSUBS sky130_fd_sc_hd__inv_1_4/VPB VDDA sky130_fd_sc_hd__inv_1_2/A
++ sky130_fd_sc_hd__nand2_1
+Xsky130_fd_sc_hd__inv_1_0 sky130_fd_sc_hd__inv_1_4/Y GNDA VSUBS sky130_fd_sc_hd__inv_1_4/VPB
++ VDDA sky130_fd_sc_hd__inv_1_1/A sky130_fd_sc_hd__inv_1
+Xsky130_fd_sc_hd__inv_1_1 sky130_fd_sc_hd__inv_1_1/A GNDA VSUBS sky130_fd_sc_hd__inv_1_4/VPB
++ VDDA sky130_fd_sc_hd__inv_1_1/Y sky130_fd_sc_hd__inv_1
+Xsky130_fd_sc_hd__inv_1_2 sky130_fd_sc_hd__inv_1_2/A GNDA VSUBS sky130_fd_sc_hd__inv_1_4/VPB
++ VDDA sky130_fd_sc_hd__inv_1_3/A sky130_fd_sc_hd__inv_1
+Xsky130_fd_sc_hd__inv_1_3 sky130_fd_sc_hd__inv_1_3/A GNDA VSUBS sky130_fd_sc_hd__inv_1_4/VPB
++ VDDA sky130_fd_sc_hd__inv_1_4/A sky130_fd_sc_hd__inv_1
+**.ends
 

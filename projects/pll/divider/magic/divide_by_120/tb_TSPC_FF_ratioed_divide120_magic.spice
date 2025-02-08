@@ -1,0 +1,31 @@
+** sch_path: /foss/designs/my_design/projects/pll/divider/magic/divide_by_120/tb_TSPC_FF_ratioed_divide120_magic.sch
+**.subckt tb_TSPC_FF_ratioed_divide120_magic
+VDD VDD GND 1.8
+V1 VIN GND pulse(0 1.8 0ps 8.34ps 8.34ps 200.16ps 417ps)
+x1 VOUT VIN VDD GND TSPC_FF_ratioed_divide120_magic
+**** begin user architecture code
+
+
+
+.include /foss/designs/my_design/projects/pll/divider/magic/divide_by_120/TSPC_FF_ratioed_divide120_magic.spice
+
+.option method=gear
+.option wnflag=1
+
+.control
+
+  save all
+  tran 5p 200n
+  remzerovec
+  write tb_TSPC_FF_ratioed_divide120_magic.raw
+  set appendwrite
+.endc
+
+
+
+.lib /foss/pdks/sky130A/libs.tech/combined/sky130.lib.spice tt
+**** end user architecture code
+**.ends
+.GLOBAL GND
+.GLOBAL VDD
+.end

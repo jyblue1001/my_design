@@ -6,7 +6,8 @@ X1 GNDA a_7952_500# sky130_fd_pr__cap_mim_m3_1 l=60 w=69.8
 X2 V_OUT a_7952_500# GNDA sky130_fd_pr__res_xhigh_po_0p35 l=7.52
 .ends
 
-.subckt charge_pump_cell w_17500_3540# a_19460_4470# a_17540_4470# OPAMP_out a_17800_2610#
+.subckt charge_pump_cell w_17500_3540# a_19460_4470# a_17540_4470# UP_PFD OPAMP_out
++ I_IN DOWN_PFD a_17800_2610#
 X0 a_17540_4470# OPAMP_out w_17500_3540# w_17500_3540# sky130_fd_pr__pfet_01v8 ad=0.25 pd=1.5 as=0.25 ps=1.5 w=1 l=0.6
 X1 a_17540_4470# OPAMP_out w_17500_3540# w_17500_3540# sky130_fd_pr__pfet_01v8 ad=0.5 pd=3 as=0.25 ps=1.5 w=1 l=0.6
 X2 a_17540_4470# I_IN a_17800_2610# a_17800_2610# sky130_fd_pr__nfet_01v8 ad=0.25 pd=1.5 as=0.25 ps=1.5 w=1 l=0.6
@@ -62,32 +63,32 @@ X0 w_8020_4460# p_bias p_bias w_8020_4460# sky130_fd_pr__pfet_01v8 ad=0.625 pd=3
 X1 w_8020_4460# n_left n_left w_8020_4460# sky130_fd_pr__pfet_01v8 ad=0.25 pd=1.5 as=0.5 ps=3 w=1 l=0.15
 X2 v_common_n a_7320_4730# n_left a_8190_3850# sky130_fd_pr__nfet_01v8 ad=0.125 pd=1 as=0.125 ps=1 w=0.5 l=0.15
 X3 w_8020_4460# p_bias v_common_p w_8020_4460# sky130_fd_pr__pfet_01v8 ad=0.625 pd=3 as=0.625 ps=3 w=2.5 l=0.5
-X4 w_8020_4460# p_bias p_bias w_8020_4460# sky130_fd_pr__pfet_01v8 ad=0.625 pd=3 as=0.625 ps=3 w=2.5 l=0.5
-X5 n_left a_7320_4730# v_common_n a_8190_3850# sky130_fd_pr__nfet_01v8 ad=0.125 pd=1 as=0.25 ps=2 w=0.5 l=0.15
-X6 a_7760_2448# p_right a_8190_3850# sky130_fd_pr__res_xhigh_po_0p35 l=0.86
+X4 a_7760_2450# p_right a_8190_3850# sky130_fd_pr__res_xhigh_po_0p35 l=0.86
+X5 w_8020_4460# p_bias p_bias w_8020_4460# sky130_fd_pr__pfet_01v8 ad=0.625 pd=3 as=0.625 ps=3 w=2.5 l=0.5
+X6 n_left a_7320_4730# v_common_n a_8190_3850# sky130_fd_pr__nfet_01v8 ad=0.125 pd=1 as=0.25 ps=2 w=0.5 l=0.15
 X7 a_9460_3850# n_right w_8020_4460# w_8020_4460# sky130_fd_pr__pfet_01v8 ad=0.25 pd=1.5 as=0.25 ps=1.5 w=1 l=0.15
-X8 a_9460_3850# a_10686_2448# sky130_fd_pr__cap_mim_m3_1 l=10 w=10
-X9 v_common_p a_7320_4730# p_left w_8020_4460# sky130_fd_pr__pfet_01v8 ad=0.25 pd=1.5 as=0.25 ps=1.5 w=1 l=0.15
-X10 a_9460_3850# p_right a_8190_3850# a_8190_3850# sky130_fd_pr__nfet_01v8 ad=0.125 pd=1 as=0.125 ps=1 w=0.5 l=0.15
-X11 w_8020_4460# n_right a_9460_3850# w_8020_4460# sky130_fd_pr__pfet_01v8 ad=0.25 pd=1.5 as=0.5 ps=3 w=1 l=0.15
-X12 p_right p_left a_8190_3850# a_8190_3850# sky130_fd_pr__nfet_01v8 ad=0.125 pd=1 as=0.125 ps=1 w=0.5 l=0.15
-X13 p_left a_7320_4730# v_common_p w_8020_4460# sky130_fd_pr__pfet_01v8 ad=0.25 pd=1.5 as=0.5 ps=3 w=1 l=0.15
+X8 v_common_p a_7320_4730# p_left w_8020_4460# sky130_fd_pr__pfet_01v8 ad=0.25 pd=1.5 as=0.25 ps=1.5 w=1 l=0.15
+X9 a_9460_3850# p_right a_8190_3850# a_8190_3850# sky130_fd_pr__nfet_01v8 ad=0.125 pd=1 as=0.125 ps=1 w=0.5 l=0.15
+X10 w_8020_4460# n_right a_9460_3850# w_8020_4460# sky130_fd_pr__pfet_01v8 ad=0.25 pd=1.5 as=0.5 ps=3 w=1 l=0.15
+X11 p_right p_left a_8190_3850# a_8190_3850# sky130_fd_pr__nfet_01v8 ad=0.125 pd=1 as=0.125 ps=1 w=0.5 l=0.15
+X12 p_left a_7320_4730# v_common_p w_8020_4460# sky130_fd_pr__pfet_01v8 ad=0.25 pd=1.5 as=0.5 ps=3 w=1 l=0.15
+X13 a_9460_3850# a_10686_2450# sky130_fd_pr__cap_mim_m3_1 l=10 w=10
 X14 a_8190_3850# p_right a_9460_3850# a_8190_3850# sky130_fd_pr__nfet_01v8 ad=0.125 pd=1 as=0.25 ps=2 w=0.5 l=0.15
 X15 a_8190_3850# p_left p_left a_8190_3850# sky130_fd_pr__nfet_01v8 ad=0.125 pd=1 as=0.25 ps=2 w=0.5 l=0.15
 X16 w_8020_4460# p_bias v_common_p w_8020_4460# sky130_fd_pr__pfet_01v8 ad=0.625 pd=3 as=0.625 ps=3 w=2.5 l=0.5
 X17 v_common_n n_bias a_8190_3850# a_8190_3850# sky130_fd_pr__nfet_01v8 ad=0.625 pd=3 as=0.625 ps=3 w=2.5 l=0.5
 X18 n_bias n_bias a_8190_3850# a_8190_3850# sky130_fd_pr__nfet_01v8 ad=1.25 pd=6 as=0.625 ps=3 w=2.5 l=0.5
-X19 v_common_p p_bias w_8020_4460# w_8020_4460# sky130_fd_pr__pfet_01v8 ad=0.625 pd=3 as=0.625 ps=3 w=2.5 l=0.5
-X20 n_right a_10686_2448# a_8190_3850# sky130_fd_pr__res_xhigh_po_0p35 l=1.14
+X19 n_right a_10686_2450# a_8190_3850# sky130_fd_pr__res_xhigh_po_0p35 l=1.14
+X20 v_common_p p_bias w_8020_4460# w_8020_4460# sky130_fd_pr__pfet_01v8 ad=0.625 pd=3 as=0.625 ps=3 w=2.5 l=0.5
 X21 p_bias p_bias w_8020_4460# w_8020_4460# sky130_fd_pr__pfet_01v8 ad=0.625 pd=3 as=0.625 ps=3 w=2.5 l=0.5
 X22 a_9460_3850# n_right w_8020_4460# w_8020_4460# sky130_fd_pr__pfet_01v8 ad=0.5 pd=3 as=0.25 ps=1.5 w=1 l=0.15
-X23 a_9460_3850# a_7760_2448# sky130_fd_pr__cap_mim_m3_1 l=10 w=10
-X24 v_common_p a_7750_4400# p_right w_8020_4460# sky130_fd_pr__pfet_01v8 ad=0.5 pd=3 as=0.25 ps=1.5 w=1 l=0.15
-X25 a_9460_3850# p_right a_8190_3850# a_8190_3850# sky130_fd_pr__nfet_01v8 ad=0.25 pd=2 as=0.125 ps=1 w=0.5 l=0.15
-X26 n_left n_left w_8020_4460# w_8020_4460# sky130_fd_pr__pfet_01v8 ad=0.5 pd=3 as=0.25 ps=1.5 w=1 l=0.15
-X27 w_8020_4460# n_right a_9460_3850# w_8020_4460# sky130_fd_pr__pfet_01v8 ad=0.25 pd=1.5 as=0.25 ps=1.5 w=1 l=0.15
-X28 p_left p_left a_8190_3850# a_8190_3850# sky130_fd_pr__nfet_01v8 ad=0.25 pd=2 as=0.125 ps=1 w=0.5 l=0.15
-X29 v_common_n a_7750_4400# n_right a_8190_3850# sky130_fd_pr__nfet_01v8 ad=0.25 pd=2 as=0.125 ps=1 w=0.5 l=0.15
+X23 v_common_p a_7750_4400# p_right w_8020_4460# sky130_fd_pr__pfet_01v8 ad=0.5 pd=3 as=0.25 ps=1.5 w=1 l=0.15
+X24 a_9460_3850# p_right a_8190_3850# a_8190_3850# sky130_fd_pr__nfet_01v8 ad=0.25 pd=2 as=0.125 ps=1 w=0.5 l=0.15
+X25 n_left n_left w_8020_4460# w_8020_4460# sky130_fd_pr__pfet_01v8 ad=0.5 pd=3 as=0.25 ps=1.5 w=1 l=0.15
+X26 w_8020_4460# n_right a_9460_3850# w_8020_4460# sky130_fd_pr__pfet_01v8 ad=0.25 pd=1.5 as=0.25 ps=1.5 w=1 l=0.15
+X27 p_left p_left a_8190_3850# a_8190_3850# sky130_fd_pr__nfet_01v8 ad=0.25 pd=2 as=0.125 ps=1 w=0.5 l=0.15
+X28 v_common_n a_7750_4400# n_right a_8190_3850# sky130_fd_pr__nfet_01v8 ad=0.25 pd=2 as=0.125 ps=1 w=0.5 l=0.15
+X29 a_9460_3850# a_7760_2450# sky130_fd_pr__cap_mim_m3_1 l=10 w=10
 X30 p_right a_7750_4400# v_common_p w_8020_4460# sky130_fd_pr__pfet_01v8 ad=0.25 pd=1.5 as=0.25 ps=1.5 w=1 l=0.15
 X31 w_8020_4460# n_left n_right w_8020_4460# sky130_fd_pr__pfet_01v8 ad=0.25 pd=1.5 as=0.25 ps=1.5 w=1 l=0.15
 X32 a_8190_3850# p_right a_9460_3850# a_8190_3850# sky130_fd_pr__nfet_01v8 ad=0.125 pd=1 as=0.125 ps=1 w=0.5 l=0.15
@@ -101,13 +102,15 @@ X39 n_right n_left w_8020_4460# w_8020_4460# sky130_fd_pr__pfet_01v8 ad=0.25 pd=
 X40 a_8190_3850# n_bias v_common_n a_8190_3850# sky130_fd_pr__nfet_01v8 ad=0.625 pd=3 as=0.625 ps=3 w=2.5 l=0.5
 .ends
 
-.subckt charge_pump_full_5 VOUT GNDA
-Xcharge_pump_cell_0 VDDA VOUT a_12100_n1150# charge_pump_cell_0/OPAMP_out GNDA charge_pump_cell
+.subckt charge_pump_full_5 charge_pump_cell_0/DOWN_PFD charge_pump_cell_0/I_IN charge_pump_cell_0/UP_PFD
++ VOUT VDDA GNDA
+Xcharge_pump_cell_0 VDDA VOUT a_12100_n1150# charge_pump_cell_0/UP_PFD charge_pump_cell_0/OPAMP_out
++ charge_pump_cell_0/I_IN charge_pump_cell_0/DOWN_PFD GNDA charge_pump_cell
 Xopamp_cell_0 VDDA charge_pump_cell_0/OPAMP_out a_12100_n1150# GNDA VOUT opamp_cell
 .ends
 
-**.subckt cp_lf
-Xloop_filter_0 loop_filter_0/V_OUT VSUBS loop_filter
-Xcharge_pump_full_5_0 loop_filter_0/V_OUT VSUBS charge_pump_full_5
+**.subckt cp_lf VDDA GNDA UP_PFD DOWN_PFD I_IN
+Xloop_filter_0 loop_filter_0/V_OUT GNDA loop_filter
+Xcharge_pump_full_5_0 DOWN_PFD I_IN UP_PFD loop_filter_0/V_OUT VDDA GNDA charge_pump_full_5
 **.ends
 

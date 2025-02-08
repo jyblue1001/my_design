@@ -27,10 +27,10 @@ intervals = np.arange(0, 190, 10)
 # file_names = [f'tb_current_starved_VCO10_{i}.csv' for i in intervals]
 # file_names = [f'tb_current_starved_VCO11_{i}.csv' for i in intervals]
 # file_names = [f'tb_current_starved_VCO12_{i}.csv' for i in intervals]
-# file_names = [f'tb_current_starved_VCO13_{i}.csv' for i in intervals]
+file_names = [f'tb_current_starved_VCO13_{i}.csv' for i in intervals]
 # file_names = [f'tb_current_starved_VCO14_{i}.csv' for i in intervals]
 # file_names = [f'tb_current_starved_VCO15_{i}.csv' for i in intervals]
-file_names = [f'tb_current_starved_VCO16_{i}.csv' for i in intervals]
+# file_names = [f'tb_current_starved_VCO16_{i}.csv' for i in intervals]
 frequencies = []
 
 # Loop through each file and calculate the frequency

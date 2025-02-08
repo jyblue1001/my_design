@@ -1,5 +1,5 @@
 ** sch_path: /foss/designs/my_design/projects/pll/charge_pump/xschem_ngspice/charge_pump_full_xschem.sch
-**.subckt charge_pump_full_xschem VDDA V_OUT GNDA UP_PFD DOWN_PFD I_IN
+**.subckt charge_pump_full_xschem V_OUT VDDA GNDA UP_PFD DOWN_PFD I_IN
 *.ipin VDDA
 *.opin V_OUT
 *.ipin GNDA
@@ -57,7 +57,7 @@ XC2 DOWN_input DOWN sky130_fd_pr__cap_mim_m3_1 W=2.6 L=2.6 MF=1 m=1
 x1 VDDA x V_OUT opamp_out GNDA rail_to_rail_opamp6_2
 **.ends
 
-* expanding   symbol:  rail_to_rail_opamp6_2.sym # of pins=5
+* expanding   symbol:  /foss/designs/my_design/projects/pll/charge_pump/xschem_ngspice/rail_to_rail_opamp6_2.sym # of pins=5
 ** sym_path: /foss/designs/my_design/projects/pll/charge_pump/xschem_ngspice/rail_to_rail_opamp6_2.sym
 ** sch_path: /foss/designs/my_design/projects/pll/charge_pump/xschem_ngspice/rail_to_rail_opamp6_2.sch
 .subckt rail_to_rail_opamp6_2 VDDA Vin+ Vin- Vout GNDA

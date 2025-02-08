@@ -1,6 +1,6 @@
 magic
 tech sky130A
-timestamp 1738216101
+timestamp 1738592334
 << psubdiff >>
 rect 2570 160 2670 175
 rect 2570 140 2585 160
@@ -15,7 +15,7 @@ rect 3976 250 4196 285
 rect 3240 250 3976 285
 << locali >>
 rect 2900 270 2920 445
-rect 935 250 3020 270
+rect 1150 250 3020 270
 rect 4196 250 4405 270
 rect 1150 230 1170 250
 rect 4385 230 4405 250
@@ -154,5 +154,7 @@ rect 2770 -5 2780 30
 rect 2725 -10 2780 -5
 << labels >>
 flabel locali 2920 445 2920 445 2 FreeSans 800 0 400 400 V_OUT
+port 1 ne
 flabel metal1 2620 190 2620 190 5 FreeSans 800 0 0 -400 GNDA
+port 2 s
 << end >>

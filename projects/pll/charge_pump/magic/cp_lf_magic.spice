@@ -1,0 +1,900 @@
+* PEX produced on Mon Feb  3 01:31:12 PM CET 2025 using /foss/tools/osic-multitool/iic-pex.sh with m=3 and s=1
+* NGSPICE file created from cp_lf_magic.ext - technology: sky130A
+
+.subckt cp_lf_magic VDDA V_OUT GNDA UP_PFD DOWN_PFD I_IN
+X0 GNDA.t50 DOWN_PFD.t0 a_1870_3900.t3 GNDA.t49 sky130_fd_pr__nfet_01v8 ad=0.5 pd=3 as=0.5 ps=3 w=1 l=0.15
+X1 GNDA.t37 I_IN.t10 a_0_4990.t11 GNDA.t36 sky130_fd_pr__nfet_01v8 ad=0.25 pd=1.5 as=0.25 ps=1.5 w=1 l=0.6
+X2 VDDA.t49 a_1710_3900.t3 V_OUT.t2 VDDA.t48 sky130_fd_pr__pfet_01v8 ad=0.25 pd=1.5 as=0.25 ps=1.5 w=1 l=0.6
+X3 charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out.t8 charge_pump_full_5_0.opamp_cell_0.p_right.t5 GNDA.t11 GNDA.t6 sky130_fd_pr__nfet_01v8 ad=0.125 pd=1 as=0.125 ps=1 w=0.5 l=0.15
+X4 a_2870_3900.t3 a_2580_3900.t2 sky130_fd_pr__cap_mim_m3_1 l=2.6 w=2.6
+X5 a_1710_3900.t4 a_1420_3900.t0 sky130_fd_pr__cap_mim_m3_1 l=6 w=4.2
+X6 charge_pump_full_5_0.opamp_cell_0.v_common_p.t3 charge_pump_full_5_0.opamp_cell_0.p_bias.t9 VDDA.t29 VDDA.t28 sky130_fd_pr__pfet_01v8 ad=0.625 pd=3 as=0.625 ps=3 w=2.5 l=0.5
+X7 a_1130_3900.t0 a_840_3900.t2 GNDA.t19 GNDA.t18 sky130_fd_pr__nfet_01v8 ad=0.5 pd=3 as=0.5 ps=3 w=1 l=0.15
+X8 a_2870_3900.t1 a_2580_3900.t3 I_IN.t0 GNDA.t9 sky130_fd_pr__nfet_01v8 ad=0.5 pd=3 as=0.5 ps=3 w=1 l=0.15
+X9 V_OUT.t6 a_1710_3900.t5 VDDA.t47 VDDA.t46 sky130_fd_pr__pfet_01v8 ad=0.25 pd=1.5 as=0.25 ps=1.5 w=1 l=0.6
+X10 V_OUT.t3 a_1710_3900.t6 VDDA.t45 VDDA.t44 sky130_fd_pr__pfet_01v8 ad=0.25 pd=1.5 as=0.25 ps=1.5 w=1 l=0.6
+X11 a_0_4990.t10 I_IN.t11 GNDA.t35 GNDA.t34 sky130_fd_pr__nfet_01v8 ad=0.25 pd=1.5 as=0.25 ps=1.5 w=1 l=0.6
+X12 charge_pump_full_5_0.opamp_cell_0.v_common_p.t5 a_0_4990.t12 charge_pump_full_5_0.opamp_cell_0.p_right.t2 VDDA.t78 sky130_fd_pr__pfet_01v8 ad=0.5 pd=3 as=0.25 ps=1.5 w=1 l=0.15
+X13 VDDA.t43 a_1710_3900.t7 V_OUT.t4 VDDA.t42 sky130_fd_pr__pfet_01v8 ad=0.25 pd=1.5 as=0.25 ps=1.5 w=1 l=0.6
+X14 charge_pump_full_5_0.opamp_cell_0.n_left.t3 charge_pump_full_5_0.opamp_cell_0.n_left.t2 VDDA.t73 VDDA.t72 sky130_fd_pr__pfet_01v8 ad=0.5 pd=3 as=0.25 ps=1.5 w=1 l=0.15
+X15 a_1710_3900.t0 a_1420_3900.t3 charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out.t0 VDDA.t0 sky130_fd_pr__pfet_01v8 ad=1 pd=5 as=1 ps=5 w=2 l=0.15
+X16 charge_pump_full_5_0.opamp_cell_0.p_left.t3 charge_pump_full_5_0.opamp_cell_0.p_left.t2 GNDA.t31 GNDA.t6 sky130_fd_pr__nfet_01v8 ad=0.25 pd=2 as=0.125 ps=1 w=0.5 l=0.15
+X17 charge_pump_full_5_0.opamp_cell_0.n_right.t0 a_8046_2450.t1 GNDA.t26 sky130_fd_pr__res_xhigh_po_0p35 l=1.14
+X18 a_0_4990.t7 charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out.t10 VDDA.t71 VDDA.t70 sky130_fd_pr__pfet_01v8 ad=0.25 pd=1.5 as=0.25 ps=1.5 w=1 l=0.6
+X19 charge_pump_full_5_0.opamp_cell_0.v_common_n.t3 a_0_4990.t13 charge_pump_full_5_0.opamp_cell_0.n_right.t4 GNDA.t6 sky130_fd_pr__nfet_01v8 ad=0.25 pd=2 as=0.125 ps=1 w=0.5 l=0.15
+X20 V_OUT.t5 a_1710_3900.t8 VDDA.t41 VDDA.t40 sky130_fd_pr__pfet_01v8 ad=0.25 pd=1.5 as=0.25 ps=1.5 w=1 l=0.6
+X21 a_840_3900.t1 UP_PFD.t0 VDDA.t59 VDDA.t58 sky130_fd_pr__pfet_01v8 ad=1 pd=5 as=1 ps=5 w=2 l=0.15
+X22 a_2580_3900.t0 a_2290_3900.t2 VDDA.t25 VDDA.t24 sky130_fd_pr__pfet_01v8 ad=1 pd=5 as=1 ps=5 w=2 l=0.15
+X23 charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out.t11 a_5120_2450.t0 sky130_fd_pr__cap_mim_m3_1 l=10 w=10
+X24 VDDA.t14 charge_pump_full_5_0.opamp_cell_0.n_left.t6 charge_pump_full_5_0.opamp_cell_0.n_right.t2 VDDA.t13 sky130_fd_pr__pfet_01v8 ad=0.25 pd=1.5 as=0.25 ps=1.5 w=1 l=0.15
+X25 charge_pump_full_5_0.opamp_cell_0.n_bias.t4 charge_pump_full_5_0.opamp_cell_0.n_bias.t3 GNDA.t8 GNDA.t4 sky130_fd_pr__nfet_01v8 ad=1.25 pd=6 as=0.625 ps=3 w=2.5 l=0.5
+X26 VDDA.t69 charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out.t12 a_0_4990.t6 VDDA.t68 sky130_fd_pr__pfet_01v8 ad=0.25 pd=1.5 as=0.5 ps=3 w=1 l=0.6
+X27 I_IN.t9 I_IN.t8 GNDA.t40 GNDA.t39 sky130_fd_pr__nfet_01v8 ad=0.5 pd=3 as=0.25 ps=1.5 w=1 l=0.6
+X28 charge_pump_full_5_0.opamp_cell_0.p_bias.t7 charge_pump_full_5_0.opamp_cell_0.p_bias.t6 VDDA.t12 VDDA.t11 sky130_fd_pr__pfet_01v8 ad=0.625 pd=3 as=0.625 ps=3 w=2.5 l=0.5
+X29 charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out.t9 charge_pump_full_5_0.opamp_cell_0.n_right.t5 VDDA.t82 VDDA.t81 sky130_fd_pr__pfet_01v8 ad=0.5 pd=3 as=0.25 ps=1.5 w=1 l=0.15
+X30 charge_pump_full_5_0.opamp_cell_0.n_right.t3 a_0_4990.t14 charge_pump_full_5_0.opamp_cell_0.v_common_n.t2 GNDA.t6 sky130_fd_pr__nfet_01v8 ad=0.125 pd=1 as=0.125 ps=1 w=0.5 l=0.15
+X31 V_OUT.t10 a_2870_3900.t4 GNDA.t48 GNDA.t47 sky130_fd_pr__nfet_01v8 ad=0.5 pd=3 as=0.25 ps=1.5 w=1 l=0.6
+X32 charge_pump_full_5_0.opamp_cell_0.p_bias.t8 charge_pump_full_5_0.opamp_cell_0.n_bias.t0 GNDA.t30 sky130_fd_pr__res_xhigh_po_2p85 l=0.51
+X33 VDDA.t39 a_1710_3900.t9 V_OUT.t0 VDDA.t38 sky130_fd_pr__pfet_01v8 ad=0.25 pd=1.5 as=0.5 ps=3 w=1 l=0.6
+X34 charge_pump_full_5_0.opamp_cell_0.v_common_p.t2 charge_pump_full_5_0.opamp_cell_0.p_bias.t10 VDDA.t63 VDDA.t62 sky130_fd_pr__pfet_01v8 ad=0.625 pd=3 as=0.625 ps=3 w=2.5 l=0.5
+X35 a_1710_3900.t1 a_1130_3900.t2 charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out.t1 GNDA.t14 sky130_fd_pr__nfet_01v8 ad=0.5 pd=3 as=0.5 ps=3 w=1 l=0.15
+X36 GNDA.t5 charge_pump_full_5_0.opamp_cell_0.n_bias.t1 charge_pump_full_5_0.opamp_cell_0.n_bias.t2 GNDA.t4 sky130_fd_pr__nfet_01v8 ad=0.625 pd=3 as=1.25 ps=6 w=2.5 l=0.5
+X37 charge_pump_full_5_0.opamp_cell_0.p_bias.t5 charge_pump_full_5_0.opamp_cell_0.p_bias.t4 VDDA.t18 VDDA.t17 sky130_fd_pr__pfet_01v8 ad=1.25 pd=6 as=0.625 ps=3 w=2.5 l=0.5
+X38 GNDA.t42 I_IN.t6 I_IN.t7 GNDA.t41 sky130_fd_pr__nfet_01v8 ad=0.25 pd=1.5 as=0.25 ps=1.5 w=1 l=0.6
+X39 GNDA.t27 charge_pump_full_5_0.opamp_cell_0.n_bias.t5 charge_pump_full_5_0.opamp_cell_0.v_common_n.t1 GNDA.t4 sky130_fd_pr__nfet_01v8 ad=0.625 pd=3 as=0.625 ps=3 w=2.5 l=0.5
+X40 a_840_3900.t0 UP_PFD.t1 GNDA.t1 GNDA.t0 sky130_fd_pr__nfet_01v8 ad=0.5 pd=3 as=0.5 ps=3 w=1 l=0.15
+X41 a_2580_3900.t1 a_2290_3900.t3 GNDA.t17 GNDA.t16 sky130_fd_pr__nfet_01v8 ad=0.5 pd=3 as=0.5 ps=3 w=1 l=0.15
+X42 charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out.t7 charge_pump_full_5_0.opamp_cell_0.p_right.t6 GNDA.t13 GNDA.t6 sky130_fd_pr__nfet_01v8 ad=0.25 pd=2 as=0.125 ps=1 w=0.5 l=0.15
+X43 GNDA.t56 a_2870_3900.t5 V_OUT.t13 GNDA.t55 sky130_fd_pr__nfet_01v8 ad=0.25 pd=1.5 as=0.25 ps=1.5 w=1 l=0.6
+X44 VDDA.t20 charge_pump_full_5_0.opamp_cell_0.p_bias.t2 charge_pump_full_5_0.opamp_cell_0.p_bias.t3 VDDA.t19 sky130_fd_pr__pfet_01v8 ad=0.625 pd=3 as=1.25 ps=6 w=2.5 l=0.5
+X45 charge_pump_full_5_0.opamp_cell_0.p_right.t3 a_0_4990.t15 charge_pump_full_5_0.opamp_cell_0.v_common_p.t4 VDDA.t77 sky130_fd_pr__pfet_01v8 ad=0.25 pd=1.5 as=0.25 ps=1.5 w=1 l=0.15
+X46 I_IN.t5 I_IN.t4 GNDA.t44 GNDA.t43 sky130_fd_pr__nfet_01v8 ad=0.25 pd=1.5 as=0.25 ps=1.5 w=1 l=0.6
+X47 VDDA.t8 charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out.t13 a_0_4990.t3 VDDA.t7 sky130_fd_pr__pfet_01v8 ad=0.25 pd=1.5 as=0.25 ps=1.5 w=1 l=0.6
+X48 a_0_4990.t0 charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out.t14 VDDA.t2 VDDA.t1 sky130_fd_pr__pfet_01v8 ad=0.5 pd=3 as=0.25 ps=1.5 w=1 l=0.6
+X49 VDDA.t61 charge_pump_full_5_0.opamp_cell_0.p_bias.t11 charge_pump_full_5_0.opamp_cell_0.v_common_p.t1 VDDA.t60 sky130_fd_pr__pfet_01v8 ad=0.625 pd=3 as=0.625 ps=3 w=2.5 l=0.5
+X50 GNDA.t7 charge_pump_full_5_0.opamp_cell_0.p_left.t6 charge_pump_full_5_0.opamp_cell_0.p_right.t0 GNDA.t6 sky130_fd_pr__nfet_01v8 ad=0.125 pd=1 as=0.125 ps=1 w=0.5 l=0.15
+X51 GNDA.t57 V_OUT.t11 sky130_fd_pr__cap_mim_m3_1 l=60 w=13.8
+X52 GNDA.t58 a_15082_6070.t0 sky130_fd_pr__cap_mim_m3_1 l=60 w=69.8
+X53 V_OUT.t12 a_15082_6070.t1 GNDA.t52 sky130_fd_pr__res_xhigh_po_0p35 l=7.52
+X54 GNDA.t46 I_IN.t2 I_IN.t3 GNDA.t45 sky130_fd_pr__nfet_01v8 ad=0.25 pd=1.5 as=0.5 ps=3 w=1 l=0.6
+X55 charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out.t15 a_8046_2450.t0 sky130_fd_pr__cap_mim_m3_1 l=10 w=10
+X56 a_0_4990.t2 charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out.t16 VDDA.t6 VDDA.t5 sky130_fd_pr__pfet_01v8 ad=0.25 pd=1.5 as=0.25 ps=1.5 w=1 l=0.6
+X57 a_1420_3900.t1 a_1130_3900.t3 VDDA.t57 VDDA.t56 sky130_fd_pr__pfet_01v8 ad=1 pd=5 as=1 ps=5 w=2 l=0.15
+X58 V_OUT.t1 a_1710_3900.t10 VDDA.t37 VDDA.t36 sky130_fd_pr__pfet_01v8 ad=0.5 pd=3 as=0.25 ps=1.5 w=1 l=0.6
+X59 a_2290_3900.t0 GNDA.t59 a_1870_3900.t0 VDDA.t76 sky130_fd_pr__pfet_01v8 ad=1 pd=5 as=1 ps=5 w=2 l=0.15
+X60 charge_pump_full_5_0.opamp_cell_0.v_common_p.t6 V_OUT.t14 charge_pump_full_5_0.opamp_cell_0.p_left.t5 VDDA.t80 sky130_fd_pr__pfet_01v8 ad=0.25 pd=1.5 as=0.25 ps=1.5 w=1 l=0.15
+X61 VDDA.t67 charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out.t17 a_0_4990.t5 VDDA.t66 sky130_fd_pr__pfet_01v8 ad=0.25 pd=1.5 as=0.25 ps=1.5 w=1 l=0.6
+X62 charge_pump_full_5_0.opamp_cell_0.n_right.t1 charge_pump_full_5_0.opamp_cell_0.n_left.t7 VDDA.t27 VDDA.t26 sky130_fd_pr__pfet_01v8 ad=0.25 pd=1.5 as=0.25 ps=1.5 w=1 l=0.15
+X63 a_1710_3900.t2 a_1130_3900.t4 VDDA.t55 VDDA.t54 sky130_fd_pr__pfet_01v8 ad=1 pd=5 as=1 ps=5 w=2 l=0.15
+X64 VDDA.t33 charge_pump_full_5_0.opamp_cell_0.n_right.t6 charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out.t3 VDDA.t32 sky130_fd_pr__pfet_01v8 ad=0.25 pd=1.5 as=0.5 ps=3 w=1 l=0.15
+X65 charge_pump_full_5_0.opamp_cell_0.p_right.t1 charge_pump_full_5_0.opamp_cell_0.p_left.t7 GNDA.t15 GNDA.t6 sky130_fd_pr__nfet_01v8 ad=0.125 pd=1 as=0.125 ps=1 w=0.5 l=0.15
+X66 VDDA.t35 a_1710_3900.t11 V_OUT.t7 VDDA.t34 sky130_fd_pr__pfet_01v8 ad=0.25 pd=1.5 as=0.25 ps=1.5 w=1 l=0.6
+X67 VDDA.t75 DOWN_PFD.t1 a_1870_3900.t2 VDDA.t74 sky130_fd_pr__pfet_01v8 ad=1 pd=5 as=1 ps=5 w=2 l=0.15
+X68 charge_pump_full_5_0.opamp_cell_0.v_common_n.t5 V_OUT.t15 charge_pump_full_5_0.opamp_cell_0.n_left.t4 GNDA.t6 sky130_fd_pr__nfet_01v8 ad=0.125 pd=1 as=0.125 ps=1 w=0.5 l=0.15
+X69 a_0_4990.t4 charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out.t18 VDDA.t22 VDDA.t21 sky130_fd_pr__pfet_01v8 ad=0.25 pd=1.5 as=0.25 ps=1.5 w=1 l=0.6
+X70 charge_pump_full_5_0.opamp_cell_0.p_left.t4 V_OUT.t16 charge_pump_full_5_0.opamp_cell_0.v_common_p.t7 VDDA.t79 sky130_fd_pr__pfet_01v8 ad=0.25 pd=1.5 as=0.5 ps=3 w=1 l=0.15
+X71 VDDA.t53 charge_pump_full_5_0.opamp_cell_0.n_right.t7 charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out.t4 VDDA.t52 sky130_fd_pr__pfet_01v8 ad=0.25 pd=1.5 as=0.25 ps=1.5 w=1 l=0.15
+X72 GNDA.t10 charge_pump_full_5_0.opamp_cell_0.p_right.t7 charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out.t6 GNDA.t6 sky130_fd_pr__nfet_01v8 ad=0.125 pd=1 as=0.25 ps=2 w=0.5 l=0.15
+X73 a_5120_2450.t1 charge_pump_full_5_0.opamp_cell_0.p_right.t4 GNDA.t51 sky130_fd_pr__res_xhigh_po_0p35 l=0.86
+X74 a_1130_3900.t1 a_840_3900.t3 VDDA.t65 VDDA.t64 sky130_fd_pr__pfet_01v8 ad=1 pd=5 as=1 ps=5 w=2 l=0.15
+X75 a_2870_3900.t2 a_2290_3900.t4 I_IN.t1 VDDA.t23 sky130_fd_pr__pfet_01v8 ad=1 pd=5 as=1 ps=5 w=2 l=0.15
+X76 VDDA.t16 charge_pump_full_5_0.opamp_cell_0.n_left.t0 charge_pump_full_5_0.opamp_cell_0.n_left.t1 VDDA.t15 sky130_fd_pr__pfet_01v8 ad=0.25 pd=1.5 as=0.5 ps=3 w=1 l=0.15
+X77 GNDA.t33 I_IN.t12 a_0_4990.t9 GNDA.t32 sky130_fd_pr__nfet_01v8 ad=0.25 pd=1.5 as=0.5 ps=3 w=1 l=0.6
+X78 V_OUT.t8 a_2870_3900.t6 GNDA.t23 GNDA.t22 sky130_fd_pr__nfet_01v8 ad=0.25 pd=1.5 as=0.25 ps=1.5 w=1 l=0.6
+X79 a_1420_3900.t2 a_1130_3900.t5 GNDA.t54 GNDA.t53 sky130_fd_pr__nfet_01v8 ad=0.5 pd=3 as=0.5 ps=3 w=1 l=0.15
+X80 GNDA.t21 charge_pump_full_5_0.opamp_cell_0.p_left.t0 charge_pump_full_5_0.opamp_cell_0.p_left.t1 GNDA.t6 sky130_fd_pr__nfet_01v8 ad=0.125 pd=1 as=0.25 ps=2 w=0.5 l=0.15
+X81 GNDA.t12 charge_pump_full_5_0.opamp_cell_0.p_right.t8 charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out.t5 GNDA.t6 sky130_fd_pr__nfet_01v8 ad=0.125 pd=1 as=0.125 ps=1 w=0.5 l=0.15
+X82 a_2290_3900.t1 VDDA.t83 a_1870_3900.t1 GNDA.t38 sky130_fd_pr__nfet_01v8 ad=0.5 pd=3 as=0.5 ps=3 w=1 l=0.15
+X83 GNDA.t25 a_2870_3900.t7 V_OUT.t9 GNDA.t24 sky130_fd_pr__nfet_01v8 ad=0.25 pd=1.5 as=0.5 ps=3 w=1 l=0.6
+X84 VDDA.t4 charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out.t19 a_0_4990.t1 VDDA.t3 sky130_fd_pr__pfet_01v8 ad=0.25 pd=1.5 as=0.25 ps=1.5 w=1 l=0.6
+X85 VDDA.t10 charge_pump_full_5_0.opamp_cell_0.p_bias.t0 charge_pump_full_5_0.opamp_cell_0.p_bias.t1 VDDA.t9 sky130_fd_pr__pfet_01v8 ad=0.625 pd=3 as=0.625 ps=3 w=2.5 l=0.5
+X86 charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out.t2 charge_pump_full_5_0.opamp_cell_0.n_right.t8 VDDA.t31 VDDA.t30 sky130_fd_pr__pfet_01v8 ad=0.25 pd=1.5 as=0.25 ps=1.5 w=1 l=0.15
+X87 charge_pump_full_5_0.opamp_cell_0.n_left.t5 V_OUT.t17 charge_pump_full_5_0.opamp_cell_0.v_common_n.t4 GNDA.t6 sky130_fd_pr__nfet_01v8 ad=0.125 pd=1 as=0.25 ps=2 w=0.5 l=0.15
+X88 a_0_4990.t8 I_IN.t13 GNDA.t29 GNDA.t28 sky130_fd_pr__nfet_01v8 ad=0.5 pd=3 as=0.25 ps=1.5 w=1 l=0.6
+X89 VDDA.t51 charge_pump_full_5_0.opamp_cell_0.p_bias.t12 charge_pump_full_5_0.opamp_cell_0.v_common_p.t0 VDDA.t50 sky130_fd_pr__pfet_01v8 ad=0.625 pd=3 as=0.625 ps=3 w=2.5 l=0.5
+X90 a_2870_3900.t0 a_2290_3900.t5 GNDA.t3 GNDA.t2 sky130_fd_pr__nfet_01v8 ad=0.5 pd=3 as=0.5 ps=3 w=1 l=0.15
+X91 charge_pump_full_5_0.opamp_cell_0.v_common_n.t0 charge_pump_full_5_0.opamp_cell_0.n_bias.t6 GNDA.t20 GNDA.t4 sky130_fd_pr__nfet_01v8 ad=0.625 pd=3 as=0.625 ps=3 w=2.5 l=0.5
+R0 DOWN_PFD DOWN_PFD.t0 3349.9
+R1 DOWN_PFD.t0 DOWN_PFD.t1 899.734
+R2 a_1870_3900.n1 a_1870_3900.t1 200.9
+R3 a_1870_3900.n0 a_1870_3900.t3 200.9
+R4 a_1870_3900.n0 a_1870_3900.t2 184.826
+R5 a_1870_3900.t0 a_1870_3900.n1 184.826
+R6 a_1870_3900.n1 a_1870_3900.n0 86.4005
+R7 GNDA.t45 GNDA.n24 32072.7
+R8 GNDA.n24 GNDA.n2 9258.33
+R9 GNDA.n24 GNDA.t6 6375
+R10 GNDA.t51 GNDA.n5 4593.33
+R11 GNDA.n23 GNDA.n22 1170
+R12 GNDA.t30 GNDA.t51 1093.33
+R13 GNDA.n31 GNDA.t59 980.9
+R14 GNDA.n5 GNDA.t26 794.029
+R15 GNDA.t26 GNDA.n4 780.199
+R16 GNDA.n4 GNDA 589.701
+R17 GNDA.n26 GNDA.n25 589.65
+R18 GNDA.n23 GNDA.t4 533.333
+R19 GNDA.t6 GNDA.n23 213.333
+R20 GNDA.n12 GNDA.n10 194.317
+R21 GNDA.n14 GNDA.n13 194.3
+R22 GNDA.n9 GNDA.n8 185
+R23 GNDA.n7 GNDA.n6 185
+R24 GNDA.n5 GNDA.t47 175.577
+R25 GNDA.n39 GNDA.t1 127.15
+R26 GNDA.n38 GNDA.t19 127.15
+R27 GNDA.n35 GNDA.t54 127.15
+R28 GNDA.n28 GNDA.t17 127.15
+R29 GNDA.n27 GNDA.t3 127.15
+R30 GNDA.n31 GNDA.t50 122.501
+R31 GNDA.t2 GNDA.t9 119.252
+R32 GNDA.t9 GNDA.t16 119.252
+R33 GNDA.t14 GNDA.t53 119.252
+R34 GNDA.n41 GNDA.n40 97.1505
+R35 GNDA.n37 GNDA.n36 97.1505
+R36 GNDA.n34 GNDA.n33 97.1505
+R37 GNDA.n30 GNDA.n29 97.1505
+R38 GNDA.n1 GNDA.n0 97.1505
+R39 GNDA.n19 GNDA.n18 97.1505
+R40 GNDA.n3 GNDA.t58 92.4829
+R41 GNDA.t47 GNDA.t55 90.4678
+R42 GNDA.t55 GNDA.t22 90.4678
+R43 GNDA.t28 GNDA.t36 90.4678
+R44 GNDA.t43 GNDA.t45 90.4678
+R45 GNDA.n3 GNDA.t57 82.8829
+R46 GNDA.t32 GNDA.t14 76.0753
+R47 GNDA.t53 GNDA.t39 76.0753
+R48 GNDA.n22 GNDA.n9 73.6005
+R49 GNDA.n22 GNDA.n7 73.6005
+R50 GNDA.t24 GNDA.t2 71.9631
+R51 GNDA.t38 GNDA.t34 71.9631
+R52 GNDA.t41 GNDA.t0 71.9631
+R53 GNDA.n25 GNDA.t22 69.907
+R54 GNDA.n6 GNDA.t31 60.0005
+R55 GNDA.n6 GNDA.t7 60.0005
+R56 GNDA.n8 GNDA.t15 60.0005
+R57 GNDA.n8 GNDA.t21 60.0005
+R58 GNDA.n13 GNDA.t11 60.0005
+R59 GNDA.n13 GNDA.t10 60.0005
+R60 GNDA.n10 GNDA.t13 60.0005
+R61 GNDA.n10 GNDA.t12 60.0005
+R62 GNDA.t34 GNDA.t49 47.2902
+R63 GNDA.t18 GNDA.t41 47.2902
+R64 GNDA.t4 GNDA.t30 46.6672
+R65 GNDA.t49 GNDA.t32 43.1781
+R66 GNDA.t39 GNDA.t18 43.1781
+R67 GNDA.n16 GNDA.n15 32.3838
+R68 GNDA.n12 GNDA.n11 32.3838
+R69 GNDA.n40 GNDA.t44 30.0005
+R70 GNDA.n40 GNDA.t46 30.0005
+R71 GNDA.n36 GNDA.t40 30.0005
+R72 GNDA.n36 GNDA.t42 30.0005
+R73 GNDA.n33 GNDA.t35 30.0005
+R74 GNDA.n33 GNDA.t33 30.0005
+R75 GNDA.n29 GNDA.t29 30.0005
+R76 GNDA.n29 GNDA.t37 30.0005
+R77 GNDA.n0 GNDA.t23 30.0005
+R78 GNDA.n0 GNDA.t25 30.0005
+R79 GNDA.n18 GNDA.t48 30.0005
+R80 GNDA.n18 GNDA.t56 30.0005
+R81 GNDA.n4 GNDA.n2 29.9638
+R82 GNDA.n2 GNDA.t52 24.2017
+R83 GNDA.n25 GNDA.t24 20.5612
+R84 GNDA.t36 GNDA.t38 18.5052
+R85 GNDA.t0 GNDA.t43 18.5052
+R86 GNDA.n15 GNDA.t20 12.0005
+R87 GNDA.n15 GNDA.t5 12.0005
+R88 GNDA.n11 GNDA.t8 12.0005
+R89 GNDA.n11 GNDA.t27 12.0005
+R90 GNDA.t16 GNDA.t28 10.2809
+R91 GNDA GNDA.n3 9.3255
+R92 GNDA.n17 GNDA.n7 9.3005
+R93 GNDA.n22 GNDA.n21 9.3005
+R94 GNDA.n20 GNDA.n9 9.3005
+R95 GNDA.n32 GNDA.n31 4.6505
+R96 GNDA.n20 GNDA.n19 0.285096
+R97 GNDA.n35 GNDA.n34 0.114937
+R98 GNDA GNDA.n41 0.106134
+R99 GNDA.n28 GNDA.n27 0.102613
+R100 GNDA.n17 GNDA.n16 0.0828413
+R101 GNDA.n19 GNDA.n1 0.0779648
+R102 GNDA.n32 GNDA.n30 0.0674014
+R103 GNDA.n27 GNDA.n26 0.0515563
+R104 GNDA.n39 GNDA.n38 0.0515563
+R105 GNDA.n37 GNDA.n35 0.040993
+R106 GNDA.n16 GNDA.n14 0.031254
+R107 GNDA.n41 GNDA.n39 0.0163451
+R108 GNDA.n21 GNDA.n17 0.0133968
+R109 GNDA.n21 GNDA.n20 0.0133968
+R110 GNDA.n30 GNDA.n28 0.0128239
+R111 GNDA.n26 GNDA.n1 0.0110634
+R112 GNDA.n34 GNDA.n32 0.0110634
+R113 GNDA.n38 GNDA.n37 0.0110634
+R114 GNDA.n14 GNDA.n12 0.00942857
+R115 I_IN.n13 I_IN.n7 496.536
+R116 I_IN.n4 I_IN.n3 352.764
+R117 I_IN.n3 I_IN.t1 276.026
+R118 I_IN.n8 I_IN.n0 257.978
+R119 I_IN.n10 I_IN.n2 185.601
+R120 I_IN.n14 I_IN.n13 185.601
+R121 I_IN.n6 I_IN.n5 179.03
+R122 I_IN.n7 I_IN.n6 179.03
+R123 I_IN.n12 I_IN.n11 179.03
+R124 I_IN.n9 I_IN.n8 179.03
+R125 I_IN.n15 I_IN.n14 168
+R126 I_IN.n16 I_IN.n15 140.8
+R127 I_IN.n0 I_IN.t3 122.501
+R128 I_IN.n14 I_IN.t9 122.501
+R129 I_IN.n3 I_IN.t0 122.501
+R130 I_IN I_IN.n16 102.4
+R131 I_IN.n2 I_IN.n1 92.5005
+R132 I_IN.n5 I_IN.n4 79.8748
+R133 I_IN.n13 I_IN.n12 72.377
+R134 I_IN.n11 I_IN.n10 72.377
+R135 I_IN.n10 I_IN.n9 72.377
+R136 I_IN.n4 I_IN.t13 54.3436
+R137 I_IN.n5 I_IN.t10 40.1672
+R138 I_IN.n6 I_IN.t11 40.1672
+R139 I_IN.n7 I_IN.t12 40.1672
+R140 I_IN.n12 I_IN.t8 40.1672
+R141 I_IN.n11 I_IN.t6 40.1672
+R142 I_IN.n9 I_IN.t4 40.1672
+R143 I_IN.n8 I_IN.t2 40.1672
+R144 I_IN.n1 I_IN.t7 30.0005
+R145 I_IN.n1 I_IN.t5 30.0005
+R146 I_IN.n15 I_IN.n2 27.2005
+R147 I_IN.n16 I_IN.n0 27.2005
+R148 a_0_4990.n10 a_0_4990.n9 12826
+R149 a_0_4990.n8 a_0_4990.n7 1392.53
+R150 a_0_4990.n11 a_0_4990.n10 923.201
+R151 a_0_4990.n3 a_0_4990.t0 509.75
+R152 a_0_4990.n7 a_0_4990.t13 417.733
+R153 a_0_4990.n6 a_0_4990.t6 341.75
+R154 a_0_4990.n5 a_0_4990.n0 319.7
+R155 a_0_4990.n4 a_0_4990.n1 319.7
+R156 a_0_4990.n3 a_0_4990.n2 319.7
+R157 a_0_4990.n12 a_0_4990.t8 290.5
+R158 a_0_4990.n8 a_0_4990.t12 289.2
+R159 a_0_4990.n9 a_0_4990.t15 289.2
+R160 a_0_4990.n7 a_0_4990.t14 208.868
+R161 a_0_4990.n9 a_0_4990.n8 208.868
+R162 a_0_4990.n6 a_0_4990.n5 168
+R163 a_0_4990.n12 a_0_4990.n11 168
+R164 a_0_4990.n4 a_0_4990.n3 140.8
+R165 a_0_4990.n5 a_0_4990.n4 140.8
+R166 a_0_4990.n11 a_0_4990.t9 122.501
+R167 a_0_4990.n13 a_0_4990.n12 119.701
+R168 a_0_4990.n10 a_0_4990.n6 110.4
+R169 a_0_4990.n0 a_0_4990.t1 49.2505
+R170 a_0_4990.n0 a_0_4990.t7 49.2505
+R171 a_0_4990.n1 a_0_4990.t5 49.2505
+R172 a_0_4990.n1 a_0_4990.t4 49.2505
+R173 a_0_4990.n2 a_0_4990.t3 49.2505
+R174 a_0_4990.n2 a_0_4990.t2 49.2505
+R175 a_0_4990.t11 a_0_4990.n13 30.0005
+R176 a_0_4990.n13 a_0_4990.t10 30.0005
+R177 a_1710_3900.n7 a_1710_3900.t4 1638.08
+R178 a_1710_3900.n7 a_1710_3900.n6 706.301
+R179 a_1710_3900.n9 a_1710_3900.n8 507.2
+R180 a_1710_3900.n2 a_1710_3900.t9 316.514
+R181 a_1710_3900.n0 a_1710_3900.t10 316.514
+R182 a_1710_3900.n3 a_1710_3900.n2 276.348
+R183 a_1710_3900.n4 a_1710_3900.n3 276.348
+R184 a_1710_3900.n5 a_1710_3900.n4 276.348
+R185 a_1710_3900.n1 a_1710_3900.n0 276.348
+R186 a_1710_3900.n6 a_1710_3900.n5 261.887
+R187 a_1710_3900.n9 a_1710_3900.t1 256.901
+R188 a_1710_3900.n8 a_1710_3900.t2 184.826
+R189 a_1710_3900.t0 a_1710_3900.n9 141.625
+R190 a_1710_3900.n8 a_1710_3900.n7 92.8005
+R191 a_1710_3900.n2 a_1710_3900.t5 40.1672
+R192 a_1710_3900.n3 a_1710_3900.t3 40.1672
+R193 a_1710_3900.n4 a_1710_3900.t8 40.1672
+R194 a_1710_3900.n5 a_1710_3900.t7 40.1672
+R195 a_1710_3900.n0 a_1710_3900.t11 40.1672
+R196 a_1710_3900.n1 a_1710_3900.t6 40.1672
+R197 a_1710_3900.n6 a_1710_3900.n1 14.4605
+R198 V_OUT.n4 V_OUT.n2 3100.87
+R199 V_OUT.n15 V_OUT.n11 1382.57
+R200 V_OUT.n15 V_OUT.n14 1315.1
+R201 V_OUT V_OUT.n16 1285.33
+R202 V_OUT.n1 V_OUT.n0 1120
+R203 V_OUT V_OUT.n1 1011.2
+R204 V_OUT.n4 V_OUT.n3 996.134
+R205 V_OUT.n16 V_OUT.n15 947.933
+R206 V_OUT.n16 V_OUT.n4 867.601
+R207 V_OUT.n2 V_OUT.t15 546.268
+R208 V_OUT.n8 V_OUT.t0 509.75
+R209 V_OUT.n3 V_OUT.t14 401.668
+R210 V_OUT.n11 V_OUT.t1 341.75
+R211 V_OUT.n2 V_OUT.t17 337.401
+R212 V_OUT.n8 V_OUT.n7 319.7
+R213 V_OUT.n9 V_OUT.n6 319.7
+R214 V_OUT.n10 V_OUT.n5 319.7
+R215 V_OUT.n13 V_OUT.t9 290.5
+R216 V_OUT.n0 V_OUT.t12 201.524
+R217 V_OUT.n3 V_OUT.t16 192.8
+R218 V_OUT.n14 V_OUT.n13 168
+R219 V_OUT.n11 V_OUT.n10 168
+R220 V_OUT.n10 V_OUT.n9 140.8
+R221 V_OUT.n9 V_OUT.n8 140.8
+R222 V_OUT.n0 V_OUT 124.8
+R223 V_OUT.n14 V_OUT.t10 122.501
+R224 V_OUT.n13 V_OUT.n12 119.701
+R225 V_OUT.n7 V_OUT.t2 49.2505
+R226 V_OUT.n7 V_OUT.t6 49.2505
+R227 V_OUT.n6 V_OUT.t4 49.2505
+R228 V_OUT.n6 V_OUT.t5 49.2505
+R229 V_OUT.n5 V_OUT.t7 49.2505
+R230 V_OUT.n5 V_OUT.t3 49.2505
+R231 V_OUT.n1 V_OUT.t11 36.6651
+R232 V_OUT.n12 V_OUT.t13 30.0005
+R233 V_OUT.n12 V_OUT.t8 30.0005
+R234 VDDA.n28 VDDA.t83 769.49
+R235 VDDA.n41 VDDA.n40 297.151
+R236 VDDA.n37 VDDA.n36 297.151
+R237 VDDA.n34 VDDA.n33 297.151
+R238 VDDA.n32 VDDA.n31 297.151
+R239 VDDA.n27 VDDA.n26 297.151
+R240 VDDA.n25 VDDA.n24 297.151
+R241 VDDA.n20 VDDA.n19 297.151
+R242 VDDA.n18 VDDA.n17 297.151
+R243 VDDA.n12 VDDA.n11 297.151
+R244 VDDA.n8 VDDA.n7 297.151
+R245 VDDA.n4 VDDA.n3 297.151
+R246 VDDA.n2 VDDA.n1 297.151
+R247 VDDA.t11 VDDA.t60 182.692
+R248 VDDA.t34 VDDA.t36 178.632
+R249 VDDA.t44 VDDA.t34 178.632
+R250 VDDA.t40 VDDA.t48 178.632
+R251 VDDA.t66 VDDA.t21 178.632
+R252 VDDA.t70 VDDA.t68 178.632
+R253 VDDA.t76 VDDA.t1 174.573
+R254 VDDA.t5 VDDA.t56 174.573
+R255 VDDA.t23 VDDA.t46 158.333
+R256 VDDA.n39 VDDA.t59 143.486
+R257 VDDA.n38 VDDA.t65 143.486
+R258 VDDA.n35 VDDA.t57 143.486
+R259 VDDA.n30 VDDA.t75 143.486
+R260 VDDA.n23 VDDA.t55 143.486
+R261 VDDA.t42 VDDA.t54 142.095
+R262 VDDA.n28 VDDA.t25 141.625
+R263 VDDA.t50 VDDA.t72 141.588
+R264 VDDA.n21 VDDA.t44 138.035
+R265 VDDA.t38 VDDA.t76 133.975
+R266 VDDA.t64 VDDA.t3 125.856
+R267 VDDA.t32 VDDA.t50 123.317
+R268 VDDA.t52 VDDA.t30 118.751
+R269 VDDA.t26 VDDA.t15 118.751
+R270 VDDA.t77 VDDA.t80 118.751
+R271 VDDA.t74 VDDA.t7 117.736
+R272 VDDA.t7 VDDA.t0 117.736
+R273 VDDA.t78 VDDA.t28 114.183
+R274 VDDA.t3 VDDA.t58 109.615
+R275 VDDA.t13 VDDA.t9 105.049
+R276 VDDA.t24 VDDA.t38 101.496
+R277 VDDA.n16 VDDA.n15 99.0505
+R278 VDDA.n14 VDDA.n13 99.0505
+R279 VDDA.n10 VDDA.n9 99.0505
+R280 VDDA.n6 VDDA.n5 99.0505
+R281 VDDA.n0 VDDA.t52 86.7793
+R282 VDDA.t62 VDDA.t13 77.6447
+R283 VDDA.t46 VDDA.t24 77.1372
+R284 VDDA.n22 VDDA.n21 75.8605
+R285 VDDA.t58 VDDA.t70 69.0176
+R286 VDDA.t60 VDDA.t78 68.5101
+R287 VDDA.n2 VDDA.n0 63.2208
+R288 VDDA.t1 VDDA.t74 60.8979
+R289 VDDA.t0 VDDA.t5 60.8979
+R290 VDDA.t30 VDDA.t17 59.3755
+R291 VDDA.t17 VDDA.t32 59.3755
+R292 VDDA.t80 VDDA.t19 59.3755
+R293 VDDA.t19 VDDA.t79 59.3755
+R294 VDDA.t21 VDDA.t64 52.7783
+R295 VDDA.t15 VDDA.t11 50.2409
+R296 VDDA.n40 VDDA.t71 49.2505
+R297 VDDA.n40 VDDA.t69 49.2505
+R298 VDDA.n36 VDDA.t22 49.2505
+R299 VDDA.n36 VDDA.t4 49.2505
+R300 VDDA.n33 VDDA.t6 49.2505
+R301 VDDA.n33 VDDA.t67 49.2505
+R302 VDDA.n31 VDDA.t2 49.2505
+R303 VDDA.n31 VDDA.t8 49.2505
+R304 VDDA.n26 VDDA.t47 49.2505
+R305 VDDA.n26 VDDA.t39 49.2505
+R306 VDDA.n24 VDDA.t41 49.2505
+R307 VDDA.n24 VDDA.t49 49.2505
+R308 VDDA.n19 VDDA.t45 49.2505
+R309 VDDA.n19 VDDA.t43 49.2505
+R310 VDDA.n17 VDDA.t37 49.2505
+R311 VDDA.n17 VDDA.t35 49.2505
+R312 VDDA.n11 VDDA.t27 49.2505
+R313 VDDA.n11 VDDA.t16 49.2505
+R314 VDDA.n7 VDDA.t73 49.2505
+R315 VDDA.n7 VDDA.t14 49.2505
+R316 VDDA.n3 VDDA.t31 49.2505
+R317 VDDA.n3 VDDA.t33 49.2505
+R318 VDDA.n1 VDDA.t82 49.2505
+R319 VDDA.n1 VDDA.t53 49.2505
+R320 VDDA.t72 VDDA.t62 41.1063
+R321 VDDA.n21 VDDA.t42 40.5988
+R322 VDDA.t54 VDDA.t40 36.539
+R323 VDDA.n0 VDDA.t81 31.9717
+R324 VDDA.t48 VDDA.t23 20.2996
+R325 VDDA.n15 VDDA.t29 19.7005
+R326 VDDA.n15 VDDA.t20 19.7005
+R327 VDDA.n13 VDDA.t12 19.7005
+R328 VDDA.n13 VDDA.t61 19.7005
+R329 VDDA.n9 VDDA.t63 19.7005
+R330 VDDA.n9 VDDA.t10 19.7005
+R331 VDDA.n5 VDDA.t18 19.7005
+R332 VDDA.n5 VDDA.t51 19.7005
+R333 VDDA.t9 VDDA.t26 13.7024
+R334 VDDA.t28 VDDA.t77 4.56781
+R335 VDDA.t56 VDDA.t66 4.06033
+R336 VDDA.n29 VDDA.n28 1.8605
+R337 VDDA.n18 VDDA.n16 0.188454
+R338 VDDA VDDA.n41 0.0566024
+R339 VDDA.n16 VDDA.n14 0.0485769
+R340 VDDA.n30 VDDA.n29 0.0447913
+R341 VDDA.n20 VDDA.n18 0.0438071
+R342 VDDA.n27 VDDA.n25 0.0438071
+R343 VDDA.n34 VDDA.n32 0.0438071
+R344 VDDA.n8 VDDA.n6 0.0389615
+R345 VDDA.n4 VDDA.n2 0.03175
+R346 VDDA.n23 VDDA.n22 0.0290433
+R347 VDDA.n39 VDDA.n38 0.0290433
+R348 VDDA.n37 VDDA.n35 0.0270748
+R349 VDDA.n14 VDDA.n12 0.0269423
+R350 VDDA.n12 VDDA.n10 0.0221346
+R351 VDDA.n35 VDDA.n34 0.0172323
+R352 VDDA.n41 VDDA.n39 0.0132953
+R353 VDDA.n6 VDDA.n4 0.0125192
+R354 VDDA.n32 VDDA.n30 0.0103425
+R355 VDDA.n10 VDDA.n8 0.0101154
+R356 VDDA.n25 VDDA.n23 0.00935827
+R357 VDDA.n22 VDDA.n20 0.00640551
+R358 VDDA.n29 VDDA.n27 0.00542126
+R359 VDDA.n38 VDDA.n37 0.0024685
+R360 charge_pump_full_5_0.opamp_cell_0.p_right.t4 charge_pump_full_5_0.opamp_cell_0.p_right.n6 4781.46
+R361 charge_pump_full_5_0.opamp_cell_0.p_right.n3 charge_pump_full_5_0.opamp_cell_0.p_right.n2 2321
+R362 charge_pump_full_5_0.opamp_cell_0.p_right.n2 charge_pump_full_5_0.opamp_cell_0.p_right.n0 415.7
+R363 charge_pump_full_5_0.opamp_cell_0.p_right.n2 charge_pump_full_5_0.opamp_cell_0.p_right.n1 277.8
+R364 charge_pump_full_5_0.opamp_cell_0.p_right.n6 charge_pump_full_5_0.opamp_cell_0.p_right.n5 208.868
+R365 charge_pump_full_5_0.opamp_cell_0.p_right.n5 charge_pump_full_5_0.opamp_cell_0.p_right.n4 208.868
+R366 charge_pump_full_5_0.opamp_cell_0.p_right.n4 charge_pump_full_5_0.opamp_cell_0.p_right.n3 208.868
+R367 charge_pump_full_5_0.opamp_cell_0.p_right.n3 charge_pump_full_5_0.opamp_cell_0.p_right.t7 112.468
+R368 charge_pump_full_5_0.opamp_cell_0.p_right.n4 charge_pump_full_5_0.opamp_cell_0.p_right.t5 112.468
+R369 charge_pump_full_5_0.opamp_cell_0.p_right.n5 charge_pump_full_5_0.opamp_cell_0.p_right.t8 112.468
+R370 charge_pump_full_5_0.opamp_cell_0.p_right.n6 charge_pump_full_5_0.opamp_cell_0.p_right.t6 112.468
+R371 charge_pump_full_5_0.opamp_cell_0.p_right.n1 charge_pump_full_5_0.opamp_cell_0.p_right.t0 60.0005
+R372 charge_pump_full_5_0.opamp_cell_0.p_right.n1 charge_pump_full_5_0.opamp_cell_0.p_right.t1 60.0005
+R373 charge_pump_full_5_0.opamp_cell_0.p_right.n0 charge_pump_full_5_0.opamp_cell_0.p_right.t2 49.2505
+R374 charge_pump_full_5_0.opamp_cell_0.p_right.n0 charge_pump_full_5_0.opamp_cell_0.p_right.t3 49.2505
+R375 charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out.n13 charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out.n12 3179.47
+R376 charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out.n3 charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out.n2 929.601
+R377 charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out.n15 charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out.n14 686.721
+R378 charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out.n1 charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out.t3 452.151
+R379 charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out.n12 charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out.n11 449.233
+R380 charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out.n2 charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out.t9 341.75
+R381 charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out.n16 charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out.t6 330.76
+R382 charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out.n1 charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out.n0 319.7
+R383 charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out.n15 charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out.t7 264.2
+R384 charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out.n6 charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out.t12 257.067
+R385 charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out.n5 charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out.t14 257.067
+R386 charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out.n4 charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out.t1 256.901
+R387 charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out.n7 charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out.n6 216.9
+R388 charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out.n8 charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out.n7 216.9
+R389 charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out.n9 charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out.n8 216.9
+R390 charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out.n10 charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out.n9 216.9
+R391 charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out.n11 charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out.n5 204.851
+R392 charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out.n17 charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out.n16 204.201
+R393 charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out.n4 charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out.t0 141.625
+R394 charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out.n2 charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out.n1 110.4
+R395 charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out.n13 charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out.n3 92.9858
+R396 charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out.n12 charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out.n4 91.2005
+R397 charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out.n14 charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out.t11 73.2829
+R398 charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out.n16 charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out.n15 66.5605
+R399 charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out.n3 charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out.t15 63.6829
+R400 charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out.n17 charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out.t5 60.0005
+R401 charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out.t8 charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out.n17 60.0005
+R402 charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out.n0 charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out.t4 49.2505
+R403 charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out.n0 charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out.t2 49.2505
+R404 charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out.n14 charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out.n13 41.6005
+R405 charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out.n6 charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out.t10 40.1672
+R406 charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out.n7 charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out.t19 40.1672
+R407 charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out.n8 charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out.t18 40.1672
+R408 charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out.n9 charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out.t17 40.1672
+R409 charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out.n5 charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out.t13 40.1672
+R410 charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out.n10 charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out.t16 40.1672
+R411 charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out.n11 charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out.n10 12.0505
+R412 a_2870_3900.n3 a_2870_3900.t3 1538.88
+R413 a_2870_3900.n3 a_2870_3900.n2 963.367
+R414 a_2870_3900.n1 a_2870_3900.t7 316.514
+R415 a_2870_3900.n0 a_2870_3900.t4 316.514
+R416 a_2870_3900.n2 a_2870_3900.n0 242.607
+R417 a_2870_3900.t2 a_2870_3900.n5 223.226
+R418 a_2870_3900.n4 a_2870_3900.t0 162.5
+R419 a_2870_3900.n5 a_2870_3900.t1 160.9
+R420 a_2870_3900.n4 a_2870_3900.n3 102.4
+R421 a_2870_3900.n5 a_2870_3900.n4 92.8005
+R422 a_2870_3900.n0 a_2870_3900.t5 40.1672
+R423 a_2870_3900.n1 a_2870_3900.t6 40.1672
+R424 a_2870_3900.n2 a_2870_3900.n1 33.7405
+R425 a_2580_3900.t3 a_2580_3900.t2 2056.16
+R426 a_2580_3900.n0 a_2580_3900.t3 601.867
+R427 a_2580_3900.t0 a_2580_3900.n0 232.826
+R428 a_2580_3900.n0 a_2580_3900.t1 152.9
+R429 a_1420_3900.n1 a_1420_3900.t0 2518.17
+R430 a_1420_3900.n0 a_1420_3900.t3 778.601
+R431 a_1420_3900.n0 a_1420_3900.t2 194.5
+R432 a_1420_3900.t1 a_1420_3900.n1 141.625
+R433 a_1420_3900.n1 a_1420_3900.n0 49.6005
+R434 charge_pump_full_5_0.opamp_cell_0.p_bias charge_pump_full_5_0.opamp_cell_0.p_bias.t8 585.317
+R435 charge_pump_full_5_0.opamp_cell_0.p_bias.n10 charge_pump_full_5_0.opamp_cell_0.p_bias.n9 257.067
+R436 charge_pump_full_5_0.opamp_cell_0.p_bias.n9 charge_pump_full_5_0.opamp_cell_0.p_bias.n8 257.067
+R437 charge_pump_full_5_0.opamp_cell_0.p_bias.n6 charge_pump_full_5_0.opamp_cell_0.p_bias.n5 257.067
+R438 charge_pump_full_5_0.opamp_cell_0.p_bias.n5 charge_pump_full_5_0.opamp_cell_0.p_bias.n4 257.067
+R439 charge_pump_full_5_0.opamp_cell_0.p_bias.n3 charge_pump_full_5_0.opamp_cell_0.p_bias.n2 248.662
+R440 charge_pump_full_5_0.opamp_cell_0.p_bias.n4 charge_pump_full_5_0.opamp_cell_0.p_bias.n3 242.607
+R441 charge_pump_full_5_0.opamp_cell_0.p_bias.n11 charge_pump_full_5_0.opamp_cell_0.p_bias.n10 237.787
+R442 charge_pump_full_5_0.opamp_cell_0.p_bias.n2 charge_pump_full_5_0.opamp_cell_0.p_bias.n1 234.24
+R443 charge_pump_full_5_0.opamp_cell_0.p_bias.n12 charge_pump_full_5_0.opamp_cell_0.p_bias.n1 231.041
+R444 charge_pump_full_5_0.opamp_cell_0.p_bias.n12 charge_pump_full_5_0.opamp_cell_0.p_bias.n11 220.981
+R445 charge_pump_full_5_0.opamp_cell_0.p_bias.n2 charge_pump_full_5_0.opamp_cell_0.p_bias.t5 178.641
+R446 charge_pump_full_5_0.opamp_cell_0.p_bias.n13 charge_pump_full_5_0.opamp_cell_0.p_bias.t3 164.133
+R447 charge_pump_full_5_0.opamp_cell_0.p_bias.n7 charge_pump_full_5_0.opamp_cell_0.p_bias.n1 152
+R448 charge_pump_full_5_0.opamp_cell_0.p_bias.n1 charge_pump_full_5_0.opamp_cell_0.p_bias.n0 148.701
+R449 charge_pump_full_5_0.opamp_cell_0.p_bias charge_pump_full_5_0.opamp_cell_0.p_bias.n13 142.72
+R450 charge_pump_full_5_0.opamp_cell_0.p_bias.n11 charge_pump_full_5_0.opamp_cell_0.p_bias.t2 120.501
+R451 charge_pump_full_5_0.opamp_cell_0.p_bias.n10 charge_pump_full_5_0.opamp_cell_0.p_bias.t9 120.501
+R452 charge_pump_full_5_0.opamp_cell_0.p_bias.n9 charge_pump_full_5_0.opamp_cell_0.p_bias.t11 120.501
+R453 charge_pump_full_5_0.opamp_cell_0.p_bias.n8 charge_pump_full_5_0.opamp_cell_0.p_bias.t6 120.501
+R454 charge_pump_full_5_0.opamp_cell_0.p_bias.n6 charge_pump_full_5_0.opamp_cell_0.p_bias.t0 120.501
+R455 charge_pump_full_5_0.opamp_cell_0.p_bias.n5 charge_pump_full_5_0.opamp_cell_0.p_bias.t10 120.501
+R456 charge_pump_full_5_0.opamp_cell_0.p_bias.n4 charge_pump_full_5_0.opamp_cell_0.p_bias.t12 120.501
+R457 charge_pump_full_5_0.opamp_cell_0.p_bias.n3 charge_pump_full_5_0.opamp_cell_0.p_bias.t4 120.501
+R458 charge_pump_full_5_0.opamp_cell_0.p_bias.n8 charge_pump_full_5_0.opamp_cell_0.p_bias.n7 85.6894
+R459 charge_pump_full_5_0.opamp_cell_0.p_bias.n7 charge_pump_full_5_0.opamp_cell_0.p_bias.n6 85.6894
+R460 charge_pump_full_5_0.opamp_cell_0.p_bias.n0 charge_pump_full_5_0.opamp_cell_0.p_bias.t1 19.7005
+R461 charge_pump_full_5_0.opamp_cell_0.p_bias.n0 charge_pump_full_5_0.opamp_cell_0.p_bias.t7 19.7005
+R462 charge_pump_full_5_0.opamp_cell_0.p_bias.n13 charge_pump_full_5_0.opamp_cell_0.p_bias.n12 12.8005
+R463 charge_pump_full_5_0.opamp_cell_0.v_common_p.n2 charge_pump_full_5_0.opamp_cell_0.v_common_p.t5 450.55
+R464 charge_pump_full_5_0.opamp_cell_0.v_common_p.n3 charge_pump_full_5_0.opamp_cell_0.v_common_p.t7 420.151
+R465 charge_pump_full_5_0.opamp_cell_0.v_common_p.n4 charge_pump_full_5_0.opamp_cell_0.v_common_p.n0 404.7
+R466 charge_pump_full_5_0.opamp_cell_0.v_common_p.n2 charge_pump_full_5_0.opamp_cell_0.v_common_p.n1 319.7
+R467 charge_pump_full_5_0.opamp_cell_0.v_common_p.n5 charge_pump_full_5_0.opamp_cell_0.v_common_p.n4 148.701
+R468 charge_pump_full_5_0.opamp_cell_0.v_common_p.n4 charge_pump_full_5_0.opamp_cell_0.v_common_p.n3 99.2005
+R469 charge_pump_full_5_0.opamp_cell_0.v_common_p.n1 charge_pump_full_5_0.opamp_cell_0.v_common_p.t4 49.2505
+R470 charge_pump_full_5_0.opamp_cell_0.v_common_p.n1 charge_pump_full_5_0.opamp_cell_0.v_common_p.t6 49.2505
+R471 charge_pump_full_5_0.opamp_cell_0.v_common_p.n3 charge_pump_full_5_0.opamp_cell_0.v_common_p.n2 32.0005
+R472 charge_pump_full_5_0.opamp_cell_0.v_common_p.n0 charge_pump_full_5_0.opamp_cell_0.v_common_p.t0 19.7005
+R473 charge_pump_full_5_0.opamp_cell_0.v_common_p.n0 charge_pump_full_5_0.opamp_cell_0.v_common_p.t2 19.7005
+R474 charge_pump_full_5_0.opamp_cell_0.v_common_p.n5 charge_pump_full_5_0.opamp_cell_0.v_common_p.t1 19.7005
+R475 charge_pump_full_5_0.opamp_cell_0.v_common_p.t3 charge_pump_full_5_0.opamp_cell_0.v_common_p.n5 19.7005
+R476 a_840_3900.n0 a_840_3900.t3 473.967
+R477 a_840_3900.n0 a_840_3900.t2 345.433
+R478 a_840_3900.t1 a_840_3900.n1 207.226
+R479 a_840_3900.n1 a_840_3900.n0 203.201
+R480 a_840_3900.n1 a_840_3900.t0 178.5
+R481 a_1130_3900.t3 a_1130_3900.t4 3759.6
+R482 a_1130_3900.n0 a_1130_3900.t2 658.734
+R483 a_1130_3900.n1 a_1130_3900.t3 473.967
+R484 a_1130_3900.t1 a_1130_3900.n2 207.226
+R485 a_1130_3900.n2 a_1130_3900.n1 203.201
+R486 a_1130_3900.n0 a_1130_3900.t5 192.8
+R487 a_1130_3900.n2 a_1130_3900.t0 178.5
+R488 a_1130_3900.n1 a_1130_3900.n0 104.433
+R489 charge_pump_full_5_0.opamp_cell_0.n_left.t3 charge_pump_full_5_0.opamp_cell_0.n_left.n5 699.667
+R490 charge_pump_full_5_0.opamp_cell_0.n_left.n1 charge_pump_full_5_0.opamp_cell_0.n_left.t1 372.791
+R491 charge_pump_full_5_0.opamp_cell_0.n_left.n1 charge_pump_full_5_0.opamp_cell_0.n_left.n0 367.401
+R492 charge_pump_full_5_0.opamp_cell_0.n_left.n2 charge_pump_full_5_0.opamp_cell_0.n_left.n1 239.793
+R493 charge_pump_full_5_0.opamp_cell_0.n_left.n2 charge_pump_full_5_0.opamp_cell_0.n_left.t0 204.278
+R494 charge_pump_full_5_0.opamp_cell_0.n_left.n5 charge_pump_full_5_0.opamp_cell_0.n_left.t2 196.014
+R495 charge_pump_full_5_0.opamp_cell_0.n_left.n4 charge_pump_full_5_0.opamp_cell_0.n_left.t6 192.8
+R496 charge_pump_full_5_0.opamp_cell_0.n_left.n3 charge_pump_full_5_0.opamp_cell_0.n_left.t7 192.8
+R497 charge_pump_full_5_0.opamp_cell_0.n_left.n4 charge_pump_full_5_0.opamp_cell_0.n_left.n3 156.65
+R498 charge_pump_full_5_0.opamp_cell_0.n_left.n5 charge_pump_full_5_0.opamp_cell_0.n_left.n4 152.232
+R499 charge_pump_full_5_0.opamp_cell_0.n_left.n3 charge_pump_full_5_0.opamp_cell_0.n_left.n2 146.897
+R500 charge_pump_full_5_0.opamp_cell_0.n_left.n0 charge_pump_full_5_0.opamp_cell_0.n_left.t4 60.0005
+R501 charge_pump_full_5_0.opamp_cell_0.n_left.n0 charge_pump_full_5_0.opamp_cell_0.n_left.t5 60.0005
+R502 charge_pump_full_5_0.opamp_cell_0.p_left.n0 charge_pump_full_5_0.opamp_cell_0.p_left.t3 594.917
+R503 charge_pump_full_5_0.opamp_cell_0.p_left.n5 charge_pump_full_5_0.opamp_cell_0.p_left.n4 472.661
+R504 charge_pump_full_5_0.opamp_cell_0.p_left.n4 charge_pump_full_5_0.opamp_cell_0.p_left.n3 324.315
+R505 charge_pump_full_5_0.opamp_cell_0.p_left.n4 charge_pump_full_5_0.opamp_cell_0.p_left.t1 270.601
+R506 charge_pump_full_5_0.opamp_cell_0.p_left.n2 charge_pump_full_5_0.opamp_cell_0.p_left.n1 156.65
+R507 charge_pump_full_5_0.opamp_cell_0.p_left.n1 charge_pump_full_5_0.opamp_cell_0.p_left.n0 152.232
+R508 charge_pump_full_5_0.opamp_cell_0.p_left.n3 charge_pump_full_5_0.opamp_cell_0.p_left.n2 152.232
+R509 charge_pump_full_5_0.opamp_cell_0.p_left.n0 charge_pump_full_5_0.opamp_cell_0.p_left.t2 115.68
+R510 charge_pump_full_5_0.opamp_cell_0.p_left.n3 charge_pump_full_5_0.opamp_cell_0.p_left.t0 115.68
+R511 charge_pump_full_5_0.opamp_cell_0.p_left.n2 charge_pump_full_5_0.opamp_cell_0.p_left.t7 112.468
+R512 charge_pump_full_5_0.opamp_cell_0.p_left.n1 charge_pump_full_5_0.opamp_cell_0.p_left.t6 112.468
+R513 charge_pump_full_5_0.opamp_cell_0.p_left.t5 charge_pump_full_5_0.opamp_cell_0.p_left.n5 49.2505
+R514 charge_pump_full_5_0.opamp_cell_0.p_left.n5 charge_pump_full_5_0.opamp_cell_0.p_left.t4 49.2505
+R515 charge_pump_full_5_0.opamp_cell_0.n_right.t0 charge_pump_full_5_0.opamp_cell_0.n_right.n6 4410.49
+R516 charge_pump_full_5_0.opamp_cell_0.n_right.n2 charge_pump_full_5_0.opamp_cell_0.n_right.n1 409.3
+R517 charge_pump_full_5_0.opamp_cell_0.n_right.n2 charge_pump_full_5_0.opamp_cell_0.n_right.n0 303.401
+R518 charge_pump_full_5_0.opamp_cell_0.n_right.n3 charge_pump_full_5_0.opamp_cell_0.n_right.n2 296
+R519 charge_pump_full_5_0.opamp_cell_0.n_right.n6 charge_pump_full_5_0.opamp_cell_0.n_right.n5 208.868
+R520 charge_pump_full_5_0.opamp_cell_0.n_right.n5 charge_pump_full_5_0.opamp_cell_0.n_right.n4 208.868
+R521 charge_pump_full_5_0.opamp_cell_0.n_right.n3 charge_pump_full_5_0.opamp_cell_0.n_right.t6 206.19
+R522 charge_pump_full_5_0.opamp_cell_0.n_right.n6 charge_pump_full_5_0.opamp_cell_0.n_right.t5 192.8
+R523 charge_pump_full_5_0.opamp_cell_0.n_right.n5 charge_pump_full_5_0.opamp_cell_0.n_right.t7 192.8
+R524 charge_pump_full_5_0.opamp_cell_0.n_right.n4 charge_pump_full_5_0.opamp_cell_0.n_right.t8 192.8
+R525 charge_pump_full_5_0.opamp_cell_0.n_right.n4 charge_pump_full_5_0.opamp_cell_0.n_right.n3 125.856
+R526 charge_pump_full_5_0.opamp_cell_0.n_right.n0 charge_pump_full_5_0.opamp_cell_0.n_right.t4 60.0005
+R527 charge_pump_full_5_0.opamp_cell_0.n_right.n0 charge_pump_full_5_0.opamp_cell_0.n_right.t3 60.0005
+R528 charge_pump_full_5_0.opamp_cell_0.n_right.n1 charge_pump_full_5_0.opamp_cell_0.n_right.t2 49.2505
+R529 charge_pump_full_5_0.opamp_cell_0.n_right.n1 charge_pump_full_5_0.opamp_cell_0.n_right.t1 49.2505
+R530 a_8046_2450.t1 a_8046_2450.t0 364.192
+R531 charge_pump_full_5_0.opamp_cell_0.v_common_n.n2 charge_pump_full_5_0.opamp_cell_0.v_common_n.t4 347.401
+R532 charge_pump_full_5_0.opamp_cell_0.v_common_n.t3 charge_pump_full_5_0.opamp_cell_0.v_common_n.n2 347.401
+R533 charge_pump_full_5_0.opamp_cell_0.v_common_n.n2 charge_pump_full_5_0.opamp_cell_0.v_common_n.n1 261.233
+R534 charge_pump_full_5_0.opamp_cell_0.v_common_n.n2 charge_pump_full_5_0.opamp_cell_0.v_common_n.n0 204.201
+R535 charge_pump_full_5_0.opamp_cell_0.v_common_n.n0 charge_pump_full_5_0.opamp_cell_0.v_common_n.t2 60.0005
+R536 charge_pump_full_5_0.opamp_cell_0.v_common_n.n0 charge_pump_full_5_0.opamp_cell_0.v_common_n.t5 60.0005
+R537 charge_pump_full_5_0.opamp_cell_0.v_common_n.n1 charge_pump_full_5_0.opamp_cell_0.v_common_n.t1 12.0005
+R538 charge_pump_full_5_0.opamp_cell_0.v_common_n.n1 charge_pump_full_5_0.opamp_cell_0.v_common_n.t0 12.0005
+R539 UP_PFD UP_PFD.n0 1196.97
+R540 UP_PFD.n0 UP_PFD.t0 498.067
+R541 UP_PFD.n0 UP_PFD.t1 353.467
+R542 a_2290_3900.t5 a_2290_3900.t3 1767.33
+R543 a_2290_3900.n0 a_2290_3900.t5 867.601
+R544 a_2290_3900.n1 a_2290_3900.n0 465.933
+R545 a_2290_3900.n1 a_2290_3900.t3 449.868
+R546 a_2290_3900.n2 a_2290_3900.n1 412.51
+R547 a_2290_3900.n0 a_2290_3900.t4 401.668
+R548 a_2290_3900.n1 a_2290_3900.t2 401.668
+R549 a_2290_3900.n2 a_2290_3900.t1 195.141
+R550 a_2290_3900.t0 a_2290_3900.n2 189.946
+R551 a_5120_2450.t1 a_5120_2450.t0 286.111
+R552 charge_pump_full_5_0.opamp_cell_0.n_bias.n4 charge_pump_full_5_0.opamp_cell_0.n_bias.n3 273.688
+R553 charge_pump_full_5_0.opamp_cell_0.n_bias.n2 charge_pump_full_5_0.opamp_cell_0.n_bias.n1 273.688
+R554 charge_pump_full_5_0.opamp_cell_0.n_bias.n3 charge_pump_full_5_0.opamp_cell_0.n_bias.n2 257.067
+R555 charge_pump_full_5_0.opamp_cell_0.n_bias.n5 charge_pump_full_5_0.opamp_cell_0.n_bias.n0 179.201
+R556 charge_pump_full_5_0.opamp_cell_0.n_bias.n1 charge_pump_full_5_0.opamp_cell_0.n_bias.n0 152
+R557 charge_pump_full_5_0.opamp_cell_0.n_bias.n5 charge_pump_full_5_0.opamp_cell_0.n_bias.n4 152
+R558 charge_pump_full_5_0.opamp_cell_0.n_bias.n4 charge_pump_full_5_0.opamp_cell_0.n_bias.t1 120.501
+R559 charge_pump_full_5_0.opamp_cell_0.n_bias.n3 charge_pump_full_5_0.opamp_cell_0.n_bias.t6 120.501
+R560 charge_pump_full_5_0.opamp_cell_0.n_bias.n2 charge_pump_full_5_0.opamp_cell_0.n_bias.t5 120.501
+R561 charge_pump_full_5_0.opamp_cell_0.n_bias.n1 charge_pump_full_5_0.opamp_cell_0.n_bias.t3 120.501
+R562 charge_pump_full_5_0.opamp_cell_0.n_bias.n0 charge_pump_full_5_0.opamp_cell_0.n_bias.t4 119.633
+R563 charge_pump_full_5_0.opamp_cell_0.n_bias.n6 charge_pump_full_5_0.opamp_cell_0.n_bias.t2 94.0338
+R564 charge_pump_full_5_0.opamp_cell_0.n_bias.t0 charge_pump_full_5_0.opamp_cell_0.n_bias.n6 76.5166
+R565 charge_pump_full_5_0.opamp_cell_0.n_bias.n6 charge_pump_full_5_0.opamp_cell_0.n_bias.n5 25.6005
+R566 a_15082_6070.t1 a_15082_6070.t0 295.068
+C0 charge_pump_full_5_0.opamp_cell_0.p_bias V_OUT 0.17648f
+C1 DOWN_PFD I_IN 0.218332f
+C2 VDDA I_IN 0.19824f
+C3 UP_PFD DOWN_PFD 0.0436f
+C4 UP_PFD VDDA 0.20974f
+C5 VDDA DOWN_PFD 0.096195f
+C6 VDDA charge_pump_full_5_0.opamp_cell_0.p_bias 4.59302f
+C7 VDDA V_OUT 3.31676f
+C8 I_IN GNDA 5.01709f
+C9 DOWN_PFD GNDA 1.4812f
+C10 UP_PFD GNDA 0.660505f
+C11 V_OUT GNDA 24.18644f
+C12 VDDA GNDA 25.472076f
+C13 charge_pump_full_5_0.opamp_cell_0.p_bias GNDA 3.468522f
+C14 a_15082_6070.t0 GNDA 2.19925f
+C15 charge_pump_full_5_0.opamp_cell_0.v_common_p.t1 GNDA 0.069793f
+C16 charge_pump_full_5_0.opamp_cell_0.v_common_p.t0 GNDA 0.069793f
+C17 charge_pump_full_5_0.opamp_cell_0.v_common_p.t2 GNDA 0.069793f
+C18 charge_pump_full_5_0.opamp_cell_0.v_common_p.n0 GNDA 0.36238f
+C19 charge_pump_full_5_0.opamp_cell_0.v_common_p.t4 GNDA 0.027917f
+C20 charge_pump_full_5_0.opamp_cell_0.v_common_p.t6 GNDA 0.027917f
+C21 charge_pump_full_5_0.opamp_cell_0.v_common_p.n1 GNDA 0.061949f
+C22 charge_pump_full_5_0.opamp_cell_0.v_common_p.t5 GNDA 0.131678f
+C23 charge_pump_full_5_0.opamp_cell_0.v_common_p.n2 GNDA 0.236301f
+C24 charge_pump_full_5_0.opamp_cell_0.v_common_p.t7 GNDA 0.120113f
+C25 charge_pump_full_5_0.opamp_cell_0.v_common_p.n3 GNDA 0.170768f
+C26 charge_pump_full_5_0.opamp_cell_0.v_common_p.n4 GNDA 0.38185f
+C27 charge_pump_full_5_0.opamp_cell_0.v_common_p.n5 GNDA 0.199953f
+C28 charge_pump_full_5_0.opamp_cell_0.v_common_p.t3 GNDA 0.069793f
+C29 charge_pump_full_5_0.opamp_cell_0.p_bias.t3 GNDA 0.185817f
+C30 charge_pump_full_5_0.opamp_cell_0.p_bias.t1 GNDA 0.041724f
+C31 charge_pump_full_5_0.opamp_cell_0.p_bias.t7 GNDA 0.041724f
+C32 charge_pump_full_5_0.opamp_cell_0.p_bias.n0 GNDA 0.119536f
+C33 charge_pump_full_5_0.opamp_cell_0.p_bias.n1 GNDA 0.210403f
+C34 charge_pump_full_5_0.opamp_cell_0.p_bias.t2 GNDA 0.115159f
+C35 charge_pump_full_5_0.opamp_cell_0.p_bias.t9 GNDA 0.115159f
+C36 charge_pump_full_5_0.opamp_cell_0.p_bias.t11 GNDA 0.115159f
+C37 charge_pump_full_5_0.opamp_cell_0.p_bias.t6 GNDA 0.115159f
+C38 charge_pump_full_5_0.opamp_cell_0.p_bias.t0 GNDA 0.115159f
+C39 charge_pump_full_5_0.opamp_cell_0.p_bias.t10 GNDA 0.115159f
+C40 charge_pump_full_5_0.opamp_cell_0.p_bias.t12 GNDA 0.115159f
+C41 charge_pump_full_5_0.opamp_cell_0.p_bias.t4 GNDA 0.115159f
+C42 charge_pump_full_5_0.opamp_cell_0.p_bias.t5 GNDA 0.191169f
+C43 charge_pump_full_5_0.opamp_cell_0.p_bias.n2 GNDA 0.170488f
+C44 charge_pump_full_5_0.opamp_cell_0.p_bias.n3 GNDA 0.075589f
+C45 charge_pump_full_5_0.opamp_cell_0.p_bias.n4 GNDA 0.067706f
+C46 charge_pump_full_5_0.opamp_cell_0.p_bias.n5 GNDA 0.068427f
+C47 charge_pump_full_5_0.opamp_cell_0.p_bias.n6 GNDA 0.06292f
+C48 charge_pump_full_5_0.opamp_cell_0.p_bias.n7 GNDA 0.027037f
+C49 charge_pump_full_5_0.opamp_cell_0.p_bias.n8 GNDA 0.06292f
+C50 charge_pump_full_5_0.opamp_cell_0.p_bias.n9 GNDA 0.068427f
+C51 charge_pump_full_5_0.opamp_cell_0.p_bias.n10 GNDA 0.06748f
+C52 charge_pump_full_5_0.opamp_cell_0.p_bias.n11 GNDA 0.061948f
+C53 charge_pump_full_5_0.opamp_cell_0.p_bias.n12 GNDA 0.046572f
+C54 charge_pump_full_5_0.opamp_cell_0.p_bias.n13 GNDA 0.167003f
+C55 charge_pump_full_5_0.opamp_cell_0.p_bias.t8 GNDA 1.75503f
+C56 a_1420_3900.t0 GNDA 1.88856f
+C57 a_1420_3900.t2 GNDA 0.03299f
+C58 a_1420_3900.t3 GNDA 0.018714f
+C59 a_1420_3900.n0 GNDA 0.053448f
+C60 a_1420_3900.n1 GNDA 0.258184f
+C61 a_1420_3900.t1 GNDA 0.048102f
+C62 charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out.t3 GNDA 0.01138f
+C63 charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out.n1 GNDA 0.022754f
+C64 charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out.n2 GNDA 0.039218f
+C65 charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out.t15 GNDA 2.0055f
+C66 charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out.n3 GNDA 0.041804f
+C67 charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out.t1 GNDA 0.014604f
+C68 charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out.t0 GNDA 0.01707f
+C69 charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out.n4 GNDA 0.025254f
+C70 charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out.t14 GNDA 0.013361f
+C71 charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out.t12 GNDA 0.013361f
+C72 charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out.n12 GNDA 0.087773f
+C73 charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out.n13 GNDA 0.090436f
+C74 charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out.t11 GNDA 2.00674f
+C75 charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out.n14 GNDA 0.031838f
+C76 charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out.n15 GNDA 0.029541f
+C77 charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out.n16 GNDA 0.016572f
+C78 VDDA.t81 GNDA 0.258111f
+C79 VDDA.t79 GNDA 0.280556f
+C80 VDDA.t19 GNDA 0.097259f
+C81 VDDA.t80 GNDA 0.145889f
+C82 VDDA.t77 GNDA 0.101f
+C83 VDDA.t28 GNDA 0.097259f
+C84 VDDA.t78 GNDA 0.14963f
+C85 VDDA.t60 GNDA 0.205741f
+C86 VDDA.t11 GNDA 0.190778f
+C87 VDDA.t15 GNDA 0.138407f
+C88 VDDA.t26 GNDA 0.108482f
+C89 VDDA.t9 GNDA 0.097259f
+C90 VDDA.t13 GNDA 0.14963f
+C91 VDDA.t62 GNDA 0.097259f
+C92 VDDA.t72 GNDA 0.14963f
+C93 VDDA.t50 GNDA 0.216963f
+C94 VDDA.t32 GNDA 0.14963f
+C95 VDDA.t17 GNDA 0.097259f
+C96 VDDA.t30 GNDA 0.145889f
+C97 VDDA.t52 GNDA 0.168333f
+C98 VDDA.n0 GNDA 0.061782f
+C99 VDDA.n1 GNDA 0.014712f
+C100 VDDA.n2 GNDA 0.562886f
+C101 VDDA.n3 GNDA 0.014712f
+C102 VDDA.n4 GNDA 0.289727f
+C103 VDDA.t18 GNDA 0.017984f
+C104 VDDA.t51 GNDA 0.017984f
+C105 VDDA.n5 GNDA 0.036833f
+C106 VDDA.n6 GNDA 0.368606f
+C107 VDDA.n7 GNDA 0.014752f
+C108 VDDA.n8 GNDA 0.322202f
+C109 VDDA.t63 GNDA 0.017984f
+C110 VDDA.t10 GNDA 0.017984f
+C111 VDDA.n9 GNDA 0.036833f
+C112 VDDA.n10 GNDA 0.248902f
+C113 VDDA.n11 GNDA 0.014712f
+C114 VDDA.n12 GNDA 0.319653f
+C115 VDDA.t12 GNDA 0.017984f
+C116 VDDA.t61 GNDA 0.017984f
+C117 VDDA.n13 GNDA 0.036833f
+C118 VDDA.n14 GNDA 0.518235f
+C119 VDDA.t29 GNDA 0.017984f
+C120 VDDA.t20 GNDA 0.017984f
+C121 VDDA.n15 GNDA 0.036833f
+C122 VDDA.n16 GNDA 1.86413f
+C123 VDDA.n17 GNDA 0.014712f
+C124 VDDA.n18 GNDA 2.13656f
+C125 VDDA.n19 GNDA 0.014712f
+C126 VDDA.n20 GNDA 0.477196f
+C127 VDDA.t36 GNDA 0.521834f
+C128 VDDA.t34 GNDA 0.370334f
+C129 VDDA.t44 GNDA 0.32825f
+C130 VDDA.t68 GNDA 0.521834f
+C131 VDDA.t70 GNDA 0.256708f
+C132 VDDA.t58 GNDA 0.185167f
+C133 VDDA.t3 GNDA 0.244083f
+C134 VDDA.t64 GNDA 0.185167f
+C135 VDDA.t21 GNDA 0.239875f
+C136 VDDA.t66 GNDA 0.189375f
+C137 VDDA.t56 GNDA 0.185167f
+C138 VDDA.t5 GNDA 0.244083f
+C139 VDDA.t0 GNDA 0.185167f
+C140 VDDA.t7 GNDA 0.244083f
+C141 VDDA.t74 GNDA 0.185167f
+C142 VDDA.t1 GNDA 0.244083f
+C143 VDDA.t76 GNDA 0.319833f
+C144 VDDA.t38 GNDA 0.244083f
+C145 VDDA.t24 GNDA 0.185167f
+C146 VDDA.t46 GNDA 0.244083f
+C147 VDDA.t23 GNDA 0.185167f
+C148 VDDA.t48 GNDA 0.206208f
+C149 VDDA.t40 GNDA 0.223042f
+C150 VDDA.t54 GNDA 0.185167f
+C151 VDDA.t42 GNDA 0.189375f
+C152 VDDA.n21 GNDA 0.156759f
+C153 VDDA.n22 GNDA 0.334358f
+C154 VDDA.t55 GNDA 0.050709f
+C155 VDDA.n23 GNDA 0.397748f
+C156 VDDA.n24 GNDA 0.014712f
+C157 VDDA.n25 GNDA 0.504604f
+C158 VDDA.n26 GNDA 0.014712f
+C159 VDDA.n27 GNDA 0.46806f
+C160 VDDA.t25 GNDA 0.050045f
+C161 VDDA.t83 GNDA 0.017758f
+C162 VDDA.n28 GNDA 0.079525f
+C163 VDDA.n29 GNDA 0.456802f
+C164 VDDA.t75 GNDA 0.050698f
+C165 VDDA.n30 GNDA 0.552209f
+C166 VDDA.n31 GNDA 0.014712f
+C167 VDDA.n32 GNDA 0.51374f
+C168 VDDA.n33 GNDA 0.014712f
+C169 VDDA.n34 GNDA 0.577692f
+C170 VDDA.t57 GNDA 0.050709f
+C171 VDDA.n35 GNDA 0.452564f
+C172 VDDA.n36 GNDA 0.014712f
+C173 VDDA.n37 GNDA 0.285339f
+C174 VDDA.t65 GNDA 0.050709f
+C175 VDDA.n38 GNDA 0.333796f
+C176 VDDA.t59 GNDA 0.050709f
+C177 VDDA.n39 GNDA 0.434292f
+C178 VDDA.n40 GNDA 0.014712f
+C179 VDDA.n41 GNDA 0.659917f
+C180 V_OUT.t11 GNDA 5.32186f
+C181 V_OUT.n0 GNDA 0.016432f
+C182 V_OUT.n1 GNDA 0.026019f
+C183 V_OUT.n16 GNDA 0.012281f
+C184 a_1710_3900.t2 GNDA 0.096322f
+C185 a_1710_3900.t4 GNDA 2.78136f
+C186 a_1710_3900.t6 GNDA 0.033093f
+C187 a_1710_3900.t11 GNDA 0.033093f
+C188 a_1710_3900.t10 GNDA 0.06018f
+C189 a_1710_3900.n0 GNDA 0.038408f
+C190 a_1710_3900.n1 GNDA 0.024992f
+C191 a_1710_3900.t7 GNDA 0.033093f
+C192 a_1710_3900.t8 GNDA 0.033093f
+C193 a_1710_3900.t3 GNDA 0.033093f
+C194 a_1710_3900.t5 GNDA 0.033093f
+C195 a_1710_3900.t9 GNDA 0.06018f
+C196 a_1710_3900.n2 GNDA 0.038408f
+C197 a_1710_3900.n3 GNDA 0.034471f
+C198 a_1710_3900.n4 GNDA 0.034471f
+C199 a_1710_3900.n5 GNDA 0.033948f
+C200 a_1710_3900.n6 GNDA 0.027506f
+C201 a_1710_3900.n7 GNDA 0.28315f
+C202 a_1710_3900.n8 GNDA 0.156451f
+C203 a_1710_3900.t1 GNDA 0.068386f
+C204 a_1710_3900.n9 GNDA 0.18327f
+C205 a_1710_3900.t0 GNDA 0.079936f
+C206 a_0_4990.t10 GNDA 0.018517f
+C207 a_0_4990.t8 GNDA 0.118742f
+C208 a_0_4990.t1 GNDA 0.018517f
+C209 a_0_4990.t7 GNDA 0.018517f
+C210 a_0_4990.n0 GNDA 0.041088f
+C211 a_0_4990.t5 GNDA 0.018517f
+C212 a_0_4990.t4 GNDA 0.018517f
+C213 a_0_4990.n1 GNDA 0.041088f
+C214 a_0_4990.t3 GNDA 0.018517f
+C215 a_0_4990.t2 GNDA 0.018517f
+C216 a_0_4990.n2 GNDA 0.041088f
+C217 a_0_4990.t0 GNDA 0.096941f
+C218 a_0_4990.n3 GNDA 0.190824f
+C219 a_0_4990.n4 GNDA 0.120376f
+C220 a_0_4990.n5 GNDA 0.128008f
+C221 a_0_4990.t6 GNDA 0.066061f
+C222 a_0_4990.n6 GNDA 0.116281f
+C223 a_0_4990.t15 GNDA 0.017776f
+C224 a_0_4990.t12 GNDA 0.017776f
+C225 a_0_4990.t13 GNDA 0.017498f
+C226 a_0_4990.n7 GNDA 0.117646f
+C227 a_0_4990.n8 GNDA 0.157231f
+C228 a_0_4990.n9 GNDA 0.600034f
+C229 a_0_4990.n10 GNDA 0.764317f
+C230 a_0_4990.t9 GNDA 0.060462f
+C231 a_0_4990.n11 GNDA 0.311444f
+C232 a_0_4990.n12 GNDA 0.170216f
+C233 a_0_4990.n13 GNDA 0.047527f
+C234 a_0_4990.t11 GNDA 0.018517f
+.ends
+

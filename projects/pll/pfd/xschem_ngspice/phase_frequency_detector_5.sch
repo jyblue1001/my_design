@@ -78,8 +78,6 @@ N 300 -950 320 -950 {
 lab=QA}
 N 300 -950 300 -930 {
 lab=QA}
-N 300 -930 460 -790 {
-lab=QA}
 N 460 -790 460 -770 {
 lab=QA}
 N 320 -750 320 -590 {
@@ -132,6 +130,8 @@ N 520 -290 520 -270 {
 lab=#net3}
 N 520 -190 520 -170 {
 lab=#net4}
+N 300 -930 460 -790 {
+lab=QA}
 C {devices/lab_wire.sym} 460 -970 0 1 {name=p3 sig_type=std_logic lab=QA_b}
 C {devices/lab_wire.sym} 580 -970 0 0 {name=p2 sig_type=std_logic lab=QB_b}
 C {devices/lab_pin.sym} 320 -600 2 1 {name=p7 sig_type=std_logic lab=E}
@@ -144,24 +144,24 @@ C {devices/ipin.sym} 260 -990 0 0 {name=p13 lab=F_REF}
 C {devices/opin.sym} 460 -790 0 0 {name=p14 lab=QA}
 C {devices/ipin.sym} 780 -990 0 1 {name=p1 lab=F_VCO}
 C {devices/opin.sym} 580 -790 0 1 {name=p4 lab=QB}
-C {devices/lab_wire.sym} 380 -640 0 0 {name=p5 sig_type=std_logic lab=VDDA}
-C {devices/lab_wire.sym} 380 -540 2 1 {name=p6 sig_type=std_logic lab=GNDA}
-C {devices/lab_wire.sym} 660 -640 0 1 {name=p15 sig_type=std_logic lab=VDDA}
-C {devices/lab_wire.sym} 660 -540 2 0 {name=p16 sig_type=std_logic lab=GNDA}
+C {devices/lab_wire.sym} 660 -540 2 0 {name=p5 sig_type=std_logic lab=VDDA}
+C {devices/lab_wire.sym} 660 -640 0 1 {name=p6 sig_type=std_logic lab=GNDA}
+C {devices/lab_wire.sym} 380 -540 2 1 {name=p15 sig_type=std_logic lab=VDDA}
+C {devices/lab_wire.sym} 380 -640 0 0 {name=p16 sig_type=std_logic lab=GNDA}
 C {devices/lab_wire.sym} 570 -670 1 1 {name=p17 sig_type=std_logic lab=VDDA}
 C {devices/lab_wire.sym} 470 -670 3 0 {name=p18 sig_type=std_logic lab=GNDA}
-C {devices/lab_wire.sym} 380 -20 2 1 {name=p19 sig_type=std_logic lab=VDDA}
-C {devices/lab_wire.sym} 380 -120 0 0 {name=p20 sig_type=std_logic lab=GNDA}
-C {devices/lab_wire.sym} 660 -20 2 0 {name=p21 sig_type=std_logic lab=VDDA}
-C {devices/lab_wire.sym} 660 -120 0 1 {name=p22 sig_type=std_logic lab=GNDA}
-C {devices/lab_wire.sym} 380 -1020 0 1 {name=p23 sig_type=std_logic lab=VDDA}
-C {devices/lab_wire.sym} 380 -920 2 0 {name=p24 sig_type=std_logic lab=GNDA}
-C {devices/lab_wire.sym} 660 -1020 0 0 {name=p25 sig_type=std_logic lab=VDDA}
-C {devices/lab_wire.sym} 660 -920 2 1 {name=p26 sig_type=std_logic lab=GNDA}
-C {devices/lab_wire.sym} 380 -720 2 0 {name=p27 sig_type=std_logic lab=VDDA}
-C {devices/lab_wire.sym} 380 -820 0 1 {name=p28 sig_type=std_logic lab=GNDA}
-C {devices/lab_wire.sym} 660 -720 2 1 {name=p29 sig_type=std_logic lab=VDDA}
-C {devices/lab_wire.sym} 660 -820 0 0 {name=p30 sig_type=std_logic lab=GNDA}
+C {devices/lab_wire.sym} 660 -120 0 1 {name=p19 sig_type=std_logic lab=VDDA}
+C {devices/lab_wire.sym} 660 -20 2 0 {name=p20 sig_type=std_logic lab=GNDA}
+C {devices/lab_wire.sym} 380 -120 0 0 {name=p21 sig_type=std_logic lab=VDDA}
+C {devices/lab_wire.sym} 380 -20 2 1 {name=p22 sig_type=std_logic lab=GNDA}
+C {devices/lab_wire.sym} 660 -920 2 1 {name=p23 sig_type=std_logic lab=VDDA}
+C {devices/lab_wire.sym} 660 -1020 0 0 {name=p24 sig_type=std_logic lab=GNDA}
+C {devices/lab_wire.sym} 380 -920 2 0 {name=p25 sig_type=std_logic lab=VDDA}
+C {devices/lab_wire.sym} 380 -1020 0 1 {name=p26 sig_type=std_logic lab=GNDA}
+C {devices/lab_wire.sym} 660 -820 0 0 {name=p27 sig_type=std_logic lab=VDDA}
+C {devices/lab_wire.sym} 660 -720 2 1 {name=p28 sig_type=std_logic lab=GNDA}
+C {devices/lab_wire.sym} 380 -820 0 1 {name=p29 sig_type=std_logic lab=VDDA}
+C {devices/lab_wire.sym} 380 -720 2 0 {name=p30 sig_type=std_logic lab=GNDA}
 C {devices/lab_wire.sym} 490 -530 3 0 {name=p31 sig_type=std_logic lab=GNDA}
 C {devices/lab_wire.sym} 550 -530 1 1 {name=p32 sig_type=std_logic lab=VDDA}
 C {devices/lab_wire.sym} 490 -430 3 0 {name=p33 sig_type=std_logic lab=GNDA}
@@ -174,14 +174,14 @@ C {devices/lab_wire.sym} 490 -130 3 0 {name=p39 sig_type=std_logic lab=GNDA}
 C {devices/lab_wire.sym} 550 -130 1 1 {name=p40 sig_type=std_logic lab=VDDA}
 C {devices/ipin.sym} 160 -760 0 0 {name=p41 lab=VDDA}
 C {devices/ipin.sym} 160 -710 0 0 {name=p42 lab=GNDA}
-C {/foss/designs/my_design/projects/pll/pfd/xschem_ngspice/nor_pfd.sym} 380 -970 0 0 {name=x1}
-C {/foss/designs/my_design/projects/pll/pfd/xschem_ngspice/nor_pfd.sym} 660 -970 0 1 {name=x2}
-C {/foss/designs/my_design/projects/pll/pfd/xschem_ngspice/nor_pfd.sym} 380 -770 2 1 {name=x3}
-C {/foss/designs/my_design/projects/pll/pfd/xschem_ngspice/nor_pfd.sym} 660 -770 2 0 {name=x4}
-C {/foss/designs/my_design/projects/pll/pfd/xschem_ngspice/nor_pfd.sym} 380 -590 0 1 {name=x5}
-C {/foss/designs/my_design/projects/pll/pfd/xschem_ngspice/nor_pfd.sym} 660 -590 0 0 {name=x6}
-C {/foss/designs/my_design/projects/pll/pfd/xschem_ngspice/nor_pfd.sym} 380 -70 2 0 {name=x7}
-C {/foss/designs/my_design/projects/pll/pfd/xschem_ngspice/nor_pfd.sym} 660 -70 2 1 {name=x12}
+C {/foss/designs/my_design/projects/pll/pfd/xschem_ngspice/nor_pfd.sym} 380 -970 2 1 {name=x1}
+C {/foss/designs/my_design/projects/pll/pfd/xschem_ngspice/nor_pfd.sym} 660 -970 2 0 {name=x2}
+C {/foss/designs/my_design/projects/pll/pfd/xschem_ngspice/nor_pfd.sym} 380 -770 0 0 {name=x3}
+C {/foss/designs/my_design/projects/pll/pfd/xschem_ngspice/nor_pfd.sym} 660 -770 0 1 {name=x4}
+C {/foss/designs/my_design/projects/pll/pfd/xschem_ngspice/nor_pfd.sym} 380 -590 2 0 {name=x5}
+C {/foss/designs/my_design/projects/pll/pfd/xschem_ngspice/nor_pfd.sym} 660 -590 2 1 {name=x6}
+C {/foss/designs/my_design/projects/pll/pfd/xschem_ngspice/nor_pfd.sym} 380 -70 0 1 {name=x7}
+C {/foss/designs/my_design/projects/pll/pfd/xschem_ngspice/nor_pfd.sym} 660 -70 0 0 {name=x12}
 C {/foss/designs/my_design/projects/pll/pfd/xschem_ngspice/nand_pfd.sym} 520 -670 1 0 {name=x8}
 C {/foss/designs/my_design/projects/pll/pfd/xschem_ngspice/inv_pfd.sym} 520 -530 1 0 {name=x9}
 C {/foss/designs/my_design/projects/pll/pfd/xschem_ngspice/inv_pfd.sym} 520 -430 1 0 {name=x10}

@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1737812289
+timestamp 1738562572
 << nwell >>
 rect -30 520 3310 600
 rect -460 350 3560 520
@@ -132,16 +132,18 @@ rect 940 450 1010 470
 rect 940 430 960 450
 rect 1498 440 1510 480
 rect 880 410 960 430
-rect 3240 410 3460 430
+rect 3240 410 3630 430
 rect 3240 390 3400 410
 rect 3380 370 3400 390
-rect 3440 370 3460 410
+rect 3440 390 3630 410
+rect 3440 370 3460 390
 rect 3380 350 3460 370
 rect 260 300 450 340
 rect 750 300 880 340
 rect 410 260 450 300
 rect 840 260 880 300
 rect 1790 290 1870 310
+rect -650 220 30 260
 rect 410 220 520 260
 rect 840 220 1010 260
 rect 1240 220 1360 260
@@ -191,6 +193,7 @@ rect 2870 -390 2950 -370
 rect 2870 -430 2890 -390
 rect 2930 -430 2950 -390
 rect 2870 -450 2950 -430
+rect -650 -720 30 -680
 rect 410 -718 520 -678
 rect 840 -718 1010 -678
 rect 1248 -718 1546 -678
@@ -210,8 +213,9 @@ rect 3380 -830 3460 -810
 rect 3380 -850 3400 -830
 rect 880 -890 960 -868
 rect 3240 -870 3400 -850
-rect 3440 -870 3460 -830
-rect 3240 -890 3460 -870
+rect 3440 -850 3460 -830
+rect 3440 -870 3630 -850
+rect 3240 -890 3630 -870
 rect 880 -930 900 -890
 rect 940 -908 960 -890
 rect 940 -930 1010 -908
@@ -312,4 +316,17 @@ use sky130_fd_sc_hd__nor2_1  sky130_fd_sc_hd__nor2_1_7
 timestamp 1723858470
 transform -1 0 3266 0 1 0
 box -38 -48 314 592
+<< labels >>
+flabel locali -650 240 -650 240 7 FreeSans 320 0 -160 0 F_REF
+port 1 w
+flabel locali -650 -700 -650 -700 7 FreeSans 320 0 -160 0 F_VCO
+port 2 w
+flabel locali 3630 -870 3630 -870 3 FreeSans 320 0 160 0 QB
+port 4 e
+flabel locali 3630 410 3630 410 3 FreeSans 320 0 160 0 QA
+port 3 e
+flabel metal1 -90 590 -90 590 7 FreeSans 320 0 -160 0 VDDA
+port 5 w
+flabel metal1 70 -230 70 -230 3 FreeSans 320 0 160 0 GNDA
+port 6 e
 << end >>

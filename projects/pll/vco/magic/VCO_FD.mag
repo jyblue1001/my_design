@@ -1,0 +1,43 @@
+magic
+tech sky130A
+timestamp 1738558688
+<< nwell >>
+rect 1154 489 1281 594
+<< poly >>
+rect 1165 468 1205 479
+rect 1165 448 1175 468
+rect 1195 448 1205 468
+rect 1165 439 1205 448
+rect 45 229 65 244
+<< polycont >>
+rect 1175 448 1195 468
+<< locali >>
+rect 1165 468 1205 479
+rect 1165 448 1175 468
+rect 1195 448 1205 468
+rect 6405 449 6426 469
+rect 1165 439 1205 448
+<< metal1 >>
+rect 45 772 55 965
+rect 1136 509 1205 965
+rect 45 121 120 301
+rect 1073 121 1205 399
+use div120  div120_0
+timestamp 1738420943
+transform 1 0 1215 0 1 334
+box -10 -65 5190 285
+use vco2_2  vco2_2_0
+timestamp 1738556885
+transform 1 0 428 0 1 390
+box -428 -390 737 633
+<< labels >>
+flabel metal1 45 871 45 871 7 FreeSans 160 0 -80 0 VDDA
+port 1 w
+flabel metal1 45 200 45 200 7 FreeSans 160 0 -80 0 GNDA
+port 2 w
+flabel poly 45 237 45 237 7 FreeSans 160 0 -80 0 V_CONT
+port 3 w
+flabel locali 1205 479 1205 479 3 FreeSans 160 0 80 0 V_OSC
+flabel locali 6426 459 6426 459 3 FreeSans 160 0 80 0 V_OUT120
+port 4 e
+<< end >>

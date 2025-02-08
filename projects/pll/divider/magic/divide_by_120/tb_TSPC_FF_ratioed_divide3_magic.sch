@@ -45,8 +45,8 @@ linewidth_mult=2
 color=5
 node=vin}
 B 2 80 -280 1130 -50 {flags=graph
-y1=-0.0032
-y2=0.0062
+y1=-0.038
+y2=1.9
 ypos1=0
 ypos2=2
 divy=5
@@ -93,11 +93,20 @@ linewidth_mult=2
 
 
 
-color=5
-node=x1.power}
+
+
+color="5 5 5 5 5 5 5 5"
+node="x2.vout.n0
+x2.vout.n1
+x2.vout.n2
+x2.vout.t0
+x2.vout.t1
+x2.vout.t2
+x2.vout.t3
+x2.vout.t4"}
 B 2 80 -520 1130 -290 {flags=graph
-y1=-0.051
-y2=2
+y1=-0.042
+y2=1.9
 ypos1=0
 ypos2=2
 divy=5
@@ -146,19 +155,18 @@ C {devices/vsource.sym} 450 -870 0 0 {name=VDD value=1.8 savecurrent=false}
 C {devices/gnd.sym} 450 -840 0 0 {name=l1 lab=GND}
 C {devices/code.sym} 260 -930 0 0 {name=Testbench only_toplevel=false value="
 
+.include /foss/designs/my_design/projects/pll/divider/magic/divide_by_120/TSPC_FF_ratioed_divide3_magic.spice
 
 .option method=gear
 .option wnflag=1
 
-
 .control
 
-  save v(vin) v(vout) p(x1:power)
-  * save all
-  tran 0.02p 10n
+  save all
+  tran 2p 10n
 
   remzerovec
-  write tb_TSPC_FF_ratioed_divide3_6.raw
+  write tb_TSPC_FF_ratioed_divide3_magic.raw
   set appendwrite
 
 .endc

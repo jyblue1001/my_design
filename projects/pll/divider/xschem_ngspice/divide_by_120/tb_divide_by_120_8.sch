@@ -5,8 +5,8 @@ V {}
 S {}
 E {}
 B 2 80 -770 1130 -540 {flags=graph
-y1=0.896
-y2=0.906
+y1=0.9
+y2=0.91
 ypos1=0
 ypos2=2
 divy=5
@@ -47,8 +47,8 @@ color=5
 node=v_cont
 linewidth_mult=8}
 B 2 80 -530 1130 -300 {flags=graph
-y1=-0.037
-y2=1.8
+y1=-0.033
+y2=1.7
 ypos1=0
 ypos2=2
 divy=5
@@ -93,8 +93,8 @@ linewidth_mult=2
 color=5
 node=v_osc}
 B 2 80 -290 1130 -60 {flags=graph
-y1=-0.039
-y2=1.8
+y1=-0.068
+y2=1.9
 ypos1=0
 ypos2=2
 divy=5
@@ -132,8 +132,9 @@ linewidth_mult=2
 
 
 
+
 color=5
-node=x2.v_out2}
+node=x3.vin2}
 B 2 80 190 1130 420 {flags=graph
 y1=-0.022
 y2=1.9
@@ -189,11 +190,13 @@ linewidth_mult=5
 
 
 
+
+
 color=5
-node=x2.v_out8}
+node=x3.vin4}
 B 2 80 -50 1130 180 {flags=graph
-y1=-0.053
-y2=1.9
+y1=-0.078
+y2=2
 ypos1=0
 ypos2=2
 divy=5
@@ -236,8 +239,9 @@ linewidth_mult=2
 
 
 
+
 color=5
-node=x2.v_out4}
+node=x3.vin3}
 B 2 80 430 1130 660 {flags=graph
 y1=-0.036
 y2=1.9
@@ -294,8 +298,9 @@ linewidth_mult=5
 
 
 
+
 color=5
-node=x2.v_out24}
+node=x3.vin5}
 B 2 80 670 1130 900 {flags=graph
 y1=-0.27
 y2=1.9
@@ -357,8 +362,8 @@ linewidth_mult=2
 color=5
 node=v_out120}
 B 2 80 -1089.317194606059 2610 -860 {flags=graph
-y1=-0.22536879
-y2=1.8326312
+y1=-0.033
+y2=1.7
 ypos1=0
 ypos2=2
 divy=5
@@ -418,37 +423,37 @@ C {devices/code.sym} 1420 -700 0 0 {name=Testbench only_toplevel=false value="
 
 .control
 
-  let v_cont_start = 0.0
-  let v_cont_stop = 1.9
+  * let v_cont_start = 0.0
+  * let v_cont_stop = 1.9
 
-  dowhile v_cont_start <= v_cont_stop
-    alter v1 $&v_cont_start
+  * dowhile v_cont_start <= v_cont_stop
+    * alter v1 $&v_cont_start
 
-    * save all  p(x1:power) p(x2:power)
-    * save v(v_osc)
-    save v(v_cont) v(v_osc) v(x2.v_out2) v(x2.v_out4) v(x2.v_out8) v(x2.v_out24) v(v_out120)
+    save all  
+    * save v(v_osc) p(x1:power) p(x2:power)
+    * save v(v_cont) v(v_osc) v(x2.v_out2) v(x2.v_out4) v(x2.v_out8) v(x2.v_out24) v(v_out120)
 
-    * tran 5ps 120ns
-    tran 2ps 120ns
+    tran 5ps 120ns
+    * tran 2ps 120ns
 
     remzerovec
 
-    write tb_divide_by_120_8_\{$&v_cont_start\}.raw
-    * write tb_divide_by_120_8.raw
+    * write tb_divide_by_120_8_\{$&v_cont_start\}.raw
+    write tb_divide_by_120_8.raw
 
     * linearize v(v_osc)
-    linearize v(v_cont) v(v_osc) v(x2.v_out2) v(x2.v_out4) v(x2.v_out8) v(x2.v_out24) v(v_out120)
+    * linearize v(v_cont) v(v_osc) v(x2.v_out2) v(x2.v_out4) v(x2.v_out8) v(x2.v_out24) v(v_out120)
 
-    let filename = v_cont_start * 100
+    * let filename = v_cont_start * 100
 
-    wrdata /foss/designs/my_design/projects/pll/divider/xschem_ngspice/divide_by_120/tb_divide_by_120_8_\{$&filename\}.txt v(v_osc)
-    * wrdata /foss/designs/my_design/projects/pll/divider/xschem_ngspice/divide_by_120/tb_divide_by_120_8_.txt v(v_osc)
+    * wrdata /foss/designs/my_design/projects/pll/divider/xschem_ngspice/divide_by_120/tb_divide_by_120_8_\{$&filename\}.txt v(v_osc)
+    wrdata /foss/designs/my_design/projects/pll/divider/xschem_ngspice/divide_by_120/tb_divide_by_120_8_.txt v(v_osc)
 
     set appendwrite
 
-    reset
-    let v_cont_start = v_cont_start + 0.1
-   end
+    * reset
+    * let v_cont_start = v_cont_start + 0.1
+   * end
 
 .endc
 
@@ -471,4 +476,4 @@ C {/foss/designs/my_design/projects/pll/vco/xschem_ngspice/current_starved_VCO10
 C {sky130_fd_pr/corner.sym} 1260 -700 0 0 {name=CORNER1 only_toplevel=false corner=tt}
 C {devices/gnd.sym} 1840 -110 0 0 {name=l2 lab=GND}
 C {devices/vdd.sym} 1840 -210 0 0 {name=l3 lab=VDD}
-C {divide_by_120_7.sym} 1840 -160 0 0 {name=x2}
+C {divide_by_120_xschem.sym} 1840 -160 0 0 {name=x3}

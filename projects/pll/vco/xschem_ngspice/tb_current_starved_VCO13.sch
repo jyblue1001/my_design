@@ -1,5 +1,4 @@
-v {xschem version=3.4.5 file_version=1.2
-}
+v {xschem version=3.4.6 file_version=1.2}
 G {}
 K {}
 V {}
@@ -40,11 +39,11 @@ N 1150 -330 1310 -330 {
 lab=V_OSC}
 N 1050 -470 1050 -430 {
 lab=VDD}
-N 1390 -430 1390 -390 {
+N 1400 -420 1400 -380 {
 lab=VDD}
-N 1390 -270 1390 -230 {
+N 1400 -280 1400 -240 {
 lab=GND}
-N 1460 -330 1590 -330 {
+N 1490 -330 1620 -330 {
 lab=V_OUT}
 C {devices/gnd.sym} 1050 -230 0 0 {name=l2 lab=GND}
 C {devices/vsource.sym} 420 -360 0 0 {name=Vdd value=1.8 savecurrent=false
@@ -95,7 +94,7 @@ value="
 
 
 "}
-C {devices/code.sym} 210 -408.75 0 0 {name=STIMULI only_toplevel=false value="
+C {devices/code.sym} 210 -408.75 0 0 {name=Testbench only_toplevel=false value="
 
 .option method=trap
 .option wnflag=1
@@ -132,9 +131,9 @@ C {devices/code.sym} 210 -408.75 0 0 {name=STIMULI only_toplevel=false value="
 "}
 C {devices/lab_pin.sym} 540 -430 0 1 {name=p1 sig_type=std_logic lab=V_CONT}
 C {devices/lab_wire.sym} 1210 -330 2 0 {name=p4 sig_type=std_logic lab=V_OSC}
-C {/foss/designs/my_design/projects/pll/vco/xschem_ngspice/current_starved_VCO9.sym} 1050 -330 0 0 {name=x1}
-C {devices/vdd.sym} 1390 -430 0 0 {name=l6 lab=VDD}
-C {devices/gnd.sym} 1390 -230 0 0 {name=l7 lab=GND}
-C {devices/lab_pin.sym} 1590 -330 0 1 {name=p3 sig_type=std_logic lab=V_OUT}
+C {/foss/designs/my_design/projects/pll/vco/xschem_ngspice/current_starved_VCO10.sym} 1050 -330 0 0 {name=x1}
+C {devices/vdd.sym} 1400 -420 0 0 {name=l6 lab=VDD}
+C {devices/gnd.sym} 1400 -240 0 0 {name=l7 lab=GND}
+C {devices/lab_pin.sym} 1620 -330 0 1 {name=p3 sig_type=std_logic lab=V_OUT}
 C {devices/vdd.sym} 1050 -470 0 0 {name=l1 lab=VDD}
-C {/foss/designs/my_design/projects/pll/divider/xschem_ngspice/TSPC_FF_ratioed_divide2.sym} 1390 -330 0 0 {name=x2}
+C {/foss/designs/my_design/projects/pll/divider/xschem_ngspice/divide_by_120/divide_by_120_xschem.sym} 1400 -330 0 0 {name=x2}

@@ -1,0 +1,60 @@
+** sch_path: /foss/designs/my_design/projects/pll/divider/magic/divide_by_120/tb_VCO_FD_kvco.sch
+**.subckt tb_VCO_FD_kvco
+VDD VDD GND 1.8
+V1 V_CONT GND 0.9
+x3 V_OUT120 V_OSC VDD GND TSPC_FF_ratioed_divide120_magic
+x2 VDD V_OSC V_CONT GND current_starved_VCO_magic
+**** begin user architecture code
+
+
+
+.include /foss/designs/my_design/projects/pll/vco/magic/current_starved_VCO_magic.spice
+.include /foss/designs/my_design/projects/pll/divider/magic/divide_by_120/TSPC_FF_ratioed_divide120_magic.spice
+
+.option method=gear
+.option wnflag=1
+
+.control
+
+  let v_cont_start = 0.0
+  let v_cont_stop = 1.9
+
+  dowhile v_cont_start <= v_cont_stop
+    alter v1 $&v_cont_start
+
+    save all
+    * save v(v_osc)
+    * save v(v_cont) v(v_osc) v(x2.v_out2) v(x2.v_out4) v(x2.v_out8) v(x2.v_out24) v(v_out120)  p(x1:power) p(x2:power)
+
+    * tran 5ps 40ns
+    tran 5ps 150ns
+
+    remzerovec
+
+    write tb_VCO_FD_kvco_{$&v_cont_start}.raw
+    * write tb_VCO_FD_kvco.raw
+
+    linearize v(v_osc)
+    * linearize v(v_cont) v(v_osc) v(x2.v_out2) v(x2.v_out4) v(x2.v_out8) v(x2.v_out24) v(v_out120)
+
+    let filename = v_cont_start * 100
+
+    wrdata /foss/designs/my_design/projects/pll/divider/magic/divide_by_120/tb_VCO_FD_kvco_{$&filename}.txt v(v_osc)
+    * wrdata /foss/designs/my_design/projects/pll/divider/magic/divide_by_120/tb_VCO_FD_kvco.txt v(v_osc)
+
+    set appendwrite
+
+    reset
+    let v_cont_start = v_cont_start + 0.1
+   end
+
+.endc
+
+
+
+.lib /foss/pdks/sky130A/libs.tech/combined/sky130.lib.spice tt
+**** end user architecture code
+**.ends
+.GLOBAL GND
+.GLOBAL VDD
+.end

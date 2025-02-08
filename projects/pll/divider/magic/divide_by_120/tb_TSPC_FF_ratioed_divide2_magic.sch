@@ -13,7 +13,7 @@ divy=5
 subdivy=4
 unity=1
 
-x2=2.0234866e-08
+x2=1.4152289e-08
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -44,17 +44,17 @@ linewidth_mult=2
 
 color=6
 node=vin
-x1=2.3486583e-10}
+x1=1.2004807e-08}
 B 2 80 -530 1130 -300 {flags=graph
-y1=-6e-15
-y2=1.2e-14
+y1=-0.16
+y2=2
 ypos1=0
 ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=0
-x2=2e-08
+x1=1.2004807e-08
+x2=1.4152289e-08
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -99,7 +99,16 @@ linewidth_mult=2
 
 
 
-}
+
+
+
+color="5 5 5 5 5 5"
+node="x1.vout.n0
+x1.vout.n1
+x1.vout.t0
+x1.vout.t1
+x1.vout.t2
+x1.vout.t3"}
 N 490 -940 490 -910 {
 lab=VIN}
 C {devices/vsource.sym} 390 -880 0 0 {name=VDD value=1.8 savecurrent=false}
@@ -116,7 +125,7 @@ C {devices/code.sym} 230 -940 0 0 {name=Testbench only_toplevel=false value="
   save all
   tran 5p 20n
   remzerovec
-  write tb_TSPC_FF_ratioed_divide2_magic_2.raw
+  write tb_TSPC_FF_ratioed_divide2_magic_3.raw
   set appendwrite
 .endc
 

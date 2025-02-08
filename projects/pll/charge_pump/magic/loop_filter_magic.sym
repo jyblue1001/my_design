@@ -1,0 +1,21 @@
+v {xschem version=3.4.6 file_version=1.2}
+G {}
+K {type=primitive
+format="@name @pinlist @symname"
+template="name=x1"
+}
+V {}
+S {}
+E {}
+L 4 -20 -60 -20 60 {}
+L 4 20 -60 20 60 {}
+L 4 -20 60 20 60 {}
+L 4 -20 -60 20 -60 {}
+L 4 0 60 0 80 {}
+L 7 0 -80 0 -60 {}
+B 5 -2.5 -82.5 2.5 -77.5 {name=VOUT dir=inout}
+B 5 -2.5 77.5 2.5 82.5 {name=GNDA dir=in}
+T {@symname} 31 -96 0 0 0.3 0.3 {}
+T {@name} 35 -72 0 0 0.2 0.2 {}
+T {VOUT} 16 -55 0 1 0.2 0.2 {}
+T {GNDA} -14 45 0 0 0.2 0.2 {}

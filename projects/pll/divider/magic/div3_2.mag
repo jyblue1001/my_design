@@ -1,6 +1,6 @@
 magic
 tech sky130A
-timestamp 1738354159
+timestamp 1738632674
 << nwell >>
 rect 585 105 1945 210
 << nmos >>
@@ -331,13 +331,12 @@ rect 1815 80 1830 100
 rect 1760 65 1830 80
 rect 1730 55 1770 65
 rect 1815 15 1830 65
-rect 1860 65 1975 75
+rect 1860 65 1900 75
 rect 1860 45 1870 65
-rect 1890 60 1975 65
-rect 1890 45 1900 60
+rect 1890 45 1900 65
 rect 1860 35 1900 45
 rect 645 -50 660 -35
-rect 700 -75 715 -35
+rect 700 -50 715 -35
 rect 755 -50 770 -35
 rect 920 -50 935 -35
 rect 975 -50 990 -35
@@ -351,8 +350,10 @@ rect 1580 -50 1595 -35
 rect 1635 -50 1650 -35
 rect 1690 -50 1705 -35
 rect 1815 -50 1830 -35
-rect 1885 -75 1900 35
-rect 700 -90 1900 -75
+rect 685 -60 725 -50
+rect 685 -80 695 -60
+rect 715 -80 725 -60
+rect 685 -90 725 -80
 << polycont >>
 rect 1410 205 1430 225
 rect 1145 140 1165 160
@@ -365,6 +366,7 @@ rect 1425 40 1445 60
 rect 1640 80 1660 100
 rect 1740 65 1760 85
 rect 1870 45 1890 65
+rect 695 -80 715 -60
 << locali >>
 rect 1400 225 1440 235
 rect 1400 205 1410 225
@@ -532,13 +534,15 @@ rect 1720 65 1740 85
 rect 1760 65 1770 85
 rect 1720 55 1770 65
 rect 1840 75 1860 130
-rect 1840 65 1900 75
+rect 1840 70 1905 75
+rect 1840 65 1945 70
 rect 1500 10 1520 30
 rect 1610 10 1630 30
 rect 1720 10 1740 55
 rect 1840 45 1870 65
-rect 1890 45 1900 65
-rect 1840 35 1900 45
+rect 1890 50 1945 65
+rect 1890 45 1905 50
+rect 1840 35 1905 45
 rect 1840 10 1860 35
 rect 1195 0 1245 10
 rect 1195 -20 1220 0
@@ -586,6 +590,12 @@ rect 1835 0 1865 10
 rect 1835 -20 1840 0
 rect 1860 -20 1865 0
 rect 1835 -30 1865 -20
+rect 1885 -50 1905 35
+rect 685 -60 1905 -50
+rect 685 -80 695 -60
+rect 715 -70 1905 -60
+rect 715 -80 725 -70
+rect 685 -90 725 -80
 << viali >>
 rect 670 140 690 160
 rect 850 140 870 160
@@ -628,17 +638,20 @@ rect 1805 -20 1945 0
 rect 585 -35 1945 -20
 << labels >>
 flabel metal1 585 150 585 150 7 FreeSans 160 0 -80 0 VDDA
+port 3 w
 flabel metal1 585 -10 585 -10 7 FreeSans 160 0 -80 0 GNDA
+port 4 w
 flabel poly 585 60 585 60 7 FreeSans 160 0 -80 0 VIN
+port 2 w
 flabel locali 680 50 680 50 1 FreeSans 160 0 0 80 CLK
 flabel locali 795 90 795 90 7 FreeSans 160 0 -80 0 A
 flabel locali 735 -30 735 -30 5 FreeSans 160 0 0 -80 B
 flabel locali 945 80 945 80 3 FreeSans 160 0 80 0 C
 flabel locali 1155 45 1155 45 3 FreeSans 160 0 0 0 D
 flabel locali 1740 160 1740 160 3 FreeSans 160 0 80 0 I
-flabel poly 1975 70 1975 70 3 FreeSans 160 0 80 0 VOUT
 flabel locali 1195 160 1195 160 7 FreeSans 160 0 -80 0 E
 flabel locali 1285 -30 1285 -30 5 FreeSans 160 0 0 -80 F
 flabel locali 1340 -30 1340 -30 5 FreeSans 160 0 0 -80 G
 flabel locali 1520 70 1520 70 3 FreeSans 160 0 80 0 H
+flabel locali 1945 60 1945 60 3 FreeSans 160 0 80 0 VOUT
 << end >>

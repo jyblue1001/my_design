@@ -1,0 +1,124 @@
+* PEX produced on Mon Feb  3 03:11:57 PM CET 2025 using /foss/tools/osic-multitool/iic-pex.sh with m=1 and s=1
+* NGSPICE file created from charge_pump_full_magic.ext - technology: sky130A
+
+.subckt charge_pump_full_magic VDDA V_OUT GNDA UP_PFD DOWN_PFD I_IN
+X0 GNDA DOWN_PFD a_1870_3900# GNDA sky130_fd_pr__nfet_01v8 ad=0.5 pd=3 as=0.5 ps=3 w=1 l=0.15
+X1 GNDA I_IN a_0_4990# GNDA sky130_fd_pr__nfet_01v8 ad=0.25 pd=1.5 as=0.25 ps=1.5 w=1 l=0.6
+X2 VDDA a_1710_3900# V_OUT VDDA sky130_fd_pr__pfet_01v8 ad=0.25 pd=1.5 as=0.25 ps=1.5 w=1 l=0.6
+X3 charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out charge_pump_full_5_0.opamp_cell_0.p_right GNDA GNDA sky130_fd_pr__nfet_01v8 ad=0.125 pd=1 as=0.125 ps=1 w=0.5 l=0.15
+X4 a_2870_3900# a_2580_3900# sky130_fd_pr__cap_mim_m3_1 l=2.6 w=2.6
+X5 a_1710_3900# a_1420_3900# sky130_fd_pr__cap_mim_m3_1 l=6 w=4.2
+X6 charge_pump_full_5_0.opamp_cell_0.v_common_p charge_pump_full_5_0.opamp_cell_0.p_bias VDDA VDDA sky130_fd_pr__pfet_01v8 ad=0.625 pd=3 as=0.625 ps=3 w=2.5 l=0.5
+X7 a_1130_3900# a_840_3900# GNDA GNDA sky130_fd_pr__nfet_01v8 ad=0.5 pd=3 as=0.5 ps=3 w=1 l=0.15
+X8 a_2870_3900# a_2580_3900# I_IN GNDA sky130_fd_pr__nfet_01v8 ad=0.5 pd=3 as=0.5 ps=3 w=1 l=0.15
+X9 V_OUT a_1710_3900# VDDA VDDA sky130_fd_pr__pfet_01v8 ad=0.25 pd=1.5 as=0.25 ps=1.5 w=1 l=0.6
+X10 V_OUT a_1710_3900# VDDA VDDA sky130_fd_pr__pfet_01v8 ad=0.25 pd=1.5 as=0.25 ps=1.5 w=1 l=0.6
+X11 a_0_4990# I_IN GNDA GNDA sky130_fd_pr__nfet_01v8 ad=0.25 pd=1.5 as=0.25 ps=1.5 w=1 l=0.6
+X12 charge_pump_full_5_0.opamp_cell_0.v_common_p a_0_4990# charge_pump_full_5_0.opamp_cell_0.p_right VDDA sky130_fd_pr__pfet_01v8 ad=0.5 pd=3 as=0.25 ps=1.5 w=1 l=0.15
+X13 VDDA a_1710_3900# V_OUT VDDA sky130_fd_pr__pfet_01v8 ad=0.25 pd=1.5 as=0.25 ps=1.5 w=1 l=0.6
+X14 charge_pump_full_5_0.opamp_cell_0.n_left charge_pump_full_5_0.opamp_cell_0.n_left VDDA VDDA sky130_fd_pr__pfet_01v8 ad=0.5 pd=3 as=0.25 ps=1.5 w=1 l=0.15
+X15 a_1710_3900# a_1420_3900# charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out VDDA sky130_fd_pr__pfet_01v8 ad=1 pd=5 as=1 ps=5 w=2 l=0.15
+X16 charge_pump_full_5_0.opamp_cell_0.p_left charge_pump_full_5_0.opamp_cell_0.p_left GNDA GNDA sky130_fd_pr__nfet_01v8 ad=0.25 pd=2 as=0.125 ps=1 w=0.5 l=0.15
+X17 charge_pump_full_5_0.opamp_cell_0.n_right a_8046_2450# GNDA sky130_fd_pr__res_xhigh_po_0p35 l=1.14
+X18 a_0_4990# charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out VDDA VDDA sky130_fd_pr__pfet_01v8 ad=0.25 pd=1.5 as=0.25 ps=1.5 w=1 l=0.6
+X19 charge_pump_full_5_0.opamp_cell_0.v_common_n a_0_4990# charge_pump_full_5_0.opamp_cell_0.n_right GNDA sky130_fd_pr__nfet_01v8 ad=0.25 pd=2 as=0.125 ps=1 w=0.5 l=0.15
+X20 V_OUT a_1710_3900# VDDA VDDA sky130_fd_pr__pfet_01v8 ad=0.25 pd=1.5 as=0.25 ps=1.5 w=1 l=0.6
+X21 a_840_3900# UP_PFD VDDA VDDA sky130_fd_pr__pfet_01v8 ad=1 pd=5 as=1 ps=5 w=2 l=0.15
+X22 a_2580_3900# a_2290_3900# VDDA VDDA sky130_fd_pr__pfet_01v8 ad=1 pd=5 as=1 ps=5 w=2 l=0.15
+X23 charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out a_5120_2450# sky130_fd_pr__cap_mim_m3_1 l=10 w=10
+X24 VDDA charge_pump_full_5_0.opamp_cell_0.n_left charge_pump_full_5_0.opamp_cell_0.n_right VDDA sky130_fd_pr__pfet_01v8 ad=0.25 pd=1.5 as=0.25 ps=1.5 w=1 l=0.15
+X25 charge_pump_full_5_0.opamp_cell_0.n_bias charge_pump_full_5_0.opamp_cell_0.n_bias GNDA GNDA sky130_fd_pr__nfet_01v8 ad=1.25 pd=6 as=0.625 ps=3 w=2.5 l=0.5
+X26 VDDA charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out a_0_4990# VDDA sky130_fd_pr__pfet_01v8 ad=0.25 pd=1.5 as=0.5 ps=3 w=1 l=0.6
+X27 I_IN I_IN GNDA GNDA sky130_fd_pr__nfet_01v8 ad=0.5 pd=3 as=0.25 ps=1.5 w=1 l=0.6
+X28 charge_pump_full_5_0.opamp_cell_0.p_bias charge_pump_full_5_0.opamp_cell_0.p_bias VDDA VDDA sky130_fd_pr__pfet_01v8 ad=0.625 pd=3 as=0.625 ps=3 w=2.5 l=0.5
+X29 charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out charge_pump_full_5_0.opamp_cell_0.n_right VDDA VDDA sky130_fd_pr__pfet_01v8 ad=0.5 pd=3 as=0.25 ps=1.5 w=1 l=0.15
+X30 charge_pump_full_5_0.opamp_cell_0.n_right a_0_4990# charge_pump_full_5_0.opamp_cell_0.v_common_n GNDA sky130_fd_pr__nfet_01v8 ad=0.125 pd=1 as=0.125 ps=1 w=0.5 l=0.15
+X31 V_OUT a_2870_3900# GNDA GNDA sky130_fd_pr__nfet_01v8 ad=0.5 pd=3 as=0.25 ps=1.5 w=1 l=0.6
+X32 charge_pump_full_5_0.opamp_cell_0.p_bias charge_pump_full_5_0.opamp_cell_0.n_bias GNDA sky130_fd_pr__res_xhigh_po_2p85 l=0.51
+X33 VDDA a_1710_3900# V_OUT VDDA sky130_fd_pr__pfet_01v8 ad=0.25 pd=1.5 as=0.5 ps=3 w=1 l=0.6
+X34 charge_pump_full_5_0.opamp_cell_0.v_common_p charge_pump_full_5_0.opamp_cell_0.p_bias VDDA VDDA sky130_fd_pr__pfet_01v8 ad=0.625 pd=3 as=0.625 ps=3 w=2.5 l=0.5
+X35 a_1710_3900# a_1130_3900# charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out GNDA sky130_fd_pr__nfet_01v8 ad=0.5 pd=3 as=0.5 ps=3 w=1 l=0.15
+X36 GNDA charge_pump_full_5_0.opamp_cell_0.n_bias charge_pump_full_5_0.opamp_cell_0.n_bias GNDA sky130_fd_pr__nfet_01v8 ad=0.625 pd=3 as=1.25 ps=6 w=2.5 l=0.5
+X37 charge_pump_full_5_0.opamp_cell_0.p_bias charge_pump_full_5_0.opamp_cell_0.p_bias VDDA VDDA sky130_fd_pr__pfet_01v8 ad=1.25 pd=6 as=0.625 ps=3 w=2.5 l=0.5
+X38 GNDA I_IN I_IN GNDA sky130_fd_pr__nfet_01v8 ad=0.25 pd=1.5 as=0.25 ps=1.5 w=1 l=0.6
+X39 GNDA charge_pump_full_5_0.opamp_cell_0.n_bias charge_pump_full_5_0.opamp_cell_0.v_common_n GNDA sky130_fd_pr__nfet_01v8 ad=0.625 pd=3 as=0.625 ps=3 w=2.5 l=0.5
+X40 a_840_3900# UP_PFD GNDA GNDA sky130_fd_pr__nfet_01v8 ad=0.5 pd=3 as=0.5 ps=3 w=1 l=0.15
+X41 a_2580_3900# a_2290_3900# GNDA GNDA sky130_fd_pr__nfet_01v8 ad=0.5 pd=3 as=0.5 ps=3 w=1 l=0.15
+X42 charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out charge_pump_full_5_0.opamp_cell_0.p_right GNDA GNDA sky130_fd_pr__nfet_01v8 ad=0.25 pd=2 as=0.125 ps=1 w=0.5 l=0.15
+X43 GNDA a_2870_3900# V_OUT GNDA sky130_fd_pr__nfet_01v8 ad=0.25 pd=1.5 as=0.25 ps=1.5 w=1 l=0.6
+X44 VDDA charge_pump_full_5_0.opamp_cell_0.p_bias charge_pump_full_5_0.opamp_cell_0.p_bias VDDA sky130_fd_pr__pfet_01v8 ad=0.625 pd=3 as=1.25 ps=6 w=2.5 l=0.5
+X45 charge_pump_full_5_0.opamp_cell_0.p_right a_0_4990# charge_pump_full_5_0.opamp_cell_0.v_common_p VDDA sky130_fd_pr__pfet_01v8 ad=0.25 pd=1.5 as=0.25 ps=1.5 w=1 l=0.15
+X46 I_IN I_IN GNDA GNDA sky130_fd_pr__nfet_01v8 ad=0.25 pd=1.5 as=0.25 ps=1.5 w=1 l=0.6
+X47 VDDA charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out a_0_4990# VDDA sky130_fd_pr__pfet_01v8 ad=0.25 pd=1.5 as=0.25 ps=1.5 w=1 l=0.6
+X48 a_0_4990# charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out VDDA VDDA sky130_fd_pr__pfet_01v8 ad=0.5 pd=3 as=0.25 ps=1.5 w=1 l=0.6
+X49 VDDA charge_pump_full_5_0.opamp_cell_0.p_bias charge_pump_full_5_0.opamp_cell_0.v_common_p VDDA sky130_fd_pr__pfet_01v8 ad=0.625 pd=3 as=0.625 ps=3 w=2.5 l=0.5
+X50 GNDA charge_pump_full_5_0.opamp_cell_0.p_left charge_pump_full_5_0.opamp_cell_0.p_right GNDA sky130_fd_pr__nfet_01v8 ad=0.125 pd=1 as=0.125 ps=1 w=0.5 l=0.15
+X51 GNDA V_OUT sky130_fd_pr__cap_mim_m3_1 l=60 w=13.8
+X52 GNDA a_15082_6070# sky130_fd_pr__cap_mim_m3_1 l=60 w=69.8
+X53 V_OUT a_15082_6070# GNDA sky130_fd_pr__res_xhigh_po_0p35 l=7.52
+X54 GNDA I_IN I_IN GNDA sky130_fd_pr__nfet_01v8 ad=0.25 pd=1.5 as=0.5 ps=3 w=1 l=0.6
+X55 charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out a_8046_2450# sky130_fd_pr__cap_mim_m3_1 l=10 w=10
+X56 a_0_4990# charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out VDDA VDDA sky130_fd_pr__pfet_01v8 ad=0.25 pd=1.5 as=0.25 ps=1.5 w=1 l=0.6
+X57 a_1420_3900# a_1130_3900# VDDA VDDA sky130_fd_pr__pfet_01v8 ad=1 pd=5 as=1 ps=5 w=2 l=0.15
+X58 V_OUT a_1710_3900# VDDA VDDA sky130_fd_pr__pfet_01v8 ad=0.5 pd=3 as=0.25 ps=1.5 w=1 l=0.6
+X59 a_2290_3900# GNDA a_1870_3900# VDDA sky130_fd_pr__pfet_01v8 ad=1 pd=5 as=1 ps=5 w=2 l=0.15
+X60 charge_pump_full_5_0.opamp_cell_0.v_common_p V_OUT charge_pump_full_5_0.opamp_cell_0.p_left VDDA sky130_fd_pr__pfet_01v8 ad=0.25 pd=1.5 as=0.25 ps=1.5 w=1 l=0.15
+X61 VDDA charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out a_0_4990# VDDA sky130_fd_pr__pfet_01v8 ad=0.25 pd=1.5 as=0.25 ps=1.5 w=1 l=0.6
+X62 charge_pump_full_5_0.opamp_cell_0.n_right charge_pump_full_5_0.opamp_cell_0.n_left VDDA VDDA sky130_fd_pr__pfet_01v8 ad=0.25 pd=1.5 as=0.25 ps=1.5 w=1 l=0.15
+X63 a_1710_3900# a_1130_3900# VDDA VDDA sky130_fd_pr__pfet_01v8 ad=1 pd=5 as=1 ps=5 w=2 l=0.15
+X64 VDDA charge_pump_full_5_0.opamp_cell_0.n_right charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out VDDA sky130_fd_pr__pfet_01v8 ad=0.25 pd=1.5 as=0.5 ps=3 w=1 l=0.15
+X65 charge_pump_full_5_0.opamp_cell_0.p_right charge_pump_full_5_0.opamp_cell_0.p_left GNDA GNDA sky130_fd_pr__nfet_01v8 ad=0.125 pd=1 as=0.125 ps=1 w=0.5 l=0.15
+X66 VDDA a_1710_3900# V_OUT VDDA sky130_fd_pr__pfet_01v8 ad=0.25 pd=1.5 as=0.25 ps=1.5 w=1 l=0.6
+X67 VDDA DOWN_PFD a_1870_3900# VDDA sky130_fd_pr__pfet_01v8 ad=1 pd=5 as=1 ps=5 w=2 l=0.15
+X68 charge_pump_full_5_0.opamp_cell_0.v_common_n V_OUT charge_pump_full_5_0.opamp_cell_0.n_left GNDA sky130_fd_pr__nfet_01v8 ad=0.125 pd=1 as=0.125 ps=1 w=0.5 l=0.15
+X69 a_0_4990# charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out VDDA VDDA sky130_fd_pr__pfet_01v8 ad=0.25 pd=1.5 as=0.25 ps=1.5 w=1 l=0.6
+X70 charge_pump_full_5_0.opamp_cell_0.p_left V_OUT charge_pump_full_5_0.opamp_cell_0.v_common_p VDDA sky130_fd_pr__pfet_01v8 ad=0.25 pd=1.5 as=0.5 ps=3 w=1 l=0.15
+X71 VDDA charge_pump_full_5_0.opamp_cell_0.n_right charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out VDDA sky130_fd_pr__pfet_01v8 ad=0.25 pd=1.5 as=0.25 ps=1.5 w=1 l=0.15
+X72 GNDA charge_pump_full_5_0.opamp_cell_0.p_right charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out GNDA sky130_fd_pr__nfet_01v8 ad=0.125 pd=1 as=0.25 ps=2 w=0.5 l=0.15
+X73 a_5120_2450# charge_pump_full_5_0.opamp_cell_0.p_right GNDA sky130_fd_pr__res_xhigh_po_0p35 l=0.86
+X74 a_1130_3900# a_840_3900# VDDA VDDA sky130_fd_pr__pfet_01v8 ad=1 pd=5 as=1 ps=5 w=2 l=0.15
+X75 a_2870_3900# a_2290_3900# I_IN VDDA sky130_fd_pr__pfet_01v8 ad=1 pd=5 as=1 ps=5 w=2 l=0.15
+X76 VDDA charge_pump_full_5_0.opamp_cell_0.n_left charge_pump_full_5_0.opamp_cell_0.n_left VDDA sky130_fd_pr__pfet_01v8 ad=0.25 pd=1.5 as=0.5 ps=3 w=1 l=0.15
+X77 GNDA I_IN a_0_4990# GNDA sky130_fd_pr__nfet_01v8 ad=0.25 pd=1.5 as=0.5 ps=3 w=1 l=0.6
+X78 V_OUT a_2870_3900# GNDA GNDA sky130_fd_pr__nfet_01v8 ad=0.25 pd=1.5 as=0.25 ps=1.5 w=1 l=0.6
+X79 a_1420_3900# a_1130_3900# GNDA GNDA sky130_fd_pr__nfet_01v8 ad=0.5 pd=3 as=0.5 ps=3 w=1 l=0.15
+X80 GNDA charge_pump_full_5_0.opamp_cell_0.p_left charge_pump_full_5_0.opamp_cell_0.p_left GNDA sky130_fd_pr__nfet_01v8 ad=0.125 pd=1 as=0.25 ps=2 w=0.5 l=0.15
+X81 GNDA charge_pump_full_5_0.opamp_cell_0.p_right charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out GNDA sky130_fd_pr__nfet_01v8 ad=0.125 pd=1 as=0.125 ps=1 w=0.5 l=0.15
+X82 a_2290_3900# VDDA a_1870_3900# GNDA sky130_fd_pr__nfet_01v8 ad=0.5 pd=3 as=0.5 ps=3 w=1 l=0.15
+X83 GNDA a_2870_3900# V_OUT GNDA sky130_fd_pr__nfet_01v8 ad=0.25 pd=1.5 as=0.5 ps=3 w=1 l=0.6
+X84 VDDA charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out a_0_4990# VDDA sky130_fd_pr__pfet_01v8 ad=0.25 pd=1.5 as=0.25 ps=1.5 w=1 l=0.6
+X85 VDDA charge_pump_full_5_0.opamp_cell_0.p_bias charge_pump_full_5_0.opamp_cell_0.p_bias VDDA sky130_fd_pr__pfet_01v8 ad=0.625 pd=3 as=0.625 ps=3 w=2.5 l=0.5
+X86 charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out charge_pump_full_5_0.opamp_cell_0.n_right VDDA VDDA sky130_fd_pr__pfet_01v8 ad=0.25 pd=1.5 as=0.25 ps=1.5 w=1 l=0.15
+X87 charge_pump_full_5_0.opamp_cell_0.n_left V_OUT charge_pump_full_5_0.opamp_cell_0.v_common_n GNDA sky130_fd_pr__nfet_01v8 ad=0.125 pd=1 as=0.25 ps=2 w=0.5 l=0.15
+X88 a_0_4990# I_IN GNDA GNDA sky130_fd_pr__nfet_01v8 ad=0.5 pd=3 as=0.25 ps=1.5 w=1 l=0.6
+X89 VDDA charge_pump_full_5_0.opamp_cell_0.p_bias charge_pump_full_5_0.opamp_cell_0.v_common_p VDDA sky130_fd_pr__pfet_01v8 ad=0.625 pd=3 as=0.625 ps=3 w=2.5 l=0.5
+X90 a_2870_3900# a_2290_3900# GNDA GNDA sky130_fd_pr__nfet_01v8 ad=0.5 pd=3 as=0.5 ps=3 w=1 l=0.15
+X91 charge_pump_full_5_0.opamp_cell_0.v_common_n charge_pump_full_5_0.opamp_cell_0.n_bias GNDA GNDA sky130_fd_pr__nfet_01v8 ad=0.625 pd=3 as=0.625 ps=3 w=2.5 l=0.5
+C0 I_IN GNDA 4.48381f
+C1 DOWN_PFD GNDA 1.57358f
+C2 UP_PFD GNDA 0.789531f
+C3 V_OUT GNDA 28.6447f
+C4 VDDA GNDA 34.1862f
+C5 a_8046_2450# GNDA 4.15769f
+C6 a_5120_2450# GNDA 4.04936f
+C7 charge_pump_full_5_0.opamp_cell_0.n_bias GNDA 3.09378f
+C8 charge_pump_full_5_0.opamp_cell_0.v_common_n GNDA 1.01377f
+C9 charge_pump_full_5_0.opamp_cell_0.p_right GNDA 4.3782f
+C10 charge_pump_full_5_0.opamp_cell_0.p_left GNDA 1.30068f
+C11 charge_pump_full_5_0.opamp_cell_0.n_right GNDA 3.52016f
+C12 charge_pump_full_5_0.opamp_cell_0.n_left GNDA 1.34181f
+C13 charge_pump_full_5_0.opamp_cell_0.v_common_p GNDA 1.67291f
+C14 charge_pump_full_5_0.opamp_cell_0.p_bias GNDA 5.67183f
+C15 a_2870_3900# GNDA 4.94656f
+C16 a_2580_3900# GNDA 4.22468f
+C17 a_1870_3900# GNDA 0.97085f
+C18 a_2290_3900# GNDA 2.00305f
+C19 a_1420_3900# GNDA 5.84728f
+C20 a_840_3900# GNDA 0.840869f
+C21 a_1130_3900# GNDA 2.33464f
+C22 a_1710_3900# GNDA 6.59777f
+C23 charge_pump_full_5_0.charge_pump_cell_0.OPAMP_out GNDA 11.4599f
+C24 a_0_4990# GNDA 10.6656f
+C25 a_15082_6070# GNDA 64.0392f
+.ends
+

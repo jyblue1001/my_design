@@ -12,8 +12,8 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=1.9517391e-08
-x2=2.381236e-08
+x1=1.2681753e-08
+x2=1.7522917e-08
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -45,15 +45,15 @@ linewidth_mult=3
 color=6
 node=vin}
 B 2 40 -540 1090 -310 {flags=graph
-y1=0.093
+y1=-0.012
 y2=1.9
 ypos1=0
 ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=1.9517391e-08
-x2=2.381236e-08
+x1=1.2681753e-08
+x2=1.7522917e-08
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -75,54 +75,9 @@ logy=0
 
 
 
-linewidth_mult=3
+linewidth_mult=1
 
 
-
-
-
-
-
-
-
-
-
-
-
-color=12
-node=x1.q2_b}
-B 2 40 -290 1090 -60 {flags=graph
-y1=-0.26
-y2=1.9
-ypos1=0
-ypos2=2
-divy=5
-subdivy=4
-unity=1
-x1=1.9517391e-08
-x2=2.381236e-08
-divx=5
-subdivx=4
-xlabmag=1.0
-ylabmag=1.0
-
-
-dataset=-1
-unitx=1
-logx=0
-logy=0
-
-
-
-
-
-
-
-
-
-
-
-linewidth_mult=3
 
 
 
@@ -137,12 +92,71 @@ linewidth_mult=3
 
 
 color=5
-node=vout}
+node=x1.q2_b.n0}
+B 2 40 -290 1090 -60 {flags=graph
+y1=-0.11
+y2=1.9
+ypos1=0
+ypos2=2
+divy=5
+subdivy=4
+unity=1
+x1=1.2681753e-08
+x2=1.7522917e-08
+divx=5
+subdivx=4
+xlabmag=1.0
+ylabmag=1.0
+
+
+dataset=-1
+unitx=1
+logx=0
+logy=0
+
+
+
+
+
+
+
+
+
+
+
+linewidth_mult=1
+
+
+
+
+
+
+
+
+
+
+
+
+
+color="5 5 5 5 5 5 5 5 5 5 5"
+node="vout
+x1.vout.t5
+x1.vout.t4
+x1.vout.t3
+x1.vout.t2
+x1.vout.t1
+x1.vout.t0
+x1.vout.n3
+x1.vout.n2
+x1.vout.n1
+x1.vout.n0"}
 N 500 -950 500 -920 {
 lab=VIN}
 C {devices/vsource.sym} 410 -890 0 0 {name=VDD value=1.8 savecurrent=false}
 C {devices/gnd.sym} 410 -860 0 0 {name=l1 lab=GND}
 C {devices/code.sym} 220 -950 0 0 {name=Testbench only_toplevel=false value="
+
+.include /foss/designs/my_design/projects/pll/divider/magic/divide_by_120/TSPC_FF_ratioed_divide5_magic.spice
 
 .option method=gear
 .option wnflag=1
@@ -152,7 +166,7 @@ C {devices/code.sym} 220 -950 0 0 {name=Testbench only_toplevel=false value="
   save all
   tran 5p 40n
   remzerovec
-  write tb_TSPC_FF_ratioed_divide5_3.raw
+  write tb_TSPC_FF_ratioed_divide5_magic.raw
   set appendwrite
 
 .endc

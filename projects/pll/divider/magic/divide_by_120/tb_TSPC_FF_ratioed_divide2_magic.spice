@@ -17,7 +17,7 @@ x1 VOUT VIN VDD GND TSPC_FF_ratioed_divide2_magic
   save all
   tran 5p 20n
   remzerovec
-  write tb_TSPC_FF_ratioed_divide2_magic_2.raw
+  write tb_TSPC_FF_ratioed_divide2_magic_3.raw
   set appendwrite
 .endc
 

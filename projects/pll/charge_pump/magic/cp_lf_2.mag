@@ -1,0 +1,35 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1738592535
+<< poly >>
+rect -40 4220 80 4250
+rect -40 3790 80 3820
+<< locali >>
+rect 4820 6260 4860 6300
+rect -40 3320 130 3360
+<< metal1 >>
+rect -40 4360 60 5630
+rect -40 3390 70 4100
+use charge_pump_full_5  charge_pump_full_5_0
+timestamp 1738592247
+transform 1 0 -12100 0 1 6140
+box 12100 -6140 21260 -30
+use loop_filter  loop_filter_0
+timestamp 1738592334
+transform 1 0 -1020 0 -1 6991
+box 2260 -11950 19440 890
+<< labels >>
+flabel metal1 -40 5000 -40 5000 7 FreeSans 800 0 -400 0 VDDA
+port 1 w
+flabel metal1 -40 3540 -40 3540 7 FreeSans 800 0 -400 0 GNDA
+port 3 w
+flabel locali -40 3340 -40 3340 7 FreeSans 800 0 -400 0 I_IN
+port 6 w
+flabel poly -40 4240 -40 4240 7 FreeSans 800 0 -400 0 UP_PFD
+port 4 w
+flabel poly -40 3810 -40 3810 7 FreeSans 800 0 -400 0 DOWN_PFD
+port 5 w
+flabel locali 4860 6280 4860 6280 3 FreeSans 1600 90 800 0 V_OUT
+port 2 n
+<< end >>

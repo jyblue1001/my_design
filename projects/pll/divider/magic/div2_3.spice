@@ -1,6 +1,6 @@
 * SPICE3 file created from div2_3.ext - technology: sky130A
 
-.subckt div2_3
+.subckt div2_3 VOUT VIN VDDA GNDA
 X0 VOUT C GNDA GNDA sky130_fd_pr__nfet_01v8 ad=0.2 pd=1.8 as=0.1 ps=0.9 w=0.5 l=0.15
 X1 VOUT CLK VDDA VDDA sky130_fd_pr__pfet_01v8 ad=0.2 pd=1.8 as=0.2 ps=1.8 w=0.5 l=0.15
 X2 C CLK GNDA GNDA sky130_fd_pr__nfet_01v8 ad=0.1 pd=0.9 as=0.1 ps=0.9 w=0.5 l=0.15

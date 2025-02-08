@@ -1,6 +1,6 @@
 magic
 tech sky130A
-timestamp 1738244200
+timestamp 1738592247
 << poly >>
 rect 6050 -100 8405 -85
 rect 6050 -560 6065 -100
@@ -34,6 +34,8 @@ rect 8570 -870 8580 -850
 rect 8600 -870 8610 -850
 rect 8570 -880 8610 -870
 rect 8430 -890 8470 -880
+rect 6080 -960 6090 -945
+rect 6085 -1175 6090 -1160
 << polycont >>
 rect 6100 -565 6120 -545
 rect 8170 -590 8190 -570
@@ -42,7 +44,6 @@ rect 8580 -590 8600 -570
 rect 8440 -880 8460 -860
 rect 8580 -870 8600 -850
 << locali >>
-rect 8440 -35 9195 -15
 rect 6090 -545 6130 -535
 rect 6090 -565 6100 -545
 rect 6120 -555 6130 -545
@@ -56,8 +57,9 @@ rect 8325 -570 8365 -560
 rect 8325 -590 8335 -570
 rect 8355 -590 8365 -570
 rect 8325 -600 8365 -590
+rect 6085 -1410 6115 -1390
 rect 8335 -1950 8355 -600
-rect 8440 -850 8460 -35
+rect 8440 -850 8460 -15
 rect 8570 -570 8610 -560
 rect 8570 -590 8580 -570
 rect 8600 -590 8610 -570
@@ -85,12 +87,21 @@ timestamp 1738241744
 transform 1 0 -2540 0 1 -2680
 box 8630 -35 10885 2425
 use opamp_cell  opamp_cell_0
-timestamp 1738242334
+timestamp 1738585014
 transform 1 0 4730 0 1 -3070
-box 3660 -1 5900 2750
+box 3660 0 5900 2750
 << labels >>
-flabel locali 9195 -25 9195 -25 3 FreeSans 400 0 200 0 VOUT
 flabel metal1 6080 -655 6080 -655 7 FreeSans 400 0 -200 0 VDDA
+port 2 w
 flabel metal1 6085 -1210 6085 -1210 7 FreeSans 400 0 -200 0 GNDA
+port 3 w
 flabel space 6190 -505 6190 -505 7 FreeSans 400 0 -200 0 x
+flabel poly 6080 -950 6080 -950 7 FreeSans 400 0 -200 0 UP_PFD
+port 4 w
+flabel poly 6085 -1165 6085 -1165 7 FreeSans 400 0 -200 0 DOWN_PFD
+port 5 w
+flabel locali 6085 -1400 6085 -1400 7 FreeSans 400 0 -200 0 I_IN
+port 6 w
+flabel locali 8460 -25 8460 -25 3 FreeSans 400 0 200 0 VOUT
+port 1 e
 << end >>

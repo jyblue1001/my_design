@@ -12,8 +12,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=5.5924347e-07
-x2=5.670773e-07
+x1=5.1004165e-07
+x2=5.1742034e-07
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -41,8 +41,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=5.5924347e-07
-x2=5.670773e-07
+x1=5.1004165e-07
+x2=5.1742034e-07
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -62,8 +62,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=5.5924347e-07
-x2=5.670773e-07
+x1=5.1004165e-07
+x2=5.1742034e-07
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -83,8 +83,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=5.5924347e-07
-x2=5.670773e-07
+x1=5.1004165e-07
+x2=5.1742034e-07
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -115,8 +115,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=5.5924347e-07
-x2=5.670773e-07
+x1=5.1004165e-07
+x2=5.1742034e-07
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -144,8 +144,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=5.5924347e-07
-x2=5.670773e-07
+x1=5.1004165e-07
+x2=5.1742034e-07
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -168,8 +168,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=0.0096086e-06
-x2=0.01651e-06
+x1=5.1004165e-07
+x2=5.1742034e-07
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -194,8 +194,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=0.0096086e-06
-x2=0.01651e-06
+x1=5.1004165e-07
+x2=5.1742034e-07
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -221,8 +221,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=0.0096086e-06
-x2=0.01651e-06
+x1=5.1004165e-07
+x2=5.1742034e-07
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -280,11 +280,11 @@ C {devices/code.sym} 230 -388.75 0 0 {name=STIMULI only_toplevel=false value="
 
   tran 1ns 1us
   remzerovec
-  write tb_phase_frequency_detector.raw
-  * write tb_phase_frequency_detector_2.raw
-  linearize v(qa) v(qb)
-  wrdata /foss/designs/my_design/projects/pll/pfd/xschem_ngspice/tb_phase_frequency_detector_QA.txt v(qa)
-  wrdata /foss/designs/my_design/projects/pll/pfd/xschem_ngspice/tb_phase_frequency_detector_QB.txt v(qb)
+  * write tb_phase_frequency_detector.raw
+  write tb_phase_frequency_detector_2.raw
+  * linearize v(qa) v(qb)
+  * wrdata /foss/designs/my_design/projects/pll/pfd/xschem_ngspice/tb_phase_frequency_detector_QA.txt v(qa)
+  * wrdata /foss/designs/my_design/projects/pll/pfd/xschem_ngspice/tb_phase_frequency_detector_QB.txt v(qb)
  
   set appendwrite
 
@@ -302,7 +302,7 @@ C {devices/lab_pin.sym} 290 -180 0 1 {name=p14 sig_type=std_logic lab=F_VCO}
 C {devices/vsource.sym} 70 -320 0 0 {name=VDD value=1.8 savecurrent=false}
 C {devices/gnd.sym} 70 -290 0 0 {name=l2 lab=GND}
 C {devices/lab_pin.sym} 70 -390 0 1 {name=p15 sig_type=std_logic lab=VDDA}
-C {/foss/designs/my_design/projects/pll/pfd/xschem_ngspice/phase_frequency_detector.sym} 810 -310 0 0 {name=x1}
+C {/foss/designs/my_design/projects/pll/pfd/xschem_ngspice/phase_frequency_detector_5.sym} 810 -310 0 0 {name=x1}
 C {devices/lab_pin.sym} 660 -330 0 0 {name=p1 lab=F_REF}
 C {devices/lab_pin.sym} 660 -290 0 0 {name=p2 lab=F_VCO}
 C {devices/lab_pin.sym} 810 -370 0 0 {name=p3 lab=VDDA}

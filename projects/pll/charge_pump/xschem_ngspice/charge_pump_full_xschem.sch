@@ -694,6 +694,6 @@ C {devices/lab_pin.sym} 1920 -370 0 1 {name=p14 sig_type=std_logic lab=GNDA}
 C {devices/lab_pin.sym} 1920 -1430 0 1 {name=p16 sig_type=std_logic lab=VDDA}
 C {devices/lab_pin.sym} 1920 -1510 0 1 {name=p17 sig_type=std_logic lab=GNDA}
 C {devices/lab_wire.sym} 440 -670 2 0 {name=p1 sig_type=std_logic lab=DOWN_b_b}
-C {rail_to_rail_opamp6_2.sym} 1340 -980 3 0 {name=x1}
 C {devices/lab_pin.sym} 1270 -980 0 0 {name=p4 sig_type=std_logic lab=VDDA}
 C {devices/lab_pin.sym} 1410 -980 0 1 {name=p20 sig_type=std_logic lab=GNDA}
+C {/foss/designs/my_design/projects/pll/charge_pump/xschem_ngspice/rail_to_rail_opamp6_2.sym} 1340 -980 3 0 {name=x1}

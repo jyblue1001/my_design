@@ -12,8 +12,8 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=1.9517391e-08
-x2=2.381236e-08
+x1=0
+x2=4e-08
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -52,8 +52,8 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=1.9517391e-08
-x2=2.381236e-08
+x1=0
+x2=4e-08
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -99,8 +99,8 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=1.9517391e-08
-x2=2.381236e-08
+x1=0
+x2=4e-08
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -122,7 +122,7 @@ logy=0
 
 
 
-linewidth_mult=3
+linewidth_mult=1
 
 
 
@@ -169,5 +169,5 @@ C {devices/vsource.sym} 500 -890 0 0 {name=V1 value="pulse(0 1.8 0ps 8.34ps 8.34
 * "pulse(0 1.8 12.5ns 0.5ns 0.5ns 12ns 25ns)"
 * "pulse(0 1.8 0ps 16.68ps 16.68ps 408.32ps 834ps)"
 * "pulse(0 1.8 0ps 20ps 20ps 480ps 1000ps)"}
-C {TSPC_FF_ratioed_divide5.sym} 910 -900 0 0 {name=x1}
 C {devices/lab_pin.sym} 990 -900 0 1 {name=p1 sig_type=std_logic lab=VOUT}
+C {/foss/designs/my_design/projects/pll/divider/xschem_ngspice/TSPC_FF_ratioed_divide5_3.sym} 910 -900 0 0 {name=x1}
