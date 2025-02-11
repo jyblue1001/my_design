@@ -38,10 +38,8 @@ N 1890 -1470 2270 -1470 {
 lab=UP_input}
 N 1800 -830 1860 -830 {
 lab=DOWN}
-N 1710 -830 1800 -830 {
-lab=DOWN}
 N 1800 -1140 1860 -1140 {
-lab=#net1}
+lab=UP_b}
 N 940 -610 940 -390 {
 lab=I_IN}
 N 940 -670 940 -610 {
@@ -57,9 +55,9 @@ lab=GNDA}
 N 1090 -490 1090 -360 {
 lab=I_IN}
 N 1860 -1140 2000 -1140 {
-lab=#net1}
+lab=UP_b}
 N 2000 -1270 2000 -1140 {
-lab=#net1}
+lab=UP_b}
 N 2000 -1470 2000 -1330 {
 lab=UP_input}
 N 2000 -830 2000 -690 {
@@ -203,12 +201,12 @@ C {devices/lab_wire.sym} 2120 -1470 2 0 {name=p41 sig_type=std_logic lab=UP_inpu
 C {devices/lab_wire.sym} 2230 -490 0 0 {name=p42 sig_type=std_logic lab=DOWN_input}
 C {devices/lab_wire.sym} 1440 -1470 0 0 {name=p43 sig_type=std_logic lab=opamp_out}
 C {devices/lab_wire.sym} 940 -1310 0 1 {name=p44 sig_type=std_logic lab=I_IN}
-C {devices/lab_wire.sym} 1860 -830 0 1 {name=p45 sig_type=std_logic lab=DOWN}
+C {devices/lab_wire.sym} 1800 -830 0 0 {name=p45 sig_type=std_logic lab=DOWN}
 C {sky130_fd_pr/cap_mim_m3_1.sym} 2000 -1300 0 0 {name=C1 model=cap_mim_m3_1 W=4.2 L=6 MF=1 spiceprefix=X}
 C {sky130_fd_pr/cap_mim_m3_1.sym} 2000 -660 2 0 {name=C2 model=cap_mim_m3_1 W=2.6 L=2.6 MF=1 spiceprefix=X}
 C {devices/lab_pin.sym} 1660 -1810 0 1 {name=p26 sig_type=std_logic lab=VDDA}
 C {devices/lab_pin.sym} 1660 -50 0 1 {name=p18 sig_type=std_logic lab=GNDA}
-C {devices/lab_wire.sym} 1790 -1140 0 0 {name=p1 sig_type=std_logic lab=UP_b}
+C {devices/lab_wire.sym} 1800 -1140 0 0 {name=p1 sig_type=std_logic lab=UP_b}
 C {sky130_fd_pr/pfet_01v8.sym} 1170 -1580 0 1 {name=M4
 L=0.6
 W=4

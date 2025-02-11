@@ -4,49 +4,49 @@ K {}
 V {}
 S {}
 E {}
-N -70 -50 -40 -50 {
+N 250 -310 280 -310 {
 lab=B}
-N -70 50 -40 50 {
+N 250 -210 280 -210 {
 lab=B}
-N 0 80 0 120 {
+N 320 -180 320 -140 {
 lab=#net1}
-N 0 -120 0 -80 {
+N 320 -380 320 -340 {
 lab=VDDA}
-N 0 -50 30 -50 {
+N 320 -310 350 -310 {
 lab=VDDA}
-N 0 50 30 50 {
+N 320 -210 350 -210 {
 lab=GNDA}
-N 0 0 90 0 {
+N 320 -260 410 -260 {
 lab=Y}
-N -260 0 -230 0 {lab=A}
-N 0 -100 30 -100 {
+N 60 -260 90 -260 {lab=A}
+N 320 -360 350 -360 {
 lab=VDDA}
-N 30 -100 30 -50 {lab=VDDA}
-N 30 50 30 100 {lab=GNDA}
-N 0 180 0 220 {
+N 350 -360 350 -310 {lab=VDDA}
+N 350 -210 350 -160 {lab=GNDA}
+N 320 -80 320 -40 {
 lab=GNDA}
-N 0 150 30 150 {
+N 320 -110 350 -110 {
 lab=GNDA}
-N 30 100 30 150 {lab=GNDA}
-N -0 200 30 200 {lab=GNDA}
-N 30 150 30 200 {lab=GNDA}
-N 0 -20 0 20 {lab=Y}
-N -130 -20 -130 -0 {lab=Y}
-N -130 -0 0 0 {lab=Y}
-N -130 -100 -0 -100 {lab=VDDA}
-N -130 -100 -130 -80 {lab=VDDA}
-N -130 -50 -100 -50 {
+N 350 -160 350 -110 {lab=GNDA}
+N 320 -60 350 -60 {lab=GNDA}
+N 350 -110 350 -60 {lab=GNDA}
+N 320 -280 320 -240 {lab=Y}
+N 190 -280 190 -260 {lab=Y}
+N 190 -260 320 -260 {lab=Y}
+N 190 -360 320 -360 {lab=VDDA}
+N 190 -360 190 -340 {lab=VDDA}
+N 190 -310 220 -310 {
 lab=VDDA}
-N -100 -100 -100 -50 {lab=VDDA}
-N -70 -50 -70 50 {lab=B}
-N -230 150 -40 150 {lab=A}
-N -230 -50 -230 150 {lab=A}
-N -230 -50 -170 -50 {lab=A}
-N -100 50 -70 50 {lab=B}
-C {sky130_fd_pr/pfet_01v8.sym} -20 -50 0 0 {name=M4
+N 220 -360 220 -310 {lab=VDDA}
+N 250 -310 250 -210 {lab=B}
+N 90 -110 280 -110 {lab=A}
+N 90 -310 90 -110 {lab=A}
+N 90 -310 150 -310 {lab=A}
+N 220 -210 250 -210 {lab=B}
+C {sky130_fd_pr/pfet_01v8.sym} 300 -310 0 0 {name=M4
 L=0.15
-W=1
-nf=2
+W=2
+nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
@@ -57,9 +57,9 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {sky130_fd_pr/nfet_01v8.sym} -20 50 2 1 {name=M2
+C {sky130_fd_pr/nfet_01v8.sym} 300 -210 2 1 {name=M2
 L=0.15
-W=0.5
+W=1
 nf=1 
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -71,13 +71,13 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {devices/ipin.sym} -260 0 0 0 {name=p13 lab=A}
-C {devices/opin.sym} 80 0 0 0 {name=p14 lab=Y}
-C {devices/ipin.sym} 0 -120 0 0 {name=p1 lab=VDDA}
-C {devices/ipin.sym} 0 220 0 0 {name=p2 lab=GNDA}
-C {sky130_fd_pr/nfet_01v8.sym} -20 150 2 1 {name=M1
+C {devices/ipin.sym} 60 -260 0 0 {name=p13 lab=A}
+C {devices/opin.sym} 400 -260 0 0 {name=p14 lab=Y}
+C {devices/ipin.sym} 320 -380 0 0 {name=p1 lab=VDDA}
+C {devices/ipin.sym} 320 -40 0 0 {name=p2 lab=GNDA}
+C {sky130_fd_pr/nfet_01v8.sym} 300 -110 2 1 {name=M1
 L=0.15
-W=0.5
+W=1
 nf=1 
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -89,10 +89,10 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {sky130_fd_pr/pfet_01v8.sym} -150 -50 0 0 {name=M3
+C {sky130_fd_pr/pfet_01v8.sym} 170 -310 0 0 {name=M3
 L=0.15
-W=1
-nf=2
+W=2
+nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
@@ -103,4 +103,4 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {devices/ipin.sym} -100 50 0 0 {name=p3 lab=B}
+C {devices/ipin.sym} 220 -210 0 0 {name=p3 lab=B}

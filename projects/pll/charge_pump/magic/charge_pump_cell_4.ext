@@ -1,0 +1,77 @@
+timestamp 1739204666
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+parameters sky130_fd_pr__nfet_01v8 l=l w=w a1=as p1=ps a2=ad p2=pd
+parameters sky130_fd_pr__pfet_01v8 l=l w=w a1=as p1=ps a2=ad p2=pd
+parameters sky130_fd_pr__cap_mim_m3_1 w=w l=l
+port "DOWN" 5 16500 3060 16500 3060 m1
+port "UP_b" 4 16410 5730 16410 5730 m1
+port "DOWN_input" 8 21060 3450 21060 3450 m1
+port "I_IN" 3 17630 4180 17630 4180 li
+port "vout" 6 21090 4210 21090 4210 li
+port "UP_input" 7 21060 5030 21060 5030 m1
+port "VDDA" 1 18300 5170 18300 5170 m1
+port "GNDA" 2 18310 3310 18310 3310 m1
+node "DOWN" 19 3626.6 16500 3060 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12100 440 592900 11000 12100 440 374900 3020 0 0 0 0 0 0
+node "UP_b" 19 3739.67 16410 5730 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12100 440 594000 11020 12100 440 1172500 5020 0 0 0 0 0 0
+node "DOWN_input" 680 1691.48 21060 3450 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 130300 2760 0 0 24200 880 96800 1980 12100 440 12100 440 53900 1200 0 0 0 0
+node "I_IN" 2914 2715.98 17630 4180 li 0 0 0 0 0 0 0 0 40000 1000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 287400 7060 0 0 108400 3980 0 0 0 0 0 0 0 0 0 0 0 0
+node "vout" 2866 354.099 21090 4210 li 0 0 0 0 0 0 0 0 40000 1000 80000 2000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 168000 4360 0 0 0 0 0 0 0 0 0 0 0 0
+node "x" 2936 503.035 19040 4470 pdif 0 0 0 0 0 0 0 0 40000 1000 80000 2000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 203200 5240 0 0 0 0 0 0 0 0 0 0 0 0
+node "opamp_out" 1240 514.618 18920 4410 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 247200 5240 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "UP_input" 1396 1168.32 21060 5030 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 251500 5440 0 0 24200 880 88000 1820 12100 440 12100 440 53900 1200 0 0 0 0
+node "VDDA" 22441 8324.07 18300 5170 m1 0 0 0 0 1867600 7600 0 0 120000 3000 400000 10000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 260500 6060 0 0 798000 20400 269600 6900 0 0 0 0 0 0 0 0 0 0
+substrate "GNDA" 0 0 18310 3310 m1 0 0 0 0 0 0 0 0 480000 12000 160000 4000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 388200 9120 0 0 937200 22380 269600 6900 0 0 0 0 0 0 0 0 0 0
+cap "opamp_out" "UP_b" 1.07144
+cap "VDDA" "vout" 414.217
+cap "opamp_out" "I_IN" 13.4278
+cap "UP_b" "DOWN_input" 0.404542
+cap "x" "vout" 5.28417
+cap "UP_input" "DOWN_input" 70.1547
+cap "DOWN_input" "I_IN" 1.51158
+cap "UP_input" "vout" 355.188
+cap "VDDA" "DOWN" 0.143293
+cap "vout" "DOWN_input" 168.397
+cap "DOWN" "UP_b" 31.1014
+cap "UP_input" "DOWN" 0.026376
+cap "VDDA" "x" 467.344
+cap "DOWN" "I_IN" 7.66348
+cap "VDDA" "UP_b" 311.304
+cap "DOWN" "DOWN_input" 246.599
+cap "VDDA" "UP_input" 1171.37
+cap "VDDA" "I_IN" 111.081
+cap "x" "I_IN" 154.795
+cap "VDDA" "opamp_out" 711.001
+cap "opamp_out" "x" 382.468
+cap "VDDA" "DOWN_input" 14.5606
+cap "UP_input" "UP_b" 217.297
+cap "UP_b" "I_IN" 0.498818
+device csubckt sky130_fd_pr__cap_mim_m3_1 22160 3040 22161 3041 w=520 l=520 "None" "DOWN_input" 280 0 "DOWN" 0 374900,3020
+device csubckt sky130_fd_pr__cap_mim_m3_1 22080 4920 22081 4921 w=1200 l=840 "None" "UP_input" 280 0 "UP_b" 0 1172500,5020
+device msubckt sky130_fd_pr__nfet_01v8 21320 3610 21321 3611 l=120 w=400 "GNDA" "GNDA" 240 0 "GNDA" 0 0 "GNDA" 800 20000,500
+device msubckt sky130_fd_pr__nfet_01v8 21100 3610 21101 3611 l=120 w=400 "GNDA" "DOWN_input" 240 0 "vout" 400 20000,500 "GNDA" 400 20000,500
+device msubckt sky130_fd_pr__nfet_01v8 20880 3610 20881 3611 l=120 w=400 "GNDA" "DOWN_input" 240 0 "GNDA" 400 20000,500 "vout" 400 20000,500
+device msubckt sky130_fd_pr__nfet_01v8 20660 3610 20661 3611 l=120 w=400 "GNDA" "GNDA" 240 0 "GNDA" 0 0 "GNDA" 800 40000,1000
+device msubckt sky130_fd_pr__nfet_01v8 20240 3610 20241 3611 l=120 w=400 "GNDA" "GNDA" 240 0 "GNDA" 0 0 "GNDA" 800 20000,500
+device msubckt sky130_fd_pr__nfet_01v8 20020 3610 20021 3611 l=120 w=400 "GNDA" "I_IN" 240 0 "x" 400 20000,500 "GNDA" 400 20000,500
+device msubckt sky130_fd_pr__nfet_01v8 19800 3610 19801 3611 l=120 w=400 "GNDA" "I_IN" 240 0 "GNDA" 400 20000,500 "x" 400 20000,500
+device msubckt sky130_fd_pr__nfet_01v8 19580 3610 19581 3611 l=120 w=400 "GNDA" "GNDA" 240 0 "GNDA" 0 0 "GNDA" 800 40000,1000
+device msubckt sky130_fd_pr__nfet_01v8 19160 3610 19161 3611 l=120 w=400 "GNDA" "GNDA" 240 0 "GNDA" 0 0 "GNDA" 800 20000,500
+device msubckt sky130_fd_pr__nfet_01v8 18940 3610 18941 3611 l=120 w=400 "GNDA" "I_IN" 240 0 "I_IN" 400 20000,500 "GNDA" 400 20000,500
+device msubckt sky130_fd_pr__nfet_01v8 18720 3610 18721 3611 l=120 w=400 "GNDA" "I_IN" 240 0 "GNDA" 400 20000,500 "I_IN" 400 20000,500
+device msubckt sky130_fd_pr__nfet_01v8 18500 3610 18501 3611 l=120 w=400 "GNDA" "GNDA" 240 0 "GNDA" 0 0 "GNDA" 800 40000,1000
+device msubckt sky130_fd_pr__pfet_01v8 21320 4470 21321 4471 l=120 w=400 "VDDA" "VDDA" 240 0 "VDDA" 0 0 "VDDA" 800 20000,500
+device msubckt sky130_fd_pr__pfet_01v8 21100 4470 21101 4471 l=120 w=400 "VDDA" "UP_input" 240 0 "vout" 400 20000,500 "VDDA" 400 20000,500
+device msubckt sky130_fd_pr__pfet_01v8 20880 4470 20881 4471 l=120 w=400 "VDDA" "UP_input" 240 0 "VDDA" 400 20000,500 "vout" 400 20000,500
+device msubckt sky130_fd_pr__pfet_01v8 20660 4470 20661 4471 l=120 w=400 "VDDA" "UP_input" 240 0 "vout" 400 20000,500 "VDDA" 400 20000,500
+device msubckt sky130_fd_pr__pfet_01v8 20440 4470 20441 4471 l=120 w=400 "VDDA" "UP_input" 240 0 "VDDA" 400 20000,500 "vout" 400 20000,500
+device msubckt sky130_fd_pr__pfet_01v8 20220 4470 20221 4471 l=120 w=400 "VDDA" "VDDA" 240 0 "VDDA" 0 0 "VDDA" 800 40000,1000
+device msubckt sky130_fd_pr__pfet_01v8 19800 4470 19801 4471 l=120 w=400 "VDDA" "VDDA" 240 0 "VDDA" 0 0 "VDDA" 800 20000,500
+device msubckt sky130_fd_pr__pfet_01v8 19580 4470 19581 4471 l=120 w=400 "VDDA" "opamp_out" 240 0 "x" 400 20000,500 "VDDA" 400 20000,500
+device msubckt sky130_fd_pr__pfet_01v8 19360 4470 19361 4471 l=120 w=400 "VDDA" "opamp_out" 240 0 "VDDA" 400 20000,500 "x" 400 20000,500
+device msubckt sky130_fd_pr__pfet_01v8 19140 4470 19141 4471 l=120 w=400 "VDDA" "opamp_out" 240 0 "x" 400 20000,500 "VDDA" 400 20000,500
+device msubckt sky130_fd_pr__pfet_01v8 18920 4470 18921 4471 l=120 w=400 "VDDA" "opamp_out" 240 0 "VDDA" 400 20000,500 "x" 400 20000,500
+device msubckt sky130_fd_pr__pfet_01v8 18700 4470 18701 4471 l=120 w=400 "VDDA" "VDDA" 240 0 "VDDA" 0 0 "VDDA" 800 40000,1000
