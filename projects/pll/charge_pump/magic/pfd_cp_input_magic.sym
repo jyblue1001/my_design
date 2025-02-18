@@ -1,0 +1,45 @@
+v {xschem version=3.4.6 file_version=1.2}
+G {}
+K {type=primitive
+format="@name @pinlist @symname"
+template="name=x1"
+}
+V {}
+S {}
+E {}
+L 4 -80 -70 80 -70 {}
+L 4 -80 70 80 70 {}
+L 4 -80 -70 -80 70 {}
+L 4 80 -70 80 70 {}
+L 4 80 50 100 50 {}
+L 4 0 -90 0 -70 {}
+L 4 0 70 0 90 {}
+L 4 80 -30 100 -30 {}
+L 4 -100 -30 -80 -30 {}
+L 4 -100 30 -80 30 {}
+L 7 80 10 100 10 {}
+L 7 80 -50 100 -50 {}
+L 7 80 -10 100 -10 {}
+L 7 80 30 100 30 {}
+B 5 97.5 47.5 102.5 52.5 {name=DOWN_input dir=out}
+B 5 -2.5 -92.5 2.5 -87.5 {name=VDDA dir=in}
+B 5 -2.5 87.5 2.5 92.5 {name=GNDA dir=in}
+B 5 97.5 -32.5 102.5 -27.5 {name=UP_input dir=out}
+B 5 97.5 7.5 102.5 12.5 {name=opamp_out dir=inout}
+B 5 -102.5 -32.5 -97.5 -27.5 {name=F_REF dir=in}
+B 5 97.5 -52.5 102.5 -47.5 {name=I_IN dir=inout}
+B 5 -102.5 27.5 -97.5 32.5 {name=F_VCO dir=in}
+B 5 97.5 -12.5 102.5 -7.5 {name=UP_b dir=inout}
+B 5 97.5 27.5 102.5 32.5 {name=DOWN dir=inout}
+T {@symname} 88 -106 0 0 0.3 0.3 {}
+T {@name} 85 -82 0 0 0.2 0.2 {}
+T {DOWN_input} 75 46 0 1 0.2 0.2 {}
+T {VDDA} -45 -94 0 0 0.2 0.2 {}
+T {GNDA} -45 86 0 0 0.2 0.2 {}
+T {UP_input} 75 -34 0 1 0.2 0.2 {}
+T {opamp_out} 75 6 0 1 0.2 0.2 {}
+T {F_REF} -75 -34 0 0 0.2 0.2 {}
+T {I_IN} 75 -54 0 1 0.2 0.2 {}
+T {F_VCO} -75 26 0 0 0.2 0.2 {}
+T {UP_b} 75 -14 0 1 0.2 0.2 {}
+T {DOWN} 75 26 0 1 0.2 0.2 {}

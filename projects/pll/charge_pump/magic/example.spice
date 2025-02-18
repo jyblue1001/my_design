@@ -1,0 +1,11 @@
+* NGSPICE file created from example.ext - technology: sky130A
+
+**.subckt example
+X0 GATE GATE GNDA GNDA sky130_fd_pr__nfet_01v8 ad=0.125 pd=1 as=0.125 ps=1 w=0.5 l=0.15
+X1 GNDA GNDA GNDA GNDA sky130_fd_pr__nfet_01v8 ad=0.125 pd=1 as=1.25 ps=10 w=0.5 l=0.15
+X2 GNDA GATE OTHER GNDA sky130_fd_pr__nfet_01v8 ad=0.125 pd=1 as=0.125 ps=1 w=0.5 l=0.15
+X3 OTHER GATE GNDA GNDA sky130_fd_pr__nfet_01v8 ad=0.125 pd=1 as=0.125 ps=1 w=0.5 l=0.15
+X4 GNDA GNDA GNDA GNDA sky130_fd_pr__nfet_01v8 ad=0.25 pd=2 as=0 ps=0 w=0.5 l=0.15
+X5 GNDA GATE GATE GNDA sky130_fd_pr__nfet_01v8 ad=0.125 pd=1 as=0.125 ps=1 w=0.5 l=0.15
+.ends
+

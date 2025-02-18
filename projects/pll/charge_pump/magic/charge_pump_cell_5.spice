@@ -1,0 +1,31 @@
+* NGSPICE file created from charge_pump_cell_5.ext - technology: sky130A
+
+**.subckt charge_pump_cell_5 VDDA GNDA x vout UP_b DOWN I_IN UP_input DOWN_input opamp_out
+X0 VDDA VDDA VDDA VDDA sky130_fd_pr__pfet_01v8 ad=1 pd=5 as=10 ps=50 w=2 l=0.6
+X1 GNDA GNDA GNDA GNDA sky130_fd_pr__nfet_01v8 ad=0.5 pd=2.5 as=12 ps=60 w=2 l=0.6
+X2 UP_input UP_b sky130_fd_pr__cap_mim_m3_1 l=6.3 w=8.75
+X3 x I_IN GNDA GNDA sky130_fd_pr__nfet_01v8 ad=0.5 pd=2.5 as=0.5 ps=2.5 w=2 l=0.6
+X4 GNDA GNDA GNDA GNDA sky130_fd_pr__nfet_01v8 ad=0.5 pd=2.5 as=0 ps=0 w=2 l=0.6
+X5 GNDA I_IN x GNDA sky130_fd_pr__nfet_01v8 ad=0.5 pd=2.5 as=0.5 ps=2.5 w=2 l=0.6
+X6 VDDA VDDA VDDA VDDA sky130_fd_pr__pfet_01v8 ad=0.5 pd=2.5 as=0 ps=0 w=2 l=0.6
+X7 GNDA GNDA GNDA GNDA sky130_fd_pr__nfet_01v8 ad=1 pd=5 as=0 ps=0 w=2 l=0.6
+X8 GNDA GNDA GNDA GNDA sky130_fd_pr__nfet_01v8 ad=0.5 pd=2.5 as=0 ps=0 w=2 l=0.6
+X9 vout DOWN_input GNDA GNDA sky130_fd_pr__nfet_01v8 ad=0.5 pd=2.5 as=0.5 ps=2.5 w=2 l=0.6
+X10 GNDA DOWN_input vout GNDA sky130_fd_pr__nfet_01v8 ad=0.5 pd=2.5 as=0.5 ps=2.5 w=2 l=0.6
+X11 x opamp_out VDDA VDDA sky130_fd_pr__pfet_01v8 ad=0.5 pd=2.5 as=0.5 ps=2.5 w=2 l=0.6
+X12 GNDA GNDA GNDA GNDA sky130_fd_pr__nfet_01v8 ad=1 pd=5 as=0 ps=0 w=2 l=0.6
+X13 VDDA VDDA VDDA VDDA sky130_fd_pr__pfet_01v8 ad=0.5 pd=2.5 as=0 ps=0 w=2 l=0.6
+X14 VDDA VDDA VDDA VDDA sky130_fd_pr__pfet_01v8 ad=1 pd=5 as=0 ps=0 w=2 l=0.6
+X15 VDDA opamp_out x VDDA sky130_fd_pr__pfet_01v8 ad=0.5 pd=2.5 as=0.5 ps=2.5 w=2 l=0.6
+X16 vout UP_input VDDA VDDA sky130_fd_pr__pfet_01v8 ad=0.5 pd=2.5 as=0.5 ps=2.5 w=2 l=0.6
+X17 VDDA UP_input vout VDDA sky130_fd_pr__pfet_01v8 ad=0.5 pd=2.5 as=0.5 ps=2.5 w=2 l=0.6
+X18 GNDA I_IN I_IN GNDA sky130_fd_pr__nfet_01v8 ad=0.5 pd=2.5 as=0.5 ps=2.5 w=2 l=0.6
+X19 x opamp_out VDDA VDDA sky130_fd_pr__pfet_01v8 ad=0.5 pd=2.5 as=0.5 ps=2.5 w=2 l=0.6
+X20 DOWN_input DOWN sky130_fd_pr__cap_mim_m3_1 l=2.6 w=3.1
+X21 VDDA opamp_out x VDDA sky130_fd_pr__pfet_01v8 ad=0.5 pd=2.5 as=0.5 ps=2.5 w=2 l=0.6
+X22 VDDA UP_input vout VDDA sky130_fd_pr__pfet_01v8 ad=0.5 pd=2.5 as=0.5 ps=2.5 w=2 l=0.6
+X23 I_IN I_IN GNDA GNDA sky130_fd_pr__nfet_01v8 ad=0.5 pd=2.5 as=0.5 ps=2.5 w=2 l=0.6
+X24 vout UP_input VDDA VDDA sky130_fd_pr__pfet_01v8 ad=0.5 pd=2.5 as=0.5 ps=2.5 w=2 l=0.6
+X25 GNDA GNDA GNDA GNDA sky130_fd_pr__nfet_01v8 ad=1 pd=5 as=0 ps=0 w=2 l=0.6
+.ends
+

@@ -116,8 +116,8 @@ color="6 5"
 node="up_pfd
 down_pfd"}
 B 2 2440 -1870 3800 -1200 {flags=graph
-y1=-4e-06
-y2=1.7
+y1=0.35
+y2=1.1
 ypos1=0
 ypos2=2
 divy=5
@@ -226,8 +226,8 @@ color="6 5"
 node="up_b
 down"}
 B 2 2440 -2570 3800 -1900 {flags=graph
-y1=-4e-06
-y2=1.7
+y1=0.89
+y2=0.91
 ypos1=0
 ypos2=2
 divy=5
@@ -1016,10 +1016,10 @@ C {devices/code.sym} 3590 -761.25 0 0 {name=Testbench only_toplevel=false value=
 * .ic v(vout) = 1.8
 
 * V_out initial voltage value for the F_VCO delay of 12ns (lock condition)
-.ic v(vout) = 0.9
+* .ic v(vout) = 0.9
 
 * V_out initial voltage value for the F_VCO delay of 22ns (lagging)
-* .ic v(vout) = 0.0
+.ic v(vout) = 0.0
 
 .control
   * save v(f_ref) save v(f_vco) save v(i_in) save v(up_pfd) v(down_pfd) v(up_pfd_b) v(down_pfd_b) v(up) v(up_b) v(down) v(down_b) v(x) v(opamp_out) v(up_input) v(down_input) v(down_gate) v(vout)
@@ -1093,7 +1093,7 @@ C {devices/vsource.sym} 3530 -930 0 0 {name=V2 value=pulse"(0 1.8 12ns 1ns 1ns 2
 * }
 C {devices/gnd.sym} 3530 -900 0 0 {name=l10 lab=GND}
 C {devices/lab_pin.sym} 3530 -1000 0 1 {name=p11 sig_type=std_logic lab=F_REF}
-C {devices/vsource.sym} 3860 -930 0 0 {name=V3 value="pulse(0 1.8 12ns 1ns 1ns 24ns 50ns)" savecurrent=false
+C {devices/vsource.sym} 3860 -930 0 0 {name=V3 value="pulse(0 1.8 22ns 1ns 1ns 24ns 50ns)" savecurrent=false
 * "sin(0.9 0.9 20.1MEG)" 1 AC 1}
 C {devices/gnd.sym} 3860 -900 0 0 {name=l15 lab=GND}
 C {devices/lab_pin.sym} 3860 -1000 0 1 {name=p12 sig_type=std_logic lab=F_VCO}

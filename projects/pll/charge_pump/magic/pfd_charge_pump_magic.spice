@@ -2,32 +2,30 @@
 **.subckt pfd_charge_pump_magic
 V1 VDD GND 1.8
 V2 F_REF GND pulse(0 1.8 12ns 1ns 1ns 24ns 50ns)
-V3 F_VCO GND pulse(0 1.8 22ns 1ns 1ns 24ns 50ns)
+V3 F_VCO GND pulse(0 1.8 12ns 1ns 1ns 24ns 50ns)
 I1 GND I_IN 100u
-x1 F_REF F_VCO VDD UP_PFD DOWN_PFD GND phase_frequency_detector_magic
-x2 VOUT VDD GND UP_PFD DOWN_PFD I_IN cp_lf_magic
+x1 VOUT GND loop_filter_xschem
+x2 VOUT VDD GND F_REF F_VCO I_IN pfd_cp_magic
 **** begin user architecture code
 .lib /foss/pdks/sky130A/libs.tech/combined/sky130.lib.spice tt
 
 
 
-.include /foss/designs/my_design/projects/pll/pfd/magic/phase_frequency_detector_magic.spice
-.include /foss/designs/my_design/projects/pll/charge_pump/magic/cp_lf_magic.spice
-.include /foss/designs/my_design/projects/pll/charge_pump/magic/charge_pump_full_magic.spice
-.include /foss/designs/my_design/projects/pll/charge_pump/magic/loop_filter_magic.spice
+.include /foss/designs/my_design/projects/pll/charge_pump/magic/pfd_cp_magic.spice
 
 .option method=gear
 .option wnflag=1
 .option savecurrents
 
+
 * V_out initial voltage value for the F_VCO delay of 2ns  (leading)
 * .ic v(vout) = 1.8
 
 * V_out initial voltage value for the F_VCO delay of 12ns (lock condition)
-* .ic v(vout) = 0.9
+.ic v(vout) = 0.9
 
 * V_out initial voltage value for the F_VCO delay of 22ns (lagging)
-.ic v(vout) = 0.0
+* .ic v(vout) = 0.0
 
 .control
   * save v(f_ref) save v(f_vco) save v(i_in) save v(up_pfd) v(down_pfd) v(up_pfd_b) v(down_pfd_b) v(up) v(up_b) v(down) v(down_b) v(x) v(opamp_out) v(up_input) v(down_input) v(down_gate) v(vout)
@@ -41,7 +39,6 @@ x2 VOUT VDD GND UP_PFD DOWN_PFD I_IN cp_lf_magic
 
   remzerovec
   write pfd_charge_pump_magic.raw
-  * write pfd_charge_pump_magic_2.raw
   set appendwrite
 
 .endc
@@ -50,6 +47,18 @@ x2 VOUT VDD GND UP_PFD DOWN_PFD I_IN cp_lf_magic
 
 **** end user architecture code
 **.ends
+
+* expanding   symbol:  /foss/designs/my_design/projects/pll/charge_pump/xschem_ngspice/loop_filter_xschem.sym # of pins=2
+** sym_path: /foss/designs/my_design/projects/pll/charge_pump/xschem_ngspice/loop_filter_xschem.sym
+** sch_path: /foss/designs/my_design/projects/pll/charge_pump/xschem_ngspice/loop_filter_xschem.sch
+.subckt loop_filter_xschem VOUT GNDA
+*.ipin GNDA
+*.iopin VOUT
+XC2 GNDA VOUT sky130_fd_pr__cap_mim_m3_1 W=13.8 L=60 MF=1 m=1
+XC1 GNDA net1 sky130_fd_pr__cap_mim_m3_1 W=69.8 L=60 MF=1 m=1
+XR1 net1 VOUT GNDA sky130_fd_pr__res_xhigh_po_0p35 L=7.52 mult=1 m=1
+.ends
+
 .GLOBAL GND
 .GLOBAL VDD
 .end

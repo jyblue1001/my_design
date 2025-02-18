@@ -1,30 +1,49 @@
 
-Circuit 1 cell sky130_fd_pr__nfet_01v8 and Circuit 2 cell sky130_fd_pr__nfet_01v8 are black boxes.
-Equate elements:  no current cell.
-Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
-
 Circuit 1 cell sky130_fd_pr__pfet_01v8 and Circuit 2 cell sky130_fd_pr__pfet_01v8 are black boxes.
 Equate elements:  no current cell.
 Device classes sky130_fd_pr__pfet_01v8 and sky130_fd_pr__pfet_01v8 are equivalent.
 
+Circuit 1 cell sky130_fd_pr__nfet_01v8 and Circuit 2 cell sky130_fd_pr__nfet_01v8 are black boxes.
+Equate elements:  no current cell.
+Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__res_xhigh_po_5p73 and Circuit 2 cell sky130_fd_pr__res_xhigh_po_5p73 are black boxes.
+Equate elements:  no current cell.
+Device classes sky130_fd_pr__res_xhigh_po_5p73 and sky130_fd_pr__res_xhigh_po_5p73 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__res_xhigh_po_0p35 and Circuit 2 cell sky130_fd_pr__res_xhigh_po_0p35 are black boxes.
+Equate elements:  no current cell.
+Device classes sky130_fd_pr__res_xhigh_po_0p35 and sky130_fd_pr__res_xhigh_po_0p35 are equivalent.
+
 Circuit 1 cell sky130_fd_pr__cap_mim_m3_1 and Circuit 2 cell sky130_fd_pr__cap_mim_m3_1 are black boxes.
 Equate elements:  no current cell.
 Device classes sky130_fd_pr__cap_mim_m3_1 and sky130_fd_pr__cap_mim_m3_1 are equivalent.
+Flattening unmatched subcell opamp_cell_4 in circuit pfd_cp_lf_magic.spice (0)(1 instance)
+Flattening unmatched subcell loop_filter_2 in circuit pfd_cp_lf_magic.spice (0)(1 instance)
+Flattening unmatched subcell pfd_8 in circuit pfd_cp_lf_magic.spice (0)(1 instance)
+Flattening unmatched subcell charge_pump_cell_6 in circuit pfd_cp_lf_magic.spice (0)(1 instance)
+Flattening unmatched subcell phase_frequency_detector_5 in circuit pfd_cp_lf_xschem.spice (1)(1 instance)
+Flattening unmatched subcell nor_pfd in circuit pfd_cp_lf_xschem.spice (1)(8 instances)
+Flattening unmatched subcell nand_pfd in circuit pfd_cp_lf_xschem.spice (1)(1 instance)
+Flattening unmatched subcell inv_pfd in circuit pfd_cp_lf_xschem.spice (1)(5 instances)
+Flattening unmatched subcell rail_to_rail_opamp6_3 in circuit pfd_cp_lf_xschem.spice (1)(1 instance)
 
-Class charge_pump_xschem_3.spice (0):  Merged 3 parallel devices.
-Class charge_pump_cell_4.spice (1):  Merged 17 parallel devices.
+Class pfd_cp_lf_magic.spice (0):  Merged 57 parallel devices.
+Class pfd_cp_lf_xschem.spice (1):  Merged 15 parallel devices.
 Subcircuit summary:
-Circuit 1: charge_pump_xschem_3.spice      |Circuit 2: charge_pump_cell_4.spice        
+Circuit 1: pfd_cp_lf_magic.spice           |Circuit 2: pfd_cp_lf_xschem.spice          
 -------------------------------------------|-------------------------------------------
-sky130_fd_pr__nfet_01v8 (6->4)             |sky130_fd_pr__nfet_01v8 (12->4)            
-sky130_fd_pr__pfet_01v8 (4->3)             |sky130_fd_pr__pfet_01v8 (12->3)            
-sky130_fd_pr__cap_mim_m3_1 (2)             |sky130_fd_pr__cap_mim_m3_1 (2)             
-Number of devices: 9                       |Number of devices: 9                       
-Number of nets: 10                         |Number of nets: 10                         
+sky130_fd_pr__pfet_01v8 (72->43)           |sky130_fd_pr__pfet_01v8 (50->43)           
+sky130_fd_pr__nfet_01v8 (72->44)           |sky130_fd_pr__nfet_01v8 (52->44)           
+sky130_fd_pr__res_xhigh_po_5p73 (1)        |sky130_fd_pr__res_xhigh_po_5p73 (1)        
+sky130_fd_pr__res_xhigh_po_0p35 (3)        |sky130_fd_pr__res_xhigh_po_0p35 (3)        
+sky130_fd_pr__cap_mim_m3_1 (6)             |sky130_fd_pr__cap_mim_m3_1 (6)             
+Number of devices: 97                      |Number of devices: 97                      
+Number of nets: 50                         |Number of nets: 50                         
 ---------------------------------------------------------------------------------------
 Netlists match uniquely.
 Cells have no pins;  pin matching not needed.
-Device classes charge_pump_xschem_3.spice and charge_pump_cell_4.spice are equivalent.
+Device classes pfd_cp_lf_magic.spice and pfd_cp_lf_xschem.spice are equivalent.
 
 Final result: Circuits match uniquely.
 .

@@ -5,7 +5,7 @@ V {}
 S {}
 E {}
 N 1260 -1090 1260 -1040 {
-lab=#net1}
+lab=R1_C1}
 N 1210 -1120 1240 -1120 {
 lab=GNDA}
 N 1210 -1120 1210 -950 {
@@ -29,3 +29,4 @@ spiceprefix=X
 mult=1}
 C {iopin.sym} 1090 -930 0 0 {name=p1 lab=VOUT}
 C {devices/lab_pin.sym} 1090 -1000 0 1 {name=p2 sig_type=std_logic lab=GNDA}
+C {devices/lab_pin.sym} 1260 -1070 0 1 {name=p3 sig_type=std_logic lab=R1_C1}

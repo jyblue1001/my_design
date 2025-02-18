@@ -175,17 +175,17 @@ C {devices/lab_wire.sym} 490 -170 3 0 {name=p39 sig_type=std_logic lab=GNDA}
 C {devices/lab_wire.sym} 550 -170 1 1 {name=p40 sig_type=std_logic lab=VDDA}
 C {devices/ipin.sym} 110 -800 0 0 {name=p41 lab=VDDA}
 C {devices/ipin.sym} 110 -750 0 0 {name=p42 lab=GNDA}
-C {nor_pfd.sym} 330 -1010 2 1 {name=x1}
-C {nor_pfd.sym} 720 -1010 2 0 {name=x2}
-C {nor_pfd.sym} 330 -810 0 0 {name=x3}
-C {nor_pfd.sym} 720 -810 0 1 {name=x4}
-C {nor_pfd.sym} 330 -630 2 0 {name=x5}
-C {nor_pfd.sym} 720 -630 2 1 {name=x6}
-C {nor_pfd.sym} 330 -110 0 1 {name=x7}
-C {nor_pfd.sym} 720 -110 0 0 {name=x12}
-C {nand_pfd.sym} 520 -710 1 0 {name=x8}
-C {inv_pfd.sym} 520 -570 1 0 {name=x9}
-C {inv_pfd.sym} 520 -470 1 0 {name=x10}
-C {inv_pfd.sym} 520 -370 1 0 {name=x11}
-C {inv_pfd.sym} 520 -270 1 0 {name=x13}
-C {inv_pfd.sym} 520 -170 1 0 {name=x14}
+C {/foss/designs/my_design/projects/pll/pfd/xschem_ngspice/nor_pfd.sym} 330 -1010 2 1 {name=x1}
+C {/foss/designs/my_design/projects/pll/pfd/xschem_ngspice/nor_pfd.sym} 720 -1010 2 0 {name=x2}
+C {/foss/designs/my_design/projects/pll/pfd/xschem_ngspice/nor_pfd.sym} 330 -810 0 0 {name=x3}
+C {/foss/designs/my_design/projects/pll/pfd/xschem_ngspice/nor_pfd.sym} 720 -810 0 1 {name=x4}
+C {/foss/designs/my_design/projects/pll/pfd/xschem_ngspice/nor_pfd.sym} 330 -630 2 0 {name=x5}
+C {/foss/designs/my_design/projects/pll/pfd/xschem_ngspice/nor_pfd.sym} 720 -630 2 1 {name=x6}
+C {/foss/designs/my_design/projects/pll/pfd/xschem_ngspice/nor_pfd.sym} 330 -110 0 1 {name=x7}
+C {/foss/designs/my_design/projects/pll/pfd/xschem_ngspice/nor_pfd.sym} 720 -110 0 0 {name=x12}
+C {/foss/designs/my_design/projects/pll/pfd/xschem_ngspice/nand_pfd.sym} 520 -710 1 0 {name=x8}
+C {/foss/designs/my_design/projects/pll/pfd/xschem_ngspice/inv_pfd.sym} 520 -570 1 0 {name=x9}
+C {/foss/designs/my_design/projects/pll/pfd/xschem_ngspice/inv_pfd.sym} 520 -470 1 0 {name=x10}
+C {/foss/designs/my_design/projects/pll/pfd/xschem_ngspice/inv_pfd.sym} 520 -370 1 0 {name=x11}
+C {/foss/designs/my_design/projects/pll/pfd/xschem_ngspice/inv_pfd.sym} 520 -270 1 0 {name=x13}
+C {/foss/designs/my_design/projects/pll/pfd/xschem_ngspice/inv_pfd.sym} 520 -170 1 0 {name=x14}

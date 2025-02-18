@@ -9,7 +9,6 @@ x1 F_REF F_VCO VDDA QA QB GND phase_frequency_detector_magic
 
 
 
-.include /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
 .include /foss/designs/my_design/projects/pll/pfd/magic/phase_frequency_detector_magic.spice
 
 .option wnflag=1

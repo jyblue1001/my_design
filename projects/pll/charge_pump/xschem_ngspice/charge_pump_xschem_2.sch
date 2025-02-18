@@ -202,7 +202,7 @@ C {devices/lab_wire.sym} 2230 -490 0 0 {name=p42 sig_type=std_logic lab=DOWN_inp
 C {devices/lab_wire.sym} 1440 -1470 0 0 {name=p43 sig_type=std_logic lab=opamp_out}
 C {devices/lab_wire.sym} 940 -1310 0 1 {name=p44 sig_type=std_logic lab=I_IN}
 C {devices/lab_wire.sym} 1800 -830 0 0 {name=p45 sig_type=std_logic lab=DOWN}
-C {sky130_fd_pr/cap_mim_m3_1.sym} 2000 -1300 0 0 {name=C1 model=cap_mim_m3_1 W=4.2 L=6 MF=1 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 2000 -1300 0 0 {name=C1 model=cap_mim_m3_1 W=6 L=4.2 MF=1 spiceprefix=X}
 C {sky130_fd_pr/cap_mim_m3_1.sym} 2000 -660 2 0 {name=C2 model=cap_mim_m3_1 W=2.6 L=2.6 MF=1 spiceprefix=X}
 C {devices/lab_pin.sym} 1660 -1810 0 1 {name=p26 sig_type=std_logic lab=VDDA}
 C {devices/lab_pin.sym} 1660 -50 0 1 {name=p18 sig_type=std_logic lab=GNDA}

@@ -4,7 +4,7 @@ K {}
 V {}
 S {}
 E {}
-B 2 60 -1450 1970 -1050 {flags=graph
+B 2 50 -1450 1960 -1050 {flags=graph
 y1=-0.06
 y2=1.9
 ypos1=0
@@ -107,7 +107,7 @@ x1.before_reset
 x1.reset
 x1.f_b
 x1.f"}
-B 2 60 -1020 1970 -620 {flags=graph
+B 2 50 -1020 1960 -620 {flags=graph
 y1=-0.16
 y2=2
 ypos1=0
@@ -160,7 +160,7 @@ linewidth_mult=3
 color="6 5"
 node="f_ref
 f_vco"}
-B 2 1170 -440 1960 -140 {flags=graph
+B 2 1160 -440 1950 -140 {flags=graph
 y1=0
 y2=1.8
 ypos1=0
@@ -239,18 +239,18 @@ linewidth_mult=4
 
 color=5
 node=qb}
-N 60 -180 60 -140 {
+N 50 -180 50 -140 {
 lab=F_REF}
-N 290 -180 290 -140 {
+N 280 -180 280 -140 {
 lab=F_VCO}
-N 70 -390 70 -350 {
+N 60 -390 60 -350 {
 lab=VDDA}
-C {devices/vsource.sym} 60 -110 0 0 {name=V1 value="pulse(0 1.8 12ns 1ns 1ns 24ns 50ns)" savecurrent=false
+C {devices/vsource.sym} 50 -110 0 0 {name=V1 value="pulse(0 1.8 12ns 1ns 1ns 24ns 50ns)" savecurrent=false
 *}
-C {devices/gnd.sym} 60 -80 0 0 {name=l5 lab=GND}
-C {devices/lab_pin.sym} 60 -180 0 1 {name=p13 sig_type=std_logic lab=F_REF}
-C {sky130_fd_pr/corner.sym} 400 -390 0 0 {name=CORNER only_toplevel=false corner=tt}
-C {devices/code.sym} 230 -388.75 0 0 {name=STIMULI only_toplevel=false value="
+C {devices/gnd.sym} 50 -80 0 0 {name=l5 lab=GND}
+C {devices/lab_pin.sym} 50 -180 0 1 {name=p13 sig_type=std_logic lab=F_REF}
+C {sky130_fd_pr/corner.sym} 390 -390 0 0 {name=CORNER only_toplevel=false corner=tt}
+C {devices/code.sym} 220 -388.75 0 0 {name=STIMULI only_toplevel=false value="
 
 .include /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
 
@@ -294,18 +294,18 @@ C {devices/code.sym} 230 -388.75 0 0 {name=STIMULI only_toplevel=false value="
 
 
 "}
-C {devices/vsource.sym} 290 -110 0 0 {name=V2 value="pulse(0 1.8 13ns 1ns 1ns 24ns 50ns)" savecurrent=false
+C {devices/vsource.sym} 280 -110 0 0 {name=V2 value="pulse(0 1.8 13ns 1ns 1ns 24ns 50ns)" savecurrent=false
 * "sin(0.9 0.9 20.1MEG)" 
 * pulse(0 1.8 1ns 0.25ns 0.25ns 24.875ns 49.75ns)}
-C {devices/gnd.sym} 290 -80 0 0 {name=l1 lab=GND}
-C {devices/lab_pin.sym} 290 -180 0 1 {name=p14 sig_type=std_logic lab=F_VCO}
-C {devices/vsource.sym} 70 -320 0 0 {name=VDD value=1.8 savecurrent=false}
-C {devices/gnd.sym} 70 -290 0 0 {name=l2 lab=GND}
-C {devices/lab_pin.sym} 70 -390 0 1 {name=p15 sig_type=std_logic lab=VDDA}
-C {phase_frequency_detector_5.sym} 810 -310 0 0 {name=x1}
-C {devices/lab_pin.sym} 660 -330 0 0 {name=p1 lab=F_REF}
-C {devices/lab_pin.sym} 660 -290 0 0 {name=p2 lab=F_VCO}
-C {devices/lab_pin.sym} 810 -370 0 0 {name=p3 lab=VDDA}
-C {devices/lab_pin.sym} 960 -330 0 1 {name=p4 lab=QA}
-C {devices/lab_pin.sym} 960 -290 0 1 {name=p5 lab=QB}
-C {devices/lab_pin.sym} 810 -250 0 0 {name=p6 lab=GND}
+C {devices/gnd.sym} 280 -80 0 0 {name=l1 lab=GND}
+C {devices/lab_pin.sym} 280 -180 0 1 {name=p14 sig_type=std_logic lab=F_VCO}
+C {devices/vsource.sym} 60 -320 0 0 {name=VDD value=1.8 savecurrent=false}
+C {devices/gnd.sym} 60 -290 0 0 {name=l2 lab=GND}
+C {devices/lab_pin.sym} 60 -390 0 1 {name=p15 sig_type=std_logic lab=VDDA}
+C {devices/lab_pin.sym} 650 -330 0 0 {name=p1 lab=F_REF}
+C {devices/lab_pin.sym} 650 -290 0 0 {name=p2 lab=F_VCO}
+C {devices/lab_pin.sym} 800 -370 0 0 {name=p3 lab=VDDA}
+C {devices/lab_pin.sym} 950 -330 0 1 {name=p4 lab=QA}
+C {devices/lab_pin.sym} 950 -290 0 1 {name=p5 lab=QB}
+C {devices/lab_pin.sym} 800 -250 0 0 {name=p6 lab=GND}
+C {/foss/designs/my_design/projects/pll/pfd/xschem_ngspice/phase_frequency_detector_5.sym} 800 -310 0 0 {name=x1}

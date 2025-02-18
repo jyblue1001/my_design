@@ -6,21 +6,21 @@ Device classes sky130_fd_pr__pfet_01v8 and sky130_fd_pr__pfet_01v8 are equivalen
 Circuit 1 cell sky130_fd_pr__nfet_01v8 and Circuit 2 cell sky130_fd_pr__nfet_01v8 are black boxes.
 Equate elements:  no current cell.
 Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
-Flattening unmatched subcell nor_pfd in circuit phase_frequency_detector_6.spice (1)(8 instances)
-Flattening unmatched subcell nand_pfd in circuit phase_frequency_detector_6.spice (1)(1 instance)
-Flattening unmatched subcell inv_pfd in circuit phase_frequency_detector_6.spice (1)(5 instances)
+Flattening unmatched subcell nor_pfd in circuit phase_frequency_detector_5.spice (1)(8 instances)
+Flattening unmatched subcell nand_pfd in circuit phase_frequency_detector_5.spice (1)(1 instance)
+Flattening unmatched subcell inv_pfd in circuit phase_frequency_detector_5.spice (1)(5 instances)
 
 Subcircuit summary:
-Circuit 1: pfd_5.spice                     |Circuit 2: phase_frequency_detector_6.spic 
+Circuit 1: pfd_7.spice                     |Circuit 2: phase_frequency_detector_5.spic 
 -------------------------------------------|-------------------------------------------
-sky130_fd_pr__pfet_01v8 (32)               |sky130_fd_pr__pfet_01v8 (32)               
-sky130_fd_pr__nfet_01v8 (32)               |sky130_fd_pr__nfet_01v8 (32)               
-Number of devices: 64                      |Number of devices: 64                      
-Number of nets: 37                         |Number of nets: 37                         
+sky130_fd_pr__nfet_01v8 (23)               |sky130_fd_pr__nfet_01v8 (23)               
+sky130_fd_pr__pfet_01v8 (23)               |sky130_fd_pr__pfet_01v8 (23)               
+Number of devices: 46                      |Number of devices: 46                      
+Number of nets: 27                         |Number of nets: 27                         
 ---------------------------------------------------------------------------------------
 Netlists match uniquely.
 Cells have no pins;  pin matching not needed.
-Device classes pfd_5.spice and phase_frequency_detector_6.spice are equivalent.
+Device classes pfd_7.spice and phase_frequency_detector_5.spice are equivalent.
 
 Final result: Circuits match uniquely.
 .
