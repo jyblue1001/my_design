@@ -6,13 +6,13 @@ Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalen
 Circuit 1 cell sky130_fd_pr__pfet_01v8 and Circuit 2 cell sky130_fd_pr__pfet_01v8 are black boxes.
 Equate elements:  no current cell.
 Device classes sky130_fd_pr__pfet_01v8 and sky130_fd_pr__pfet_01v8 are equivalent.
-Flattening unmatched subcell div2_3 in circuit div120.spice (0)(3 instances)
-Flattening unmatched subcell div3_2 in circuit div120.spice (0)(1 instance)
-Flattening unmatched subcell div5 in circuit div120.spice (0)(1 instance)
+Flattening unmatched subcell div2_4 in circuit div120_2.spice (0)(3 instances)
+Flattening unmatched subcell div5_2 in circuit div120_2.spice (0)(1 instance)
+Flattening unmatched subcell div3_3 in circuit div120_2.spice (0)(1 instance)
 
-Class div120.spice (0):  Merged 22 parallel devices.
+Class div120_2.spice (0):  Merged 22 parallel devices.
 Subcircuit summary:
-Circuit 1: div120.spice                    |Circuit 2: divide_by_120_xschem.spice      
+Circuit 1: div120_2.spice                  |Circuit 2: divide_by_120_xschem.spice      
 -------------------------------------------|-------------------------------------------
 sky130_fd_pr__nfet_01v8 (57->41)           |sky130_fd_pr__nfet_01v8 (41)               
 sky130_fd_pr__pfet_01v8 (39->33)           |sky130_fd_pr__pfet_01v8 (33)               
@@ -21,7 +21,7 @@ Number of nets: 44                         |Number of nets: 44
 ---------------------------------------------------------------------------------------
 Netlists match uniquely.
 Cells have no pins;  pin matching not needed.
-Device classes div120.spice and divide_by_120_xschem.spice are equivalent.
+Device classes div120_2.spice and divide_by_120_xschem.spice are equivalent.
 
 Final result: Circuits match uniquely.
 .

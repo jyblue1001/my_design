@@ -1,7 +1,7 @@
 * PEX produced on Tue Feb 18 05:55:46 PM CET 2025 using ./iic-pex.sh with m=3 and s=1
 * NGSPICE file created from div120_2.ext - technology: sky130A
 
-.subckt TSPC_FF_ratioed_divide120_magic VOUT VIN VDDA GNDA
+.subckt div120_2 VOUT VIN VDDA GNDA
 X0 div2_4_1.C.t3 div2_4_1.A.t2 VDDA.t64 VDDA.t63 sky130_fd_pr__pfet_01v8 ad=0.2 pd=1.8 as=0.1 ps=0.9 w=0.5 l=0.15
 X1 div5_2_0.D.t2 div5_2_0.B.t2 VDDA.t3 VDDA.t2 sky130_fd_pr__pfet_01v8 ad=0.2 pd=1.8 as=0.1 ps=0.9 w=0.5 l=0.15
 X2 GNDA.t43 div5_2_0.Q2_b.t2 div5_2_0.M.t0 GNDA.t42 sky130_fd_pr__nfet_01v8 ad=0.1 pd=0.9 as=0.1 ps=0.9 w=0.5 l=0.15

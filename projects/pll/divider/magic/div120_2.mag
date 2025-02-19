@@ -1,0 +1,77 @@
+magic
+tech sky130A
+timestamp 1739897738
+<< nwell >>
+rect 525 -320 660 -215
+rect 1175 -320 1315 -215
+rect 1825 -320 1960 -215
+<< poly >>
+rect 600 -355 640 -345
+rect -10 -370 0 -355
+rect 600 -375 610 -355
+rect 630 -375 640 -355
+rect 600 -385 640 -375
+rect 1250 -355 1290 -345
+rect 1250 -375 1260 -355
+rect 1280 -375 1290 -355
+rect 1250 -385 1290 -375
+rect 1900 -355 1940 -345
+rect 1900 -375 1910 -355
+rect 1930 -375 1940 -355
+rect 1900 -385 1940 -375
+<< polycont >>
+rect 610 -375 630 -355
+rect 1260 -375 1280 -355
+rect 1910 -375 1930 -355
+<< locali >>
+rect 600 -355 640 -345
+rect 600 -375 610 -355
+rect 630 -375 640 -355
+rect 600 -385 640 -375
+rect 1250 -355 1290 -345
+rect 1250 -375 1260 -355
+rect 1280 -375 1290 -355
+rect 1250 -385 1290 -375
+rect 1900 -355 1940 -345
+rect 1900 -375 1910 -355
+rect 1930 -375 1940 -355
+rect 3250 -375 3270 -355
+rect 5205 -360 5220 -340
+rect 1900 -385 1940 -375
+<< metal1 >>
+rect -10 -180 0 -140
+rect -10 -570 0 -530
+use div2_4  div2_4_0
+timestamp 1739895002
+transform 1 0 685 0 1 -470
+box 605 -100 1265 330
+use div2_4  div2_4_1
+timestamp 1739895002
+transform 1 0 -615 0 1 -470
+box 605 -100 1265 330
+use div2_4  div2_4_2
+timestamp 1739895002
+transform 1 0 35 0 1 -470
+box 605 -100 1265 330
+use div3_3  div3_3_0
+timestamp 1739893047
+transform 1 0 1355 0 1 -425
+box 585 -145 1945 285
+use div5_2  div5_2_0
+timestamp 1739892886
+transform 1 0 2835 0 1 -425
+box 455 -145 2380 285
+<< labels >>
+flabel locali 3260 -375 3260 -375 5 FreeSans 160 0 0 -80 div24
+flabel locali 1920 -385 1920 -385 5 FreeSans 160 0 0 -80 div8
+flabel locali 1270 -385 1270 -385 5 FreeSans 160 0 0 -80 div4
+flabel locali 620 -385 620 -385 5 FreeSans 160 0 0 -80 div2
+flabel metal1 -10 -550 -10 -550 7 FreeSans 160 0 -80 0 GNDA
+port 4 w
+flabel metal1 -10 -160 -10 -160 7 FreeSans 160 0 -80 0 VDDA
+port 3 w
+flabel locali 5220 -350 5220 -350 3 FreeSans 160 0 80 0 VOUT
+port 1 e
+flabel poly -10 -365 -10 -365 7 FreeSans 160 0 -80 0 VIN
+port 2 w
+<< end >>

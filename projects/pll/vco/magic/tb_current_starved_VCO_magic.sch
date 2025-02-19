@@ -135,4 +135,4 @@ C {devices/gnd.sym} 1390 -230 0 0 {name=l7 lab=GND}
 C {devices/lab_pin.sym} 1600 -330 0 1 {name=p3 sig_type=std_logic lab=V_OUT}
 C {devices/vdd.sym} 970 -470 0 0 {name=l1 lab=VDD}
 C {/foss/designs/my_design/projects/pll/vco/magic/current_starved_VCO_magic.sym} 970 -330 0 0 {name=x1}
-C {TSPC_FF_ratioed_divide120_magic.sym} 1390 -330 0 0 {name=x3}
+C {/foss/designs/my_design/projects/pll/divider/magic/divide_by_120/TSPC_FF_ratioed_divide120_magic.sym} 1390 -330 0 0 {name=x2}

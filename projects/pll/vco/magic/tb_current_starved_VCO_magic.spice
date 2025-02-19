@@ -3,7 +3,7 @@
 Vdd VDD GND 1.8
 V1 V_CONT GND 0.9
 x1 VDD V_OSC V_CONT GND current_starved_VCO_magic
-x3 V_OUT V_OSC VDD GND TSPC_FF_ratioed_divide120_magic
+x2 V_OUT V_OSC VDD GND TSPC_FF_ratioed_divide120_magic
 **** begin user architecture code
 .lib /foss/pdks/sky130A/libs.tech/combined/sky130.lib.spice tt
 

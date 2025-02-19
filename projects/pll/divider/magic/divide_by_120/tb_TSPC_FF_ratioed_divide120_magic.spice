@@ -15,7 +15,7 @@ x1 VOUT VIN VDD GND TSPC_FF_ratioed_divide120_magic
 .control
 
   save all
-  tran 5p 200n
+  tran 5p 120n
   remzerovec
   write tb_TSPC_FF_ratioed_divide120_magic.raw
   set appendwrite
