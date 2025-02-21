@@ -7,7 +7,8 @@ directory = '.'
 
 # Loop through all files in the directory
 for filename in os.listdir(directory):
-    if filename.startswith('tb_current_starved_VCO_magic_') and filename.endswith('.txt'):
+    # if filename.startswith('tb_current_starved_VCO_magic_') and filename.endswith('.txt'):
+    if filename.startswith('tb_current_starved_VCO_FD_magic_') and filename.endswith('.txt'):
 
         # Define CSV filename
         csv_filename = filename.replace('.txt', '.csv')

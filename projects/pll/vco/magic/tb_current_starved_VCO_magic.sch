@@ -54,47 +54,7 @@ C {devices/vdd.sym} 420 -390 0 0 {name=l4 lab=VDD}
 C {devices/vsource.sym} 540 -360 0 0 {name=V1 value=0.9 savecurrent=false}
 C {devices/gnd.sym} 540 -330 0 0 {name=l5 lab=GND}
 C {devices/lab_pin.sym} 830 -330 0 0 {name=p2 sig_type=std_logic lab=V_CONT}
-C {sky130_fd_pr/corner.sym} 50 -410 0 0 {name=CORNER only_toplevel=false corner=tt
-value="
-
-.option method=gear
-.option wnflag=1
-
-
-* .ic v(osc)=1.2
-
-*.temp = 75
-
-* Xmeasure osc freq2 measure_Kvco thresh=0.9 dir=1
-
-.control
-
-  * pre_osdi ./measure_Kvco.osdi
-
-   let v_cont_start = 0.6
-   let v_cont_stop = 1.9
-
-   dowhile v_cont_start <= v_cont_stop
-    alter vcont $&v_cont_start
-    save v(v_cont) v(v_osc) v(v_osc2) v(v_out)
-    tran 0.1ps 30ns
-    remzerovec
-    write tb_current_starved_VCO3_\{$&v_cont_start\}.raw
-    *write tb_current_starved_VCO3.raw
-    linearize v(v_out)
-    let filename = v_cont_start * 100
-    wrdata /foss/designs/my_design/projects/pll/vco/xschem_ngspice/tb_current_starved_VCO3_\{$&filename\}.txt v(v_out)
-    set appendwrite
-
-    reset
-    let v_cont_start = v_cont_start + 0.1
-   end
-.endc
-
-
-
-
-"}
+C {sky130_fd_pr/corner.sym} 50 -410 0 0 {name=CORNER only_toplevel=false corner=tt}
 C {devices/code.sym} 210 -408.75 0 0 {name=Testbench only_toplevel=false value="
 
 .include /foss/designs/my_design/projects/pll/vco/magic/current_starved_VCO_magic.spice
@@ -134,5 +94,5 @@ C {devices/vdd.sym} 1390 -430 0 0 {name=l6 lab=VDD}
 C {devices/gnd.sym} 1390 -230 0 0 {name=l7 lab=GND}
 C {devices/lab_pin.sym} 1600 -330 0 1 {name=p3 sig_type=std_logic lab=V_OUT}
 C {devices/vdd.sym} 970 -470 0 0 {name=l1 lab=VDD}
-C {/foss/designs/my_design/projects/pll/vco/magic/current_starved_VCO_magic.sym} 970 -330 0 0 {name=x1}
+C {current_starved_VCO_magic.sym} 970 -330 0 0 {name=x1}
 C {/foss/designs/my_design/projects/pll/divider/magic/divide_by_120/TSPC_FF_ratioed_divide120_magic.sym} 1390 -330 0 0 {name=x2}

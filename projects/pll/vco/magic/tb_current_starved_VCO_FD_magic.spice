@@ -1,0 +1,48 @@
+** sch_path: /foss/designs/my_design/projects/pll/vco/magic/tb_current_starved_VCO_FD_magic.sch
+**.subckt tb_current_starved_VCO_FD_magic
+Vdd VDD GND 1.8
+V1 V_CONT GND 0.9
+x1 V_OUT VDD GND V_CONT VCO_FD_magic
+**** begin user architecture code
+.lib /foss/pdks/sky130A/libs.tech/combined/sky130.lib.spice tt
+
+
+
+.include /foss/designs/my_design/projects/pll/vco/magic/VCO_FD_magic.spice
+.include /foss/designs/my_design/projects/pll/vco/magic/current_starved_VCO_magic.spice
+.include /foss/designs/my_design/projects/pll/divider/magic/divide_by_120/TSPC_FF_ratioed_divide120_magic.spice
+
+.option method=gear
+.option wnflag=1
+
+.control
+
+  let v_cont_start = 0.0
+  let v_cont_stop = 1.9
+
+  dowhile v_cont_start <= v_cont_stop
+    alter v1 $&v_cont_start
+    * save v(v_osc) v(v_cont) v(v_out)
+    save all
+    tran 5ps 30ns
+    remzerovec
+    write tb_current_starved_VCO_FD_magic_{$&v_cont_start}.raw
+    * write tb_current_starved_VCO_FD_magic.raw
+    linearize v(x1.v_osc.n0)
+    let filename = v_cont_start * 100
+    wrdata /foss/designs/my_design/projects/pll/vco/magic/tb_current_starved_VCO_FD_magic_{$&filename}.txt v(x1.v_osc.n0)
+    * wrdata /foss/designs/my_design/projects/pll/vco/magic/tb_current_starved_VCO_FD_magic.txt v(x1.v_osc.n0)
+    set appendwrite
+
+    reset
+    let v_cont_start = v_cont_start + 0.1
+   end
+.endc
+
+
+
+**** end user architecture code
+**.ends
+.GLOBAL GND
+.GLOBAL VDD
+.end

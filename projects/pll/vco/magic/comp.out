@@ -6,20 +6,47 @@ Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalen
 Circuit 1 cell sky130_fd_pr__pfet_01v8 and Circuit 2 cell sky130_fd_pr__pfet_01v8 are black boxes.
 Equate elements:  no current cell.
 Device classes sky130_fd_pr__pfet_01v8 and sky130_fd_pr__pfet_01v8 are equivalent.
+Flattening unmatched subcell current_starved_VCO12 in circuit VCO_FD_xschem.spice (0)(1 instance)
+Flattening unmatched subcell divide_by_120_xschem in circuit VCO_FD_xschem.spice (0)(1 instance)
+Flattening unmatched subcell div120_2 in circuit VCO_FD_magic_2.spice (1)(1 instance)
+Flattening unmatched subcell div2_4 in circuit VCO_FD_magic_2.spice (1)(3 instances)
+Flattening unmatched subcell div5_2 in circuit VCO_FD_magic_2.spice (1)(1 instance)
+Flattening unmatched subcell div3_3 in circuit VCO_FD_magic_2.spice (1)(1 instance)
+Flattening unmatched subcell vco2_3 in circuit VCO_FD_magic_2.spice (1)(1 instance)
 
+Class VCO_FD_magic_2.spice (1):  Merged 22 parallel devices.
 Subcircuit summary:
-Circuit 1: vco2_2.spice                    |Circuit 2: xschem_current_starved_VCO10.sp 
+Circuit 1: VCO_FD_xschem.spice             |Circuit 2: VCO_FD_magic_2.spice            
 -------------------------------------------|-------------------------------------------
-sky130_fd_pr__nfet_01v8 (10)               |sky130_fd_pr__nfet_01v8 (10)               
-sky130_fd_pr__pfet_01v8 (10)               |sky130_fd_pr__pfet_01v8 (10)               
-Number of devices: 20                      |Number of devices: 20                      
-Number of nets: 13                         |Number of nets: 13                         
+sky130_fd_pr__pfet_01v8 (43)               |sky130_fd_pr__pfet_01v8 (49->43)           
+sky130_fd_pr__nfet_01v8 (51)               |sky130_fd_pr__nfet_01v8 (67->51)           
+Number of devices: 94                      |Number of devices: 94                      
+Number of nets: 54                         |Number of nets: 54                         
 ---------------------------------------------------------------------------------------
-Resolving symmetries by property value.
-Resolving symmetries by pin name.
-Netlists match uniquely.
+Netlists match uniquely with property errors.
+current_starved_VCO12:1/sky130_fd_pr__nfet_01v8:M1 vs. vco2_3_0/sky130_fd_pr__nfet_01v8:2:
+ W circuit1: 0.55   circuit2: 0.7   (delta=24%, cutoff=1%)
+ L circuit1: 0.2   circuit2: 0.15   (delta=28.6%, cutoff=1%)
+current_starved_VCO12:1/sky130_fd_pr__nfet_01v8:M23 vs. vco2_3_0/sky130_fd_pr__nfet_01v8:7:
+ W circuit1: 0.55   circuit2: 0.7   (delta=24%, cutoff=1%)
+ L circuit1: 0.2   circuit2: 0.15   (delta=28.6%, cutoff=1%)
+current_starved_VCO12:1/sky130_fd_pr__nfet_01v8:M25 vs. vco2_3_0/sky130_fd_pr__nfet_01v8:18:
+ W circuit1: 0.55   circuit2: 0.7   (delta=24%, cutoff=1%)
+ L circuit1: 0.2   circuit2: 0.15   (delta=28.6%, cutoff=1%)
+current_starved_VCO12:1/sky130_fd_pr__pfet_01v8:M26 vs. vco2_3_0/sky130_fd_pr__pfet_01v8:4:
+ W circuit1: 1.1   circuit2: 1.4   (delta=24%, cutoff=1%)
+ L circuit1: 0.2   circuit2: 0.15   (delta=28.6%, cutoff=1%)
+current_starved_VCO12:1/sky130_fd_pr__pfet_01v8:M22 vs. vco2_3_0/sky130_fd_pr__pfet_01v8:10:
+ W circuit1: 1.1   circuit2: 1.4   (delta=24%, cutoff=1%)
+ L circuit1: 0.2   circuit2: 0.15   (delta=28.6%, cutoff=1%)
+current_starved_VCO12:1/sky130_fd_pr__pfet_01v8:M24 vs. vco2_3_0/sky130_fd_pr__pfet_01v8:13:
+ W circuit1: 1.1   circuit2: 1.4   (delta=24%, cutoff=1%)
+ L circuit1: 0.2   circuit2: 0.15   (delta=28.6%, cutoff=1%)
 Cells have no pins;  pin matching not needed.
-Device classes vco2_2.spice and xschem_current_starved_VCO10.spice are equivalent.
+Device classes VCO_FD_xschem.spice and VCO_FD_magic_2.spice are equivalent.
 
 Final result: Circuits match uniquely.
-.
+Property errors were found.
+
+The following cells had property errors:
+ VCO_FD_xschem.spice
