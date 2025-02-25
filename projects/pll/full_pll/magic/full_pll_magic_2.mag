@@ -1,6 +1,6 @@
 magic
 tech sky130A
-timestamp 1740156915
+timestamp 1740284912
 << poly >>
 rect -130 960 -90 975
 rect 2180 945 2220 955
@@ -32,6 +32,7 @@ rect 6010 -310 6050 -300
 rect 6010 -330 6020 -310
 rect 6040 -330 6050 -310
 rect 6010 -340 6050 -330
+rect 4965 -600 4985 -585
 << polycont >>
 rect 2190 925 2210 945
 rect 3100 660 3120 680
@@ -1019,7 +1020,7 @@ timestamp 1739770731
 transform 1 0 -930 0 1 4655
 box 650 -4655 3290 -3435
 use VCO_FD_magic  VCO_FD_magic_0
-timestamp 1740073110
+timestamp 1740284885
 transform -1 0 6180 0 -1 -65
 box 0 60 6470 1150
 << labels >>
@@ -1028,9 +1029,11 @@ port 2 w
 flabel metal4 -280 130 -280 130 7 FreeSans 400 0 -200 0 GNDA
 port 3 w
 flabel poly -130 250 -130 250 7 FreeSans 400 0 -200 0 F_VCO
-port 5 w
 flabel poly -130 965 -130 965 7 FreeSans 400 0 -200 0 F_REF
 port 4 w
-flabel metal1 5480 585 5480 585 3 FreeSans 400 0 200 0 V_OUT
-port 1 e
+flabel poly 4975 -585 4975 -585 1 FreeSans 400 0 0 200 V_OSC
+port 1 n
+flabel metal1 3095 530 3095 530 3 FreeSans 400 0 200 0 I_IN
+port 5 e
+flabel metal1 5480 585 5480 585 3 FreeSans 400 0 200 0 V_CONT
 << end >>

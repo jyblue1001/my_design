@@ -2,7 +2,7 @@
 **.subckt pfd_charge_pump_magic_4
 V1 VDD GND 1.8
 V2 F_REF GND pulse(0 1.8 12ns 1ns 1ns 24ns 50ns)
-V3 F_VCO GND pulse(0 1.8 22ns 1ns 1ns 24ns 50ns)
+V3 F_VCO GND pulse(0 1.8 12ns 1ns 1ns 24ns 50ns)
 I1 GND I_IN 100u
 x1 V_OUT VDD GND F_REF F_VCO I_IN pfd_cp_lf_magic
 **** begin user architecture code
@@ -10,35 +10,56 @@ x1 V_OUT VDD GND F_REF F_VCO I_IN pfd_cp_lf_magic
 
 
 
-.include /foss/designs/my_design/projects/pll/charge_pump/magic/pfd_cp_lf_magic.spice
-.include /foss/designs/my_design/projects/pll/charge_pump/magic/pfd_cp_magic.spice
-.include /foss/designs/my_design/projects/pll/charge_pump/magic/pfd_cp_input_magic.spice
-.include /foss/designs/my_design/projects/pll/charge_pump/magic/charge_pump_magic.spice
-.include /foss/designs/my_design/projects/pll/charge_pump/magic/rail_to_rail_opamp_magic.spice
-.include /foss/designs/my_design/projects/pll/charge_pump/magic/loop_filter_magic.spice
+.include /foss/designs/my_design/projects/pll/full_pll/magic/pfd_cp_lf_magic.spice
 
 .option method=gear
 .option wnflag=1
-.option savecurrents
+* .option savecurrents
+
+.save
++@m.x1.x24.msky130_fd_pr__pfet_01v8[id]
++@m.x1.x44.msky130_fd_pr__pfet_01v8[id]
++@m.x1.x62.msky130_fd_pr__pfet_01v8[id]
++@m.x1.x75.msky130_fd_pr__pfet_01v8[id]
++@m.x1.x124.msky130_fd_pr__nfet_01v8[id]
++@m.x1.x139.msky130_fd_pr__nfet_01v8[id]
++v(x1.pfd_8_0.up_pfd.t0)
++v(x1.pfd_8_0.up_pfd_b.t0)
++v(x1.pfd_8_0.down_pfd.t0)
++v(x1.pfd_8_0.down_pfd_b.t0)
++v(x1.pfd_8_0.up.t0)
++v(x1.pfd_8_0.up_b.t0)
++v(x1.pfd_8_0.down.t0)
++v(x1.pfd_8_0.down_b.t0)
++v(x1.charge_pump_cell_6_0.x.t0)
++v(x1.pfd_8_0.opamp_out.t0)
++v(x1.charge_pump_cell_6_0.up_input.t0)
++v(x1.charge_pump_cell_6_0.down_input.t0)
++v(x1.charge_pump_cell_6_0.down_gate.t0)
++v(f_ref)
++v(f_vco)
++v(i_in)
++v(v_out)
+
 
 * V_out initial voltage value for the F_VCO delay of 2ns  (leading)
 * .ic v(v_out) = 1.8
 
 * V_out initial voltage value for the F_VCO delay of 12ns (lock condition)
-* .ic v(v_out) = 0.9
+.ic v(v_out) = 0.9
 
 * V_out initial voltage value for the F_VCO delay of 22ns (lagging)
-.ic v(v_out) = 0.0
+* .ic v(v_out) = 0.0
 
 .control
-  save v(f_ref) save v(f_vco) save v(i_in) save v(up_pfd) v(down_pfd) v(up_pfd_b) v(down_pfd_b) v(up) v(up_b) v(down) v(down_b) v(x) v(opamp_out) v(up_input) v(down_input) v(down_gate) v(v_out)
+  * save v(f_ref) v(f_vco) v(i_in) v(v_out)
   * save all
 
   * timestep for exact simulation results
   * tran 5ps 0.5us
 
   * timestep for faster simulation results
-  tran 50ps 0.5us
+  tran 50ps 0.02us
 
   remzerovec
   write pfd_charge_pump_magic_4_2.raw

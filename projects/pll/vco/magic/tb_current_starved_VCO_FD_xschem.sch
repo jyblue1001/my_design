@@ -89,4 +89,4 @@ C {devices/code.sym} 320 -458.75 0 0 {name=Testbench only_toplevel=false value="
 C {devices/lab_pin.sym} 650 -470 0 1 {name=p1 sig_type=std_logic lab=V_CONT}
 C {devices/lab_pin.sym} 1200 -400 0 1 {name=p3 sig_type=std_logic lab=V_OUT_120}
 C {devices/vdd.sym} 1050 -460 0 0 {name=l1 lab=VDD}
-C {VCO_FD_xschem.sym} 1050 -400 0 0 {name=x1}
+C {/foss/designs/my_design/projects/pll/vco/magic/VCO_FD_xschem.sym} 1050 -400 0 0 {name=x1}

@@ -76,7 +76,7 @@ x2 VDD x net3 opamp_out GND rail_to_rail_opamp6
 
 .option method=gear
 .option wnflag=1
-.option savecurrents
+* .option savecurrents
 
 .save
 +@m.x2.xm1.msky130_fd_pr__nfet_01v8[gm]
@@ -93,6 +93,8 @@ x2 VDD x net3 opamp_out GND rail_to_rail_opamp6
 +@m.x2.xm12.msky130_fd_pr__nfet_01v8[gm]
 +@m.x2.xm13.msky130_fd_pr__pfet_01v8[gm]
 +@m.x2.xm15.msky130_fd_pr__nfet_01v8[gm]
++@m.xm4.msky130_fd_pr__pfet_01v8[id]
++@m.xm5.msky130_fd_pr__nfet_01v8[id]
 
 * V_out initial voltage value for the F_VCO delay of 2ns  (leading)
 * .ic v(vout) = 1.8
@@ -104,8 +106,8 @@ x2 VDD x net3 opamp_out GND rail_to_rail_opamp6
 .ic v(vout) = 0.0
 
 .control
-  * save v(f_ref) save v(f_vco) save v(i_in) save v(up_pfd) v(down_pfd) v(up_pfd_b) v(down_pfd_b) v(up) v(up_b) v(down) v(down_b) v(x) v(opamp_out) v(up_input) v(down_input) v(down_gate) v(vout)
-  save all
+  save v(f_ref) save v(f_vco) save v(i_in) save v(up_pfd) v(down_pfd) v(up_pfd_b) v(down_pfd_b) v(up) v(up_b) v(down) v(down_b) v(x) v(opamp_out) v(up_input) v(down_input) v(down_gate) v(vout)
+  * save all
 
   * timestep for exact simulation results
   * tran 5ps 0.5us

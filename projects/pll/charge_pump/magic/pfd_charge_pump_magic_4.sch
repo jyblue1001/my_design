@@ -5,15 +5,15 @@ V {}
 S {}
 E {}
 B 2 1950 -5830 3310 -5170 {flags=graph
-y1=0
-y2=1.8
+y1=-0.36
+y2=1.44
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
 x1=0
-x2=5e-07
+x2=2e-08
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -54,7 +54,7 @@ divy=5
 subdivy=1
 unity=1
 x1=0
-x2=5e-07
+x2=2e-08
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -91,7 +91,7 @@ divy=5
 subdivy=1
 unity=1
 x1=0
-x2=5e-07
+x2=2e-08
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -124,7 +124,7 @@ divy=5
 subdivy=1
 unity=1
 x1=0
-x2=5e-07
+x2=2e-08
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -161,7 +161,7 @@ divy=5
 subdivy=1
 unity=1
 x1=0
-x2=5e-07
+x2=2e-08
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -198,7 +198,7 @@ divy=5
 subdivy=1
 unity=1
 x1=0
-x2=5e-07
+x2=2e-08
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -227,15 +227,15 @@ color="6 5"
 node="up_input
 down_input"}
 B 2 400 -4440 1760 -3770 {flags=graph
-y1=0.89
-y2=0.91
+y1=0.88
+y2=0.92
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
 x1=0
-x2=5e-07
+x2=2e-08
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -272,7 +272,7 @@ divy=5
 subdivy=1
 unity=1
 x1=0
-x2=5e-07
+x2=2e-08
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -317,7 +317,7 @@ divy=5
 subdivy=1
 unity=1
 x1=0
-x2=5e-07
+x2=2e-08
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -350,15 +350,15 @@ linewidth_mult=7
 color=6
 node=i(@m.x2.x1.msky130_fd_pr__nfet_01v8[id])}
 B 2 400 -3740 1760 -3070 {flags=graph
-y1=7.8e-32
-y2=0.00032
+y1=0
+y2=0.01
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
 x1=0
-x2=5e-07
+x2=2e-08
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -542,7 +542,7 @@ divy=5
 subdivy=1
 unity=1
 x1=0
-x2=5e-07
+x2=2e-08
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -575,15 +575,15 @@ linewidth_mult=1
 color=6
 node="\\"i(@m.x1.x149.msky130_fd_pr__pfet_01v8[id]) i(@m.x1.x132.msky130_fd_pr__pfet_01v8[id]) i(@m.x1.x74.msky130_fd_pr__pfet_01v8[id]) i(@m.x1.x10.msky130_fd_pr__pfet_01v8[id]) + + + \\""}
 B 2 400 -2320 1760 -1650 {flags=graph
-y1=1.1e-14
-y2=0.00012
+y1=0.002
+y2=0.012
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
 x1=0
-x2=5e-07
+x2=2e-08
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -616,15 +616,15 @@ linewidth_mult=1
 color=7
 node="\\"i(@m.x1.x107.msky130_fd_pr__nfet_01v8[id]) i(@m.x1.x77.msky130_fd_pr__nfet_01v8[id]) + \\""}
 B 2 400 -1590 1760 -920 {flags=graph
-y1=3.5e-18
-y2=0.00012
+y1=0
+y2=0.01
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
 x1=0
-x2=5e-07
+x2=2e-08
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -658,37 +658,101 @@ color="6 7"
 node="\\"i(@m.x1.x149.msky130_fd_pr__pfet_01v8[id]) i(@m.x1.x132.msky130_fd_pr__pfet_01v8[id]) i(@m.x1.x74.msky130_fd_pr__pfet_01v8[id]) i(@m.x1.x10.msky130_fd_pr__pfet_01v8[id]) + + + \\"
 
 \\"i(@m.x1.x107.msky130_fd_pr__nfet_01v8[id]) i(@m.x1.x77.msky130_fd_pr__nfet_01v8[id]) + \\""}
+B 2 400 -840 1760 -170 {flags=graph
+y1=1.1e-18
+y2=5.8e-05
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=0
+x2=2e-08
+divx=5
+subdivx=1
+xlabmag=1.0
+ylabmag=1.0
+
+
+dataset=-1
+unitx=1
+logx=0
+logy=0
+
+
+
+
+
+
+
+
+linewidth_mult=1
+
+
+
+
+
+
+
+
+
+
+
+
+color="6 6 6 6 7 7"
+node="i(@m.x1.x75.msky130_fd_pr__pfet_01v8[id])
+i(@m.x1.x62.msky130_fd_pr__pfet_01v8[id])
+i(@m.x1.x44.msky130_fd_pr__pfet_01v8[id])
+i(@m.x1.x24.msky130_fd_pr__pfet_01v8[id])
+
+i(@m.x1.x139.msky130_fd_pr__nfet_01v8[id])
+i(@m.x1.x124.msky130_fd_pr__nfet_01v8[id])"}
 N 1040 -5570 1040 -5530 {
 lab=F_REF}
 N 1370 -5570 1370 -5530 {
 lab=F_VCO}
 N 790 -5570 790 -5530 {
 lab=I_IN}
-C {sky130_fd_pr/corner.sym} 890 -5330 0 0 {name=CORNER only_toplevel=false corner=tt}
-C {devices/code.sym} 1100 -5331.25 0 0 {name=Testbench only_toplevel=false value="
+C {sky130_fd_pr/corner.sym} 890 -5330 0 0 {name=CORNER only_toplevel=false corner=tt
+value="
 
-.include /foss/designs/my_design/projects/pll/charge_pump/magic/pfd_cp_lf_magic.spice
-.include /foss/designs/my_design/projects/pll/charge_pump/magic/pfd_cp_magic.spice
-.include /foss/designs/my_design/projects/pll/charge_pump/magic/pfd_cp_input_magic.spice
-.include /foss/designs/my_design/projects/pll/charge_pump/magic/charge_pump_magic.spice
-.include /foss/designs/my_design/projects/pll/charge_pump/magic/rail_to_rail_opamp_magic.spice
-.include /foss/designs/my_design/projects/pll/charge_pump/magic/loop_filter_magic.spice
+.include /foss/designs/my_design/projects/pll/full_pll/magic/pfd_cp_lf_magic.spice
 
 .option method=gear
 .option wnflag=1
-.option savecurrents
+*.option savecurrents
+
+.save 
++@m.x1.xm107.msky130_fd_pr__pfet_01v8[id]
++v(x1.pfd_8_0.up_pfd.t0)
++v(x1.pfd_8_0.up_pfd_b.t0)
++v(x1.pfd_8_0.down_pfd.t0)
++v(x1.pfd_8_0.down_pfd_b.t0)
++v(x1.pfd_8_0.up.t0)
++v(x1.pfd_8_0.up_b.t0)
++v(x1.pfd_8_0.down.t0)
++v(x1.pfd_8_0.down_b.t0)
++v(x1.charge_pump_cell_6_0.x.t0)
++v(x1.pfd_8_0.opamp_out.t0)
++v(x1.charge_pump_cell_6_0.up_input.t0)
++v(x1.charge_pump_cell_6_0.down_input.t0)
++v(x1.charge_pump_cell_6_0.down_gate.t0)
++v(f_ref)
++v(f_vco)
++v(i_in)
++v(v_out)
 
 * V_out initial voltage value for the F_VCO delay of 2ns  (leading)
 * .ic v(v_out) = 1.8
 
 * V_out initial voltage value for the F_VCO delay of 12ns (lock condition)
-* .ic v(v_out) = 0.9
+.ic v(v_out) = 0.9
 
 * V_out initial voltage value for the F_VCO delay of 22ns (lagging)
-.ic v(v_out) = 0.0
+* .ic v(v_out) = 0.0
 
 .control
-  save v(f_ref) save v(f_vco) save v(i_in) save v(up_pfd) v(down_pfd) v(up_pfd_b) v(down_pfd_b) v(up) v(up_b) v(down) v(down_b) v(x) v(opamp_out) v(up_input) v(down_input) v(down_gate) v(v_out)
+  * save v(f_ref) v(f_vco) v(i_in) v(v_out)
   * save all
 
   * timestep for exact simulation results
@@ -696,6 +760,66 @@ C {devices/code.sym} 1100 -5331.25 0 0 {name=Testbench only_toplevel=false value
 
   * timestep for faster simulation results
   tran 50ps 0.5us
+
+  remzerovec
+  write pfd_charge_pump_magic_4_2.raw
+  set appendwrite
+
+.endc
+
+"}
+C {devices/code.sym} 1100 -5341.25 0 0 {name=Testbench only_toplevel=false value="
+
+.include /foss/designs/my_design/projects/pll/full_pll/magic/pfd_cp_lf_magic.spice
+
+.option method=gear
+.option wnflag=1
+* .option savecurrents
+
+.save
++@m.x1.x24.msky130_fd_pr__pfet_01v8[id]
++@m.x1.x44.msky130_fd_pr__pfet_01v8[id]
++@m.x1.x62.msky130_fd_pr__pfet_01v8[id]
++@m.x1.x75.msky130_fd_pr__pfet_01v8[id]
++@m.x1.x124.msky130_fd_pr__nfet_01v8[id]
++@m.x1.x139.msky130_fd_pr__nfet_01v8[id]
++v(x1.pfd_8_0.up_pfd.t0)
++v(x1.pfd_8_0.up_pfd_b.t0)
++v(x1.pfd_8_0.down_pfd.t0)
++v(x1.pfd_8_0.down_pfd_b.t0)
++v(x1.pfd_8_0.up.t0)
++v(x1.pfd_8_0.up_b.t0)
++v(x1.pfd_8_0.down.t0)
++v(x1.pfd_8_0.down_b.t0)
++v(x1.charge_pump_cell_6_0.x.t0)
++v(x1.pfd_8_0.opamp_out.t0)
++v(x1.charge_pump_cell_6_0.up_input.t0)
++v(x1.charge_pump_cell_6_0.down_input.t0)
++v(x1.charge_pump_cell_6_0.down_gate.t0)
++v(f_ref)
++v(f_vco)
++v(i_in)
++v(v_out)
+
+
+* V_out initial voltage value for the F_VCO delay of 2ns  (leading)
+* .ic v(v_out) = 1.8
+
+* V_out initial voltage value for the F_VCO delay of 12ns (lock condition)
+.ic v(v_out) = 0.9
+
+* V_out initial voltage value for the F_VCO delay of 22ns (lagging)
+* .ic v(v_out) = 0.0
+
+.control
+  * save v(f_ref) v(f_vco) v(i_in) v(v_out)
+  * save all
+
+  * timestep for exact simulation results
+  * tran 5ps 0.5us
+
+  * timestep for faster simulation results
+  tran 50ps 0.02us
 
   remzerovec
   write pfd_charge_pump_magic_4_2.raw
@@ -712,7 +836,7 @@ C {devices/vsource.sym} 1040 -5500 0 0 {name=V2 value=pulse"(0 1.8 12ns 1ns 1ns 
 * }
 C {devices/gnd.sym} 1040 -5470 0 0 {name=l10 lab=GND}
 C {devices/lab_pin.sym} 1040 -5570 0 1 {name=p11 sig_type=std_logic lab=F_REF}
-C {devices/vsource.sym} 1370 -5500 0 0 {name=V3 value="pulse(0 1.8 22ns 1ns 1ns 24ns 50ns)" savecurrent=false}
+C {devices/vsource.sym} 1370 -5500 0 0 {name=V3 value="pulse(0 1.8 12ns 1ns 1ns 24ns 50ns)" savecurrent=false}
 C {devices/gnd.sym} 1370 -5470 0 0 {name=l15 lab=GND}
 C {devices/lab_pin.sym} 1370 -5570 0 1 {name=p12 sig_type=std_logic lab=F_VCO}
 C {devices/isource.sym} 790 -5500 2 0 {name=I1 value=100u}
@@ -721,22 +845,44 @@ C {devices/lab_pin.sym} 790 -5570 2 1 {name=p3 sig_type=std_logic lab=I_IN}
 C {devices/vdd.sym} 900 -4980 0 1 {name=l32 lab=VDD
 value="
 
-.include /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
+.include /foss/designs/my_design/projects/pll/full_pll/magic/pfd_cp_lf_magic.spice
 
 .option method=gear
 .option wnflag=1
+*.option savecurrents
+
+.save 
++@m.x1.xm107.msky130_fd_pr__pfet_01v8[id]
++v(x1.pfd_8_0.up_pfd.t0)
++v(x1.pfd_8_0.up_pfd_b.t0)
++v(x1.pfd_8_0.down_pfd.t0)
++v(x1.pfd_8_0.down_pfd_b.t0)
++v(x1.pfd_8_0.up.t0)
++v(x1.pfd_8_0.up_b.t0)
++v(x1.pfd_8_0.down.t0)
++v(x1.pfd_8_0.down_b.t0)
++v(x1.charge_pump_cell_6_0.x.t0)
++v(x1.pfd_8_0.opamp_out.t0)
++v(x1.charge_pump_cell_6_0.up_input.t0)
++v(x1.charge_pump_cell_6_0.down_input.t0)
++v(x1.charge_pump_cell_6_0.down_gate.t0)
++v(f_ref)
++v(f_vco)
++v(i_in)
++v(v_out)
 
 * V_out initial voltage value for the F_VCO delay of 2ns  (leading)
-* .ic v(vout) = 1.8
+* .ic v(v_out) = 1.8
 
 * V_out initial voltage value for the F_VCO delay of 12ns (lock condition)
-.ic v(vout) = 0.83
+.ic v(v_out) = 0.9
 
 * V_out initial voltage value for the F_VCO delay of 22ns (lagging)
-* .ic v(vout) = 0
+* .ic v(v_out) = 0.0
 
 .control
-  save v(f_ref) save v(f_vco) save v(i_in) save v(up_pfd) v(down_pfd) v(up_pfd_b) v(down_pfd_b) v(up) v(up_b) v(down) v(down_b) v(x) v(opamp_out) v(up_input) v(down_input) v(down_gate) v(vout)
+  * save v(f_ref) v(f_vco) v(i_in) v(v_out)
+  * save all
 
   * timestep for exact simulation results
   * tran 5ps 0.5us
@@ -745,7 +891,7 @@ value="
   tran 50ps 0.5us
 
   remzerovec
-  write pfd_charge_pump_10.raw
+  write pfd_charge_pump_magic_4_2.raw
   set appendwrite
 
 .endc
@@ -770,22 +916,44 @@ v(vout)="0.0
 C {devices/gnd.sym} 900 -4840 0 0 {name=l33 lab=GND
 value="
 
-.include /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
+.include /foss/designs/my_design/projects/pll/full_pll/magic/pfd_cp_lf_magic.spice
 
 .option method=gear
 .option wnflag=1
+*.option savecurrents
+
+.save 
++@m.x1.xm107.msky130_fd_pr__pfet_01v8[id]
++v(x1.pfd_8_0.up_pfd.t0)
++v(x1.pfd_8_0.up_pfd_b.t0)
++v(x1.pfd_8_0.down_pfd.t0)
++v(x1.pfd_8_0.down_pfd_b.t0)
++v(x1.pfd_8_0.up.t0)
++v(x1.pfd_8_0.up_b.t0)
++v(x1.pfd_8_0.down.t0)
++v(x1.pfd_8_0.down_b.t0)
++v(x1.charge_pump_cell_6_0.x.t0)
++v(x1.pfd_8_0.opamp_out.t0)
++v(x1.charge_pump_cell_6_0.up_input.t0)
++v(x1.charge_pump_cell_6_0.down_input.t0)
++v(x1.charge_pump_cell_6_0.down_gate.t0)
++v(f_ref)
++v(f_vco)
++v(i_in)
++v(v_out)
 
 * V_out initial voltage value for the F_VCO delay of 2ns  (leading)
-* .ic v(vout) = 1.8
+* .ic v(v_out) = 1.8
 
 * V_out initial voltage value for the F_VCO delay of 12ns (lock condition)
-.ic v(vout) = 0.83
+.ic v(v_out) = 0.9
 
 * V_out initial voltage value for the F_VCO delay of 22ns (lagging)
-* .ic v(vout) = 0
+* .ic v(v_out) = 0.0
 
 .control
-  save v(f_ref) save v(f_vco) save v(i_in) save v(up_pfd) v(down_pfd) v(up_pfd_b) v(down_pfd_b) v(up) v(up_b) v(down) v(down_b) v(x) v(opamp_out) v(up_input) v(down_input) v(down_gate) v(vout)
+  * save v(f_ref) v(f_vco) v(i_in) v(v_out)
+  * save all
 
   * timestep for exact simulation results
   * tran 5ps 0.5us
@@ -794,14 +962,284 @@ value="
   tran 50ps 0.5us
 
   remzerovec
-  write pfd_charge_pump_10.raw
+  write pfd_charge_pump_magic_4_2.raw
   set appendwrite
 
 .endc
 
 "}
-C {lab_pin.sym} 1000 -4910 0 1 {name=p1 lab=V_OUT}
-C {lab_pin.sym} 800 -4940 0 0 {name=p5 lab=F_REF}
-C {lab_pin.sym} 800 -4910 0 0 {name=p6 lab=F_VCO}
-C {lab_pin.sym} 800 -4880 0 0 {name=p7 lab=I_IN}
-C {pfd_cp_lf_magic.sym} 900 -4910 0 0 {name=x1}
+C {lab_pin.sym} 1000 -4910 0 1 {name=p1 lab=V_OUT
+value="
+
+.include /foss/designs/my_design/projects/pll/full_pll/magic/pfd_cp_lf_magic.spice
+
+.option method=gear
+.option wnflag=1
+*.option savecurrents
+
+.save 
++@m.x1.xm107.msky130_fd_pr__pfet_01v8[id]
++v(x1.pfd_8_0.up_pfd.t0)
++v(x1.pfd_8_0.up_pfd_b.t0)
++v(x1.pfd_8_0.down_pfd.t0)
++v(x1.pfd_8_0.down_pfd_b.t0)
++v(x1.pfd_8_0.up.t0)
++v(x1.pfd_8_0.up_b.t0)
++v(x1.pfd_8_0.down.t0)
++v(x1.pfd_8_0.down_b.t0)
++v(x1.charge_pump_cell_6_0.x.t0)
++v(x1.pfd_8_0.opamp_out.t0)
++v(x1.charge_pump_cell_6_0.up_input.t0)
++v(x1.charge_pump_cell_6_0.down_input.t0)
++v(x1.charge_pump_cell_6_0.down_gate.t0)
++v(f_ref)
++v(f_vco)
++v(i_in)
++v(v_out)
+
+* V_out initial voltage value for the F_VCO delay of 2ns  (leading)
+* .ic v(v_out) = 1.8
+
+* V_out initial voltage value for the F_VCO delay of 12ns (lock condition)
+.ic v(v_out) = 0.9
+
+* V_out initial voltage value for the F_VCO delay of 22ns (lagging)
+* .ic v(v_out) = 0.0
+
+.control
+  * save v(f_ref) v(f_vco) v(i_in) v(v_out)
+  * save all
+
+  * timestep for exact simulation results
+  * tran 5ps 0.5us
+
+  * timestep for faster simulation results
+  tran 50ps 0.5us
+
+  remzerovec
+  write pfd_charge_pump_magic_4_2.raw
+  set appendwrite
+
+.endc
+
+"}
+C {lab_pin.sym} 800 -4940 0 0 {name=p5 lab=F_REF
+value="
+
+.include /foss/designs/my_design/projects/pll/full_pll/magic/pfd_cp_lf_magic.spice
+
+.option method=gear
+.option wnflag=1
+*.option savecurrents
+
+.save 
++@m.x1.xm107.msky130_fd_pr__pfet_01v8[id]
++v(x1.pfd_8_0.up_pfd.t0)
++v(x1.pfd_8_0.up_pfd_b.t0)
++v(x1.pfd_8_0.down_pfd.t0)
++v(x1.pfd_8_0.down_pfd_b.t0)
++v(x1.pfd_8_0.up.t0)
++v(x1.pfd_8_0.up_b.t0)
++v(x1.pfd_8_0.down.t0)
++v(x1.pfd_8_0.down_b.t0)
++v(x1.charge_pump_cell_6_0.x.t0)
++v(x1.pfd_8_0.opamp_out.t0)
++v(x1.charge_pump_cell_6_0.up_input.t0)
++v(x1.charge_pump_cell_6_0.down_input.t0)
++v(x1.charge_pump_cell_6_0.down_gate.t0)
++v(f_ref)
++v(f_vco)
++v(i_in)
++v(v_out)
+
+* V_out initial voltage value for the F_VCO delay of 2ns  (leading)
+* .ic v(v_out) = 1.8
+
+* V_out initial voltage value for the F_VCO delay of 12ns (lock condition)
+.ic v(v_out) = 0.9
+
+* V_out initial voltage value for the F_VCO delay of 22ns (lagging)
+* .ic v(v_out) = 0.0
+
+.control
+  * save v(f_ref) v(f_vco) v(i_in) v(v_out)
+  * save all
+
+  * timestep for exact simulation results
+  * tran 5ps 0.5us
+
+  * timestep for faster simulation results
+  tran 50ps 0.5us
+
+  remzerovec
+  write pfd_charge_pump_magic_4_2.raw
+  set appendwrite
+
+.endc
+
+"}
+C {lab_pin.sym} 800 -4910 0 0 {name=p6 lab=F_VCO
+value="
+
+.include /foss/designs/my_design/projects/pll/full_pll/magic/pfd_cp_lf_magic.spice
+
+.option method=gear
+.option wnflag=1
+*.option savecurrents
+
+.save 
++@m.x1.xm107.msky130_fd_pr__pfet_01v8[id]
++v(x1.pfd_8_0.up_pfd.t0)
++v(x1.pfd_8_0.up_pfd_b.t0)
++v(x1.pfd_8_0.down_pfd.t0)
++v(x1.pfd_8_0.down_pfd_b.t0)
++v(x1.pfd_8_0.up.t0)
++v(x1.pfd_8_0.up_b.t0)
++v(x1.pfd_8_0.down.t0)
++v(x1.pfd_8_0.down_b.t0)
++v(x1.charge_pump_cell_6_0.x.t0)
++v(x1.pfd_8_0.opamp_out.t0)
++v(x1.charge_pump_cell_6_0.up_input.t0)
++v(x1.charge_pump_cell_6_0.down_input.t0)
++v(x1.charge_pump_cell_6_0.down_gate.t0)
++v(f_ref)
++v(f_vco)
++v(i_in)
++v(v_out)
+
+* V_out initial voltage value for the F_VCO delay of 2ns  (leading)
+* .ic v(v_out) = 1.8
+
+* V_out initial voltage value for the F_VCO delay of 12ns (lock condition)
+.ic v(v_out) = 0.9
+
+* V_out initial voltage value for the F_VCO delay of 22ns (lagging)
+* .ic v(v_out) = 0.0
+
+.control
+  * save v(f_ref) v(f_vco) v(i_in) v(v_out)
+  * save all
+
+  * timestep for exact simulation results
+  * tran 5ps 0.5us
+
+  * timestep for faster simulation results
+  tran 50ps 0.5us
+
+  remzerovec
+  write pfd_charge_pump_magic_4_2.raw
+  set appendwrite
+
+.endc
+
+"}
+C {lab_pin.sym} 800 -4880 0 0 {name=p7 lab=I_IN
+value="
+
+.include /foss/designs/my_design/projects/pll/full_pll/magic/pfd_cp_lf_magic.spice
+
+.option method=gear
+.option wnflag=1
+*.option savecurrents
+
+.save 
++@m.x1.xm107.msky130_fd_pr__pfet_01v8[id]
++v(x1.pfd_8_0.up_pfd.t0)
++v(x1.pfd_8_0.up_pfd_b.t0)
++v(x1.pfd_8_0.down_pfd.t0)
++v(x1.pfd_8_0.down_pfd_b.t0)
++v(x1.pfd_8_0.up.t0)
++v(x1.pfd_8_0.up_b.t0)
++v(x1.pfd_8_0.down.t0)
++v(x1.pfd_8_0.down_b.t0)
++v(x1.charge_pump_cell_6_0.x.t0)
++v(x1.pfd_8_0.opamp_out.t0)
++v(x1.charge_pump_cell_6_0.up_input.t0)
++v(x1.charge_pump_cell_6_0.down_input.t0)
++v(x1.charge_pump_cell_6_0.down_gate.t0)
++v(f_ref)
++v(f_vco)
++v(i_in)
++v(v_out)
+
+* V_out initial voltage value for the F_VCO delay of 2ns  (leading)
+* .ic v(v_out) = 1.8
+
+* V_out initial voltage value for the F_VCO delay of 12ns (lock condition)
+.ic v(v_out) = 0.9
+
+* V_out initial voltage value for the F_VCO delay of 22ns (lagging)
+* .ic v(v_out) = 0.0
+
+.control
+  * save v(f_ref) v(f_vco) v(i_in) v(v_out)
+  * save all
+
+  * timestep for exact simulation results
+  * tran 5ps 0.5us
+
+  * timestep for faster simulation results
+  tran 50ps 0.5us
+
+  remzerovec
+  write pfd_charge_pump_magic_4_2.raw
+  set appendwrite
+
+.endc
+
+"}
+C {pfd_cp_lf_magic.sym} 900 -4910 0 0 {name=x1
+value="
+
+.include /foss/designs/my_design/projects/pll/full_pll/magic/pfd_cp_lf_magic.spice
+
+.option method=gear
+.option wnflag=1
+*.option savecurrents
+
+.save 
++@m.x1.xm107.msky130_fd_pr__pfet_01v8[id]
++v(x1.pfd_8_0.up_pfd.t0)
++v(x1.pfd_8_0.up_pfd_b.t0)
++v(x1.pfd_8_0.down_pfd.t0)
++v(x1.pfd_8_0.down_pfd_b.t0)
++v(x1.pfd_8_0.up.t0)
++v(x1.pfd_8_0.up_b.t0)
++v(x1.pfd_8_0.down.t0)
++v(x1.pfd_8_0.down_b.t0)
++v(x1.charge_pump_cell_6_0.x.t0)
++v(x1.pfd_8_0.opamp_out.t0)
++v(x1.charge_pump_cell_6_0.up_input.t0)
++v(x1.charge_pump_cell_6_0.down_input.t0)
++v(x1.charge_pump_cell_6_0.down_gate.t0)
++v(f_ref)
++v(f_vco)
++v(i_in)
++v(v_out)
+
+* V_out initial voltage value for the F_VCO delay of 2ns  (leading)
+* .ic v(v_out) = 1.8
+
+* V_out initial voltage value for the F_VCO delay of 12ns (lock condition)
+.ic v(v_out) = 0.9
+
+* V_out initial voltage value for the F_VCO delay of 22ns (lagging)
+* .ic v(v_out) = 0.0
+
+.control
+  * save v(f_ref) v(f_vco) v(i_in) v(v_out)
+  * save all
+
+  * timestep for exact simulation results
+  * tran 5ps 0.5us
+
+  * timestep for faster simulation results
+  tran 50ps 0.5us
+
+  remzerovec
+  write pfd_charge_pump_magic_4_2.raw
+  set appendwrite
+
+.endc
+
+"}

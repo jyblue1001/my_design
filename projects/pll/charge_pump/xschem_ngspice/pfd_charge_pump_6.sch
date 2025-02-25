@@ -1,5 +1,4 @@
-v {xschem version=3.4.5 file_version=1.2
-}
+v {xschem version=3.4.6 file_version=1.2}
 G {}
 K {}
 V {}
@@ -699,7 +698,7 @@ spiceprefix=X
 C {devices/vdd.sym} 1060 -1530 0 0 {name=l13 lab=VDD}
 C {devices/gnd.sym} 910 -110 0 0 {name=l14 lab=GND}
 C {sky130_fd_pr/corner.sym} 730 130 0 0 {name=CORNER only_toplevel=false corner=tt}
-C {devices/code.sym} 960 128.75 0 0 {name=STIMULI only_toplevel=false value="
+C {devices/code.sym} 950 138.75 0 0 {name=STIMULI only_toplevel=false value="
 
 .include /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
 
@@ -750,7 +749,8 @@ C {devices/code.sym} 960 128.75 0 0 {name=STIMULI only_toplevel=false value="
 +v(x4.f_b)
 +v(x4.before_reset)
 +v(x4.reset)
-
++@m.xm6.msky130_fd_pr__pfet_01v8[id]
++@m.xm9.msky130_fd_pr__nfet_01v8[id]
 
 .control
   * save v(up_pfd) v(down_pfd) v(up_pfd_b) v(down_pfd_b) v(up) v(up_b) v(down) v(down_b) v(x) v(vout) v(up_input) v(down_input)
@@ -760,7 +760,8 @@ C {devices/code.sym} 960 128.75 0 0 {name=STIMULI only_toplevel=false value="
   * dc v2 0 1.8 0.01
   remzerovec
   write pfd_charge_pump_6.raw
-  * wrdata /foss/designs/my_design/projects/pll/charge_pump/xschem_ngspice/pfd_charge_pump_6_QA.txt v(osc)
+  linearize v(x)
+  wrdata /foss/designs/my_design/projects/pll/charge_pump/xschem_ngspice/pfd_charge_pump_x.txt v(x)
   set appendwrite
 
 .endc

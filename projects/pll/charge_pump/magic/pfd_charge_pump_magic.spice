@@ -15,7 +15,11 @@ x2 VOUT VDD GND F_REF F_VCO I_IN pfd_cp_magic
 
 .option method=gear
 .option wnflag=1
-.option savecurrents
+*.option savecurrents
+
+.save
+* +i(@m.x2.x66.msky130_fd_pr__nfet_01v8[id])
++@m.x2.x66.msky130_fd_pr__nfet_01v8[id]
 
 
 * V_out initial voltage value for the F_VCO delay of 2ns  (leading)
@@ -35,7 +39,7 @@ x2 VOUT VDD GND F_REF F_VCO I_IN pfd_cp_magic
   * tran 5ps 0.5us
 
   * timestep for faster simulation results
-  tran 50ps 0.5us
+  tran 50ps 0.02us
 
   remzerovec
   write pfd_charge_pump_magic.raw
@@ -55,8 +59,8 @@ x2 VOUT VDD GND F_REF F_VCO I_IN pfd_cp_magic
 *.ipin GNDA
 *.iopin VOUT
 XC2 GNDA VOUT sky130_fd_pr__cap_mim_m3_1 W=13.8 L=60 MF=1 m=1
-XC1 GNDA net1 sky130_fd_pr__cap_mim_m3_1 W=69.8 L=60 MF=1 m=1
-XR1 net1 VOUT GNDA sky130_fd_pr__res_xhigh_po_0p35 L=7.52 mult=1 m=1
+XC1 GNDA R1_C1 sky130_fd_pr__cap_mim_m3_1 W=69.8 L=60 MF=1 m=1
+XR1 R1_C1 VOUT GNDA sky130_fd_pr__res_xhigh_po_0p35 L=7.52 mult=1 m=1
 .ends
 
 .GLOBAL GND

@@ -1,0 +1,63 @@
+** sch_path: /foss/designs/my_design/projects/pll/full_pll/magic/tb_full_pll_magic.sch
+**.subckt tb_full_pll_magic
+V1 VDD GND 1.8
+V2 F_REF GND pulse(0 1.8 12ns 1ns 1ns 24ns 50ns)
+I1 GND I_IN 100u
+x1 V_OSC VDD GND F_REF I_IN full_pll_magic
+**** begin user architecture code
+.lib /foss/pdks/sky130A/libs.tech/combined/sky130.lib.spice tt
+
+
+
+.include /foss/designs/my_design/projects/pll/full_pll/magic/full_pll_magic.spice
+
+.option method=gear
+* .option method=trap
+.option wnflag=1
+* .option savecurrents
+
+.save
++v(x1.v_cont.n0)
++v(x1.f_vco.t0)
++v(x1.pfd_8_0.qa.n0)
++v(x1.pfd_8_0.qb.n0)
++v(x1.pfd_8_0.up_input.n0)
++v(x1.pfd_8_0.down_input.n0)
++v(x1.charge_pump_cell_6_0.x.n0)
++v(x1.vco_fd_magic_0.div120_2_0.div2.n0)
++v(x1.vco_fd_magic_0.div120_2_0.div4.n0)
++v(x1.vco_fd_magic_0.div120_2_0.div8.n0)
++v(x1.vco_fd_magic_0.div120_2_0.div24.n0)
++@m.x1.x39.msky130_fd_pr__pfet_01v8[id]
++@m.x1.x70.msky130_fd_pr__pfet_01v8[id]
++@m.x1.x101.msky130_fd_pr__pfet_01v8[id]
++@m.x1.x124.msky130_fd_pr__pfet_01v8[id]
++@m.x1.x213.msky130_fd_pr__nfet_01v8[id]
++@m.x1.x241.msky130_fd_pr__nfet_01v8[id]
+
+
+* V_out initial voltage
+
+.ic v(x1.v_cont.n0) = 0.0
+
+
+.control
+  save v(v_osc)
+
+  * timestep for exact simulation results
+  tran 5ps 6us
+
+  remzerovec
+  write tb_full_pll_magic_4.raw
+  wrdata /foss/designs/my_design/projects/pll/full_pll/magic/full_pll_v_osc.txt v(v_osc)
+  set appendwrite
+
+.endc
+
+
+
+**** end user architecture code
+**.ends
+.GLOBAL GND
+.GLOBAL VDD
+.end

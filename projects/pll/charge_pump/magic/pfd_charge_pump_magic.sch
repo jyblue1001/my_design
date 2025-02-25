@@ -13,7 +13,7 @@ divy=5
 subdivy=1
 unity=1
 x1=0
-x2=5e-07
+x2=2e-08
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -54,7 +54,7 @@ divy=5
 subdivy=1
 unity=1
 x1=0
-x2=5e-07
+x2=2e-08
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -91,7 +91,7 @@ divy=5
 subdivy=1
 unity=1
 x1=0
-x2=5e-07
+x2=2e-08
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -124,7 +124,7 @@ divy=5
 subdivy=1
 unity=1
 x1=0
-x2=5e-07
+x2=2e-08
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -161,7 +161,7 @@ divy=5
 subdivy=1
 unity=1
 x1=0
-x2=5e-07
+x2=2e-08
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -190,15 +190,15 @@ color="6 5"
 node="up_b
 down"}
 B 2 1860 -1670 3220 -1000 {flags=graph
-y1=0.9
-y2=3.9
+y1=1.7
+y2=1.9
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
 x1=0
-x2=5e-07
+x2=2e-08
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -860,15 +860,15 @@ x2.vdda.n2
 x2.vdda.n1
 x2.vdda.n0"}
 B 2 1860 -2370 3220 -1700 {flags=graph
-y1=1.1
-y2=1.9
+y1=-0.045
+y2=0.064
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
 x1=0
-x2=5e-07
+x2=2e-08
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -1505,7 +1505,7 @@ divy=5
 subdivy=1
 unity=1
 x1=0
-x2=5e-07
+x2=2e-08
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -1529,9 +1529,10 @@ linewidth_mult=7
 
 
 
-color="6 5"
+color="6 5 6"
 node="i(vmeas2)
-i(vmeas3)"}
+i(vmeas3)
+i(@m.x2.x66.msky130_fd_pr__nfet_01v8[id])"}
 B 2 3420 -740 4800 -60 {flags=graph
 y1=0
 y2=0.01
@@ -1541,7 +1542,7 @@ divy=5
 subdivy=1
 unity=1
 x1=0
-x2=5e-07
+x2=2e-08
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -1583,7 +1584,11 @@ C {devices/code.sym} 2530 -3191.25 0 0 {name=Testbench only_toplevel=false value
 
 .option method=gear
 .option wnflag=1
-.option savecurrents
+*.option savecurrents
+
+.save
+* +i(@m.x2.x66.msky130_fd_pr__nfet_01v8[id])
++@m.x2.x66.msky130_fd_pr__nfet_01v8[id]
 
 
 * V_out initial voltage value for the F_VCO delay of 2ns  (leading)
@@ -1603,7 +1608,7 @@ C {devices/code.sym} 2530 -3191.25 0 0 {name=Testbench only_toplevel=false value
   * tran 5ps 0.5us
 
   * timestep for faster simulation results
-  tran 50ps 0.5us
+  tran 50ps 0.02us
 
   remzerovec
   write pfd_charge_pump_magic.raw
@@ -1842,4 +1847,4 @@ value="
 
 "}
 C {/foss/designs/my_design/projects/pll/charge_pump/xschem_ngspice/loop_filter_xschem.sym} 2710 -2770 0 0 {name=x1}
-C {pfd_cp_magic.sym} 2470 -2850 0 0 {name=x2}
+C {/foss/designs/my_design/projects/pll/charge_pump/magic/pfd_cp_magic.sym} 2470 -2850 0 0 {name=x2}

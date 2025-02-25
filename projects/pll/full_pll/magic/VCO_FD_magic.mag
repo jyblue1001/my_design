@@ -1,12 +1,12 @@
 magic
 tech sky130A
-timestamp 1740073110
+timestamp 1740284885
 << nwell >>
 rect 1140 635 1245 675
 rect 1135 530 1245 635
 << poly >>
 rect 1175 520 1240 535
-rect 120 260 140 275
+rect 150 260 170 275
 << locali >>
 rect 1185 1140 1235 1150
 rect 0 1120 25 1140
@@ -141,7 +141,7 @@ timestamp 1740045839
 transform 1 0 1245 0 1 890
 box -10 -570 5215 -140
 use vco2_3  vco2_3_0
-timestamp 1740072996
+timestamp 1740284794
 transform 1 0 -1175 0 1 525
 box 1175 -465 2350 625
 << labels >>
@@ -149,9 +149,9 @@ flabel metal1 0 1130 0 1130 7 FreeSans 800 0 -400 0 VDDA
 port 2 w
 flabel metal1 0 80 0 80 7 FreeSans 800 0 -400 0 GNDA
 port 3 w
-flabel poly 120 270 120 270 7 FreeSans 800 0 -400 0 V_CONT
-port 4 w
 flabel poly 1205 520 1205 520 5 FreeSans 800 0 0 -400 V_OSC
 flabel locali 6470 540 6470 540 3 FreeSans 800 0 400 0 V_OUT_120
 port 1 e
+flabel poly 150 270 150 270 7 FreeSans 800 0 -400 0 V_CONT
+port 4 w
 << end >>
