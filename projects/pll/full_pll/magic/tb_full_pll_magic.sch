@@ -268,4 +268,4 @@ value="
 C {lab_pin.sym} 1960 -4620 0 0 {name=p5 lab=F_REF}
 C {lab_pin.sym} 1960 -4580 0 0 {name=p7 lab=I_IN}
 C {lab_pin.sym} 2140 -4600 0 1 {name=p1 lab=V_OSC}
-C {full_pll_magic.sym} 2050 -4600 0 0 {name=x1}
+C {/foss/designs/my_design/projects/pll/full_pll/magic/full_pll_magic.sym} 2050 -4600 0 0 {name=x1}

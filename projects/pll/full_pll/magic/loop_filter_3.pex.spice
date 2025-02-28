@@ -1,0 +1,21 @@
+* PEX produced on Tue Feb 25 01:28:13 PM CET 2025 using /foss/tools/osic-multitool/iic-pex.sh with m=3 and s=1
+* NGSPICE file created from loop_filter_3.ext - technology: sky130A
+
+.subckt loop_filter_3 V_OUT GNDA
+X0 GNDA.t1 V_OUT.t1 sky130_fd_pr__cap_mim_m3_1 l=70 w=14
+X1 GNDA.t2 R1_C1.t1 sky130_fd_pr__cap_mim_m3_1 l=70 w=70
+X2 V_OUT.t0 R1_C1.t0 GNDA.t0 sky130_fd_pr__res_xhigh_po_0p35 l=6.8
+R0 GNDA GNDA.t0 3288.38
+R1 GNDA GNDA.t1 86.0829
+R2 GNDA GNDA.t2 82.8829
+R3 V_OUT V_OUT.t0 163.322
+R4 V_OUT.n1 V_OUT.t1 8.32353
+R5 V_OUT V_OUT.n1 1.07193
+R6 V_OUT.n1 V_OUT.n0 0.7505
+R7 R1_C1.t0 R1_C1.t1 167.486
+C0 V_OUT GNDA 22.344883f
+C1 R1_C1.t1 GNDA 2.79887f
+C2 V_OUT.t1 GNDA 2.74306f
+C3 V_OUT.n1 GNDA 0.013444f
+.ends
+
