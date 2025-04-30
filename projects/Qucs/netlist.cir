@@ -1,0 +1,21 @@
+* Qucs 24.4.1  /foss/designs/my_design/projects/Qucs/qucs_tut_1.sch
+.INCLUDE "/foss/tools/qucs-s/share/qucs-s/xspice_cmlib/include/ngspice_mathfunc.inc"
+VP1 _net0 0 dc 0 ac 0.632456 SIN(0 0.632456 1MEG) portnum 1 z0 50
+VP2 _net1 0 dc 0 ac 0.632456 SIN(0 0.632456 1MEG) portnum 2 z0 50
+OLine1 _net0 0 _net1 0 mod_Line1
+.MODEL mod_Line1 LTRA(R=50 C=240E-12 L=0.6E-6 G=0.0 LEN=1MM)
+
+.control
+
+SP LIN 501 10MEG 10G
+let S11_dB = dB(v(s_1_1))
+let S12_dB = dB(v(s_1_2))
+let S21_dB = dB(v(s_2_1))
+let S22_dB = dB(v(s_2_2))
+write spice4qucs.sp1.plot S_1_1 Y_1_1 Z_1_1 S_1_2 Y_1_2 Z_1_2 S_2_1 Y_2_1 Z_2_1 S_2_2 Y_2_2 Z_2_2 S11_dB S12_dB S21_dB S22_dB
+destroy all
+reset
+
+exit
+.endc
+.END
