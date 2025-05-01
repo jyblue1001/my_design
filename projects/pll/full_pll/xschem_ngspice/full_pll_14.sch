@@ -6,7 +6,7 @@ S {}
 E {}
 B 2 160 -3460 5790 -1910 {flags=graph
 y1=-0.0026
-y2=1.2
+y2=1.7
 ypos1=0
 ypos2=2
 divy=5
@@ -89,8 +89,8 @@ linewidth_mult=5
 color=12
 node=v_cont}
 B 2 160 -1780 5790 -230 {flags=graph
-y1=-0.03
-y2=1.8
+y1=-0.054
+y2=1.7
 ypos1=0
 ypos2=2
 divy=5

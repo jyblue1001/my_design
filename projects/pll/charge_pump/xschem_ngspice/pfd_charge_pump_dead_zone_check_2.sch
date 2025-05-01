@@ -1,5 +1,4 @@
-v {xschem version=3.4.5 file_version=1.2
-}
+v {xschem version=3.4.6 file_version=1.2}
 G {}
 K {}
 V {}
@@ -630,6 +629,8 @@ C {devices/code.sym} 880 -1271.25 0 0 {name=Testbench1 only_toplevel=false value
     let start_delay = start_delay + 1ns
   
   end
+
+.endc
 }
 C {devices/vsource.sym} 1060 -1210 0 0 {name=V1 value=1.8 savecurrent=false}
 C {devices/gnd.sym} 1060 -1180 0 0 {name=l4 lab=GND}

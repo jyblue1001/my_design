@@ -1,0 +1,49 @@
+** sch_path: /foss/designs/my_design/projects/bandgapref/xschem_ngspice/new_files/gm_id_check_2.sch
+**.subckt gm_id_check_2
+XM1 VDS VGS GND GND sky130_fd_pr__nfet_01v8 L=0.15 W=0.43 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+VGS VGS GND 1.1
+VDS VDS GND 1.8
+**** begin user architecture code
+.lib /foss/pdks/sky130A/libs.tech/combined/sky130.lib.spice tt
+
+
+
+.option method=gear
+.option wnflag=1
+.option savecurrents
+
+.save
++@m.xm1.msky130_fd_pr__nfet_01v8[gm]
+
+.control
+
+  let w_value = 1
+  let final_w_value = 10
+  let increment = 1
+  let index = 1
+
+  dowhile w_value <= final_w_value
+
+    alter @m.xm1.msky130_fd_pr__nfet_01v8[w] = w_value
+    save @m.xm1.msky130_fd_pr__nfet_01v8[w]
+    remzerovec
+    *linearize i(vds)
+    echo $&w_value
+    write gm_id_check_2_{$&index}.raw
+    * wrdata /foss/designs/my_design/projects/bandgapref/xschem_ngspice/new_files/gm_id_check_2_{$&index}.txt i(vds)
+    set appendwrite
+    reset
+    let index = index + 1
+    let w_value = w_value + increment
+
+  end
+
+.endc
+
+
+
+**** end user architecture code
+**.ends
+.GLOBAL GND
+.end

@@ -5,15 +5,15 @@ V {}
 S {}
 E {}
 B 2 160 -3430 5790 -1880 {flags=graph
-y1=-0.17857236
-y2=2.1044276
+y1=-0.0022
+y2=1.7
 ypos1=0
 ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=2.798922e-08
-x2=8.3329451e-08
+x1=0
+x2=9e-06
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -101,19 +101,19 @@ linewidth_mult=12
 
 
 
-color="6 7"
-node="f_ref
-f_ref_inv"}
+
+color=12
+node=v_cont}
 B 2 160 -1820 5790 -270 {flags=graph
-y1=-0.19
-y2=1.9
+y1=0
+y2=0.01
 ypos1=0
 ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=2.798922e-08
-x2=8.3329451e-08
+x1=0
+x2=9e-06
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -202,7 +202,9 @@ linewidth_mult=10
 
 
 
-}
+
+color=7
+node=v_osc}
 T {full_pll_15.raw - current_starved_VCO10 & divide_by_120_6  , 5ps 9us
 full_pll_15_2.raw - current_starved_VCO10 & divide_by_120_6, 2ps 9us
 full_pll_15_3.raw - current_starved_VCO10 & divide_by_120_6, 5ps 9us, CP 6*4.2
