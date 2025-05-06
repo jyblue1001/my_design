@@ -1,0 +1,36 @@
+magic
+tech sky130A
+timestamp 1746511212
+<< psubdiff >>
+rect 765 480 815 495
+rect 765 460 780 480
+rect 800 460 815 480
+rect 765 445 815 460
+<< psubdiffcont >>
+rect 780 460 800 480
+<< locali >>
+rect 770 480 810 490
+rect 650 460 780 480
+rect 800 460 810 480
+rect 770 450 810 460
+rect 780 390 800 450
+rect 550 280 620 345
+rect 760 265 1135 390
+rect 760 135 885 265
+rect 1015 135 1135 265
+rect 760 10 1135 135
+<< metal1 >>
+rect 905 155 995 440
+use sky130_fd_pr__rf_pnp_05v5_W0p68L0p68  sky130_fd_pr__rf_pnp_05v5_W0p68L0p68_0 $PDKPATH/libs.ref/sky130_fd_pr/mag
+timestamp 1723858470
+transform 1 0 750 0 1 0
+box 0 0 398 398
+use sky130_fd_pr__rf_pnp_05v5_W3p40L3p40  sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_0 $PDKPATH/libs.ref/sky130_fd_pr/mag
+timestamp 1723858470
+transform 1 0 -756 0 1 2
+box 0 0 670 670
+use sky130_fd_pr__rf_pnp_05v5_W3p40L3p40  sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_1
+timestamp 1723858470
+transform 1 0 -6 0 1 2
+box 0 0 670 670
+<< end >>

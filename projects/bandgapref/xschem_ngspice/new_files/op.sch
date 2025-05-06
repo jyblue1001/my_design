@@ -72,7 +72,7 @@ N 240 -530 310 -530 {lab=V_mirror}
 N 780 -320 840 -320 {lab=Vout}
 N 370 -320 430 -320 {lab=V_p}
 N 290 -440 540 -440 {lab=GNDA}
-N 540 -440 540 -220 {lab=GNDA}
+N 520 -440 520 -220 {lab=GNDA}
 C {devices/ipin.sym} 680 -440 2 0 {name=p1 lab=Vin+}
 C {devices/opin.sym} 950 -440 0 0 {name=p5 lab=Vout}
 C {devices/ipin.sym} 150 -440 2 1 {name=p2 lab=Vin-}
@@ -82,7 +82,7 @@ C {devices/ipin.sym} 490 -690 3 1 {name=p6 lab=VDDA
 }
 C {sky130_fd_pr/nfet_01v8.sym} 410 -270 0 0 {name=M1
 W=4
-L=0.6
+L=4
 nf=1 
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -152,7 +152,7 @@ spiceprefix=X
 }
 C {sky130_fd_pr/nfet_01v8.sym} 820 -270 0 0 {name=M6
 W=4
-L=0.6
+L=4
 nf=1 
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 

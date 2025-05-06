@@ -1,0 +1,40 @@
+** sch_path: /foss/designs/projects/bandgapref/xschem_ngspice/new_files/vds_vgs_sweep_pfet.sch
+**.subckt vds_vgs_sweep_pfet
+VGS GND VGS 1.05
+VDS GND VDS 1.8
+XM1 VDS VGS GND GND sky130_fd_pr__pfet_01v8 L=0.6 W=16 nf=4 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM2 VDS VGS GND GND sky130_fd_pr__pfet_01v8 L=0.6 W=8 nf=2 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM3 VDS VDS GND GND sky130_fd_pr__pfet_01v8 L=8 W=8 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+**** begin user architecture code
+.lib /foss/pdks/sky130A/libs.tech/combined/sky130.lib.spice tt
+
+
+
+.option method=gear
+.option wnflag=1
+.option savecurrents
+
+.save
++@m.xm1.msky130_fd_pr__pfet_01v8[gm]
++@m.xm2.msky130_fd_pr__pfet_01v8[gm]
++@m.xm3.msky130_fd_pr__pfet_01v8[gm]
+
+.control
+  save all
+  *  dc VGS 0 1.8 0.1 VDS 0 1.8 0.1
+  dc VDS 0 1.8 0.001 VGS 0 1.8 0.05
+  * dc VDS 0 1.8 0.001 temp -40 120 40
+  remzerovec
+  write vds_vgs_sweep_pfet.raw
+  set appendwrite
+.endc
+
+
+
+**** end user architecture code
+**.ends
+.GLOBAL GND
+.end

@@ -1,6 +1,6 @@
-** sch_path: /foss/designs/projects/bandgapref/xschem_ngspice/new_files/tb_low_voltage_BGR_2.sch
-**.subckt tb_low_voltage_BGR_2
-VDD VDD GND 1.8
+** sch_path: /foss/designs/projects/bandgapref/xschem_ngspice/new_files/tb_low_voltage_BGR_3.sch
+**.subckt tb_low_voltage_BGR_3
+VDD VDD GND pwl(0 0 1us 0 2us 1.8)
 XQ1 GND GND net2 sky130_fd_pr__pnp_05v5_W3p40L3p40 m=1 mult=1
 XQ2 GND GND Vbe2 sky130_fd_pr__pnp_05v5_W3p40L3p40 m=6 mult=6
 XM1 net5 V_TOP VDD VDD sky130_fd_pr__pfet_01v8 L=0.6 W=16 nf=4 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
@@ -67,16 +67,16 @@ Vmeas7 Vin+ net7 0
 +@m.x2.xm7.msky130_fd_pr__pfet_01v8[gm]
 
 * .ic v(vin-) = 0.8
-* .ic v(v_top) = 1.8
+.ic v(v_top) = 1.8
 
 .control
   save all
   * dc temp -40 120 10 VDD 0 4.0 0.2
   * dc VDD 0 4.0 0.2 temp -40 120 40
-  dc VDD 0 1.8 0.01
-  * tran 1ns 10us
+  * dc VDD 0 4.0 0.2
+  tran 1ns 10us
   remzerovec
-  write tb_low_voltage_BGR_2.raw
+  write tb_low_voltage_BGR_3.raw
   set appendwrite
 .endc
 

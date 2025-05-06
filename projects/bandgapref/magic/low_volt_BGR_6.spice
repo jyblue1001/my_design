@@ -1,0 +1,92 @@
+* NGSPICE file created from low_volt_BGR_6.ext - technology: sky130A
+
+.subckt sky130_fd_pr__rf_pnp_05v5_W3p40L3p40 Emitter Collector Base VSUBS m=1
+X0 Collector Base Emitter sky130_fd_pr__pnp_05v5_W3p40L3p40
+**devattr s=462400,2720
+.ends
+
+.subckt low_volt_BGR_6 VDDA Emitter V_out GNDA
+Xsky130_fd_pr__rf_pnp_05v5_W3p40L3p40_4 Emitter GNDA GNDA GNDA sky130_fd_pr__rf_pnp_05v5_W3p40L3p40 m=1
+Xsky130_fd_pr__rf_pnp_05v5_W3p40L3p40_6 Emitter GNDA GNDA GNDA sky130_fd_pr__rf_pnp_05v5_W3p40L3p40 m=1
+Xsky130_fd_pr__rf_pnp_05v5_W3p40L3p40_5 Emitter GNDA GNDA GNDA sky130_fd_pr__rf_pnp_05v5_W3p40L3p40 m=1
+Xsky130_fd_pr__rf_pnp_05v5_W3p40L3p40_7 Emitter GNDA GNDA GNDA sky130_fd_pr__rf_pnp_05v5_W3p40L3p40 m=1
+Xsky130_fd_pr__rf_pnp_05v5_W3p40L3p40_8 Emitter GNDA GNDA GNDA sky130_fd_pr__rf_pnp_05v5_W3p40L3p40 m=1
+Xsky130_fd_pr__rf_pnp_05v5_W3p40L3p40_9 Emitter GNDA GNDA GNDA sky130_fd_pr__rf_pnp_05v5_W3p40L3p40 m=1
+Xsky130_fd_pr__rf_pnp_05v5_W3p40L3p40_10 Emitter GNDA GNDA GNDA sky130_fd_pr__rf_pnp_05v5_W3p40L3p40 m=1
+Xsky130_fd_pr__rf_pnp_05v5_W3p40L3p40_0 Emitter GNDA GNDA GNDA sky130_fd_pr__rf_pnp_05v5_W3p40L3p40 m=1
+Xsky130_fd_pr__rf_pnp_05v5_W3p40L3p40_1 Vin- GNDA GNDA GNDA sky130_fd_pr__rf_pnp_05v5_W3p40L3p40 m=1
+Xsky130_fd_pr__rf_pnp_05v5_W3p40L3p40_2 Emitter GNDA GNDA GNDA sky130_fd_pr__rf_pnp_05v5_W3p40L3p40 m=1
+Xsky130_fd_pr__rf_pnp_05v5_W3p40L3p40_3 Emitter GNDA GNDA GNDA sky130_fd_pr__rf_pnp_05v5_W3p40L3p40 m=1
+X0 VDDA V_TOP Vin- VDDA sky130_fd_pr__pfet_01v8 ad=0.8 pd=4.4 as=0.8 ps=4.4 w=4 l=0.6
+X1 Vin- start_up V_TOP VDDA sky130_fd_pr__pfet_01v8 ad=0.8 pd=4.8 as=0.8 ps=4.8 w=2 l=0.15
+X2 VDDA V_mirror 1st_Vout VDDA sky130_fd_pr__pfet_01v8 ad=0.4 pd=2.4 as=0.4 ps=2.4 w=2 l=0.6
+X3 VDDA VDDA VDDA VDDA sky130_fd_pr__pfet_01v8 ad=0.8 pd=4.4 as=32 ps=182.4 w=4 l=0.6
+X4 a_2010_4490# a_3790_4610# GNDA sky130_fd_pr__res_xhigh_po_0p35 l=6.86
+X5 VDDA V_TOP V_out VDDA sky130_fd_pr__pfet_01v8 ad=0.8 pd=4.4 as=0.8 ps=4.4 w=4 l=0.6
+X6 VDDA V_mirror V_mirror VDDA sky130_fd_pr__pfet_01v8 ad=0.4 pd=2.4 as=0.4 ps=2.4 w=2 l=0.6
+X7 V_mirror V_mirror VDDA VDDA sky130_fd_pr__pfet_01v8 ad=0.4 pd=2.4 as=0.4 ps=2.4 w=2 l=0.6
+X8 V_p Vin+ 1st_Vout GNDA sky130_fd_pr__nfet_01v8 ad=0.2 pd=1.4 as=0.2 ps=1.4 w=1 l=0.6
+X9 VDDA V_TOP Vin- VDDA sky130_fd_pr__pfet_01v8 ad=0.8 pd=4.4 as=0.8 ps=4.4 w=4 l=0.6
+X10 1st_Vout V_mirror VDDA VDDA sky130_fd_pr__pfet_01v8 ad=0.4 pd=2.4 as=0.4 ps=2.4 w=2 l=0.6
+X11 a_2010_3490# a_3790_3610# GNDA sky130_fd_pr__res_xhigh_po_0p35 l=6.86
+X12 a_2010_4730# a_3790_4610# GNDA sky130_fd_pr__res_xhigh_po_0p35 l=6.86
+X13 V_TOP V_TOP GNDA GNDA sky130_fd_pr__nfet_01v8 ad=1.6 pd=8.8 as=0.8 ps=4.4 w=4 l=4
+X14 V_out V_TOP VDDA VDDA sky130_fd_pr__pfet_01v8 ad=0.8 pd=4.4 as=0.8 ps=4.4 w=4 l=0.6
+X15 a_2010_3730# a_3790_3610# GNDA sky130_fd_pr__res_xhigh_po_0p35 l=6.86
+X16 V_mirror Vin- V_p GNDA sky130_fd_pr__nfet_01v8 ad=0.2 pd=1.4 as=0.2 ps=1.4 w=1 l=0.6
+X17 Vin- V_TOP VDDA VDDA sky130_fd_pr__pfet_01v8 ad=0.8 pd=4.4 as=0.8 ps=4.4 w=4 l=0.6
+X18 1st_Vout V_mirror VDDA VDDA sky130_fd_pr__pfet_01v8 ad=0.4 pd=2.4 as=0.4 ps=2.4 w=2 l=0.6
+X19 VDDA 1st_Vout V_TOP VDDA sky130_fd_pr__pfet_01v8 ad=0.4 pd=2.4 as=0.4 ps=2.4 w=2 l=0.6
+X20 V_p V_p V_p GNDA sky130_fd_pr__nfet_01v8 ad=0.2 pd=1.4 as=5.6 ps=36.8 w=1 l=0.6
+X21 a_2010_4730# a_3790_4850# GNDA sky130_fd_pr__res_xhigh_po_0p35 l=6.86
+X22 a_2010_4490# V_out GNDA sky130_fd_pr__res_xhigh_po_0p35 l=6.86
+X23 VDDA 1st_Vout V_TOP VDDA sky130_fd_pr__pfet_01v8 ad=0.4 pd=2.4 as=0.4 ps=2.4 w=2 l=0.6
+X24 VDDA V_TOP Vin+ VDDA sky130_fd_pr__pfet_01v8 ad=0.8 pd=4.4 as=0.8 ps=4.4 w=4 l=0.6
+X25 VDDA V_TOP V_out VDDA sky130_fd_pr__pfet_01v8 ad=0.8 pd=4.4 as=0.8 ps=4.4 w=4 l=0.6
+X26 a_2010_3730# a_3790_3850# GNDA sky130_fd_pr__res_xhigh_po_0p35 l=6.86
+X27 VDDA V_TOP start_up VDDA sky130_fd_pr__pfet_01v8 ad=0.8 pd=4.8 as=0.8 ps=4.8 w=2 l=0.15
+X28 a_2010_3490# Vin- GNDA sky130_fd_pr__res_xhigh_po_0p35 l=6.86
+X29 GNDA a_3790_4850# GNDA sky130_fd_pr__res_xhigh_po_0p35 l=6.86
+X30 V_p V_p V_p GNDA sky130_fd_pr__nfet_01v8 ad=0.4 pd=2.8 as=0 ps=0 w=1 l=0.6
+X31 V_p Vin+ 1st_Vout GNDA sky130_fd_pr__nfet_01v8 ad=0.2 pd=1.4 as=0.2 ps=1.4 w=1 l=0.6
+X32 GNDA a_3790_3850# GNDA sky130_fd_pr__res_xhigh_po_0p35 l=6.86
+X33 Vin- V_TOP VDDA VDDA sky130_fd_pr__pfet_01v8 ad=0.8 pd=4.4 as=0.8 ps=4.4 w=4 l=0.6
+X34 GNDA V_p V_p GNDA sky130_fd_pr__nfet_01v8 ad=0.8 pd=4.4 as=1.6 ps=8.8 w=4 l=4
+X35 VDDA V_TOP Vin+ VDDA sky130_fd_pr__pfet_01v8 ad=0.8 pd=4.4 as=0.8 ps=4.4 w=4 l=0.6
+X36 VDDA VDDA VDDA VDDA sky130_fd_pr__pfet_01v8 ad=0.4 pd=2.4 as=0 ps=0 w=2 l=0.6
+X37 GNDA a_3790_2420# GNDA sky130_fd_pr__res_xhigh_po_0p35 l=6.86
+X38 a_2010_2780# Vin+ GNDA sky130_fd_pr__res_xhigh_po_0p35 l=6.86
+X39 a_2010_2540# a_3790_2420# GNDA sky130_fd_pr__res_xhigh_po_0p35 l=6.86
+X40 V_out V_TOP VDDA VDDA sky130_fd_pr__pfet_01v8 ad=0.8 pd=4.4 as=0.8 ps=4.4 w=4 l=0.6
+X41 VDDA VDDA VDDA VDDA sky130_fd_pr__pfet_01v8 ad=0.8 pd=4.8 as=0 ps=0 w=2 l=0.6
+X42 1st_Vout Vin+ V_p GNDA sky130_fd_pr__nfet_01v8 ad=0.2 pd=1.4 as=0.2 ps=1.4 w=1 l=0.6
+X43 Vin- V_TOP VDDA VDDA sky130_fd_pr__pfet_01v8 ad=0.8 pd=4.4 as=0.8 ps=4.4 w=4 l=0.6
+X44 V_mirror V_mirror VDDA VDDA sky130_fd_pr__pfet_01v8 ad=0.4 pd=2.4 as=0.4 ps=2.4 w=2 l=0.6
+X45 VDDA V_mirror V_mirror VDDA sky130_fd_pr__pfet_01v8 ad=0.4 pd=2.4 as=0.4 ps=2.4 w=2 l=0.6
+X46 V_p V_p V_p GNDA sky130_fd_pr__nfet_01v8 ad=0.2 pd=1.4 as=0 ps=0 w=1 l=0.6
+X47 Vin+ V_TOP VDDA VDDA sky130_fd_pr__pfet_01v8 ad=0.8 pd=4.4 as=0.8 ps=4.4 w=4 l=0.6
+X48 VDDA VDDA VDDA VDDA sky130_fd_pr__pfet_01v8 ad=0.4 pd=2.4 as=0 ps=0 w=2 l=0.6
+X49 a_2010_2540# a_3790_2660# GNDA sky130_fd_pr__res_xhigh_po_0p35 l=6.86
+X50 VDDA V_TOP Vin+ VDDA sky130_fd_pr__pfet_01v8 ad=0.8 pd=4.4 as=0.8 ps=4.4 w=4 l=0.6
+X51 Emitter Vin+ GNDA sky130_fd_pr__res_xhigh_po_0p35 l=3.66
+X52 GNDA start_up start_up GNDA sky130_fd_pr__nfet_01v8 ad=0.4 pd=2.8 as=0.4 ps=2.8 w=1 l=10
+X53 VDDA V_TOP V_out VDDA sky130_fd_pr__pfet_01v8 ad=0.8 pd=4.4 as=0.8 ps=4.4 w=4 l=0.6
+X54 V_TOP 1st_Vout VDDA VDDA sky130_fd_pr__pfet_01v8 ad=0.4 pd=2.4 as=0.4 ps=2.4 w=2 l=0.6
+X55 V_p Vin- V_mirror GNDA sky130_fd_pr__nfet_01v8 ad=0.2 pd=1.4 as=0.2 ps=1.4 w=1 l=0.6
+X56 V_p V_p V_p GNDA sky130_fd_pr__nfet_01v8 ad=0.4 pd=2.8 as=0 ps=0 w=1 l=0.6
+X57 a_2010_2780# a_3790_2660# GNDA sky130_fd_pr__res_xhigh_po_0p35 l=6.86
+X58 VDDA V_TOP Vin- VDDA sky130_fd_pr__pfet_01v8 ad=0.8 pd=4.4 as=0.8 ps=4.4 w=4 l=0.6
+X59 VDDA VDDA VDDA VDDA sky130_fd_pr__pfet_01v8 ad=0.8 pd=4.8 as=0 ps=0 w=2 l=0.6
+X60 V_TOP 1st_Vout VDDA VDDA sky130_fd_pr__pfet_01v8 ad=0.4 pd=2.4 as=0.4 ps=2.4 w=2 l=0.6
+X61 V_p Vin- V_mirror GNDA sky130_fd_pr__nfet_01v8 ad=0.2 pd=1.4 as=0.2 ps=1.4 w=1 l=0.6
+X62 Vin+ V_TOP VDDA VDDA sky130_fd_pr__pfet_01v8 ad=0.8 pd=4.4 as=0.8 ps=4.4 w=4 l=0.6
+X63 VDDA V_mirror 1st_Vout VDDA sky130_fd_pr__pfet_01v8 ad=0.4 pd=2.4 as=0.4 ps=2.4 w=2 l=0.6
+X64 VDDA VDDA VDDA VDDA sky130_fd_pr__pfet_01v8 ad=0.4 pd=2.4 as=0 ps=0 w=2 l=0.6
+X65 V_out V_TOP VDDA VDDA sky130_fd_pr__pfet_01v8 ad=0.8 pd=4.4 as=0.8 ps=4.4 w=4 l=0.6
+X66 Vin+ V_TOP VDDA VDDA sky130_fd_pr__pfet_01v8 ad=0.8 pd=4.4 as=0.8 ps=4.4 w=4 l=0.6
+X67 1st_Vout Vin+ V_p GNDA sky130_fd_pr__nfet_01v8 ad=0.2 pd=1.4 as=0.2 ps=1.4 w=1 l=0.6
+X68 VDDA VDDA VDDA VDDA sky130_fd_pr__pfet_01v8 ad=0.8 pd=4.8 as=0 ps=0 w=2 l=0.6
+X69 V_mirror Vin- V_p GNDA sky130_fd_pr__nfet_01v8 ad=0.2 pd=1.4 as=0.2 ps=1.4 w=1 l=0.6
+X70 VDDA VDDA VDDA VDDA sky130_fd_pr__pfet_01v8 ad=1.6 pd=8.8 as=0 ps=0 w=4 l=0.6
+.ends
+

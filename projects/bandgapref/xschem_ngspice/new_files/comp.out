@@ -1,0 +1,53 @@
+
+Circuit 1 cell sky130_fd_pr__nfet_01v8 and Circuit 2 cell sky130_fd_pr__nfet_01v8 are black boxes.
+Equate elements:  no current cell.
+Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__pfet_01v8 and Circuit 2 cell sky130_fd_pr__pfet_01v8 are black boxes.
+Equate elements:  no current cell.
+Device classes sky130_fd_pr__pfet_01v8 and sky130_fd_pr__pfet_01v8 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__rf_pnp_05v5_W3p40L3p40 and Circuit 2 cell sky130_fd_pr__rf_pnp_05v5_W3p40L3p40 are black boxes.
+Equate elements:  no current cell.
+Device classes sky130_fd_pr__rf_pnp_05v5_W3p40L3p40 and sky130_fd_pr__rf_pnp_05v5_W3p40L3p40 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__res_xhigh_po_0p35 and Circuit 2 cell sky130_fd_pr__res_xhigh_po_0p35 are black boxes.
+Equate elements:  no current cell.
+Device classes sky130_fd_pr__res_xhigh_po_0p35 and sky130_fd_pr__res_xhigh_po_0p35 are equivalent.
+Flattening unmatched subcell op in circuit low_voltage_BGR.spice (1)(1 instance)
+
+Class low_volt_BGR_magic.spice (0):  Merged 35 parallel devices.
+Class low_volt_BGR_magic.spice (0):  Merged 12 series devices.
+Subcircuit summary:
+Circuit 1: low_volt_BGR_magic.spice        |Circuit 2: low_voltage_BGR.spice           
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__rf_pnp_05v5_W3p40L3p40 (7->2 |sky130_fd_pr__rf_pnp_05v5_W3p40L3p40 (7->2 
+sky130_fd_pr__pfet_01v8 (32->8)            |sky130_fd_pr__pfet_01v8 (8)                
+sky130_fd_pr__nfet_01v8 (11->5)            |sky130_fd_pr__nfet_01v8 (5)                
+sky130_fd_pr__res_xhigh_po_0p35 (16->4)    |sky130_fd_pr__res_xhigh_po_0p35 (4)        
+Number of devices: 19                      |Number of devices: 19                      
+Number of nets: 11                         |Number of nets: 11                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely with property errors.
+sky130_fd_pr__res_xhigh_po_0p35:7 vs. sky130_fd_pr__res_xhigh_po_0p35:R1:
+ l circuit1: 3.66   circuit2: 3.5   (delta=4.47%, cutoff=1%)
+sky130_fd_pr__res_xhigh_po_0p35:53 vs. sky130_fd_pr__res_xhigh_po_0p35:R2:
+ l circuit1: 34.3   circuit2: 33.6   (delta=2.06%, cutoff=1%)
+sky130_fd_pr__res_xhigh_po_0p35:35 vs. sky130_fd_pr__res_xhigh_po_0p35:R3:
+ l circuit1: 34.3   circuit2: 33.6   (delta=2.06%, cutoff=1%)
+sky130_fd_pr__res_xhigh_po_0p35:50 vs. sky130_fd_pr__res_xhigh_po_0p35:R4:
+ l circuit1: 34.3   circuit2: 33.6   (delta=2.06%, cutoff=1%)
+sky130_fd_pr__pfet_01v8:0 vs. sky130_fd_pr__pfet_01v8:M1:
+ w circuit1: 24   circuit2: 16   (delta=40%, cutoff=1%)
+sky130_fd_pr__pfet_01v8:9 vs. sky130_fd_pr__pfet_01v8:M3:
+ w circuit1: 24   circuit2: 16   (delta=40%, cutoff=1%)
+sky130_fd_pr__pfet_01v8:6 vs. sky130_fd_pr__pfet_01v8:M2:
+ w circuit1: 24   circuit2: 16   (delta=40%, cutoff=1%)
+Cells have no pins;  pin matching not needed.
+Device classes low_volt_BGR_magic.spice and low_voltage_BGR.spice are equivalent.
+
+Final result: Circuits match uniquely.
+Property errors were found.
+
+The following cells had property errors:
+ low_volt_BGR_magic.spice

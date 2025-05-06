@@ -1,0 +1,271 @@
+timestamp 1746515190
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+use sky130_fd_pr__rf_pnp_05v5_W3p40L3p40 sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_1 1 0 -10 0 1 0
+use sky130_fd_pr__rf_pnp_05v5_W3p40L3p40 sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_0 1 0 1350 0 1 0
+use sky130_fd_pr__rf_pnp_05v5_W3p40L3p40 sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_2 1 0 2710 0 1 0
+use sky130_fd_pr__rf_pnp_05v5_W3p40L3p40 sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_3 1 0 4070 0 1 0
+use sky130_fd_pr__rf_pnp_05v5_W3p40L3p40 sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_4 1 0 5430 0 1 0
+use sky130_fd_pr__rf_pnp_05v5_W3p40L3p40 sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_5 1 0 6790 0 1 0
+use sky130_fd_pr__rf_pnp_05v5_W3p40L3p40 sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_6 1 0 8150 0 1 0
+parameters sky130_fd_pr__nfet_01v8 l=l w=w a1=as p1=ps a2=ad p2=pd
+parameters sky130_fd_pr__pfet_01v8 l=l w=w a1=as p1=ps a2=ad p2=pd
+parameters sky130_fd_pr__res_xhigh_po_5p73 l=l+32
+parameters sky130_fd_pr__res_xhigh_po_2p85 l=l+32
+parameters sky130_fd_pr__res_xhigh_po_1p41 l=l+32
+parameters sky130_fd_pr__res_xhigh_po_0p69 l=l+32
+parameters sky130_fd_pr__res_xhigh_po_0p35 l=l+32
+parameters sky130_fd_pr__res_xhigh_po l=l+32 w=w
+port "V_out" 5 6460 6300 6460 6300 m1
+port "VDDA" 1 9740 2800 9740 2800 m3
+port "GNDA" 6 9590 2350 9590 2350 m3
+node "a_2450_2410#" 38286 0 2450 2410 xres 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 93800 2820 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_3790_2410#" 214 400.552 3790 2410 xpc 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 145200 3300 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_2450_2530#" 38286 0 2450 2530 xres 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 93800 2820 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_2450_2650#" 38286 0 2450 2650 xres 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 93800 2820 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_2010_2530#" 214 535.608 2010 2530 xpc 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 145200 3300 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_3790_2650#" 214 240.107 3790 2650 xpc 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 145200 3300 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_2450_2770#" 38286 0 2450 2770 xres 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 93800 2820 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_2450_2890#" 38286 0 2450 2890 xres 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 93800 2820 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_2010_2770#" 214 245.495 2010 2770 xpc 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 145200 3300 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_2450_3010#" 20000 0 2450 3010 xres 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 49000 1540 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "Vbe2" 219 14024.6 2010 3010 xpc 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 70800 2300 5113800 31440 24000 760 0 0 0 0 0 0 0 0
+node "V_p" 5095 2515.91 5460 1970 ndif 0 0 0 0 0 0 0 0 144000 4560 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 752000 3480 0 0 237600 8480 32000 1600 83200 3840 0 0 0 0 0 0 0 0
+node "a_2450_3480#" 38286 0 2450 3480 xres 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 93800 2820 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_2450_3600#" 38286 0 2450 3600 xres 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 93800 2820 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_2010_3480#" 214 332.534 2010 3480 xpc 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 145200 3300 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_3790_3600#" 214 234.342 3790 3600 xpc 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 145200 3300 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_2450_3720#" 38286 0 2450 3720 xres 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 93800 2820 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_2450_3840#" 38286 0 2450 3840 xres 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 93800 2820 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_2010_3720#" 214 529.757 2010 3720 xpc 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 145200 3300 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_3790_3840#" 214 321.224 3790 3840 xpc 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 145200 3300 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_2450_3960#" 38286 0 2450 3960 xres 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 93800 2820 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "start_up" 3031 6185.72 5360 1510 ndif 0 0 0 0 0 0 0 0 16000 560 32000 960 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 630500 8220 0 0 215600 6180 93600 4600 71600 3500 0 0 0 0 0 0 0 0
+node "1st_Vout" 5382 1190.6 5420 3820 pdif 0 0 0 0 0 0 0 0 32000 1120 64000 1920 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 246800 5480 0 0 120000 5040 65600 3120 163200 7600 0 0 0 0 0 0 0 0
+node "V_mirror" 6457 954.669 5300 3770 p 0 0 0 0 0 0 0 0 32000 1120 64000 1920 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 484800 10440 0 0 99200 4000 60800 2880 64000 2960 0 0 0 0 0 0 0 0
+node "a_2450_4500#" 38286 0 2450 4500 xres 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 93800 2820 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "V_out" 7702 844.803 6460 6300 m1 0 0 0 0 0 0 0 0 0 0 192000 5280 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 309200 9640 90000 3780 167600 7420 0 0 0 0 0 0 0 0
+node "Vin+" 8904 2721.46 3150 3010 xpc 0 0 0 0 0 0 0 0 0 0 192000 5280 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 148800 3640 0 0 378000 11760 134800 5940 376400 17620 0 0 0 0 0 0 0 0
+node "Vin-" 10302 6456.2 3790 3480 xpc 0 0 0 0 0 0 0 0 0 0 224000 6240 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 151200 3740 0 0 336800 10840 1081800 13400 614800 23720 0 0 0 0 0 0 0 0
+node "a_2450_4620#" 38286 0 2450 4620 xres 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 93800 2820 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_2010_4500#" 214 391.106 2010 4500 xpc 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 145200 3300 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_3790_4620#" 214 226.904 3790 4620 xpc 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 145200 3300 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_2450_4740#" 38286 0 2450 4740 xres 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 93800 2820 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_2450_4860#" 38286 0 2450 4860 xres 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 93800 2820 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_2010_4740#" 214 536.711 2010 4740 xpc 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 145200 3300 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_3790_4860#" 214 384.755 3790 4860 xpc 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 145200 3300 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_2450_4980#" 38286 0 2450 4980 xres 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 93800 2820 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "V_TOP" 14303 4697.05 4700 4610 p 0 0 0 0 0 0 0 0 64000 1760 96000 2880 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2730600 42940 0 0 279200 10300 128800 6060 174800 8500 0 0 0 0 0 0 0 0
+node "VDDA" 44811 54409.6 9740 2800 m3 0 0 0 0 9018000 13620 0 0 192000 5440 896000 25280 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 986200 30340 115200 5760 889600 42880 982400 24840 1611200 40560 0 0 0 0
+substrate "GNDA" 0 0 9590 2350 m3 0 0 0 0 0 0 0 0 144000 4080 110000 3120 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3338300 43060 51200 2240 1055600 40140 934400 23640 1563200 39360 0 0 0 0
+cap "Vbe2" "VDDA" 24.2548
+cap "a_2010_4740#" "a_3790_4620#" 1.30482
+cap "V_out" "V_p" 0.140765
+cap "VDDA" "V_p" 38.1963
+cap "Vbe2" "a_2010_3480#" 52.4299
+cap "V_out" "Vin+" 1086.7
+cap "VDDA" "Vin+" 1953.14
+cap "Vin-" "a_2010_3720#" 15.8679
+cap "V_mirror" "V_TOP" 430.897
+cap "a_3790_4860#" "a_3790_4620#" 287.692
+cap "start_up" "VDDA" 379.829
+cap "Vbe2" "a_2010_2770#" 295.999
+cap "1st_Vout" "V_TOP" 1378.38
+cap "1st_Vout" "V_mirror" 1464.64
+cap "a_3790_3600#" "a_2010_3720#" 1.30482
+cap "Vin-" "V_TOP" 1776.05
+cap "a_3790_4620#" "V_TOP" 0.339447
+cap "a_3790_2650#" "a_2010_2530#" 1.30482
+cap "Vin-" "V_mirror" 428.155
+cap "Vin-" "a_2010_2530#" 5.46851
+cap "V_out" "VDDA" 3044.85
+cap "a_2010_2770#" "Vin+" 1.30482
+cap "1st_Vout" "Vin-" 855.468
+cap "a_3790_3600#" "V_mirror" 0.0599477
+cap "V_out" "a_3790_3840#" 59.2455
+cap "a_3790_3840#" "VDDA" 30.118
+cap "Vin-" "a_3790_4620#" 4.61351
+cap "a_2010_3480#" "VDDA" 6.00017
+cap "1st_Vout" "a_3790_3600#" 4.17939
+cap "Vin-" "a_3790_3600#" 356.445
+cap "V_out" "a_2010_4500#" 1.30482
+cap "VDDA" "a_2010_4500#" 25.669
+cap "Vbe2" "V_TOP" 37.9014
+cap "Vbe2" "a_2010_2530#" 8.61871
+cap "V_p" "V_TOP" 257.78
+cap "V_mirror" "V_p" 139.8
+cap "Vbe2" "a_3790_2650#" 0.827354
+cap "a_2010_4740#" "VDDA" 15.9594
+cap "Vin+" "V_TOP" 1839.87
+cap "Vin-" "Vbe2" 220.655
+cap "1st_Vout" "V_p" 141.934
+cap "V_mirror" "Vin+" 49.9476
+cap "start_up" "V_TOP" 290.094
+cap "start_up" "V_mirror" 1.13349
+cap "a_2010_3720#" "VDDA" 12.0531
+cap "a_3790_4860#" "V_out" 16.2698
+cap "V_p" "a_3790_2650#" 3.91102
+cap "a_3790_4860#" "VDDA" 26.7168
+cap "a_3790_2410#" "a_2010_2530#" 1.30482
+cap "1st_Vout" "Vin+" 253.677
+cap "Vin-" "V_p" 198.064
+cap "1st_Vout" "start_up" 0.0897083
+cap "Vin+" "a_3790_2650#" 333.581
+cap "a_2010_3720#" "a_3790_3840#" 1.30482
+cap "a_3790_2410#" "a_3790_2650#" 287.692
+cap "Vin-" "Vin+" 2244.88
+cap "a_2010_3720#" "a_2010_3480#" 287.692
+cap "Vin-" "start_up" 238.167
+cap "V_out" "V_TOP" 905.237
+cap "VDDA" "V_TOP" 6447.85
+cap "V_out" "V_mirror" 3.97063
+cap "V_mirror" "VDDA" 2129.51
+cap "a_2010_4740#" "a_2010_4500#" 287.692
+cap "1st_Vout" "V_out" 2.41963
+cap "1st_Vout" "VDDA" 1250.04
+cap "Vin-" "V_out" 430.934
+cap "V_out" "a_3790_4620#" 333.581
+cap "Vin-" "VDDA" 2064.73
+cap "VDDA" "a_3790_4620#" 18.9602
+cap "Vbe2" "V_p" 43.4711
+cap "Vin-" "a_3790_3840#" 39.1342
+cap "a_2010_2770#" "a_2010_2530#" 287.692
+cap "V_out" "a_3790_3600#" 2.96202
+cap "a_3790_4860#" "a_2010_4740#" 1.30482
+cap "Vbe2" "Vin+" 23.2831
+cap "a_3790_3600#" "VDDA" 11.152
+cap "Vin-" "a_2010_3480#" 37.8204
+cap "Vbe2" "a_3790_2410#" 1.24706
+cap "start_up" "Vbe2" 373.642
+cap "a_2010_2770#" "a_3790_2650#" 1.30482
+cap "a_3790_3600#" "a_3790_3840#" 287.692
+cap "Vin-" "a_2010_2770#" 10.6244
+cap "V_p" "Vin+" 1217.11
+cap "a_3790_3600#" "a_2010_3480#" 1.30482
+cap "V_p" "a_3790_2410#" 3.82916
+cap "start_up" "V_p" 209.428
+cap "a_3790_4620#" "a_2010_4500#" 1.30482
+cap "Vin+" "a_3790_2410#" 16.2698
+cap "start_up" "Vin+" 97.2601
+device msubckt sky130_fd_pr__nfet_01v8 5440 1510 5441 1511 l=2000 w=200 "GNDA" "start_up" 4000 0 "start_up" 200 16000,560 "GNDA" 200 16000,560
+device msubckt sky130_fd_pr__nfet_01v8 6580 1970 6581 1971 l=800 w=800 "GNDA" "V_TOP" 1600 0 "GNDA" 800 64000,1760 "V_TOP" 800 64000,1760
+device msubckt sky130_fd_pr__nfet_01v8 5540 1970 5541 1971 l=800 w=800 "GNDA" "V_p" 1600 0 "V_p" 800 64000,1760 "GNDA" 800 64000,1760
+device rsubckt sky130_fd_pr__res_xhigh_po_0p35 2450 2410 2451 2411 l=1340 "GNDA" "a_2450_2410#" 0 0 "GNDA" 70 30800,1020 "a_3790_2410#" 70 30800,1020
+device rsubckt sky130_fd_pr__res_xhigh_po_0p35 2450 2530 2451 2531 l=1340 "GNDA" "a_2450_2530#" 0 0 "a_2010_2530#" 70 30800,1020 "a_3790_2410#" 70 30800,1020
+device rsubckt sky130_fd_pr__res_xhigh_po_0p35 2450 2650 2451 2651 l=1340 "GNDA" "a_2450_2650#" 0 0 "a_2010_2530#" 70 30800,1020 "a_3790_2650#" 70 30800,1020
+device rsubckt sky130_fd_pr__res_xhigh_po_0p35 2450 2770 2451 2771 l=1340 "GNDA" "a_2450_2770#" 0 0 "a_2010_2770#" 70 30800,1020 "a_3790_2650#" 70 30800,1020
+device rsubckt sky130_fd_pr__res_xhigh_po_0p35 2450 2890 2451 2891 l=1340 "GNDA" "a_2450_2890#" 0 0 "a_2010_2770#" 70 30800,1020 "Vin+" 70 30800,1020
+device rsubckt sky130_fd_pr__res_xhigh_po_0p35 2450 3010 2451 3011 l=700 "GNDA" "a_2450_3010#" 0 0 "Vbe2" 70 30800,1020 "Vin+" 70 30800,1020
+device msubckt sky130_fd_pr__nfet_01v8 7100 3120 7101 3121 l=120 w=200 "GNDA" "Vin+" 240 0 "1st_Vout" 200 8000,280 "V_p" 200 16000,560
+device msubckt sky130_fd_pr__nfet_01v8 6900 3120 6901 3121 l=120 w=200 "GNDA" "Vin+" 240 0 "V_p" 200 8000,280 "1st_Vout" 200 8000,280
+device msubckt sky130_fd_pr__nfet_01v8 6700 3120 6701 3121 l=120 w=200 "GNDA" "Vin-" 240 0 "V_mirror" 200 8000,280 "V_p" 200 8000,280
+device msubckt sky130_fd_pr__nfet_01v8 6500 3120 6501 3121 l=120 w=200 "GNDA" "Vin-" 240 0 "V_p" 200 8000,280 "V_mirror" 200 8000,280
+device msubckt sky130_fd_pr__nfet_01v8 6300 3120 6301 3121 l=120 w=200 "GNDA" "Vin-" 240 0 "V_mirror" 200 8000,280 "V_p" 200 8000,280
+device msubckt sky130_fd_pr__nfet_01v8 6100 3120 6101 3121 l=120 w=200 "GNDA" "Vin-" 240 0 "V_p" 200 8000,280 "V_mirror" 200 8000,280
+device msubckt sky130_fd_pr__nfet_01v8 5900 3120 5901 3121 l=120 w=200 "GNDA" "Vin+" 240 0 "1st_Vout" 200 8000,280 "V_p" 200 8000,280
+device msubckt sky130_fd_pr__nfet_01v8 5700 3120 5701 3121 l=120 w=200 "GNDA" "Vin+" 240 0 "V_p" 200 16000,560 "1st_Vout" 200 8000,280
+device rsubckt sky130_fd_pr__res_xhigh_po_0p35 2450 3480 2451 3481 l=1340 "GNDA" "a_2450_3480#" 0 0 "a_2010_3480#" 70 30800,1020 "Vin-" 70 30800,1020
+device rsubckt sky130_fd_pr__res_xhigh_po_0p35 2450 3600 2451 3601 l=1340 "GNDA" "a_2450_3600#" 0 0 "a_2010_3480#" 70 30800,1020 "a_3790_3600#" 70 30800,1020
+device rsubckt sky130_fd_pr__res_xhigh_po_0p35 2450 3720 2451 3721 l=1340 "GNDA" "a_2450_3720#" 0 0 "a_2010_3720#" 70 30800,1020 "a_3790_3600#" 70 30800,1020
+device msubckt sky130_fd_pr__pfet_01v8 9080 3820 9081 3821 l=30 w=400 "VDDA" "V_TOP" 60 0 "start_up" 400 32000,960 "VDDA" 400 32000,960
+device msubckt sky130_fd_pr__pfet_01v8 8830 3820 8831 3821 l=30 w=400 "VDDA" "start_up" 60 0 "V_TOP" 400 32000,960 "Vin-" 400 32000,960
+device msubckt sky130_fd_pr__pfet_01v8 7500 3820 7501 3821 l=120 w=400 "VDDA" "V_mirror" 240 0 "1st_Vout" 400 16000,480 "VDDA" 400 32000,960
+device msubckt sky130_fd_pr__pfet_01v8 7300 3820 7301 3821 l=120 w=400 "VDDA" "V_mirror" 240 0 "VDDA" 400 16000,480 "1st_Vout" 400 16000,480
+device msubckt sky130_fd_pr__pfet_01v8 7100 3820 7101 3821 l=120 w=400 "VDDA" "V_mirror" 240 0 "V_mirror" 400 16000,480 "VDDA" 400 16000,480
+device msubckt sky130_fd_pr__pfet_01v8 6900 3820 6901 3821 l=120 w=400 "VDDA" "V_mirror" 240 0 "VDDA" 400 16000,480 "V_mirror" 400 16000,480
+device msubckt sky130_fd_pr__pfet_01v8 6700 3820 6701 3821 l=120 w=400 "VDDA" "1st_Vout" 240 0 "V_TOP" 400 16000,480 "VDDA" 400 16000,480
+device msubckt sky130_fd_pr__pfet_01v8 6500 3820 6501 3821 l=120 w=400 "VDDA" "1st_Vout" 240 0 "VDDA" 400 16000,480 "V_TOP" 400 16000,480
+device msubckt sky130_fd_pr__pfet_01v8 6300 3820 6301 3821 l=120 w=400 "VDDA" "1st_Vout" 240 0 "V_TOP" 400 16000,480 "VDDA" 400 16000,480
+device msubckt sky130_fd_pr__pfet_01v8 6100 3820 6101 3821 l=120 w=400 "VDDA" "1st_Vout" 240 0 "VDDA" 400 16000,480 "V_TOP" 400 16000,480
+device msubckt sky130_fd_pr__pfet_01v8 5900 3820 5901 3821 l=120 w=400 "VDDA" "V_mirror" 240 0 "V_mirror" 400 16000,480 "VDDA" 400 16000,480
+device msubckt sky130_fd_pr__pfet_01v8 5700 3820 5701 3821 l=120 w=400 "VDDA" "V_mirror" 240 0 "VDDA" 400 16000,480 "V_mirror" 400 16000,480
+device msubckt sky130_fd_pr__pfet_01v8 5500 3820 5501 3821 l=120 w=400 "VDDA" "V_mirror" 240 0 "1st_Vout" 400 16000,480 "VDDA" 400 16000,480
+device msubckt sky130_fd_pr__pfet_01v8 5300 3820 5301 3821 l=120 w=400 "VDDA" "V_mirror" 240 0 "VDDA" 400 32000,960 "1st_Vout" 400 16000,480
+device rsubckt sky130_fd_pr__res_xhigh_po_0p35 2450 3840 2451 3841 l=1340 "GNDA" "a_2450_3840#" 0 0 "a_2010_3720#" 70 30800,1020 "a_3790_3840#" 70 30800,1020
+device rsubckt sky130_fd_pr__res_xhigh_po_0p35 2450 3960 2451 3961 l=1340 "GNDA" "a_2450_3960#" 0 0 "GNDA" 70 30800,1020 "a_3790_3840#" 70 30800,1020
+device rsubckt sky130_fd_pr__res_xhigh_po_0p35 2450 4500 2451 4501 l=1340 "GNDA" "a_2450_4500#" 0 0 "a_2010_4500#" 70 30800,1020 "V_out" 70 30800,1020
+device msubckt sky130_fd_pr__pfet_01v8 8100 4660 8101 4661 l=120 w=800 "VDDA" "V_TOP" 240 0 "Vin+" 800 32000,880 "VDDA" 800 64000,1760
+device msubckt sky130_fd_pr__pfet_01v8 7900 4660 7901 4661 l=120 w=800 "VDDA" "V_TOP" 240 0 "VDDA" 800 32000,880 "Vin+" 800 32000,880
+device msubckt sky130_fd_pr__pfet_01v8 7700 4660 7701 4661 l=120 w=800 "VDDA" "V_TOP" 240 0 "Vin-" 800 32000,880 "VDDA" 800 32000,880
+device msubckt sky130_fd_pr__pfet_01v8 7500 4660 7501 4661 l=120 w=800 "VDDA" "V_TOP" 240 0 "VDDA" 800 32000,880 "Vin-" 800 32000,880
+device msubckt sky130_fd_pr__pfet_01v8 7300 4660 7301 4661 l=120 w=800 "VDDA" "V_TOP" 240 0 "V_out" 800 32000,880 "VDDA" 800 32000,880
+device msubckt sky130_fd_pr__pfet_01v8 7100 4660 7101 4661 l=120 w=800 "VDDA" "V_TOP" 240 0 "VDDA" 800 32000,880 "V_out" 800 32000,880
+device msubckt sky130_fd_pr__pfet_01v8 6900 4660 6901 4661 l=120 w=800 "VDDA" "V_TOP" 240 0 "Vin-" 800 32000,880 "VDDA" 800 32000,880
+device msubckt sky130_fd_pr__pfet_01v8 6700 4660 6701 4661 l=120 w=800 "VDDA" "V_TOP" 240 0 "VDDA" 800 32000,880 "Vin-" 800 32000,880
+device msubckt sky130_fd_pr__pfet_01v8 6500 4660 6501 4661 l=120 w=800 "VDDA" "V_TOP" 240 0 "V_out" 800 32000,880 "VDDA" 800 32000,880
+device msubckt sky130_fd_pr__pfet_01v8 6300 4660 6301 4661 l=120 w=800 "VDDA" "V_TOP" 240 0 "VDDA" 800 32000,880 "V_out" 800 32000,880
+device msubckt sky130_fd_pr__pfet_01v8 6100 4660 6101 4661 l=120 w=800 "VDDA" "V_TOP" 240 0 "Vin+" 800 32000,880 "VDDA" 800 32000,880
+device msubckt sky130_fd_pr__pfet_01v8 5900 4660 5901 4661 l=120 w=800 "VDDA" "V_TOP" 240 0 "VDDA" 800 32000,880 "Vin+" 800 32000,880
+device msubckt sky130_fd_pr__pfet_01v8 5700 4660 5701 4661 l=120 w=800 "VDDA" "V_TOP" 240 0 "V_out" 800 32000,880 "VDDA" 800 32000,880
+device msubckt sky130_fd_pr__pfet_01v8 5500 4660 5501 4661 l=120 w=800 "VDDA" "V_TOP" 240 0 "VDDA" 800 32000,880 "V_out" 800 32000,880
+device msubckt sky130_fd_pr__pfet_01v8 5300 4660 5301 4661 l=120 w=800 "VDDA" "V_TOP" 240 0 "Vin+" 800 32000,880 "VDDA" 800 32000,880
+device msubckt sky130_fd_pr__pfet_01v8 5100 4660 5101 4661 l=120 w=800 "VDDA" "V_TOP" 240 0 "VDDA" 800 32000,880 "Vin+" 800 32000,880
+device msubckt sky130_fd_pr__pfet_01v8 4900 4660 4901 4661 l=120 w=800 "VDDA" "V_TOP" 240 0 "Vin-" 800 32000,880 "VDDA" 800 32000,880
+device msubckt sky130_fd_pr__pfet_01v8 4700 4660 4701 4661 l=120 w=800 "VDDA" "V_TOP" 240 0 "VDDA" 800 64000,1760 "Vin-" 800 32000,880
+device rsubckt sky130_fd_pr__res_xhigh_po_0p35 2450 4620 2451 4621 l=1340 "GNDA" "a_2450_4620#" 0 0 "a_2010_4500#" 70 30800,1020 "a_3790_4620#" 70 30800,1020
+device rsubckt sky130_fd_pr__res_xhigh_po_0p35 2450 4740 2451 4741 l=1340 "GNDA" "a_2450_4740#" 0 0 "a_2010_4740#" 70 30800,1020 "a_3790_4620#" 70 30800,1020
+device rsubckt sky130_fd_pr__res_xhigh_po_0p35 2450 4860 2451 4861 l=1340 "GNDA" "a_2450_4860#" 0 0 "a_2010_4740#" 70 30800,1020 "a_3790_4860#" 70 30800,1020
+device rsubckt sky130_fd_pr__res_xhigh_po_0p35 2450 4980 2451 4981 l=1340 "GNDA" "a_2450_4980#" 0 0 "GNDA" 70 30800,1020 "a_3790_4860#" 70 30800,1020
+cap "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_1/Collector" "VDDA" 8.79399
+cap "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_1/Collector" "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_1/Emitter" 39.928
+cap "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_1/Collector" "VDDA" 1.7048
+cap "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_0/Emitter" "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_1/Collector" 31.9462
+cap "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_1/Collector" "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_1/Emitter" -16.9838
+cap "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_0/Emitter" "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_1/Collector" 14.9624
+cap "GNDA" "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_0/Emitter" -2.84217e-14
+cap "GNDA" "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_1/Collector" 60.4708
+cap "VDDA" "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_1/Collector" 2.46387
+cap "GNDA" "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_0/Collector" 63.5758
+cap "VDDA" "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_0/Collector" 2.46387
+cap "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_2/Emitter" "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_0/Collector" 14.9624
+cap "GNDA" "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_2/Emitter" -2.84217e-14
+cap "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_2/Collector" "VDDA" 2.46387
+cap "GNDA" "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_2/Collector" 63.5758
+cap "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_2/Collector" "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_3/Emitter" 14.9624
+cap "GNDA" "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_3/Emitter" -2.84217e-14
+cap "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_3/Collector" "VDDA" 2.40787
+cap "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_3/Collector" "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_4/Emitter" -2.02136
+cap "VDDA" "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_4/Collector" 8.35224
+cap "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_4/Collector" "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_5/Emitter" 22.9442
+cap "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_1/Collector" "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_1/Emitter" 5.68434e-13
+cap "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_0/Emitter" "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_1/Collector" 2.96953
+cap "GNDA" "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_0/Emitter" -7.10543e-15
+cap "GNDA" "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_1/Collector" 7.82933
+cap "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_0/Emitter" "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_1/Collector" 14.3193
+cap "a_3790_2410#" "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_0/Collector" 8.88178e-16
+cap "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_2/Emitter" "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_0/Collector" 15.5166
+cap "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_2/Collector" "start_up" 5.35396
+cap "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_3/Emitter" "start_up" -2.09565
+cap "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_2/Collector" "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_3/Emitter" 15.5166
+cap "V_TOP" "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_3/Collector" 1.00198e-14
+cap "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_3/Collector" "start_up" 3.05449
+cap "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_3/Collector" "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_4/Emitter" 14.3194
+cap "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_4/Emitter" "start_up" -0.987432
+cap "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_4/Collector" "VDDA" 2.22045e-16
+cap "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_4/Collector" "start_up" -5.81757e-14
+cap "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_4/Collector" "V_TOP" -9.71445e-16
+cap "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_4/Collector" "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_5/Emitter" 6.96015
+merge "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_6/Base" "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_6/Collector" -14180.5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1637586 -63262 0 0 -65600 -3200 -197060 -3861 -343000 -8640 0 0 0 0
+merge "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_6/Collector" "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_5/Base"
+merge "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_5/Base" "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_5/Collector"
+merge "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_5/Collector" "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_4/Base"
+merge "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_4/Base" "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_4/Collector"
+merge "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_4/Collector" "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_3/Base"
+merge "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_3/Base" "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_3/Collector"
+merge "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_3/Collector" "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_2/Base"
+merge "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_2/Base" "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_2/Collector"
+merge "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_2/Collector" "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_0/Base"
+merge "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_0/Base" "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_0/Collector"
+merge "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_0/Collector" "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_1/Base"
+merge "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_1/Base" "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_1/Collector"
+merge "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_1/Collector" "GNDA"
+merge "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_6/Emitter" "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_5/Emitter" -5840.9 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2264680 -15522 0 0 0 0 0 0 0 0 0 0
+merge "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_5/Emitter" "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_4/Emitter"
+merge "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_4/Emitter" "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_3/Emitter"
+merge "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_3/Emitter" "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_2/Emitter"
+merge "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_2/Emitter" "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_0/Emitter"
+merge "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_0/Emitter" "Vbe2"
+merge "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_1/Emitter" "Vin-" -2705.62 0 0 0 0 0 0 0 0 0 0 -22400 -640 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -151200 -3740 0 0 -32000 -1850 -421580 -4772 -123000 -6570 0 0 0 0 0 0 0 0

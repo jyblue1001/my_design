@@ -1,0 +1,28 @@
+timestamp 1746511212
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+use sky130_fd_pr__rf_pnp_05v5_W3p40L3p40 sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_0 1 0 -1512 0 1 4
+use sky130_fd_pr__rf_pnp_05v5_W0p68L0p68 sky130_fd_pr__rf_pnp_05v5_W0p68L0p68_0 1 0 1500 0 1 0
+use sky130_fd_pr__rf_pnp_05v5_W3p40L3p40 sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_1 1 0 -12 0 1 4
+node "m1_1810_310#" 0 700.451 1810 310 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 102600 1500 0 0 0 0 0 0 0 0 0 0
+node "li_1100_560#" 14 124.551 1100 560 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 18200 540 0 0 0 0 0 0 0 0 0 0 0 0
+substrate "a_1530_890#" 0 0 1530 890 ppd 0 0 0 0 0 0 0 0 0 0 10000 400 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 523200 5020 0 0 0 0 0 0 0 0 0 0 0 0
+cap "li_1100_560#" "m1_1810_310#" 0.731722
+cap "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_0/Emitter" "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_1/Emitter" 14.8339
+cap "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_0/Collector" "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_0/Emitter" 4.13057
+cap "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_1/Emitter" "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_0/Collector" 10.9265
+cap "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_1/Emitter" "sky130_fd_pr__rf_pnp_05v5_W0p68L0p68_0/Emitter" 12.5329
+cap "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_1/Emitter" "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_0/Emitter" 14.8339
+cap "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_1/Emitter" "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_0/Base" 1.28032
+cap "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_1/Emitter" "sky130_fd_pr__rf_pnp_05v5_W0p68L0p68_0/Emitter" 13.4468
+cap "sky130_fd_pr__rf_pnp_05v5_W0p68L0p68_0/Base" "sky130_fd_pr__rf_pnp_05v5_W0p68L0p68_0/Emitter" -100.608
+merge "sky130_fd_pr__rf_pnp_05v5_W0p68L0p68_0/Base" "sky130_fd_pr__rf_pnp_05v5_W0p68L0p68_0/Collector" -1906.34 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -369380 -8668 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sky130_fd_pr__rf_pnp_05v5_W0p68L0p68_0/Collector" "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_1/Collector"
+merge "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_1/Collector" "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_0/Collector"
+merge "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_0/Collector" "a_1530_890#"
+merge "a_1530_890#" "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_1/Base"
+merge "sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_1/Base" "li_1100_560#"
+merge "sky130_fd_pr__rf_pnp_05v5_W0p68L0p68_0/Emitter" "m1_1810_310#" -183.33 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -27556 -664 0 0 0 0 0 0 0 0 0 0

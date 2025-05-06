@@ -1,0 +1,27 @@
+* NGSPICE file created from test1.ext - technology: sky130A
+
+.subckt sky130_fd_pr__rf_pnp_05v5_W0p68L0p68 Base Collector Emitter m=1
+X0 Collector Base Emitter sky130_fd_pr__pnp_05v5_W0p68L0p68
+**devattr s=18496,544
+.ends
+
+.subckt sky130_fd_pr__rf_pnp_05v5_W3p40L3p40 Emitter Collector Base m=1
+X0 Collector Base Emitter sky130_fd_pr__pnp_05v5_W3p40L3p40
+**devattr s=462400,2720
+.ends
+
+.subckt test1
+Xsky130_fd_pr__rf_pnp_05v5_W0p68L0p68_0 sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_1/Base
++ sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_1/Base sky130_fd_pr__rf_pnp_05v5_W0p68L0p68_0/Emitter
++ sky130_fd_pr__rf_pnp_05v5_W0p68L0p68
++ m=1
+Xsky130_fd_pr__rf_pnp_05v5_W3p40L3p40_0 sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_0/Emitter
++ sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_1/Base sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_0/Base
++ sky130_fd_pr__rf_pnp_05v5_W3p40L3p40
++ m=1
+Xsky130_fd_pr__rf_pnp_05v5_W3p40L3p40_1 sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_1/Emitter
++ sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_1/Base sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_1/Base
++ sky130_fd_pr__rf_pnp_05v5_W3p40L3p40
++ m=1
+.ends
+
