@@ -122,4 +122,4 @@ C {devices/vsource.sym} 490 -880 0 0 {name=V1 value="pulse(0 1.8 0ps 8.34ps 8.34
 * "pulse(0 1.8 0ps 20ps 20ps 480ps 1000ps)"}
 C {devices/lab_pin.sym} 840 -880 0 0 {name=p7 sig_type=std_logic lab=VIN}
 C {devices/lab_pin.sym} 1000 -880 0 1 {name=p1 sig_type=std_logic lab=VOUT}
-C {/foss/designs/my_design/projects/pll/divider/xschem_ngspice/TSPC_FF_ratioed_divide2_2.sym} 920 -880 0 0 {name=x1}
+C {/foss/designs/projects/pll/divider/xschem_ngspice/TSPC_FF_ratioed_divide2_2.sym} 920 -880 0 0 {name=x2}

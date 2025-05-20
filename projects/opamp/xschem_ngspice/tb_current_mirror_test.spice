@@ -1,0 +1,98 @@
+** sch_path: /foss/designs/projects/opamp/xschem_ngspice/tb_current_mirror_test.sch
+**.subckt tb_current_mirror_test
+XM1 Vout1 Vin1 GND GND sky130_fd_pr__nfet_01v8 L=0.15 W=20 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XR2 VDD Vout1 GND sky130_fd_pr__res_xhigh_po_0p35 L=2.1 mult=1 m=1
+V2 Vin1 GND sin(0.745 0.001 1Meg)
+VDD VDD GND 1.8
+I2 VDD vg 4u
+XR12 VDD Vout3 GND sky130_fd_pr__res_xhigh_po_0p35 L=2.1 mult=1 m=1
+XC3 v4 Vin2 sky130_fd_pr__cap_mim_m3_1 W=10 L=10 MF=1 m=1
+I1 VDD v1 5u
+XM2 v1 v1 GND GND sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XR3 v2 v1 GND sky130_fd_pr__res_xhigh_po_0p35 L=1930 mult=1 m=1
+XM3 Vout2 v2 GND GND sky130_fd_pr__nfet_01v8 L=0.15 W=20 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XR4 VDD Vout2 GND sky130_fd_pr__res_xhigh_po_0p35 L=2.1 mult=1 m=1
+XC2 v2 Vin2 sky130_fd_pr__cap_mim_m3_1 W=10 L=10 MF=1 m=1
+XM4 vg vg v3 GND sky130_fd_pr__nfet_01v8 L=0.15 W=10 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM5 v3 v3 GND GND sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM6 v3 vg v4 GND sky130_fd_pr__nfet_01v8 L=10 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM7 Vout3 v4 GND GND sky130_fd_pr__nfet_01v8 L=0.15 W=20 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+V1 Vin2 GND sin(1.24 0.001 1Meg)
+XR1 VDD Vout4 GND sky130_fd_pr__res_xhigh_po_0p35 L=2.1 mult=1 m=1
+XC1 v5 Vin2 sky130_fd_pr__cap_mim_m3_1 W=10 L=10 MF=1 m=1
+XM11 Vout4 v5 GND GND sky130_fd_pr__nfet_01v8 L=0.15 W=20 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+V3 v5 GND 1.02
+**** begin user architecture code
+
+
+
+.option method=gear
+.option wnflag=1
+.option savecurrents
+
+.save
++@m.xm1.msky130_fd_pr__nfet_01v8[gm]
++@m.xm1.msky130_fd_pr__nfet_01v8[vth]
++@m.xm1.msky130_fd_pr__nfet_01v8[vds]
++@m.xm1.msky130_fd_pr__nfet_01v8[w]
++@m.xm1.msky130_fd_pr__nfet_01v8[l]
++@m.xm2.msky130_fd_pr__nfet_01v8[gm]
++@m.xm2.msky130_fd_pr__nfet_01v8[vth]
++@m.xm2.msky130_fd_pr__nfet_01v8[vds]
++@m.xm2.msky130_fd_pr__nfet_01v8[w]
++@m.xm2.msky130_fd_pr__nfet_01v8[l]
++@m.xm3.msky130_fd_pr__nfet_01v8[gm]
++@m.xm3.msky130_fd_pr__nfet_01v8[vth]
++@m.xm3.msky130_fd_pr__nfet_01v8[vds]
++@m.xm3.msky130_fd_pr__nfet_01v8[w]
++@m.xm3.msky130_fd_pr__nfet_01v8[l]
++@m.xm4.msky130_fd_pr__nfet_01v8[gm]
++@m.xm4.msky130_fd_pr__nfet_01v8[vth]
++@m.xm4.msky130_fd_pr__nfet_01v8[vds]
++@m.xm4.msky130_fd_pr__nfet_01v8[w]
++@m.xm4.msky130_fd_pr__nfet_01v8[l]
++@m.xm5.msky130_fd_pr__nfet_01v8[gm]
++@m.xm5.msky130_fd_pr__nfet_01v8[vth]
++@m.xm5.msky130_fd_pr__nfet_01v8[vds]
++@m.xm5.msky130_fd_pr__nfet_01v8[w]
++@m.xm5.msky130_fd_pr__nfet_01v8[l]
++@m.xm6.msky130_fd_pr__nfet_01v8[gm]
++@m.xm6.msky130_fd_pr__nfet_01v8[vth]
++@m.xm6.msky130_fd_pr__nfet_01v8[vds]
++@m.xm6.msky130_fd_pr__nfet_01v8[w]
++@m.xm6.msky130_fd_pr__nfet_01v8[l]
++@m.xm7.msky130_fd_pr__nfet_01v8[gm]
++@m.xm7.msky130_fd_pr__nfet_01v8[vth]
++@m.xm7.msky130_fd_pr__nfet_01v8[vds]
++@m.xm7.msky130_fd_pr__nfet_01v8[w]
++@m.xm1.msky130_fd_pr__nfet_01v8[l]
+
+.control
+
+  save all
+  * dc VDD 0 1.8 0.9
+  * tran 0.4u 3m
+  tran 0.4n 6u
+  * ac dec 20 1 1T
+  remzerovec
+  write tb_current_mirror_test.raw
+  set appendwrite
+
+.endc
+
+
+
+.lib /foss/pdks/sky130A/libs.tech/combined/sky130.lib.spice tt
+**** end user architecture code
+**.ends
+.GLOBAL GND
+.GLOBAL VDD
+.end

@@ -1,0 +1,64 @@
+** sch_path: /foss/designs/projects/bandgapref/xschem_ngspice/new_files/tb_low_voltage_BGR_dummy_magic.sch
+**.subckt tb_low_voltage_BGR_dummy_magic
+VDD VDD GND 1.8
+x1 VDD V_OUT GND low_voltage_BGR_dummy_magic
+**** begin user architecture code
+.lib /foss/pdks/sky130A/libs.tech/combined/sky130.lib.spice ff
+
+
+
+.include /foss/designs/projects/bandgapref/xschem_ngspice/new_files/low_voltage_BGR_dummy_magic.spice
+
+.option method=gear
+.option wnflag=1
+* .option savecurrents
+* .option gmin=5n
+
+.save
+* +@m.x1.x1.msky130_fd_pr__pfet_01v8[gm]
+* +@m.x1.x9.msky130_fd_pr__pfet_01v8[gm]
+* +@m.x1.x32.msky130_fd_pr__pfet_01v8[gm]
+
+* .ic v(vin-) = 0.8
+* .ic v(x1.v_top.n0) = 1.8
+
+.control
+
+  * let runs=10
+  * let run=1
+
+  * dowhile run <= runs
+
+    save v(x1.v_out.n0) v(x1.vdda.n0) v(x1.v_top.n0) v(x1.vin-.n0) v(x1.vin+.n0)
+    * save all
+    * dc temp -40 120 1 VDD 0 2.0 0.1
+    dc VDD 0 2.0 0.01 temp -40 120 20
+    * dc VDD 0 2.0 0.01
+    * tran 1ns 20us
+    remzerovec
+    * write tb_low_voltage_BGR_dummy_magic.raw
+    * write tb_low_voltage_BGR_dummy_magic_mc.raw
+    * write tb_low_voltage_BGR_dummy_magic_tran.raw
+    * write tb_low_voltage_BGR_dummy_magic_tran_mc.raw
+    * write tb_low_voltage_BGR_dummy_magic_vdd_temp_tt.raw
+    * write tb_low_voltage_BGR_dummy_magic_vdd_temp_fs.raw
+    * write tb_low_voltage_BGR_dummy_magic_vdd_temp_sf.raw
+    write tb_low_voltage_BGR_dummy_magic_vdd_temp_ff.raw
+    * write tb_low_voltage_BGR_dummy_magic_temp_vdd_tt.raw
+    * write tb_low_voltage_BGR_dummy_magic_temp_vdd_sf.raw
+    * write tb_low_voltage_BGR_dummy_magic_temp_vdd_fs.raw
+    * write tb_low_voltage_BGR_dummy_magic_temp_vdd_ss.raw
+    * write tb_low_voltage_BGR_dummy_magic_temp_vdd_ff.raw
+    set appendwrite
+    * reset
+    * let run = run + 1
+  * end
+.endc
+
+
+
+**** end user architecture code
+**.ends
+.GLOBAL GND
+.GLOBAL VDD
+.end

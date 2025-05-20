@@ -4,45 +4,37 @@ K {}
 V {}
 S {}
 E {}
-N 250 -570 250 -530 {
-lab=V_p}
-N 250 -530 600 -530 {
-lab=V_p}
-N 600 -570 600 -530 {
+N 250 -700 600 -700 {
 lab=V_p}
 N 600 -990 600 -950 {
 lab=1st_Vout}
 N 250 -990 250 -950 {
 lab=V_mirror}
-N 380 -430 400 -430 {
+N 380 -600 400 -600 {
 lab=V_p}
 N 250 -1100 250 -1050 {
-lab=VDDA}
-N 250 -1320 600 -1320 {
 lab=VDDA}
 N 600 -1100 600 -1050 {
 lab=VDDA}
 N 290 -1020 560 -1020 {
 lab=V_mirror}
-N 500 -1340 500 -1320 {
-lab=VDDA}
 N 850 -820 960 -820 {
 lab=Vout}
 N 250 -950 250 -850 {
 lab=V_mirror}
 N 600 -950 600 -850 {
 lab=1st_Vout}
-N 380 -480 380 -430 {
+N 380 -650 380 -600 {
 lab=V_p}
 N 320 -1020 320 -960 {
 lab=V_mirror}
-N 440 -530 440 -460 {lab=V_p}
-N 440 -430 490 -430 {lab=GNDA}
-N 490 -430 490 -380 {lab=GNDA}
-N 440 -380 490 -380 {lab=GNDA}
-N 250 -820 300 -820 {lab=V_p}
+N 440 -700 440 -630 {lab=V_p}
+N 440 -600 490 -600 {lab=GNDA}
+N 490 -600 490 -550 {lab=GNDA}
+N 440 -550 490 -550 {lab=GNDA}
+N 250 -820 300 -820 {lab=GNDA}
 N 160 -820 210 -820 {lab=Vin-}
-N 550 -820 600 -820 {lab=V_p}
+N 550 -820 600 -820 {lab=GNDA}
 N 640 -820 690 -820 {lab=Vin+}
 N 200 -1020 250 -1020 {lab=VDDA}
 N 200 -1080 200 -1020 {lab=VDDA}
@@ -50,98 +42,66 @@ N 200 -1080 250 -1080 {lab=VDDA}
 N 600 -1020 650 -1020 {lab=VDDA}
 N 650 -1080 650 -1020 {lab=VDDA}
 N 600 -1080 650 -1080 {lab=VDDA}
-N 790 -430 810 -430 {
+N 790 -600 810 -600 {
 lab=Vout}
-N 790 -480 790 -430 {
+N 790 -650 790 -600 {
 lab=Vout}
-N 850 -430 900 -430 {lab=GNDA}
-N 900 -430 900 -380 {lab=GNDA}
-N 850 -380 900 -380 {lab=GNDA}
-N 850 -400 850 -380 {lab=GNDA}
-N 490 -380 850 -380 {lab=GNDA}
+N 850 -600 900 -600 {lab=GNDA}
+N 900 -600 900 -550 {lab=GNDA}
+N 850 -550 900 -550 {lab=GNDA}
+N 850 -570 850 -550 {lab=GNDA}
+N 490 -550 850 -550 {lab=GNDA}
 N 850 -950 900 -950 {lab=VDDA}
 N 900 -1010 900 -950 {lab=VDDA}
 N 850 -1010 900 -1010 {lab=VDDA}
-N 600 -1320 850 -1320 {lab=VDDA}
 N 850 -1100 850 -980 {lab=VDDA}
-N 850 -650 850 -460 {lab=Vout}
+N 850 -650 850 -630 {lab=Vout}
 N 600 -950 810 -950 {lab=1st_Vout}
 N 250 -960 320 -960 {lab=V_mirror}
-N 790 -480 850 -480 {lab=Vout}
-N 380 -480 440 -480 {lab=V_p}
-N 440 -400 440 -330 {lab=GNDA}
-N 440 -330 440 -260 {lab=GNDA}
-N 250 -670 300 -670 {lab=V_p}
-N 300 -670 300 -620 {lab=V_p}
-N 250 -620 300 -620 {lab=V_p}
-N 550 -670 600 -670 {lab=V_p}
-N 550 -670 550 -620 {lab=V_p}
-N 550 -620 600 -620 {lab=V_p}
-N 250 -640 250 -570 {lab=V_p}
-N 600 -640 600 -570 {lab=V_p}
+N 790 -650 850 -650 {lab=Vout}
+N 380 -650 440 -650 {lab=V_p}
+N 440 -570 440 -500 {lab=GNDA}
+N 440 -500 440 -490 {lab=GNDA}
 N 250 -790 250 -700 {lab=V_p}
 N 600 -790 600 -700 {lab=V_p}
-N 190 -670 210 -670 {
-lab=V_p}
-N 190 -670 190 -620 {lab=V_p}
-N 190 -620 250 -620 {lab=V_p}
-N 640 -670 660 -670 {
-lab=V_p}
-N 660 -670 660 -620 {lab=V_p}
-N 600 -620 660 -620 {lab=V_p}
-N 190 -1200 210 -1200 {
+N 960 -950 980 -950 {
 lab=VDDA}
-N 190 -1250 190 -1200 {
+N 960 -1000 960 -950 {
 lab=VDDA}
-N 190 -1250 250 -1250 {lab=VDDA}
+N 960 -1000 1020 -1000 {lab=VDDA}
 N 250 -1170 250 -1100 {lab=VDDA}
-N 640 -1200 660 -1200 {
-lab=VDDA}
-N 660 -1250 660 -1200 {
-lab=VDDA}
-N 600 -1250 660 -1250 {lab=VDDA}
 N 600 -1170 600 -1100 {lab=VDDA}
-N 250 -1320 250 -1230 {lab=VDDA}
-N 600 -1320 600 -1230 {lab=VDDA}
-N 890 -1200 910 -1200 {
-lab=VDDA}
-N 910 -1250 910 -1200 {
-lab=VDDA}
-N 850 -1250 910 -1250 {lab=VDDA}
-N 910 -1200 910 -1150 {lab=VDDA}
-N 850 -1150 910 -1150 {lab=VDDA}
-N 850 -1320 850 -1230 {lab=VDDA}
-N 850 -1170 850 -1100 {lab=VDDA}
-N 250 -1200 300 -1200 {lab=VDDA}
-N 300 -1260 300 -1200 {lab=VDDA}
-N 250 -1260 300 -1260 {lab=VDDA}
-N 550 -1200 600 -1200 {lab=VDDA}
-N 550 -1260 550 -1200 {lab=VDDA}
-N 550 -1260 600 -1260 {lab=VDDA}
-N 800 -1200 850 -1200 {lab=VDDA}
-N 800 -1260 800 -1200 {lab=VDDA}
-N 800 -1260 850 -1260 {lab=VDDA}
+N 1020 -950 1070 -950 {lab=VDDA}
+N 1070 -1010 1070 -950 {lab=VDDA}
+N 1020 -1010 1070 -1010 {lab=VDDA}
 N 850 -920 850 -650 {lab=Vout}
-N 300 -820 300 -770 {lab=V_p}
-N 250 -770 300 -770 {lab=V_p}
-N 550 -820 550 -770 {lab=V_p}
-N 550 -770 600 -770 {lab=V_p}
-N 190 -730 190 -670 {lab=V_p}
-N 190 -730 250 -730 {lab=V_p}
-N 660 -730 660 -670 {lab=V_p}
-N 600 -730 660 -730 {lab=V_p}
-N 660 -1200 660 -1140 {lab=VDDA}
-N 600 -1140 660 -1140 {lab=VDDA}
-N 190 -1200 190 -1140 {lab=VDDA}
-N 190 -1140 250 -1140 {lab=VDDA}
+N 300 -820 550 -820 {lab=GNDA}
+N 550 -820 550 -550 {lab=GNDA}
+N 250 -1170 600 -1170 {lab=VDDA}
+N 600 -1170 850 -1170 {lab=VDDA}
+N 850 -1170 850 -1100 {lab=VDDA}
+N 600 -1240 600 -1170 {lab=VDDA}
+N 80 -640 80 -550 {lab=GNDA}
+N 80 -550 440 -550 {lab=GNDA}
+N 80 -670 130 -670 {lab=GNDA}
+N 130 -670 130 -600 {lab=GNDA}
+N 80 -600 130 -600 {lab=GNDA}
+N 40 -670 40 -600 {lab=GNDA}
+N 40 -600 80 -600 {lab=GNDA}
+N 80 -890 80 -700 {lab=V_mirror}
+N 80 -890 250 -890 {lab=V_mirror}
+N 1020 -1170 1020 -980 {lab=VDDA}
+N 850 -1170 1020 -1170 {lab=VDDA}
+N 1020 -920 1020 -880 {lab=Vout}
+N 850 -880 1020 -880 {lab=Vout}
 C {devices/ipin.sym} 690 -820 2 0 {name=p1 lab=Vin+}
 C {devices/opin.sym} 960 -820 0 0 {name=p5 lab=Vout}
 C {devices/ipin.sym} 160 -820 2 1 {name=p2 lab=Vin-}
-C {devices/ipin.sym} 440 -260 1 1 {name=p3 lab=GNDA
+C {devices/ipin.sym} 440 -490 1 1 {name=p3 lab=GNDA
 }
-C {devices/ipin.sym} 500 -1340 3 1 {name=p6 lab=VDDA
+C {devices/ipin.sym} 600 -1230 3 1 {name=p6 lab=VDDA
 }
-C {sky130_fd_pr/nfet_01v8.sym} 420 -430 0 0 {name=M1
+C {sky130_fd_pr/nfet_01v8.sym} 420 -600 0 0 {name=M1
 W=4
 L=4
 nf=1 
@@ -158,7 +118,7 @@ spiceprefix=X
 C {sky130_fd_pr/nfet_01v8.sym} 230 -820 0 0 {name=M2
 W=4
 L=0.6
-nf=4 
+nf=2 
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
@@ -172,7 +132,7 @@ spiceprefix=X
 C {sky130_fd_pr/nfet_01v8.sym} 620 -820 0 1 {name=M3
 W=4
 L=0.6
-nf=4 
+nf=2 
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
@@ -211,7 +171,7 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {sky130_fd_pr/nfet_01v8.sym} 830 -430 0 0 {name=M6
+C {sky130_fd_pr/nfet_01v8.sym} 830 -600 0 0 {name=M6
 W=4
 L=4
 nf=1 
@@ -240,12 +200,26 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {lab_wire.sym} 690 -950 2 0 {name=p4 sig_type=std_logic lab=1st_Vout}
-C {lab_wire.sym} 440 -530 0 0 {name=p7 sig_type=std_logic lab=V_p}
+C {lab_wire.sym} 440 -700 0 0 {name=p7 sig_type=std_logic lab=V_p}
 C {lab_wire.sym} 320 -960 2 0 {name=p8 sig_type=std_logic lab=V_mirror}
-C {sky130_fd_pr/nfet_01v8.sym} 230 -670 0 0 {name=M10
+C {sky130_fd_pr/pfet_01v8.sym} 1000 -950 0 0 {name=M12
+W=4
+L=0.6
+nf=2
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=pfet_01v8
+spiceprefix=X
+}
+C {sky130_fd_pr/nfet_01v8.sym} 60 -670 0 0 {name=M8
 W=2
 L=0.6
-nf=1 
+nf=2 
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
@@ -254,61 +228,5 @@ ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
 nrd="'0.29 / W'" nrs="'0.29 / W'"
 sa=0 sb=0 sd=0
 model=nfet_01v8
-spiceprefix=X
-}
-C {sky130_fd_pr/nfet_01v8.sym} 620 -670 0 1 {name=M11
-W=2
-L=0.6
-nf=1 
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=nfet_01v8
-spiceprefix=X
-}
-C {sky130_fd_pr/pfet_01v8.sym} 230 -1200 0 0 {name=M12
-W=4
-L=0.6
-nf=2
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=pfet_01v8
-spiceprefix=X
-}
-C {sky130_fd_pr/pfet_01v8.sym} 620 -1200 0 1 {name=M13
-W=4
-L=0.6
-nf=2
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=pfet_01v8
-spiceprefix=X
-}
-C {sky130_fd_pr/pfet_01v8.sym} 870 -1200 0 1 {name=M14
-W=4
-L=0.6
-nf=2
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=pfet_01v8
 spiceprefix=X
 }

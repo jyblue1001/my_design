@@ -1,0 +1,104 @@
+** sch_path: /foss/designs/projects/opamp/xschem_ngspice/vgs_id_sweep_pfet.sch
+**.subckt vgs_id_sweep_pfet
+VGS GND VGS 1.1
+ID VDS1 GND 500u
+XM1 VDS1 VGS GND GND sky130_fd_pr__pfet_01v8 L=0.15 W=wx nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+ID1 VDS2 GND 500u
+XM2 VDS2 VGS GND GND sky130_fd_pr__pfet_01v8 L=0.2 W=wx nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+ID2 VDS3 GND 500u
+XM3 VDS3 VGS GND GND sky130_fd_pr__pfet_01v8 L=0.3 W=wx nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+ID3 VDS4 GND 500u
+XM4 VDS4 VGS GND GND sky130_fd_pr__pfet_01v8 L=0.15 W=wx nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+ID4 VDS5 GND 50u
+XM5 VDS5 VGS GND GND sky130_fd_pr__pfet_01v8 L=0.2 W=wx nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+ID5 VDS6 GND 10u
+XM6 VDS6 VGS GND GND sky130_fd_pr__pfet_01v8 L=0.15 W=wx nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+ID6 VDS7 GND 5u
+XM7 VDS7 VGS GND GND sky130_fd_pr__pfet_01v8 L=0.15 W=wx nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+ID7 VDS8 GND 5u
+XM8 VDS8 VGS GND GND sky130_fd_pr__pfet_01v8 L=0.3 W=wx nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+**** begin user architecture code
+.lib /foss/pdks/sky130A/libs.tech/combined/sky130.lib.spice tt
+
+
+
+
+.option method=gear
+.option wnflag=1
+.option savecurrents
+
+.save
++@m.xm1.msky130_fd_pr__pfet_01v8[gm]
++@m.xm1.msky130_fd_pr__pfet_01v8[W]
++@m.xm1.msky130_fd_pr__pfet_01v8[vth]
++@m.xm1.msky130_fd_pr__pfet_01v8[gds]
++@m.xm2.msky130_fd_pr__pfet_01v8[gm]
++@m.xm2.msky130_fd_pr__pfet_01v8[W]
++@m.xm2.msky130_fd_pr__pfet_01v8[vth]
++@m.xm2.msky130_fd_pr__pfet_01v8[gds]
++@m.xm3.msky130_fd_pr__pfet_01v8[gm]
++@m.xm3.msky130_fd_pr__pfet_01v8[W]
++@m.xm3.msky130_fd_pr__pfet_01v8[vth]
++@m.xm3.msky130_fd_pr__pfet_01v8[gds]
++@m.xm4.msky130_fd_pr__pfet_01v8[gm]
++@m.xm4.msky130_fd_pr__pfet_01v8[W]
++@m.xm4.msky130_fd_pr__pfet_01v8[vth]
++@m.xm4.msky130_fd_pr__pfet_01v8[gds]
++@m.xm5.msky130_fd_pr__pfet_01v8[gm]
++@m.xm5.msky130_fd_pr__pfet_01v8[W]
++@m.xm5.msky130_fd_pr__pfet_01v8[vth]
++@m.xm5.msky130_fd_pr__pfet_01v8[gds]
++@m.xm6.msky130_fd_pr__pfet_01v8[gm]
++@m.xm6.msky130_fd_pr__pfet_01v8[W]
++@m.xm6.msky130_fd_pr__pfet_01v8[vth]
++@m.xm6.msky130_fd_pr__pfet_01v8[gds]
++@m.xm7.msky130_fd_pr__pfet_01v8[gm]
++@m.xm7.msky130_fd_pr__pfet_01v8[W]
++@m.xm7.msky130_fd_pr__pfet_01v8[vth]
++@m.xm7.msky130_fd_pr__pfet_01v8[gds]
++@m.xm8.msky130_fd_pr__pfet_01v8[gm]
++@m.xm8.msky130_fd_pr__pfet_01v8[W]
++@m.xm8.msky130_fd_pr__pfet_01v8[vth]
++@m.xm8.msky130_fd_pr__pfet_01v8[gds]
+
+.param wx=1
+.dc VGS 0 1.8 0.001
+
+.control
+
+  let start_w = 1
+  let stop_w = 100
+  let delta_w = 1
+  let w_act = start_w
+  while w_act le stop_w
+    alterparam wx = $&w_act
+    reset
+    save all
+    run
+    remzerovec
+    write vgs_id_sweep_pfet.raw
+    let w_act = w_act + delta_w
+    set appendwrite
+  end
+
+* let rout = deriv(vds6)/deriv(@m.xm6.msky130_fd_pr__pfet_01v8[id])
+* plot rout
+
+show
+
+.endc
+
+
+
+**** end user architecture code
+**.ends
+.GLOBAL GND
+.end

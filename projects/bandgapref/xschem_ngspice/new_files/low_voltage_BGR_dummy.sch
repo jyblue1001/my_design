@@ -44,7 +44,7 @@ N 1020 -950 1020 -900 {lab=V_TOP}
 N 1020 -900 1530 -900 {lab=V_TOP}
 N 1530 -950 1530 -900 {lab=V_TOP}
 N 1530 -950 1550 -950 {lab=V_TOP}
-N 1590 -760 1690 -760 {lab=V_OUT}
+N 1590 -690 1690 -690 {lab=V_OUT}
 N 900 -680 1080 -680 {lab=Vin+}
 N 700 -680 860 -680 {lab=Vin-}
 N 540 -260 660 -260 {lab=GNDA}
@@ -84,7 +84,7 @@ N 540 -630 540 -480 {lab=Vin-}
 N 1080 -920 1080 -480 {lab=Vin+}
 N 1380 -630 1380 -480 {lab=Vin+}
 N 1590 -920 1590 -560 {lab=V_OUT}
-N 890 -1370 890 -1280 {lab=VDDA}
+N 890 -1230 890 -1140 {lab=VDDA}
 N 890 -260 890 -150 {lab=GNDA}
 N 480 -450 520 -450 {lab=GNDA}
 N 1020 -450 1060 -450 {lab=GNDA}
@@ -92,21 +92,23 @@ N 1320 -450 1360 -450 {lab=GNDA}
 N 1530 -530 1570 -530 {lab=GNDA}
 N 800 -740 820 -740 {lab=GNDA}
 N 940 -740 960 -740 {lab=VDDA}
-N 890 -1280 890 -1200 {
+N 890 -1140 890 -1060 {
 lab=VDDA}
-N 850 -1170 890 -1170 {lab=VDDA}
-N 850 -1240 850 -1170 {lab=VDDA}
-N 850 -1240 890 -1240 {lab=VDDA}
-N 290 -1280 290 -1060 {lab=VDDA}
+N 1790 -950 1830 -950 {lab=VDDA}
+N 1830 -1020 1830 -950 {lab=VDDA}
+N 1790 -1020 1830 -1020 {lab=VDDA}
+N 290 -1140 290 -1060 {lab=VDDA}
 N 700 -1060 1590 -1060 {lab=VDDA}
-N 930 -1170 970 -1170 {lab=VDDA}
-N 970 -1230 970 -1170 {lab=VDDA}
-N 890 -1230 970 -1230 {lab=VDDA}
-N 890 -1140 890 -1060 {lab=VDDA}
-N 290 -1280 890 -1280 {lab=VDDA}
-N 530 -1280 530 -930 {lab=VDDA}
-N 970 -1170 970 -1120 {lab=VDDA}
-N 890 -1120 970 -1120 {lab=VDDA}
+N 1710 -950 1750 -950 {lab=VDDA}
+N 1710 -1010 1710 -950 {lab=VDDA}
+N 1710 -1010 1790 -1010 {lab=VDDA}
+N 1790 -920 1790 -840 {lab=V_OUT}
+N 290 -1140 890 -1140 {lab=VDDA}
+N 530 -1140 530 -930 {lab=VDDA}
+N 1790 -1060 1790 -980 {
+lab=VDDA}
+N 1590 -840 1790 -840 {lab=V_OUT}
+N 1590 -1060 1790 -1060 {lab=VDDA}
 C {devices/lab_pin.sym} 1080 -390 2 0 {name=p5 sig_type=std_logic lab=Vbe2}
 C {devices/lab_pin.sym} 960 -740 2 0 {name=p4 sig_type=std_logic lab=VDDA
 }
@@ -185,7 +187,6 @@ L=33.6
 model=res_xhigh_po_0p35
 spiceprefix=X
 mult=1}
-C {opamp_bandgap_dummy.sym} 880 -740 1 1 {name=x1}
 C {sky130_fd_pr/nfet_01v8.sym} 310 -730 0 1 {name=M5
 W=1
 L=10
@@ -231,10 +232,10 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {iopin.sym} 890 -1370 0 0 {name=p9 lab=VDDA}
+C {iopin.sym} 890 -1230 0 0 {name=p9 lab=VDDA}
 C {iopin.sym} 890 -150 0 0 {name=p10 lab=GNDA}
-C {iopin.sym} 1690 -760 0 0 {name=p11 lab=V_OUT}
-C {sky130_fd_pr/pfet_01v8.sym} 910 -1170 0 1 {name=M7
+C {iopin.sym} 1690 -690 0 0 {name=p11 lab=V_OUT}
+C {sky130_fd_pr/pfet_01v8.sym} 1770 -950 0 0 {name=M7
 W=8
 L=0.6
 nf=2
@@ -253,3 +254,4 @@ C {devices/lab_pin.sym} 480 -450 2 1 {name=p13 sig_type=std_logic lab=GNDA}
 C {devices/lab_pin.sym} 1020 -450 2 1 {name=p14 sig_type=std_logic lab=GNDA}
 C {devices/lab_pin.sym} 1320 -450 2 1 {name=p15 sig_type=std_logic lab=GNDA}
 C {devices/lab_pin.sym} 1530 -530 2 1 {name=p16 sig_type=std_logic lab=GNDA}
+C {/foss/designs/projects/bandgapref/xschem_ngspice/new_files/opamp_bandgap_dummy.sym} 880 -740 1 1 {name=x1}

@@ -1,0 +1,182 @@
+** sch_path: /foss/designs/projects/opamp/xschem_ngspice/tb_opamp_1st_stage_2.sch
+**.subckt tb_opamp_1st_stage_2
+VDD VDD GND 1.8
+XM1 VD1 Vin- V_p GND sky130_fd_pr__nfet_01v8 L=0.15 W=23 nf=10 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM2 VD2 Vin+ V_p GND sky130_fd_pr__nfet_01v8 L=0.15 W=23 nf=10 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM3 X Vb1 VD1 GND sky130_fd_pr__nfet_01v8 L=0.3 W=30 nf=10 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM4 Y Vb1 VD2 GND sky130_fd_pr__nfet_01v8 L=0.3 W=30 nf=10 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM5 X Vb2 VD7 VD7 sky130_fd_pr__pfet_01v8 L=0.2 W=94 nf=10 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM6 Y Vb2 VD6 VD6 sky130_fd_pr__pfet_01v8 L=0.2 W=94 nf=10 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM7 VD7 Vb3 VDD VDD sky130_fd_pr__pfet_01v8 L=0.2 W=94 nf=10 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM8 VD6 Vb3 VDD VDD sky130_fd_pr__pfet_01v8 L=0.2 W=94 nf=10 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM9 V_p VGS9 GND GND sky130_fd_pr__nfet_01v8 L=0.15 W=41.4 nf=8 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+V1 Vin+ GND 1.14 AC 1
+XM10 V_p_mir VGS9 GND GND sky130_fd_pr__nfet_01v8 L=0.15 W=4.6 nf=2 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+I0 VDD VGS9 100u
+XM11 VGS9 Vin- V_p_mir GND sky130_fd_pr__nfet_01v8 L=0.15 W=2.3 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM12 VGS9 Vin+ V_p_mir GND sky130_fd_pr__nfet_01v8 L=0.15 W=2.3 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM13 VS14 Vb1 V_p GND sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM14 Vb1 Vb1 VS14 GND sky130_fd_pr__nfet_01v8 L=0.15 W=4.0 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+I1 VDD Vb1 20u
+XM15 Vb2 Vb2 V1 V1 sky130_fd_pr__pfet_01v8 L=0.15 W=8.7 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM16 Vb3 Vb2 V2 V2 sky130_fd_pr__pfet_01v8 L=0.15 W=8.7 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM17 V1 Vb2 VDD VDD sky130_fd_pr__pfet_01v8 L=0.3 W=1.55 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM18 V2 Vb3 VDD VDD sky130_fd_pr__pfet_01v8 L=0.2 W=8.8 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+I2 Vb2 GND 50u
+I3 Vb3 GND 50u
+XM19 VDD X net1 GND sky130_fd_pr__nfet_01v8 L=0.15 W=4.6 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM20 GND X net2 VDD sky130_fd_pr__pfet_01v8 L=0.15 W=4.6 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+I4 net1 GND 20u
+I5 VDD net2 20u
+XR8 net2 V_tot GND sky130_fd_pr__res_xhigh_po_0p35 L=3.5 mult=1 m=1
+XR9 net1 V_tot GND sky130_fd_pr__res_xhigh_po_0p35 L=3.5 mult=1 m=1
+XR10 net3 V_tot GND sky130_fd_pr__res_xhigh_po_0p35 L=3.5 mult=1 m=1
+XR11 net4 V_tot GND sky130_fd_pr__res_xhigh_po_0p35 L=3.5 mult=1 m=1
+XM21 VDD Y net4 GND sky130_fd_pr__nfet_01v8 L=0.15 W=4.6 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM22 GND Y net3 VDD sky130_fd_pr__pfet_01v8 L=0.15 W=4.6 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+I6 net4 GND 20u
+I7 VDD net3 20u
+XM23 err_opamp_mir err_opamp_mir VDD VDD sky130_fd_pr__pfet_01v8 L=0.2 W=2 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM24 err_opamp_out err_opamp_mir VDD VDD sky130_fd_pr__pfet_01v8 L=0.2 W=2 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+I8 VDD V_gate 20u
+XM25 err_opamp_mir V_tot V_err_p GND sky130_fd_pr__nfet_01v8 L=0.2 W=2 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM26 err_opamp_out V_ref V_err_p GND sky130_fd_pr__nfet_01v8 L=0.2 W=2 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM27 V_p err_opamp_out GND GND sky130_fd_pr__nfet_01v8 L=0.15 W=4.6 nf=2 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+VDD1 V_ref GND 0.90
+V2 Vin- GND 1.14
+XM28 V_err_p V_gate GND GND sky130_fd_pr__nfet_01v8 L=0.2 W=4 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM29 V_gate V_ref V_err_mir_p GND sky130_fd_pr__nfet_01v8 L=0.2 W=2 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM30 V_gate V_tot V_err_mir_p GND sky130_fd_pr__nfet_01v8 L=0.2 W=2 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM31 V_err_mir_p V_gate GND GND sky130_fd_pr__nfet_01v8 L=0.2 W=4 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+**** begin user architecture code
+
+
+
+.option method=gear
+.option wnflag=1
+.option savecurrents
+
+.save
++@m.xm1.msky130_fd_pr__nfet_01v8[gm]
++@m.xm1.msky130_fd_pr__nfet_01v8[vth]
++@m.xm2.msky130_fd_pr__nfet_01v8[gm]
++@m.xm2.msky130_fd_pr__nfet_01v8[vth]
++@m.xm3.msky130_fd_pr__nfet_01v8[gm]
++@m.xm3.msky130_fd_pr__nfet_01v8[vth]
++@m.xm4.msky130_fd_pr__nfet_01v8[gm]
++@m.xm4.msky130_fd_pr__nfet_01v8[vth]
++@m.xm5.msky130_fd_pr__pfet_01v8[gm]
++@m.xm5.msky130_fd_pr__pfet_01v8[vth]
++@m.xm6.msky130_fd_pr__pfet_01v8[gm]
++@m.xm6.msky130_fd_pr__pfet_01v8[vth]
++@m.xm7.msky130_fd_pr__pfet_01v8[gm]
++@m.xm7.msky130_fd_pr__pfet_01v8[vth]
++@m.xm8.msky130_fd_pr__pfet_01v8[gm]
++@m.xm8.msky130_fd_pr__pfet_01v8[vth]
++@m.xm9.msky130_fd_pr__nfet_01v8[gm]
++@m.xm9.msky130_fd_pr__nfet_01v8[vth]
++@m.xm10.msky130_fd_pr__nfet_01v8[gm]
++@m.xm10.msky130_fd_pr__nfet_01v8[vth]
++@m.xm11.msky130_fd_pr__nfet_01v8[gm]
++@m.xm11.msky130_fd_pr__nfet_01v8[vth]
++@m.xm12.msky130_fd_pr__nfet_01v8[gm]
++@m.xm12.msky130_fd_pr__nfet_01v8[vth]
++@m.xm13.msky130_fd_pr__nfet_01v8[gm]
++@m.xm13.msky130_fd_pr__nfet_01v8[vth]
++@m.xm14.msky130_fd_pr__nfet_01v8[gm]
++@m.xm14.msky130_fd_pr__nfet_01v8[vth]
++@m.xm15.msky130_fd_pr__pfet_01v8[gm]
++@m.xm15.msky130_fd_pr__pfet_01v8[vth]
++@m.xm16.msky130_fd_pr__pfet_01v8[gm]
++@m.xm16.msky130_fd_pr__pfet_01v8[vth]
++@m.xm17.msky130_fd_pr__pfet_01v8[gm]
++@m.xm17.msky130_fd_pr__pfet_01v8[vth]
++@m.xm18.msky130_fd_pr__pfet_01v8[gm]
++@m.xm18.msky130_fd_pr__pfet_01v8[vth]
++@m.xm19.msky130_fd_pr__nfet_01v8[gm]
++@m.xm19.msky130_fd_pr__nfet_01v8[vth]
++@m.xm20.msky130_fd_pr__pfet_01v8[gm]
++@m.xm20.msky130_fd_pr__pfet_01v8[vth]
++@m.xm21.msky130_fd_pr__nfet_01v8[gm]
++@m.xm21.msky130_fd_pr__nfet_01v8[vth]
++@m.xm22.msky130_fd_pr__pfet_01v8[gm]
++@m.xm22.msky130_fd_pr__pfet_01v8[vth]
++@m.xm23.msky130_fd_pr__pfet_01v8[gm]
++@m.xm23.msky130_fd_pr__pfet_01v8[vth]
++@m.xm24.msky130_fd_pr__pfet_01v8[gm]
++@m.xm24.msky130_fd_pr__pfet_01v8[vth]
++@m.xm25.msky130_fd_pr__nfet_01v8[gm]
++@m.xm25.msky130_fd_pr__nfet_01v8[vth]
++@m.xm26.msky130_fd_pr__nfet_01v8[gm]
++@m.xm26.msky130_fd_pr__nfet_01v8[vth]
++@m.xm27.msky130_fd_pr__nfet_01v8[gm]
++@m.xm27.msky130_fd_pr__nfet_01v8[vth]
++@m.xm28.msky130_fd_pr__nfet_01v8[gm]
++@m.xm28.msky130_fd_pr__nfet_01v8[vth]
++@m.xm29.msky130_fd_pr__nfet_01v8[gm]
++@m.xm29.msky130_fd_pr__nfet_01v8[vth]
++@m.xm30.msky130_fd_pr__nfet_01v8[gm]
++@m.xm30.msky130_fd_pr__nfet_01v8[vth]
++@m.xm31.msky130_fd_pr__nfet_01v8[gm]
++@m.xm31.msky130_fd_pr__nfet_01v8[vth]
++@m.xm32.msky130_fd_pr__nfet_01v8[gm]
++@m.xm32.msky130_fd_pr__nfet_01v8[vth]
++@m.xm33.msky130_fd_pr__nfet_01v8[gm]
++@m.xm33.msky130_fd_pr__nfet_01v8[vth]
++@m.xm34.msky130_fd_pr__pfet_01v8[gm]
++@m.xm34.msky130_fd_pr__pfet_01v8[vth]
++@m.xm35.msky130_fd_pr__pfet_01v8[gm]
++@m.xm35.msky130_fd_pr__pfet_01v8[vth]
+
+
+.control
+
+  save all
+  * dc VDD 0 1.8 0.9
+  ac dec 20 1 1T
+  * tran 0.4u 4m
+  remzerovec
+  write tb_opamp_1st_stage_2.raw
+  set appendwrite
+
+.endc
+
+
+
+.lib /foss/pdks/sky130A/libs.tech/combined/sky130.lib.spice tt
+**** end user architecture code
+**.ends
+.GLOBAL GND
+.GLOBAL VDD
+.end

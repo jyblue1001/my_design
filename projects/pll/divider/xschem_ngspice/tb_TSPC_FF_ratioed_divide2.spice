@@ -1,8 +1,8 @@
-** sch_path: /foss/designs/my_design/projects/pll/divider/xschem_ngspice/tb_TSPC_FF_ratioed_divide2.sch
+** sch_path: /foss/designs/projects/pll/divider/xschem_ngspice/tb_TSPC_FF_ratioed_divide2.sch
 **.subckt tb_TSPC_FF_ratioed_divide2
 VDD VDD GND 1.8
 V1 VIN GND pulse(0 1.8 0ps 8.34ps 8.34ps 200.16ps 417ps)
-x1 VOUT VIN VDD GND TSPC_FF_ratioed_divide2_2
+x2 VOUT VIN VDD GND TSPC_FF_ratioed_divide2_2
 **** begin user architecture code
 
 
@@ -26,9 +26,9 @@ x1 VOUT VIN VDD GND TSPC_FF_ratioed_divide2_2
 **** end user architecture code
 **.ends
 
-* expanding   symbol:  /foss/designs/my_design/projects/pll/divider/xschem_ngspice/TSPC_FF_ratioed_divide2_2.sym # of pins=4
-** sym_path: /foss/designs/my_design/projects/pll/divider/xschem_ngspice/TSPC_FF_ratioed_divide2_2.sym
-** sch_path: /foss/designs/my_design/projects/pll/divider/xschem_ngspice/TSPC_FF_ratioed_divide2_2.sch
+* expanding   symbol:  /foss/designs/projects/pll/divider/xschem_ngspice/TSPC_FF_ratioed_divide2_2.sym # of pins=4
+** sym_path: /foss/designs/projects/pll/divider/xschem_ngspice/TSPC_FF_ratioed_divide2_2.sym
+** sch_path: /foss/designs/projects/pll/divider/xschem_ngspice/TSPC_FF_ratioed_divide2_2.sch
 .subckt TSPC_FF_ratioed_divide2_2 VOUT VIN VDDA GNDA
 *.ipin VIN
 *.opin VOUT

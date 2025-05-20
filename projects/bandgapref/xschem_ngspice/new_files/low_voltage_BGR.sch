@@ -173,7 +173,6 @@ L=33.6
 model=res_xhigh_po_0p35
 spiceprefix=X
 mult=1}
-C {op.sym} 880 -760 1 1 {name=x1}
 C {sky130_fd_pr/nfet_01v8.sym} 310 -730 0 1 {name=M5
 W=1
 L=10
@@ -228,3 +227,4 @@ C {devices/lab_pin.sym} 1320 -450 2 1 {name=p15 sig_type=std_logic lab=GNDA}
 C {devices/lab_pin.sym} 1530 -530 2 1 {name=p16 sig_type=std_logic lab=GNDA}
 C {devices/lab_pin.sym} 960 -760 2 0 {name=p11 sig_type=std_logic lab=VDDA}
 C {iopin.sym} 1690 -760 0 0 {name=p4 lab=V_OUT}
+C {/foss/designs/projects/bandgapref/xschem_ngspice/new_files/opamp_bandgap_2.sym} 880 -760 1 1 {name=x1}

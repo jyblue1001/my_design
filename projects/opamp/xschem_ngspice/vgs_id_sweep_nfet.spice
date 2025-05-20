@@ -1,0 +1,101 @@
+** sch_path: /foss/designs/projects/opamp/xschem_ngspice/vgs_id_sweep_nfet.sch
+**.subckt vgs_id_sweep_nfet
+XM1 VDS1 VGS GND GND sky130_fd_pr__nfet_01v8 L=0.15 W=wx nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+VGS VGS GND 1.1
+I0 GND VDS1 500u
+XM2 VDS2 VGS GND GND sky130_fd_pr__nfet_01v8 L=0.3 W=wx nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+I1 GND VDS2 500u
+XM3 VDS3 VGS GND GND sky130_fd_pr__nfet_01v8 L=0.3 W=wx nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+I2 GND VDS3 1000u
+XM4 VDS4 VGS GND GND sky130_fd_pr__nfet_01v8 L=0.3 W=wx nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+I3 GND VDS4 900u
+XM5 VDS5 VGS GND GND sky130_fd_pr__nfet_01v8 L=0.6 W=wx nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+I4 GND VDS5 500u
+XM6 VDS6 VGS GND GND sky130_fd_pr__nfet_01v8 L=0.3 W=wx nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+I5 GND VDS6 20u
+XM7 VDS7 VGS GND GND sky130_fd_pr__nfet_01v8 L=0.2 W=wx nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+I6 GND VDS7 500u
+XM8 VDS8 VGS GND GND sky130_fd_pr__nfet_01v8 L=0.25 W=wx nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+I7 GND VDS8 500u
+**** begin user architecture code
+.lib /foss/pdks/sky130A/libs.tech/combined/sky130.lib.spice tt
+
+
+
+
+.option method=gear
+.option wnflag=1
+.option savecurrents
+
+.save
++@m.xm1.msky130_fd_pr__nfet_01v8[gm]
++@m.xm1.msky130_fd_pr__nfet_01v8[W]
++@m.xm1.msky130_fd_pr__nfet_01v8[vth]
++@m.xm1.msky130_fd_pr__nfet_01v8[gds]
++@m.xm2.msky130_fd_pr__nfet_01v8[gm]
++@m.xm2.msky130_fd_pr__nfet_01v8[W]
++@m.xm2.msky130_fd_pr__nfet_01v8[vth]
++@m.xm2.msky130_fd_pr__nfet_01v8[gds]
++@m.xm3.msky130_fd_pr__nfet_01v8[gm]
++@m.xm3.msky130_fd_pr__nfet_01v8[W]
++@m.xm3.msky130_fd_pr__nfet_01v8[vth]
++@m.xm3.msky130_fd_pr__nfet_01v8[gds]
++@m.xm4.msky130_fd_pr__nfet_01v8[gm]
++@m.xm4.msky130_fd_pr__nfet_01v8[W]
++@m.xm4.msky130_fd_pr__nfet_01v8[vth]
++@m.xm4.msky130_fd_pr__nfet_01v8[gds]
++@m.xm5.msky130_fd_pr__nfet_01v8[gm]
++@m.xm5.msky130_fd_pr__nfet_01v8[W]
++@m.xm5.msky130_fd_pr__nfet_01v8[vth]
++@m.xm5.msky130_fd_pr__nfet_01v8[gds]
++@m.xm6.msky130_fd_pr__nfet_01v8[gm]
++@m.xm6.msky130_fd_pr__nfet_01v8[W]
++@m.xm6.msky130_fd_pr__nfet_01v8[vth]
++@m.xm6.msky130_fd_pr__nfet_01v8[gds]
++@m.xm7.msky130_fd_pr__nfet_01v8[gm]
++@m.xm7.msky130_fd_pr__nfet_01v8[W]
++@m.xm7.msky130_fd_pr__nfet_01v8[vth]
++@m.xm7.msky130_fd_pr__nfet_01v8[gds]
++@m.xm8.msky130_fd_pr__nfet_01v8[gm]
++@m.xm8.msky130_fd_pr__nfet_01v8[W]
++@m.xm8.msky130_fd_pr__nfet_01v8[vth]
++@m.xm8.msky130_fd_pr__nfet_01v8[gds]
+
+.param wx=1
+.dc VGS 0 1.8 0.001
+
+.control
+
+  let start_w = 1
+  let stop_w = 100
+  let delta_w = 1
+  let w_act = start_w
+  while w_act le stop_w
+    alterparam wx = $&w_act
+    reset
+    save all
+    run
+    remzerovec
+    write vgs_id_sweep_nfet.raw
+    let w_act = w_act + delta_w
+    set appendwrite
+    end
+
+show
+
+.endc
+
+
+
+**** end user architecture code
+**.ends
+.GLOBAL GND
+.end

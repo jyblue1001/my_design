@@ -1,8 +1,8 @@
-** sch_path: /foss/designs/my_design/projects/pll/vco/magic/tb_current_starved_VCO_FD_magic.sch
+** sch_path: /foss/designs/projects/pll/vco/magic/tb_current_starved_VCO_FD_magic.sch
 **.subckt tb_current_starved_VCO_FD_magic
 Vdd VDD GND 1.8
 V1 V_CONT GND 0.9
-x1 V_OUT VDD GND V_CONT VCO_FD_magic
+x2 V_OUT VDD GND V_CONT VCO_FD_magic
 **** begin user architecture code
 .lib /foss/pdks/sky130A/libs.tech/combined/sky130.lib.spice tt
 
