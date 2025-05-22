@@ -80,7 +80,7 @@ C {devices/ipin.sym} 430 -800 3 1 {name=p6 lab=VDDA
 }
 C {sky130_fd_pr/nfet_01v8.sym} 350 -190 0 0 {name=M1
 W=5
-L=5
+L=10
 nf=1 
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -94,7 +94,7 @@ spiceprefix=X
 }
 C {sky130_fd_pr/nfet_01v8.sym} 160 -420 0 0 {name=M2
 W=5
-L=0.3
+L=0.2
 nf=1 
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -108,7 +108,7 @@ spiceprefix=X
 }
 C {sky130_fd_pr/nfet_01v8.sym} 550 -420 0 1 {name=M3
 W=5
-L=0.3
+L=0.2
 nf=1 
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -122,7 +122,7 @@ spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8.sym} 200 -700 0 1 {name=M5
 W=10
-L=0.3
+L=0.2
 nf=2
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -136,7 +136,7 @@ spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8.sym} 510 -700 0 0 {name=M6
 W=10
-L=0.3
+L=0.2
 nf=2
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -150,7 +150,7 @@ spiceprefix=X
 }
 C {sky130_fd_pr/nfet_01v8.sym} 790 -270 0 0 {name=M4
 W=5
-L=5
+L=10
 nf=1 
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -164,7 +164,7 @@ spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8.sym} 790 -560 0 0 {name=M7
 W=10
-L=0.3
+L=0.2
 nf=2
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -178,4 +178,4 @@ spiceprefix=X
 }
 C {lab_wire.sym} 620 -560 2 0 {name=p4 sig_type=std_logic lab=1st_Vout}
 C {lab_wire.sym} 370 -350 0 0 {name=p7 sig_type=std_logic lab=V_p}
-C {lab_wire.sym} 310 -570 2 0 {name=p8 sig_type=std_logic lab=V_mirror}
+C {lab_wire.sym} 310 -580 2 0 {name=p8 sig_type=std_logic lab=V_mirror}
