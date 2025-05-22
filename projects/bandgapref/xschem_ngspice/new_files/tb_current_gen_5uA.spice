@@ -1,7 +1,7 @@
-** sch_path: /foss/designs/projects/bandgapref/xschem_ngspice/new_files/tb_low_voltage_BGR_5.sch
-**.subckt tb_low_voltage_BGR_5
-VDD VDD GND 1.8
-x1 VDD V_OUT GND current_gen_5uA
+** sch_path: /foss/designs/projects/bandgapref/xschem_ngspice/new_files/tb_current_gen_5uA.sch
+**.subckt tb_current_gen_5uA
+VDD VDD GND pwl(0 0 1us 0 2us 1.8)
+x1 VDD V_CUR_REF_GATE GND current_gen_5uA
 **** begin user architecture code
 .lib /foss/pdks/sky130A/libs.tech/combined/sky130.lib.spice tt
 
@@ -28,10 +28,8 @@ x1 VDD V_OUT GND current_gen_5uA
 +@m.x1.xm6.msky130_fd_pr__pfet_01v8[vth]
 +@m.x1.xm7.msky130_fd_pr__nfet_01v8[gm]
 +@m.x1.xm7.msky130_fd_pr__nfet_01v8[vth]
-+@m.x1.xm8.msky130_fd_pr__nfet_01v8[gm]
-+@m.x1.xm8.msky130_fd_pr__nfet_01v8[vth]
-+@m.x1.xm9.msky130_fd_pr__nfet_01v8[gm]
-+@m.x1.xm9.msky130_fd_pr__nfet_01v8[vth]
++@m.x1.xm8.msky130_fd_pr__pfet_01v8[gm]
++@m.x1.xm8.msky130_fd_pr__pfet_01v8[vth]
 +@m.x1.x1.xm1.msky130_fd_pr__nfet_01v8[gm]
 +@m.x1.x1.xm2.msky130_fd_pr__nfet_01v8[gm]
 +@m.x1.x1.xm3.msky130_fd_pr__nfet_01v8[gm]
@@ -39,7 +37,13 @@ x1 VDD V_OUT GND current_gen_5uA
 +@m.x1.x1.xm5.msky130_fd_pr__pfet_01v8[gm]
 +@m.x1.x1.xm6.msky130_fd_pr__nfet_01v8[gm]
 +@m.x1.x1.xm7.msky130_fd_pr__pfet_01v8[gm]
-
++@m.x2.x1.xm1.msky130_fd_pr__nfet_01v8[gm]
++@m.x2.x1.xm2.msky130_fd_pr__nfet_01v8[gm]
++@m.x2.x1.xm3.msky130_fd_pr__nfet_01v8[gm]
++@m.x2.x1.xm4.msky130_fd_pr__nfet_01v8[gm]
++@m.x2.x1.xm5.msky130_fd_pr__pfet_01v8[gm]
++@m.x2.x1.xm6.msky130_fd_pr__nfet_01v8[gm]
++@m.x2.x1.xm7.msky130_fd_pr__pfet_01v8[gm]
 
 .control
 
@@ -50,26 +54,26 @@ x1 VDD V_OUT GND current_gen_5uA
     &$echo run
     save all
     * save v(v_out) v(x1.vin-) v(x1.vin+) v(x1.v1) v(x1.v2) v(x1.v_top) v(vdd)
-    dc temp -40 120 1 VDD 0 2.0 0.1
-    * dc VDD 0 2.0 0.01 temp -40 120 20
+    * dc temp -40 120 1 VDD 0 2.0 0.1
+    dc VDD 0 2.0 0.01 temp -40 120 20
     * dc VDD 0 2.0 0.01
     * tran 1ns 8us
     remzerovec
-    * write tb_low_voltage_BGR_5.raw
-    * write tb_low_voltage_BGR_5_mc.raw
-    * write tb_low_voltage_BGR_5_mc2.raw
-    * write tb_low_voltage_BGR_5_tran.raw
-    * write tb_low_voltage_BGR_5_tran_mc.raw
-    * write tb_low_voltage_BGR_5_vdd_temp_tt.raw
-    * write tb_low_voltage_BGR_5_vdd_temp_sf.raw
-    * write tb_low_voltage_BGR_5_vdd_temp_fs.raw
-    * write tb_low_voltage_BGR_5_vdd_temp_ff.raw
-    * write tb_low_voltage_BGR_5_vdd_temp_ss.raw
-    write tb_low_voltage_BGR_5_temp_vdd_tt.raw
-    * write tb_low_voltage_BGR_5_temp_vdd_sf.raw
-    * write tb_low_voltage_BGR_5_temp_vdd_fs.raw
-    * write tb_low_voltage_BGR_5_temp_vdd_ff.raw
-    * write tb_low_voltage_BGR_5_temp_vdd_ss.raw
+    write tb_current_gen_5uA.raw
+    * write tb_current_gen_5uA_mc.raw
+    * write tb_current_gen_5uA_mc2.raw
+    * write tb_current_gen_5uA_tran.raw
+    * write tb_current_gen_5uA_tran_mc.raw
+    * write tb_current_gen_5uA_vdd_temp_tt.raw
+    * write tb_current_gen_5uA_vdd_temp_sf.raw
+    * write tb_current_gen_5uA_vdd_temp_fs.raw
+    * write tb_current_gen_5uA_vdd_temp_ff.raw
+    * write tb_current_gen_5uA_vdd_temp_ss.raw
+    * write tb_current_gen_5uA_temp_vdd_tt.raw
+    * write tb_current_gen_5uA_temp_vdd_sf.raw
+    * write tb_current_gen_5uA_temp_vdd_fs.raw
+    * write tb_current_gen_5uA_temp_vdd_ff.raw
+    * write tb_current_gen_5uA_temp_vdd_ss.raw
     * set appendwrite
     * reset
     * let run = run + 1

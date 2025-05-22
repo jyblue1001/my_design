@@ -1,45 +1,43 @@
-** sch_path: /foss/designs/projects/bandgapref/xschem_ngspice/new_files/tb_low_voltage_BGR_9.sch
-**.subckt tb_low_voltage_BGR_9
-V1 VDD GND 1.8
-XQ1 GND GND net2 sky130_fd_pr__pnp_05v5_W3p40L3p40 m=1 mult=1
+** sch_path: /foss/designs/projects/bandgapref/xschem_ngspice/new_files/tb_low_voltage_BGR_10.sch
+**.subckt tb_low_voltage_BGR_10
+V1 VDD GND pwl(0 0 1us 0 2us 1.8)
+XQ1 GND GND net9 sky130_fd_pr__pnp_05v5_W3p40L3p40 m=1 mult=1
 XQ2 GND GND Vbe2 sky130_fd_pr__pnp_05v5_W3p40L3p40 m=8 mult=8
-XM1 net4 V_TOP VDD VDD sky130_fd_pr__pfet_01v8 L=0.3 W=10 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
+XM1 net2 V_TOP VDD VDD sky130_fd_pr__pfet_01v8 L=0.3 W=10 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
 + ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
-XM2 net3 V_TOP VDD VDD sky130_fd_pr__pfet_01v8 L=0.3 W=10 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
+XM2 net1 V_TOP VDD VDD sky130_fd_pr__pfet_01v8 L=0.3 W=10 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
 + ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
 XM3 V_OUT V_TOP VDD VDD sky130_fd_pr__pfet_01v8 L=0.3 W=10 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
 + ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
-Vmeas V1 net2 0
-.save i(vmeas)
-Vmeas1 V2 net1 0
-.save i(vmeas1)
-Vmeas2 V1 net9 0
-.save i(vmeas2)
-XR1 Vbe2 net1 GND sky130_fd_pr__res_xhigh_po_0p35 L=3.6 mult=1 m=1
-XR2 GND Vin+ GND sky130_fd_pr__res_xhigh_po_0p35 L=29 mult=1 m=1
-XR4 GND net7 GND sky130_fd_pr__res_xhigh_po_0p35 L=30.66 mult=1 m=1
-Vmeas3 V2 net8 0
-.save i(vmeas3)
-Vmeas4 net4 V1 0
+XR1 Vbe2 net8 GND sky130_fd_pr__res_xhigh_po_0p35 L=3.63 mult=1 m=1
+XR2 GND net6 GND sky130_fd_pr__res_xhigh_po_0p35 L=30 mult=1 m=1
+XR4 GND net5 GND sky130_fd_pr__res_xhigh_po_0p35 L=20 mult=1 m=1
+Vmeas4 net2 Vin- 0
 .save i(vmeas4)
-XM5 net6 net6 GND GND sky130_fd_pr__nfet_01v8 L=10 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
+XM5 net4 net4 GND GND sky130_fd_pr__nfet_01v8 L=10 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
 + ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
 XM6 start_up V_TOP VDD VDD sky130_fd_pr__pfet_01v8 L=0.3 W=10 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
-Vmeas5 net3 V2 0
+Vmeas5 net1 Vin+ 0
 .save i(vmeas5)
-XM4 net5 start_up V_TOP VDD sky130_fd_pr__pfet_01v8 L=0.3 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
+XM4 net3 start_up V_TOP VDD sky130_fd_pr__pfet_01v8 L=0.3 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
-Vmeas7 net5 V1 0
+Vmeas7 net3 Vin- 0
 .save i(vmeas7)
 x1 VDD V_TOP Vin- Vin+ GND opamp_bandgap_2
-XR6 Vin+ net8 GND sky130_fd_pr__res_xhigh_po_0p35 L=1 mult=1 m=1
-XR7 GND Vin- GND sky130_fd_pr__res_xhigh_po_0p35 L=29 mult=1 m=1
-Vmeas8 V_OUT net7 0
+XR7 GND net7 GND sky130_fd_pr__res_xhigh_po_0p35 L=30 mult=1 m=1
+Vmeas8 V_OUT net5 0
 .save i(vmeas8)
-XR8 Vin- net9 GND sky130_fd_pr__res_xhigh_po_0p35 L=1 mult=1 m=1
-Vmeas6 start_up net6 0
+Vmeas6 start_up net4 0
 .save i(vmeas6)
+Vmeas1 Vin- net7 0
+.save i(vmeas1)
+Vmeas2 Vin- net9 0
+.save i(vmeas2)
+Vmeas3 Vin+ net8 0
+.save i(vmeas3)
+Vmeas9 Vin+ net6 0
+.save i(vmeas9)
 **** begin user architecture code
 .lib /foss/pdks/sky130A/libs.tech/combined/sky130.lib.spice tt
 
@@ -92,13 +90,13 @@ Vmeas6 start_up net6 0
     save all
     * dc temp -40 120 5 V1 1.6 2.0 0.05
     * dc V1 1.7 1.9 0.001 temp -40 120 40
-    dc V1 0.0 2.0 0.1 temp -40 120 40
+    * dc V1 0.0 2.0 0.02 temp -40 120 40
     * dc V1 0 2.0 0.02
-    * tran 1ns 8us
+    tran 1ns 8us
     remzerovec
-    write tb_low_voltage_BGR_9.raw
-    * write tb_low_voltage_BGR_9_2.raw
-    * write tb_low_voltage_BGR_9_3.raw
+    write tb_low_voltage_BGR_10.raw
+    * write tb_low_voltage_BGR_10_2.raw
+    * write tb_low_voltage_BGR_10_3.raw
 .endc
 
 

@@ -375,4 +375,4 @@ C {devices/gnd.sym} 670 -1080 0 0 {name=l1 lab=GND}
 C {devices/vdd.sym} 670 -1220 0 0 {name=l2 lab=VDD}
 C {devices/lab_pin.sym} 790 -1150 2 0 {name=p4 sig_type=std_logic lab=V_OUT
 }
-C {/foss/designs/projects/bandgapref/xschem_ngspice/new_files/low_voltage_BGR_dummy.sym} 670 -1150 0 0 {name=x1}
+C {low_voltage_BGR_dummy.sym} 670 -1150 0 0 {name=x1}

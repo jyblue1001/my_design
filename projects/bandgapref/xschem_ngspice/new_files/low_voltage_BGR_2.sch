@@ -24,8 +24,6 @@ N 1180 -1420 1180 -1340 {
 lab=VDDA}
 N 1180 -1420 1820 -1420 {
 lab=VDDA}
-N 470 -920 800 -920 {
-lab=V1}
 N 1180 -340 1180 -230 {lab=Vbe2}
 N 1530 -340 1530 -120 {lab=GNDA}
 N 470 -340 470 -120 {lab=GNDA}
@@ -66,11 +64,10 @@ N 510 -1260 920 -1260 {lab=V_TOP}
 N 220 -1240 380 -1240 {lab=start_up}
 N 220 -120 470 -120 {lab=GNDA}
 N 920 -1310 920 -1260 {lab=V_TOP}
-N 420 -1090 800 -1090 {lab=V1}
-N 180 -860 220 -860 {lab=GNDA}
-N 180 -930 180 -860 {lab=GNDA}
-N 180 -930 220 -930 {lab=GNDA}
-N 220 -900 220 -550 {lab=GNDA}
+N 420 -1090 800 -1090 {lab=Vin-}
+N 180 -860 220 -860 {lab=start_up_nfet1}
+N 180 -930 180 -860 {lab=start_up_nfet1}
+N 180 -930 220 -930 {lab=start_up_nfet1}
 N 220 -200 220 -120 {lab=GNDA}
 N 420 -1240 460 -1240 {lab=VDDA}
 N 220 -550 220 -200 {lab=GNDA}
@@ -78,7 +75,7 @@ N 260 -1310 420 -1310 {lab=V_TOP}
 N 220 -990 280 -990 {lab=start_up}
 N 280 -990 280 -930 {lab=start_up}
 N 260 -930 280 -930 {lab=start_up}
-N 420 -1210 420 -1090 {lab=V1}
+N 420 -1210 420 -1090 {lab=Vin-}
 N 470 -550 470 -400 {lab=Vin-}
 N 1530 -550 1530 -400 {lab=Vin+}
 N 990 -1510 990 -1420 {lab=VDDA}
@@ -90,22 +87,23 @@ N 1840 -450 1880 -450 {lab=GNDA}
 N 900 -730 920 -730 {lab=GNDA}
 N 1040 -730 1060 -730 {lab=VDDA}
 N 460 -1420 460 -1240 {lab=VDDA}
-N 1530 -710 1530 -550 {lab=Vin+}
-N 470 -710 470 -550 {lab=Vin-}
-N 470 -920 470 -770 {lab=V1}
-N 1530 -920 1530 -770 {lab=V2}
-N 410 -740 450 -740 {lab=GNDA}
-N 1550 -740 1590 -740 {lab=GNDA}
-N 1180 -920 1530 -920 {
-lab=V2}
-N 1180 -1280 1180 -400 {lab=V2}
-N 800 -1280 800 -230 {lab=V1}
 N 1000 -670 1000 -550 {lab=Vin+}
 N 960 -670 960 -550 {lab=Vin-}
 N 1000 -550 1530 -550 {lab=Vin+}
 N 470 -550 960 -550 {lab=Vin-}
 N 1820 -1280 1820 -480 {lab=V_OUT}
 N 980 -1310 980 -800 {lab=V_TOP}
+N 1180 -550 1180 -400 {lab=Vin+}
+N 1180 -1280 1180 -550 {lab=Vin+}
+N 800 -550 800 -230 {lab=Vin-}
+N 800 -1280 800 -550 {lab=Vin-}
+N 180 -510 220 -510 {lab=GNDA}
+N 180 -580 180 -510 {lab=GNDA}
+N 180 -580 220 -580 {lab=GNDA}
+N 220 -640 280 -640 {lab=start_up_nfet1}
+N 280 -640 280 -580 {lab=start_up_nfet1}
+N 260 -580 280 -580 {lab=start_up_nfet1}
+N 220 -900 220 -610 {lab=start_up_nfet1}
 C {devices/lab_pin.sym} 1180 -290 2 0 {name=p5 sig_type=std_logic lab=Vbe2}
 C {sky130_fd_pr/pnp_05v5.sym} 780 -200 0 0 {name=Q1
 model=pnp_05v5_W3p40L3p40
@@ -163,7 +161,7 @@ C {lab_wire.sym} 1390 -1260 2 0 {name=p2 sig_type=std_logic lab=V_TOP}
 C {lab_wire.sym} 1080 -550 2 0 {name=p6 sig_type=std_logic lab=Vin+}
 C {lab_wire.sym} 890 -550 2 1 {name=p1 sig_type=std_logic lab=Vin-}
 C {sky130_fd_pr/res_xhigh_po_0p35.sym} 1180 -370 0 0 {name=R1
-L=4.8
+L=3.63
 model=res_xhigh_po_0p35
 spiceprefix=X
 mult=1}
@@ -178,7 +176,7 @@ model=res_xhigh_po_0p35
 spiceprefix=X
 mult=1}
 C {sky130_fd_pr/res_xhigh_po_0p35.sym} 1820 -450 0 1 {name=R4
-L=40
+L=20
 model=res_xhigh_po_0p35
 spiceprefix=X
 mult=1}
@@ -236,17 +234,18 @@ C {devices/lab_pin.sym} 1880 -450 2 0 {name=p16 sig_type=std_logic lab=GNDA}
 C {devices/lab_pin.sym} 1060 -730 2 0 {name=p11 sig_type=std_logic lab=VDDA}
 C {iopin.sym} 1920 -1120 0 0 {name=p4 lab=V_OUT}
 C {opamp_bandgap_2.sym} 980 -730 1 1 {name=x1}
-C {sky130_fd_pr/res_xhigh_po_0p35.sym} 1530 -740 0 1 {name=R5
+C {sky130_fd_pr/nfet_01v8.sym} 240 -580 0 1 {name=M7
+W=1
 L=10
-model=res_xhigh_po_0p35
+nf=1 
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=nfet_01v8
 spiceprefix=X
-mult=1}
-C {sky130_fd_pr/res_xhigh_po_0p35.sym} 470 -740 0 0 {name=R6
-L=10
-model=res_xhigh_po_0p35
-spiceprefix=X
-mult=1}
-C {devices/lab_pin.sym} 410 -740 2 1 {name=p17 sig_type=std_logic lab=GNDA}
-C {devices/lab_pin.sym} 1590 -740 2 0 {name=p18 sig_type=std_logic lab=GNDA}
-C {lab_wire.sym} 1180 -1030 0 1 {name=p3 sig_type=std_logic lab=V2}
-C {lab_wire.sym} 800 -1000 0 0 {name=p19 sig_type=std_logic lab=V1}
+}
+C {devices/lab_pin.sym} 220 -740 2 0 {name=p3 sig_type=std_logic lab=start_up_nfet1}
