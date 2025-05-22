@@ -4,23 +4,23 @@ K {}
 V {}
 S {}
 E {}
-B 2 610 390 1220 940 {flags=graph
+B 2 608.3221008108662 390 1218.322100810866 940 {flags=graph
 
-y2=2.1e-05
+y2=0.0016
 ypos1=0
 ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=0
-x2=1.4
+x1=-0.0015240858
+x2=0.69847595
 divx=5
 subdivx=4
 xlabmag=1.0
 ylabmag=1.0
 
 
-dataset=44
+dataset=29
 unitx=1
 logx=0
 logy=0
@@ -78,15 +78,15 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=0
-x2=1.4
+x1=-0.0015240858
+x2=0.69847595
 divx=5
 subdivx=4
 xlabmag=1.0
 ylabmag=1.0
 
 
-dataset=44
+dataset=29
 unitx=1
 logx=0
 logy=0
@@ -137,7 +137,7 @@ y1=0
 
 color=6
 node=@m.xm1.msky130_fd_pr__pfet_01v8[gm]}
-B 2 40 750 250 900 {flags=graph
+B 2 -20 860 190 1010 {flags=graph
 
 y2=1e-05
 ypos1=0
@@ -145,15 +145,15 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=0
-x2=1.4
+x1=-0.0015240858
+x2=0.69847595
 divx=5
 subdivx=4
 xlabmag=1.0
 ylabmag=1.0
 
 
-dataset=44
+dataset=29
 unitx=1
 logx=0
 logy=0
@@ -211,15 +211,15 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=0
-x2=1.4
+x1=-0.0015240858
+x2=0.69847595
 divx=5
 subdivx=4
 xlabmag=1.0
 ylabmag=1.0
 
 
-dataset=44
+dataset=29
 unitx=1
 logx=0
 logy=0
@@ -279,15 +279,15 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=0
-x2=1.4
+x1=-0.0015240858
+x2=0.69847595
 divx=5
 subdivx=4
 xlabmag=1.0
 ylabmag=1.0
 
 
-dataset=44
+dataset=29
 unitx=1
 logx=0
 logy=0
@@ -337,23 +337,23 @@ y1=-38000
 
 color=6
 node="\\"1 i(@m.xm1.msky130_fd_pr__pfet_01v8[id]) / deriv()\\""}
-B 2 3380 390 3990 940 {flags=graph
+B 2 608.3221008108662 1650 1218.322100810866 2200 {flags=graph
 
-y2=0.01
+y2=0.32
 ypos1=0
 ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=0
-x2=1.4
+x1=-0.0015240858
+x2=0.69847595
 divx=5
 subdivx=4
 xlabmag=1.0
 ylabmag=1.0
 
 
-dataset=44
+dataset=29
 unitx=1
 logx=0
 logy=0
@@ -393,7 +393,7 @@ linewidth_mult=2
 
 
 
-y1=0
+y1=-1.1
 
 
 
@@ -403,7 +403,141 @@ y1=0
 
 
 color=6
-node=rout}
+node="\\"vds @m.xm1.msky130_fd_pr__pfet_01v8[vth] vgs + -\\""}
+B 2 -21.67789918913377 1070 588.322100810866 1620 {flags=graph
+
+y2=0.36
+ypos1=0
+ypos2=2
+divy=5
+subdivy=4
+unity=1
+x1=-0.0015240858
+x2=0.69847595
+divx=5
+subdivx=4
+xlabmag=1.0
+ylabmag=1.0
+
+
+dataset=29
+unitx=1
+logx=0
+logy=0
+
+
+
+
+
+
+
+
+
+
+
+linewidth_mult=2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+y1=0.35
+
+
+
+
+
+
+
+
+color=6
+node="\\"-1 vgs @m.xm1.msky130_fd_pr__pfet_01v8[vth] + * \\""}
+B 2 608.3221008108662 1070 1218.322100810866 1620 {flags=graph
+
+y2=0.32
+ypos1=0
+ypos2=2
+divy=5
+subdivy=4
+unity=1
+x1=-0.0015240858
+x2=0.69847595
+divx=5
+subdivx=4
+xlabmag=1.0
+ylabmag=1.0
+
+
+dataset=29
+unitx=1
+logx=0
+logy=0
+
+
+
+
+
+
+
+
+
+
+
+linewidth_mult=2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+y1=-1.1
+
+
+
+
+
+
+
+
+color=6
+node="\\"@m.xm1.msky130_fd_pr__pfet_01v8[vth] vds vgs - -\\""}
 N 310 750 310 900 {lab=VDS}
 N 310 720 360 720 {lab=GND}
 N 360 650 360 720 {lab=GND}
@@ -442,7 +576,7 @@ value="
 .endc
 
 "}
-C {devices/code.sym} 380 180 0 0 {name=CODE only_toplevel=false value="
+C {devices/code.sym} 380 170 0 0 {name=CODE only_toplevel=false value="
 
 .option method=gear
 .option wnflag=1
@@ -451,6 +585,7 @@ C {devices/code.sym} 380 180 0 0 {name=CODE only_toplevel=false value="
 
 .save
 +@m.xm1.msky130_fd_pr__pfet_01v8[gm]
++@m.xm1.msky130_fd_pr__pfet_01v8[vth]
 +@m.xm2.msky130_fd_pr__pfet_01v8[gm]
 +@m.xm3.msky130_fd_pr__pfet_01v8[gm]
 +@m.xm4.msky130_fd_pr__pfet_01v8[gm]
@@ -466,7 +601,7 @@ C {devices/code.sym} 380 180 0 0 {name=CODE only_toplevel=false value="
   save all
   * dc VGS 0 1.8 0.1 VDS 0 1.8 0.1
   * dc VDS 0 1.0 0.001 VGS 0.6 1.3 0.01
-  dc VDS 0 1.4 0.001 VGS 0.4 1.2 0.01
+  dc VDS 0 0.7 0.001 VGS 1.0 1.8 0.01
   remzerovec
   write vds_vgs_sweep_pfet_2.raw
   set appendwrite
@@ -485,8 +620,8 @@ C {devices/gnd.sym} 130 570 2 0 {name=l5 lab=GND}
 C {devices/vsource.sym} 500 810 0 0 {name=VDS value=1.8 savecurrent=false
 * }
 C {sky130_fd_pr/pfet_01v8.sym} 290 720 0 0 {name=M1
-W=2
-L=0.15
+W=35
+L=0.2
 nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -498,3 +633,5 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
+C {devices/ngspice_get_value.sym} 250 750 2 0 {name=r14 node=v(@m.xm1.msky130_fd_pr__pfet_01v8[vth])
+descr="vth="}
