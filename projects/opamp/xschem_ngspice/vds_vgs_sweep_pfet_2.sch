@@ -6,21 +6,21 @@ S {}
 E {}
 B 2 608.3221008108662 390 1218.322100810866 940 {flags=graph
 
-y2=0.0016
+y2=0.00056851288
 ypos1=0
 ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=-0.0015240858
-x2=0.69847595
+x1=0.6618943
+x2=1.1124543
 divx=5
 subdivx=4
 xlabmag=1.0
 ylabmag=1.0
 
 
-dataset=29
+dataset=92
 unitx=1
 logx=0
 logy=0
@@ -60,7 +60,7 @@ linewidth_mult=2
 
 
 
-y1=0
+y1=0.00044619221
 
 
 
@@ -78,15 +78,15 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=-0.0015240858
-x2=0.69847595
+x1=0.6618943
+x2=1.1124543
 divx=5
 subdivx=4
 xlabmag=1.0
 ylabmag=1.0
 
 
-dataset=29
+dataset=92
 unitx=1
 logx=0
 logy=0
@@ -145,15 +145,15 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=-0.0015240858
-x2=0.69847595
+x1=0.6618943
+x2=1.1124543
 divx=5
 subdivx=4
 xlabmag=1.0
 ylabmag=1.0
 
 
-dataset=29
+dataset=92
 unitx=1
 logx=0
 logy=0
@@ -211,15 +211,15 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=-0.0015240858
-x2=0.69847595
+x1=0.6618943
+x2=1.1124543
 divx=5
 subdivx=4
 xlabmag=1.0
 ylabmag=1.0
 
 
-dataset=29
+dataset=92
 unitx=1
 logx=0
 logy=0
@@ -279,15 +279,15 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=-0.0015240858
-x2=0.69847595
+x1=0.6618943
+x2=1.1124543
 divx=5
 subdivx=4
 xlabmag=1.0
 ylabmag=1.0
 
 
-dataset=29
+dataset=92
 unitx=1
 logx=0
 logy=0
@@ -345,15 +345,15 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=-0.0015240858
-x2=0.69847595
+x1=0.6618943
+x2=1.1124543
 divx=5
 subdivx=4
 xlabmag=1.0
 ylabmag=1.0
 
 
-dataset=29
+dataset=92
 unitx=1
 logx=0
 logy=0
@@ -412,15 +412,15 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=-0.0015240858
-x2=0.69847595
+x1=0.6618943
+x2=1.1124543
 divx=5
 subdivx=4
 xlabmag=1.0
 ylabmag=1.0
 
 
-dataset=29
+dataset=92
 unitx=1
 logx=0
 logy=0
@@ -479,15 +479,15 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=-0.0015240858
-x2=0.69847595
+x1=0.6618943
+x2=1.1124543
 divx=5
 subdivx=4
 xlabmag=1.0
 ylabmag=1.0
 
 
-dataset=29
+dataset=92
 unitx=1
 logx=0
 logy=0
@@ -539,7 +539,6 @@ y1=-1.1
 color=6
 node="\\"@m.xm1.msky130_fd_pr__pfet_01v8[vth] vds vgs - -\\""}
 N 310 750 310 900 {lab=VDS}
-N 310 720 360 720 {lab=GND}
 N 360 650 360 720 {lab=GND}
 N 310 650 360 650 {lab=GND}
 N 130 720 270 720 {lab=VGS}
@@ -551,7 +550,7 @@ N 310 900 500 900 {lab=VDS}
 N 130 690 130 720 {lab=VGS}
 N 130 570 130 630 {lab=GND}
 N 130 570 310 570 {lab=GND}
-N 300 720 310 720 {lab=GND}
+N 310 720 360 720 {lab=GND}
 C {sky130_fd_pr/corner.sym} 170 190 0 0 {name=CORNER only_toplevel=false corner=tt
 value="
 
@@ -576,7 +575,7 @@ value="
 .endc
 
 "}
-C {devices/code.sym} 380 170 0 0 {name=CODE only_toplevel=false value="
+C {devices/code.sym} 380 190 0 0 {name=CODE only_toplevel=false value="
 
 .option method=gear
 .option wnflag=1
@@ -601,7 +600,7 @@ C {devices/code.sym} 380 170 0 0 {name=CODE only_toplevel=false value="
   save all
   * dc VGS 0 1.8 0.1 VDS 0 1.8 0.1
   * dc VDS 0 1.0 0.001 VGS 0.6 1.3 0.01
-  dc VDS 0 0.7 0.001 VGS 1.0 1.8 0.01
+  dc VDS 0.3 1.4 0.001 VGS 0.8 1.0 0.01
   remzerovec
   write vds_vgs_sweep_pfet_2.raw
   set appendwrite
@@ -620,8 +619,8 @@ C {devices/gnd.sym} 130 570 2 0 {name=l5 lab=GND}
 C {devices/vsource.sym} 500 810 0 0 {name=VDS value=1.8 savecurrent=false
 * }
 C {sky130_fd_pr/pfet_01v8.sym} 290 720 0 0 {name=M1
-W=35
-L=0.2
+W=63
+L=0.15
 nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 

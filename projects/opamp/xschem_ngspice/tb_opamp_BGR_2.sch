@@ -1270,7 +1270,7 @@ node="opamp_vin-
 opamp_vin+"}
 B 2 4890 -4070 5240 -3810 {flags=graph
 
-y2=1.2411072
+y2=1.3
 ypos1=0
 ypos2=2
 divy=5
@@ -1324,7 +1324,7 @@ linewidth_mult=2
 
 
 
-y1=1.2375888
+y1=-0.03
 
 
 
@@ -1531,7 +1531,7 @@ color=6
 node="\\"v_cm+ v_cm- - \\""}
 B 2 4890 -3760 5240 -3500 {flags=graph
 
-y2=0.84
+y2=0.842
 ypos1=0
 ypos2=2
 divy=5
@@ -1585,7 +1585,7 @@ linewidth_mult=2
 
 
 
-y1=0.83
+y1=0.832
 
 
 
@@ -1662,6 +1662,71 @@ y1=0.19874315
 color="6 7"
 node="opamp_vin+
 opamp_vin-"}
+B 2 3940 -4170 4290 -3910 {flags=graph
+
+y2=0.74522849
+ypos1=0
+ypos2=2
+divy=5
+subdivy=4
+unity=1
+x1=0
+x2=1e-05
+divx=5
+subdivx=4
+xlabmag=1.0
+ylabmag=1.0
+
+
+dataset=-1
+unitx=1
+logx=0
+logy=0
+
+
+
+
+
+
+
+
+
+
+
+linewidth_mult=2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+y1=0.74516947
+
+
+
+
+
+
+color=6
+node=v4}
 N 1560 -1160 1940 -1160 {
 lab=GND}
 N 1520 -1240 1520 -1160 {

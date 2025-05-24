@@ -13,7 +13,7 @@ divy=5
 subdivy=4
 unity=1
 
-x2=2
+x2=3e-06
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -60,23 +60,23 @@ linewidth_mult=2
 
 
 
-y1=-1.5e-209
+y1=-0.0095
 
 
 
 color=7
 node=v_ref
-x1=0}
+x1=1e-06}
 B 2 2960 -1250 3570 -700 {flags=graph
 
-y2=1.3
+y2=1.2
 ypos1=0
 ypos2=2
 divy=5
 subdivy=4
 unity=1
 
-x2=2
+x2=3e-06
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -123,25 +123,25 @@ linewidth_mult=2
 
 
 
-y1=-4.1e-147
+y1=-0.0016
 
 
 
 
 
-x1=0
+x1=1e-06
 color=4
 node=v_cur_ref_reg}
 B 2 3610 -1250 4220 -700 {flags=graph
 
-y2=5.4e-06
+y2=5.7e-05
 ypos1=0
 ypos2=2
 divy=5
 subdivy=4
 unity=1
 
-x2=2
+x2=3e-06
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -188,16 +188,144 @@ linewidth_mult=2
 
 
 
-y1=-2.7e-152
+y1=-3.8e-08
 
 
 
 
 
-x1=0
+x1=1e-06
 
 color=4
 node=i(vmeas10)}
+B 2 3610 -1850 4220 -1300 {flags=graph
+
+y2=1.8
+ypos1=0
+ypos2=2
+divy=5
+subdivy=4
+unity=1
+
+x2=3e-06
+divx=5
+subdivx=4
+xlabmag=1.0
+ylabmag=1.0
+
+
+dataset=-1
+unitx=1
+logx=0
+logy=0
+
+
+
+
+
+
+
+
+
+
+
+linewidth_mult=2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+y1=0
+
+
+
+color=7
+node=vdd
+x1=1e-06}
+B 2 2960 -640 3570 -90 {flags=graph
+
+y2=0.68
+ypos1=0
+ypos2=2
+divy=5
+subdivy=4
+unity=1
+
+x2=3e-06
+divx=5
+subdivx=4
+xlabmag=1.0
+ylabmag=1.0
+
+
+dataset=-1
+unitx=1
+logx=0
+logy=0
+
+
+
+
+
+
+
+
+
+
+
+linewidth_mult=2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+y1=-2.5e-16
+
+
+
+
+
+x1=1e-06
+color=4
+node=vbe2}
 T {VDD 1.8V
 L 10.22 = 1.24V
 L 6 = 0.8067V} 1880 -1110 0 0 0.4 0.4 {}
@@ -313,8 +441,12 @@ N 2680 -1430 2680 -1150 {lab=V_CUR_REF_REG}
 N 1850 -1670 1890 -1670 {lab=VDD}
 N 1890 -1740 1890 -1670 {lab=VDD}
 N 1850 -1740 1890 -1740 {lab=VDD}
-C {devices/vsource.sym} 560 -460 0 0 {name=V1 value=1.8 savecurrent=false
-* "pwl(0 0 1us 0 2us 1.8)"}
+N 1080 -1270 1080 -1120 {lab=Vin-}
+N 1080 -1060 1080 -700 {lab=GND}
+N 1240 -1270 1240 -1120 {lab=Vin+}
+N 1240 -1060 1240 -700 {lab=GND}
+C {devices/vsource.sym} 560 -460 0 0 {name=V1 value="pwl(0 0 1us 0 2us 1.8)" savecurrent=false
+* 1.8}
 C {devices/gnd.sym} 560 -430 0 0 {name=l3 lab=GND}
 C {devices/vdd.sym} 560 -490 0 0 {name=l4 lab=VDD}
 C {sky130_fd_pr/corner.sym} 370 -510 0 0 {name=CORNER only_toplevel=false corner=tt}
@@ -447,7 +579,6 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {ammeter.sym} 520 -1500 0 0 {name=Vmeas7 savecurrent=true spice_ignore=0}
-C {opamp_bandgap_2.sym} 1160 -1400 1 1 {name=x1}
 C {ngspice_get_value.sym} 1320 -1600 2 0 {name=r5 node=v(@m.xm2.msky130_fd_pr__pfet_01v8[vth])
 descr="vth="}
 C {devices/gnd.sym} 790 -960 3 1 {name=l12 lab=GND}
@@ -515,9 +646,9 @@ value="
     save all
     * dc temp -40 120 5 V1 1.6 2.0 0.05
     * dc V1 1.7 1.9 0.001 temp -40 120 40
-    dc V1 0.0 2.0 0.02 temp -40 120 20
+    * dc V1 0.0 2.0 0.02 temp -40 120 20
     * dc V1 0 2.0 0.02
-    * tran 1ns 8us
+    tran 0.1ns 3us 1us
     remzerovec
     write tb_ref_current_gen.raw
 .endc
@@ -530,12 +661,11 @@ C {ammeter.sym} 1570 -1150 0 0 {name=Vmeas9 savecurrent=true spice_ignore=0}
 C {devices/vdd.sym} 2300 -1400 2 0 {name=l10 lab=VDD}
 C {devices/gnd.sym} 2300 -1520 2 0 {name=l11 lab=GND
 W=4}
-C {opamp_bandgap_2.sym} 2300 -1460 2 1 {name=x2}
 C {lab_wire.sym} 1980 -1480 0 1 {name=p3 sig_type=std_logic lab=V_REF}
 C {devices/gnd.sym} 2660 -960 1 0 {name=l13 lab=GND
 L=35.875}
 C {sky130_fd_pr/res_xhigh_po_0p35.sym} 2680 -960 0 0 {name=R6
-L=32
+L=3.2
 model=res_xhigh_po_0p35
 spiceprefix=X
 mult=1}
@@ -556,3 +686,5 @@ spiceprefix=X
 C {ammeter.sym} 2680 -1120 0 1 {name=Vmeas10 savecurrent=true spice_ignore=0}
 C {lab_wire.sym} 2680 -1260 0 1 {name=p4 sig_type=std_logic lab=V_CUR_REF_REG}
 C {lab_wire.sym} 2440 -1460 0 1 {name=p9 sig_type=std_logic lab=V_CUR_REF_GATE}
+C {opamp_bandgap_2.sym} 2300 -1460 2 1 {name=x2}
+C {opamp_bandgap_2.sym} 1160 -1400 1 1 {name=x1}
