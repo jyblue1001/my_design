@@ -69,6 +69,9 @@ N 1130 -600 1190 -600 {lab=Vout}
 N 530 -840 530 -620 {lab=VDDA}
 N 280 -840 280 -620 {lab=VDDA}
 N 280 -840 470 -840 {lab=VDDA}
+N 790 -740 790 -690 {lab=GNDA}
+N 790 -630 790 -570 {lab=Vout}
+N 790 -570 1130 -570 {lab=Vout}
 C {devices/ipin.sym} 670 -560 2 0 {name=p1 lab=Vin+}
 C {devices/opin.sym} 1190 -600 0 0 {name=p5 lab=Vout}
 C {devices/ipin.sym} 140 -560 2 1 {name=p2 lab=Vin-}
@@ -77,7 +80,7 @@ C {devices/ipin.sym} 400 -130 3 0 {name=p3 lab=GNDA
 C {devices/ipin.sym} 470 -870 3 1 {name=p6 lab=VDDA
 }
 C {sky130_fd_pr/nfet_01v8.sym} 560 -280 0 0 {name=M1
-W=5
+W=2.5
 L=0.2
 nf=1 
 mult=1
@@ -91,7 +94,7 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {sky130_fd_pr/nfet_01v8.sym} 250 -280 0 1 {name=M2
-W=5
+W=2.5
 L=0.2
 nf=1 
 mult=1
@@ -105,7 +108,7 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8.sym} 600 -560 0 1 {name=M4
-W=10
+W=5
 L=0.2
 nf=2
 mult=1
@@ -119,7 +122,7 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8.sym} 210 -560 0 0 {name=M5
-W=10
+W=5
 L=0.2
 nf=2
 mult=1
@@ -135,7 +138,7 @@ spiceprefix=X
 C {lab_wire.sym} 290 -670 0 1 {name=p7 sig_type=std_logic lab=V_p}
 C {lab_wire.sym} 320 -360 0 1 {name=p8 sig_type=std_logic lab=V_mirror}
 C {sky130_fd_pr/pfet_01v8.sym} 450 -780 0 0 {name=M6
-W=10
+W=5
 L=10
 nf=1
 mult=1
@@ -149,7 +152,7 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8.sym} 1110 -780 0 0 {name=M3
-W=10
+W=5
 L=10
 nf=1
 mult=1
@@ -163,7 +166,7 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {sky130_fd_pr/nfet_01v8.sym} 1110 -420 0 0 {name=M7
-W=5
+W=2.5
 L=0.2
 nf=1 
 mult=1
@@ -176,3 +179,4 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
+C {sky130_fd_pr/cap_mim_m3_1.sym} 790 -660 0 0 {name=C1 model=cap_mim_m3_1 W=10 L=10 MF=1 spiceprefix=X}

@@ -1,0 +1,39 @@
+v {xschem version=3.4.6 file_version=1.2}
+G {}
+K {type=subcircuit
+format="@name @pinlist @symname"
+template="name=x1"
+}
+V {}
+S {}
+E {}
+L 4 -110 -40 120 -40 {}
+L 4 -110 40 120 40 {}
+L 4 -110 -40 -110 40 {}
+L 4 120 -40 120 40 {}
+L 4 120 20 140 20 {}
+L 4 120 -20 140 -20 {}
+L 4 -50 40 -50 70 {}
+L 4 60 40 60 70 {}
+L 4 -130 -20 -110 -20 {}
+L 4 -130 20 -110 20 {}
+L 7 0 -70 0 -40 {}
+L 7 0 40 0 70 {}
+B 5 -2.5 -72.5 2.5 -67.5 {name=VDDA dir=inout}
+B 5 137.5 17.5 142.5 22.5 {name=VOUT+ dir=out}
+B 5 137.5 -22.5 142.5 -17.5 {name=VOUT- dir=out}
+B 5 -52.5 67.5 -47.5 72.5 {name=pfet_gate_10uA dir=in}
+B 5 57.5 67.5 62.5 72.5 {name=V_err_amp_ref dir=in}
+B 5 -132.5 -22.5 -127.5 -17.5 {name=VIN+ dir=in}
+B 5 -132.5 17.5 -127.5 22.5 {name=VIN- dir=in}
+B 5 -2.5 67.5 2.5 72.5 {name=GNDA dir=inout}
+T {@symname} 124.5 -96 0 0 0.3 0.3 {}
+T {@name} 125 -72 0 0 0.2 0.2 {}
+T {VDDA} 40 -74 0 1 0.2 0.2 {}
+T {VOUT+} 115 16 0 1 0.2 0.2 {}
+T {VOUT-} 115 -24 0 1 0.2 0.2 {}
+T {pfet_gate_10uA} -140 61 0 0 0.2 0.2 {}
+T {V_err_amp_ref} 70 61 0 0 0.2 0.2 {}
+T {VIN+} -105 -24 0 0 0.2 0.2 {}
+T {VIN-} -105 16 0 0 0.2 0.2 {}
+T {GNDA} 40 66 0 1 0.2 0.2 {}

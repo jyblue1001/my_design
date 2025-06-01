@@ -1,31 +1,31 @@
 ** sch_path: /foss/designs/my_design/projects/montecarlo/xschem_ngspice/dactut/mcdactut/mcdactut.sch
 **.subckt mcdactut
-B1 GND net1 I={Iref}*v(b0)
+B1 GND net1 b0 GND {Iref}*v(b0)
 XR1 net1 GND gaussres nom=10k
 Vb0 b0 GND 1
 XR2 net2 net1 gaussres nom=10k
-B2 GND net2 I={Iref}*v(b1)
+B2 GND net2 b1 GND {Iref}*v(b1)
 XR3 net2 GND gaussres nom=20k
 Vb1 b1 GND 1
 XR4 net3 net2 gaussres nom=10k
-B3 GND net3 I={Iref}*v(b2)
+B3 GND net3 b2 GND {Iref}*v(b2)
 XR5 net3 GND gaussres nom=20k
 Vb2 b2 GND 1
 XR6 net4 net3 gaussres nom=10k
-B4 GND net4 I={Iref}*v(b3)
+B4 GND net4 b3 GND {Iref}*v(b3)
 XR7 net4 GND gaussres nom=20k
 Vb3 b3 GND 1
 XR8 net5 net4 gaussres nom=10k
-B5 GND net5 I={Iref}*v(b4)
+B5 GND net5 b4 GND {Iref}*v(b4)
 XR9 net5 GND gaussres nom=20k
 Vb4 b4 GND 1
 XR10 net6 net5 gaussres nom=10k
-B6 GND net6 I={Iref}*v(b5)
+B6 GND net6 b5 GND {Iref}*v(b5)
 XR11 net6 GND gaussres nom=20k
 Vb5 b5 GND 1
 XR12 Vout net6 gaussres nom=10k
-B7 GND Vout I={Iref}*v(b6)
-XR13 Vout GND gaussres nom=10k
+B7 GND Vout b6 GND {Iref}*v(b6)
+XR13 net7 GND gaussres nom=10k
 Vb6 b6 GND 1
 Viout Vout net7 0
 .save i(viout)
@@ -121,14 +121,7 @@ R1 pos neg {nom + MC_MM_SWITCH*AGAUSS(0,1,1)*cv*nom}
 
 
 
-
-.param mc_mm_switch=1
-.param mc_pr_switch=0
-.include /foss/pdks/sky130A/libs.tech/ngspice/corners/tt.spice
-.include /foss/pdks/sky130A/libs.tech/ngspice/r+c/res_typical__cap_typical.spice
-.include /foss/pdks/sky130A/libs.tech/ngspice/r+c/res_typical__cap_typical__lin.spice
-.include /foss/pdks/sky130A/libs.tech/ngspice/corners/tt/specialized_cells.spice
-
+.lib /foss/pdks/sky130A/libs.tech/combined/sky130.lib.spice tt_mm
 **** end user architecture code
 **.ends
 .GLOBAL GND

@@ -103,7 +103,7 @@ spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8.sym} 820 -1310 0 1 {name=M1
 W=10
-L=0.3
+L=0.5
 nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -117,7 +117,7 @@ spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8.sym} 1160 -1310 0 0 {name=M2
 W=10
-L=0.3
+L=0.5
 nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -132,17 +132,17 @@ spiceprefix=X
 C {lab_wire.sym} 1080 -550 2 0 {name=p6 sig_type=std_logic lab=Vin+}
 C {lab_wire.sym} 890 -550 2 1 {name=p1 sig_type=std_logic lab=Vin-}
 C {sky130_fd_pr/res_xhigh_po_0p35.sym} 1180 -370 0 0 {name=R1
-L=3.87
+L=2.3
 model=res_xhigh_po_0p35
 spiceprefix=X
 mult=1}
 C {sky130_fd_pr/res_xhigh_po_0p35.sym} 1530 -370 0 1 {name=R2
-L=32
+L=18
 model=res_xhigh_po_0p35
 spiceprefix=X
 mult=1}
 C {sky130_fd_pr/res_xhigh_po_0p35.sym} 470 -370 0 0 {name=R3
-L=32
+L=18
 model=res_xhigh_po_0p35
 spiceprefix=X
 mult=1}
@@ -162,7 +162,7 @@ spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8.sym} 240 -1310 0 1 {name=M6
 W=10
-L=0.3
+L=0.5
 nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 

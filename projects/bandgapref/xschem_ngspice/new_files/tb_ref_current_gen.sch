@@ -6,21 +6,21 @@ S {}
 E {}
 B 2 2960 -1850 3570 -1300 {flags=graph
 
-y2=1.2
+y2=0.91
 ypos1=0
 ypos2=2
 divy=5
 subdivy=4
 unity=1
 
-x2=3e-06
+x2=1.8689445
 divx=5
 subdivx=4
 xlabmag=1.0
 ylabmag=1.0
 
 
-dataset=-1
+dataset=3
 unitx=1
 logx=0
 logy=0
@@ -60,30 +60,30 @@ linewidth_mult=2
 
 
 
-y1=-0.0095
+y1=0.88
 
 
 
 color=7
 node=v_ref
-x1=1e-06}
+x1=1.6971458}
 B 2 2960 -1250 3570 -700 {flags=graph
 
-y2=1.2
+y2=1.1
 ypos1=0
 ypos2=2
 divy=5
 subdivy=4
 unity=1
 
-x2=3e-06
+x2=1.8689445
 divx=5
 subdivx=4
 xlabmag=1.0
 ylabmag=1.0
 
 
-dataset=-1
+dataset=3
 unitx=1
 logx=0
 logy=0
@@ -123,13 +123,13 @@ linewidth_mult=2
 
 
 
-y1=-0.0016
+y1=0
 
 
 
 
 
-x1=1e-06
+x1=0
 color=4
 node=v_cur_ref_reg}
 B 2 3610 -1250 4220 -700 {flags=graph
@@ -141,14 +141,14 @@ divy=5
 subdivy=4
 unity=1
 
-x2=3e-06
+x2=1.8689445
 divx=5
 subdivx=4
 xlabmag=1.0
 ylabmag=1.0
 
 
-dataset=-1
+dataset=3
 unitx=1
 logx=0
 logy=0
@@ -194,27 +194,27 @@ y1=-3.8e-08
 
 
 
-x1=1e-06
+x1=1.6971458
 
 color=4
 node=i(vmeas10)}
 B 2 3610 -1850 4220 -1300 {flags=graph
 
-y2=1.8
+y2=2
 ypos1=0
 ypos2=2
 divy=5
 subdivy=4
 unity=1
 
-x2=3e-06
+x2=1.8689445
 divx=5
 subdivx=4
 xlabmag=1.0
 ylabmag=1.0
 
 
-dataset=-1
+dataset=3
 unitx=1
 logx=0
 logy=0
@@ -260,7 +260,7 @@ y1=0
 
 color=7
 node=vdd
-x1=1e-06}
+x1=1.6971458}
 B 2 2960 -640 3570 -90 {flags=graph
 
 y2=0.68
@@ -270,14 +270,14 @@ divy=5
 subdivy=4
 unity=1
 
-x2=3e-06
+x2=1.8689445
 divx=5
 subdivx=4
 xlabmag=1.0
 ylabmag=1.0
 
 
-dataset=-1
+dataset=3
 unitx=1
 logx=0
 logy=0
@@ -323,12 +323,12 @@ y1=-2.5e-16
 
 
 
-x1=1e-06
+x1=1.6971458
 color=4
 node=vbe2}
 T {VDD 1.8V
 L 10.22 = 1.24V
-L 6 = 0.8067V} 1880 -1110 0 0 0.4 0.4 {}
+L 6 = 0.8067V} 1910 -1110 0 0 0.4 0.4 {}
 N 980 -700 1360 -700 {
 lab=GND}
 N 940 -780 940 -700 {
@@ -349,7 +349,7 @@ N 1360 -1860 1360 -1700 {
 lab=VDD}
 N 1360 -1860 1850 -1860 {
 lab=VDD}
-N 1360 -1000 1360 -810 {lab=Vbe2}
+N 1360 -930 1360 -810 {lab=Vbe2}
 N 1570 -930 1570 -700 {lab=GND}
 N 1360 -700 1570 -700 {lab=GND}
 N 1850 -930 1850 -700 {lab=GND}
@@ -413,16 +413,14 @@ N 770 -700 820 -700 {lab=GND}
 N 520 -1450 770 -1450 {lab=Vin-}
 N 860 -1670 860 -1620 {lab=V_TOP}
 N 310 -700 770 -700 {lab=GND}
-N 310 -1290 310 -700 {lab=GND}
 N 270 -1320 270 -1240 {lab=GND}
-N 270 -1240 310 -1240 {lab=GND}
 N 770 -1450 770 -1270 {lab=Vin-}
 N 1570 -1120 1570 -990 {lab=#net6}
 N 1570 -1270 1570 -1180 {lab=Vin+}
 N 770 -1120 770 -990 {lab=#net7}
 N 770 -1270 770 -1180 {lab=Vin-}
 N 1360 -1270 1360 -1180 {lab=Vin+}
-N 1360 -1120 1360 -1060 {lab=#net8}
+N 1360 -1120 1360 -990 {lab=#net8}
 N 980 -1120 980 -810 {lab=#net9}
 N 1360 -1530 1360 -1270 {lab=Vin+}
 N 980 -1270 980 -1180 {lab=Vin-}
@@ -445,8 +443,17 @@ N 1080 -1270 1080 -1120 {lab=Vin-}
 N 1080 -1060 1080 -700 {lab=GND}
 N 1240 -1270 1240 -1120 {lab=Vin+}
 N 1240 -1060 1240 -700 {lab=GND}
-C {devices/vsource.sym} 560 -460 0 0 {name=V1 value="pwl(0 0 1us 0 2us 1.8)" savecurrent=false
-* 1.8}
+N 270 -990 310 -990 {lab=GND}
+N 310 -1050 370 -1050 {lab=#net11}
+N 370 -1050 370 -990 {lab=#net11}
+N 350 -990 370 -990 {lab=#net11}
+N 270 -990 270 -910 {lab=GND}
+N 270 -910 310 -910 {lab=GND}
+N 310 -960 310 -700 {lab=GND}
+N 310 -1290 310 -1020 {lab=#net11}
+N 270 -1240 270 -990 {lab=GND}
+C {devices/vsource.sym} 560 -460 0 0 {name=V1 value=1.8 savecurrent=false
+* "pwl(0 0 1us 0 2us 1.8)"}
 C {devices/gnd.sym} 560 -430 0 0 {name=l3 lab=GND}
 C {devices/vdd.sym} 560 -490 0 0 {name=l4 lab=VDD}
 C {sky130_fd_pr/corner.sym} 370 -510 0 0 {name=CORNER only_toplevel=false corner=tt}
@@ -454,7 +461,7 @@ C {devices/gnd.sym} 1150 -700 0 0 {name=l1 lab=GND}
 C {devices/vdd.sym} 1220 -1400 1 0 {name=l5 lab=VDD}
 C {devices/gnd.sym} 1100 -1400 1 0 {name=l8 lab=GND
 W=4}
-C {devices/lab_pin.sym} 1360 -910 2 0 {name=p5 sig_type=std_logic lab=Vbe2}
+C {devices/lab_pin.sym} 1360 -880 2 0 {name=p5 sig_type=std_logic lab=Vbe2}
 C {devices/vdd.sym} 1130 -1860 0 0 {name=l2 lab=VDD}
 C {sky130_fd_pr/pnp_05v5.sym} 960 -780 0 0 {name=Q1
 model=pnp_05v5_W3p40L3p40
@@ -466,14 +473,14 @@ model=pnp_05v5_W3p40L3p40
 m=8
 spiceprefix=X
 }
-C {devices/gnd.sym} 1340 -1030 1 0 {name=l6 lab=GND}
+C {devices/gnd.sym} 1340 -960 1 0 {name=l6 lab=GND}
 C {devices/gnd.sym} 1550 -960 1 0 {name=l7 lab=GND
 L=35.875}
 C {devices/gnd.sym} 1830 -960 1 0 {name=l9 lab=GND
 L=35.875}
 C {sky130_fd_pr/pfet_01v8.sym} 1000 -1670 0 1 {name=M1
-W=10
-L=0.3
+W=12
+L=0.5
 nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -486,8 +493,8 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8.sym} 1340 -1670 0 0 {name=M2
-W=10
-L=0.3
+W=12
+L=0.5
 nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -500,8 +507,8 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8.sym} 1830 -1670 0 0 {name=M3
-W=10
-L=0.3
+W=12
+L=0.5
 nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -516,18 +523,18 @@ spiceprefix=X
 C {lab_wire.sym} 1510 -1620 2 0 {name=p2 sig_type=std_logic lab=V_TOP}
 C {lab_wire.sym} 1260 -1270 2 0 {name=p6 sig_type=std_logic lab=Vin+}
 C {lab_wire.sym} 1070 -1270 2 1 {name=p1 sig_type=std_logic lab=Vin-}
-C {sky130_fd_pr/res_xhigh_po_0p35.sym} 1360 -1030 0 0 {name=R1
-L=3.87
+C {sky130_fd_pr/res_xhigh_po_0p35.sym} 1360 -960 0 0 {name=R1
+L=2.3
 model=res_xhigh_po_0p35
 spiceprefix=X
 mult=1}
 C {sky130_fd_pr/res_xhigh_po_0p35.sym} 1570 -960 0 0 {name=R2
-L=32
+L=18
 model=res_xhigh_po_0p35
 spiceprefix=X
 mult=1}
 C {sky130_fd_pr/res_xhigh_po_0p35.sym} 1850 -960 0 0 {name=R4
-L=32
+L=12.7
 model=res_xhigh_po_0p35
 spiceprefix=X
 mult=1}
@@ -547,8 +554,8 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8.sym} 330 -1670 0 1 {name=M6
-W=10
-L=0.3
+W=12
+L=0.5
 nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -565,7 +572,7 @@ C {lab_wire.sym} 520 -1670 0 0 {name=p8 sig_type=std_logic lab=V_TOP}
 C {ammeter.sym} 1360 -1560 0 0 {name=Vmeas5 savecurrent=true spice_ignore=0
 L=1}
 C {sky130_fd_pr/pfet_01v8.sym} 500 -1600 0 0 {name=M4
-W=1
+W=2
 L=0.15
 nf=1
 mult=1
@@ -583,7 +590,7 @@ C {ngspice_get_value.sym} 1320 -1600 2 0 {name=r5 node=v(@m.xm2.msky130_fd_pr__p
 descr="vth="}
 C {devices/gnd.sym} 790 -960 3 1 {name=l12 lab=GND}
 C {sky130_fd_pr/res_xhigh_po_0p35.sym} 770 -960 0 1 {name=R7
-L=32
+L=18
 model=res_xhigh_po_0p35
 spiceprefix=X
 mult=1}
@@ -646,9 +653,9 @@ value="
     save all
     * dc temp -40 120 5 V1 1.6 2.0 0.05
     * dc V1 1.7 1.9 0.001 temp -40 120 40
-    * dc V1 0.0 2.0 0.02 temp -40 120 20
+    dc V1 0.0 2.0 0.02 temp -40 120 20
     * dc V1 0 2.0 0.02
-    tran 0.1ns 3us 1us
+    * tran 0.1ns 3us
     remzerovec
     write tb_ref_current_gen.raw
 .endc
@@ -665,13 +672,13 @@ C {lab_wire.sym} 1980 -1480 0 1 {name=p3 sig_type=std_logic lab=V_REF}
 C {devices/gnd.sym} 2660 -960 1 0 {name=l13 lab=GND
 L=35.875}
 C {sky130_fd_pr/res_xhigh_po_0p35.sym} 2680 -960 0 0 {name=R6
-L=3.2
+L=12
 model=res_xhigh_po_0p35
 spiceprefix=X
 mult=1}
 C {sky130_fd_pr/pfet_01v8.sym} 2660 -1460 0 0 {name=M7
 W=1
-L=0.15
+L=0.5
 nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -686,5 +693,20 @@ spiceprefix=X
 C {ammeter.sym} 2680 -1120 0 1 {name=Vmeas10 savecurrent=true spice_ignore=0}
 C {lab_wire.sym} 2680 -1260 0 1 {name=p4 sig_type=std_logic lab=V_CUR_REF_REG}
 C {lab_wire.sym} 2440 -1460 0 1 {name=p9 sig_type=std_logic lab=V_CUR_REF_GATE}
-C {opamp_bandgap_2.sym} 2300 -1460 2 1 {name=x2}
+C {sky130_fd_pr/nfet_01v8.sym} 330 -990 0 1 {name=M8
+W=1
+L=10
+nf=1 
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=nfet_01v8
+spiceprefix=X
+}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 1610 -1750 0 0 {name=C1 model=cap_mim_m3_1 W=10 L=10 MF=1 spiceprefix=X}
 C {opamp_bandgap_2.sym} 1160 -1400 1 1 {name=x1}
+C {opamp_bandgap_2.sym} 2300 -1460 2 1 {name=x2}

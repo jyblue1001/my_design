@@ -1,0 +1,62 @@
+** sch_path: /foss/designs/my_design/projects/montecarlo/xschem_ngspice/inverter/CMFB_mc.sch
+**.subckt CMFB_mc
+Vdd VDD GND 1.8
+XM1 VDD X V_4 GND sky130_fd_pr__nfet_01v8 L=0.2 W=30 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM3 GND X V_3 VDD sky130_fd_pr__pfet_01v8 L=0.2 W=20 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM2 VDD Y V_2 GND sky130_fd_pr__nfet_01v8 L=0.2 W=30 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM4 GND Y V_1 VDD sky130_fd_pr__pfet_01v8 L=0.2 W=20 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+I5 V_4 GND 30u
+I6 V_2 GND 30u
+I7 VDD V_3 30u
+I8 VDD V_1 30u
+Vin1 X GND sin(0.9 -0.1 1k)
+Vin2 Y GND sin(0.9 0.1 1k)
+XR1 V_tot V_4 GND sky130_fd_pr__res_xhigh_po_0p35 L=3.5 mult=1 m=1
+XR2 V_tot V_2 GND sky130_fd_pr__res_xhigh_po_0p35 L=3.5 mult=1 m=1
+XR3 V_tot V_1 GND sky130_fd_pr__res_xhigh_po_0p35 L=3.5 mult=1 m=1
+XR4 V_tot V_3 GND sky130_fd_pr__res_xhigh_po_0p35 L=3.5 mult=1 m=1
+**** begin user architecture code
+
+
+
+.option wnflag=1
+.option savecurrents
+.save
++@m.xm1.msky130_fd_pr__nfet_01v8[gm]
++@m.xm1.msky130_fd_pr__nfet_01v8[vth]
++@m.xm2.msky130_fd_pr__nfet_01v8[gm]
++@m.xm3.msky130_fd_pr__nfet_01v8[vth]
++@m.xm3.msky130_fd_pr__pfet_01v8[gm]
++@m.xm3.msky130_fd_pr__pfet_01v8[vth]
++@m.xm4.msky130_fd_pr__pfet_01v8[gm]
++@m.xm4.msky130_fd_pr__pfet_01v8[vth]
+
+.control
+
+  let runs=20
+  let run=1
+
+  dowhile run <= runs
+    save all
+    * dc vin 0 1.8 0.01
+    tran 1u 3m
+    write CMFB_mc.raw
+    set appendwrite
+    reset
+    let run = run + 1
+  end
+
+.endc
+
+
+
+.lib /foss/pdks/sky130A/libs.tech/combined/sky130.lib.spice mc
+**** end user architecture code
+**.ends
+.GLOBAL GND
+.GLOBAL VDD
+.end

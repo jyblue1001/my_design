@@ -1,5 +1,5 @@
-** sch_path: /foss/designs/my_design/projects/opamp/xschem_ngspice/tb_opamp_full.sch
-**.subckt tb_opamp_full
+** sch_path: /foss/designs/my_design/projects/opamp/xschem_ngspice/tb_opamp_full_AC.sch
+**.subckt tb_opamp_full_AC
 VDD VDD GND 1.8
 XM7 VD1 opamp_Vin- V_p GND sky130_fd_pr__nfet_01v8 L=0.15 W=15 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
@@ -64,8 +64,8 @@ XM35 V_gate V_ref V_err_mir_p VDD sky130_fd_pr__pfet_01v8 L=0.15 W=2.5 nf=1 ad='
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
 XM36 V_err_mir_p V_gate VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=5.0 nf=2 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
-V2 opamp_Vin- GND sin(1.24 -0.001 10Meg)
-V1 opamp_Vin+ GND sin(1.24 0.001 10Meg)
+V2 opamp_Vin- GND 1.24
+V1 opamp_Vin+ GND 1.24 AC 1
 XM37 V_OUT_X V_b GND GND sky130_fd_pr__nfet_01v8 L=0.6 W=34 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
 XM38 V_OUT_Y V_b GND GND sky130_fd_pr__nfet_01v8 L=0.6 W=34 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
@@ -176,8 +176,8 @@ XM78 vg1 pfet_gate_10uA net6 VDD sky130_fd_pr__pfet_01v8 L=0.5 W=2 nf=1 ad='int(
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
 XM81 net6 pfet_gate_10uA VDD VDD sky130_fd_pr__pfet_01v8 L=0.5 W=2 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
-XC2 VDD V_TOP sky130_fd_pr__cap_mim_m3_1 W=10 L=10 MF=1 m=1
-XC4 VDD pfet_gate_10uA sky130_fd_pr__cap_mim_m3_1 W=100 L=100 MF=1 m=1
+XC2 Y V_OUT_Y sky130_fd_pr__cap_mim_m3_1 W=10 L=10 MF=1 m=1
+XC4 X V_OUT_X sky130_fd_pr__cap_mim_m3_1 W=10 L=10 MF=1 m=1
 **** begin user architecture code
 .lib /foss/pdks/sky130A/libs.tech/combined/sky130.lib.spice tt
 
@@ -238,8 +238,8 @@ XC4 VDD pfet_gate_10uA sky130_fd_pr__cap_mim_m3_1 W=100 L=100 MF=1 m=1
 +@m.xm8.msky130_fd_pr__nfet_01v8[vth]
 +@m.xm9.msky130_fd_pr__nfet_01v8[gm]
 +@m.xm9.msky130_fd_pr__nfet_01v8[vth]
-+@m.xm10.msky130_fd_pr__nfet_01v8[gm]
-+@m.xm10.msky130_fd_pr__nfet_01v8[vth]
++@m.xm10.msky130_fd_pr__pfet_01v8[gm]
++@m.xm10.msky130_fd_pr__pfet_01v8[vth]
 +@m.xm11.msky130_fd_pr__pfet_01v8[gm]
 +@m.xm11.msky130_fd_pr__pfet_01v8[vth]
 +@m.xm12.msky130_fd_pr__pfet_01v8[gm]
@@ -329,12 +329,11 @@ XC4 VDD pfet_gate_10uA sky130_fd_pr__cap_mim_m3_1 W=100 L=100 MF=1 m=1
   * dc temp -40 120 10 VDD 0 4.0 0.2
   * dc VDD 0 2.0 0.02 temp -40 120 40
   * dc VDD 0 2.0 0.01
-  tran 0.1n 0.3u
-  * tran 1p 3n
+  * tran 0.5n 4.0u
   * tran 0.1ns 30us
-  * ac dec 20 1 1T
+  ac dec 20 1 1T
   remzerovec
-  write tb_opamp_full.raw
+  write tb_opamp_full_AC_2.raw
   set appendwrite
   let first_out = x - y
   let second_out = v_out_x - v_out_y

@@ -6,21 +6,21 @@ S {}
 E {}
 B 2 608.3221008108662 390 1218.322100810866 940 {flags=graph
 
-y2=0.00056851288
+y2=0.00078
 ypos1=0
 ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=0.6618943
-x2=1.1124543
+x1=0.3
+x2=1.4
 divx=5
 subdivx=4
 xlabmag=1.0
 ylabmag=1.0
 
 
-dataset=92
+dataset=10
 unitx=1
 logx=0
 logy=0
@@ -60,7 +60,7 @@ linewidth_mult=2
 
 
 
-y1=0.00044619221
+y1=0.00023
 
 
 
@@ -72,21 +72,21 @@ color=6
 node=i(@m.xm1.msky130_fd_pr__pfet_01v8[id])}
 B 2 1280 390 1890 940 {flags=graph
 
-y2=0.00014
+y2=0.0097
 ypos1=0
 ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=0.6618943
-x2=1.1124543
+x1=0.3
+x2=1.4
 divx=5
 subdivx=4
 xlabmag=1.0
 ylabmag=1.0
 
 
-dataset=92
+dataset=10
 unitx=1
 logx=0
 logy=0
@@ -126,7 +126,7 @@ linewidth_mult=2
 
 
 
-y1=0
+y1=0.0013
 
 
 
@@ -145,15 +145,15 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=0.6618943
-x2=1.1124543
+x1=0.3
+x2=1.4
 divx=5
 subdivx=4
 xlabmag=1.0
 ylabmag=1.0
 
 
-dataset=92
+dataset=10
 unitx=1
 logx=0
 logy=0
@@ -203,23 +203,23 @@ y1=4.3e-07
 
 color=4
 node=i(@m.xm1.msky130_fd_pr__pfet_01v8[id])}
-B 2 1970 390 2580 940 {flags=graph
+B 2 1950 390 2560 940 {flags=graph
 
-y2=6.9e-05
+y2=0
 ypos1=0
 ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=0.6618943
-x2=1.1124543
+x1=0.3
+x2=1.4
 divx=5
 subdivx=4
 xlabmag=1.0
 ylabmag=1.0
 
 
-dataset=92
+dataset=10
 unitx=1
 logx=0
 logy=0
@@ -259,75 +259,7 @@ linewidth_mult=2
 
 
 
-y1=0
-
-
-
-
-
-
-
-
-
-color=6
-node=@m.xm1.msky130_fd_pr__pfet_01v8[gm]}
-B 2 2670 390 3280 940 {flags=graph
-
-y2=-390
-ypos1=0
-ypos2=2
-divy=5
-subdivy=4
-unity=1
-x1=0.6618943
-x2=1.1124543
-divx=5
-subdivx=4
-xlabmag=1.0
-ylabmag=1.0
-
-
-dataset=92
-unitx=1
-logx=0
-logy=0
-
-
-
-
-
-
-
-
-
-
-
-linewidth_mult=2
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-y1=-38000
+y1=-21000
 
 
 
@@ -345,15 +277,15 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=0.6618943
-x2=1.1124543
+x1=0.3
+x2=1.4
 divx=5
 subdivx=4
 xlabmag=1.0
 ylabmag=1.0
 
 
-dataset=92
+dataset=10
 unitx=1
 logx=0
 logy=0
@@ -406,21 +338,21 @@ color=6
 node="\\"vds @m.xm1.msky130_fd_pr__pfet_01v8[vth] vgs + -\\""}
 B 2 -21.67789918913377 1070 588.322100810866 1620 {flags=graph
 
-y2=0.36
+y2=0.37
 ypos1=0
 ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=0.6618943
-x2=1.1124543
+x1=0.3
+x2=1.4
 divx=5
 subdivx=4
 xlabmag=1.0
 ylabmag=1.0
 
 
-dataset=92
+dataset=10
 unitx=1
 logx=0
 logy=0
@@ -460,7 +392,7 @@ linewidth_mult=2
 
 
 
-y1=0.35
+y1=0.024
 
 
 
@@ -473,21 +405,21 @@ color=6
 node="\\"-1 vgs @m.xm1.msky130_fd_pr__pfet_01v8[vth] + * \\""}
 B 2 608.3221008108662 1070 1218.322100810866 1620 {flags=graph
 
-y2=0.32
+y2=1.3
 ypos1=0
 ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=0.6618943
-x2=1.1124543
+x1=0.3
+x2=1.4
 divx=5
 subdivx=4
 xlabmag=1.0
 ylabmag=1.0
 
 
-dataset=92
+dataset=10
 unitx=1
 logx=0
 logy=0
@@ -527,7 +459,7 @@ linewidth_mult=2
 
 
 
-y1=-1.1
+y1=0.077
 
 
 
@@ -619,7 +551,7 @@ C {devices/gnd.sym} 130 570 2 0 {name=l5 lab=GND}
 C {devices/vsource.sym} 500 810 0 0 {name=VDS value=1.8 savecurrent=false
 * }
 C {sky130_fd_pr/pfet_01v8.sym} 290 720 0 0 {name=M1
-W=63
+W=59
 L=0.15
 nf=1
 mult=1

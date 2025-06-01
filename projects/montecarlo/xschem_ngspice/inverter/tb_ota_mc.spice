@@ -1,0 +1,72 @@
+** sch_path: /foss/designs/my_design/projects/montecarlo/xschem_ngspice/inverter/tb_ota_mc.sch
+**.subckt tb_ota_mc
+Vdd VDD GND 1.8
+Vin1 Vin1 GND 1.24 AC 1
+Vin2 Vin2 GND 1.24
+XM5 Vout Vb3 VDD VDD sky130_fd_pr__pfet_01v8 L=0.2 W=35 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM4 Vb3 Vb3 VDD VDD sky130_fd_pr__pfet_01v8 L=0.2 W=35 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM3 Vout net1 V_p GND sky130_fd_pr__nfet_01v8 L=0.15 W=15 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM2 Vb3 Vin1 V_p GND sky130_fd_pr__nfet_01v8 L=0.15 W=15 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM1 V_p VDD GND GND sky130_fd_pr__nfet_01v8 L=0.15 W=45 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+R6 Vout net1 10Meg m=1
+R7 Vout GND 10k m=1
+C1 net1 GND 1u m=1
+**** begin user architecture code
+
+
+
+.option wnflag=1
+.option savecurrents
+.save
++@m.xm1.msky130_fd_pr__nfet_01v8[gm]
++@m.xm1.msky130_fd_pr__nfet_01v8[vth]
++@m.xm2.msky130_fd_pr__nfet_01v8[gm]
++@m.xm2.msky130_fd_pr__nfet_01v8[vth]
++@m.xm3.msky130_fd_pr__nfet_01v8[gm]
++@m.xm3.msky130_fd_pr__nfet_01v8[vth]
++@m.xm4.msky130_fd_pr__pfet_01v8[gm]
++@m.xm4.msky130_fd_pr__pfet_01v8[vth]
++@m.xm5.msky130_fd_pr__pfet_01v8[gm]
++@m.xm5.msky130_fd_pr__pfet_01v8[vth]
++@m.xm6.msky130_fd_pr__nfet_01v8[gm]
++@m.xm6.msky130_fd_pr__nfet_01v8[vth]
++@m.xm7.msky130_fd_pr__nfet_01v8[gm]
++@m.xm7.msky130_fd_pr__nfet_01v8[vth]
++@m.xm8.msky130_fd_pr__pfet_01v8[gm]
++@m.xm8.msky130_fd_pr__pfet_01v8[vth]
++@m.xm9.msky130_fd_pr__pfet_01v8[gm]
++@m.xm9.msky130_fd_pr__pfet_01v8[vth]
++@m.xm10.msky130_fd_pr__nfet_01v8[gm]
++@m.xm10.msky130_fd_pr__nfet_01v8[vth]
+
+.control
+
+  let runs=20
+  let run=1
+
+  dowhile run <= runs
+    save all
+    * dc vin 0 1.8 0.01
+    ac dec 20 1 1T
+    * tran 1u 3m
+    write tb_ota_mc.raw
+    set appendwrite
+    reset
+    let run = run + 1
+  end
+
+.endc
+
+
+
+.lib /foss/pdks/sky130A/libs.tech/combined/sky130.lib.spice mc
+**** end user architecture code
+**.ends
+.GLOBAL GND
+.GLOBAL VDD
+.end

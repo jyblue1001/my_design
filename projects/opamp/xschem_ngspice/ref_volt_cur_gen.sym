@@ -1,0 +1,27 @@
+v {xschem version=3.4.6 file_version=1.2}
+G {}
+K {type=subcircuit
+format="@name @pinlist @symname"
+template="name=x1"
+}
+V {}
+S {}
+E {}
+L 4 -60 -50 60 -50 {}
+L 4 -60 50 60 50 {}
+L 4 -60 -50 -60 50 {}
+L 4 60 -50 60 50 {}
+L 4 60 -20 80 -20 {}
+L 4 60 20 80 20 {}
+L 7 0 -70 0 -50 {}
+L 7 0 50 0 70 {}
+B 5 -2.5 -72.5 2.5 -67.5 {name=VDDA dir=inout}
+B 5 77.5 -22.5 82.5 -17.5 {name=V_BGR_REF dir=out}
+B 5 77.5 17.5 82.5 22.5 {name=pfet_gate_10uA dir=out}
+B 5 -2.5 67.5 2.5 72.5 {name=GNDA dir=inout}
+T {@symname} 70 -106 0 0 0.3 0.3 {}
+T {@name} 75 -82 0 0 0.2 0.2 {}
+T {VDDA} -15 -76.5 0 1 0.2 0.2 {}
+T {V_BGR_REF} 55 -26.5 0 1 0.2 0.2 {}
+T {pfet_gate_10uA} 55 16 0 1 0.2 0.2 {}
+T {GNDA} -15 66 0 1 0.2 0.2 {}

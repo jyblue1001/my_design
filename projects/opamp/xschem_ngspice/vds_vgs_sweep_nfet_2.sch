@@ -6,21 +6,21 @@ S {}
 E {}
 B 2 1450 180 2060 730 {flags=graph
 
-y2=0.00071
+y2=0.0019
 ypos1=0
 ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=0.3
-x2=1.4
+x1=0
+x2=0.9
 divx=5
 subdivx=4
 xlabmag=1.0
 ylabmag=1.0
 
 
-dataset=7
+dataset=16
 unitx=1
 logx=0
 logy=0
@@ -60,7 +60,7 @@ linewidth_mult=2
 
 
 
-y1=0.0004
+y1=0
 
 
 
@@ -79,15 +79,15 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=0.3
-x2=1.4
+x1=0
+x2=0.9
 divx=5
 subdivx=4
 xlabmag=1.0
 ylabmag=1.0
 
 
-dataset=7
+dataset=16
 unitx=1
 logx=0
 logy=0
@@ -141,21 +141,21 @@ color=6
 node="\\"vds i(@m.xm1.msky130_fd_pr__nfet_01v8[id]) / deriv()\\""}
 B 2 2180 180 2790 730 {flags=graph
 
-y2=0.00029
+y2=0.0063
 ypos1=0
 ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=0.3
-x2=1.4
+x1=0
+x2=0.9
 divx=5
 subdivx=4
 xlabmag=1.0
 ylabmag=1.0
 
 
-dataset=7
+dataset=16
 unitx=1
 logx=0
 logy=0
@@ -210,21 +210,21 @@ color=6
 node=@m.xm1.msky130_fd_pr__nfet_01v8[gm]}
 B 2 1450 2250 2060 2800 {flags=graph
 
-y2=0.0037
+y2=0.00052
 ypos1=0
 ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=0.3
-x2=1.4
+x1=0
+x2=0.9
 divx=5
 subdivx=4
 xlabmag=1.0
 ylabmag=1.0
 
 
-dataset=7
+dataset=16
 unitx=1
 logx=0
 logy=0
@@ -264,7 +264,7 @@ linewidth_mult=2
 
 
 
-y1=0
+y1=0.00051
 
 
 
@@ -282,15 +282,15 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=0.3
-x2=1.4
+x1=0
+x2=0.9
 divx=5
 subdivx=4
 xlabmag=1.0
 ylabmag=1.0
 
 
-dataset=7
+dataset=16
 unitx=1
 logx=0
 logy=0
@@ -350,15 +350,15 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=0.3
-x2=1.4
+x1=0
+x2=0.9
 divx=5
 subdivx=4
 xlabmag=1.0
 ylabmag=1.0
 
 
-dataset=7
+dataset=16
 unitx=1
 logx=0
 logy=0
@@ -419,15 +419,15 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=0.3
-x2=1.4
+x1=0
+x2=0.9
 divx=5
 subdivx=4
 xlabmag=1.0
 ylabmag=1.0
 
 
-dataset=7
+dataset=16
 unitx=1
 logx=0
 logy=0
@@ -486,15 +486,15 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=0.3
-x2=1.4
+x1=0
+x2=0.9
 divx=5
 subdivx=4
 xlabmag=1.0
 ylabmag=1.0
 
 
-dataset=7
+dataset=16
 unitx=1
 logx=0
 logy=0
@@ -547,21 +547,21 @@ color=6
 node="\\"1 i(@m.xm1.msky130_fd_pr__nfet_01v8[id]) / deriv()\\""}
 B 2 2930 180 3540 730 {flags=graph
 
-y2=64000
+y2=16000
 ypos1=0
 ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=0.3
-x2=1.4
+x1=0
+x2=0.9
 divx=5
 subdivx=4
 xlabmag=1.0
 ylabmag=1.0
 
 
-dataset=7
+dataset=16
 unitx=1
 logx=0
 logy=0
@@ -601,7 +601,7 @@ linewidth_mult=4
 
 
 
-y1=4000
+y1=93
 
 
 
@@ -622,15 +622,15 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=0.3
-x2=1.4
+x1=0
+x2=0.9
 divx=5
 subdivx=4
 xlabmag=1.0
 ylabmag=1.0
 
 
-dataset=7
+dataset=16
 unitx=1
 logx=0
 logy=0
@@ -691,15 +691,15 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=0.3
-x2=1.4
+x1=0
+x2=0.9
 divx=5
 subdivx=4
 xlabmag=1.0
 ylabmag=1.0
 
 
-dataset=7
+dataset=16
 unitx=1
 logx=0
 logy=0
@@ -760,15 +760,15 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=0.3
-x2=1.4
+x1=0
+x2=0.9
 divx=5
 subdivx=4
 xlabmag=1.0
 ylabmag=1.0
 
 
-dataset=7
+dataset=16
 unitx=1
 logx=0
 logy=0
@@ -829,15 +829,15 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=0.3
-x2=1.4
+x1=0
+x2=0.9
 divx=5
 subdivx=4
 xlabmag=1.0
 ylabmag=1.0
 
 
-dataset=7
+dataset=16
 unitx=1
 logx=0
 logy=0
@@ -899,15 +899,15 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=0.3
-x2=1.4
+x1=0
+x2=0.9
 divx=5
 subdivx=4
 xlabmag=1.0
 ylabmag=1.0
 
 
-dataset=7
+dataset=16
 unitx=1
 logx=0
 logy=0
@@ -960,7 +960,7 @@ y1=82
 
 color=6
 node="\\"1 @m.xm5.msky130_fd_pr__nfet_01v8[gds] /\\""}
-B 2 898.3221008108662 1460 1508.322100810866 2010 {flags=graph
+B 2 828.3221008108662 1460 1438.322100810866 2010 {flags=graph
 
 y2=0.32
 ypos1=0
@@ -968,15 +968,15 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=0.3
-x2=1.4
+x1=0
+x2=0.9
 divx=5
 subdivx=4
 xlabmag=1.0
 ylabmag=1.0
 
 
-dataset=7
+dataset=16
 unitx=1
 logx=0
 logy=0
@@ -1027,7 +1027,7 @@ y1=-1.1
 
 color=6
 node="\\"vds @m.xm1.msky130_fd_pr__pfet_01v8[vth] vgs + -\\""}
-B 2 268.3221008108662 880 878.322100810866 1430 {flags=graph
+B 2 198.3221008108662 880 808.322100810866 1430 {flags=graph
 
 y2=0.18
 ypos1=0
@@ -1035,15 +1035,15 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=0.3
-x2=1.4
+x1=0
+x2=0.9
 divx=5
 subdivx=4
 xlabmag=1.0
 ylabmag=1.0
 
 
-dataset=7
+dataset=16
 unitx=1
 logx=0
 logy=0
@@ -1094,7 +1094,7 @@ y1=0.17
 
 color=6
 node="\\"vgs @m.xm1.msky130_fd_pr__nfet_01v8[vth] - \\""}
-B 2 898.3221008108662 880 1508.322100810866 1430 {flags=graph
+B 2 828.3221008108662 880 1438.322100810866 1430 {flags=graph
 
 y2=0.43
 ypos1=0
@@ -1102,15 +1102,15 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=0.3
-x2=1.4
+x1=0
+x2=0.9
 divx=5
 subdivx=4
 xlabmag=1.0
 ylabmag=1.0
 
 
-dataset=7
+dataset=16
 unitx=1
 logx=0
 logy=0
@@ -1161,6 +1161,76 @@ y1=-0.18
 
 color=6
 node="\\"vds vgs @m.xm1.msky130_fd_pr__nfet_01v8[vth] - -\\""}
+B 2 2180 810 2790 1360 {flags=graph
+
+y2=3900
+ypos1=0
+ypos2=2
+divy=5
+subdivy=4
+unity=1
+x1=0
+x2=0.9
+divx=5
+subdivx=4
+xlabmag=1.0
+ylabmag=1.0
+
+
+dataset=16
+unitx=1
+logx=0
+logy=0
+
+
+
+
+
+
+
+
+
+
+
+linewidth_mult=4
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+y1=240
+
+
+
+
+
+
+
+
+
+
+
+color=7
+node="\\"1 @m.xm1.msky130_fd_pr__nfet_01v8[gds] / \\""}
 N 1150 540 1150 690 {lab=GND}
 N 1150 510 1200 510 {lab=GND}
 N 1200 510 1200 580 {lab=GND}
@@ -1184,7 +1254,7 @@ N 1340 2430 1340 2640 {lab=VDS}
 N 1150 2430 1340 2430 {lab=VDS}
 N 1150 2430 1150 2550 {lab=VDS}
 C {sky130_fd_pr/corner.sym} 1010 180 0 0 {name=CORNER only_toplevel=false corner=tt}
-C {devices/code.sym} 1220 180 0 0 {name=CODE only_toplevel=false value="
+C {devices/code.sym} 1220 170 0 0 {name=CODE only_toplevel=false value="
 
 .option method=gear
 .option wnflag=1
@@ -1219,7 +1289,7 @@ C {devices/code.sym} 1220 180 0 0 {name=CODE only_toplevel=false value="
 .control
   save all
   * dc VGS 0 1.8 0.001 VDS 0 1.8 0.1
-  dc VDS 0 0.5 0.001 VGS 0.7 1.1 0.01
+  dc VDS 0.0 0.9 0.001 VGS 0.7 1.1 0.01
   remzerovec
   write vds_vgs_sweep_nfet_2.raw
   set appendwrite
@@ -1232,7 +1302,7 @@ C {devices/lab_pin.sym} 1340 360 2 0 {name=p4 sig_type=std_logic lab=VDS
 }
 C {lab_wire.sym} 1080 510 0 0 {name=p1 sig_type=std_logic lab=VGS}
 C {sky130_fd_pr/nfet_01v8.sym} 1130 510 0 0 {name=M1
-W=15
+W=1
 L=0.15
 nf=1 
 mult=1
@@ -1256,7 +1326,7 @@ C {devices/lab_pin.sym} 1340 2430 2 0 {name=p9 sig_type=std_logic lab=VDS
 }
 C {lab_wire.sym} 1080 2580 0 0 {name=p10 sig_type=std_logic lab=VGS}
 C {sky130_fd_pr/nfet_01v8.sym} 1130 2580 0 0 {name=M5
-W=34
+W=28
 L=0.6
 nf=1
 mult=1
