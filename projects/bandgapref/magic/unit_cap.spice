@@ -1,0 +1,32 @@
+* NGSPICE file created from unit_cap.ext - technology: sky130A
+
+
+* Top level circuit unit_cap
+
+X0 c1_0_n2800# m3_n30_n2830# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
+X1 c1_0_n2800# m3_n30_n2830# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
+X2 c1_0_n2800# m3_n30_n2830# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
+X3 c1_0_n2800# m3_n30_n2830# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
+X4 c1_0_n2800# m3_n30_n2830# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
+X5 c1_0_n2800# m3_n30_n2830# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
+X6 c1_0_n2800# m3_n30_n2830# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
+X7 c1_0_n2800# m3_n30_n2830# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
+X8 c1_0_n2800# m3_n30_n2830# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
+X9 c1_0_n2800# m3_n30_n2830# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
+X10 c1_0_n2800# m3_n30_n2830# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
+X11 c1_0_n2800# m3_n30_n2830# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
+X12 c1_0_n2800# m3_n30_n2830# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
+X13 c1_0_n2800# m3_n30_n2830# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
+X14 c1_0_n2800# m3_n30_n2830# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
+X15 c1_0_n2800# m3_n30_n2830# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
+X16 c1_0_n2800# m3_n30_n2830# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
+X17 c1_0_n2800# m3_n30_n2830# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
+X18 c1_0_n2800# m3_n30_n2830# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
+X19 c1_0_n2800# m3_n30_n2830# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
+X20 c1_0_n2800# m3_n30_n2830# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
+X21 c1_0_n2800# m3_n30_n2830# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
+X22 c1_0_n2800# m3_n30_n2830# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
+X23 c1_0_n2800# m3_n30_n2830# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
+X24 c1_0_n2800# m3_n30_n2830# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
+.end
+

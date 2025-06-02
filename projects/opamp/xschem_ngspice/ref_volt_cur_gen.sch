@@ -161,7 +161,6 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {lab_wire.sym} 2210 -670 0 1 {name=p76 sig_type=std_logic lab=V_CUR_REF_REG}
-C {/foss/designs/my_design/projects/bandgapref/xschem_ngspice/new_files/opamp_bandgap_2.sym} 1950 -950 2 1 {name=x2}
 C {lab_wire.sym} 1450 -1090 2 0 {name=p81 sig_type=std_logic lab=V_TOP}
 C {sky130_fd_pr/cap_mim_m3_1.sym} 1350 -1190 0 0 {name=C1 model=cap_mim_m3_1 W=10 L=10 MF=1 spiceprefix=X}
 C {lab_wire.sym} 1950 -890 2 0 {name=p3 sig_type=std_logic lab=VDDA}
@@ -288,8 +287,9 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {devices/lab_pin.sym} 250 -760 2 0 {name=p22 sig_type=std_logic lab=start_up_nfet1}
-C {/foss/designs/my_design/projects/bandgapref/xschem_ngspice/new_files/opamp_bandgap_2.sym} 920 -830 1 1 {name=x1}
+C {/foss/designs/projects/bandgapref/xschem_ngspice/new_files/opamp_bandgap_2.sym} 920 -830 1 1 {name=x1}
 C {devices/lab_pin.sym} 1710 -460 2 0 {name=p1 sig_type=std_logic lab=GNDA}
 C {devices/lab_pin.sym} 2150 -460 2 1 {name=p2 sig_type=std_logic lab=GNDA}
 C {opin.sym} 2360 -1110 0 0 {name=p6 lab=V_BGR_REF}
 C {iopin.sym} 930 -1350 2 1 {name=p7 lab=VDDA}
+C {/foss/designs/projects/bandgapref/xschem_ngspice/new_files/opamp_bandgap_2.sym} 1950 -950 2 1 {name=x2}

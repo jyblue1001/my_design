@@ -1,0 +1,36 @@
+timestamp 0
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+parameters sky130_fd_pr__cap_mim_m3_1 w=w l=l
+node "c1_0_n2800#" 8 2657.61 0 -2800 mim 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1690000 34000 0 0 0 0
+node "m3_n30_n2830#" 5 6331.28 -30 -2830 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5866000 52720 0 0 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "m3_n30_n2830#" "c1_0_n2800#" 8846.17
+device csubckt sky130_fd_pr__cap_mim_m3_1 2800 -2800 2801 -2799 w=400 l=400 "None" "c1_0_n2800#" 320 0 "m3_n30_n2830#" 0 5866000,52720
+device csubckt sky130_fd_pr__cap_mim_m3_1 2100 -2800 2101 -2799 w=400 l=400 "None" "c1_0_n2800#" 320 0 "m3_n30_n2830#" 0 5866000,52720
+device csubckt sky130_fd_pr__cap_mim_m3_1 1400 -2800 1401 -2799 w=400 l=400 "None" "c1_0_n2800#" 320 0 "m3_n30_n2830#" 0 5866000,52720
+device csubckt sky130_fd_pr__cap_mim_m3_1 700 -2800 701 -2799 w=400 l=400 "None" "c1_0_n2800#" 320 0 "m3_n30_n2830#" 0 5866000,52720
+device csubckt sky130_fd_pr__cap_mim_m3_1 0 -2800 1 -2799 w=400 l=400 "None" "c1_0_n2800#" 320 0 "m3_n30_n2830#" 0 5866000,52720
+device csubckt sky130_fd_pr__cap_mim_m3_1 2800 -2100 2801 -2099 w=400 l=400 "None" "c1_0_n2800#" 320 0 "m3_n30_n2830#" 0 5866000,52720
+device csubckt sky130_fd_pr__cap_mim_m3_1 2100 -2100 2101 -2099 w=400 l=400 "None" "c1_0_n2800#" 320 0 "m3_n30_n2830#" 0 5866000,52720
+device csubckt sky130_fd_pr__cap_mim_m3_1 1400 -2100 1401 -2099 w=400 l=400 "None" "c1_0_n2800#" 320 0 "m3_n30_n2830#" 0 5866000,52720
+device csubckt sky130_fd_pr__cap_mim_m3_1 700 -2100 701 -2099 w=400 l=400 "None" "c1_0_n2800#" 320 0 "m3_n30_n2830#" 0 5866000,52720
+device csubckt sky130_fd_pr__cap_mim_m3_1 0 -2100 1 -2099 w=400 l=400 "None" "c1_0_n2800#" 320 0 "m3_n30_n2830#" 0 5866000,52720
+device csubckt sky130_fd_pr__cap_mim_m3_1 2800 -1400 2801 -1399 w=400 l=400 "None" "c1_0_n2800#" 320 0 "m3_n30_n2830#" 0 5866000,52720
+device csubckt sky130_fd_pr__cap_mim_m3_1 2100 -1400 2101 -1399 w=400 l=400 "None" "c1_0_n2800#" 320 0 "m3_n30_n2830#" 0 5866000,52720
+device csubckt sky130_fd_pr__cap_mim_m3_1 1400 -1400 1401 -1399 w=400 l=400 "None" "c1_0_n2800#" 320 0 "m3_n30_n2830#" 0 5866000,52720
+device csubckt sky130_fd_pr__cap_mim_m3_1 700 -1400 701 -1399 w=400 l=400 "None" "c1_0_n2800#" 320 0 "m3_n30_n2830#" 0 5866000,52720
+device csubckt sky130_fd_pr__cap_mim_m3_1 0 -1400 1 -1399 w=400 l=400 "None" "c1_0_n2800#" 320 0 "m3_n30_n2830#" 0 5866000,52720
+device csubckt sky130_fd_pr__cap_mim_m3_1 2800 -700 2801 -699 w=400 l=400 "None" "c1_0_n2800#" 320 0 "m3_n30_n2830#" 0 5866000,52720
+device csubckt sky130_fd_pr__cap_mim_m3_1 2100 -700 2101 -699 w=400 l=400 "None" "c1_0_n2800#" 320 0 "m3_n30_n2830#" 0 5866000,52720
+device csubckt sky130_fd_pr__cap_mim_m3_1 1400 -700 1401 -699 w=400 l=400 "None" "c1_0_n2800#" 320 0 "m3_n30_n2830#" 0 5866000,52720
+device csubckt sky130_fd_pr__cap_mim_m3_1 700 -700 701 -699 w=400 l=400 "None" "c1_0_n2800#" 320 0 "m3_n30_n2830#" 0 5866000,52720
+device csubckt sky130_fd_pr__cap_mim_m3_1 0 -700 1 -699 w=400 l=400 "None" "c1_0_n2800#" 320 0 "m3_n30_n2830#" 0 5866000,52720
+device csubckt sky130_fd_pr__cap_mim_m3_1 2800 0 2801 1 w=400 l=400 "None" "c1_0_n2800#" 320 0 "m3_n30_n2830#" 0 5866000,52720
+device csubckt sky130_fd_pr__cap_mim_m3_1 2100 0 2101 1 w=400 l=400 "None" "c1_0_n2800#" 320 0 "m3_n30_n2830#" 0 5866000,52720
+device csubckt sky130_fd_pr__cap_mim_m3_1 1400 0 1401 1 w=400 l=400 "None" "c1_0_n2800#" 320 0 "m3_n30_n2830#" 0 5866000,52720
+device csubckt sky130_fd_pr__cap_mim_m3_1 700 0 701 1 w=400 l=400 "None" "c1_0_n2800#" 320 0 "m3_n30_n2830#" 0 5866000,52720
+device csubckt sky130_fd_pr__cap_mim_m3_1 0 0 1 1 w=400 l=400 "None" "c1_0_n2800#" 320 0 "m3_n30_n2830#" 0 5866000,52720
