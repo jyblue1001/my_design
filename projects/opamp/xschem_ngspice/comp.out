@@ -1,0 +1,48 @@
+
+Circuit 1 cell sky130_fd_pr__nfet_01v8 and Circuit 2 cell sky130_fd_pr__nfet_01v8 are black boxes.
+Equate elements:  no current cell.
+Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__pfet_01v8 and Circuit 2 cell sky130_fd_pr__pfet_01v8 are black boxes.
+Equate elements:  no current cell.
+Device classes sky130_fd_pr__pfet_01v8 and sky130_fd_pr__pfet_01v8 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__cap_mim_m3_1 and Circuit 2 cell sky130_fd_pr__cap_mim_m3_1 are black boxes.
+Equate elements:  no current cell.
+Device classes sky130_fd_pr__cap_mim_m3_1 and sky130_fd_pr__cap_mim_m3_1 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__res_high_po_0p35 and Circuit 2 cell sky130_fd_pr__res_high_po_0p35 are black boxes.
+Equate elements:  no current cell.
+Device classes sky130_fd_pr__res_high_po_0p35 and sky130_fd_pr__res_high_po_0p35 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__res_xhigh_po_0p35 and Circuit 2 cell sky130_fd_pr__res_xhigh_po_0p35 are black boxes.
+Equate elements:  no current cell.
+Device classes sky130_fd_pr__res_xhigh_po_0p35 and sky130_fd_pr__res_xhigh_po_0p35 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__rf_pnp_05v5_W3p40L3p40 is a black box; will not flatten Circuit 2
+Equate elements:  no current cell.
+Device classes sky130_fd_pr__rf_pnp_05v5_W3p40L3p40 and sky130_fd_pr__rf_pnp_05v5_W3p40L3p40 are equivalent.
+Flattening unmatched subcell opamp_bandgap_2 in circuit ref_volt_cur_gen_dummy.spice (0)(2 instances)
+
+Class ref_volt_cur_gen_dummy_magic.spice (1):  Merged 156 parallel devices.
+Class ref_volt_cur_gen_dummy_magic.spice (1):  Merged 6 series devices.
+Subcircuit summary:
+Circuit 1: ref_volt_cur_gen_dummy.spice    |Circuit 2: ref_volt_cur_gen_dummy_magic.sp 
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8 (36->21)           |sky130_fd_pr__pfet_01v8 (82->21)           
+sky130_fd_pr__res_xhigh_po_0p35 (5)        |sky130_fd_pr__res_xhigh_po_0p35 (11->5)    
+sky130_fd_pr__cap_mim_m3_1 (60->3)         |sky130_fd_pr__cap_mim_m3_1 (60->3)         
+sky130_fd_pr__rf_pnp_05v5_W3p40L3p40 (9->2 |sky130_fd_pr__rf_pnp_05v5_W3p40L3p40 (9->2 
+sky130_fd_pr__nfet_01v8 (32->17)           |sky130_fd_pr__nfet_01v8 (48->17)           
+sky130_fd_pr__res_high_po_0p35 (2)         |sky130_fd_pr__res_high_po_0p35 (2)         
+Number of devices: 50                      |Number of devices: 50                      
+Number of nets: 27                         |Number of nets: 27                         
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists match uniquely.
+Cells have no pins;  pin matching not needed.
+Device classes ref_volt_cur_gen_dummy.spice and ref_volt_cur_gen_dummy_magic.spice are equivalent.
+
+Final result: Circuits match uniquely.
+.

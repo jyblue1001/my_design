@@ -12,8 +12,8 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=5.5376543e-06
-x2=1.3401974e-05
+x1=8.5143355e-06
+x2=2.0802335e-05
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -73,14 +73,14 @@ node="vout+
 vout-"}
 B 2 3440 -2110 4160 -1620 {flags=graph
 
-y2=1.1
+y2=0.97
 ypos1=0
 ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=5.5376543e-06
-x2=1.3401974e-05
+x1=8.5143355e-06
+x2=2.0802335e-05
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -127,7 +127,7 @@ linewidth_mult=2
 
 
 
-y1=-2.9e-13
+y1=0.82
 
 
 
@@ -148,8 +148,8 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=5.5376543e-06
-x2=1.3401974e-05
+x1=8.5143355e-06
+x2=2.0802335e-05
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -215,8 +215,8 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=5.5376543e-06
-x2=1.3401974e-05
+x1=8.5143355e-06
+x2=2.0802335e-05
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -281,8 +281,8 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=5.5376543e-06
-x2=1.3401974e-05
+x1=8.5143355e-06
+x2=2.0802335e-05
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -350,8 +350,8 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=5.5376543e-06
-x2=1.3401974e-05
+x1=8.5143355e-06
+x2=2.0802335e-05
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -418,8 +418,8 @@ ypos2=2
 divy=5
 subdivy=8
 unity=1
-x1=5.5376543e-06
-x2=1.3401974e-05
+x1=8.5143355e-06
+x2=2.0802335e-05
 divx=5
 subdivx=8
 xlabmag=1.0
@@ -485,8 +485,8 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=5.5376543e-06
-x2=1.3401974e-05
+x1=8.5143355e-06
+x2=2.0802335e-05
 divx=5
 subdivx=8
 xlabmag=1.0
@@ -552,8 +552,8 @@ ypos2=2
 divy=5
 subdivy=8
 unity=1
-x1=5.5376543e-06
-x2=1.3401974e-05
+x1=8.5143355e-06
+x2=2.0802335e-05
 divx=5
 subdivx=8
 xlabmag=1.0
@@ -621,8 +621,8 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=5.5376543e-06
-x2=1.3401974e-05
+x1=8.5143355e-06
+x2=2.0802335e-05
 divx=5
 subdivx=8
 xlabmag=1.0
@@ -689,8 +689,8 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=5.5376543e-06
-x2=1.3401974e-05
+x1=8.5143355e-06
+x2=2.0802335e-05
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -758,8 +758,8 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=5.5376543e-06
-x2=1.3401974e-05
+x1=8.5143355e-06
+x2=2.0802335e-05
 divx=5
 subdivx=8
 xlabmag=1.0
@@ -826,8 +826,8 @@ ypos2=2
 divy=5
 subdivy=8
 unity=1
-x1=5.5376543e-06
-x2=1.3401974e-05
+x1=8.5143355e-06
+x2=2.0802335e-05
 divx=5
 subdivx=8
 xlabmag=1.0
@@ -895,8 +895,8 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=5.5376543e-06
-x2=1.3401974e-05
+x1=8.5143355e-06
+x2=2.0802335e-05
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -963,8 +963,8 @@ ypos2=2
 divy=5
 subdivy=8
 unity=1
-x1=5.5376543e-06
-x2=1.3401974e-05
+x1=8.5143355e-06
+x2=2.0802335e-05
 divx=5
 subdivx=8
 xlabmag=1.0
@@ -1032,8 +1032,8 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=5.5376543e-06
-x2=1.3401974e-05
+x1=8.5143355e-06
+x2=2.0802335e-05
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -1100,8 +1100,8 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=5.5376543e-06
-x2=1.3401974e-05
+x1=8.5143355e-06
+x2=2.0802335e-05
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -1166,8 +1166,8 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=5.5376543e-06
-x2=1.3401974e-05
+x1=8.5143355e-06
+x2=2.0802335e-05
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -1246,7 +1246,7 @@ C {devices/vsource.sym} 1590 -3170 0 0 {name=VDD value="pwl(0 0 3us 0 4us 1.8)" 
 * "1.8 AC 1"  "sin(1.8 0.001 10k)" 1.8}
 C {devices/gnd.sym} 1590 -3140 0 0 {name=l3 lab=GND}
 C {devices/vdd.sym} 1590 -3200 0 0 {name=l4 lab=VDD}
-C {sky130_fd_pr/corner.sym} 1280 -3210 0 0 {name=CORNER only_toplevel=false corner=tt_mm}
+C {sky130_fd_pr/corner.sym} 1280 -3210 0 0 {name=CORNER only_toplevel=false corner=tt}
 C {simulator_commands_shown.sym} 120 -3250 0 0 {name=COMMANDS
 simulator=ngspice
 only_toplevel=false 
@@ -1302,11 +1302,12 @@ value="
 
 .control
 
-  let runs=3
-  let run=1
+  * let runs=3
+  * let run=1
 
-  dowhile run <= runs
-    save v(vout+) v(vout-) v(vin+) v(vin-) v(v_err_amp_ref) v(x2.x) v(x2.y) v(x2.vb1) v(x2.vb2) v(x2.vb3) v(x2.v_tot)
+  * dowhile run <= runs
+    * save v(vout+) v(vout-) v(vin+) v(vin-) v(v_err_amp_ref) v(x2.x) v(x2.y) v(x2.vb1) v(x2.vb2) v(x2.vb3) v(x2.v_tot)
+    save all
     remzerovec
     set appendwrite
     * dc temp -40 120 10 VDD 0 4.0 0.2
@@ -1320,9 +1321,9 @@ value="
     * write tb_opamp_full_6_mc.raw
     * write tb_opamp_full_6_tt_mm.raw
     * write tb_opamp_full_6_AC.raw
-    reset
-    let run = run + 1
-  end
+    * reset
+    * let run = run + 1
+  * end
 .endc
 
 "}

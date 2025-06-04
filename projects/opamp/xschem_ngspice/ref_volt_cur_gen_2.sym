@@ -1,0 +1,42 @@
+v {xschem version=3.4.6 file_version=1.2}
+G {}
+K {type=subcircuit
+format="@name @pinlist @symname"
+template="name=x1"
+}
+V {}
+S {}
+E {}
+L 4 -60 -90 130 -90 {}
+L 4 -60 90 130 90 {}
+L 4 -60 -90 -60 90 {}
+L 4 130 -90 130 90 {}
+L 4 130 40 150 40 {}
+L 4 130 -60 150 -60 {}
+L 4 130 20 150 20 {}
+L 4 130 -20 150 -20 {}
+L 4 130 60 150 60 {}
+L 4 130 -40 150 -40 {}
+L 4 130 0 150 0 {}
+L 7 0 -110 0 -90 {}
+L 7 0 90 0 110 {}
+B 5 -2.5 -112.5 2.5 -107.5 {name=VDDA dir=inout}
+B 5 147.5 37.5 152.5 42.5 {name=ERR_AMP_REF dir=out}
+B 5 147.5 -62.5 152.5 -57.5 {name=CMFB_PFET_CUR_BIAS dir=out}
+B 5 147.5 17.5 152.5 22.5 {name=VB1_CUR_BIAS dir=out}
+B 5 147.5 -22.5 152.5 -17.5 {name=VB3_CUR_BIAS dir=out}
+B 5 147.5 57.5 152.5 62.5 {name=ERR_AMP_CUR_BIAS dir=out}
+B 5 147.5 -42.5 152.5 -37.5 {name=CMFB_NFET_CUR_BIAS dir=out}
+B 5 147.5 -2.5 152.5 2.5 {name=VB2_CUR_BIAS dir=out}
+B 5 -2.5 107.5 2.5 112.5 {name=GNDA dir=inout}
+T {@symname} 133.5 -133.5 0 0 0.3 0.3 {}
+T {@name} 135 -112 0 0 0.2 0.2 {}
+T {VDDA} 45 -116.5 0 1 0.2 0.2 {}
+T {ERR_AMP_REF} 125 36 0 1 0.2 0.2 {}
+T {CMFB_PFET_CUR_BIAS} 125 -64 0 1 0.2 0.2 {}
+T {VB1_CUR_BIAS} 125 16 0 1 0.2 0.2 {}
+T {VB3_CUR_BIAS} 125 -24 0 1 0.2 0.2 {}
+T {ERR_AMP_CUR_BIAS} 125 56 0 1 0.2 0.2 {}
+T {CMFB_NFET_CUR_BIAS} 125 -44 0 1 0.2 0.2 {}
+T {VB2_CUR_BIAS} 125 -4 0 1 0.2 0.2 {}
+T {GNDA} 45 106 0 1 0.2 0.2 {}

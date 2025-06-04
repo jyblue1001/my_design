@@ -1,0 +1,240 @@
+* NGSPICE file created from BGR_cur_gen_3.ext - technology: sky130A
+
+.subckt sky130_fd_pr__rf_pnp_05v5_W3p40L3p40 Emitter Collector Base m=1
+X0 Collector Base Emitter sky130_fd_pr__pnp_05v5_W3p40L3p40
+**devattr s=462400,2720
+.ends
+
+.subckt BGR_cur_gen_3 VB1_CUR_BIAS GNDA ERR_AMP_REF VDDA VB2_CUR_BIAS VB3_CUR_BIAS
++ ERR_AMP_CUR_BIAS CMFB_NFET_CUR_BIAS TAIL_CUR_MIR_BIAS CMFB_PFET_CUR_BIAS
+Xsky130_fd_pr__rf_pnp_05v5_W3p40L3p40_4 sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_8/Emitter
++ GNDA GNDA sky130_fd_pr__rf_pnp_05v5_W3p40L3p40 m=1
+Xsky130_fd_pr__rf_pnp_05v5_W3p40L3p40_5 sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_8/Emitter
++ GNDA GNDA sky130_fd_pr__rf_pnp_05v5_W3p40L3p40 m=1
+Xsky130_fd_pr__rf_pnp_05v5_W3p40L3p40_6 sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_8/Emitter
++ GNDA GNDA sky130_fd_pr__rf_pnp_05v5_W3p40L3p40 m=1
+Xsky130_fd_pr__rf_pnp_05v5_W3p40L3p40_7 sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_8/Emitter
++ GNDA GNDA sky130_fd_pr__rf_pnp_05v5_W3p40L3p40 m=1
+Xsky130_fd_pr__rf_pnp_05v5_W3p40L3p40_8 sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_8/Emitter
++ GNDA GNDA sky130_fd_pr__rf_pnp_05v5_W3p40L3p40 m=1
+Xsky130_fd_pr__rf_pnp_05v5_W3p40L3p40_0 sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_0/Emitter
++ GNDA sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_0/Base sky130_fd_pr__rf_pnp_05v5_W3p40L3p40 m=1
+Xsky130_fd_pr__rf_pnp_05v5_W3p40L3p40_1 sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_8/Emitter
++ GNDA GNDA sky130_fd_pr__rf_pnp_05v5_W3p40L3p40 m=1
+Xsky130_fd_pr__rf_pnp_05v5_W3p40L3p40_2 sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_8/Emitter
++ GNDA GNDA sky130_fd_pr__rf_pnp_05v5_W3p40L3p40 m=1
+Xsky130_fd_pr__rf_pnp_05v5_W3p40L3p40_3 sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_8/Emitter
++ GNDA GNDA sky130_fd_pr__rf_pnp_05v5_W3p40L3p40 m=1
+X0 a_8210_3690# a_170_6060# a_8510_3230# GNDA sky130_fd_pr__nfet_01v8 ad=0.1 pd=0.9 as=0.1 ps=0.9 w=0.5 l=0.2
+X1 a_5670_3690# a_170_5520# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
+X2 a_2580_5730# a_3480_5610# GNDA sky130_fd_pr__res_xhigh_po_0p35 l=6.16
+X3 VDDA a_710_5520# ERR_AMP_REF GNDA sky130_fd_pr__nfet_01v8 ad=0.6 pd=3.4 as=0.6 ps=3.4 w=3 l=0.5
+X4 a_5810_3750# a_5810_3750# a_5730_3800# GNDA sky130_fd_pr__nfet_01v8 ad=0.2 pd=1.4 as=0.2 ps=1.4 w=1 l=0.2
+X5 VB3_CUR_BIAS a_6240_1540# GNDA GNDA sky130_fd_pr__nfet_01v8 ad=0.2 pd=1.4 as=0.2 ps=1.4 w=1 l=0.5
+X6 a_8270_3800# a_8350_3750# a_8350_3750# GNDA sky130_fd_pr__nfet_01v8 ad=0.2 pd=1.4 as=0.2 ps=1.4 w=1 l=0.2
+X7 a_5670_3690# a_3480_5610# a_5670_2420# GNDA sky130_fd_pr__nfet_01v8 ad=0.1 pd=0.9 as=0.1 ps=0.9 w=0.5 l=0.2
+X8 a_710_5640# a_8210_3690# a_8270_3800# GNDA sky130_fd_pr__nfet_01v8 ad=0.2 pd=1.4 as=0.2 ps=1.4 w=1 l=0.2
+X9 GNDA a_6240_1540# VB2_CUR_BIAS GNDA sky130_fd_pr__nfet_01v8 ad=0.2 pd=1.4 as=0.2 ps=1.4 w=1 l=0.5
+X10 VB1_CUR_BIAS a_710_5640# VDDA GNDA sky130_fd_pr__nfet_01v8 ad=0.2 pd=1.4 as=0.2 ps=1.4 w=1 l=0.5
+X11 ERR_AMP_REF a_710_5520# VDDA GNDA sky130_fd_pr__nfet_01v8 ad=0.6 pd=3.4 as=0.6 ps=3.4 w=3 l=0.5
+X12 a_5670_3690# a_170_5520# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
+X13 a_5810_3750# a_5810_3750# a_5730_3800# GNDA sky130_fd_pr__nfet_01v8 ad=0.2 pd=1.4 as=0.2 ps=1.4 w=1 l=0.2
+X14 a_8210_3690# a_170_5640# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
+X15 GNDA a_6240_1540# VB2_CUR_BIAS GNDA sky130_fd_pr__nfet_01v8 ad=0.2 pd=1.4 as=0.2 ps=1.4 w=1 l=0.5
+X16 a_8350_3750# ERR_AMP_REF a_8510_3230# GNDA sky130_fd_pr__nfet_01v8 ad=0.1 pd=0.9 as=0.1 ps=0.9 w=0.5 l=0.2
+X17 a_6160_1570# VDDA VDDA GNDA sky130_fd_pr__nfet_01v8 ad=0.2 pd=1.4 as=0.4 ps=2.8 w=1 l=0.5
+X18 TAIL_CUR_MIR_BIAS a_710_5640# VDDA GNDA sky130_fd_pr__nfet_01v8 ad=0.2 pd=1.4 as=0.2 ps=1.4 w=1 l=0.5
+X19 a_8350_3750# a_8350_3750# a_8270_3800# GNDA sky130_fd_pr__nfet_01v8 ad=0.2 pd=1.4 as=0.2 ps=1.4 w=1 l=0.2
+X20 a_2580_5850# sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_8/Emitter GNDA sky130_fd_pr__res_xhigh_po_0p35 l=6.16
+X21 a_10200_4750# a_10200_4750# a_3480_5610# GNDA sky130_fd_pr__nfet_01v8 ad=1.2 pd=6.8 as=0.6 ps=3.4 w=3 l=0.5
+X22 a_5810_3750# a_5810_3750# a_5730_3800# GNDA sky130_fd_pr__nfet_01v8 ad=0.2 pd=1.4 as=0.2 ps=1.4 w=1 l=0.2
+X23 a_8210_3690# a_170_5640# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
+X24 a_8210_3690# a_170_5640# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
+X25 a_5730_3800# a_5670_3690# a_710_5520# GNDA sky130_fd_pr__nfet_01v8 ad=0.2 pd=1.4 as=0.2 ps=1.4 w=1 l=0.2
+X26 a_8210_3690# a_170_6060# a_8510_3230# GNDA sky130_fd_pr__nfet_01v8 ad=0.2 pd=1.8 as=0.1 ps=0.9 w=0.5 l=0.2
+X27 a_5670_3690# a_170_5520# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
+X28 a_5210_3750# a_710_5520# VDDA GNDA sky130_fd_pr__nfet_01v8 ad=0.6 pd=3.4 as=0.6 ps=3.4 w=3 l=0.5
+X29 a_8210_3690# a_170_5640# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
+X30 GNDA a_4220_6090# GNDA sky130_fd_pr__res_xhigh_po_0p35 l=6.16
+X31 a_710_5640# a_8210_3690# a_8270_3800# GNDA sky130_fd_pr__nfet_01v8 ad=0.2 pd=1.4 as=0.2 ps=1.4 w=1 l=0.2
+X32 a_5670_2420# sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_8/Emitter a_5810_3750# GNDA sky130_fd_pr__nfet_01v8 ad=0.1 pd=0.9 as=0.1 ps=0.9 w=0.5 l=0.2
+X33 VDDA a_710_5520# ERR_AMP_REF GNDA sky130_fd_pr__nfet_01v8 ad=0.6 pd=3.4 as=0.6 ps=3.4 w=3 l=0.5
+X34 a_5670_3690# a_170_5520# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
+X35 a_2580_5850# a_4220_5970# GNDA sky130_fd_pr__res_xhigh_po_0p35 l=6.16
+X36 a_5730_3800# a_5810_3750# a_5810_3750# GNDA sky130_fd_pr__nfet_01v8 ad=0.2 pd=1.4 as=0.2 ps=1.4 w=1 l=0.2
+X37 VDDA a_710_5520# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
+X38 a_710_5640# a_8210_3690# a_8270_3800# GNDA sky130_fd_pr__nfet_01v8 ad=0.2 pd=1.4 as=0.2 ps=1.4 w=1 l=0.2
+X39 a_5670_2420# a_3480_5610# a_5670_3690# GNDA sky130_fd_pr__nfet_01v8 ad=0.1 pd=0.9 as=0.1 ps=0.9 w=0.5 l=0.2
+X40 VDDA a_710_5640# a_6160_1570# GNDA sky130_fd_pr__nfet_01v8 ad=0.2 pd=1.4 as=0.2 ps=1.4 w=1 l=0.5
+X41 VDDA a_710_5520# sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_8/Emitter GNDA sky130_fd_pr__nfet_01v8 ad=0.6 pd=3.4 as=0.6 ps=3.4 w=3 l=0.5
+X42 ERR_AMP_CUR_BIAS a_6240_1540# GNDA GNDA sky130_fd_pr__nfet_01v8 ad=0.2 pd=1.4 as=0.2 ps=1.4 w=1 l=0.5
+X43 VDDA a_710_5640# TAIL_CUR_MIR_BIAS GNDA sky130_fd_pr__nfet_01v8 ad=0.2 pd=1.4 as=0.2 ps=1.4 w=1 l=0.5
+X44 a_10390_3770# a_10390_3770# a_710_5640# GNDA sky130_fd_pr__nfet_01v8 ad=0.4 pd=2.8 as=0.2 ps=1.4 w=1 l=0.2
+X45 a_5670_3690# a_170_5520# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
+X46 a_7960_1960# a_5210_3750# a_5210_3750# GNDA sky130_fd_pr__nfet_01v8 ad=0.2 pd=1.4 as=0.4 ps=2.8 w=1 l=10
+X47 a_5730_3800# a_5810_3750# a_5810_3750# GNDA sky130_fd_pr__nfet_01v8 ad=0.2 pd=1.4 as=0.2 ps=1.4 w=1 l=0.2
+X48 VDDA a_710_5520# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
+X49 GNDA a_4220_5970# GNDA sky130_fd_pr__res_xhigh_po_0p35 l=6.16
+X50 VDDA a_710_5520# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
+X51 a_6160_1570# GNDA GNDA GNDA sky130_fd_pr__nfet_01v8 ad=0.2 pd=1.4 as=0.4 ps=2.8 w=1 l=0.5
+X52 ERR_AMP_CUR_BIAS a_6240_1540# GNDA GNDA sky130_fd_pr__nfet_01v8 ad=0.2 pd=1.4 as=0.2 ps=1.4 w=1 l=0.5
+X53 VDDA a_710_5640# TAIL_CUR_MIR_BIAS GNDA sky130_fd_pr__nfet_01v8 ad=0.2 pd=1.4 as=0.2 ps=1.4 w=1 l=0.5
+X54 a_8210_3690# a_170_5640# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
+X55 a_8210_3690# a_170_5640# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
+X56 VDDA a_710_5520# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
+X57 a_8510_3230# ERR_AMP_REF a_8350_3750# GNDA sky130_fd_pr__nfet_01v8 ad=0.1 pd=0.9 as=0.1 ps=0.9 w=0.5 l=0.2
+X58 a_5730_3800# a_5810_3750# a_5810_3750# GNDA sky130_fd_pr__nfet_01v8 ad=0.2 pd=1.4 as=0.2 ps=1.4 w=1 l=0.2
+X59 VDDA a_710_5520# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
+X60 a_8210_3690# a_170_5640# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
+X61 a_2580_5730# a_4220_6090# GNDA sky130_fd_pr__res_xhigh_po_0p35 l=6.16
+X62 CMFB_PFET_CUR_BIAS a_710_5640# VDDA GNDA sky130_fd_pr__nfet_01v8 ad=0.2 pd=1.4 as=0.2 ps=1.4 w=1 l=0.5
+X63 CMFB_PFET_CUR_BIAS a_710_5640# VDDA GNDA sky130_fd_pr__nfet_01v8 ad=0.2 pd=1.4 as=0.2 ps=1.4 w=1 l=0.5
+X64 a_3480_5610# a_710_5520# VDDA GNDA sky130_fd_pr__nfet_01v8 ad=0.6 pd=3.4 as=0.6 ps=3.4 w=3 l=0.5
+X65 a_8270_3800# a_8210_3690# a_710_5640# GNDA sky130_fd_pr__nfet_01v8 ad=0.2 pd=1.4 as=0.2 ps=1.4 w=1 l=0.2
+X66 a_5670_3690# a_3480_5610# a_5670_2420# GNDA sky130_fd_pr__nfet_01v8 ad=0.1 pd=0.9 as=0.1 ps=0.9 w=0.5 l=0.2
+X67 GNDA a_8170_2390# a_710_5640# GNDA sky130_fd_pr__nfet_01v8 ad=0.5 pd=2.9 as=1 ps=5.8 w=2.5 l=5
+X68 GNDA a_1820_6220# GNDA sky130_fd_pr__res_xhigh_po_0p35 l=6.21
+X69 a_5730_3800# a_5810_3750# a_5670_3690# GNDA sky130_fd_pr__nfet_01v8 ad=0.2 pd=1.4 as=0.2 ps=1.4 w=1 l=0.2
+X70 a_5670_3690# a_170_5520# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
+X71 sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_8/Emitter a_710_5520# VDDA GNDA sky130_fd_pr__nfet_01v8 ad=0.6 pd=3.4 as=0.6 ps=3.4 w=3 l=0.5
+X72 GNDA a_6240_1540# ERR_AMP_CUR_BIAS GNDA sky130_fd_pr__nfet_01v8 ad=0.2 pd=1.4 as=0.2 ps=1.4 w=1 l=0.5
+X73 GNDA a_6240_1540# a_6160_1570# GNDA sky130_fd_pr__nfet_01v8 ad=0.2 pd=1.4 as=0.2 ps=1.4 w=1 l=0.5
+X74 CMFB_PFET_CUR_BIAS a_710_5640# VDDA GNDA sky130_fd_pr__nfet_01v8 ad=0.2 pd=1.4 as=0.2 ps=1.4 w=1 l=0.5
+X75 a_170_6060# a_710_5640# VDDA GNDA sky130_fd_pr__nfet_01v8 ad=0.2 pd=1.4 as=0.2 ps=1.4 w=1 l=0.5
+X76 a_5210_3750# a_710_5520# VDDA GNDA sky130_fd_pr__nfet_01v8 ad=0.6 pd=3.4 as=0.6 ps=3.4 w=3 l=0.5
+X77 a_8270_3800# a_8210_3690# a_710_5640# GNDA sky130_fd_pr__nfet_01v8 ad=0.2 pd=1.4 as=0.2 ps=1.4 w=1 l=0.2
+X78 a_5810_3750# sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_8/Emitter a_5670_2420# GNDA sky130_fd_pr__nfet_01v8 ad=0.2 pd=1.8 as=0.1 ps=0.9 w=0.5 l=0.2
+X79 a_8210_3690# a_170_5640# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
+X80 VDDA a_710_5520# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
+X81 a_5670_3690# a_170_5520# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
+X82 a_5670_3690# a_5810_3750# a_5730_3800# GNDA sky130_fd_pr__nfet_01v8 ad=0.2 pd=1.4 as=0.2 ps=1.4 w=1 l=0.2
+X83 a_5670_3690# a_170_5520# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
+X84 GNDA a_6240_1540# VB3_CUR_BIAS GNDA sky130_fd_pr__nfet_01v8 ad=0.2 pd=1.4 as=0.2 ps=1.4 w=1 l=0.5
+X85 a_8210_3690# a_170_5640# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
+X86 ERR_AMP_REF a_1820_6220# GNDA sky130_fd_pr__res_xhigh_po_0p35 l=6.21
+X87 a_8270_3800# a_8350_3750# a_8210_3690# GNDA sky130_fd_pr__nfet_01v8 ad=0.2 pd=1.4 as=0.2 ps=1.4 w=1 l=0.2
+X88 a_5670_3690# a_170_5520# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
+X89 VDDA a_710_5640# CMFB_PFET_CUR_BIAS GNDA sky130_fd_pr__nfet_01v8 ad=0.2 pd=1.4 as=0.2 ps=1.4 w=1 l=0.5
+X90 a_5670_3690# a_5810_3750# a_5730_3800# GNDA sky130_fd_pr__nfet_01v8 ad=0.2 pd=1.4 as=0.2 ps=1.4 w=1 l=0.2
+X91 a_170_5520# a_710_5520# GNDA sky130_fd_pr__res_xhigh_po_0p35 l=0.66
+X92 a_8210_3690# a_170_5640# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
+X93 VDDA a_710_5520# sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_8/Emitter GNDA sky130_fd_pr__nfet_01v8 ad=0.6 pd=3.4 as=0.6 ps=3.4 w=3 l=0.5
+X94 a_710_5640# a_8030_3800# a_8030_3800# GNDA sky130_fd_pr__nfet_01v8 ad=0.2 pd=1.4 as=0.4 ps=2.8 w=1 l=0.2
+X95 CMFB_NFET_CUR_BIAS a_6240_1540# GNDA GNDA sky130_fd_pr__nfet_01v8 ad=0.2 pd=1.4 as=0.2 ps=1.4 w=1 l=0.5
+X96 VDDA a_710_5640# CMFB_PFET_CUR_BIAS GNDA sky130_fd_pr__nfet_01v8 ad=0.2 pd=1.4 as=0.2 ps=1.4 w=1 l=0.5
+X97 VDDA a_710_5520# a_5210_3750# GNDA sky130_fd_pr__nfet_01v8 ad=0.6 pd=3.4 as=0.6 ps=3.4 w=3 l=0.5
+X98 VB3_CUR_BIAS a_6240_1540# GNDA GNDA sky130_fd_pr__nfet_01v8 ad=0.2 pd=1.4 as=0.2 ps=1.4 w=1 l=0.5
+X99 VDDA VDDA a_170_6060# GNDA sky130_fd_pr__nfet_01v8 ad=0.4 pd=2.8 as=0.2 ps=1.4 w=1 l=0.5
+X100 a_5670_2420# a_3480_5610# a_5670_3690# GNDA sky130_fd_pr__nfet_01v8 ad=0.1 pd=0.9 as=0.1 ps=0.9 w=0.5 l=0.2
+X101 VDDA a_710_5520# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
+X102 a_710_5520# a_5210_3750# sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_8/Emitter GNDA sky130_fd_pr__nfet_01v8 ad=0.2 pd=1.4 as=0.4 ps=2.8 w=1 l=0.15
+X103 a_710_5520# a_5670_3690# a_5730_3800# GNDA sky130_fd_pr__nfet_01v8 ad=0.2 pd=1.4 as=0.2 ps=1.4 w=1 l=0.2
+X104 a_8210_3690# a_170_5640# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
+X105 a_8210_3690# a_170_5640# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
+X106 ERR_AMP_CUR_BIAS a_6240_1540# GNDA GNDA sky130_fd_pr__nfet_01v8 ad=0.2 pd=1.4 as=0.2 ps=1.4 w=1 l=0.5
+X107 VDDA a_710_5640# VB1_CUR_BIAS GNDA sky130_fd_pr__nfet_01v8 ad=0.2 pd=1.4 as=0.2 ps=1.4 w=1 l=0.5
+X108 VDDA a_710_5520# a_5210_3750# GNDA sky130_fd_pr__nfet_01v8 ad=0.6 pd=3.4 as=0.6 ps=3.4 w=3 l=0.5
+X109 VB3_CUR_BIAS a_6240_1540# GNDA GNDA sky130_fd_pr__nfet_01v8 ad=0.2 pd=1.4 as=0.2 ps=1.4 w=1 l=0.5
+X110 a_170_5640# a_710_5640# GNDA sky130_fd_pr__res_xhigh_po_0p35 l=0.66
+X111 a_8210_3690# a_8350_3750# a_8270_3800# GNDA sky130_fd_pr__nfet_01v8 ad=0.2 pd=1.4 as=0.2 ps=1.4 w=1 l=0.2
+X112 VDDA a_710_5520# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
+X113 a_3480_5610# a_5620_4690# a_5620_4690# GNDA sky130_fd_pr__nfet_01v8 ad=0.6 pd=3.4 as=1.2 ps=6.8 w=3 l=0.5
+X114 a_8210_3690# a_170_5640# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
+X115 a_5730_3800# a_5810_3750# a_5670_3690# GNDA sky130_fd_pr__nfet_01v8 ad=0.2 pd=1.4 as=0.2 ps=1.4 w=1 l=0.2
+X116 VDDA a_710_5520# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
+X117 a_8210_3690# a_170_5640# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
+X118 GNDA a_6240_1540# CMFB_NFET_CUR_BIAS GNDA sky130_fd_pr__nfet_01v8 ad=0.2 pd=1.4 as=0.2 ps=1.4 w=1 l=0.5
+X119 TAIL_CUR_MIR_BIAS a_710_5640# VDDA GNDA sky130_fd_pr__nfet_01v8 ad=0.2 pd=1.4 as=0.2 ps=1.4 w=1 l=0.5
+X120 a_5210_3750# a_710_5520# VDDA GNDA sky130_fd_pr__nfet_01v8 ad=0.6 pd=3.4 as=0.6 ps=3.4 w=3 l=0.5
+X121 ERR_AMP_REF a_710_5520# VDDA GNDA sky130_fd_pr__nfet_01v8 ad=0.6 pd=3.4 as=0.6 ps=3.4 w=3 l=0.5
+X122 a_8510_3230# a_9250_2390# GNDA GNDA sky130_fd_pr__nfet_01v8 ad=1 pd=5.8 as=0.5 ps=2.9 w=2.5 l=5
+X123 GNDA a_1810_5940# GNDA sky130_fd_pr__res_xhigh_po_0p35 l=6.16
+X124 a_5670_3690# a_170_5520# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
+X125 GNDA a_6240_1540# ERR_AMP_CUR_BIAS GNDA sky130_fd_pr__nfet_01v8 ad=0.2 pd=1.4 as=0.2 ps=1.4 w=1 l=0.5
+X126 CMFB_PFET_CUR_BIAS a_710_5640# VDDA GNDA sky130_fd_pr__nfet_01v8 ad=0.2 pd=1.4 as=0.2 ps=1.4 w=1 l=0.5
+X127 a_5210_3750# a_710_5520# VDDA GNDA sky130_fd_pr__nfet_01v8 ad=0.6 pd=3.4 as=0.6 ps=3.4 w=3 l=0.5
+X128 sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_8/Emitter a_710_5520# VDDA GNDA sky130_fd_pr__nfet_01v8 ad=0.6 pd=3.4 as=0.6 ps=3.4 w=3 l=0.5
+X129 a_8270_3800# a_8210_3690# a_710_5640# GNDA sky130_fd_pr__nfet_01v8 ad=0.2 pd=1.4 as=0.2 ps=1.4 w=1 l=0.2
+X130 VDDA a_710_5520# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
+X131 VDDA a_710_5520# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
+X132 GNDA GNDA VB3_CUR_BIAS GNDA sky130_fd_pr__nfet_01v8 ad=0.4 pd=2.8 as=0.2 ps=1.4 w=1 l=0.5
+X133 a_5670_3690# a_170_5520# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
+X134 a_5670_3690# a_170_5520# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
+X135 a_7850_3770# a_7850_3770# a_710_5520# GNDA sky130_fd_pr__nfet_01v8 ad=0.4 pd=2.8 as=0.2 ps=1.4 w=1 l=0.2
+X136 VDDA a_710_5520# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
+X137 GNDA a_6240_1540# ERR_AMP_CUR_BIAS GNDA sky130_fd_pr__nfet_01v8 ad=0.2 pd=1.4 as=0.2 ps=1.4 w=1 l=0.5
+X138 a_5670_3690# a_170_5520# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
+X139 VDDA a_710_5520# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
+X140 VDDA a_710_5520# a_5210_3750# GNDA sky130_fd_pr__nfet_01v8 ad=0.6 pd=3.4 as=0.6 ps=3.4 w=3 l=0.5
+X141 a_5670_3690# a_5810_3750# a_5730_3800# GNDA sky130_fd_pr__nfet_01v8 ad=0.2 pd=1.4 as=0.2 ps=1.4 w=1 l=0.2
+X142 a_8210_3690# a_170_5640# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
+X143 a_5670_3690# a_170_5520# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
+X144 a_170_6060# a_1810_5940# GNDA sky130_fd_pr__res_xhigh_po_0p35 l=6.16
+X145 VDDA a_710_5520# a_5210_3750# GNDA sky130_fd_pr__nfet_01v8 ad=0.6 pd=3.4 as=0.6 ps=3.4 w=3 l=0.5
+X146 a_5810_3750# sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_8/Emitter a_5670_2420# GNDA sky130_fd_pr__nfet_01v8 ad=0.1 pd=0.9 as=0.1 ps=0.9 w=0.5 l=0.2
+X147 VB2_CUR_BIAS a_6240_1540# GNDA GNDA sky130_fd_pr__nfet_01v8 ad=0.2 pd=1.4 as=0.2 ps=1.4 w=1 l=0.5
+X148 GNDA a_7960_1960# a_7960_1960# GNDA sky130_fd_pr__nfet_01v8 ad=0.4 pd=2.8 as=0.2 ps=1.4 w=1 l=10
+X149 VDDA a_710_5640# CMFB_PFET_CUR_BIAS GNDA sky130_fd_pr__nfet_01v8 ad=0.2 pd=1.4 as=0.2 ps=1.4 w=1 l=0.5
+X150 VDDA a_710_5520# sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_8/Emitter GNDA sky130_fd_pr__nfet_01v8 ad=0.6 pd=3.4 as=0.6 ps=3.4 w=3 l=0.5
+X151 a_8350_3750# a_8350_3750# a_8270_3800# GNDA sky130_fd_pr__nfet_01v8 ad=0.2 pd=1.4 as=0.2 ps=1.4 w=1 l=0.2
+X152 GNDA a_5750_2390# a_5670_2420# GNDA sky130_fd_pr__nfet_01v8 ad=0.5 pd=2.9 as=1 ps=5.8 w=2.5 l=5
+X153 a_8210_3690# a_170_6060# a_8510_3230# GNDA sky130_fd_pr__nfet_01v8 ad=0.1 pd=0.9 as=0.1 ps=0.9 w=0.5 l=0.2
+X154 a_8210_3690# a_170_5640# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
+X155 VDDA a_710_5520# a_3480_5610# GNDA sky130_fd_pr__nfet_01v8 ad=0.6 pd=3.4 as=0.6 ps=3.4 w=3 l=0.5
+X156 VB2_CUR_BIAS a_6240_1540# GNDA GNDA sky130_fd_pr__nfet_01v8 ad=0.2 pd=1.4 as=0.2 ps=1.4 w=1 l=0.5
+X157 VDDA a_710_5640# CMFB_PFET_CUR_BIAS GNDA sky130_fd_pr__nfet_01v8 ad=0.2 pd=1.4 as=0.2 ps=1.4 w=1 l=0.5
+X158 a_8210_3690# a_8350_3750# a_8270_3800# GNDA sky130_fd_pr__nfet_01v8 ad=0.2 pd=1.4 as=0.2 ps=1.4 w=1 l=0.2
+X159 a_5670_3690# a_170_5520# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
+X160 TAIL_CUR_MIR_BIAS a_710_5640# VDDA GNDA sky130_fd_pr__nfet_01v8 ad=0.2 pd=1.4 as=0.2 ps=1.4 w=1 l=0.5
+X161 a_710_5520# a_5670_3690# a_5730_3800# GNDA sky130_fd_pr__nfet_01v8 ad=0.2 pd=1.4 as=0.2 ps=1.4 w=1 l=0.2
+X162 a_8210_3690# a_170_5640# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
+X163 VDDA a_710_5520# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
+X164 a_8210_3690# a_8350_3750# a_8270_3800# GNDA sky130_fd_pr__nfet_01v8 ad=0.2 pd=1.4 as=0.2 ps=1.4 w=1 l=0.2
+X165 a_8350_3750# ERR_AMP_REF a_8510_3230# GNDA sky130_fd_pr__nfet_01v8 ad=0.1 pd=0.9 as=0.1 ps=0.9 w=0.5 l=0.2
+X166 a_8210_3690# a_170_5640# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
+X167 sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_8/Emitter a_710_5520# VDDA GNDA sky130_fd_pr__nfet_01v8 ad=0.6 pd=3.4 as=0.6 ps=3.4 w=3 l=0.5
+X168 a_5730_3800# a_5810_3750# a_5670_3690# GNDA sky130_fd_pr__nfet_01v8 ad=0.2 pd=1.4 as=0.2 ps=1.4 w=1 l=0.2
+X169 a_5670_2420# a_3480_5610# a_5670_3690# GNDA sky130_fd_pr__nfet_01v8 ad=0.1 pd=0.9 as=0.2 ps=1.8 w=0.5 l=0.2
+X170 a_5670_3690# a_170_5520# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
+X171 a_8510_3230# ERR_AMP_REF a_8350_3750# GNDA sky130_fd_pr__nfet_01v8 ad=0.1 pd=0.9 as=0.2 ps=1.8 w=0.5 l=0.2
+X172 VDDA a_710_5520# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
+X173 a_8210_3690# a_170_5640# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
+X174 GNDA a_6240_1540# VB2_CUR_BIAS GNDA sky130_fd_pr__nfet_01v8 ad=0.2 pd=1.4 as=0.2 ps=1.4 w=1 l=0.5
+X175 TAIL_CUR_MIR_BIAS a_710_5640# VDDA GNDA sky130_fd_pr__nfet_01v8 ad=0.2 pd=1.4 as=0.2 ps=1.4 w=1 l=0.5
+X176 sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_8/Emitter a_710_5520# VDDA GNDA sky130_fd_pr__nfet_01v8 ad=0.6 pd=3.4 as=0.6 ps=3.4 w=3 l=0.5
+X177 a_8350_3750# a_8350_3750# a_8270_3800# GNDA sky130_fd_pr__nfet_01v8 ad=0.2 pd=1.4 as=0.2 ps=1.4 w=1 l=0.2
+X178 a_5670_2420# sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_8/Emitter a_5810_3750# GNDA sky130_fd_pr__nfet_01v8 ad=0.1 pd=0.9 as=0.1 ps=0.9 w=0.5 l=0.2
+X179 a_5670_3690# a_170_5520# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
+X180 a_8270_3800# a_8350_3750# a_8350_3750# GNDA sky130_fd_pr__nfet_01v8 ad=0.2 pd=1.4 as=0.2 ps=1.4 w=1 l=0.2
+X181 a_5670_3690# a_170_5520# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
+X182 VDDA a_710_5520# a_3480_5610# GNDA sky130_fd_pr__nfet_01v8 ad=0.6 pd=3.4 as=0.6 ps=3.4 w=3 l=0.5
+X183 VDDA a_710_5520# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
+X184 VDDA a_710_5640# TAIL_CUR_MIR_BIAS GNDA sky130_fd_pr__nfet_01v8 ad=0.2 pd=1.4 as=0.2 ps=1.4 w=1 l=0.5
+X185 a_8510_3230# a_170_6060# a_8210_3690# GNDA sky130_fd_pr__nfet_01v8 ad=0.1 pd=0.9 as=0.1 ps=0.9 w=0.5 l=0.2
+X186 a_5730_3800# a_5670_3690# a_710_5520# GNDA sky130_fd_pr__nfet_01v8 ad=0.2 pd=1.4 as=0.2 ps=1.4 w=1 l=0.2
+X187 GNDA a_6240_1540# VB3_CUR_BIAS GNDA sky130_fd_pr__nfet_01v8 ad=0.2 pd=1.4 as=0.2 ps=1.4 w=1 l=0.5
+X188 a_5670_3690# a_170_5520# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
+X189 VDDA a_710_5520# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
+X190 a_8510_3230# a_170_6060# a_8210_3690# GNDA sky130_fd_pr__nfet_01v8 ad=0.1 pd=0.9 as=0.1 ps=0.9 w=0.5 l=0.2
+X191 a_8270_3800# a_8350_3750# a_8210_3690# GNDA sky130_fd_pr__nfet_01v8 ad=0.2 pd=1.4 as=0.2 ps=1.4 w=1 l=0.2
+X192 VDDA a_710_5520# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
+X193 VB2_CUR_BIAS a_6240_1540# GNDA GNDA sky130_fd_pr__nfet_01v8 ad=0.2 pd=1.4 as=0.2 ps=1.4 w=1 l=0.5
+X194 VDDA a_710_5640# TAIL_CUR_MIR_BIAS GNDA sky130_fd_pr__nfet_01v8 ad=0.2 pd=1.4 as=0.2 ps=1.4 w=1 l=0.5
+X195 sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_8/Emitter a_5210_3750# a_710_5520# GNDA sky130_fd_pr__nfet_01v8 ad=0.4 pd=2.8 as=0.2 ps=1.4 w=1 l=0.15
+X196 a_5730_3800# a_5670_3690# a_710_5520# GNDA sky130_fd_pr__nfet_01v8 ad=0.2 pd=1.4 as=0.2 ps=1.4 w=1 l=0.2
+X197 sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_0/Emitter a_3480_5610# GNDA sky130_fd_pr__res_xhigh_po_0p35 l=2.46
+X198 a_710_5520# a_5490_3800# a_5490_3800# GNDA sky130_fd_pr__nfet_01v8 ad=0.2 pd=1.4 as=0.4 ps=2.8 w=1 l=0.2
+X199 VDDA a_710_5520# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
+X200 a_5670_3690# a_170_5520# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
+X201 a_8510_3230# ERR_AMP_REF a_8350_3750# GNDA sky130_fd_pr__nfet_01v8 ad=0.1 pd=0.9 as=0.1 ps=0.9 w=0.5 l=0.2
+X202 a_8270_3800# a_8350_3750# a_8210_3690# GNDA sky130_fd_pr__nfet_01v8 ad=0.2 pd=1.4 as=0.2 ps=1.4 w=1 l=0.2
+X203 VDDA a_710_5520# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
+X204 VDDA a_710_5520# sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_8/Emitter GNDA sky130_fd_pr__nfet_01v8 ad=0.6 pd=3.4 as=0.6 ps=3.4 w=3 l=0.5
+X205 a_3480_5610# a_710_5520# VDDA GNDA sky130_fd_pr__nfet_01v8 ad=0.6 pd=3.4 as=0.6 ps=3.4 w=3 l=0.5
+X206 a_710_5520# a_5670_3690# a_5730_3800# GNDA sky130_fd_pr__nfet_01v8 ad=0.2 pd=1.4 as=0.2 ps=1.4 w=1 l=0.2
+X207 a_8270_3800# a_8350_3750# a_8350_3750# GNDA sky130_fd_pr__nfet_01v8 ad=0.2 pd=1.4 as=0.2 ps=1.4 w=1 l=0.2
+X208 a_5810_3750# sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_8/Emitter a_5670_2420# GNDA sky130_fd_pr__nfet_01v8 ad=0.1 pd=0.9 as=0.1 ps=0.9 w=0.5 l=0.2
+X209 a_8210_3690# a_170_5640# sky130_fd_pr__cap_mim_m3_1 l=2 w=2
+X210 a_710_5520# a_6830_2390# GNDA GNDA sky130_fd_pr__nfet_01v8 ad=1 pd=5.8 as=0.5 ps=2.9 w=2.5 l=5
+.ends
+

@@ -73,8 +73,18 @@ N 310 -270 350 -270 {lab=VDDA}
 N 350 -270 1040 -270 {lab=VDDA}
 N 800 -560 800 -530 {lab=1st_Vout}
 N 980 -440 1100 -440 {lab=Vout}
-N 800 -440 920 -440 {lab=#net1}
-N 800 -470 800 -440 {lab=#net1}
+N 800 -440 920 -440 {lab=cap_res}
+N 800 -470 800 -440 {lab=cap_res}
+N 1320 -560 1370 -560 {lab=VDDA}
+N 1370 -620 1370 -560 {lab=VDDA}
+N 1320 -620 1370 -620 {lab=VDDA}
+N 1320 -780 1320 -590 {lab=VDDA}
+N 1100 -780 1320 -780 {lab=VDDA}
+N 1220 -560 1280 -560 {lab=VDDA}
+N 1220 -620 1220 -560 {lab=VDDA}
+N 1220 -620 1320 -620 {lab=VDDA}
+N 1320 -530 1320 -490 {lab=Vout}
+N 1100 -490 1320 -490 {lab=Vout}
 C {devices/ipin.sym} 620 -420 2 0 {name=p1 lab=Vin+}
 C {devices/opin.sym} 1210 -420 0 0 {name=p5 lab=Vout}
 C {devices/ipin.sym} 90 -420 2 1 {name=p2 lab=Vin-}
@@ -183,11 +193,26 @@ spiceprefix=X
 C {lab_wire.sym} 620 -560 2 0 {name=p4 sig_type=std_logic lab=1st_Vout}
 C {lab_wire.sym} 370 -350 0 0 {name=p7 sig_type=std_logic lab=V_p}
 C {lab_wire.sym} 310 -580 2 0 {name=p8 sig_type=std_logic lab=V_mirror}
-C {sky130_fd_pr/cap_mim_m3_1.sym} 800 -500 0 0 {name=C1 model=cap_mim_m3_1 W=10 L=10 MF=1 spiceprefix=X}
-C {sky130_fd_pr/res_xhigh_po_0p35.sym} 950 -440 3 0 {name=R1
-L=0.5
-model=res_xhigh_po_0p35
-spiceprefix=X
-mult=1}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 800 -500 0 0 {name=C1 model=cap_mim_m3_1 W=2 L=2 MF=20 spiceprefix=X}
 C {lab_wire.sym} 950 -420 2 1 {name=p9 sig_type=std_logic lab=GNDA
 L=0.5}
+C {lab_wire.sym} 800 -440 2 1 {name=p10 sig_type=std_logic lab=cap_res}
+C {sky130_fd_pr/pfet_01v8.sym} 1300 -560 0 0 {name=M8
+W=2
+L=0.2
+nf=2
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=pfet_01v8
+spiceprefix=X
+}
+C {sky130_fd_pr/res_high_po_0p35.sym} 950 -440 3 0 {name=R2
+L=2.05
+model=res_high_po_0p35
+spiceprefix=X
+mult=1}
