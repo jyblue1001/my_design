@@ -318,10 +318,10 @@ C {devices/vsource.sym} 800 -1400 0 0 {name=VDD value=1.8 savecurrent=false
 * "pwl(0 0 1us 0 2us 1.8)"}
 C {devices/gnd.sym} 800 -1370 0 0 {name=l3 lab=GND}
 C {devices/vdd.sym} 800 -1430 0 0 {name=l4 lab=VDD}
-C {sky130_fd_pr/corner.sym} 450 -1470 0 0 {name=CORNER only_toplevel=false corner=ff}
+C {sky130_fd_pr/corner.sym} 450 -1470 0 0 {name=CORNER only_toplevel=false corner=tt}
 C {devices/code.sym} 610 -1470 0 0 {name=CODE only_toplevel=false value="
 
-.include /foss/designs/projects/bandgapref/xschem_ngspice/new_files/low_voltage_BGR_dummy_magic.spice
+.include /foss/designs/my_design/projects/bandgapref/xschem_ngspice/new_files/low_voltage_BGR_dummy_magic.spice
 
 .option method=gear
 .option wnflag=1
@@ -350,14 +350,14 @@ C {devices/code.sym} 610 -1470 0 0 {name=CODE only_toplevel=false value="
     * dc VDD 0 2.0 0.01
     * tran 1ns 20us
     remzerovec
-    * write tb_low_voltage_BGR_dummy_magic.raw
+    write tb_low_voltage_BGR_dummy_magic.raw
     * write tb_low_voltage_BGR_dummy_magic_mc.raw
     * write tb_low_voltage_BGR_dummy_magic_tran.raw
     * write tb_low_voltage_BGR_dummy_magic_tran_mc.raw
     * write tb_low_voltage_BGR_dummy_magic_vdd_temp_tt.raw
     * write tb_low_voltage_BGR_dummy_magic_vdd_temp_fs.raw
     * write tb_low_voltage_BGR_dummy_magic_vdd_temp_sf.raw
-    write tb_low_voltage_BGR_dummy_magic_vdd_temp_ff.raw
+    * write tb_low_voltage_BGR_dummy_magic_vdd_temp_ff.raw
     * write tb_low_voltage_BGR_dummy_magic_temp_vdd_tt.raw
     * write tb_low_voltage_BGR_dummy_magic_temp_vdd_sf.raw
     * write tb_low_voltage_BGR_dummy_magic_temp_vdd_fs.raw
@@ -375,4 +375,4 @@ C {devices/gnd.sym} 710 -1080 0 0 {name=l1 lab=GND}
 C {devices/vdd.sym} 710 -1220 0 0 {name=l2 lab=VDD}
 C {devices/lab_pin.sym} 830 -1150 2 0 {name=p4 sig_type=std_logic lab=V_OUT
 }
-C {/foss/designs/projects/bandgapref/xschem_ngspice/new_files/low_voltage_BGR_dummy_magic.sym} 710 -1150 0 0 {name=x1}
+C {/foss/designs/my_design/projects/bandgapref/xschem_ngspice/new_files/low_voltage_BGR_dummy_magic.sym} 710 -1150 0 0 {name=x1}

@@ -1832,8 +1832,9 @@ model=res_high_po
 spiceprefix=X
 mult=1}
 C {devices/gnd.sym} 8930 -4020 1 1 {name=l54 lab=GND}
-C {isource.sym} 5060 -2370 0 0 {name=I0 value=95u}
-C {isource.sym} 6960 -3010 0 0 {name=I3 value=20u}
+C {isource.sym} 5060 -2370 0 0 {name=I0 value=81.5u
+* 95u}
+C {isource.sym} 6960 -3010 0 0 {name=I3 value=18u}
 C {devices/ngspice_get_value.sym} 6700 -1750 2 1 {name=r1 node=v(@m.xm7.msky130_fd_pr__nfet_01v8[vth])
 descr="vth="}
 C {devices/ngspice_get_value.sym} 7360 -1750 2 0 {name=r3 node=v(@m.xm8.msky130_fd_pr__nfet_01v8[vth])

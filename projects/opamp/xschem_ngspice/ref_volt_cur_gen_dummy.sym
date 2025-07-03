@@ -1,0 +1,51 @@
+v {xschem version=3.4.6 file_version=1.2}
+G {}
+K {type=subcircuit
+format="@name @pinlist @symname"
+template="name=x1"
+}
+V {}
+S {}
+E {}
+L 4 -60 -120 130 -120 {}
+L 4 -60 120 130 120 {}
+L 4 -60 -120 -60 120 {}
+L 4 130 -120 130 120 {}
+L 4 130 50 150 50 {}
+L 4 130 -50 150 -50 {}
+L 4 130 -10 150 -10 {}
+L 4 130 90 150 90 {}
+L 4 130 -90 150 -90 {}
+L 4 130 70 150 70 {}
+L 4 130 30 150 30 {}
+L 4 130 -30 150 -30 {}
+L 4 130 -70 150 -70 {}
+L 4 130 10 150 10 {}
+L 7 0 -140 0 -120 {}
+L 7 0 120 0 140 {}
+B 5 -2.5 -142.5 2.5 -137.5 {name=VDDA dir=inout}
+B 5 147.5 47.5 152.5 52.5 {name=ERR_AMP_REF dir=out}
+B 5 147.5 -52.5 152.5 -47.5 {name=V_CMFB_S3 dir=out}
+B 5 147.5 -12.5 152.5 -7.5 {name=VB1_CUR_BIAS dir=out}
+B 5 147.5 87.5 152.5 92.5 {name=TAIL_CUR_MIR_BIAS dir=out}
+B 5 147.5 -92.5 152.5 -87.5 {name=V_CMFB_S1 dir=out}
+B 5 147.5 67.5 152.5 72.5 {name=ERR_AMP_CUR_BIAS dir=out}
+B 5 147.5 27.5 152.5 32.5 {name=VB3_CUR_BIAS dir=out}
+B 5 147.5 -32.5 152.5 -27.5 {name=V_CMFB_S4 dir=out}
+B 5 147.5 -72.5 152.5 -67.5 {name=V_CMFB_S2 dir=out}
+B 5 147.5 7.5 152.5 12.5 {name=VB2_CUR_BIAS dir=out}
+B 5 -2.5 137.5 2.5 142.5 {name=GNDA dir=inout}
+T {@symname} 153 -166 0 0 0.3 0.3 {}
+T {@name} 155 -142 0 0 0.2 0.2 {}
+T {VDDA} 45 -144 0 1 0.2 0.2 {}
+T {ERR_AMP_REF} 125 46 0 1 0.2 0.2 {}
+T {V_CMFB_S3} 125 -54 0 1 0.2 0.2 {}
+T {VB1_CUR_BIAS} 125 -14 0 1 0.2 0.2 {}
+T {TAIL_CUR_MIR_BIAS} 125 86 0 1 0.2 0.2 {}
+T {V_CMFB_S1} 125 -94 0 1 0.2 0.2 {}
+T {ERR_AMP_CUR_BIAS} 125 66 0 1 0.2 0.2 {}
+T {VB3_CUR_BIAS} 125 26 0 1 0.2 0.2 {}
+T {V_CMFB_S4} 125 -34 0 1 0.2 0.2 {}
+T {V_CMFB_S2} 125 -74 0 1 0.2 0.2 {}
+T {VB2_CUR_BIAS} 125 6 0 1 0.2 0.2 {}
+T {GNDA} 45 136 0 1 0.2 0.2 {}

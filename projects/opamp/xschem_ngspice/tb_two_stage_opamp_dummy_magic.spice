@@ -1,0 +1,103 @@
+** sch_path: /foss/designs/my_design/projects/opamp/xschem_ngspice/tb_two_stage_opamp_dummy_magic.sch
+**.subckt tb_two_stage_opamp_dummy_magic
+VDD VDD GND pwl(0 0 3us 0 4us 1.8)
+V2 VIN- GND sin(1.24 -0.001 100k)
+V1 VIN+ GND sin(1.24 0.001 100k)
+XC1 VOUT+ GND sky130_fd_pr__cap_mim_m3_1 W=23 L=23 MF=1 m=1
+XC2 VOUT- GND sky130_fd_pr__cap_mim_m3_1 W=23 L=23 MF=1 m=1
+x1 VDD ERR_AMP_REF V_CMFB_S3 VB1_CUR_BIAS TAIL_CUR_MIR_BIAS V_CMFB_S1 ERR_AMP_CUR_BIAS VB3_CUR_BIAS V_CMFB_S4 V_CMFB_S2
++ VB2_CUR_BIAS GND ref_volt_cur_gen_dummy_magic
+x2 VDD V_CMFB_S1 V_CMFB_S3 VB3_CUR_BIAS VB2_CUR_BIAS VB1_CUR_BIAS V_CMFB_S2 V_CMFB_S4 VOUT- VOUT+ TAIL_CUR_MIR_BIAS ERR_AMP_REF
++ ERR_AMP_CUR_BIAS VIN+ VIN- GND two_stage_opamp_dummy_magic
+**** begin user architecture code
+.lib /foss/pdks/sky130A/libs.tech/combined/sky130.lib.spice tt
+
+
+
+
+.include /foss/designs/my_design/projects/opamp/xschem_ngspice/ref_volt_cur_gen_dummy_magic.spice
+.include /foss/designs/my_design/projects/opamp/xschem_ngspice/two_stage_opamp_dummy_magic.spice
+
+.include /foss/designs/my_design/projects/bandgapref/xschem_ngspice/new_files/low_voltage_BGR_dummy_magic.spice
+
+.option method=gear
+.option wnflag=1
+.option savecurrents
+
+.save
++@m.x1.xm1.msky130_fd_pr__pfet_01v8[gm]
++@m.x1.xm1.msky130_fd_pr__pfet_01v8[vth]
++@m.x1.xm2.msky130_fd_pr__pfet_01v8[gm]
++@m.x1.xm2.msky130_fd_pr__pfet_01v8[vth]
++@m.x1.xm3.msky130_fd_pr__pfet_01v8[gm]
++@m.x1.xm3.msky130_fd_pr__pfet_01v8[vth]
++@m.x1.xm4.msky130_fd_pr__pfet_01v8[gm]
++@m.x1.xm4.msky130_fd_pr__pfet_01v8[vth]
++@m.x1.xm5.msky130_fd_pr__nfet_01v8[gm]
++@m.x1.xm5.msky130_fd_pr__nfet_01v8[vth]
++@m.x1.xm6.msky130_fd_pr__pfet_01v8[gm]
++@m.x1.xm6.msky130_fd_pr__pfet_01v8[vth]
++@m.x1.xm7.msky130_fd_pr__nfet_01v8[gm]
++@m.x1.xm7.msky130_fd_pr__nfet_01v8[vth]
++@m.x1.xm8.msky130_fd_pr__pfet_01v8[gm]
++@m.x1.xm8.msky130_fd_pr__pfet_01v8[vth]
++@m.x2.xm2.msky130_fd_pr__nfet_01v8[gm]
++@m.x2.xm2.msky130_fd_pr__nfet_01v8[vth]
++@m.x2.xm3.msky130_fd_pr__nfet_01v8[gm]
++@m.x2.xm3.msky130_fd_pr__nfet_01v8[vth]
++@m.x2.xm7.msky130_fd_pr__pfet_01v8[gm]
++@m.x2.xm7.msky130_fd_pr__pfet_01v8[vth]
++@m.x1.x1.xm1.msky130_fd_pr__nfet_01v8[gm]
++@m.x1.x1.xm2.msky130_fd_pr__nfet_01v8[gm]
++@m.x1.x1.xm3.msky130_fd_pr__nfet_01v8[gm]
++@m.x1.x1.xm4.msky130_fd_pr__nfet_01v8[gm]
++@m.x1.x1.xm5.msky130_fd_pr__pfet_01v8[gm]
++@m.x1.x1.xm6.msky130_fd_pr__nfet_01v8[gm]
++@m.x1.x1.xm7.msky130_fd_pr__pfet_01v8[gm]
++@m.x1.x2.xm1.msky130_fd_pr__nfet_01v8[gm]
++@m.x1.x2.xm2.msky130_fd_pr__nfet_01v8[gm]
++@m.x1.x2.xm3.msky130_fd_pr__nfet_01v8[gm]
++@m.x1.x2.xm4.msky130_fd_pr__nfet_01v8[gm]
++@m.x1.x2.xm5.msky130_fd_pr__pfet_01v8[gm]
++@m.x1.x2.xm6.msky130_fd_pr__nfet_01v8[gm]
++@m.x1.x2.xm7.msky130_fd_pr__pfet_01v8[gm]
++@m.x2.xm39.msky130_fd_pr__pfet_01v8[gm]
++@m.x2.xm39.msky130_fd_pr__pfet_01v8[vth]
++@m.x2.xm40.msky130_fd_pr__pfet_01v8[gm]
++@m.x2.xm40.msky130_fd_pr__pfet_01v8[vth]
+
+* .ic v(v_top) = 1.8
+
+.control
+
+  * let runs=3
+  * let run=1
+
+  * dowhile run <= runs
+    save v(vout+) v(vout-) v(vin+) v(vin-) v(x2.x) v(x2.y) v(x2.vb1) v(x2.vb2) v(x2.vb3) v(x2.v_tot)
+    * save all
+    remzerovec
+    set appendwrite
+    * dc temp -40 120 10 VDD 0 4.0 0.2
+    * dc VDD 0 2.0 0.02 temp -40 120 40
+    * dc V5 0 0.01 0.0001
+    tran 2n 30u
+    * tran 1p 3n
+    * tran 0.1ns 30us
+    * ac dec 40 1 10T
+    write tb_two_stage_opamp_dummy_magic.raw
+    * write tb_two_stage_opamp_dummy_magic_mc.raw
+    * write tb_two_stage_opamp_dummy_magic_tt_mm.raw
+    * write tb_two_stage_opamp_dummy_magic_AC.raw
+    * reset
+    * let run = run + 1
+  * end
+.endc
+
+
+
+**** end user architecture code
+**.ends
+.GLOBAL GND
+.GLOBAL VDD
+.end

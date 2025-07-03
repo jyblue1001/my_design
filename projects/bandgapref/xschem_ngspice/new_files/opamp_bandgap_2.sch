@@ -13,9 +13,9 @@ lab=V_p}
 N 370 -160 370 -100 {
 lab=GNDA}
 N 530 -670 530 -560 {
-lab=1st_Vout}
+lab=#net1}
 N 180 -670 180 -560 {
-lab=V_mirror}
+lab=1st_Vout}
 N 310 -190 330 -190 {
 lab=VDDA}
 N 180 -780 180 -730 {
@@ -25,19 +25,19 @@ lab=VDDA}
 N 530 -780 530 -730 {
 lab=VDDA}
 N 220 -700 490 -700 {
-lab=V_mirror}
+lab=1st_Vout}
 N 430 -800 430 -780 {
 lab=VDDA}
 N 1100 -420 1210 -420 {
 lab=Vout}
 N 180 -560 180 -450 {
-lab=V_mirror}
-N 530 -560 530 -450 {
 lab=1st_Vout}
+N 530 -560 530 -450 {
+lab=#net1}
 N 310 -270 310 -190 {
 lab=VDDA}
 N 310 -700 310 -570 {
-lab=V_mirror}
+lab=1st_Vout}
 N 370 -350 370 -220 {lab=V_p}
 N 370 -190 420 -190 {lab=GNDA}
 N 420 -190 420 -120 {lab=GNDA}
@@ -62,8 +62,8 @@ N 1100 -620 1150 -620 {lab=VDDA}
 N 530 -780 1100 -780 {lab=VDDA}
 N 1100 -780 1100 -590 {lab=VDDA}
 N 1100 -530 1100 -300 {lab=Vout}
-N 530 -560 1060 -560 {lab=1st_Vout}
-N 180 -570 310 -570 {lab=V_mirror}
+N 530 -560 1060 -560 {lab=#net1}
+N 180 -570 310 -570 {lab=1st_Vout}
 N 230 -420 480 -420 {lab=GNDA}
 N 480 -420 480 -120 {lab=GNDA}
 N 1040 -270 1060 -270 {lab=VDDA}
@@ -71,7 +71,7 @@ N 1100 -240 1100 -120 {lab=GNDA}
 N 350 -780 350 -270 {lab=VDDA}
 N 310 -270 350 -270 {lab=VDDA}
 N 350 -270 1040 -270 {lab=VDDA}
-N 800 -560 800 -530 {lab=1st_Vout}
+N 800 -560 800 -530 {lab=#net1}
 N 980 -440 1100 -440 {lab=Vout}
 N 800 -440 920 -440 {lab=cap_res}
 N 800 -470 800 -440 {lab=cap_res}
@@ -190,18 +190,18 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {lab_wire.sym} 620 -560 2 0 {name=p4 sig_type=std_logic lab=1st_Vout}
+C {lab_wire.sym} 610 -560 2 0 {name=p4 sig_type=std_logic lab=1st_Vout}
 C {lab_wire.sym} 370 -350 0 0 {name=p7 sig_type=std_logic lab=V_p}
-C {lab_wire.sym} 310 -580 2 0 {name=p8 sig_type=std_logic lab=V_mirror}
+C {lab_wire.sym} 260 -570 2 0 {name=p8 sig_type=std_logic lab=V_mirror}
 C {sky130_fd_pr/cap_mim_m3_1.sym} 800 -500 0 0 {name=C1 model=cap_mim_m3_1 W=2 L=2 MF=20 spiceprefix=X}
 C {lab_wire.sym} 950 -420 2 1 {name=p9 sig_type=std_logic lab=GNDA
 L=0.5}
 C {lab_wire.sym} 800 -440 2 1 {name=p10 sig_type=std_logic lab=cap_res}
 C {sky130_fd_pr/pfet_01v8.sym} 1300 -560 0 0 {name=M8
-W=2
+W=1
 L=0.2
-nf=2
-mult=1
+nf=1
+mult=2
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 

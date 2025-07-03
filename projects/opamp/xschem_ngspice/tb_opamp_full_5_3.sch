@@ -1842,7 +1842,7 @@ linewidth_mult=1
 color="6 7"
 node="x
 y"}
-T {P 100uA} 5130 -2420 0 0 1 1 {}
+T {P 100uA 95} 5130 -2420 0 0 1 1 {}
 T {P 20uA} 7060 -3050 0 0 1 1 {}
 T {N 2uA} 9030 -3370 0 0 1 1 {}
 T {N 20uA} 8550 -1410 0 0 1 1 {}
@@ -1861,6 +1861,7 @@ R 1.57/1 443 PM = 56.2
 C 25/25 1.269*10^-12 F
 R 1.19/1 584.4
 PM = 66.4} 9370 -4030 0 0 0.4 0.4 {}
+T {0.18 0.63} 6120 -3020 0 0 1 1 {}
 N 6660 -1770 6660 -1680 {lab=V_p}
 N 6660 -1680 7410 -1680 {lab=V_p}
 N 7410 -1770 7410 -1680 {lab=V_p}
@@ -2931,8 +2932,8 @@ spiceprefix=X
 mult=1}
 C {devices/gnd.sym} 8930 -4020 1 1 {name=l54 lab=GND}
 C {lab_wire.sym} 9040 -1630 0 0 {name=p1 sig_type=std_logic lab=V_BGR_REF}
-C {isource.sym} 5060 -2370 0 0 {name=I0 value=95u}
-C {isource.sym} 6960 -3010 0 0 {name=I3 value=20u}
+C {isource.sym} 5060 -2370 0 0 {name=I0 value=81.5u}
+C {isource.sym} 6960 -3010 0 0 {name=I3 value=18u}
 C {isource.sym} 8450 -1390 0 0 {name=I4 value=20u}
 C {isource.sym} 10440 -2050 0 0 {name=I5 value=30u}
 C {isource.sym} 11030 -2050 0 0 {name=I6 value=30u}
@@ -2976,9 +2977,9 @@ C {devices/ngspice_get_value.sym} 9120 -1682.197842219472 0 1 {name=r35 node=v(@
 descr="vth="}
 C {devices/ngspice_get_value.sym} 7350.223286855914 -3150 2 0 {name=r6 node=v(@m.xm14.msky130_fd_pr__pfet_01v8[vth])
 descr="vth="}
-C {devices/vsource.sym} 6350 -3140 0 0 {name=V5 value=0.63 savecurrent=false}
+C {devices/vsource.sym} 6350 -3140 0 0 {name=V5 value=0.5734 savecurrent=false}
 C {devices/gnd.sym} 6350 -3110 0 0 {name=l2 lab=GND}
-C {devices/vsource.sym} 6130 -3140 0 0 {name=V4 value=0.18 savecurrent=false}
+C {devices/vsource.sym} 6130 -3140 0 0 {name=V4 value=0.2489 savecurrent=false}
 C {devices/gnd.sym} 6130 -3110 0 0 {name=l5 lab=GND}
 C {devices/gnd.sym} 9220 -960 0 0 {name=l6 lab=GND
 value="sin(1.20 0.001 1Meg)"}

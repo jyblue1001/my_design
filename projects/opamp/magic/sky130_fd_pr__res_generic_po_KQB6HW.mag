@@ -1,0 +1,8 @@
+magic
+tech sky130A
+timestamp 1749289139
+<< properties >>
+string gencell sky130_fd_pr__res_generic_po
+string library sky130
+string parameters w 0.330 l 1.650 m 1 nx 1 wmin 0.330 lmin 1.650 class resistor rho 48.2 val 241.0 dummy 0 dw 0.0 term 0.0 sterm 0.0 caplen 0.4 snake 0 guard 0 glc 0 grc 0 gtc 0 gbc 0 roverlap 0 endcov 100 full_metal 0 hv_guard 0 n_guard 0 vias 0 viagb 0 viagt 0 viagl 0 viagr 0
+<< end >>
