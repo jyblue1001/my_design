@@ -3809,10 +3809,10 @@ value="
     * tran 0.1ns 30us
     * ac dec 40 1 10T
     * write tb_bgr_opamp_dummy.raw
-    * write tb_bgr_opamp_dummy_2.raw
+    write tb_bgr_opamp_dummy_2.raw
     * write tb_bgr_opamp_dummy_3.raw
     * write tb_bgr_opamp_dummy_4.raw
-    write tb_bgr_opamp_dummy_5.raw    
+    * write tb_bgr_opamp_dummy_5.raw    
     * write tb_bgr_opamp_dummy_6.raw      
     * write tb_bgr_opamp_dummy_mc.raw
     * write tb_bgr_opamp_dummy_tt_mm.raw
