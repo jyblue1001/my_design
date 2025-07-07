@@ -12,8 +12,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=8.2675113e-06
-x2=2.7467511e-05
+x1=4.3592799e-06
+x2=2.835928e-05
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -33,8 +33,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=8.2675113e-06
-x2=2.7467511e-05
+x1=4.3592799e-06
+x2=2.835928e-05
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -49,15 +49,15 @@ color="6 7"
 node="vin+
 vin-"}
 B 2 11780 -2120 12770 -1250 {flags=graph
-y1=0.87206584
-y2=1.0192658
+y1=0.83
+y2=0.98
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=8.2675113e-06
-x2=2.7467511e-05
+x1=4.3592799e-06
+x2=2.835928e-05
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -72,15 +72,15 @@ color="6 7"
 node="x
 y"}
 B 2 12900 -2120 13890 -1250 {flags=graph
-y1=0.37
+y1=0.42
 y2=1.4
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=8.2675113e-06
-x2=2.7467511e-05
+x1=4.3592799e-06
+x2=2.835928e-05
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -103,8 +103,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=8.2675113e-06
-x2=2.7467511e-05
+x1=4.3592799e-06
+x2=2.835928e-05
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -125,8 +125,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=8.2675113e-06
-x2=2.7467511e-05
+x1=4.3592799e-06
+x2=2.835928e-05
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -147,8 +147,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=8.2675113e-06
-x2=2.7467511e-05
+x1=4.3592799e-06
+x2=2.835928e-05
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -170,8 +170,8 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=8.2675113e-06
-x2=2.7467511e-05
+x1=0
+x2=3e-05
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -240,15 +240,15 @@ vb1
 vb2
 vb3"}
 B 2 11780 -130 12770 740 {flags=graph
-y1=0.37
+y1=0.22
 y2=1.6
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=8.2675113e-06
-x2=2.7467511e-05
+x1=4.3592799e-06
+x2=2.835928e-05
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -266,14 +266,14 @@ v_cmfb_s3
 v_cmfb_s4"}
 B 2 12910 -130 13900 740 {flags=graph
 y1=2.2e-05
-y2=2.6e-05
+y2=2.5e-05
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=8.2675113e-06
-x2=2.7467511e-05
+x1=4.3592799e-06
+x2=2.835928e-05
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -290,15 +290,15 @@ i(@m.xm84.msky130_fd_pr__nfet_01v8[id])
 i(@m.xm85.msky130_fd_pr__pfet_01v8[id])
 i(@m.xm76.msky130_fd_pr__nfet_01v8[id])"}
 B 2 12910 860 13900 1730 {flags=graph
-y1=2.2e-05
-y2=2.6e-05
+y1=0
+y2=4.4e-05
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=8.2675113e-06
-x2=2.7467511e-05
+x1=4.3592799e-06
+x2=2.835928e-05
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -319,8 +319,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=8.2675113e-06
-x2=2.7467511e-05
+x1=4.3592799e-06
+x2=2.835928e-05
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -341,8 +341,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=8.2675113e-06
-x2=2.7467511e-05
+x1=4.3592799e-06
+x2=2.835928e-05
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -363,8 +363,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=8.2675113e-06
-x2=2.7467511e-05
+x1=4.3592799e-06
+x2=2.835928e-05
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -378,15 +378,15 @@ logy=0
 color=6
 node=i(@m.xm76.msky130_fd_pr__nfet_01v8[id])}
 B 2 14060 -130 15050 740 {flags=graph
-y1=9.9e-07
-y2=5.6e-06
+y1=4.2e-07
+y2=4e-06
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=8.2675113e-06
-x2=2.7467511e-05
+x1=4.3592799e-06
+x2=2.835928e-05
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -410,8 +410,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=8.2675113e-06
-x2=2.7467511e-05
+x1=4.3592799e-06
+x2=2.835928e-05
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -432,8 +432,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=8.2675113e-06
-x2=2.7467511e-05
+x1=4.3592799e-06
+x2=2.835928e-05
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -454,8 +454,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=8.2675113e-06
-x2=2.7467511e-05
+x1=4.3592799e-06
+x2=2.835928e-05
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -476,8 +476,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=8.2675113e-06
-x2=2.7467511e-05
+x1=4.3592799e-06
+x2=2.835928e-05
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -640,6 +640,281 @@ y1=0.00088
 
 color=6
 node=i(@m.xm15.msky130_fd_pr__nfet_01v8[id])}
+B 2 15210 -130 16200 740 {flags=graph
+y1=1.420257
+y2=1.4281734
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=4.3592799e-06
+x2=2.835928e-05
+divx=5
+subdivx=1
+xlabmag=1.0
+ylabmag=1.0
+
+
+dataset=-1
+unitx=1
+logx=0
+logy=0
+
+color="6 7"
+node="vd3
+vd4"}
+B 2 15210 860 16200 1730 {flags=graph
+y1=0.81
+y2=0.96
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=4.3592799e-06
+x2=2.835928e-05
+divx=5
+subdivx=1
+xlabmag=1.0
+ylabmag=1.0
+
+
+dataset=-1
+unitx=1
+logx=0
+logy=0
+
+color="6 7"
+node="x
+y"}
+B 2 15210 1850 16200 2720 {flags=graph
+y1=0.53901977
+y2=0.55181977
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=4.3592799e-06
+x2=2.835928e-05
+divx=5
+subdivx=1
+xlabmag=1.0
+ylabmag=1.0
+
+
+dataset=-1
+unitx=1
+logx=0
+logy=0
+
+
+color="6 7"
+node="vd1
+vd2"}
+B 2 14060 -1130 15050 -260 {flags=graph
+y1=0.91008618
+y2=0.91043802
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=4.3592799e-06
+x2=2.835928e-05
+divx=5
+subdivx=1
+xlabmag=1.0
+ylabmag=1.0
+
+
+dataset=-1
+unitx=1
+logx=0
+logy=0
+
+
+color=6
+node=v_tot}
+B 2 15210 -1130 16200 -260 {flags=graph
+y1=0.89493213
+y2=0.89493217
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=4.3592799e-06
+x2=2.835928e-05
+divx=5
+subdivx=1
+xlabmag=1.0
+ylabmag=1.0
+
+
+dataset=-1
+unitx=1
+logx=0
+logy=0
+
+
+color=6
+node=v_err_amp_ref}
+B 2 16550 1850 17540 2720 {flags=graph
+y1=-6.3e-10
+y2=1.4
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=4.3592799e-06
+x2=2.835928e-05
+divx=5
+subdivx=1
+xlabmag=1.0
+ylabmag=1.0
+
+
+dataset=-1
+unitx=1
+logx=0
+logy=0
+
+
+color="6 7 11 17"
+node="vin-
+vd1
+x
+VOUT-"}
+B 2 17790 1850 18780 2720 {flags=graph
+y1=0.53774427
+y2=0.55054427
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=4.3592799e-06
+x2=2.835928e-05
+divx=5
+subdivx=1
+xlabmag=1.0
+ylabmag=1.0
+
+
+dataset=-1
+unitx=1
+logx=0
+logy=0
+
+
+color="6 7"
+node="\\"vin- 0.697 -\\"
+vd1"}
+B 2 19020 1850 20010 2720 {flags=graph
+y1=0.47
+y2=0.62
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=4.3592799e-06
+x2=2.835928e-05
+divx=5
+subdivx=1
+xlabmag=1.0
+ylabmag=1.0
+
+
+dataset=-1
+unitx=1
+logx=0
+logy=0
+
+
+color="7 11"
+node="vd1
+\\"x 0.36 -\\""}
+B 2 16550 2940 17540 3810 {flags=graph
+y1=-6.3e-10
+y2=1.4
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=4.3592799e-06
+x2=2.835928e-05
+divx=5
+subdivx=1
+xlabmag=1.0
+ylabmag=1.0
+
+
+dataset=-1
+unitx=1
+logx=0
+logy=0
+
+
+color="6 7 11 17"
+node="vin+
+vd2
+y
+VOUT+"}
+B 2 17790 2940 18780 3810 {flags=graph
+y1=0.53774427
+y2=0.55054427
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=4.3592799e-06
+x2=2.835928e-05
+divx=5
+subdivx=1
+xlabmag=1.0
+ylabmag=1.0
+
+
+dataset=-1
+unitx=1
+logx=0
+logy=0
+
+
+color="6 7"
+node="\\"vin+ 0.697 -\\"
+vd2"}
+B 2 19020 2940 20010 3810 {flags=graph
+y1=0.47
+y2=0.62
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=4.3592799e-06
+x2=2.835928e-05
+divx=5
+subdivx=1
+xlabmag=1.0
+ylabmag=1.0
+
+
+dataset=-1
+unitx=1
+logx=0
+logy=0
+
+
+color="7 11"
+node="vd2
+\\"y 0.36 -\\""}
 T {N 30uA} 14470 -5460 0 0 1 1 {}
 T {P 30uA} 14490 -6150 0 0 1 1 {}
 T {P 30uA} 16590 -6150 0 1 1 1 {}
@@ -2256,7 +2531,7 @@ spiceprefix=X
 C {lab_pin.sym} 8740 -5250 0 0 {name=p16 sig_type=std_logic lab=X}
 C {lab_pin.sym} 9490 -5250 0 1 {name=p24 sig_type=std_logic lab=Y}
 C {sky130_fd_pr/nfet_01v8.sym} 14740 -5600 0 0 {name=M25
-W=30
+W=10
 L=0.15
 nf=1 
 mult=1
@@ -2308,7 +2583,7 @@ spiceprefix=X
 mult=1}
 C {lab_wire.sym} 15530 -5780 0 0 {name=p27 sig_type=std_logic lab=V_tot}
 C {sky130_fd_pr/nfet_01v8.sym} 16340 -5600 0 1 {name=M27
-W=30
+W=10
 L=0.15
 nf=1 
 mult=1
