@@ -73,7 +73,7 @@ node="vout+
 vout-"}
 B 2 5230 -2000 5950 -1510 {flags=graph
 
-y2=0.84
+y2=0.91
 ypos1=0
 ypos2=2
 divy=5
@@ -127,7 +127,7 @@ linewidth_mult=2
 
 
 
-y1=0.00047
+y1=0.00048
 
 
 
@@ -1240,16 +1240,16 @@ N 4520 -2930 5080 -2930 {lab=VOUT-}
 N 4520 -3010 5080 -3010 {lab=VOUT+}
 N 4890 -3060 4890 -3010 {lab=VOUT+}
 N 4890 -2930 4890 -2880 {lab=VOUT-}
-N 3700 -2860 4220 -2860 {lab=TAIL_CUR_MIR_BIAS}
-N 3700 -2880 4220 -2880 {lab=ERR_AMP_CUR_BIAS}
-N 3700 -2900 4220 -2900 {lab=ERR_AMP_REF}
-N 3700 -2920 4220 -2920 {lab=VB3_CUR_BIAS}
-N 3700 -2940 4220 -2940 {lab=VB2_CUR_BIAS}
-N 3700 -2960 4220 -2960 {lab=VB1_CUR_BIAS}
-N 3700 -2980 4220 -2980 {lab=V_CMFB_S4}
-N 3700 -3000 4220 -3000 {lab=V_CMFB_S3}
-N 3700 -3020 4220 -3020 {lab=V_CMFB_S2}
-N 3700 -3040 4220 -3040 {lab=V_CMFB_S1}
+N 3700 -2860 4220 -2860 {lab=#net1}
+N 3700 -2880 4220 -2880 {lab=#net2}
+N 3700 -2900 4220 -2900 {lab=#net3}
+N 3700 -2920 4220 -2920 {lab=#net4}
+N 3700 -2940 4220 -2940 {lab=#net5}
+N 3700 -2960 4220 -2960 {lab=#net6}
+N 3700 -2980 4220 -2980 {lab=#net7}
+N 3700 -3000 4220 -3000 {lab=#net8}
+N 3700 -3020 4220 -3020 {lab=#net9}
+N 3700 -3040 4220 -3040 {lab=#net10}
 N 4000 -3060 4220 -3060 {lab=VIN-}
 N 4000 -3250 4000 -3060 {lab=VIN-}
 N 3850 -3250 4000 -3250 {lab=VIN-}
@@ -1382,15 +1382,5 @@ C {devices/gnd.sym} 4890 -2820 0 0 {name=l14 lab=GND}
 C {devices/vdd.sym} 3550 -3090 0 0 {name=l1 lab=VDD}
 C {ref_volt_cur_gen_dummy_magic.sym} 3550 -2950 0 0 {name=x1}
 C {two_stage_opamp_dummy_magic.sym} 4370 -2970 0 0 {name=x2}
-C {lab_pin.sym} 3890 -2900 0 1 {name=p5 lab=ERR_AMP_REF}
-C {lab_pin.sym} 3890 -3000 0 1 {name=p8 lab=V_CMFB_S3}
-C {lab_pin.sym} 3890 -2960 0 1 {name=p12 lab=VB1_CUR_BIAS}
-C {lab_pin.sym} 3890 -2860 0 1 {name=p13 lab=TAIL_CUR_MIR_BIAS}
-C {lab_pin.sym} 3890 -3040 0 1 {name=p14 lab=V_CMFB_S1}
-C {lab_pin.sym} 3890 -2880 0 1 {name=p15 lab=ERR_AMP_CUR_BIAS}
-C {lab_pin.sym} 3890 -2920 0 1 {name=p16 lab=VB3_CUR_BIAS}
-C {lab_pin.sym} 3890 -2980 0 1 {name=p17 lab=V_CMFB_S4}
-C {lab_pin.sym} 3890 -3020 0 1 {name=p18 lab=V_CMFB_S2}
-C {lab_pin.sym} 3890 -2940 0 1 {name=p19 lab=VB2_CUR_BIAS}
 C {devices/gnd.sym} 4370 -2830 0 0 {name=l7 lab=GND}
 C {devices/vdd.sym} 4370 -3110 0 0 {name=l8 lab=VDD}

@@ -5,10 +5,8 @@ V2 VIN- GND sin(1.24 -0.001 100k)
 V1 VIN+ GND sin(1.24 0.001 100k)
 XC1 VOUT+ GND sky130_fd_pr__cap_mim_m3_1 W=23 L=23 MF=1 m=1
 XC2 VOUT- GND sky130_fd_pr__cap_mim_m3_1 W=23 L=23 MF=1 m=1
-x1 VDD ERR_AMP_REF V_CMFB_S3 VB1_CUR_BIAS TAIL_CUR_MIR_BIAS V_CMFB_S1 ERR_AMP_CUR_BIAS VB3_CUR_BIAS V_CMFB_S4 V_CMFB_S2
-+ VB2_CUR_BIAS GND ref_volt_cur_gen_dummy_magic
-x2 VDD V_CMFB_S1 V_CMFB_S3 VB3_CUR_BIAS VB2_CUR_BIAS VB1_CUR_BIAS V_CMFB_S2 V_CMFB_S4 VOUT- VOUT+ TAIL_CUR_MIR_BIAS ERR_AMP_REF
-+ ERR_AMP_CUR_BIAS VIN+ VIN- GND two_stage_opamp_dummy_magic
+x1 VDD net3 net8 net6 net1 net10 net2 net4 net7 net9 net5 GND ref_volt_cur_gen_dummy_magic
+x2 VDD net10 net8 net4 net5 net6 net9 net7 VOUT- VOUT+ net1 net3 net2 VIN+ VIN- GND two_stage_opamp_dummy_magic
 **** begin user architecture code
 .lib /foss/pdks/sky130A/libs.tech/combined/sky130.lib.spice tt
 

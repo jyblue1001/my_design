@@ -228,7 +228,7 @@ if [ "$EXT_MODE" -eq 3 ]; then
 	{
 		echo "extract do resistance"
 		echo "extract all"
-		echo "ext2sim labels on"
+	        echo "ext2sim labels on"
 		echo "ext2sim"
 		echo "extresist tolerance 10"
 		echo "extresist all"

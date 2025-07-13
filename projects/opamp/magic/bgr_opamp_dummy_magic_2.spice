@@ -814,7 +814,7 @@ X571 VDDA Vb3 Vb2_Vb3 VDDA sky130_fd_pr__pfet_01v8 ad=0.16 pd=1.2 as=0.16 ps=1.2
 X572 V_err_p V_err_gate VDDA VDDA sky130_fd_pr__pfet_01v8 ad=0.1 pd=0.9 as=0.1 ps=0.9 w=0.5 l=0.15
 .ends
 
-** .subckt bgr_opamp_dummy_magic_2 VDDA GNDA VOUT+ VOUT- VIN+ VIN-
+.subckt bgr_opamp_dummy_magic_2 VDDA GNDA VOUT+ VOUT- VIN+ VIN-
 Xbgr_2_0 bgr_2_0/VB1_CUR_BIAS GNDA bgr_2_0/ERR_AMP_REF VDDA bgr_2_0/VB2_CUR_BIAS bgr_2_0/VB3_CUR_BIAS
 + bgr_2_0/ERR_AMP_CUR_BIAS bgr_2_0/V_CMFB_S2 bgr_2_0/TAIL_CUR_MIR_BIAS bgr_2_0/V_CMFB_S1
 + bgr_2_0/V_CMFB_S4 bgr_2_0/V_CMFB_S3 bgr_2
@@ -822,5 +822,5 @@ Xtwo_stage_opamp_dummy_magic_2_0 VDDA bgr_2_0/V_CMFB_S1 bgr_2_0/V_CMFB_S3 bgr_2_
 + bgr_2_0/VB2_CUR_BIAS bgr_2_0/VB1_CUR_BIAS bgr_2_0/V_CMFB_S2 bgr_2_0/V_CMFB_S4 VOUT-
 + VOUT+ bgr_2_0/TAIL_CUR_MIR_BIAS bgr_2_0/ERR_AMP_REF bgr_2_0/ERR_AMP_CUR_BIAS VIN+
 + VIN- GNDA two_stage_opamp_dummy_magic_2
-** .ends
+.ends
 

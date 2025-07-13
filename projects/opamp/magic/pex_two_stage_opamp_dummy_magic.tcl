@@ -1,6 +1,6 @@
 crashbackups stop
 drc off
-load two_stage_opamp_dummy_magic.mag
+load two_stage_opamp_dummy_magic
 select top cell
 flatten two_stage_opamp_dummy_magic_flat
 load two_stage_opamp_dummy_magic_flat

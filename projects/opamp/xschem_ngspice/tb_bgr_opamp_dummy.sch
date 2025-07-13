@@ -3759,7 +3759,7 @@ C {devices/vsource.sym} 4630 -3310 0 0 {name=VDD value="pwl(0 0 3us 0 4us 1.8)" 
 C {devices/gnd.sym} 4630 -3280 0 0 {name=l3 lab=GND}
 C {devices/vdd.sym} 4630 -3340 0 0 {name=l4 lab=VDD}
 C {sky130_fd_pr/corner.sym} 4320 -3350 0 0 {name=CORNER only_toplevel=false corner=tt}
-C {simulator_commands_shown.sym} 2300 -3390 0 0 {name=COMMANDS
+C {simulator_commands_shown.sym} 2300 -3400 0 0 {name=COMMANDS
 simulator=ngspice
 only_toplevel=false 
 value="
@@ -3808,8 +3808,8 @@ value="
     * tran 1p 3n
     * tran 0.1ns 30us
     * ac dec 40 1 10T
-    * write tb_bgr_opamp_dummy.raw
-    write tb_bgr_opamp_dummy_2.raw
+    write tb_bgr_opamp_dummy.raw
+    * write tb_bgr_opamp_dummy_2.raw
     * write tb_bgr_opamp_dummy_3.raw
     * write tb_bgr_opamp_dummy_4.raw
     * write tb_bgr_opamp_dummy_5.raw    

@@ -1,8 +1,4 @@
 
-Circuit 1 cell sky130_fd_pr__pnp_05v5_W3p40L3p40 and Circuit 2 cell sky130_fd_pr__pnp_05v5_W3p40L3p40 are black boxes.
-Equate elements:  no current cell.
-Device classes sky130_fd_pr__pnp_05v5_W3p40L3p40 and sky130_fd_pr__pnp_05v5_W3p40L3p40 are equivalent.
-
 Circuit 1 cell sky130_fd_pr__nfet_01v8 and Circuit 2 cell sky130_fd_pr__nfet_01v8 are black boxes.
 Equate elements:  no current cell.
 Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
@@ -15,86 +11,1843 @@ Circuit 1 cell sky130_fd_pr__cap_mim_m3_1 and Circuit 2 cell sky130_fd_pr__cap_m
 Equate elements:  no current cell.
 Device classes sky130_fd_pr__cap_mim_m3_1 and sky130_fd_pr__cap_mim_m3_1 are equivalent.
 
-Circuit 1 cell sky130_fd_pr__res_high_po_0p35 and Circuit 2 cell sky130_fd_pr__res_high_po_0p35 are black boxes.
-Equate elements:  no current cell.
-Device classes sky130_fd_pr__res_high_po_0p35 and sky130_fd_pr__res_high_po_0p35 are equivalent.
-
 Circuit 1 cell sky130_fd_pr__res_xhigh_po_0p35 and Circuit 2 cell sky130_fd_pr__res_xhigh_po_0p35 are black boxes.
 Equate elements:  no current cell.
 Device classes sky130_fd_pr__res_xhigh_po_0p35 and sky130_fd_pr__res_xhigh_po_0p35 are equivalent.
 
+Circuit 1 cell sky130_fd_pr__res_high_po_0p35 and Circuit 2 cell sky130_fd_pr__res_high_po_0p35 are black boxes.
+Equate elements:  no current cell.
+Device classes sky130_fd_pr__res_high_po_0p35 and sky130_fd_pr__res_high_po_0p35 are equivalent.
+
 Circuit 1 cell sky130_fd_pr__res_high_po_1p41 and Circuit 2 cell sky130_fd_pr__res_high_po_1p41 are black boxes.
 Equate elements:  no current cell.
 Device classes sky130_fd_pr__res_high_po_1p41 and sky130_fd_pr__res_high_po_1p41 are equivalent.
-Flattening unmatched subcell opamp_bandgap_2 in circuit bgr_opamp_dummy.spice (0)(2 instances)
-Flattening unmatched subcell bgr in circuit bgr_opamp_dummy_magic.spice (1)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__rf_pnp_05v5_W3p40L3p40 in circuit bgr_opamp_dummy_magic.spice (1)(9 instances)
-Flattening unmatched subcell two_stage_opamp_dummy_magic in circuit bgr_opamp_dummy_magic.spice (1)(1 instance)
 
-Class bgr_opamp_dummy.spice (0):  Merged 4 parallel devices.
-Class bgr_opamp_dummy_magic.spice (1):  Merged 648 parallel devices.
-Class bgr_opamp_dummy_magic.spice (1):  Merged 14 series devices.
+Circuit 1 cell sky130_fd_pr__pnp_05v5_W3p40L3p40 and Circuit 2 cell sky130_fd_pr__pnp_05v5_W3p40L3p40 are black boxes.
+Equate elements:  no current cell.
+Device classes sky130_fd_pr__pnp_05v5_W3p40L3p40 and sky130_fd_pr__pnp_05v5_W3p40L3p40 are equivalent.
+
 Subcircuit summary:
-Circuit 1: bgr_opamp_dummy.spice           |Circuit 2: bgr_opamp_dummy_magic.spice     
+Circuit 1: bgr_opamp_dummy_magic.spice     |Circuit 2: bgr_opamp_dummy_magic_9.spice   
 -------------------------------------------|-------------------------------------------
-sky130_fd_pr__nfet_01v8 (83->49)           |sky130_fd_pr__nfet_01v8 (176->49)          
-sky130_fd_pr__pfet_01v8 (80->58)           |sky130_fd_pr__pfet_01v8 (241->58)          
-sky130_fd_pr__res_xhigh_po_0p35 (11)       |sky130_fd_pr__res_xhigh_po_0p35 (25->11)   
-sky130_fd_pr__cap_mim_m3_1 (336->5)        |sky130_fd_pr__cap_mim_m3_1 (336->5)        
-sky130_fd_pr__res_high_po_1p41 (2)         |sky130_fd_pr__res_high_po_1p41 (2)         
-sky130_fd_pr__pnp_05v5_W3p40L3p40 (9->2)   |sky130_fd_pr__pnp_05v5_W3p40L3p40 (9->2)   
+sky130_fd_pr__nfet_01v8 (176)              |sky130_fd_pr__nfet_01v8 (176)              
+sky130_fd_pr__pfet_01v8 (244)              |sky130_fd_pr__pfet_01v8 (244)              
+sky130_fd_pr__cap_mim_m3_1 (336)           |sky130_fd_pr__cap_mim_m3_1 (336)           
+sky130_fd_pr__res_xhigh_po_0p35 (25)       |sky130_fd_pr__res_xhigh_po_0p35 (25)       
 sky130_fd_pr__res_high_po_0p35 (2)         |sky130_fd_pr__res_high_po_0p35 (2)         
-Number of devices: 129                     |Number of devices: 129                     
-Number of nets: 50                         |Number of nets: 50                         
+sky130_fd_pr__res_high_po_1p41 (2)         |sky130_fd_pr__res_high_po_1p41 (2)         
+sky130_fd_pr__pnp_05v5_W3p40L3p40 (9)      |sky130_fd_pr__pnp_05v5_W3p40L3p40 (9)      
+r (9001)                                   |r (8992) **Mismatch**                      
+c (3223)                                   |c (3291) **Mismatch**                      
+$ (7)                                      |$ (5) **Mismatch**                         
+Number of devices: 13025 **Mismatch**      |Number of devices: 13082 **Mismatch**      
+Number of nets: 7017 **Mismatch**          |Number of nets: 7008 **Mismatch**          
 ---------------------------------------------------------------------------------------
 NET mismatches: Class fragments follow (with fanout counts):
-Circuit 1: bgr_opamp_dummy.spice           |Circuit 2: bgr_opamp_dummy_magic.spice     
+Circuit 1: bgr_opamp_dummy_magic.spice     |Circuit 2: bgr_opamp_dummy_magic_9.spice   
 
 ---------------------------------------------------------------------------------------
-Net: bgr_Vin-                              |Net: /bgr_0/Vin-                           
-  sky130_fd_pr__pnp_05v5_W3p40L3p40/1 = 1  |  sky130_fd_pr__pnp_05v5_W3p40L3p40/3 = 1  
-  sky130_fd_pr__pfet_01v8/(1|3) = 2        |  sky130_fd_pr__pfet_01v8/(1|3) = 2        
-  sky130_fd_pr__res_xhigh_po_0p35/(1|2) =  |  sky130_fd_pr__res_xhigh_po_0p35/(1|2) =  
+Net: two_stage_opamp_dummy_magic_0.V_sourc |Net: two_stage_opamp_dummy_magic_0.V_sourc 
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+  r/(end_a|end_b) = 1                      |  r/(end_a|end_b) = 1                      
+                                           |                                           
+Net: two_stage_opamp_dummy_magic_0.V_sourc |Net: two_stage_opamp_dummy_magic_0.V_sourc 
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+  r/(end_a|end_b) = 1                      |  r/(end_a|end_b) = 1                      
+                                           |                                           
+Net: VIN-.t2                               |Net: two_stage_opamp_dummy_magic_0.VD1.t5  
+  sky130_fd_pr__nfet_01v8/2 = 1            |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+  r/(end_a|end_b) = 1                      |  r/(end_a|end_b) = 1                      
+                                           |                                           
+Net: two_stage_opamp_dummy_magic_0.V_sourc |Net: two_stage_opamp_dummy_magic_0.VD1.t4  
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+  r/(end_a|end_b) = 1                      |  r/(end_a|end_b) = 1                      
+                                           |                                           
+Net: m2_4880_3600#                         |Net: m2_4880_3600#                         
+  c/bottom = 1                             |  c/bottom = 1                             
+  $/top = 1                                |  $/top = 1                                
+                                           |                                           
+Net: m2_9370_16580#                        |Net: m2_9370_16580#                        
+  c/bottom = 1                             |  c/top = 1                                
+  $/top = 1                                |  $/top = 1                                
+                                           |                                           
+Net: m1_4880_3600#                         |Net: m1_4880_3600#                         
+  c/top = 1                                |  c/top = 1                                
+  $/top = 1                                |  $/top = 1                                
+                                           |                                           
+Net: VIN+.t0                               |Net: VIN+.t0                               
   sky130_fd_pr__nfet_01v8/2 = 1            |  sky130_fd_pr__nfet_01v8/2 = 1            
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
+  r/(end_a|end_b) = 1                      |  r/(end_a|end_b) = 1                      
+                                           |  c/top = 1                                
+                                           |                                           
+Net: VIN+.t1                               |Net: VIN+.t1                               
+  sky130_fd_pr__nfet_01v8/2 = 1            |  sky130_fd_pr__nfet_01v8/2 = 1            
+  r/(end_a|end_b) = 1                      |  r/(end_a|end_b) = 1                      
+                                           |  c/top = 1                                
+                                           |                                           
+Net: VIN+.t5                               |Net: VIN+.t5                               
+  sky130_fd_pr__nfet_01v8/2 = 1            |  sky130_fd_pr__nfet_01v8/2 = 1            
+  r/(end_a|end_b) = 1                      |  r/(end_a|end_b) = 1                      
+                                           |  c/top = 1                                
+                                           |                                           
+Net: two_stage_opamp_dummy_magic_0.VD2.t20 |Net: VIN+.t8                               
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  sky130_fd_pr__nfet_01v8/2 = 1            
+  r/(end_a|end_b) = 1                      |  r/(end_a|end_b) = 1                      
+                                           |  c/top = 1                                
+                                           |                                           
+Net: VIN+.t6                               |Net: VIN+.t6                               
+  sky130_fd_pr__nfet_01v8/2 = 1            |  sky130_fd_pr__nfet_01v8/2 = 1            
+  r/(end_a|end_b) = 1                      |  r/(end_a|end_b) = 1                      
+                                           |  c/top = 1                                
+                                           |                                           
+Net: two_stage_opamp_dummy_magic_0.V_sourc |Net: VIN+.t10                              
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  sky130_fd_pr__nfet_01v8/2 = 1            
+  r/(end_a|end_b) = 1                      |  r/(end_a|end_b) = 1                      
+                                           |  c/top = 1                                
+                                           |                                           
+Net: two_stage_opamp_dummy_magic_0.V_sourc |Net: VIN+.t2                               
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  sky130_fd_pr__nfet_01v8/2 = 1            
+  r/(end_a|end_b) = 1                      |  r/(end_a|end_b) = 1                      
+                                           |  c/top = 1                                
+                                           |                                           
+Net: two_stage_opamp_dummy_magic_0.V_sourc |Net: VIN+.t7                               
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  sky130_fd_pr__nfet_01v8/2 = 1            
+  r/(end_a|end_b) = 1                      |  r/(end_a|end_b) = 1                      
+                                           |  c/top = 1                                
+                                           |                                           
+Net: two_stage_opamp_dummy_magic_0.VD2.t2  |Net: VIN+.t4                               
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  sky130_fd_pr__nfet_01v8/2 = 1            
+  r/(end_a|end_b) = 1                      |  r/(end_a|end_b) = 1                      
+                                           |  c/top = 1                                
+                                           |                                           
+Net: VIN+.t9                               |Net: VIN+.t9                               
+  sky130_fd_pr__nfet_01v8/2 = 1            |  sky130_fd_pr__nfet_01v8/2 = 1            
+  r/(end_a|end_b) = 1                      |  r/(end_a|end_b) = 1                      
+                                           |  c/top = 1                                
+                                           |                                           
+Net: VIN-.t0                               |Net: VIN+.t3                               
+  sky130_fd_pr__nfet_01v8/2 = 1            |  sky130_fd_pr__nfet_01v8/2 = 1            
+  r/(end_a|end_b) = 1                      |  r/(end_a|end_b) = 1                      
+                                           |  c/top = 1                                
+                                           |                                           
+Net: VIN-.t5                               |Net: two_stage_opamp_dummy_magic_0.V_sourc 
+  sky130_fd_pr__nfet_01v8/2 = 1            |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+  r/(end_a|end_b) = 1                      |  r/(end_a|end_b) = 1                      
+                                           |  c/top = 1                                
+                                           |                                           
+Net: two_stage_opamp_dummy_magic_0.V_sourc |Net: two_stage_opamp_dummy_magic_0.V_sourc 
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+  r/(end_a|end_b) = 1                      |  r/(end_a|end_b) = 1                      
+                                           |  c/top = 1                                
+                                           |                                           
+Net: two_stage_opamp_dummy_magic_0.V_sourc |Net: two_stage_opamp_dummy_magic_0.V_sourc 
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+  r/(end_a|end_b) = 1                      |  r/(end_a|end_b) = 1                      
+                                           |  c/top = 1                                
+                                           |                                           
+Net: two_stage_opamp_dummy_magic_0.V_sourc |Net: two_stage_opamp_dummy_magic_0.V_sourc 
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+  r/(end_a|end_b) = 1                      |  r/(end_a|end_b) = 1                      
+                                           |  c/top = 1                                
+                                           |                                           
+Net: two_stage_opamp_dummy_magic_0.V_sourc |Net: two_stage_opamp_dummy_magic_0.V_sourc 
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+  r/(end_a|end_b) = 1                      |  r/(end_a|end_b) = 1                      
+                                           |  c/top = 1                                
+                                           |                                           
+Net: two_stage_opamp_dummy_magic_0.V_sourc |Net: two_stage_opamp_dummy_magic_0.V_sourc 
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+  r/(end_a|end_b) = 1                      |  r/(end_a|end_b) = 1                      
+                                           |  c/top = 1                                
+                                           |                                           
+Net: two_stage_opamp_dummy_magic_0.V_sourc |Net: two_stage_opamp_dummy_magic_0.V_sourc 
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+  r/(end_a|end_b) = 1                      |  r/(end_a|end_b) = 1                      
+                                           |  c/top = 1                                
+                                           |                                           
+Net: two_stage_opamp_dummy_magic_0.V_sourc |Net: two_stage_opamp_dummy_magic_0.V_sourc 
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+  r/(end_a|end_b) = 1                      |  r/(end_a|end_b) = 1                      
+                                           |  c/top = 1                                
+                                           |                                           
+Net: two_stage_opamp_dummy_magic_0.V_sourc |Net: two_stage_opamp_dummy_magic_0.V_sourc 
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+  r/(end_a|end_b) = 1                      |  r/(end_a|end_b) = 1                      
+                                           |  c/top = 1                                
+                                           |                                           
+Net: two_stage_opamp_dummy_magic_0.V_sourc |Net: two_stage_opamp_dummy_magic_0.V_sourc 
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+  r/(end_a|end_b) = 1                      |  r/(end_a|end_b) = 1                      
+                                           |  c/top = 1                                
+                                           |                                           
+Net: two_stage_opamp_dummy_magic_0.V_sourc |Net: two_stage_opamp_dummy_magic_0.V_sourc 
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+  r/(end_a|end_b) = 1                      |  r/(end_a|end_b) = 1                      
+                                           |  c/top = 1                                
+                                           |                                           
+Net: VIN-.t9                               |Net: two_stage_opamp_dummy_magic_0.V_sourc 
+  sky130_fd_pr__nfet_01v8/2 = 1            |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+  r/(end_a|end_b) = 1                      |  r/(end_a|end_b) = 1                      
+                                           |  c/top = 1                                
+                                           |                                           
+Net: VIN-.t7                               |Net: two_stage_opamp_dummy_magic_0.V_sourc 
+  sky130_fd_pr__nfet_01v8/2 = 1            |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+  r/(end_a|end_b) = 1                      |  r/(end_a|end_b) = 1                      
+                                           |  c/top = 1                                
+                                           |                                           
+Net: two_stage_opamp_dummy_magic_0.V_sourc |Net: two_stage_opamp_dummy_magic_0.V_sourc 
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+  r/(end_a|end_b) = 1                      |  r/(end_a|end_b) = 1                      
+                                           |  c/top = 1                                
+                                           |                                           
+Net: two_stage_opamp_dummy_magic_0.V_sourc |Net: two_stage_opamp_dummy_magic_0.V_sourc 
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+  r/(end_a|end_b) = 1                      |  r/(end_a|end_b) = 1                      
+                                           |  c/top = 1                                
+                                           |                                           
+Net: VIN-.t4                               |Net: two_stage_opamp_dummy_magic_0.V_sourc 
+  sky130_fd_pr__nfet_01v8/2 = 1            |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+  r/(end_a|end_b) = 1                      |  r/(end_a|end_b) = 1                      
+                                           |  c/top = 1                                
+                                           |                                           
+Net: two_stage_opamp_dummy_magic_0.V_sourc |Net: two_stage_opamp_dummy_magic_0.V_sourc 
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+  r/(end_a|end_b) = 1                      |  r/(end_a|end_b) = 1                      
+                                           |  c/top = 1                                
+                                           |                                           
+Net: two_stage_opamp_dummy_magic_0.V_sourc |Net: two_stage_opamp_dummy_magic_0.V_sourc 
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+  r/(end_a|end_b) = 1                      |  r/(end_a|end_b) = 1                      
+                                           |  c/top = 1                                
+                                           |                                           
+Net: two_stage_opamp_dummy_magic_0.V_sourc |Net: two_stage_opamp_dummy_magic_0.V_sourc 
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+  r/(end_a|end_b) = 1                      |  r/(end_a|end_b) = 1                      
+                                           |  c/top = 1                                
+                                           |                                           
+Net: two_stage_opamp_dummy_magic_0.V_sourc |Net: two_stage_opamp_dummy_magic_0.V_sourc 
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+  r/(end_a|end_b) = 1                      |  r/(end_a|end_b) = 1                      
+                                           |  c/top = 1                                
+                                           |                                           
+Net: li_11100_5340#                        |Net: two_stage_opamp_dummy_magic_0.V_sourc 
+  c/top = 1                                |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+  $/top = 1                                |  r/(end_a|end_b) = 1                      
+                                           |  c/top = 1                                
+                                           |                                           
+Net: bgr_0.1st_Vout_1.t13                  |Net: bgr_0.1st_Vout_1.t13                  
+  sky130_fd_pr__pfet_01v8/2 = 1            |  sky130_fd_pr__pfet_01v8/2 = 1            
+  r/(end_a|end_b) = 1                      |  r/(end_a|end_b) = 1                      
+  c/top = 1                                |  c/top = 1                                
+                                           |                                           
+Net: two_stage_opamp_dummy_magic_0.VD1.n16 |Net: bgr_0.TAIL_CUR_MIR_BIAS               
+  r/(end_a|end_b) = 3                      |  r/(end_a|end_b) = 2                      
+                                           |  c/top = 1                                
+                                           |                                           
+Net: VIN-.n6                               |Net: VIN-.n6                               
+  r/(end_a|end_b) = 3                      |  r/(end_a|end_b) = 3                      
+                                           |                                           
+Net: two_stage_opamp_dummy_magic_0.V_sourc |Net: VIN-.n9                               
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  r/(end_a|end_b) = 3                      
+  r/(end_a|end_b) = 1                      |                                           
+                                           |                                           
+Net: two_stage_opamp_dummy_magic_0.VD1.n13 |Net: two_stage_opamp_dummy_magic_0.VD1.n13 
+  r/(end_a|end_b) = 3                      |  r/(end_a|end_b) = 3                      
+                                           |                                           
+Net: VIN-.n5                               |Net: two_stage_opamp_dummy_magic_0.VD1.n9  
+  r/(end_a|end_b) = 3                      |  r/(end_a|end_b) = 3                      
+                                           |                                           
+Net: two_stage_opamp_dummy_magic_0.VD2.n12 |Net: two_stage_opamp_dummy_magic_0.VD2.n4  
+  r/(end_a|end_b) = 3                      |  r/(end_a|end_b) = 3                      
+                                           |                                           
+Net: two_stage_opamp_dummy_magic_0.VD1.n7  |Net: two_stage_opamp_dummy_magic_0.VD2.n16 
+  r/(end_a|end_b) = 3                      |  r/(end_a|end_b) = 3                      
+                                           |                                           
+Net: two_stage_opamp_dummy_magic_0.VD2.n11 |Net: two_stage_opamp_dummy_magic_0.VD2.n11 
+  r/(end_a|end_b) = 3                      |  r/(end_a|end_b) = 3                      
+                                           |                                           
+Net: VIN-.n2                               |Net: VIN-.n2                               
+  r/(end_a|end_b) = 3                      |  r/(end_a|end_b) = 3                      
+                                           |                                           
+Net: bgr_0.sky130_fd_pr__rf_pnp_05v5_W3p40 |Net: two_stage_opamp_dummy_magic_0.VD1.n17 
+  r/(end_a|end_b) = 3                      |  r/(end_a|end_b) = 3                      
+                                           |                                           
+Net: bgr_0.sky130_fd_pr__rf_pnp_05v5_W3p40 |Net: two_stage_opamp_dummy_magic_0.VD2.n9  
+  r/(end_a|end_b) = 3                      |  r/(end_a|end_b) = 3                      
+                                           |                                           
+Net: two_stage_opamp_dummy_magic_0.VD2.n15 |Net: VIN-.n8                               
+  r/(end_a|end_b) = 3                      |  r/(end_a|end_b) = 3                      
+                                           |                                           
+Net: two_stage_opamp_dummy_magic_0.VD2.n3  |Net: VIN-.n0                               
+  r/(end_a|end_b) = 3                      |  r/(end_a|end_b) = 3                      
+                                           |                                           
+Net: two_stage_opamp_dummy_magic_0.VD1.n2  |Net: two_stage_opamp_dummy_magic_0.VD1.n2  
+  r/(end_a|end_b) = 3                      |  r/(end_a|end_b) = 3                      
+                                           |                                           
+Net: two_stage_opamp_dummy_magic_0.VD2.n13 |Net: two_stage_opamp_dummy_magic_0.VD2.n13 
+  r/(end_a|end_b) = 3                      |  r/(end_a|end_b) = 3                      
+                                           |                                           
+Net: two_stage_opamp_dummy_magic_0.VD1.n11 |Net: two_stage_opamp_dummy_magic_0.VD1.n11 
+  r/(end_a|end_b) = 3                      |  r/(end_a|end_b) = 3                      
+                                           |                                           
+Net: VIN-.n3                               |Net: two_stage_opamp_dummy_magic_0.VD2.n18 
+  r/(end_a|end_b) = 3                      |  r/(end_a|end_b) = 3                      
+                                           |                                           
+Net: bgr_0.sky130_fd_pr__rf_pnp_05v5_W3p40 |Net: two_stage_opamp_dummy_magic_0.VD1.n12 
+  r/(end_a|end_b) = 3                      |  r/(end_a|end_b) = 3                      
+                                           |                                           
+Net: two_stage_opamp_dummy_magic_0.VD2.n17 |Net: two_stage_opamp_dummy_magic_0.VD2.n17 
+  r/(end_a|end_b) = 3                      |  r/(end_a|end_b) = 3                      
+                                           |                                           
+Net: VIN-.n4                               |Net: VIN-.n4                               
+  r/(end_a|end_b) = 3                      |  r/(end_a|end_b) = 3                      
+                                           |                                           
+Net: bgr_0.sky130_fd_pr__rf_pnp_05v5_W3p40 |Net: bgr_0.sky130_fd_pr__rf_pnp_05v5_W3p40 
+  r/(end_a|end_b) = 3                      |  r/(end_a|end_b) = 3                      
+                                           |                                           
+Net: two_stage_opamp_dummy_magic_0.VD1.n10 |Net: bgr_0.sky130_fd_pr__rf_pnp_05v5_W3p40 
+  r/(end_a|end_b) = 3                      |  r/(end_a|end_b) = 3                      
+                                           |                                           
+Net: VIN-.n7                               |Net: two_stage_opamp_dummy_magic_0.VD1.n0  
+  r/(end_a|end_b) = 3                      |  r/(end_a|end_b) = 3                      
+                                           |                                           
+Net: two_stage_opamp_dummy_magic_0.cap_res |Net: two_stage_opamp_dummy_magic_0.cap_res 
+  sky130_fd_pr__res_high_po_1p41/(1|2) = 1 |  sky130_fd_pr__res_high_po_1p41/(1|2) = 1 
+  r/(end_a|end_b) = 1                      |  r/(end_a|end_b) = 1                      
+  c/top = 1                                |  c/top = 1                                
+                                           |                                           
+Net: bgr_0.1st_Vout_2.t33                  |Net: bgr_0.1st_Vout_2.t33                  
+  sky130_fd_pr__pfet_01v8/2 = 1            |  sky130_fd_pr__pfet_01v8/2 = 1            
+  r/(end_a|end_b) = 1                      |  r/(end_a|end_b) = 1                      
+  c/top = 1                                |  c/top = 1                                
+                                           |                                           
+Net: bgr_0.1st_Vout_2.t34                  |Net: bgr_0.1st_Vout_2.t34                  
+  sky130_fd_pr__pfet_01v8/2 = 1            |  sky130_fd_pr__pfet_01v8/2 = 1            
+  r/(end_a|end_b) = 1                      |  r/(end_a|end_b) = 1                      
+  c/top = 1                                |  c/top = 1                                
+                                           |                                           
+Net: two_stage_opamp_dummy_magic_0.V_sourc |Net: two_stage_opamp_dummy_magic_0.V_sourc 
+  r/(end_a|end_b) = 3                      |  r/(end_a|end_b) = 3                      
+                                           |  c/top = 1                                
+                                           |                                           
+Net: two_stage_opamp_dummy_magic_0.V_sourc |Net: two_stage_opamp_dummy_magic_0.V_sourc 
+  r/(end_a|end_b) = 3                      |  r/(end_a|end_b) = 3                      
+                                           |  c/top = 1                                
+                                           |                                           
+Net: two_stage_opamp_dummy_magic_0.V_sourc |Net: two_stage_opamp_dummy_magic_0.V_sourc 
+  r/(end_a|end_b) = 3                      |  r/(end_a|end_b) = 3                      
+                                           |  c/top = 1                                
+                                           |                                           
+Net: two_stage_opamp_dummy_magic_0.V_sourc |Net: two_stage_opamp_dummy_magic_0.V_sourc 
+  r/(end_a|end_b) = 3                      |  r/(end_a|end_b) = 3                      
+                                           |  c/top = 1                                
+                                           |                                           
+Net: two_stage_opamp_dummy_magic_0.V_sourc |Net: two_stage_opamp_dummy_magic_0.V_sourc 
+  r/(end_a|end_b) = 3                      |  r/(end_a|end_b) = 3                      
+                                           |  c/top = 1                                
+                                           |                                           
+Net: two_stage_opamp_dummy_magic_0.V_sourc |Net: two_stage_opamp_dummy_magic_0.V_sourc 
+  r/(end_a|end_b) = 3                      |  r/(end_a|end_b) = 3                      
+                                           |  c/top = 1                                
+                                           |                                           
+Net: two_stage_opamp_dummy_magic_0.V_sourc |Net: two_stage_opamp_dummy_magic_0.V_sourc 
+  r/(end_a|end_b) = 3                      |  r/(end_a|end_b) = 3                      
+                                           |  c/top = 1                                
+                                           |                                           
+Net: two_stage_opamp_dummy_magic_0.V_sourc |Net: two_stage_opamp_dummy_magic_0.V_sourc 
+  r/(end_a|end_b) = 3                      |  r/(end_a|end_b) = 3                      
+                                           |  c/top = 1                                
+                                           |                                           
+Net: two_stage_opamp_dummy_magic_0.V_sourc |Net: two_stage_opamp_dummy_magic_0.V_sourc 
+  r/(end_a|end_b) = 3                      |  r/(end_a|end_b) = 3                      
+                                           |  c/top = 1                                
+                                           |                                           
+Net: two_stage_opamp_dummy_magic_0.V_sourc |Net: two_stage_opamp_dummy_magic_0.V_sourc 
+  r/(end_a|end_b) = 3                      |  r/(end_a|end_b) = 3                      
+                                           |  c/top = 1                                
+                                           |                                           
+Net: two_stage_opamp_dummy_magic_0.V_sourc |Net: two_stage_opamp_dummy_magic_0.V_sourc 
+  r/(end_a|end_b) = 3                      |  r/(end_a|end_b) = 3                      
+                                           |  c/top = 1                                
+                                           |                                           
+Net: two_stage_opamp_dummy_magic_0.V_sourc |Net: two_stage_opamp_dummy_magic_0.V_sourc 
+  r/(end_a|end_b) = 3                      |  r/(end_a|end_b) = 3                      
+                                           |  c/top = 1                                
+                                           |                                           
+Net: two_stage_opamp_dummy_magic_0.V_sourc |Net: two_stage_opamp_dummy_magic_0.V_sourc 
+  r/(end_a|end_b) = 3                      |  r/(end_a|end_b) = 3                      
+                                           |  c/top = 1                                
+                                           |                                           
+Net: two_stage_opamp_dummy_magic_0.V_sourc |Net: two_stage_opamp_dummy_magic_0.V_sourc 
+  r/(end_a|end_b) = 3                      |  r/(end_a|end_b) = 3                      
+                                           |  c/top = 1                                
+                                           |                                           
+Net: two_stage_opamp_dummy_magic_0.V_sourc |Net: two_stage_opamp_dummy_magic_0.V_sourc 
+  r/(end_a|end_b) = 3                      |  r/(end_a|end_b) = 3                      
+                                           |  c/top = 1                                
+                                           |                                           
+Net: two_stage_opamp_dummy_magic_0.V_sourc |Net: two_stage_opamp_dummy_magic_0.V_sourc 
+  r/(end_a|end_b) = 3                      |  r/(end_a|end_b) = 3                      
+                                           |  c/top = 1                                
+                                           |                                           
+Net: two_stage_opamp_dummy_magic_0.V_sourc |Net: two_stage_opamp_dummy_magic_0.V_sourc 
+  r/(end_a|end_b) = 3                      |  r/(end_a|end_b) = 3                      
+                                           |  c/top = 1                                
+                                           |                                           
+Net: two_stage_opamp_dummy_magic_0.V_sourc |Net: two_stage_opamp_dummy_magic_0.V_sourc 
+  r/(end_a|end_b) = 3                      |  r/(end_a|end_b) = 3                      
+                                           |  c/top = 1                                
+                                           |                                           
+Net: two_stage_opamp_dummy_magic_0.V_sourc |Net: two_stage_opamp_dummy_magic_0.V_sourc 
+  r/(end_a|end_b) = 3                      |  r/(end_a|end_b) = 3                      
+                                           |  c/top = 1                                
+                                           |                                           
+Net: two_stage_opamp_dummy_magic_0.V_sourc |Net: two_stage_opamp_dummy_magic_0.V_sourc 
+  r/(end_a|end_b) = 3                      |  r/(end_a|end_b) = 3                      
+                                           |  c/top = 1                                
+                                           |                                           
+Net: two_stage_opamp_dummy_magic_0.V_sourc |Net: two_stage_opamp_dummy_magic_0.V_sourc 
+  r/(end_a|end_b) = 3                      |  r/(end_a|end_b) = 3                      
+                                           |  c/top = 1                                
+                                           |                                           
+Net: two_stage_opamp_dummy_magic_0.V_sourc |Net: two_stage_opamp_dummy_magic_0.V_sourc 
+  r/(end_a|end_b) = 3                      |  r/(end_a|end_b) = 3                      
+                                           |  c/top = 1                                
+                                           |                                           
+Net: two_stage_opamp_dummy_magic_0.V_sourc |Net: two_stage_opamp_dummy_magic_0.V_sourc 
+  r/(end_a|end_b) = 3                      |  r/(end_a|end_b) = 3                      
+                                           |  c/top = 1                                
+                                           |                                           
+Net: two_stage_opamp_dummy_magic_0.V_sourc |Net: two_stage_opamp_dummy_magic_0.V_sourc 
+  r/(end_a|end_b) = 3                      |  r/(end_a|end_b) = 3                      
+                                           |  c/top = 1                                
+                                           |                                           
+Net: two_stage_opamp_dummy_magic_0.V_sourc |Net: two_stage_opamp_dummy_magic_0.V_sourc 
+  r/(end_a|end_b) = 3                      |  r/(end_a|end_b) = 3                      
+                                           |  c/top = 1                                
+                                           |                                           
+Net: two_stage_opamp_dummy_magic_0.V_sourc |Net: two_stage_opamp_dummy_magic_0.V_sourc 
+  r/(end_a|end_b) = 3                      |  r/(end_a|end_b) = 3                      
+                                           |  c/top = 1                                
+                                           |                                           
+Net: two_stage_opamp_dummy_magic_0.V_sourc |Net: two_stage_opamp_dummy_magic_0.V_sourc 
+  r/(end_a|end_b) = 3                      |  r/(end_a|end_b) = 3                      
+                                           |  c/top = 1                                
+                                           |                                           
+Net: two_stage_opamp_dummy_magic_0.V_sourc |Net: two_stage_opamp_dummy_magic_0.V_sourc 
+  r/(end_a|end_b) = 3                      |  r/(end_a|end_b) = 3                      
+                                           |  c/top = 1                                
+                                           |                                           
+Net: two_stage_opamp_dummy_magic_0.V_sourc |Net: two_stage_opamp_dummy_magic_0.V_sourc 
+  r/(end_a|end_b) = 3                      |  r/(end_a|end_b) = 3                      
+                                           |  c/top = 1                                
+                                           |                                           
+Net: VIN+.n9                               |Net: VIN+.n9                               
+  r/(end_a|end_b) = 3                      |  r/(end_a|end_b) = 3                      
+                                           |  c/top = 1                                
+                                           |                                           
+Net: VIN+.n4                               |Net: VIN+.n4                               
+  r/(end_a|end_b) = 3                      |  r/(end_a|end_b) = 3                      
+                                           |  c/top = 1                                
+                                           |                                           
+Net: VIN+.n3                               |Net: VIN+.n3                               
+  r/(end_a|end_b) = 3                      |  r/(end_a|end_b) = 3                      
+                                           |  c/top = 1                                
+                                           |                                           
+Net: VIN+.n7                               |Net: VIN+.n7                               
+  r/(end_a|end_b) = 3                      |  r/(end_a|end_b) = 3                      
+                                           |  c/top = 1                                
+                                           |                                           
+Net: VIN+.n5                               |Net: VIN+.n5                               
+  r/(end_a|end_b) = 3                      |  r/(end_a|end_b) = 3                      
+                                           |  c/top = 1                                
+                                           |                                           
+Net: two_stage_opamp_dummy_magic_0.VD1.n15 |Net: VIN+.n1                               
+  r/(end_a|end_b) = 3                      |  r/(end_a|end_b) = 3                      
+                                           |  c/top = 1                                
+                                           |                                           
+Net: bgr_0.sky130_fd_pr__rf_pnp_05v5_W3p40 |Net: VIN+.n0                               
+  r/(end_a|end_b) = 3                      |  r/(end_a|end_b) = 3                      
+                                           |  c/top = 1                                
+                                           |                                           
+Net: VIN+.n2                               |Net: VIN+.n2                               
+  r/(end_a|end_b) = 3                      |  r/(end_a|end_b) = 3                      
+                                           |  c/top = 1                                
+                                           |                                           
+Net: VIN+.n8                               |Net: VIN+.n8                               
+  r/(end_a|end_b) = 3                      |  r/(end_a|end_b) = 3                      
+                                           |  c/top = 1                                
+                                           |                                           
+Net: VIN+.n6                               |Net: VIN+.n6                               
+  r/(end_a|end_b) = 3                      |  r/(end_a|end_b) = 3                      
+                                           |  c/top = 1                                
+                                           |                                           
+Net: two_stage_opamp_dummy_magic_0.V_sourc |Net: two_stage_opamp_dummy_magic_0.V_sourc 
+  r/(end_a|end_b) = 3                      |  r/(end_a|end_b) = 3                      
+                                           |  c/top = 1                                
+                                           |                                           
+Net: two_stage_opamp_dummy_magic_0.V_sourc |Net: two_stage_opamp_dummy_magic_0.V_sourc 
+  r/(end_a|end_b) = 3                      |  r/(end_a|end_b) = 3                      
+                                           |  c/top = 1                                
+                                           |                                           
+Net: two_stage_opamp_dummy_magic_0.V_sourc |Net: two_stage_opamp_dummy_magic_0.V_sourc 
+  r/(end_a|end_b) = 3                      |  r/(end_a|end_b) = 3                      
+                                           |  c/top = 1                                
+                                           |                                           
+Net: two_stage_opamp_dummy_magic_0.V_sourc |Net: two_stage_opamp_dummy_magic_0.V_sourc 
+  r/(end_a|end_b) = 3                      |  r/(end_a|end_b) = 3                      
+                                           |  c/top = 1                                
+                                           |                                           
+Net: two_stage_opamp_dummy_magic_0.V_sourc |Net: two_stage_opamp_dummy_magic_0.V_sourc 
+  r/(end_a|end_b) = 3                      |  r/(end_a|end_b) = 3                      
+                                           |  c/top = 1                                
+                                           |                                           
+Net: two_stage_opamp_dummy_magic_0.V_sourc |Net: two_stage_opamp_dummy_magic_0.V_sourc 
+  r/(end_a|end_b) = 3                      |  r/(end_a|end_b) = 3                      
+                                           |  c/top = 1                                
+                                           |                                           
+Net: two_stage_opamp_dummy_magic_0.V_sourc |Net: two_stage_opamp_dummy_magic_0.V_sourc 
+  r/(end_a|end_b) = 3                      |  r/(end_a|end_b) = 3                      
+                                           |  c/top = 1                                
+                                           |                                           
+Net: two_stage_opamp_dummy_magic_0.V_sourc |Net: two_stage_opamp_dummy_magic_0.V_sourc 
+  r/(end_a|end_b) = 3                      |  r/(end_a|end_b) = 3                      
+                                           |  c/top = 1                                
+                                           |                                           
+Net: two_stage_opamp_dummy_magic_0.V_sourc |Net: two_stage_opamp_dummy_magic_0.V_sourc 
+  r/(end_a|end_b) = 3                      |  r/(end_a|end_b) = 3                      
+                                           |  c/top = 1                                
+                                           |                                           
+Net: two_stage_opamp_dummy_magic_0.V_sourc |Net: two_stage_opamp_dummy_magic_0.V_sourc 
+  r/(end_a|end_b) = 3                      |  r/(end_a|end_b) = 3                      
+                                           |  c/top = 1                                
+                                           |                                           
+Net: bgr_0.1st_Vout_1.n18                  |Net: bgr_0.1st_Vout_1.n18                  
+  r/(end_a|end_b) = 3                      |  r/(end_a|end_b) = 3                      
+  c/top = 1                                |  c/top = 1                                
+                                           |                                           
+Net: bgr_0.sky130_fd_pr__rf_pnp_05v5_W3p40 |Net: bgr_0.START_UP.n5                     
+  r/(end_a|end_b) = 3                      |  r/(end_a|end_b) = 3                      
+                                           |  c/top = 1                                
+                                           |                                           
+Net: VOUT-.n85                             |Net: VOUT-.n85                             
+  r/(end_a|end_b) = 3                      |  r/(end_a|end_b) = 3                      
+  c/top = 1                                |  c/top = 1                                
+                                           |                                           
+Net: bgr_0.START_UP.n0                     |Net: bgr_0.START_UP.n0                     
+  r/(end_a|end_b) = 3                      |  r/(end_a|end_b) = 3                      
+  c/top = 1                                |  c/top = 1                                
+                                           |                                           
+Net: bgr_0.1st_Vout_1.n19                  |Net: bgr_0.1st_Vout_1.n19                  
+  r/(end_a|end_b) = 3                      |  r/(end_a|end_b) = 3                      
+  c/top = 1                                |  c/top = 1                                
+                                           |                                           
+Net: VOUT-.n91                             |Net: VOUT-.n91                             
+  r/(end_a|end_b) = 3                      |  r/(end_a|end_b) = 3                      
+  c/top = 1                                |  c/top = 1                                
+                                           |                                           
+Net: two_stage_opamp_dummy_magic_0.V_err_a |Net: two_stage_opamp_dummy_magic_0.V_err_a 
+  r/(end_a|end_b) = 3                      |  r/(end_a|end_b) = 3                      
+  c/top = 1                                |  c/top = 1                                
+                                           |                                           
+Net: two_stage_opamp_dummy_magic_0.V_err_a |Net: two_stage_opamp_dummy_magic_0.V_err_a 
+  r/(end_a|end_b) = 3                      |  r/(end_a|end_b) = 3                      
+  c/top = 1                                |  c/top = 1                                
+                                           |                                           
+Net: bgr_0.1st_Vout_2.n0                   |Net: bgr_0.1st_Vout_2.n10                  
+  r/(end_a|end_b) = 3                      |  r/(end_a|end_b) = 3                      
+  c/top = 1                                |  c/top = 1                                
+                                           |                                           
+Net: bgr_0.1st_Vout_2.n6                   |Net: bgr_0.1st_Vout_2.n8                   
+  r/(end_a|end_b) = 3                      |  r/(end_a|end_b) = 3                      
+  c/top = 1                                |  c/top = 1                                
+                                           |                                           
+Net: bgr_0.1st_Vout_2.n11                  |Net: bgr_0.1st_Vout_2.n11                  
+  r/(end_a|end_b) = 3                      |  r/(end_a|end_b) = 3                      
+  c/top = 1                                |  c/top = 1                                
+                                           |                                           
+Net: bgr_0.sky130_fd_pr__rf_pnp_05v5_W3p40 |Net: bgr_0.1st_Vout_2.n9                   
+  r/(end_a|end_b) = 3                      |  r/(end_a|end_b) = 3                      
+                                           |  c/top = 1                                
+                                           |                                           
+Net: two_stage_opamp_dummy_magic_0.cap_res |Net: two_stage_opamp_dummy_magic_0.cap_res 
+  sky130_fd_pr__cap_mim_m3_1/2 = 1         |  sky130_fd_pr__cap_mim_m3_1/2 = 1         
+  r/(end_a|end_b) = 2                      |  r/(end_a|end_b) = 2                      
+  c/top = 1                                |  c/top = 1                                
+                                           |                                           
+Net: bgr_0.1st_Vout_2.n12                  |Net: VIN+                                  
+  r/(end_a|end_b) = 3                      |  r/(end_a|end_b) = 1                      
+  c/top = 1                                |  c/bottom = 2                             
+                                           |  c/top = 1                                
+                                           |                                           
+Net: two_stage_opamp_dummy_magic_0.VD2.n7  |Net: VIN-                                  
+  r/(end_a|end_b) = 3                      |  r/(end_a|end_b) = 1                      
+                                           |  c/top = 2                                
+                                           |  c/bottom = 1                             
+                                           |                                           
+Net: m1_10050_19490#                       |Net: m1_10050_19490#                       
+  c/top = 2                                |  c/top = 3                                
+  $/top = 1                                |  $/top = 1                                
+  c/bottom = 1                             |                                           
+                                           |                                           
+Net: bgr_0.START_UP_NFET1                  |Net: bgr_0.START_UP_NFET1                  
+  sky130_fd_pr__nfet_01v8/2 = 1            |  sky130_fd_pr__nfet_01v8/2 = 1            
+  r/(end_a|end_b) = 1                      |  r/(end_a|end_b) = 1                      
+  c/top = 3                                |  c/top = 4                                
+  c/bottom = 2                             |  c/bottom = 1                             
+                                           |                                           
+Net: two_stage_opamp_dummy_magic_0.VD4     |Net: two_stage_opamp_dummy_magic_0.VD4     
+  r/(end_a|end_b) = 1                      |  r/(end_a|end_b) = 1                      
+  c/top = 6                                |  c/top = 2                                
+                                           |  c/bottom = 4                             
+                                           |                                           
+Net: two_stage_opamp_dummy_magic_0.VD2.n19 |Net: bgr_0.START_UP                        
+  r/(end_a|end_b) = 3                      |  r/(end_a|end_b) = 2                      
+                                           |  c/top = 5                                
+                                           |  c/bottom = 3                             
+                                           |                                           
+Net: bgr_0.V_TOP                           |Net: bgr_0.V_TOP                           
+  r/(end_a|end_b) = 2                      |  r/(end_a|end_b) = 2                      
+  c/top = 7                                |  c/top = 1                                
+  c/bottom = 4                             |  c/bottom = 10                            
+                                           |                                           
+Net: two_stage_opamp_dummy_magic_0.VD2.n8  |Net: VOUT-                                 
+  r/(end_a|end_b) = 3                      |  r/(end_a|end_b) = 2                      
+                                           |  c/bottom = 5                             
+                                           |  c/top = 1                                
+                                           |                                           
+Net: VOUT+                                 |Net: VOUT+                                 
+  r/(end_a|end_b) = 2                      |  r/(end_a|end_b) = 2                      
+  c/top = 2                                |  c/top = 4                                
+  c/bottom = 4                             |  c/bottom = 2                             
+                                           |                                           
+Net: bgr_0.NFET_GATE_10uA                  |Net: bgr_0.NFET_GATE_10uA                  
+  r/(end_a|end_b) = 2                      |  r/(end_a|end_b) = 2                      
+  c/top = 8                                |  c/top = 9                                
+  c/bottom = 2                             |                                           
+                                           |                                           
+Net: bgr_0.1st_Vout_2.n4                   |Net: bgr_0.1st_Vout_2.n4                   
+  r/(end_a|end_b) = 10                     |  r/(end_a|end_b) = 10                     
+  c/top = 1                                |  c/top = 1                                
+                                           |                                           
+Net: bgr_0.PFET_GATE_10uA                  |Net: bgr_0.PFET_GATE_10uA                  
+  r/(end_a|end_b) = 3                      |  r/(end_a|end_b) = 3                      
+  c/top = 8                                |  c/top = 3                                
+  c/bottom = 1                             |  c/bottom = 5                             
+                                           |                                           
+Net: two_stage_opamp_dummy_magic_0.Vb2     |Net: two_stage_opamp_dummy_magic_0.Vb2     
+  r/(end_a|end_b) = 2                      |  r/(end_a|end_b) = 2                      
+  c/bottom = 6                             |  c/bottom = 2                             
+  c/top = 7                                |  c/top = 10                               
+                                           |                                           
+Net: two_stage_opamp_dummy_magic_0.V_err_g |Net: two_stage_opamp_dummy_magic_0.V_err_g 
+  r/(end_a|end_b) = 3                      |  r/(end_a|end_b) = 3                      
+  c/top = 5                                |  c/top = 8                                
+  c/bottom = 7                             |  c/bottom = 3                             
+                                           |                                           
 Net: GNDA                                  |Net: GNDA                                  
-  sky130_fd_pr__nfet_01v8/4 = 49           |  sky130_fd_pr__nfet_01v8/4 = 49           
-  sky130_fd_pr__nfet_01v8/(1|3) = 36       |  sky130_fd_pr__nfet_01v8/(1|3) = 36       
-  sky130_fd_pr__pfet_01v8/(1|3) = 3        |  sky130_fd_pr__pfet_01v8/(1|3) = 3        
-  sky130_fd_pr__res_xhigh_po_0p35/3 = 11   |  sky130_fd_pr__res_xhigh_po_0p35/3 = 11   
-  sky130_fd_pr__nfet_01v8/2 = 17           |  sky130_fd_pr__nfet_01v8/2 = 17           
-  sky130_fd_pr__res_high_po_1p41/3 = 2     |  sky130_fd_pr__res_high_po_1p41/3 = 2     
-  sky130_fd_pr__res_xhigh_po_0p35/(1|2) =  |  sky130_fd_pr__res_xhigh_po_0p35/(1|2) =  
-  sky130_fd_pr__pnp_05v5_W3p40L3p40/2 = 2  |  sky130_fd_pr__pnp_05v5_W3p40L3p40/2 = 2  
-  sky130_fd_pr__pnp_05v5_W3p40L3p40/3 = 2  |  sky130_fd_pr__pnp_05v5_W3p40L3p40/1 = 2  
-  sky130_fd_pr__res_high_po_0p35/3 = 2     |  sky130_fd_pr__res_high_po_0p35/3 = 2     
+  r/(end_a|end_b) = 39                     |  r/(end_a|end_b) = 39                     
+  c/bottom = 3149                          |  c/bottom = 3229                          
+  $/bottom = 7                             |  $/bottom = 5                             
+                                           |                                           
+Net: VDDA                                  |Net: VDDA                                  
+  r/(end_a|end_b) = 3                      |  r/(end_a|end_b) = 3                      
+  c/bottom = 13                            |  c/bottom = 7                             
+  c/top = 3                                |  c/top = 8                                
+                                           |                                           
+Net: two_stage_opamp_dummy_magic_0.cap_res |(no matching net)                          
+  r/(end_a|end_b) = 2                      |                                           
+  c/top = 8                                |                                           
+                                           |                                           
+Net: two_stage_opamp_dummy_magic_0.V_err_a |(no matching net)                          
+  r/(end_a|end_b) = 2                      |                                           
+  c/top = 6                                |                                           
+  c/bottom = 2                             |                                           
+                                           |                                           
+Net: bgr_0.1st_Vout_2.n5                   |(no matching net)                          
+  r/(end_a|end_b) = 3                      |                                           
+  c/top = 1                                |                                           
+                                           |                                           
+Net: li_9020_5340#                         |(no matching net)                          
+  c/top = 1                                |                                           
+  c/bottom = 1                             |                                           
+  $/top = 1                                |                                           
+                                           |                                           
+Net: two_stage_opamp_dummy_magic_0.V_tail_ |(no matching net)                          
+  r/(end_a|end_b) = 2                      |                                           
+  c/top = 5                                |                                           
+  c/bottom = 6                             |                                           
+                                           |                                           
+Net: bgr_0.1st_Vout_2.n13                  |(no matching net)                          
+  r/(end_a|end_b) = 3                      |                                           
+  c/top = 1                                |                                           
+                                           |                                           
+Net: bgr_0.1st_Vout_2.n1                   |(no matching net)                          
+  r/(end_a|end_b) = 6                      |                                           
+  c/top = 1                                |                                           
+                                           |                                           
+Net: bgr_0.1st_Vout_1.n20                  |(no matching net)                          
+  r/(end_a|end_b) = 3                      |                                           
+  c/top = 1                                |                                           
+                                           |                                           
+Net: bgr_0.sky130_fd_pr__rf_pnp_05v5_W3p40 |(no matching net)                          
+  r/(end_a|end_b) = 1                      |                                           
 ---------------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------------
-Net: Vbe2                                  |Net: /bgr_0/sky130_fd_pr__rf_pnp_05v5_W3p4 
-  sky130_fd_pr__pnp_05v5_W3p40L3p40/1 = 1  |  sky130_fd_pr__pnp_05v5_W3p40L3p40/3 = 1  
-  sky130_fd_pr__res_xhigh_po_0p35/(1|2) =  |  sky130_fd_pr__res_xhigh_po_0p35/(1|2) =  
+Net: two_stage_opamp_dummy_magic_0.VD1.n5  |Net: two_stage_opamp_dummy_magic_0.VD2.n7  
+  r/(end_a|end_b) = 3                      |  r/(end_a|end_b) = 3                      
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: two_stage_opamp_dummy_magic_0.VD1.n6  |Net: two_stage_opamp_dummy_magic_0.VD1.n3  
+  r/(end_a|end_b) = 3                      |  r/(end_a|end_b) = 3                      
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: bgr_0.START_UP.n5                     |Net: bgr_0.1st_Vout_1.n20                  
+  r/(end_a|end_b) = 3                      |  r/(end_a|end_b) = 3                      
+  c/top = 1                                |  c/top = 1                                
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: bgr_0.START_UP.n4                     |Net: bgr_0.START_UP.n4                     
+  r/(end_a|end_b) = 3                      |  r/(end_a|end_b) = 3                      
+  c/top = 1                                |  c/top = 1                                
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: bgr_0.START_UP.n3                     |Net: bgr_0.START_UP.n3                     
+  r/(end_a|end_b) = 3                      |  r/(end_a|end_b) = 3                      
+  c/top = 1                                |  c/top = 1                                
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: bgr_0.START_UP                        |Net: bgr_0.1st_Vout_1                      
+  r/(end_a|end_b) = 2                      |  r/(end_a|end_b) = 2                      
+  c/bottom = 5                             |  c/bottom = 5                             
+  c/top = 3                                |  c/top = 3                                
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: bgr_0.1st_Vout_1                      |Net: two_stage_opamp_dummy_magic_0.V_err_a 
+  r/(end_a|end_b) = 2                      |  r/(end_a|end_b) = 2                      
+  c/bottom = 6                             |  c/bottom = 6                             
+  c/top = 2                                |  c/top = 2                                
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: m2_10730_16580#                       |Net: m2_10730_16580#                       
+  c/top = 2                                |  c/top = 2                                
+  $/top = 1                                |  $/top = 1                                
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: bgr_0.sky130_fd_pr__rf_pnp_05v5_W3p40 |Net: bgr_0.sky130_fd_pr__rf_pnp_05v5_W3p40 
+  r/(end_a|end_b) = 16                     |  r/(end_a|end_b) = 16                     
+  c/top = 5                                |  c/top = 2                                
+                                           |  c/bottom = 3                             
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: VOUT-                                 |Net: two_stage_opamp_dummy_magic_0.cap_res 
+  r/(end_a|end_b) = 2                      |  r/(end_a|end_b) = 2                      
+  c/bottom = 6                             |  c/bottom = 2                             
+  c/top = 1                                |  c/top = 5                                
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: VIN+                                  |Net: bgr_0.1st_Vout_2.n0                   
+  r/(end_a|end_b) = 1                      |  r/(end_a|end_b) = 5                      
+  c/bottom = 3                             |  c/top = 1                                
+  c/top = 2                                |                                           
+                                           |                                           
+Net: two_stage_opamp_dummy_magic_0.VD2     |Net: bgr_0.1st_Vout_2.n1                   
+  r/(end_a|end_b) = 2                      |  r/(end_a|end_b) = 5                      
+  c/top = 4                                |  c/top = 1                                
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: bgr_0.1st_Vout_2.n3                   |Net: bgr_0.1st_Vout_2.n3                   
+  r/(end_a|end_b) = 4                      |  r/(end_a|end_b) = 4                      
+  c/top = 1                                |  c/top = 1                                
+                                           |                                           
+Net: VIN-                                  |Net: two_stage_opamp_dummy_magic_0.VD1     
+  r/(end_a|end_b) = 1                      |  r/(end_a|end_b) = 2                      
+  c/bottom = 3                             |  c/top = 3                                
+  c/top = 1                                |                                           
 ---------------------------------------------------------------------------------------
 DEVICE mismatches: Class fragments follow (with node fanout counts):
-Circuit 1: bgr_opamp_dummy.spice           |Circuit 2: bgr_opamp_dummy_magic.spice     
+Circuit 1: bgr_opamp_dummy_magic.spice     |Circuit 2: bgr_opamp_dummy_magic_9.spice   
 
 ---------------------------------------------------------------------------------------
-Instance: sky130_fd_pr__pnp_05v5_W3p40L3p4 |Instance: bgr_0//sky130_fd_pr__rf_pnp_05v5 
-  1 = 2                                    |  1 = 128                                  
-  2 = 128                                  |  2 = 128                                  
-  3 = 128                                  |  3 = 5                                    
+Instance: r:6268                           |Instance: r:6031                           
+  (end_a,end_b) = (10,3)                   |  (end_a,end_b) = (8,4)                    
                                            |                                           
-Instance: sky130_fd_pr__pnp_05v5_W3p40L3p4 |Instance: bgr_0//sky130_fd_pr__rf_pnp_05v5 
-  1 = 5                                    |  1 = 128                                  
-  2 = 128                                  |  2 = 128                                  
-  3 = 128                                  |  3 = 2                                    
+Instance: r:6269                           |Instance: r:6190                           
+  (end_a,end_b) = (10,4)                   |  (end_a,end_b) = (8,4)                    
+                                           |                                           
+Instance: r:6646                           |Instance: r:6646                           
+  (end_a,end_b) = (3,3)                    |  (end_a,end_b) = (3,3)                    
+                                           |                                           
+Instance: r:6677                           |Instance: r:6682                           
+  (end_a,end_b) = (3,3)                    |  (end_a,end_b) = (3,3)                    
+                                           |                                           
+Instance: r:6678                           |Instance: r:6678                           
+  (end_a,end_b) = (3,3)                    |  (end_a,end_b) = (3,3)                    
+                                           |                                           
+Instance: r:6680                           |Instance: r:7722                           
+  (end_a,end_b) = (3,3)                    |  (end_a,end_b) = (3,3)                    
+                                           |                                           
+Instance: r:7179                           |Instance: r:7686                           
+  (end_a,end_b) = (10,4)                   |  (end_a,end_b) = (3,3)                    
+                                           |                                           
+Instance: r:7190                           |Instance: r:7725                           
+  (end_a,end_b) = (10,4)                   |  (end_a,end_b) = (3,3)                    
+                                           |                                           
+Instance: r:7383                           |Instance: r:8037                           
+  (end_a,end_b) = (4,4)                    |  (end_a,end_b) = (4,3)                    
+                                           |                                           
+Instance: r:7428                           |Instance: r:8276                           
+  (end_a,end_b) = (4,4)                    |  (end_a,end_b) = (4,3)                    
+                                           |                                           
+Instance: r:7439                           |Instance: r:8277                           
+  (end_a,end_b) = (4,3)                    |  (end_a,end_b) = (4,3)                    
+                                           |                                           
+Instance: r:7440                           |Instance: r:7440                           
+  (end_a,end_b) = (4,3)                    |  (end_a,end_b) = (6,3)                    
+                                           |                                           
+Instance: r:7441                           |Instance: r:7441                           
+  (end_a,end_b) = (4,4)                    |  (end_a,end_b) = (6,3)                    
+                                           |                                           
+Instance: r:7442                           |Instance: r:7442                           
+  (end_a,end_b) = (7,4)                    |  (end_a,end_b) = (6,4)                    
+                                           |                                           
+Instance: r:7451                           |Instance: r:8078                           
+  (end_a,end_b) = (7,4)                    |  (end_a,end_b) = (4,3)                    
+                                           |                                           
+Instance: r:7452                           |Instance: r:7452                           
+  (end_a,end_b) = (7,4)                    |  (end_a,end_b) = (6,4)                    
+                                           |                                           
+Instance: r:7453                           |Instance: r:7453                           
+  (end_a,end_b) = (11,4)                   |  (end_a,end_b) = (6,4)                    
+                                           |                                           
+Instance: r:7486                           |Instance: r:8284                           
+  (end_a,end_b) = (7,4)                    |  (end_a,end_b) = (4,4)                    
+                                           |                                           
+Instance: r:7488                           |Instance: r:8268                           
+  (end_a,end_b) = (7,4)                    |  (end_a,end_b) = (4,3)                    
+                                           |                                           
+Instance: r:7689                           |Instance: r:8269                           
+  (end_a,end_b) = (3,3)                    |  (end_a,end_b) = (4,3)                    
+                                           |                                           
+Instance: r:7706                           |Instance: r:8272                           
+  (end_a,end_b) = (3,2)                    |  (end_a,end_b) = (4,3)                    
+                                           |                                           
+Instance: r:7707                           |Instance: r:8271                           
+  (end_a,end_b) = (3,2)                    |  (end_a,end_b) = (4,3)                    
+                                           |                                           
+Instance: r:7719                           |Instance: r:7719                           
+  (end_a,end_b) = (3,3)                    |  (end_a,end_b) = (3,3)                    
+                                           |                                           
+Instance: r:7721                           |Instance: r:8273                           
+  (end_a,end_b) = (3,3)                    |  (end_a,end_b) = (4,3)                    
+                                           |                                           
+Instance: r:7723                           |Instance: r:7723                           
+  (end_a,end_b) = (3,3)                    |  (end_a,end_b) = (3,3)                    
+                                           |                                           
+Instance: r:7726                           |Instance: r:8476                           
+  (end_a,end_b) = (3,3)                    |  (end_a,end_b) = (4,4)                    
+                                           |                                           
+Instance: r:8038                           |Instance: r:8038                           
+  (end_a,end_b) = (3,2)                    |  (end_a,end_b) = (4,4)                    
+                                           |                                           
+Instance: r:8039                           |Instance: r:8039                           
+  (end_a,end_b) = (3,3)                    |  (end_a,end_b) = (4,4)                    
+                                           |                                           
+Instance: r:8040                           |Instance: r:8040                           
+  (end_a,end_b) = (3,3)                    |  (end_a,end_b) = (4,4)                    
+                                           |                                           
+Instance: r:8041                           |Instance: r:8041                           
+  (end_a,end_b) = (3,3)                    |  (end_a,end_b) = (4,4)                    
+                                           |                                           
+Instance: r:8042                           |Instance: r:8042                           
+  (end_a,end_b) = (3,3)                    |  (end_a,end_b) = (4,4)                    
+                                           |                                           
+Instance: r:8043                           |Instance: r:8043                           
+  (end_a,end_b) = (3,3)                    |  (end_a,end_b) = (4,4)                    
+                                           |                                           
+Instance: r:8044                           |Instance: r:8044                           
+  (end_a,end_b) = (3,3)                    |  (end_a,end_b) = (4,4)                    
+                                           |                                           
+Instance: r:8045                           |Instance: r:8045                           
+  (end_a,end_b) = (3,3)                    |  (end_a,end_b) = (4,4)                    
+                                           |                                           
+Instance: r:8046                           |Instance: r:8046                           
+  (end_a,end_b) = (3,3)                    |  (end_a,end_b) = (4,4)                    
+                                           |                                           
+Instance: r:8047                           |Instance: r:8047                           
+  (end_a,end_b) = (3,3)                    |  (end_a,end_b) = (4,4)                    
+                                           |                                           
+Instance: r:8048                           |Instance: r:8048                           
+  (end_a,end_b) = (3,3)                    |  (end_a,end_b) = (4,4)                    
+                                           |                                           
+Instance: r:8049                           |Instance: r:8049                           
+  (end_a,end_b) = (3,3)                    |  (end_a,end_b) = (4,4)                    
+                                           |                                           
+Instance: r:8050                           |Instance: r:8050                           
+  (end_a,end_b) = (3,3)                    |  (end_a,end_b) = (4,4)                    
+                                           |                                           
+Instance: r:8051                           |Instance: r:8051                           
+  (end_a,end_b) = (3,3)                    |  (end_a,end_b) = (4,4)                    
+                                           |                                           
+Instance: r:8052                           |Instance: r:8052                           
+  (end_a,end_b) = (3,3)                    |  (end_a,end_b) = (4,4)                    
+                                           |                                           
+Instance: r:8053                           |Instance: r:8053                           
+  (end_a,end_b) = (3,3)                    |  (end_a,end_b) = (4,4)                    
+                                           |                                           
+Instance: r:8054                           |Instance: r:8054                           
+  (end_a,end_b) = (3,3)                    |  (end_a,end_b) = (4,4)                    
+                                           |                                           
+Instance: r:8055                           |Instance: r:8055                           
+  (end_a,end_b) = (3,3)                    |  (end_a,end_b) = (4,4)                    
+                                           |                                           
+Instance: r:8056                           |Instance: r:8056                           
+  (end_a,end_b) = (3,3)                    |  (end_a,end_b) = (4,4)                    
+                                           |                                           
+Instance: r:8057                           |Instance: r:8057                           
+  (end_a,end_b) = (3,3)                    |  (end_a,end_b) = (4,4)                    
+                                           |                                           
+Instance: r:8058                           |Instance: r:8279                           
+  (end_a,end_b) = (3,3)                    |  (end_a,end_b) = (4,4)                    
+                                           |                                           
+Instance: r:8064                           |Instance: r:8479                           
+  (end_a,end_b) = (3,2)                    |  (end_a,end_b) = (10,4)                   
+                                           |                                           
+Instance: r:8065                           |Instance: r:8480                           
+  (end_a,end_b) = (3,2)                    |  (end_a,end_b) = (10,4)                   
+                                           |                                           
+Instance: r:8079                           |Instance: r:8079                           
+  (end_a,end_b) = (3,2)                    |  (end_a,end_b) = (4,3)                    
+                                           |                                           
+Instance: r:8080                           |Instance: r:8080                           
+  (end_a,end_b) = (3,2)                    |  (end_a,end_b) = (4,3)                    
+                                           |                                           
+Instance: r:8081                           |Instance: r:8081                           
+  (end_a,end_b) = (3,2)                    |  (end_a,end_b) = (4,3)                    
+                                           |                                           
+Instance: r:8082                           |Instance: r:8082                           
+  (end_a,end_b) = (3,2)                    |  (end_a,end_b) = (4,3)                    
+                                           |                                           
+Instance: r:8083                           |Instance: r:8083                           
+  (end_a,end_b) = (3,2)                    |  (end_a,end_b) = (4,3)                    
+                                           |                                           
+Instance: r:8084                           |Instance: r:8084                           
+  (end_a,end_b) = (3,2)                    |  (end_a,end_b) = (4,3)                    
+                                           |                                           
+Instance: r:8085                           |Instance: r:8085                           
+  (end_a,end_b) = (3,2)                    |  (end_a,end_b) = (4,3)                    
+                                           |                                           
+Instance: r:8086                           |Instance: r:8086                           
+  (end_a,end_b) = (3,2)                    |  (end_a,end_b) = (4,3)                    
+                                           |                                           
+Instance: r:8087                           |Instance: r:8087                           
+  (end_a,end_b) = (3,2)                    |  (end_a,end_b) = (4,3)                    
+                                           |                                           
+Instance: r:8088                           |Instance: r:8088                           
+  (end_a,end_b) = (3,2)                    |  (end_a,end_b) = (4,3)                    
+                                           |                                           
+Instance: r:8089                           |Instance: r:8089                           
+  (end_a,end_b) = (3,2)                    |  (end_a,end_b) = (4,3)                    
+                                           |                                           
+Instance: r:8090                           |Instance: r:8090                           
+  (end_a,end_b) = (3,2)                    |  (end_a,end_b) = (4,3)                    
+                                           |                                           
+Instance: r:8091                           |Instance: r:8091                           
+  (end_a,end_b) = (3,2)                    |  (end_a,end_b) = (4,3)                    
+                                           |                                           
+Instance: r:8092                           |Instance: r:8092                           
+  (end_a,end_b) = (3,2)                    |  (end_a,end_b) = (4,3)                    
+                                           |                                           
+Instance: r:8093                           |Instance: r:8093                           
+  (end_a,end_b) = (3,2)                    |  (end_a,end_b) = (4,3)                    
+                                           |                                           
+Instance: r:8094                           |Instance: r:8094                           
+  (end_a,end_b) = (3,2)                    |  (end_a,end_b) = (4,3)                    
+                                           |                                           
+Instance: r:8095                           |Instance: r:8095                           
+  (end_a,end_b) = (3,2)                    |  (end_a,end_b) = (4,3)                    
+                                           |                                           
+Instance: r:8096                           |Instance: r:8096                           
+  (end_a,end_b) = (3,2)                    |  (end_a,end_b) = (4,3)                    
+                                           |                                           
+Instance: r:8097                           |Instance: r:8097                           
+  (end_a,end_b) = (3,2)                    |  (end_a,end_b) = (4,3)                    
+                                           |                                           
+Instance: r:8098                           |Instance: r:8098                           
+  (end_a,end_b) = (3,2)                    |  (end_a,end_b) = (4,4)                    
+                                           |                                           
+Instance: r:8099                           |Instance: r:8099                           
+  (end_a,end_b) = (3,3)                    |  (end_a,end_b) = (4,4)                    
+                                           |                                           
+Instance: r:8100                           |Instance: r:8100                           
+  (end_a,end_b) = (3,3)                    |  (end_a,end_b) = (4,4)                    
+                                           |                                           
+Instance: r:8101                           |Instance: r:8101                           
+  (end_a,end_b) = (3,3)                    |  (end_a,end_b) = (4,4)                    
+                                           |                                           
+Instance: r:8102                           |Instance: r:8102                           
+  (end_a,end_b) = (3,3)                    |  (end_a,end_b) = (4,4)                    
+                                           |                                           
+Instance: r:8103                           |Instance: r:8103                           
+  (end_a,end_b) = (3,3)                    |  (end_a,end_b) = (4,4)                    
+                                           |                                           
+Instance: r:8104                           |Instance: r:8104                           
+  (end_a,end_b) = (3,3)                    |  (end_a,end_b) = (4,4)                    
+                                           |                                           
+Instance: r:8105                           |Instance: r:8105                           
+  (end_a,end_b) = (3,3)                    |  (end_a,end_b) = (4,4)                    
+                                           |                                           
+Instance: r:8106                           |Instance: r:8106                           
+  (end_a,end_b) = (3,3)                    |  (end_a,end_b) = (4,4)                    
+                                           |                                           
+Instance: r:8107                           |Instance: r:8107                           
+  (end_a,end_b) = (3,3)                    |  (end_a,end_b) = (4,4)                    
+                                           |                                           
+Instance: r:8108                           |Instance: r:8108                           
+  (end_a,end_b) = (3,3)                    |  (end_a,end_b) = (4,4)                    
+                                           |                                           
+Instance: r:8109                           |Instance: r:8109                           
+  (end_a,end_b) = (3,3)                    |  (end_a,end_b) = (4,4)                    
+                                           |                                           
+Instance: r:8110                           |Instance: r:8110                           
+  (end_a,end_b) = (3,3)                    |  (end_a,end_b) = (4,4)                    
+                                           |                                           
+Instance: r:8111                           |Instance: r:8111                           
+  (end_a,end_b) = (3,3)                    |  (end_a,end_b) = (4,4)                    
+                                           |                                           
+Instance: r:8112                           |Instance: r:8112                           
+  (end_a,end_b) = (3,3)                    |  (end_a,end_b) = (4,4)                    
+                                           |                                           
+Instance: r:8113                           |Instance: r:8113                           
+  (end_a,end_b) = (3,3)                    |  (end_a,end_b) = (4,4)                    
+                                           |                                           
+Instance: r:8114                           |Instance: r:8114                           
+  (end_a,end_b) = (3,3)                    |  (end_a,end_b) = (4,4)                    
+                                           |                                           
+Instance: r:8115                           |Instance: r:8115                           
+  (end_a,end_b) = (3,3)                    |  (end_a,end_b) = (4,4)                    
+                                           |                                           
+Instance: r:8116                           |Instance: r:8620                           
+  (end_a,end_b) = (3,3)                    |  (end_a,end_b) = (4,3)                    
+                                           |                                           
+Instance: r:8270                           |Instance: r:8270                           
+  (end_a,end_b) = (3,2)                    |  (end_a,end_b) = (4,3)                    
+                                           |                                           
+Instance: r:8274                           |Instance: r:8274                           
+  (end_a,end_b) = (3,2)                    |  (end_a,end_b) = (4,3)                    
+                                           |                                           
+Instance: r:8275                           |Instance: r:8275                           
+  (end_a,end_b) = (3,2)                    |  (end_a,end_b) = (4,3)                    
+                                           |                                           
+Instance: r:8280                           |Instance: r:8280                           
+  (end_a,end_b) = (3,3)                    |  (end_a,end_b) = (4,4)                    
+                                           |                                           
+Instance: r:8281                           |Instance: r:8281                           
+  (end_a,end_b) = (3,3)                    |  (end_a,end_b) = (4,4)                    
+                                           |                                           
+Instance: r:8282                           |Instance: r:8282                           
+  (end_a,end_b) = (3,3)                    |  (end_a,end_b) = (4,4)                    
+                                           |                                           
+Instance: r:8285                           |Instance: r:8285                           
+  (end_a,end_b) = (3,3)                    |  (end_a,end_b) = (4,4)                    
+                                           |                                           
+Instance: r:8286                           |Instance: r:8286                           
+  (end_a,end_b) = (3,3)                    |  (end_a,end_b) = (4,4)                    
+                                           |                                           
+Instance: r:8287                           |Instance: r:8287                           
+  (end_a,end_b) = (3,3)                    |  (end_a,end_b) = (4,4)                    
+                                           |                                           
+Instance: r:8288                           |Instance: r:8288                           
+  (end_a,end_b) = (3,3)                    |  (end_a,end_b) = (4,4)                    
+                                           |                                           
+Instance: r:8570                           |Instance: r:8485                           
+  (end_a,end_b) = (3,2)                    |  (end_a,end_b) = (4,4)                    
+                                           |                                           
+Instance: r:8574                           |Instance: r:7384                           
+  (end_a,end_b) = (3,2)                    |  (end_a,end_b) = (4,4)                    
+                                           |                                           
+Instance: r:8575                           |Instance: r:7429                           
+  (end_a,end_b) = (3,2)                    |  (end_a,end_b) = (4,4)                    
+                                           |                                           
+Instance: r:8580                           |Instance: r:8278                           
+  (end_a,end_b) = (3,3)                    |  (end_a,end_b) = (4,3)                    
+                                           |                                           
+Instance: r:8581                           |Instance: r:8061                           
+  (end_a,end_b) = (3,3)                    |  (end_a,end_b) = (4,2)                    
+                                           |                                           
+Instance: r:8582                           |Instance: r:8062                           
+  (end_a,end_b) = (3,3)                    |  (end_a,end_b) = (4,2)                    
+                                           |                                           
+Instance: r:8585                           |Instance: r:7443                           
+  (end_a,end_b) = (3,3)                    |  (end_a,end_b) = (6,4)                    
+                                           |                                           
+Instance: r:8632                           |Instance: r:8616                           
+  (end_a,end_b) = (3,3)                    |  (end_a,end_b) = (3,3)                    
+                                           |                                           
+Instance: r:8652                           |Instance: r:8283                           
+  (end_a,end_b) = (3,3)                    |  (end_a,end_b) = (4,4)                    
+                                           |                                           
+Instance: r:8679                           |Instance: r:7454                           
+  (end_a,end_b) = (3,3)                    |  (end_a,end_b) = (11,6)                   
+                                           |                                           
+Instance: r:8680                           |Instance: r:7465                           
+  (end_a,end_b) = (3,3)                    |  (end_a,end_b) = (6,5)                    
+                                           |                                           
+Instance: r:8687                           |Instance: r:7466                           
+  (end_a,end_b) = (3,1)                    |  (end_a,end_b) = (6,6)                    
+                                           |                                           
+Instance: r:8759                           |Instance: c:437                            
+  (end_a,end_b) = (3,3)                    |  top = 4                                  
+                                           |  bottom = 3273                            
+                                           |                                           
+Instance: r:8793                           |Instance: c:441                            
+  (end_a,end_b) = (3,3)                    |  top = 4                                  
+                                           |  bottom = 3273                            
+                                           |                                           
+Instance: r:8886                           |Instance: c:445                            
+  (end_a,end_b) = (3,3)                    |  top = 3                                  
+                                           |  bottom = 3273                            
+                                           |                                           
+Instance: r:6648                           |Instance: c:442                            
+  (end_a,end_b) = (3,3)                    |  top = 4                                  
+                                           |  bottom = 3273                            
+                                           |                                           
+Instance: r:8477                           |Instance: c:433                            
+  (end_a,end_b) = (4,4)                    |  top = 4                                  
+                                           |  bottom = 3273                            
+                                           |                                           
+Instance: r:8486                           |Instance: c:439                            
+  (end_a,end_b) = (4,4)                    |  top = 4                                  
+                                           |  bottom = 3273                            
+                                           |                                           
+Instance: r:7718                           |Instance: c:440                            
+  (end_a,end_b) = (6,3)                    |  top = 4                                  
+                                           |  bottom = 3273                            
+                                           |                                           
+Instance: r:7724                           |Instance: c:456                            
+  (end_a,end_b) = (6,3)                    |  top = 4                                  
+                                           |  bottom = 3273                            
+                                           |                                           
+Instance: r:8289                           |Instance: c:447                            
+  (end_a,end_b) = (6,3)                    |  top = 4                                  
+                                           |  bottom = 3273                            
+                                           |                                           
+Instance: c:0                              |Instance: c:0                              
+  top = 10                                 |  top = 11                                 
+  bottom = 10                              |  bottom = 10                              
+                                           |                                           
+Instance: c:30                             |Instance: c:30                             
+  top = 12                                 |  top = 9                                  
+  bottom = 10                              |  bottom = 18                              
+                                           |                                           
+Instance: c:51                             |Instance: c:51                             
+  top = 13                                 |  top = 11                                 
+  bottom = 10                              |  bottom = 18                              
+                                           |                                           
+Instance: c:66                             |Instance: c:66                             
+  top = 7                                  |  top = 18                                 
+  bottom = 10                              |  bottom = 3273                            
+                                           |                                           
+Instance: c:68                             |Instance: c:434                            
+  top = 15                                 |  top = 4                                  
+  bottom = 10                              |  bottom = 3273                            
+                                           |                                           
+Instance: c:1                              |Instance: c:1                              
+  top = 15                                 |  top = 14                                 
+  bottom = 19                              |  bottom = 10                              
+                                           |                                           
+Instance: c:6                              |Instance: c:6                              
+  top = 7                                  |  top = 11                                 
+  bottom = 8                               |  bottom = 13                              
+                                           |                                           
+Instance: c:10                             |Instance: c:10                             
+  top = 12                                 |  top = 10                                 
+  bottom = 13                              |  bottom = 18                              
+                                           |                                           
+Instance: c:11                             |Instance: c:11                             
+  top = 12                                 |  top = 14                                 
+  bottom = 13                              |  bottom = 10                              
+                                           |                                           
+Instance: c:13                             |Instance: c:13                             
+  top = 10                                 |  top = 11                                 
+  bottom = 15                              |  bottom = 14                              
+                                           |                                           
+Instance: c:15                             |Instance: c:15                             
+  top = 15                                 |  top = 18                                 
+  bottom = 13                              |  bottom = 8                               
+                                           |                                           
+Instance: c:16                             |Instance: c:16                             
+  top = 13                                 |  top = 14                                 
+  bottom = 15                              |  bottom = 21                              
+                                           |                                           
+Instance: c:17                             |Instance: c:17                             
+  top = 4                                  |  top = 21                                 
+  bottom = 15                              |  bottom = 13                              
+                                           |                                           
+Instance: c:20                             |Instance: c:20                             
+  top = 12                                 |  top = 10                                 
+  bottom = 2                               |  bottom = 10                              
+                                           |                                           
+Instance: c:21                             |Instance: c:21                             
+  top = 10                                 |  top = 7                                  
+  bottom = 13                              |  bottom = 10                              
+                                           |                                           
+Instance: c:23                             |Instance: c:23                             
+  top = 7                                  |  top = 10                                 
+  bottom = 15                              |  bottom = 13                              
+                                           |                                           
+Instance: c:24                             |Instance: c:24                             
+  top = 12                                 |  top = 14                                 
+  bottom = 12                              |  bottom = 9                               
+                                           |                                           
+Instance: c:25                             |Instance: c:25                             
+  top = 10                                 |  top = 18                                 
+  bottom = 19                              |  bottom = 10                              
+                                           |                                           
+Instance: c:26                             |Instance: c:26                             
+  top = 12                                 |  top = 7                                  
+  bottom = 15                              |  bottom = 18                              
+                                           |                                           
+Instance: c:28                             |Instance: c:28                             
+  top = 13                                 |  top = 18                                 
+  bottom = 19                              |  bottom = 13                              
+                                           |                                           
+Instance: c:33                             |Instance: c:33                             
+  top = 7                                  |  top = 3                                  
+  bottom = 19                              |  bottom = 10                              
+                                           |                                           
+Instance: c:34                             |Instance: c:34                             
+  top = 15                                 |  top = 4                                  
+  bottom = 19                              |  bottom = 21                              
+                                           |                                           
+Instance: c:35                             |Instance: c:35                             
+  top = 10                                 |  top = 4                                  
+  bottom = 8                               |  bottom = 14                              
+                                           |                                           
+Instance: c:36                             |Instance: c:36                             
+  top = 10                                 |  top = 14                                 
+  bottom = 13                              |  bottom = 7                               
+                                           |                                           
+Instance: c:37                             |Instance: c:37                             
+  top = 10                                 |  top = 11                                 
+  bottom = 19                              |  bottom = 11                              
+                                           |                                           
+Instance: c:39                             |Instance: c:39                             
+  top = 10                                 |  top = 10                                 
+  bottom = 12                              |  bottom = 13                              
+                                           |                                           
+Instance: c:41                             |Instance: c:41                             
+  top = 13                                 |  top = 14                                 
+  bottom = 12                              |  bottom = 8                               
+                                           |                                           
+Instance: c:42                             |Instance: c:443                            
+  top = 12                                 |  top = 4                                  
+  bottom = 13                              |  bottom = 3273                            
+                                           |                                           
+Instance: c:43                             |Instance: c:43                             
+  top = 10                                 |  top = 18                                 
+  bottom = 15                              |  bottom = 7                               
+                                           |                                           
+Instance: c:46                             |Instance: c:46                             
+  top = 13                                 |  top = 18                                 
+  bottom = 15                              |  bottom = 11                              
+                                           |                                           
+Instance: c:48                             |Instance: c:48                             
+  top = 15                                 |  top = 11                                 
+  bottom = 13                              |  bottom = 10                              
+                                           |                                           
+Instance: c:50                             |Instance: c:50                             
+  top = 4                                  |  top = 14                                 
+  bottom = 15                              |  bottom = 13                              
+                                           |                                           
+Instance: c:53                             |Instance: c:53                             
+  top = 10                                 |  top = 14                                 
+  bottom = 8                               |  bottom = 9                               
+                                           |                                           
+Instance: c:55                             |Instance: c:55                             
+  top = 2                                  |  top = 8                                  
+  bottom = 2                               |  bottom = 7                               
+                                           |                                           
+Instance: c:57                             |Instance: c:57                             
+  top = 7                                  |  top = 5                                  
+  bottom = 15                              |  bottom = 4                               
+                                           |                                           
+Instance: c:58                             |Instance: c:58                             
+  top = 19                                 |  top = 2                                  
+  bottom = 8                               |  bottom = 2                               
+                                           |                                           
+Instance: c:59                             |Instance: c:59                             
+  top = 12                                 |  top = 5                                  
+  bottom = 7                               |  bottom = 4                               
+                                           |                                           
+Instance: c:60                             |Instance: c:60                             
+  top = 12                                 |  top = 4                                  
+  bottom = 7                               |  bottom = 14                              
+                                           |                                           
+Instance: c:61                             |Instance: c:61                             
+  top = 12                                 |  top = 7                                  
+  bottom = 15                              |  bottom = 10                              
+                                           |                                           
+Instance: c:62                             |Instance: c:62                             
+  top = 13                                 |  top = 4                                  
+  bottom = 19                              |  bottom = 3273                            
+                                           |                                           
+Instance: c:63                             |Instance: c:63                             
+  top = 15                                 |  top = 4                                  
+  bottom = 15                              |  bottom = 3273                            
+                                           |                                           
+Instance: c:65                             |Instance: c:65                             
+  top = 7                                  |  top = 8                                  
+  bottom = 10                              |  bottom = 3273                            
+                                           |                                           
+Instance: c:69                             |Instance: c:84                             
+  top = 12                                 |  top = 7                                  
+  bottom = 10                              |  bottom = 3273                            
+                                           |                                           
+Instance: c:70                             |Instance: c:120                            
+  top = 10                                 |  top = 4                                  
+  bottom = 15                              |  bottom = 3273                            
+                                           |                                           
+Instance: c:71                             |Instance: c:131                            
+  top = 7                                  |  top = 4                                  
+  bottom = 19                              |  bottom = 3273                            
+                                           |                                           
+Instance: c:72                             |Instance: c:72                             
+  top = 12                                 |  top = 5                                  
+  bottom = 19                              |  bottom = 3273                            
+                                           |                                           
+Instance: c:73                             |Instance: c:73                             
+  top = 12                                 |  top = 9                                  
+  bottom = 19                              |  bottom = 3273                            
+                                           |                                           
+Instance: c:77                             |Instance: c:77                             
+  top = 8                                  |  top = 14                                 
+  bottom = 3195                            |  bottom = 3273                            
+                                           |                                           
+Instance: c:78                             |Instance: c:78                             
+  top = 19                                 |  top = 14                                 
+  bottom = 3195                            |  bottom = 3273                            
+                                           |                                           
+Instance: c:87                             |Instance: c:276                            
+  top = 10                                 |  top = 3                                  
+  bottom = 3195                            |  bottom = 3273                            
+                                           |                                           
+Instance: c:88                             |Instance: c:277                            
+  top = 13                                 |  top = 4                                  
+  bottom = 3195                            |  bottom = 3273                            
+                                           |                                           
+Instance: c:91                             |Instance: c:278                            
+  top = 7                                  |  top = 4                                  
+  bottom = 3195                            |  bottom = 3273                            
+                                           |                                           
+Instance: c:92                             |Instance: c:279                            
+  top = 15                                 |  top = 3                                  
+  bottom = 3195                            |  bottom = 3273                            
+                                           |                                           
+Instance: c:93                             |Instance: c:280                            
+  top = 15                                 |  top = 4                                  
+  bottom = 3195                            |  bottom = 3273                            
+                                           |                                           
+Instance: c:94                             |Instance: c:281                            
+  top = 12                                 |  top = 3                                  
+  bottom = 3195                            |  bottom = 3273                            
+                                           |                                           
+Instance: c:95                             |Instance: c:282                            
+  top = 13                                 |  top = 4                                  
+  bottom = 3195                            |  bottom = 3273                            
+                                           |                                           
+Instance: c:97                             |Instance: c:283                            
+  top = 10                                 |  top = 3                                  
+  bottom = 3195                            |  bottom = 3273                            
+                                           |                                           
+Instance: c:98                             |Instance: c:284                            
+  top = 12                                 |  top = 3                                  
+  bottom = 3195                            |  bottom = 3273                            
+                                           |                                           
+Instance: c:99                             |Instance: c:285                            
+  top = 7                                  |  top = 4                                  
+  bottom = 3195                            |  bottom = 3273                            
+                                           |                                           
+Instance: c:135                            |Instance: c:286                            
+  top = 4                                  |  top = 4                                  
+  bottom = 3195                            |  bottom = 3273                            
+                                           |                                           
+Instance: c:765                            |Instance: c:287                            
+  top = 4                                  |  top = 3                                  
+  bottom = 3195                            |  bottom = 3273                            
+                                           |                                           
+Instance: c:766                            |Instance: c:288                            
+  top = 7                                  |  top = 3                                  
+  bottom = 3195                            |  bottom = 3273                            
+                                           |                                           
+Instance: c:769                            |Instance: c:289                            
+  top = 11                                 |  top = 4                                  
+  bottom = 3195                            |  bottom = 3273                            
+                                           |                                           
+Instance: c:770                            |Instance: c:290                            
+  top = 3                                  |  top = 4                                  
+  bottom = 3195                            |  bottom = 3273                            
+                                           |                                           
+Instance: c:791                            |Instance: c:291                            
+  top = 3                                  |  top = 3                                  
+  bottom = 3195                            |  bottom = 3273                            
+                                           |                                           
+Instance: c:792                            |Instance: c:292                            
+  top = 4                                  |  top = 4                                  
+  bottom = 3195                            |  bottom = 3273                            
+                                           |                                           
+Instance: c:795                            |Instance: c:417                            
+  top = 4                                  |  top = 3                                  
+  bottom = 3195                            |  bottom = 3273                            
+                                           |                                           
+Instance: c:802                            |Instance: c:418                            
+  top = 4                                  |  top = 3                                  
+  bottom = 3195                            |  bottom = 3273                            
+                                           |                                           
+Instance: c:803                            |Instance: c:419                            
+  top = 4                                  |  top = 3                                  
+  bottom = 3195                            |  bottom = 3273                            
+                                           |                                           
+Instance: c:804                            |Instance: c:420                            
+  top = 4                                  |  top = 4                                  
+  bottom = 3195                            |  bottom = 3273                            
+                                           |                                           
+Instance: c:849                            |Instance: c:421                            
+  top = 4                                  |  top = 3                                  
+  bottom = 3195                            |  bottom = 3273                            
+                                           |                                           
+Instance: c:850                            |Instance: c:422                            
+  top = 4                                  |  top = 3                                  
+  bottom = 3195                            |  bottom = 3273                            
+                                           |                                           
+Instance: c:851                            |Instance: c:423                            
+  top = 4                                  |  top = 4                                  
+  bottom = 3195                            |  bottom = 3273                            
+                                           |                                           
+Instance: c:852                            |Instance: c:424                            
+  top = 3                                  |  top = 4                                  
+  bottom = 3195                            |  bottom = 3273                            
+                                           |                                           
+Instance: c:1021                           |Instance: c:425                            
+  top = 4                                  |  top = 4                                  
+  bottom = 3195                            |  bottom = 3273                            
+                                           |                                           
+Instance: c:1044                           |Instance: c:426                            
+  top = 4                                  |  top = 4                                  
+  bottom = 3195                            |  bottom = 3273                            
+                                           |                                           
+Instance: c:1878                           |Instance: c:427                            
+  top = 4                                  |  top = 4                                  
+  bottom = 3195                            |  bottom = 3273                            
+                                           |                                           
+Instance: c:1879                           |Instance: c:428                            
+  top = 3                                  |  top = 4                                  
+  bottom = 3195                            |  bottom = 3273                            
+                                           |                                           
+Instance: c:2115                           |Instance: c:429                            
+  top = 4                                  |  top = 4                                  
+  bottom = 3195                            |  bottom = 3273                            
+                                           |                                           
+Instance: c:2128                           |Instance: c:430                            
+  top = 4                                  |  top = 4                                  
+  bottom = 3195                            |  bottom = 3273                            
+                                           |                                           
+Instance: c:2                              |Instance: c:2                              
+  top = 10                                 |  top = 11                                 
+  bottom = 19                              |  bottom = 10                              
+                                           |                                           
+Instance: c:90                             |Instance: c:432                            
+  top = 10                                 |  top = 4                                  
+  bottom = 3195                            |  bottom = 3273                            
+                                           |                                           
+Instance: c:3                              |Instance: c:3                              
+  top = 13                                 |  top = 14                                 
+  bottom = 10                              |  bottom = 7                               
+                                           |                                           
+Instance: c:18                             |Instance: c:18                             
+  top = 15                                 |  top = 14                                 
+  bottom = 10                              |  bottom = 14                              
+                                           |                                           
+Instance: c:44                             |Instance: c:44                             
+  top = 12                                 |  top = 11                                 
+  bottom = 10                              |  bottom = 14                              
+                                           |                                           
+Instance: c:47                             |Instance: c:436                            
+  top = 15                                 |  top = 4                                  
+  bottom = 10                              |  bottom = 3273                            
+                                           |                                           
+Instance: c:12                             |Instance: c:12                             
+  top = 3                                  |  top = 11                                 
+  bottom = 10                              |  bottom = 7                               
+                                           |                                           
+Instance: c:52                             |Instance: c:52                             
+  top = 10                                 |  top = 18                                 
+  bottom = 10                              |  bottom = 21                              
+                                           |                                           
+Instance: c:4                              |Instance: c:4                              
+  top = 8                                  |  top = 14                                 
+  bottom = 9                               |  bottom = 8                               
+                                           |                                           
+Instance: c:5                              |Instance: c:5                              
+  top = 13                                 |  top = 7                                  
+  bottom = 9                               |  bottom = 11                              
+                                           |                                           
+Instance: c:19                             |Instance: c:19                             
+  top = 15                                 |  top = 14                                 
+  bottom = 9                               |  bottom = 13                              
+                                           |                                           
+Instance: c:38                             |Instance: c:38                             
+  top = 10                                 |  top = 14                                 
+  bottom = 9                               |  bottom = 10                              
+                                           |                                           
+Instance: c:56                             |Instance: c:56                             
+  top = 15                                 |  top = 10                                 
+  bottom = 9                               |  bottom = 18                              
+                                           |                                           
+Instance: c:67                             |Instance: c:444                            
+  top = 19                                 |  top = 3                                  
+  bottom = 9                               |  bottom = 3273                            
+                                           |                                           
+Instance: c:7                              |Instance: c:7                              
+  top = 3                                  |  top = 10                                 
+  bottom = 6                               |  bottom = 10                              
+                                           |                                           
+Instance: c:14                             |Instance: c:14                             
+  top = 13                                 |  top = 11                                 
+  bottom = 6                               |  bottom = 13                              
+                                           |                                           
+Instance: c:8                              |Instance: c:8                              
+  top = 21                                 |  top = 18                                 
+  bottom = 13                              |  bottom = 8                               
+                                           |                                           
+Instance: c:27                             |Instance: c:27                             
+  top = 21                                 |  top = 14                                 
+  bottom = 15                              |  bottom = 18                              
+                                           |                                           
+Instance: c:32                             |Instance: c:32                             
+  top = 21                                 |  top = 8                                  
+  bottom = 19                              |  bottom = 10                              
+                                           |                                           
+Instance: c:45                             |Instance: c:45                             
+  top = 21                                 |  top = 9                                  
+  bottom = 4                               |  bottom = 8                               
+                                           |                                           
+Instance: c:96                             |Instance: c:451                            
+  top = 21                                 |  top = 4                                  
+  bottom = 3195                            |  bottom = 3273                            
+                                           |                                           
+Instance: c:22                             |Instance: c:22                             
+  top = 13                                 |  top = 14                                 
+  bottom = 5                               |  bottom = 10                              
+                                           |                                           
+Instance: c:54                             |Instance: c:54                             
+  top = 2                                  |  top = 14                                 
+  bottom = 5                               |  bottom = 18                              
+                                           |                                           
+Instance: c:31                             |Instance: c:31                             
+  top = 6                                  |  top = 2                                  
+  bottom = 5                               |  bottom = 11                              
+                                           |                                           
+Instance: c:40                             |Instance: c:40                             
+  top = 6                                  |  top = 9                                  
+  bottom = 3                               |  bottom = 8                               
+                                           |                                           
+Instance: c:49                             |Instance: c:49                             
+  top = 6                                  |  top = 4                                  
+  bottom = 13                              |  bottom = 4                               
+                                           |                                           
+Instance: c:75                             |Instance: c:75                             
+  top = 6                                  |  top = 10                                 
+  bottom = 3195                            |  bottom = 3273                            
+                                           |                                           
+Instance: c:86                             |Instance: c:458                            
+  top = 6                                  |  top = 3                                  
+  bottom = 3195                            |  bottom = 3273                            
+                                           |                                           
+Instance: c:64                             |Instance: c:64                             
+  top = 6                                  |  top = 8                                  
+  bottom = 6                               |  bottom = 3273                            
+                                           |                                           
+Instance: c:74                             |Instance: c:74                             
+  top = 5                                  |  top = 10                                 
+  bottom = 3195                            |  bottom = 3273                            
+                                           |                                           
+Instance: c:768                            |Instance: c:461                            
+  top = 5                                  |  top = 3                                  
+  bottom = 3195                            |  bottom = 3273                            
+                                           |                                           
+Instance: c:76                             |Instance: c:76                             
+  top = 9                                  |  top = 7                                  
+  bottom = 3195                            |  bottom = 3273                            
+                                           |                                           
+Instance: $:79                             |Instance: c:463                            
+  top = 2                                  |  top = 3                                  
+  bottom = 3195                            |  bottom = 3273                            
+                                           |                                           
+Instance: $:81                             |Instance: c:464                            
+  top = 2                                  |  top = 4                                  
+  bottom = 3195                            |  bottom = 3273                            
+                                           |                                           
+Instance: $:82                             |Instance: c:465                            
+  top = 2                                  |  top = 4                                  
+  bottom = 3195                            |  bottom = 3273                            
+                                           |                                           
+Instance: $:83                             |Instance: c:466                            
+  top = 4                                  |  top = 4                                  
+  bottom = 3195                            |  bottom = 3273                            
+                                           |                                           
+Instance: $:84                             |Instance: c:467                            
+  top = 2                                  |  top = 3                                  
+  bottom = 3195                            |  bottom = 3273                            
+                                           |                                           
+Instance: $:85                             |Instance: c:468                            
+  top = 3                                  |  top = 3                                  
+  bottom = 3195                            |  bottom = 3273                            
+                                           |                                           
+(no matching instance)                     |Instance: c:469                            
+                                           |  top = 4                                  
+                                           |  bottom = 3273                            
+                                           |                                           
+(no matching instance)                     |Instance: c:470                            
+                                           |  top = 3                                  
+                                           |  bottom = 3273                            
+                                           |                                           
+(no matching instance)                     |Instance: c:471                            
+                                           |  top = 3                                  
+                                           |  bottom = 3273                            
+                                           |                                           
+(no matching instance)                     |Instance: c:472                            
+                                           |  top = 4                                  
+                                           |  bottom = 3273                            
+                                           |                                           
+(no matching instance)                     |Instance: c:473                            
+                                           |  top = 4                                  
+                                           |  bottom = 3273                            
+                                           |                                           
+(no matching instance)                     |Instance: c:474                            
+                                           |  top = 4                                  
+                                           |  bottom = 3273                            
+                                           |                                           
+(no matching instance)                     |Instance: c:475                            
+                                           |  top = 4                                  
+                                           |  bottom = 3273                            
+                                           |                                           
+(no matching instance)                     |Instance: c:476                            
+                                           |  top = 3                                  
+                                           |  bottom = 3273                            
+                                           |                                           
+(no matching instance)                     |Instance: c:539                            
+                                           |  top = 3                                  
+                                           |  bottom = 3273                            
+                                           |                                           
+(no matching instance)                     |Instance: c:836                            
+                                           |  top = 11                                 
+                                           |  bottom = 3273                            
+                                           |                                           
+(no matching instance)                     |Instance: c:840                            
+                                           |  top = 3                                  
+                                           |  bottom = 3273                            
+                                           |                                           
+(no matching instance)                     |Instance: c:841                            
+                                           |  top = 4                                  
+                                           |  bottom = 3273                            
+                                           |                                           
+(no matching instance)                     |Instance: c:844                            
+                                           |  top = 4                                  
+                                           |  bottom = 3273                            
+                                           |                                           
+(no matching instance)                     |Instance: c:865                            
+                                           |  top = 3                                  
+                                           |  bottom = 3273                            
+                                           |                                           
+(no matching instance)                     |Instance: c:866                            
+                                           |  top = 4                                  
+                                           |  bottom = 3273                            
+                                           |                                           
+(no matching instance)                     |Instance: c:869                            
+                                           |  top = 4                                  
+                                           |  bottom = 3273                            
+                                           |                                           
+(no matching instance)                     |Instance: c:915                            
+                                           |  top = 4                                  
+                                           |  bottom = 3273                            
+                                           |                                           
+(no matching instance)                     |Instance: c:916                            
+                                           |  top = 4                                  
+                                           |  bottom = 3273                            
+                                           |                                           
+(no matching instance)                     |Instance: c:918                            
+                                           |  top = 3                                  
+                                           |  bottom = 3273                            
+                                           |                                           
+(no matching instance)                     |Instance: c:1087                           
+                                           |  top = 4                                  
+                                           |  bottom = 3273                            
+                                           |                                           
+(no matching instance)                     |Instance: c:1110                           
+                                           |  top = 4                                  
+                                           |  bottom = 3273                            
+                                           |                                           
+(no matching instance)                     |Instance: c:1944                           
+                                           |  top = 4                                  
+                                           |  bottom = 3273                            
+                                           |                                           
+(no matching instance)                     |Instance: c:1945                           
+                                           |  top = 3                                  
+                                           |  bottom = 3273                            
+                                           |                                           
+(no matching instance)                     |Instance: c:2181                           
+                                           |  top = 4                                  
+                                           |  bottom = 3273                            
+                                           |                                           
+(no matching instance)                     |Instance: c:2194                           
+                                           |  top = 4                                  
+                                           |  bottom = 3273                            
+                                           |                                           
+(no matching instance)                     |Instance: c:452                            
+                                           |  top = 4                                  
+                                           |  bottom = 3273                            
+                                           |                                           
+(no matching instance)                     |Instance: c:453                            
+                                           |  top = 3                                  
+                                           |  bottom = 3273                            
+                                           |                                           
+(no matching instance)                     |Instance: c:460                            
+                                           |  top = 4                                  
+                                           |  bottom = 3273                            
+                                           |                                           
+(no matching instance)                     |Instance: c:431                            
+                                           |  top = 4                                  
+                                           |  bottom = 3273                            
+                                           |                                           
+(no matching instance)                     |Instance: c:80                             
+                                           |  top = 13                                 
+                                           |  bottom = 3273                            
+                                           |                                           
+(no matching instance)                     |Instance: c:454                            
+                                           |  top = 3                                  
+                                           |  bottom = 3273                            
+                                           |                                           
+(no matching instance)                     |Instance: c:83                             
+                                           |  top = 11                                 
+                                           |  bottom = 3273                            
+                                           |                                           
+(no matching instance)                     |Instance: c:449                            
+                                           |  top = 3                                  
+                                           |  bottom = 3273                            
+                                           |                                           
+(no matching instance)                     |Instance: c:275                            
+                                           |  top = 3                                  
+                                           |  bottom = 3273                            
+                                           |                                           
+(no matching instance)                     |Instance: c:274                            
+                                           |  top = 4                                  
+                                           |  bottom = 3273                            
+                                           |                                           
+(no matching instance)                     |Instance: c:446                            
+                                           |  top = 4                                  
+                                           |  bottom = 3273                            
+                                           |                                           
+(no matching instance)                     |Instance: c:459                            
+                                           |  top = 4                                  
+                                           |  bottom = 3273                            
+                                           |                                           
+(no matching instance)                     |Instance: c:29                             
+                                           |  top = 8                                  
+                                           |  bottom = 8                               
+                                           |                                           
+(no matching instance)                     |Instance: c:81                             
+                                           |  top = 21                                 
+                                           |  bottom = 3273                            
+                                           |                                           
+(no matching instance)                     |Instance: c:832                            
+                                           |  top = 6                                  
+                                           |  bottom = 3273                            
+                                           |                                           
+(no matching instance)                     |Instance: c:833                            
+                                           |  top = 6                                  
+                                           |  bottom = 3273                            
+                                           |                                           
+(no matching instance)                     |Instance: c:448                            
+                                           |  top = 4                                  
+                                           |  bottom = 3273                            
+                                           |                                           
+(no matching instance)                     |Instance: c:462                            
+                                           |  top = 3                                  
+                                           |  bottom = 3273                            
+                                           |                                           
+(no matching instance)                     |Instance: c:272                            
+                                           |  top = 3                                  
+                                           |  bottom = 3273                            
+                                           |                                           
+(no matching instance)                     |Instance: c:835                            
+                                           |  top = 5                                  
+                                           |  bottom = 3273                            
+                                           |                                           
+(no matching instance)                     |Instance: c:9                              
+                                           |  top = 9                                  
+                                           |  bottom = 11                              
+                                           |                                           
+(no matching instance)                     |Instance: c:457                            
+                                           |  top = 3                                  
+                                           |  bottom = 3273                            
+                                           |                                           
+(no matching instance)                     |Instance: c:455                            
+                                           |  top = 4                                  
+                                           |  bottom = 3273                            
+                                           |                                           
+(no matching instance)                     |Instance: c:450                            
+                                           |  top = 3                                  
+                                           |  bottom = 3273                            
+                                           |                                           
+(no matching instance)                     |Instance: c:273                            
+                                           |  top = 3                                  
+                                           |  bottom = 3273                            
+                                           |                                           
+(no matching instance)                     |Instance: c:435                            
+                                           |  top = 4                                  
+                                           |  bottom = 3273                            
+                                           |                                           
+(no matching instance)                     |Instance: c:79                             
+                                           |  top = 11                                 
+                                           |  bottom = 3273                            
+                                           |                                           
+(no matching instance)                     |Instance: c:438                            
+                                           |  top = 4                                  
+                                           |  bottom = 3273                            
+                                           |                                           
+(no matching instance)                     |Instance: $:67                             
+                                           |  top = 2                                  
+                                           |  bottom = 3273                            
+                                           |                                           
+(no matching instance)                     |Instance: $:69                             
+                                           |  top = 2                                  
+                                           |  bottom = 3273                            
+                                           |                                           
+(no matching instance)                     |Instance: $:70                             
+                                           |  top = 2                                  
+                                           |  bottom = 3273                            
+                                           |                                           
+(no matching instance)                     |Instance: $:71                             
+                                           |  top = 4                                  
+                                           |  bottom = 3273                            
 ---------------------------------------------------------------------------------------
 Netlists do not match.
 Port matching may fail to disambiguate symmetries.
 Cells have no pins;  pin matching not needed.
-Device classes bgr_opamp_dummy.spice and bgr_opamp_dummy_magic.spice are equivalent.
+Device classes bgr_opamp_dummy_magic.spice and bgr_opamp_dummy_magic_9.spice are equivalent.
 
 Final result: Netlists do not match.
 Port matching may fail to disambiguate symmetries.

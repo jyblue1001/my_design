@@ -1,18 +1,17 @@
-# Query: (v_cmfb_s2.+magic_0.X)|(magic_0.X.+v_cmfb_s2)
+# Query: (v_cmfb_s3.+y.t)|(y.t.+v_cmfb_s3)
 # Flags: RegExp
 # Including: **/xschem_ngspice/bgr_opamp_dummy_magic.spice
 
-11 results - 1 file
+10 results - 1 file
 
 my_design\projects\opamp\xschem_ngspice\bgr_opamp_dummy_magic.spice:
-    41: X35 VDDA.t44 two_stage_opamp_dummy_magic_0.X.t27 two_stage_opamp_dummy_magic_0.V_CMFB_S2.t12 GNDA.t45 sky130_fd_pr__nfet_01v8 ad=0.8 pd=4.4 as=0.8 ps=4.4 w=4 l=0.15
-   106: X100 VDDA.t90 two_stage_opamp_dummy_magic_0.X.t30 two_stage_opamp_dummy_magic_0.V_CMFB_S2.t11 GNDA.t89 sky130_fd_pr__nfet_01v8 ad=0.8 pd=4.4 as=0.8 ps=4.4 w=4 l=0.15
-   161: X155 VDDA.t460 two_stage_opamp_dummy_magic_0.X.t31 two_stage_opamp_dummy_magic_0.V_CMFB_S2.t10 GNDA.t347 sky130_fd_pr__nfet_01v8 ad=0.8 pd=4.4 as=0.8 ps=4.4 w=4 l=0.15
-   228: X222 VDDA.t185 two_stage_opamp_dummy_magic_0.X.t33 two_stage_opamp_dummy_magic_0.V_CMFB_S2.t9 GNDA.t151 sky130_fd_pr__nfet_01v8 ad=0.8 pd=4.4 as=0.8 ps=4.4 w=4 l=0.15
-   235: X229 VDDA.t448 two_stage_opamp_dummy_magic_0.X.t34 two_stage_opamp_dummy_magic_0.V_CMFB_S2.t8 GNDA.t330 sky130_fd_pr__nfet_01v8 ad=0.8 pd=4.4 as=0.8 ps=4.4 w=4 l=0.15
-   470: X462 two_stage_opamp_dummy_magic_0.V_CMFB_S2.t7 two_stage_opamp_dummy_magic_0.X.t44 VDDA.t177 GNDA.t146 sky130_fd_pr__nfet_01v8 ad=0.8 pd=4.4 as=0.8 ps=4.4 w=4 l=0.15
-   542: X531 two_stage_opamp_dummy_magic_0.V_CMFB_S2.t6 two_stage_opamp_dummy_magic_0.X.t45 VDDA.t0 GNDA.t0 sky130_fd_pr__nfet_01v8 ad=0.8 pd=4.4 as=0.8 ps=4.4 w=4 l=0.15
-   605: X593 two_stage_opamp_dummy_magic_0.V_CMFB_S2.t5 two_stage_opamp_dummy_magic_0.X.t46 VDDA.t13 GNDA.t20 sky130_fd_pr__nfet_01v8 ad=0.8 pd=4.4 as=0.8 ps=4.4 w=4 l=0.15
-   606: X594 two_stage_opamp_dummy_magic_0.V_CMFB_S2.t4 two_stage_opamp_dummy_magic_0.X.t47 VDDA.t178 GNDA.t147 sky130_fd_pr__nfet_01v8 ad=0.8 pd=4.4 as=0.8 ps=4.4 w=4 l=0.15
-   668: X655 two_stage_opamp_dummy_magic_0.V_CMFB_S2.t3 two_stage_opamp_dummy_magic_0.X.t49 VDDA.t163 GNDA.t140 sky130_fd_pr__nfet_01v8 ad=0.8 pd=4.4 as=0.8 ps=4.4 w=4 l=0.15
-  9342: C36 two_stage_opamp_dummy_magic_0.X two_stage_opamp_dummy_magic_0.V_CMFB_S2 0.964122f
+   62: X57 GNDA.t113 two_stage_opamp_dummy_magic_0.Y.t26 two_stage_opamp_dummy_magic_0.V_CMFB_S3.t16 VDDA.t173 sky130_fd_pr__pfet_01v8 ad=0.4 pd=2.4 as=0.4 ps=2.4 w=2 l=0.15
+  122: X117 GNDA.t348 two_stage_opamp_dummy_magic_0.Y.t29 two_stage_opamp_dummy_magic_0.V_CMFB_S3.t15 VDDA.t459 sky130_fd_pr__pfet_01v8 ad=0.4 pd=2.4 as=0.4 ps=2.4 w=2 l=0.15
+  210: X205 two_stage_opamp_dummy_magic_0.V_CMFB_S3.t14 two_stage_opamp_dummy_magic_0.Y.t31 GNDA.t334 VDDA.t444 sky130_fd_pr__pfet_01v8 ad=0.4 pd=2.4 as=0.4 ps=2.4 w=2 l=0.15
+  291: X286 two_stage_opamp_dummy_magic_0.V_CMFB_S3.t13 two_stage_opamp_dummy_magic_0.Y.t34 GNDA.t90 VDDA.t160 sky130_fd_pr__pfet_01v8 ad=0.4 pd=2.4 as=0.4 ps=2.4 w=2 l=0.15
+  359: X354 two_stage_opamp_dummy_magic_0.V_CMFB_S3.t12 two_stage_opamp_dummy_magic_0.Y.t37 GNDA.t55 VDDA.t77 sky130_fd_pr__pfet_01v8 ad=0.4 pd=2.4 as=0.4 ps=2.4 w=2 l=0.15
+  430: X421 two_stage_opamp_dummy_magic_0.V_CMFB_S3.t11 two_stage_opamp_dummy_magic_0.Y.t40 GNDA.t148 VDDA.t224 sky130_fd_pr__pfet_01v8 ad=0.4 pd=2.4 as=0.4 ps=2.4 w=2 l=0.15
+  569: X559 two_stage_opamp_dummy_magic_0.V_CMFB_S3.t10 two_stage_opamp_dummy_magic_0.Y.t44 GNDA.t1 VDDA.t0 sky130_fd_pr__pfet_01v8 ad=0.4 pd=2.4 as=0.4 ps=2.4 w=2 l=0.15
+  667: X654 GNDA.t117 two_stage_opamp_dummy_magic_0.Y.t48 two_stage_opamp_dummy_magic_0.V_CMFB_S3.t9 VDDA.t178 sky130_fd_pr__pfet_01v8 ad=0.4 pd=2.4 as=0.4 ps=2.4 w=2 l=0.15
+  731: X718 GNDA.t333 two_stage_opamp_dummy_magic_0.Y.t51 two_stage_opamp_dummy_magic_0.V_CMFB_S3.t8 VDDA.t443 sky130_fd_pr__pfet_01v8 ad=0.4 pd=2.4 as=0.4 ps=2.4 w=2 l=0.15
+  802: X788 GNDA.t119 two_stage_opamp_dummy_magic_0.Y.t54 two_stage_opamp_dummy_magic_0.V_CMFB_S3.t7 VDDA.t184 sky130_fd_pr__pfet_01v8 ad=0.4 pd=2.4 as=0.4 ps=2.4 w=2 l=0.15
