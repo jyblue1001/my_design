@@ -12,8 +12,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=3.7170384e-06
-x2=2.7717038e-05
+x1=4.4561216e-06
+x2=2.8456122e-05
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -33,8 +33,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=3.7170384e-06
-x2=2.7717038e-05
+x1=4.4561216e-06
+x2=2.8456122e-05
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -49,15 +49,15 @@ color="6 7"
 node="vin+
 vin-"}
 B 2 11780 -2120 12770 -1250 {flags=graph
-y1=0.83
-y2=0.92
+y1=0.87
+y2=0.94
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=3.7170384e-06
-x2=2.7717038e-05
+x1=4.4561216e-06
+x2=2.8456122e-05
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -79,8 +79,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=3.7170384e-06
-x2=2.7717038e-05
+x1=4.4561216e-06
+x2=2.8456122e-05
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -103,8 +103,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=3.7170384e-06
-x2=2.7717038e-05
+x1=4.4561216e-06
+x2=2.8456122e-05
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -125,8 +125,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=3.7170384e-06
-x2=2.7717038e-05
+x1=4.4561216e-06
+x2=2.8456122e-05
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -147,8 +147,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=3.7170384e-06
-x2=2.7717038e-05
+x1=4.4561216e-06
+x2=2.8456122e-05
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -240,15 +240,15 @@ vb1
 vb2
 vb3"}
 B 2 11780 -130 12770 740 {flags=graph
-y1=0.22
-y2=1.6
+y1=0.33
+y2=1.5
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=3.7170384e-06
-x2=2.7717038e-05
+x1=4.4561216e-06
+x2=2.8456122e-05
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -266,14 +266,14 @@ v_cmfb_s3
 v_cmfb_s4"}
 B 2 12910 -130 13900 740 {flags=graph
 y1=2.3e-05
-y2=2.5e-05
+y2=2.6e-05
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=3.7170384e-06
-x2=2.7717038e-05
+x1=4.4561216e-06
+x2=2.8456122e-05
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -297,8 +297,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=3.7170384e-06
-x2=2.7717038e-05
+x1=4.4561216e-06
+x2=2.8456122e-05
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -319,8 +319,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=3.7170384e-06
-x2=2.7717038e-05
+x1=4.4561216e-06
+x2=2.8456122e-05
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -341,8 +341,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=3.7170384e-06
-x2=2.7717038e-05
+x1=4.4561216e-06
+x2=2.8456122e-05
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -363,8 +363,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=3.7170384e-06
-x2=2.7717038e-05
+x1=4.4561216e-06
+x2=2.8456122e-05
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -378,15 +378,15 @@ logy=0
 color=6
 node=i(@m.xm76.msky130_fd_pr__nfet_01v8[id])}
 B 2 14060 -130 15050 740 {flags=graph
-y1=5.9e-07
-y2=3.7e-06
+y1=9.1e-07
+y2=4e-06
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=3.7170384e-06
-x2=2.7717038e-05
+x1=4.4561216e-06
+x2=2.8456122e-05
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -410,8 +410,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=3.7170384e-06
-x2=2.7717038e-05
+x1=4.4561216e-06
+x2=2.8456122e-05
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -432,8 +432,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=3.7170384e-06
-x2=2.7717038e-05
+x1=4.4561216e-06
+x2=2.8456122e-05
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -454,8 +454,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=3.7170384e-06
-x2=2.7717038e-05
+x1=4.4561216e-06
+x2=2.8456122e-05
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -476,8 +476,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=3.7170384e-06
-x2=2.7717038e-05
+x1=4.4561216e-06
+x2=2.8456122e-05
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -641,15 +641,15 @@ y1=0.00088
 color=6
 node=i(@m.xm15.msky130_fd_pr__nfet_01v8[id])}
 B 2 15210 -130 16200 740 {flags=graph
-y1=1.6
-y2=1.7
+y1=1.603179
+y2=1.6065566
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=3.7170384e-06
-x2=2.7717038e-05
+x1=4.4561216e-06
+x2=2.8456122e-05
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -665,15 +665,15 @@ color="6 7"
 node="vd3
 vd4"}
 B 2 15210 860 16200 1730 {flags=graph
-y1=0.82
-y2=0.91
+y1=0.85
+y2=0.95
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=3.7170384e-06
-x2=2.7717038e-05
+x1=4.4561216e-06
+x2=2.8456122e-05
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -689,15 +689,15 @@ color="6 7"
 node="x
 y"}
 B 2 15210 1850 16200 2720 {flags=graph
-y1=0.53
-y2=0.55
+y1=0.54
+y2=0.56
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=3.7170384e-06
-x2=2.7717038e-05
+x1=4.4561216e-06
+x2=2.8456122e-05
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -714,15 +714,15 @@ color="6 7"
 node="vd1
 vd2"}
 B 2 14060 -1130 15050 -260 {flags=graph
-y1=0.91008618
-y2=0.91043802
+y1=0.90794666
+y2=0.90802045
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=3.7170384e-06
-x2=2.7717038e-05
+x1=4.4561216e-06
+x2=2.8456122e-05
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -738,15 +738,15 @@ logy=0
 color=6
 node=v_tot}
 B 2 15210 -1130 16200 -260 {flags=graph
-y1=0.89493213
-y2=0.89493217
+y1=0.90136488
+y2=0.90136492
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=3.7170384e-06
-x2=2.7717038e-05
+x1=4.4561216e-06
+x2=2.8456122e-05
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -769,8 +769,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=3.7170384e-06
-x2=2.7717038e-05
+x1=4.4561216e-06
+x2=2.8456122e-05
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -796,8 +796,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=3.7170384e-06
-x2=2.7717038e-05
+x1=4.4561216e-06
+x2=2.8456122e-05
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -821,8 +821,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=3.7170384e-06
-x2=2.7717038e-05
+x1=4.4561216e-06
+x2=2.8456122e-05
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -846,8 +846,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=3.7170384e-06
-x2=2.7717038e-05
+x1=4.4561216e-06
+x2=2.8456122e-05
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -873,8 +873,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=3.7170384e-06
-x2=2.7717038e-05
+x1=4.4561216e-06
+x2=2.8456122e-05
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -898,8 +898,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=3.7170384e-06
-x2=2.7717038e-05
+x1=4.4561216e-06
+x2=2.8456122e-05
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -915,16 +915,16 @@ logy=0
 color="7 11"
 node="vd2
 \\"y 0.36 -\\""}
-B 2 16550 4090 17540 4960 {flags=graph
-y1=0.30440164
-y2=0.30445831
+B 2 16550 4010 17540 4880 {flags=graph
+y1=0.296575
+y2=0.29662222
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=3.7170384e-06
-x2=2.7717038e-05
+x1=4.4561216e-06
+x2=2.8456122e-05
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -940,16 +940,16 @@ logy=0
 
 color=6
 node=v_p}
-B 2 16550 5150 17540 6020 {flags=graph
-y1=0.83594926
-y2=0.83594943
+B 2 16550 5070 17540 5940 {flags=graph
+y1=0.83594928
+y2=0.83594945
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=3.7170384e-06
-x2=2.7717038e-05
+x1=4.4561216e-06
+x2=2.8456122e-05
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -965,16 +965,16 @@ logy=0
 
 color=6
 node=v_tail_gate}
-B 2 16550 6210 17540 7080 {flags=graph
-y1=0.70992613
-y2=0.71080574
+B 2 16550 6130 17540 7000 {flags=graph
+y1=0.69396556
+y2=0.69482456
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=3.7170384e-06
-x2=2.7717038e-05
+x1=4.4561216e-06
+x2=2.8456122e-05
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -988,18 +988,19 @@ logy=0
 
 
 
-color=6
-node=err_amp_out}
+color="6 7"
+node="\\"v_tail_gate 0.1437 -\\"
+err_amp_out"}
 B 2 10680 -4030 11670 -3160 {flags=graph
-y1=0.30397955
-y2=0.30501033
+y1=-0.54
+y2=0.81
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=3.7170384e-06
-x2=2.7717038e-05
+x1=4.4561216e-06
+x2=2.8456122e-05
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -1025,8 +1026,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=3.7170384e-06
-x2=2.7717038e-05
+x1=4.4561216e-06
+x2=2.8456122e-05
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -1043,6 +1044,614 @@ logy=0
 color="6 7"
 node="err_amp_out
 \\"err_amp_mir 0.0109 -\\""}
+B 2 17770 6130 18760 7000 {flags=graph
+y1=-0.00012
+y2=0.00012
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=4.4561216e-06
+x2=2.8456122e-05
+divx=5
+subdivx=1
+xlabmag=1.0
+ylabmag=1.0
+
+
+dataset=-1
+unitx=1
+logx=0
+logy=0
+
+
+
+color="6 7"
+node="\\"err_amp_mir 0.719212 -\\"
+\\"err_amp_out 0.75064 -\\""}
+B 2 17760 5070 18750 5940 {flags=graph
+y1=0.7504534
+y2=0.75080524
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=4.4561216e-06
+x2=2.8456122e-05
+divx=5
+subdivx=1
+xlabmag=1.0
+ylabmag=1.0
+
+
+dataset=-1
+unitx=1
+logx=0
+logy=0
+
+
+
+color=6
+node=err_amp_out}
+B 2 19000 6130 19990 7000 {flags=graph
+y1=0.71914922
+y2=0.71922659
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=4.4561216e-06
+x2=2.8456122e-05
+divx=5
+subdivx=1
+xlabmag=1.0
+ylabmag=1.0
+
+
+dataset=-1
+unitx=1
+logx=0
+logy=0
+
+
+
+color="6 7"
+node="err_amp_out
+err_amp_mir"}
+B 2 17760 4010 18750 4880 {flags=graph
+y1=0.9077753
+y2=0.90811868
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=4.4561216e-06
+x2=2.8456122e-05
+divx=5
+subdivx=1
+xlabmag=1.0
+ylabmag=1.0
+
+
+dataset=-1
+unitx=1
+logx=0
+logy=0
+
+
+
+color=6
+node=v_tot}
+B 2 9240 -4960 9440 -4820 {flags=graph
+y1=-6.7e-13
+y2=0.84
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=4.4561216e-06
+x2=2.8456122e-05
+divx=5
+subdivx=1
+xlabmag=1.0
+ylabmag=1.0
+
+
+dataset=-1
+unitx=1
+logx=0
+logy=0
+
+
+
+
+
+color=6
+node="\\"vb1 vb1_2 -\\""}
+B 2 9240 -4740 9440 -4600 {flags=graph
+y1=-0.04688572
+y2=0.52791428
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=4.4561216e-06
+x2=2.8456122e-05
+divx=5
+subdivx=1
+xlabmag=1.0
+ylabmag=1.0
+
+
+dataset=-1
+unitx=1
+logx=0
+logy=0
+
+
+
+
+
+color="6 7"
+node="\\"vb1 v_p - @m.xm25.msky130_fd_pr__nfet_01v8[vth] -\\"
+\\"vb1_2 v_p -\\""}
+B 2 9350 -9030 10200 -8570 {flags=graph
+y1=9.5e-13
+y2=0.96
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=4.4561216e-06
+x2=2.8456122e-05
+divx=5
+subdivx=1
+xlabmag=1.0
+ylabmag=1.0
+
+
+dataset=-1
+unitx=1
+logx=0
+logy=0
+color="6 7"
+node="x
+y"}
+B 2 19000 5070 19990 5940 {flags=graph
+y1=0.7192042
+y2=0.71922276
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=4.4561216e-06
+x2=2.8456122e-05
+divx=5
+subdivx=1
+xlabmag=1.0
+ylabmag=1.0
+
+
+dataset=-1
+unitx=1
+logx=0
+logy=0
+
+
+
+color=6
+node=err_amp_mir}
+B 2 19000 4010 19990 4880 {flags=graph
+y1=0.90136488
+y2=0.90136492
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=4.4561216e-06
+x2=2.8456122e-05
+divx=5
+subdivx=1
+xlabmag=1.0
+ylabmag=1.0
+
+
+dataset=-1
+unitx=1
+logx=0
+logy=0
+
+
+
+color=6
+node=v_err_amp_ref}
+B 2 20310 4010 21300 4880 {flags=graph
+y1=0.75
+y2=0.91
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=4.4561216e-06
+x2=2.8456122e-05
+divx=5
+subdivx=1
+xlabmag=1.0
+ylabmag=1.0
+
+
+dataset=-1
+unitx=1
+logx=0
+logy=0
+
+
+
+color="6 7"
+node="\\"err_amp_out 0.75064 -\\"
+\\"v_err_amp_ref 0.90137 - \\""}
+B 2 16550 7220 17540 8090 {flags=graph
+y1=0.296575
+y2=0.29662222
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=4.4561216e-06
+x2=2.8456122e-05
+divx=5
+subdivx=1
+xlabmag=1.0
+ylabmag=1.0
+
+
+dataset=-1
+unitx=1
+logx=0
+logy=0
+
+
+
+color=6
+node=v_p}
+B 2 15360 8280 16350 9150 {flags=graph
+y1=0.2997641
+y2=0.2997661
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=4.4561216e-06
+x2=2.8456122e-05
+divx=5
+subdivx=1
+xlabmag=1.0
+ylabmag=1.0
+
+
+dataset=-1
+unitx=1
+logx=0
+logy=0
+
+
+
+color=6
+node=v_p_mir}
+B 2 17760 8270 18750 9140 {flags=graph
+y1=0.75048195
+y2=0.75075217
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=4.4561216e-06
+x2=2.8456122e-05
+divx=5
+subdivx=1
+xlabmag=1.0
+ylabmag=1.0
+
+
+dataset=-1
+unitx=1
+logx=0
+logy=0
+
+
+
+color=6
+node=err_amp_out}
+B 2 16550 8280 17540 9150 {flags=graph
+y1=0.83594927
+y2=0.83594943
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=4.4561216e-06
+x2=2.8456122e-05
+divx=5
+subdivx=1
+xlabmag=1.0
+ylabmag=1.0
+
+
+dataset=-1
+unitx=1
+logx=0
+logy=0
+
+
+
+color=6
+node=v_tail_gate}
+B 2 16550 9340 17540 10210 {flags=graph
+y1=0.91151164
+y2=0.91151167
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=4.4561216e-06
+x2=2.8456122e-05
+divx=5
+subdivx=1
+xlabmag=1.0
+ylabmag=1.0
+
+
+dataset=-1
+unitx=1
+logx=0
+logy=0
+
+
+
+color=6
+node=pfet_gate_10ua}
+B 2 17760 9340 18750 10210 {flags=graph
+y1=1.4255815
+y2=1.4256146
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=4.4561216e-06
+x2=2.8456122e-05
+divx=5
+subdivx=1
+xlabmag=1.0
+ylabmag=1.0
+
+
+dataset=-1
+unitx=1
+logx=0
+logy=0
+
+
+
+color=6
+node=vb1}
+B 2 15360 9340 16350 10210 {flags=graph
+y1=0.8019989
+y2=0.80199894
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=4.4561216e-06
+x2=2.8456122e-05
+divx=5
+subdivx=1
+xlabmag=1.0
+ylabmag=1.0
+
+
+dataset=-1
+unitx=1
+logx=0
+logy=0
+
+
+
+color=6
+node=nfet_gate_10ua}
+B 2 8560 -3560 9540 -2930 {flags=graph
+y1=-0.001
+y2=0.001
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=4.4561216e-06
+x2=2.8456122e-05
+divx=5
+subdivx=1
+xlabmag=1.0
+ylabmag=1.0
+
+
+dataset=-1
+unitx=1
+logx=0
+logy=0
+
+
+
+color="6 7 11"
+node="\\"v_p 0.296596 - 20 *\\"
+
+\\"vin+ 1.24 -\\"
+\\"vin- 1.24 -\\""}
+B 2 7430 -3560 8410 -2930 {flags=graph
+y1=0.83594924
+y2=0.83594952
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=2.7040743e-06
+x2=2.6704074e-05
+divx=5
+subdivx=1
+xlabmag=1.0
+ylabmag=1.0
+
+
+dataset=-1
+unitx=1
+logx=0
+logy=0
+
+
+
+
+color=6
+node=v_tail_gate}
+B 2 14150 -3300 15140 -2430 {flags=graph
+y1=0.7504534
+y2=0.75080524
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=4.4561216e-06
+x2=2.8456122e-05
+divx=5
+subdivx=1
+xlabmag=1.0
+ylabmag=1.0
+
+
+dataset=-1
+unitx=1
+logx=0
+logy=0
+
+
+
+color=6
+node=err_amp_out}
+B 2 15390 -4360 16380 -3490 {flags=graph
+y1=0.90794661
+y2=0.90803163
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=4.4561216e-06
+x2=2.8456122e-05
+divx=5
+subdivx=1
+xlabmag=1.0
+ylabmag=1.0
+
+
+dataset=-1
+unitx=1
+logx=0
+logy=0
+
+
+
+color=6
+node=v_tot}
+B 2 15390 -3300 16380 -2430 {flags=graph
+y1=0.7192042
+y2=0.71922276
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=4.4561216e-06
+x2=2.8456122e-05
+divx=5
+subdivx=1
+xlabmag=1.0
+ylabmag=1.0
+
+
+dataset=-1
+unitx=1
+logx=0
+logy=0
+
+
+
+color=6
+node=err_amp_mir}
+B 2 14150 -4360 15140 -3490 {flags=graph
+y1=0.90136488
+y2=0.90136492
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=4.4561216e-06
+x2=2.8456122e-05
+divx=5
+subdivx=1
+xlabmag=1.0
+ylabmag=1.0
+
+
+dataset=-1
+unitx=1
+logx=0
+logy=0
+
+
+
+color=6
+node=v_err_amp_ref}
+B 2 15400 4010 16390 4880 {flags=graph
+y1=1.238719
+y2=1.2415337
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=4.4561216e-06
+x2=2.8456122e-05
+divx=5
+subdivx=1
+xlabmag=1.0
+ylabmag=1.0
+
+
+dataset=-1
+unitx=1
+logx=0
+logy=0
+color="6 7"
+node="vin+
+vin-"}
 T {N 30uA} 14470 -5460 0 0 1 1 {}
 T {P 30uA} 14490 -6150 0 0 1 1 {}
 T {P 30uA} 16590 -6150 0 1 1 1 {}
@@ -1226,13 +1835,13 @@ N 13460 -9270 13530 -9270 {lab=NFET_GATE_10uA}
 N 13460 -9350 13460 -9270 {lab=NFET_GATE_10uA}
 N 13570 -9470 13570 -9300 {lab=V_CMFB_S2}
 N 13570 -9240 13570 -9120 {lab=GND}
-N 13150 -9840 13200 -9840 {lab=VDD}
-N 13200 -9900 13200 -9840 {lab=VDD}
-N 13150 -9900 13200 -9900 {lab=VDD}
-N 12980 -9840 13110 -9840 {lab=PFET_GATE_10uA}
-N 13150 -10170 13150 -9870 {lab=VDD}
-N 12980 -9840 12980 -9740 {lab=PFET_GATE_10uA}
-N 13150 -9810 13150 -9620 {lab=V_tail_gate}
+N 12940 -9840 12990 -9840 {lab=VDD}
+N 12990 -9900 12990 -9840 {lab=VDD}
+N 12940 -9900 12990 -9900 {lab=VDD}
+N 12770 -9840 12900 -9840 {lab=PFET_GATE_10uA}
+N 12940 -10170 12940 -9870 {lab=VDD}
+N 12770 -9840 12770 -9740 {lab=PFET_GATE_10uA}
+N 12940 -9810 12940 -9620 {lab=V_tail_gate}
 N 11760 -9740 12360 -9740 {lab=PFET_GATE_10uA}
 N 11930 -10170 12530 -10170 {lab=VDD}
 N 11780 -9350 12420 -9350 {lab=NFET_GATE_10uA}
@@ -1442,13 +2051,10 @@ N 7140 -4450 7210 -4450 {lab=VIN-}
 N 6660 -4450 6730 -4450 {lab=VIN+}
 N 6930 -4720 7500 -4720 {lab=V_tail_gate}
 N 7500 -4720 7500 -4190 {lab=V_tail_gate}
-N 9040 -4710 9040 -4630 {lab=Vb1}
-N 9040 -4600 9190 -4600 {lab=GND}
-N 9040 -4570 9040 -4330 {lab=V_p}
-N 9040 -5060 9040 -4770 {lab=Vb1}
-N 8910 -4600 9000 -4600 {lab=Vb1}
-N 8910 -4860 8910 -4600 {lab=Vb1}
-N 8910 -4860 9040 -4860 {lab=Vb1}
+N 9040 -4640 9190 -4640 {lab=GND}
+N 9040 -4610 9040 -4330 {lab=V_p}
+N 8910 -4640 9000 -4640 {lab=Vb1}
+N 8910 -4760 8910 -4640 {lab=Vb1}
 N 9040 -5630 9040 -5060 {lab=Vb1}
 N 14760 -5680 14760 -5630 {lab=VDD}
 N 14760 -5470 14760 -5410 {lab=GND}
@@ -1536,8 +2142,8 @@ N 12530 -5270 12530 -4900 {lab=V_err_gate}
 N 12080 -4900 12530 -4900 {lab=V_err_gate}
 N 9380 -4190 13110 -4190 {lab=err_amp_out}
 N 13110 -4190 13260 -4190 {lab=err_amp_out}
-N 9190 -4740 9190 -4450 {lab=GND}
-N 9190 -5000 9190 -4740 {lab=GND}
+N 9190 -4780 9190 -4450 {lab=GND}
+N 9190 -5000 9190 -4780 {lab=GND}
 N 18830 -5510 18830 -4870 {lab=VOUT-}
 N 19900 -5510 19900 -4870 {lab=VOUT+}
 N 19900 -5540 19970 -5540 {lab=VDD}
@@ -1587,7 +2193,6 @@ N 7760 -4550 9620 -4550 {lab=VIN+}
 N 8570 -4390 8570 -4320 {lab=VIN-}
 N 9620 -4390 9620 -4320 {lab=VIN+}
 N 6930 -4990 6930 -4800 {lab=V_tail_gate}
-N 9040 -4770 9040 -4710 {lab=Vb1}
 N 14640 -5550 14760 -5550 {lab=V_CMFB_S2}
 N 14640 -5990 14760 -5990 {lab=V_CMFB_S1}
 N 8570 -4450 8570 -4390 {lab=VIN-}
@@ -1604,8 +2209,7 @@ N 7100 -4020 7100 -3990 {lab=GND}
 N 7020 -4050 7100 -4050 {lab=GND}
 N 7020 -4050 7020 -3990 {lab=GND}
 N 6930 -3990 7100 -3990 {lab=GND}
-N 7100 -4110 7100 -4080 {lab=GND}
-N 6930 -4110 7100 -4110 {lab=GND}
+N 6930 -4270 7100 -4270 {lab=V_p_mir}
 N 7140 -4050 7180 -4050 {lab=GND}
 N 7180 -4050 7180 -3990 {lab=GND}
 N 7100 -3990 7180 -3990 {lab=GND}
@@ -1683,17 +2287,6 @@ N 8400 -5570 8740 -5570 {lab=VD3}
 N 8400 -5570 8400 -5510 {lab=VD3}
 N 8400 -5390 8400 -5330 {lab=X}
 N 8400 -5330 8740 -5330 {lab=X}
-N 13730 -5270 13800 -5270 {lab=VDD}
-N 13800 -5360 13800 -5270 {lab=VDD}
-N 13690 -5360 13800 -5360 {lab=VDD}
-N 13690 -5360 13690 -5300 {lab=VDD}
-N 13580 -5360 13690 -5360 {lab=VDD}
-N 13580 -5360 13580 -5270 {lab=VDD}
-N 13580 -5270 13690 -5270 {lab=VDD}
-N 13690 -5240 13690 -5200 {lab=V_err_p}
-N 13380 -5200 13690 -5200 {lab=V_err_p}
-N 13690 -5400 13690 -5360 {lab=VDD}
-N 13380 -5400 13690 -5400 {lab=VDD}
 N 12860 -4550 12930 -4550 {lab=VDD}
 N 12860 -4640 12860 -4550 {lab=VDD}
 N 12860 -4640 12970 -4640 {lab=VDD}
@@ -1961,12 +2554,32 @@ N 1780 -5280 2220 -5280 {lab=VDD}
 N 1780 -5040 2220 -5040 {lab=VDD}
 N 1780 -4070 2220 -4070 {lab=Vb2_2}
 N 1780 -3800 2220 -3800 {lab=Vb2_2}
+N 9040 -4760 9040 -4670 {lab=Vb1_2}
+N 9040 -4780 9040 -4760 {lab=Vb1_2}
+N 8910 -4810 9000 -4810 {lab=Vb1}
+N 8910 -4810 8910 -4760 {lab=Vb1}
+N 9040 -4810 9190 -4810 {lab=GND}
+N 9040 -5060 9040 -4840 {lab=Vb1}
+N 8910 -4950 8910 -4810 {lab=Vb1}
+N 8910 -4950 9040 -4950 {lab=Vb1}
+N 13100 -9840 13140 -9840 {lab=VDD}
+N 13100 -9910 13100 -9840 {lab=VDD}
+N 13100 -9910 13140 -9910 {lab=VDD}
+N 13140 -10170 13140 -9870 {lab=VDD}
+N 13140 -9910 13220 -9910 {lab=VDD}
+N 13220 -9910 13220 -9840 {lab=VDD}
+N 13180 -9840 13220 -9840 {lab=VDD}
+N 13140 -9810 13140 -9780 {lab=VDD}
+N 13040 -9780 13140 -9780 {lab=VDD}
+N 13040 -9960 13040 -9780 {lab=VDD}
+N 12940 -9960 13040 -9960 {lab=VDD}
+N 7100 -4270 7100 -4080 {lab=V_p_mir}
 C {devices/vsource.sym} 8020 -1800 0 0 {name=V1 value="pwl(0 0 1us 0 2us 1.8)" savecurrent=false
 * 1.8}
 C {devices/gnd.sym} 8020 -1770 0 0 {name=l3 lab=GND}
 C {devices/vdd.sym} 8020 -1830 0 0 {name=l4 lab=VDD}
 C {sky130_fd_pr/corner.sym} 7740 -1850 0 0 {name=CORNER only_toplevel=false corner=tt}
-C {simulator_commands_shown.sym} 8420 -2160 0 0 {name=COMMANDS
+C {simulator_commands_shown.sym} 8420 -2170 0 0 {name=COMMANDS
 simulator=ngspice
 only_toplevel=false 
 value="
@@ -1994,6 +2607,8 @@ value="
 +@m.xm82.msky130_fd_pr__pfet_01v8[vth]
 +@m.xm84.msky130_fd_pr__nfet_01v8[vth]
 +@m.xm85.msky130_fd_pr__pfet_01v8[vth]
++@m.xm3.msky130_fd_pr__nfet_01v8[vth]
++@m.xm19.msky130_fd_pr__nfet_01v8[vth]
 
 * .ic v(vin-) = 0.8
 * .ic v(vin+) = 0.8
@@ -2269,11 +2884,11 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {sky130_fd_pr/pfet_01v8.sym} 13130 -9840 0 0 {name=M77
-W=1
+C {sky130_fd_pr/pfet_01v8.sym} 12920 -9840 0 0 {name=M77
+W=2
 L=0.15
 nf=1
-mult=8
+mult=4
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
@@ -2498,7 +3113,7 @@ spiceprefix=X
 C {devices/lab_pin.sym} 11930 -9620 2 1 {name=p109 sig_type=std_logic lab=Vb1}
 C {devices/lab_pin.sym} 11930 -9470 2 1 {name=p64 sig_type=std_logic lab=Vb2}
 C {devices/lab_pin.sym} 12530 -9470 2 1 {name=p97 sig_type=std_logic lab=Vb3}
-C {devices/lab_pin.sym} 13150 -9620 2 1 {name=p98 sig_type=std_logic lab=V_tail_gate}
+C {devices/lab_pin.sym} 12940 -9620 2 1 {name=p98 sig_type=std_logic lab=V_tail_gate}
 C {devices/lab_pin.sym} 13150 -9470 2 1 {name=p99 sig_type=std_logic lab=V_err_gate}
 C {devices/lab_pin.sym} 13570 -9470 2 1 {name=p102 sig_type=std_logic lab=V_CMFB_S2}
 C {devices/lab_pin.sym} 13570 -9620 2 1 {name=p101 sig_type=std_logic lab=V_CMFB_S1}
@@ -2686,9 +3301,9 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {sky130_fd_pr/nfet_01v8.sym} 9020 -4600 0 0 {name=M19
-W=1
-L=2.9
+C {sky130_fd_pr/nfet_01v8.sym} 9020 -4640 0 0 {name=M19
+W=1.5
+L=3
 nf=1 
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -2982,7 +3597,7 @@ spiceprefix=X
 C {lab_wire.sym} 9040 -4330 0 0 {name=p13 sig_type=std_logic lab=V_p}
 C {lab_pin.sym} 8740 -4710 0 1 {name=p15 sig_type=std_logic lab=VD1}
 C {lab_pin.sym} 9490 -4710 0 0 {name=p17 sig_type=std_logic lab=VD2}
-C {lab_wire.sym} 8910 -4600 2 1 {name=p37 sig_type=std_logic lab=Vb1}
+C {lab_wire.sym} 8910 -4640 2 1 {name=p37 sig_type=std_logic lab=Vb1}
 C {lab_wire.sym} 8470 -4190 0 0 {name=p21 sig_type=std_logic lab=V_tail_gate}
 C {lab_wire.sym} 6930 -4330 0 1 {name=p22 sig_type=std_logic lab=V_p_mir}
 C {lab_pin.sym} 8740 -5650 0 1 {name=p23 sig_type=std_logic lab=VD3}
@@ -3001,7 +3616,7 @@ C {sky130_fd_pr/nfet_01v8.sym} 7120 -4050 0 1 {name=M21
 W=2.5
 L=0.15
 nf=1 
-mult=1
+mult=2
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
@@ -3123,22 +3738,8 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {sky130_fd_pr/pfet_01v8.sym} 13710 -5270 0 1 {name=M58
-W=1.0
-L=0.15
-nf=2
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=pfet_01v8
-spiceprefix=X
-}
 C {sky130_fd_pr/pfet_01v8.sym} 12950 -4550 0 0 {name=M59
-W=0.5
+W=2.5
 L=0.15
 nf=1
 mult=1
@@ -3152,7 +3753,7 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8.sym} 11570 -5050 0 0 {name=M60
-W=1.0
+W=5.0
 L=0.15
 nf=2
 mult=1
@@ -3166,7 +3767,7 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8.sym} 13810 -4550 0 1 {name=M61
-W=0.5
+W=2.5
 L=0.15
 nf=1
 mult=1
@@ -3439,7 +4040,7 @@ C {devices/ngspice_get_value.sym} 14100 -9800 2 0 {name=r18 node=v(@m.xm85.msky1
 descr="vth="}
 C {devices/ngspice_get_value.sym} 14100 -9420 2 0 {name=r19 node=v(@m.xm84.msky130_fd_pr__nfet_01v8[vth])
 descr="vth="}
-C {devices/ngspice_get_value.sym} 13090 -9800 2 0 {name=r20 node=v(@m.xm77.msky130_fd_pr__pfet_01v8[vth])
+C {devices/ngspice_get_value.sym} 12880 -9800 2 0 {name=r20 node=v(@m.xm77.msky130_fd_pr__pfet_01v8[vth])
 descr="vth="}
 C {devices/ngspice_get_value.sym} 13090 -9420 2 0 {name=r21 node=v(@m.xm75.msky130_fd_pr__nfet_01v8[vth])
 descr="vth="}
@@ -3628,3 +4229,37 @@ spiceprefix=X
 }
 C {lab_pin.sym} 2220 -2780 0 1 {name=p110 sig_type=std_logic lab=Vb2}
 C {lab_pin.sym} 4270 -2780 0 1 {name=p30 sig_type=std_logic lab=Vb3}
+C {sky130_fd_pr/nfet_01v8.sym} 9020 -4810 0 0 {name=M3
+W=1.5
+L=0.15
+nf=1 
+mult=4
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=nfet_01v8
+spiceprefix=X
+}
+C {lab_wire.sym} 9040 -4720 0 1 {name=p6 sig_type=std_logic lab=Vb1_2}
+C {devices/ngspice_get_value.sym} 9080 -4890 2 1 {name=r29 node=v(@m.xm3.msky130_fd_pr__nfet_01v8[vth])
+descr="vth="}
+C {devices/ngspice_get_value.sym} 9080 -4600 2 1 {name=r30 node=v(@m.xm19.msky130_fd_pr__nfet_01v8[vth])
+descr="vth="}
+C {devices/lab_pin.sym} 9750 -9570 2 0 {name=p8 sig_type=std_logic lab=V_err_amp_ref}
+C {sky130_fd_pr/pfet_01v8.sym} 13160 -9840 0 1 {name=M4
+W=2
+L=0.15
+nf=1
+mult=2
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=pfet_01v8
+spiceprefix=X
+}

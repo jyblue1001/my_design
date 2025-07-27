@@ -1,11 +1,11 @@
-* NGSPICE file created from bgr.ext - technology: sky130A
+* NGSPICE file created from bgr_10.ext - technology: sky130A
 
 .subckt sky130_fd_pr__rf_pnp_05v5_W3p40L3p40 Emitter Collector Base m=1
 X0 Collector Base Emitter sky130_fd_pr__pnp_05v5_W3p40L3p40
 **devattr s=462400,2720
 .ends
 
-** .subckt bgr VDDA ERR_AMP_REF V_CMFB_S3 VB1_CUR_BIAS TAIL_CUR_MIR_BIAS V_CMFB_S1
+.subckt bgr_10 VDDA ERR_AMP_REF V_CMFB_S3 VB1_CUR_BIAS TAIL_CUR_MIR_BIAS V_CMFB_S1
 + ERR_AMP_CUR_BIAS VB3_CUR_BIAS V_CMFB_S4 V_CMFB_S2 VB2_CUR_BIAS GNDA
 Xsky130_fd_pr__rf_pnp_05v5_W3p40L3p40_8 sky130_fd_pr__rf_pnp_05v5_W3p40L3p40_8/Emitter
 + GNDA GNDA sky130_fd_pr__rf_pnp_05v5_W3p40L3p40 m=1
@@ -241,5 +241,5 @@ X213 a_32440_n6570# GNDA GNDA sky130_fd_pr__res_xhigh_po_0p35 l=4
 X214 GNDA NFET_GATE_10uA VB2_CUR_BIAS GNDA sky130_fd_pr__nfet_01v8 ad=0.2 pd=1.4 as=0.2 ps=1.4 w=1 l=0.15
 X215 VDDA PFET_GATE_10uA TAIL_CUR_MIR_BIAS VDDA sky130_fd_pr__pfet_01v8 ad=0.2 pd=1.4 as=0.2 ps=1.4 w=1 l=0.15
 X216 V_TOP VDDA sky130_fd_pr__cap_mim_m3_1 l=2 w=2
-** .ends
+.ends
 

@@ -1,6 +1,6 @@
 * NGSPICE file created from two_stage_opamp_dummy_magic_20.ext - technology: sky130A
 
-** .subckt two_stage_opamp_dummy_magic_20 VDDA V_CMFB_S1 V_CMFB_S3 Vb3 Vb2 Vb1 V_CMFB_S2
+.subckt two_stage_opamp_dummy_magic_20 VDDA V_CMFB_S1 V_CMFB_S3 Vb3 Vb2 Vb1 V_CMFB_S2
 + V_CMFB_S4 VOUT- VOUT+ V_tail_gate V_err_amp_ref V_err_gate VIN+ VIN- GNDA
 X0 VD4 Vb2 Y VD4 sky130_fd_pr__pfet_01v8 ad=0.7 pd=3.9 as=0.7 ps=3.9 w=3.5 l=0.2
 X1 VD2 VIN+ V_source GNDA sky130_fd_pr__nfet_01v8 ad=0.3 pd=1.9 as=0.3 ps=1.9 w=1.5 l=0.15
@@ -576,5 +576,5 @@ X570 VOUT- cap_res_X sky130_fd_pr__cap_mim_m3_1 l=2 w=2
 X571 VOUT+ cap_res_Y sky130_fd_pr__cap_mim_m3_1 l=2 w=2
 X572 VOUT+ cap_res_Y sky130_fd_pr__cap_mim_m3_1 l=2 w=2
 X573 VOUT- cap_res_X sky130_fd_pr__cap_mim_m3_1 l=2 w=2
-** .ends
+.ends
 
