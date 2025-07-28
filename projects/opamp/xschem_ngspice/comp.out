@@ -27,9 +27,9 @@ Circuit 1 cell sky130_fd_pr__res_high_po_1p41 and Circuit 2 cell sky130_fd_pr__r
 Equate elements:  no current cell.
 Device classes sky130_fd_pr__res_high_po_1p41 and sky130_fd_pr__res_high_po_1p41 are equivalent.
 Flattening unmatched subcell opamp_bandgap_2 in circuit bgr_opamp_dummy.spice (0)(2 instances)
-Flattening unmatched subcell two_stage_opamp_dummy_magic in circuit bgr_opamp_dummy_magic.spice (1)(1 instance)
 Flattening unmatched subcell bgr in circuit bgr_opamp_dummy_magic.spice (1)(1 instance)
 Flattening unmatched subcell sky130_fd_pr__rf_pnp_05v5_W3p40L3p40 in circuit bgr_opamp_dummy_magic.spice (1)(9 instances)
+Flattening unmatched subcell two_stage_opamp_dummy_magic in circuit bgr_opamp_dummy_magic.spice (1)(1 instance)
 
 Class bgr_opamp_dummy.spice (0):  Merged 3 parallel devices.
 Class bgr_opamp_dummy_magic.spice (1):  Merged 652 parallel devices.

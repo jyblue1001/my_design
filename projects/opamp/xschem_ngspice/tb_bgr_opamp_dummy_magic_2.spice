@@ -104,7 +104,9 @@ x2 VDD GND VOUT+ VOUT- VIN+ VIN- bgr_opamp_dummy_magic
     * write tb_bgr_opamp_dummy_magic_46.raw
     * write tb_bgr_opamp_dummy_magic_47.raw
     * write tb_bgr_opamp_dummy_magic_48.raw
-    write tb_bgr_opamp_dummy_magic_49.raw
+    * write tb_bgr_opamp_dummy_magic_49.raw
+    * write tb_bgr_opamp_dummy_magic_50.raw
+    write tb_bgr_opamp_dummy_magic_51.raw
     * write tb_bgr_opamp_dummy_magic_mc.raw
     * write tb_bgr_opamp_dummy_magic_tt_mm.raw
     * write tb_bgr_opamp_dummy_magic_AC.raw
