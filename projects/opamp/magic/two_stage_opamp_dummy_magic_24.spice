@@ -1,6 +1,6 @@
-* NGSPICE file created from two_stage_opamp_dummy_magic.ext - technology: sky130A
+* NGSPICE file created from two_stage_opamp_dummy_magic_24.ext - technology: sky130A
 
-** .subckt two_stage_opamp_dummy_magic V_CMFB_S1 V_CMFB_S3 Vb3 Vb2 V_CMFB_S2 V_CMFB_S4
+.subckt two_stage_opamp_dummy_magic_24 V_CMFB_S1 V_CMFB_S3 Vb3 Vb2 V_CMFB_S2 V_CMFB_S4
 + VOUT- VOUT+ V_tail_gate V_err_amp_ref V_err_gate
 X0 VD4 Vb2 Y VD4 sky130_fd_pr__pfet_01v8 ad=0.7 pd=3.9 as=0.7 ps=3.9 w=3.5 l=0.2
 X1 w_109520_3890# V_err_gate V_err_mir_p w_109520_3890# sky130_fd_pr__pfet_01v8 ad=0.5 pd=2.9 as=0.5 ps=2.9 w=2.5 l=0.15
@@ -534,5 +534,5 @@ X528 w_109520_3890# a_109560_2850# a_109560_2850# a_109560_2850# sky130_fd_pr__n
 X529 VD4 Vb3 w_109520_3890# w_109520_3890# sky130_fd_pr__pfet_01v8 ad=0.7 pd=3.9 as=0.7 ps=3.9 w=3.5 l=0.2
 X530 VOUT+ cap_res_Y sky130_fd_pr__cap_mim_m3_1 l=2 w=2
 X531 a_109560_2850# a_109560_2850# w_109520_3890# a_109560_2850# sky130_fd_pr__nfet_01v8 ad=1.2 pd=6.8 as=0.6 ps=3.4 w=3 l=0.15
-** .ends
+.ends
 

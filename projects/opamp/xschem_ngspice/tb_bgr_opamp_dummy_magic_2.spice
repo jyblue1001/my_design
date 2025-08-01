@@ -51,7 +51,7 @@ x2 VDD GND VOUT+ VOUT- VIN+ VIN- bgr_opamp_dummy_magic
     * dc temp -40 120 10 VDD 0 4.0 0.2
     * dc VDD 0 2.0 0.02 temp -40 120 40
     * dc V5 0 0.01 0.0001
-    tran 2n 30u
+    tran 2n 14u
     * tran 10n 150u
     * tran 1p 3n
     * tran 0.1ns 30us
@@ -106,7 +106,26 @@ x2 VDD GND VOUT+ VOUT- VIN+ VIN- bgr_opamp_dummy_magic
     * write tb_bgr_opamp_dummy_magic_48.raw
     * write tb_bgr_opamp_dummy_magic_49.raw
     * write tb_bgr_opamp_dummy_magic_50.raw
-    write tb_bgr_opamp_dummy_magic_51.raw
+    * write tb_bgr_opamp_dummy_magic_51.raw
+    * write tb_bgr_opamp_dummy_magic_52.raw
+    * write tb_bgr_opamp_dummy_magic_53.raw
+    * write tb_bgr_opamp_dummy_magic_54.raw
+    * write tb_bgr_opamp_dummy_magic_55.raw
+    * write tb_bgr_opamp_dummy_magic_56.raw
+    * write tb_bgr_opamp_dummy_magic_57.raw
+    * write tb_bgr_opamp_dummy_magic_58.raw
+    * write tb_bgr_opamp_dummy_magic_59.raw
+    * write tb_bgr_opamp_dummy_magic_60.raw
+    * write tb_bgr_opamp_dummy_magic_61.raw
+    * write tb_bgr_opamp_dummy_magic_62.raw
+    * write tb_bgr_opamp_dummy_magic_63.raw
+    * write tb_bgr_opamp_dummy_magic_64.raw
+    * write tb_bgr_opamp_dummy_magic_65.raw
+    * write tb_bgr_opamp_dummy_magic_66.raw
+    * write tb_bgr_opamp_dummy_magic_67.raw
+    * write tb_bgr_opamp_dummy_magic_68.raw
+    * write tb_bgr_opamp_dummy_magic_69.raw
+    write tb_bgr_opamp_dummy_magic_70.raw
     * write tb_bgr_opamp_dummy_magic_mc.raw
     * write tb_bgr_opamp_dummy_magic_tt_mm.raw
     * write tb_bgr_opamp_dummy_magic_AC.raw

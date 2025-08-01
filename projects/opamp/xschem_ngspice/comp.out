@@ -1,8 +1,4 @@
 
-Circuit 1 cell sky130_fd_pr__pnp_05v5_W3p40L3p40 and Circuit 2 cell sky130_fd_pr__pnp_05v5_W3p40L3p40 are black boxes.
-Equate elements:  no current cell.
-Device classes sky130_fd_pr__pnp_05v5_W3p40L3p40 and sky130_fd_pr__pnp_05v5_W3p40L3p40 are equivalent.
-
 Circuit 1 cell sky130_fd_pr__nfet_01v8 and Circuit 2 cell sky130_fd_pr__nfet_01v8 are black boxes.
 Equate elements:  no current cell.
 Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
@@ -26,32 +22,80 @@ Device classes sky130_fd_pr__res_xhigh_po_0p35 and sky130_fd_pr__res_xhigh_po_0p
 Circuit 1 cell sky130_fd_pr__res_high_po_1p41 and Circuit 2 cell sky130_fd_pr__res_high_po_1p41 are black boxes.
 Equate elements:  no current cell.
 Device classes sky130_fd_pr__res_high_po_1p41 and sky130_fd_pr__res_high_po_1p41 are equivalent.
-Flattening unmatched subcell opamp_bandgap_2 in circuit bgr_opamp_dummy.spice (0)(2 instances)
-Flattening unmatched subcell bgr in circuit bgr_opamp_dummy_magic.spice (1)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__rf_pnp_05v5_W3p40L3p40 in circuit bgr_opamp_dummy_magic.spice (1)(9 instances)
-Flattening unmatched subcell two_stage_opamp_dummy_magic in circuit bgr_opamp_dummy_magic.spice (1)(1 instance)
 
-Class bgr_opamp_dummy.spice (0):  Merged 3 parallel devices.
-Class bgr_opamp_dummy_magic.spice (1):  Merged 652 parallel devices.
+Circuit 1 cell sky130_fd_pr__rf_pnp_05v5_W3p40L3p40 is a black box; will not flatten Circuit 2
+Equate elements:  no current cell.
+Device classes sky130_fd_pr__rf_pnp_05v5_W3p40L3p40 and sky130_fd_pr__rf_pnp_05v5_W3p40L3p40 are equivalent.
+Flattening unmatched subcell opamp_bandgap_2 in circuit bgr_opamp_dummy.spice (0)(2 instances)
+Flattening unmatched subcell two_stage_opamp_dummy_magic_24 in circuit bgr_opamp_dummy_magic.spice (1)(1 instance)
+Flattening unmatched subcell bgr_11 in circuit bgr_opamp_dummy_magic.spice (1)(1 instance)
+
+Class bgr_opamp_dummy.spice (0):  Merged 5 parallel devices.
+Class bgr_opamp_dummy_magic.spice (1):  Merged 595 parallel devices.
 Class bgr_opamp_dummy_magic.spice (1):  Merged 14 series devices.
 Subcircuit summary:
 Circuit 1: bgr_opamp_dummy.spice           |Circuit 2: bgr_opamp_dummy_magic.spice     
 -------------------------------------------|-------------------------------------------
-sky130_fd_pr__nfet_01v8 (91->51)           |sky130_fd_pr__nfet_01v8 (182->51)          
-sky130_fd_pr__pfet_01v8 (82->61)           |sky130_fd_pr__pfet_01v8 (244->61)          
+sky130_fd_pr__nfet_01v8 (91->51)           |sky130_fd_pr__nfet_01v8 (158->51)          
+sky130_fd_pr__pfet_01v8 (83->60)           |sky130_fd_pr__pfet_01v8 (210->60)          
 sky130_fd_pr__res_xhigh_po_0p35 (11)       |sky130_fd_pr__res_xhigh_po_0p35 (25->11)   
 sky130_fd_pr__cap_mim_m3_1 (336->5)        |sky130_fd_pr__cap_mim_m3_1 (336->5)        
 sky130_fd_pr__res_high_po_1p41 (2)         |sky130_fd_pr__res_high_po_1p41 (2)         
-sky130_fd_pr__pnp_05v5_W3p40L3p40 (9->2)   |sky130_fd_pr__pnp_05v5_W3p40L3p40 (9->2)   
+sky130_fd_pr__rf_pnp_05v5_W3p40L3p40 (9->2 |sky130_fd_pr__rf_pnp_05v5_W3p40L3p40 (9->2 
 sky130_fd_pr__res_high_po_0p35 (2)         |sky130_fd_pr__res_high_po_0p35 (2)         
-Number of devices: 134                     |Number of devices: 134                     
+Number of devices: 133                     |Number of devices: 133                     
 Number of nets: 52                         |Number of nets: 52                         
 ---------------------------------------------------------------------------------------
 Resolving symmetries by property value.
 Resolving symmetries by pin name.
-Netlists match uniquely.
+Netlists match uniquely with property errors.
+sky130_fd_pr__res_xhigh_po_0p35:R4 vs. bgr_11_0/sky130_fd_pr__res_xhigh_po_0p35:4:
+ L circuit1: 13   circuit2: 12.84   (delta=1.24%, cutoff=1%)
+sky130_fd_pr__pfet_01v8:M5 vs. two_stage_opamp_dummy_magic_24_0/sky130_fd_pr__pfet_01v8:270:
+ W circuit1: 4   circuit2: 5.3   (delta=28%, cutoff=1%)
+ L circuit1: 0.15   circuit2: 0.2   (delta=28.6%, cutoff=1%)
+Circuit 2 parallel/series network does not match Circuit 1
+Circuit 1 instance sky130_fd_pr__pfet_01v8:M5 network:
+  m = 1
+  mult = 2
+  sd = 0
+  sb = 0
+  sa = 0
+  nrs = (expression)
+  nrd = (expression)
+  ps = (expression)
+  pd = (expression)
+  as = (expression)
+  ad = (expression)
+  nf = 1
+  W = 4
+  L = 0.15
+  m = 1
+  mult = 1
+  sd = 0
+  sb = 0
+  sa = 0
+  nrs = (expression)
+  nrd = (expression)
+  ps = (expression)
+  pd = (expression)
+  as = (expression)
+  ad = (expression)
+  nf = 1
+  W = 5.3
+  L = 0.2
+Circuit 2 instance /two_stage_opamp_dummy_magic_24_0/sky130_fd_pr__pfet_01v8:270 network:
+  l = 0.2
+  w = 5.3
+  ps = 379
+  as = 68.76
+  pd = 4.4
+  ad = 0.72
 Cells have no pins;  pin matching not needed.
 Device classes bgr_opamp_dummy.spice and bgr_opamp_dummy_magic.spice are equivalent.
 
 Final result: Circuits match uniquely.
-.
+Property errors were found.
+
+The following cells had property errors:
+ bgr_opamp_dummy.spice

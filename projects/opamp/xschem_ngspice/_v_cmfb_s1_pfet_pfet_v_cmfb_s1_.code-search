@@ -1,25 +1,17 @@
-# Query: (Vb1_2.+Vb1)|(Vb1.+Vb1_2)
+# Query: (two_stage_opamp_dummy_magic_0.X.+Vb2)|(Vb2.+two_stage_opamp_dummy_magic_0.X)
 # Flags: RegExp
 # Including: **/xschem_ngspice/bgr_opamp_dummy_magic.spice
 
-18 results - 1 file
+10 results - 1 file
 
 my_design\projects\opamp\xschem_ngspice\bgr_opamp_dummy_magic.spice:
-   180: X175 two_stage_opamp_dummy_magic_0.Vb1.t3 two_stage_opamp_dummy_magic_0.Vb1.t2 two_stage_opamp_dummy_magic_0.Vb1_2.t3 GNDA.t2 sky130_fd_pr__nfet_01v8 ad=0.3 pd=1.9 as=0.3 ps=1.9 w=1.5 l=0.15
-   254: X249 two_stage_opamp_dummy_magic_0.Vb1.t1 two_stage_opamp_dummy_magic_0.Vb1.t0 two_stage_opamp_dummy_magic_0.Vb1_2.t2 GNDA.t139 sky130_fd_pr__nfet_01v8 ad=0.3 pd=1.9 as=0.3 ps=1.9 w=1.5 l=0.15
-   643: X630 two_stage_opamp_dummy_magic_0.Vb1_2.t1 two_stage_opamp_dummy_magic_0.Vb1.t4 two_stage_opamp_dummy_magic_0.Vb1.t5 GNDA.t322 sky130_fd_pr__nfet_01v8 ad=0.3 pd=1.9 as=0.3 ps=1.9 w=1.5 l=0.15
-   704: X691 two_stage_opamp_dummy_magic_0.Vb1_2.t0 two_stage_opamp_dummy_magic_0.Vb1.t6 two_stage_opamp_dummy_magic_0.Vb1.t7 GNDA.t128 sky130_fd_pr__nfet_01v8 ad=0.3 pd=1.9 as=0.3 ps=1.9 w=1.5 l=0.15
-   783: X769 two_stage_opamp_dummy_magic_0.V_source.t5 two_stage_opamp_dummy_magic_0.Vb1.t33 two_stage_opamp_dummy_magic_0.Vb1_2.t4 GNDA.t21 sky130_fd_pr__nfet_01v8 ad=0.6 pd=3.8 as=0.6 ps=3.8 w=1.5 l=3
-  8915: R8101 two_stage_opamp_dummy_magic_0.Vb1_2.n1 two_stage_opamp_dummy_magic_0.Vb1_2.t4 65.3505
-  8916: R8102 two_stage_opamp_dummy_magic_0.Vb1_2.n3 two_stage_opamp_dummy_magic_0.Vb1_2.n2 49.3505
-  8917: R8103 two_stage_opamp_dummy_magic_0.Vb1_2.n6 two_stage_opamp_dummy_magic_0.Vb1_2.n5 49.3505
-  8918: R8104 two_stage_opamp_dummy_magic_0.Vb1_2.n2 two_stage_opamp_dummy_magic_0.Vb1_2.t2 16.0005
-  8919: R8105 two_stage_opamp_dummy_magic_0.Vb1_2.n2 two_stage_opamp_dummy_magic_0.Vb1_2.t0 16.0005
-  8920: R8106 two_stage_opamp_dummy_magic_0.Vb1_2.t3 two_stage_opamp_dummy_magic_0.Vb1_2.n6 16.0005
-  8921: R8107 two_stage_opamp_dummy_magic_0.Vb1_2.n6 two_stage_opamp_dummy_magic_0.Vb1_2.t1 16.0005
-  8922: R8108 two_stage_opamp_dummy_magic_0.Vb1_2.n1 two_stage_opamp_dummy_magic_0.Vb1_2.n0 6.3755
-  8923: R8109 two_stage_opamp_dummy_magic_0.Vb1_2.n4 two_stage_opamp_dummy_magic_0.Vb1_2.n1 6.1255
-  8924: R8110 two_stage_opamp_dummy_magic_0.Vb1_2.n3 two_stage_opamp_dummy_magic_0.Vb1_2.n0 5.688
-  8925: R8111 two_stage_opamp_dummy_magic_0.Vb1_2.n4 two_stage_opamp_dummy_magic_0.Vb1_2.n3 5.438
-  8926: R8112 two_stage_opamp_dummy_magic_0.Vb1_2.n5 two_stage_opamp_dummy_magic_0.Vb1_2.n0 5.1255
-  8927: R8113 two_stage_opamp_dummy_magic_0.Vb1_2.n5 two_stage_opamp_dummy_magic_0.Vb1_2.n4 4.8755
+   387: X378 two_stage_opamp_dummy_magic_0.X.t12 two_stage_opamp_dummy_magic_0.Vb2.t14 two_stage_opamp_dummy_magic_0.VD3.t25 two_stage_opamp_dummy_magic_0.VD3.t24 sky130_fd_pr__pfet_01v8 ad=0.7 pd=3.9 as=0.7 ps=3.9 w=3.5 l=0.2
+   606: X596 two_stage_opamp_dummy_magic_0.VD3.t23 two_stage_opamp_dummy_magic_0.Vb2.t17 two_stage_opamp_dummy_magic_0.X.t11 two_stage_opamp_dummy_magic_0.VD3.t22 sky130_fd_pr__pfet_01v8 ad=0.7 pd=3.9 as=0.7 ps=3.9 w=3.5 l=0.2
+   714: X704 two_stage_opamp_dummy_magic_0.VD3.t21 two_stage_opamp_dummy_magic_0.Vb2.t18 two_stage_opamp_dummy_magic_0.X.t10 two_stage_opamp_dummy_magic_0.VD3.t20 sky130_fd_pr__pfet_01v8 ad=0.7 pd=3.9 as=0.7 ps=3.9 w=3.5 l=0.2
+   837: X826 two_stage_opamp_dummy_magic_0.VD3.t19 two_stage_opamp_dummy_magic_0.Vb2.t19 two_stage_opamp_dummy_magic_0.X.t9 two_stage_opamp_dummy_magic_0.VD3.t18 sky130_fd_pr__pfet_01v8 ad=0.7 pd=3.9 as=0.7 ps=3.9 w=3.5 l=0.2
+   851: X840 two_stage_opamp_dummy_magic_0.X.t8 two_stage_opamp_dummy_magic_0.Vb2.t20 two_stage_opamp_dummy_magic_0.VD3.t17 two_stage_opamp_dummy_magic_0.VD3.t16 sky130_fd_pr__pfet_01v8 ad=0.7 pd=3.9 as=0.7 ps=3.9 w=3.5 l=0.2
+   964: X952 two_stage_opamp_dummy_magic_0.X.t7 two_stage_opamp_dummy_magic_0.Vb2.t22 two_stage_opamp_dummy_magic_0.VD3.t15 two_stage_opamp_dummy_magic_0.VD3.t14 sky130_fd_pr__pfet_01v8 ad=0.7 pd=3.9 as=0.7 ps=3.9 w=3.5 l=0.2
+  1085: X1073 two_stage_opamp_dummy_magic_0.X.t6 two_stage_opamp_dummy_magic_0.Vb2.t24 two_stage_opamp_dummy_magic_0.VD3.t13 two_stage_opamp_dummy_magic_0.VD3.t12 sky130_fd_pr__pfet_01v8 ad=0.7 pd=3.9 as=0.7 ps=3.9 w=3.5 l=0.2
+  1179: X1167 two_stage_opamp_dummy_magic_0.X.t5 two_stage_opamp_dummy_magic_0.Vb2.t26 two_stage_opamp_dummy_magic_0.VD3.t11 two_stage_opamp_dummy_magic_0.VD3.t10 sky130_fd_pr__pfet_01v8 ad=0.7 pd=3.9 as=0.7 ps=3.9 w=3.5 l=0.2
+  1321: X1308 two_stage_opamp_dummy_magic_0.VD3.t9 two_stage_opamp_dummy_magic_0.Vb2.t30 two_stage_opamp_dummy_magic_0.X.t4 two_stage_opamp_dummy_magic_0.VD3.t8 sky130_fd_pr__pfet_01v8 ad=0.7 pd=3.9 as=0.7 ps=3.9 w=3.5 l=0.2
+  1427: X1413 two_stage_opamp_dummy_magic_0.VD3.t7 two_stage_opamp_dummy_magic_0.Vb2.t32 two_stage_opamp_dummy_magic_0.X.t3 two_stage_opamp_dummy_magic_0.VD3.t6 sky130_fd_pr__pfet_01v8 ad=0.7 pd=3.9 as=0.7 ps=3.9 w=3.5 l=0.2

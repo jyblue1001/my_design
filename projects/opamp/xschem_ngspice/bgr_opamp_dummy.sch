@@ -935,16 +935,6 @@ N 8020 -1300 8020 -1110 {lab=GNDA}
 N 8140 -1460 8340 -1460 {lab=GNDA}
 N 8140 -1460 8140 -1330 {lab=GNDA}
 N 6400 -1460 6400 -1430 {lab=GNDA}
-N 13210 -2420 13280 -2420 {lab=VDDA}
-N 13280 -2510 13280 -2420 {lab=VDDA}
-N 13170 -2510 13280 -2510 {lab=VDDA}
-N 13170 -2510 13170 -2450 {lab=VDDA}
-N 13060 -2510 13170 -2510 {lab=VDDA}
-N 13060 -2510 13060 -2420 {lab=VDDA}
-N 13060 -2420 13170 -2420 {lab=VDDA}
-N 13170 -2550 13170 -2510 {lab=VDDA}
-N 12800 -2330 13170 -2330 {lab=V_err_p}
-N 13170 -2390 13170 -2330 {lab=V_err_p}
 C {sky130_fd_pr/nfet_01v8.sym} 8020 -1800 0 0 {name=M7
 W=15
 L=0.15
@@ -1564,7 +1554,7 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8.sym} 12250 -1900 0 0 {name=M59
-W=0.5
+W=2.5
 L=0.15
 nf=1
 mult=1
@@ -1579,7 +1569,7 @@ spiceprefix=X
 }
 C {lab_wire.sym} 12270 -2030 0 0 {name=p83 sig_type=std_logic lab=VDDA}
 C {sky130_fd_pr/pfet_01v8.sym} 10870 -2400 0 0 {name=M60
-W=0.5
+W=2.5
 L=0.15
 nf=1
 mult=2
@@ -1594,7 +1584,7 @@ spiceprefix=X
 }
 C {lab_wire.sym} 10890 -2530 0 0 {name=p86 sig_type=std_logic lab=VDDA}
 C {sky130_fd_pr/pfet_01v8.sym} 13110 -1900 0 1 {name=M61
-W=0.5
+W=2.5
 L=0.15
 nf=1
 mult=1
@@ -1719,7 +1709,7 @@ model=res_high_po_1p41
 spiceprefix=X
 mult=1}
 C {sky130_fd_pr/nfet_01v8.sym} 13050 -1310 0 1 {name=M20
-W=0.5
+W=2.5
 L=0.15
 nf=1 
 mult=1
@@ -1733,7 +1723,7 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {sky130_fd_pr/nfet_01v8.sym} 12310 -1310 0 0 {name=M42
-W=0.5
+W=2.5
 L=0.15
 nf=1 
 mult=1
@@ -2538,21 +2528,6 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {sky130_fd_pr/pfet_01v8.sym} 13190 -2420 0 1 {name=M101
-W=0.5
-L=0.15
-nf=1
-mult=2
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=pfet_01v8
-spiceprefix=X
-}
-C {lab_wire.sym} 13170 -2550 0 1 {name=p113 sig_type=std_logic lab=VDDA}
 C {sky130_fd_pr/pfet_01v8.sym} 14410 -3390 0 1 {name=M62
 W=2
 L=0.15
