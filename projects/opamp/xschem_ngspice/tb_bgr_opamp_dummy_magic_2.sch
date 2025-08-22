@@ -12,8 +12,8 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=2.1025462e-06
-x2=1.0902546e-05
+x1=3.096136e-06
+x2=1.5896136e-05
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -75,14 +75,14 @@ node="vin+
 vin-"}
 B 2 3570 -1870 4290 -1380 {flags=graph
 
-y2=1.3702007
+y2=1.350998
 ypos1=0
 ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=2.1025462e-06
-x2=1.0902546e-05
+x1=3.096136e-06
+x2=1.5896136e-05
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -129,7 +129,7 @@ linewidth_mult=2
 
 
 
-y1=1.3700073
+y1=1.3509853
 
 
 
@@ -147,14 +147,14 @@ node="x2.two_stage_opamp_dummy_magic_0.vb1.n0
 x2.bgr_0.vb1_cur_bias"}
 B 2 3570 -1310 4290 -820 {flags=graph
 
-y2=0.27364246
+y2=0.24328264
 ypos1=0
 ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=2.1025462e-06
-x2=1.0902546e-05
+x1=3.096136e-06
+x2=1.5896136e-05
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -201,7 +201,7 @@ linewidth_mult=2
 
 
 
-y1=0.27346951
+y1=0.24327026
 
 
 
@@ -225,8 +225,8 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=2.1025462e-06
-x2=1.0902546e-05
+x1=3.096136e-06
+x2=1.5896136e-05
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -298,8 +298,8 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=2.1025462e-06
-x2=1.0902546e-05
+x1=3.096136e-06
+x2=1.5896136e-05
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -366,14 +366,14 @@ color=7
 node=x2.two_stage_opamp_dummy_magic_0.err_amp_out.n0}
 B 2 2710 -790 3430 -300 {flags=graph
 
-y2=1.2
+y2=1
 ypos1=0
 ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=2.1025462e-06
-x2=1.0902546e-05
+x1=3.096136e-06
+x2=1.5896136e-05
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -420,7 +420,7 @@ linewidth_mult=2
 
 
 
-y1=-17
+y1=0.96
 
 
 
@@ -432,11 +432,9 @@ y1=-17
 
 
 
-color="6 7 18"
+color="6 7"
 node="x2.two_stage_opamp_dummy_magic_0.x.n0
-x2.two_stage_opamp_dummy_magic_0.y.n0
-
-\\"x2.two_stage_opamp_dummy_magic_0.v_source.n0 0.26967 - 1000 * 0.94 + \\""}
+x2.two_stage_opamp_dummy_magic_0.y.n0"}
 B 2 6130 -770 6850 -280 {flags=graph
 
 y2=0.71703927
@@ -445,8 +443,8 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=2.1025462e-06
-x2=1.0902546e-05
+x1=3.096136e-06
+x2=1.5896136e-05
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -519,8 +517,8 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=2.1025462e-06
-x2=1.0902546e-05
+x1=3.096136e-06
+x2=1.5896136e-05
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -593,8 +591,8 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=2.1025462e-06
-x2=1.0902546e-05
+x1=3.096136e-06
+x2=1.5896136e-05
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -667,8 +665,8 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=2.1025462e-06
-x2=1.0902546e-05
+x1=3.096136e-06
+x2=1.5896136e-05
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -775,8 +773,8 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=2.1025462e-06
-x2=1.0902546e-05
+x1=3.096136e-06
+x2=1.5896136e-05
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -868,8 +866,8 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=2.1025462e-06
-x2=1.0902546e-05
+x1=3.096136e-06
+x2=1.5896136e-05
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -953,14 +951,14 @@ i(@m.x2.x573.msky130_fd_pr__nfet_01v8[id])
 \\""}
 B 2 5300 -2060 6020 -1570 {flags=graph
 
-y2=0.71815771
+y2=0.71822055
 ypos1=0
 ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=2.1025462e-06
-x2=1.0902546e-05
+x1=3.096136e-06
+x2=1.5896136e-05
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -1007,7 +1005,7 @@ linewidth_mult=2
 
 
 
-y1=0.71815748
+y1=0.71819032
 
 
 
@@ -1023,17 +1021,17 @@ y1=0.71815748
 
 color="6 7"
 node="x2.bgr_0.vin-.n0
-\\"x2.bgr_0.vin+.n0 0.01534805 -\\""}
+\\"x2.bgr_0.vin+.n0 0.015545676 -\\""}
 B 2 6140 -2060 6860 -1570 {flags=graph
 
-y2=0.76261693
+y2=0.76292057
 ypos1=0
 ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=2.1025462e-06
-x2=1.0902546e-05
+x1=3.096136e-06
+x2=1.5896136e-05
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -1080,7 +1078,7 @@ linewidth_mult=2
 
 
 
-y1=0.76261657
+y1=0.76292054
 
 
 
@@ -1105,8 +1103,8 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=2.1025462e-06
-x2=1.0902546e-05
+x1=3.096136e-06
+x2=1.5896136e-05
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -1174,8 +1172,8 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=2.1025462e-06
-x2=1.0902546e-05
+x1=3.096136e-06
+x2=1.5896136e-05
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -1256,14 +1254,14 @@ x2.bgr_0.v_cur_ref_reg.n1
 x2.bgr_0.v_cur_ref_reg.n0"}
 B 2 2710 -1350 3430 -860 {flags=graph
 
-y2=1.1
+y2=1.0105817
 ypos1=0
 ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=2.1025462e-06
-x2=1.0902546e-05
+x1=3.096136e-06
+x2=1.5896136e-05
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -1310,7 +1308,7 @@ linewidth_mult=2
 
 
 
-y1=0.82
+y1=0.93685367
 
 
 
@@ -1550,8 +1548,8 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=2.1025462e-06
-x2=1.0902546e-05
+x1=3.096136e-06
+x2=1.5896136e-05
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -1619,14 +1617,14 @@ color=7
 node=x2.bgr_0.v_cur_ref_reg.n0}
 B 2 8840 -1400 9560 -910 {flags=graph
 
-y2=0.86
+y2=0.85462004
 ypos1=0
 ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=2.1025462e-06
-x2=1.0902546e-05
+x1=3.096136e-06
+x2=1.5896136e-05
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -1673,7 +1671,7 @@ linewidth_mult=2
 
 
 
-y1=0.85
+y1=0.85461922
 
 
 
@@ -1692,14 +1690,14 @@ color=7
 node=x2.two_stage_opamp_dummy_magic_0.v_tail_gate.n0}
 B 2 8030 -1400 8750 -910 {flags=graph
 
-y2=0.9031516
+y2=0.90248001
 ypos1=0
 ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=2.1025462e-06
-x2=1.0902546e-05
+x1=3.096136e-06
+x2=1.5896136e-05
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -1746,7 +1744,7 @@ linewidth_mult=2
 
 
 
-y1=0.90314367
+y1=0.90247915
 
 
 
@@ -1764,14 +1762,14 @@ color=7
 node=x2.bgr_0.pfet_gate_10ua}
 B 2 9700 -1400 10420 -910 {flags=graph
 
-y2=1.5
+y2=1.3509973
 ypos1=0
 ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=2.1025462e-06
-x2=1.0902546e-05
+x1=3.096136e-06
+x2=1.5896136e-05
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -1818,7 +1816,7 @@ linewidth_mult=2
 
 
 
-y1=1.3
+y1=1.3509866
 
 
 
@@ -1840,14 +1838,14 @@ node="x2.bgr_0.vb1_cur_bias
 x2.two_stage_opamp_dummy_magic_0.vb1.n0"}
 B 2 10530 -1400 11250 -910 {flags=graph
 
-y2=1.6
+y2=1.5109898
 ypos1=0
 ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=2.1025462e-06
-x2=1.0902546e-05
+x1=3.096136e-06
+x2=1.5896136e-05
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -1894,7 +1892,7 @@ linewidth_mult=2
 
 
 
-y1=1.4
+y1=1.497246
 
 
 
@@ -1917,14 +1915,14 @@ node="x2.bgr_0.v_cmfb_s3
 x2.bgr_0.v_cmfb_s1"}
 B 2 8840 -790 9560 -300 {flags=graph
 
-y2=0.42
+y2=0.39989232
 ypos1=0
 ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=2.1025462e-06
-x2=1.0902546e-05
+x1=3.096136e-06
+x2=1.5896136e-05
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -1971,7 +1969,7 @@ linewidth_mult=2
 
 
 
-y1=0.41
+y1=0.39988972
 
 
 
@@ -1990,14 +1988,14 @@ y1=0.41
 node=x2.two_stage_opamp_dummy_magic_0.vb2.n0}
 B 2 8030 -790 8750 -300 {flags=graph
 
-y2=0.82405565
+y2=0.80690872
 ypos1=0
 ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=2.1025462e-06
-x2=1.0902546e-05
+x1=3.096136e-06
+x2=1.5896136e-05
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -2044,7 +2042,7 @@ linewidth_mult=2
 
 
 
-y1=0.82399661
+y1=0.80690857
 
 
 
@@ -2062,14 +2060,14 @@ color=7
 node=x2.bgr_0.nfet_gate_10ua.n0}
 B 2 9700 -790 10420 -300 {flags=graph
 
-y2=0.62
+y2=0.6078873
 ypos1=0
 ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=2.1025462e-06
-x2=1.0902546e-05
+x1=3.096136e-06
+x2=1.5896136e-05
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -2116,7 +2114,7 @@ linewidth_mult=2
 
 
 
-y1=0.61
+y1=0.60788648
 
 
 
@@ -2137,14 +2135,14 @@ color=7
 node=x2.bgr_0.vb3_cur_bias}
 B 2 10530 -790 11250 -300 {flags=graph
 
-y2=0.44
+y2=0.41724737
 ypos1=0
 ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=2.1025462e-06
-x2=1.0902546e-05
+x1=3.096136e-06
+x2=1.5896136e-05
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -2191,7 +2189,7 @@ linewidth_mult=2
 
 
 
-y1=0.33
+y1=0.39324737
 
 
 
@@ -2220,8 +2218,8 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=2.1025462e-06
-x2=1.0902546e-05
+x1=3.096136e-06
+x2=1.5896136e-05
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -2311,8 +2309,8 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=2.1025462e-06
-x2=1.0902546e-05
+x1=3.096136e-06
+x2=1.5896136e-05
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -2383,8 +2381,8 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=2.1025462e-06
-x2=1.0902546e-05
+x1=3.096136e-06
+x2=1.5896136e-05
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -2463,8 +2461,8 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=2.1025462e-06
-x2=1.0902546e-05
+x1=3.096136e-06
+x2=1.5896136e-05
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -2537,14 +2535,14 @@ x2.two_stage_opamp_dummy_magic_0.vd3.t8
 x2.two_stage_opamp_dummy_magic_0.vd3.t6"}
 B 2 4530 -2060 5250 -1570 {flags=graph
 
-y2=1.2414709
+y2=1.2410923
 ypos1=0
 ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=2.1025462e-06
-x2=1.0902546e-05
+x1=3.096136e-06
+x2=1.5896136e-05
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -2591,7 +2589,7 @@ linewidth_mult=2
 
 
 
-y1=1.2386561
+y1=1.238602
 
 
 
@@ -2606,14 +2604,14 @@ node="vin+
 vin-"}
 B 2 1700 -1240 2420 -750 {flags=graph
 
-y2=1.1
+y2=0.97
 ypos1=0
 ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=2.1025462e-06
-x2=1.0902546e-05
+x1=3.096136e-06
+x2=1.5896136e-05
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -2660,7 +2658,7 @@ linewidth_mult=2
 
 
 
-y1=0.82
+y1=0.9
 
 
 
@@ -2682,8 +2680,8 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=2.1025462e-06
-x2=1.0902546e-05
+x1=3.096136e-06
+x2=1.5896136e-05
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -2745,601 +2743,6 @@ y1=1.3609346
 
 color=7
 node=x2.two_stage_opamp_dummy_magic_0.vb1}
-B 2 8840 -70 9560 420 {flags=graph
-
-y2=0.84366975
-ypos1=0
-ypos2=2
-divy=5
-subdivy=4
-unity=1
-x1=2.1025462e-06
-x2=1.0902546e-05
-divx=5
-subdivx=4
-xlabmag=1.0
-ylabmag=1.0
-
-
-dataset=-1
-unitx=1
-logx=0
-logy=0
-
-
-
-
-
-
-
-
-
-
-
-linewidth_mult=2
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-y1=0.84366931
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-color=7
-node=x2.two_stage_opamp_dummy_magic_0.v_tail_gate}
-B 2 8030 -70 8750 420 {flags=graph
-
-y2=0.91468405
-ypos1=0
-ypos2=2
-divy=5
-subdivy=4
-unity=1
-x1=2.1025462e-06
-x2=1.0902546e-05
-divx=5
-subdivx=4
-xlabmag=1.0
-ylabmag=1.0
-
-
-dataset=-1
-unitx=1
-logx=0
-logy=0
-
-
-
-
-
-
-
-
-
-
-
-linewidth_mult=2
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-y1=0.91468337
-
-
-
-
-
-
-
-
-
-
-
-
-
-color=7
-node=x2.bgr_0.pfet_gate_10ua}
-B 2 9700 -70 10420 420 {flags=graph
-
-y2=1.3609614
-ypos1=0
-ypos2=2
-divy=5
-subdivy=4
-unity=1
-x1=2.1025462e-06
-x2=1.0902546e-05
-divx=5
-subdivx=4
-xlabmag=1.0
-ylabmag=1.0
-
-
-dataset=-1
-unitx=1
-logx=0
-logy=0
-
-
-
-
-
-
-
-
-
-
-
-linewidth_mult=2
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-y1=1.3609355
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-color=7
-node=x2.two_stage_opamp_dummy_magic_0.vb1}
-B 2 10530 -70 11250 420 {flags=graph
-
-y2=1.4947495
-ypos1=0
-ypos2=2
-divy=5
-subdivy=4
-unity=1
-x1=2.1025462e-06
-x2=1.0902546e-05
-divx=5
-subdivx=4
-xlabmag=1.0
-ylabmag=1.0
-
-
-dataset=-1
-unitx=1
-logx=0
-logy=0
-
-
-
-
-
-
-
-
-
-
-
-linewidth_mult=2
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-y1=1.4626879
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-color="6 7"
-node="x2.two_stage_opamp_dummy_magic_0.v_cmfb_s1
-x2.two_stage_opamp_dummy_magic_0.v_cmfb_s3"}
-B 2 8840 540 9560 1030 {flags=graph
-
-y2=0.41489497
-ypos1=0
-ypos2=2
-divy=5
-subdivy=4
-unity=1
-x1=2.1025462e-06
-x2=1.0902546e-05
-divx=5
-subdivx=4
-xlabmag=1.0
-ylabmag=1.0
-
-
-dataset=-1
-unitx=1
-logx=0
-logy=0
-
-
-
-
-
-
-
-
-
-
-
-linewidth_mult=2
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-y1=0.41489238
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-node=x2.two_stage_opamp_dummy_magic_0.vb2
-color=7}
-B 2 8030 540 8750 1030 {flags=graph
-
-y2=0.80162038
-ypos1=0
-ypos2=2
-divy=5
-subdivy=4
-unity=1
-x1=2.1025462e-06
-x2=1.0902546e-05
-divx=5
-subdivx=4
-xlabmag=1.0
-ylabmag=1.0
-
-
-dataset=-1
-unitx=1
-logx=0
-logy=0
-
-
-
-
-
-
-
-
-
-
-
-linewidth_mult=2
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-y1=0.80161905
-
-
-
-
-
-
-
-
-
-
-
-
-
-color=7
-node=x2.bgr_0.nfet_gate_10ua}
-B 2 9700 540 10420 1030 {flags=graph
-
-y2=0.01
-ypos1=0
-ypos2=2
-divy=5
-subdivy=4
-unity=1
-x1=2.1025462e-06
-x2=1.0902546e-05
-divx=5
-subdivx=4
-xlabmag=1.0
-ylabmag=1.0
-
-
-dataset=-1
-unitx=1
-logx=0
-logy=0
-
-
-
-
-
-
-
-
-
-
-
-linewidth_mult=2
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-y1=0
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-color=7
-node=x2.bgr_0.vb3_cur_bias}
-B 2 10530 540 11250 1030 {flags=graph
-
-y2=0.41
-ypos1=0
-ypos2=2
-divy=5
-subdivy=4
-unity=1
-x1=2.1025462e-06
-x2=1.0902546e-05
-divx=5
-subdivx=4
-xlabmag=1.0
-ylabmag=1.0
-
-
-dataset=-1
-unitx=1
-logx=0
-logy=0
-
-
-
-
-
-
-
-
-
-
-
-linewidth_mult=2
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-y1=0.37
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-color="6 7"
-node="x2.two_stage_opamp_dummy_magic_0.v_cmfb_s2
-x2.two_stage_opamp_dummy_magic_0.v_cmfb_s4"}
 B 2 1700 -150 2420 340 {flags=graph
 
 y2=1.3609606
@@ -3348,8 +2751,8 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=2.1025462e-06
-x2=1.0902546e-05
+x1=3.096136e-06
+x2=1.5896136e-05
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -3413,14 +2816,14 @@ color=7
 node=x2.two_stage_opamp_dummy_magic_0.vb1}
 B 2 1700 370 2420 860 {flags=graph
 
-y2=0.91468387
+y2=0.9146844
 ypos1=0
 ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=2.1025462e-06
-x2=1.0902546e-05
+x1=3.096136e-06
+x2=1.5896136e-05
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -3467,7 +2870,7 @@ linewidth_mult=2
 
 
 
-y1=0.91468346
+y1=0.91468354
 
 
 
@@ -3484,14 +2887,14 @@ color=7
 node=x2.bgr_0.pfet_gate_10ua}
 B 2 1700 920 2420 1410 {flags=graph
 
-y2=0.91468387
+y2=0.92
 ypos1=0
 ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=2.1025462e-06
-x2=1.0902546e-05
+x1=3.096136e-06
+x2=1.5896136e-05
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -3538,7 +2941,7 @@ linewidth_mult=2
 
 
 
-y1=0.91468346
+y1=0.91
 
 
 
@@ -3555,14 +2958,14 @@ color=7
 node=x2.bgr_0.pfet_gate_10ua}
 B 2 4530 -2610 5250 -2120 {flags=graph
 
-y2=0.00085
+y2=0.0008
 ypos1=0
 ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=2.1025462e-06
-x2=1.0902546e-05
+x1=3.096136e-06
+x2=1.5896136e-05
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -3609,7 +3012,7 @@ linewidth_mult=2
 
 
 
-y1=0.00081
+y1=0.00075
 
 
 
@@ -3622,26 +3025,26 @@ y1=0.00081
 
 
 color="7 7 7 7 7 7 7 7 7 7"
-node="x2.gnda.t123
-x2.gnda.t28
-x2.gnda.t154
-x2.gnda.t46
-x2.gnda.t18
-x2.gnda.t108
-x2.gnda.t334
-x2.gnda.t102
-x2.gnda.t22
-x2.gnda.t174"}
+node="x2.gnda.t313
+x2.gnda.t133
+x2.gnda.t145
+x2.gnda.t326
+x2.gnda.t132
+x2.gnda.t311
+x2.gnda.t76
+x2.gnda.t139
+x2.gnda.t131
+x2.gnda.t262"}
 B 2 5290 -2610 6010 -2120 {flags=graph
 
-y2=0.000852
+y2=0.0008
 ypos1=0
 ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=2.1025462e-06
-x2=1.0902546e-05
+x1=3.096136e-06
+x2=1.5896136e-05
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -3688,7 +3091,7 @@ linewidth_mult=2
 
 
 
-y1=0.000812
+y1=0.00076
 
 
 
@@ -3701,87 +3104,16 @@ y1=0.000812
 
 
 color="7 7 7 7 7 7 7 7 7 7"
-node="x2.gnda.t333
-x2.gnda.t155
-x2.gnda.t53
-x2.gnda.t328
-x2.gnda.t34
-x2.gnda.t97
-x2.gnda.t330
-x2.gnda.t103
-x2.gnda.t327
-x2.gnda.t173"}
-B 2 5290 -3140 6010 -2650 {flags=graph
-
-y2=0.001164
-ypos1=0
-ypos2=2
-divy=5
-subdivy=4
-unity=1
-x1=2.1025462e-06
-x2=1.0902546e-05
-divx=5
-subdivx=4
-xlabmag=1.0
-ylabmag=1.0
-
-
-dataset=-1
-unitx=1
-logx=0
-logy=0
-
-
-
-
-
-
-
-
-
-
-
-linewidth_mult=2
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-y1=0.000574
-
-
-
-
-
-
-
-
-
-
-
-color="7 7"
-node="x2.gnda.t64
-x2.gnda.t63"}
+node="x2.gnda.t327
+x2.gnda.t312
+x2.gnda.t320
+x2.gnda.t105
+x2.gnda.t109
+x2.gnda.t304
+x2.gnda.t19
+x2.gnda.t144
+x2.gnda.t18
+x2.gnda.t143"}
 B 2 6160 -3140 6880 -2650 {flags=graph
 
 y2=1.4070621
@@ -3790,8 +3122,8 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=2.1025462e-06
-x2=1.0902546e-05
+x1=3.096136e-06
+x2=1.5896136e-05
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -3860,8 +3192,8 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=2.1025462e-06
-x2=1.0902546e-05
+x1=3.096136e-06
+x2=1.5896136e-05
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -3924,14 +3256,14 @@ color=7
 node=x2.bgr_0.pfet_gate_10ua.t10}
 B 2 4320 -1310 5040 -820 {flags=graph
 
-y2=1.3733148
+y2=1.4
 ypos1=0
 ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=2.1025462e-06
-x2=1.0902546e-05
+x1=3.096136e-06
+x2=1.5896136e-05
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -3978,7 +3310,7 @@ linewidth_mult=2
 
 
 
-y1=1.373259
+y1=1.3
 
 
 
@@ -4062,14 +3394,14 @@ x2.two_stage_opamp_dummy_magic_0.vb1.n0
 x2.bgr_0.vb1_cur_bias"}
 B 2 2710 -150 3430 340 {flags=graph
 
-y2=8.9e-05
+y2=0.01
 ypos1=0
 ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=2.1025462e-06
-x2=1.0902546e-05
+x1=3.096136e-06
+x2=1.5896136e-05
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -4116,7 +3448,7 @@ linewidth_mult=2
 
 
 
-y1=8.8e-05
+y1=0
 
 
 
@@ -4160,8 +3492,8 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=2.1025462e-06
-x2=1.0902546e-05
+x1=3.096136e-06
+x2=1.5896136e-05
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -4260,8 +3592,8 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=2.1025462e-06
-x2=1.0902546e-05
+x1=3.096136e-06
+x2=1.5896136e-05
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -4333,8 +3665,8 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=2.1025462e-06
-x2=1.0902546e-05
+x1=3.096136e-06
+x2=1.5896136e-05
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -4405,8 +3737,8 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=2.1025462e-06
-x2=1.0902546e-05
+x1=3.096136e-06
+x2=1.5896136e-05
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -4475,8 +3807,8 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=2.1025462e-06
-x2=1.0902546e-05
+x1=3.096136e-06
+x2=1.5896136e-05
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -4651,6 +3983,374 @@ x2.two_stage_opamp_dummy_magic_0.v_source.n2
 x2.two_stage_opamp_dummy_magic_0.v_source.n1
 x2.two_stage_opamp_dummy_magic_0.v_source.n0
 x2.two_stage_opamp_dummy_magic_0.v_source"}
+B 2 1700 1510 2420 2000 {flags=graph
+
+y2=1.3
+ypos1=0
+ypos2=2
+divy=5
+subdivy=4
+unity=1
+x1=3.096136e-06
+x2=1.5896136e-05
+divx=5
+subdivx=4
+xlabmag=1.0
+ylabmag=1.0
+
+
+dataset=-1
+unitx=1
+logx=0
+logy=0
+
+
+
+
+
+
+
+
+
+
+
+linewidth_mult=2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+y1=1
+
+
+
+
+
+
+
+
+
+
+
+
+color="6 7"
+node="x2.two_stage_opamp_dummy_magic_0.x
+x2.two_stage_opamp_dummy_magic_0.y"}
+B 2 2540 920 3260 1410 {flags=graph
+
+y2=0.73453378
+ypos1=0
+ypos2=2
+divy=5
+subdivy=4
+unity=1
+x1=3.096136e-06
+x2=1.5896136e-05
+divx=5
+subdivx=4
+xlabmag=1.0
+ylabmag=1.0
+
+
+dataset=-1
+unitx=1
+logx=0
+logy=0
+
+
+
+
+
+
+
+
+
+
+
+linewidth_mult=2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+y1=0.66950798
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+color="6 7"
+node="\\"x2.bgr_0.vin+ 0.015282335 -\\"
+x2.bgr_0.vin-"}
+B 2 4530 -3150 5250 -2660 {flags=graph
+
+y2=1.8014015
+ypos1=0
+ypos2=2
+divy=5
+subdivy=4
+unity=1
+x1=3.096136e-06
+x2=1.5896136e-05
+divx=5
+subdivx=4
+xlabmag=1.0
+ylabmag=1.0
+
+
+dataset=-1
+unitx=1
+logx=0
+logy=0
+
+
+
+
+
+
+
+
+
+
+
+linewidth_mult=2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+y1=1.7906641
+
+
+
+
+
+
+
+
+
+
+
+
+color="6 7 4"
+node="\\"x2.vdda.t336 0.00206208 +\\"
+x2.vdda.t335
+\\"x2.two_stage_opamp_dummy_magic_0.vb1 0.447631 + \\""}
+B 2 2710 -1870 3430 -1380 {flags=graph
+
+y2=0.85433055
+ypos1=0
+ypos2=2
+divy=5
+subdivy=4
+unity=1
+x1=3.096136e-06
+x2=1.5896136e-05
+divx=5
+subdivx=4
+xlabmag=1.0
+ylabmag=1.0
+
+
+dataset=-1
+unitx=1
+logx=0
+logy=0
+
+
+
+
+
+
+
+
+
+
+
+linewidth_mult=2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+y1=0.85432928
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+color=7
+node=x2.two_stage_opamp_dummy_magic_0.v_tail_gate}
+B 2 2710 -2430 3430 -1940 {flags=graph
+
+y2=0.69
+ypos1=0
+ypos2=2
+divy=5
+subdivy=4
+unity=1
+x1=3.096136e-06
+x2=1.5896136e-05
+divx=5
+subdivx=4
+xlabmag=1.0
+ylabmag=1.0
+
+
+dataset=-1
+unitx=1
+logx=0
+logy=0
+
+
+
+
+
+
+
+
+
+
+
+linewidth_mult=2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+y1=0.65
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+color=6
+node=xtwo_stage_opamp_dummy_magic_2_0.v_p_mir}
 T {8-0.90um
 9-0.85um
 10-0.95um
@@ -4691,12 +4391,13 @@ C {devices/vsource.sym} 1910 -3710 0 0 {name=VDD value="pwl(0 0 1us 0 2us 1.8)" 
 C {devices/gnd.sym} 1910 -3680 0 0 {name=l3 lab=GND}
 C {devices/vdd.sym} 1910 -3740 0 0 {name=l4 lab=VDD}
 C {sky130_fd_pr/corner.sym} 1600 -3750 0 0 {name=CORNER only_toplevel=false corner=tt}
-C {simulator_commands_shown.sym} 190.5949487329931 -4070 0 0 {name=COMMANDS
+C {simulator_commands_shown.sym} 190.5949487329931 -4110 0 0 {name=COMMANDS
 simulator=ngspice
 only_toplevel=false 
 value="
 
 .include /foss/designs/my_design/projects/opamp/xschem_ngspice/bgr_opamp_dummy_magic.spice
+.include /foss/designs/my_design/projects/opamp/xschem_ngspice/bgr_opamp_dummy_magic_2.spice
 * .include /foss/designs/my_design/projects/opamp/xschem_ngspice/two_stage_opamp_dummy_magic.spice
 * .include /foss/designs/my_design/projects/opamp/xschem_ngspice/ref_volt_cur_gen_dummy_magic.spice
 
@@ -4735,94 +4436,13 @@ value="
     * dc temp -40 120 10 VDD 0 4.0 0.2
     * dc VDD 0 2.0 0.02 temp -40 120 40
     * dc V5 0 0.01 0.0001
-    tran 2n 11u
+    tran 2n 16u
     * tran 10n 150u
     * tran 1p 3n
     * tran 0.1ns 30us
     * ac dec 40 1 10T
-    * write tb_bgr_opamp_dummy_magic.raw 
-    * write tb_bgr_opamp_dummy_magic_2.raw 
-    * write tb_bgr_opamp_dummy_magic_3.raw 
-    * write tb_bgr_opamp_dummy_magic_4.raw 
-    * write tb_bgr_opamp_dummy_magic_5.raw 
-    * write tb_bgr_opamp_dummy_magic_6.raw 
-    * write tb_bgr_opamp_dummy_magic_7.raw 
-    * write tb_bgr_opamp_dummy_magic_8.raw 
-    * write tb_bgr_opamp_dummy_magic_9.raw 
-    * write tb_bgr_opamp_dummy_magic_10.raw 
-    * write tb_bgr_opamp_dummy_magic_11.raw 
-    * write tb_bgr_opamp_dummy_magic_12.raw 
-    * write tb_bgr_opamp_dummy_magic_13.raw 
-    * write tb_bgr_opamp_dummy_magic_14.raw 
-    * write tb_bgr_opamp_dummy_magic_15.raw 
-    * write tb_bgr_opamp_dummy_magic_16.raw 
-    * write tb_bgr_opamp_dummy_magic_17.raw 
-    * write tb_bgr_opamp_dummy_magic_18.raw 
-    * write tb_bgr_opamp_dummy_magic_19.raw 
-    * write tb_bgr_opamp_dummy_magic_20.raw 
-    * write tb_bgr_opamp_dummy_magic_21.raw 
-    * write tb_bgr_opamp_dummy_magic_22.raw 
-    * write tb_bgr_opamp_dummy_magic_23.raw 
-    * write tb_bgr_opamp_dummy_magic_24.raw 
-    * write tb_bgr_opamp_dummy_magic_25.raw 
-    * write tb_bgr_opamp_dummy_magic_26.raw 
-    * write tb_bgr_opamp_dummy_magic_27.raw 
-    * write tb_bgr_opamp_dummy_magic_28.raw 
-    * write tb_bgr_opamp_dummy_magic_29.raw
-    * write tb_bgr_opamp_dummy_magic_30.raw
-    * write tb_bgr_opamp_dummy_magic_31.raw
-    * write tb_bgr_opamp_dummy_magic_32.raw
-    * write tb_bgr_opamp_dummy_magic_33.raw
-    * write tb_bgr_opamp_dummy_magic_34.raw
-    * write tb_bgr_opamp_dummy_magic_35.raw
-    * write tb_bgr_opamp_dummy_magic_36.raw
-    * write tb_bgr_opamp_dummy_magic_37.raw
-    * write tb_bgr_opamp_dummy_magic_38.raw
-    * write tb_bgr_opamp_dummy_magic_39.raw
-    * write tb_bgr_opamp_dummy_magic_40.raw
-    * write tb_bgr_opamp_dummy_magic_41.raw
-    * write tb_bgr_opamp_dummy_magic_42.raw
-    * write tb_bgr_opamp_dummy_magic_43.raw
-    * write tb_bgr_opamp_dummy_magic_44.raw
-    * write tb_bgr_opamp_dummy_magic_45.raw
-    * write tb_bgr_opamp_dummy_magic_46.raw
-    * write tb_bgr_opamp_dummy_magic_47.raw
-    * write tb_bgr_opamp_dummy_magic_48.raw
-    * write tb_bgr_opamp_dummy_magic_49.raw
-    * write tb_bgr_opamp_dummy_magic_50.raw
-    * write tb_bgr_opamp_dummy_magic_51.raw
-    * write tb_bgr_opamp_dummy_magic_52.raw
-    * write tb_bgr_opamp_dummy_magic_53.raw
-    * write tb_bgr_opamp_dummy_magic_54.raw
-    * write tb_bgr_opamp_dummy_magic_55.raw
-    * write tb_bgr_opamp_dummy_magic_56.raw
-    * write tb_bgr_opamp_dummy_magic_57.raw
-    * write tb_bgr_opamp_dummy_magic_58.raw
-    * write tb_bgr_opamp_dummy_magic_59.raw
-    * write tb_bgr_opamp_dummy_magic_60.raw
-    * write tb_bgr_opamp_dummy_magic_61.raw
-    * write tb_bgr_opamp_dummy_magic_62.raw
-    * write tb_bgr_opamp_dummy_magic_63.raw
-    * write tb_bgr_opamp_dummy_magic_64.raw
-    * write tb_bgr_opamp_dummy_magic_65.raw
-    * write tb_bgr_opamp_dummy_magic_66.raw
-    * write tb_bgr_opamp_dummy_magic_67.raw
-    * write tb_bgr_opamp_dummy_magic_68.raw
-    * write tb_bgr_opamp_dummy_magic_69.raw
-    * write tb_bgr_opamp_dummy_magic_70.raw
-    * write tb_bgr_opamp_dummy_magic_71.raw
-    * write tb_bgr_opamp_dummy_magic_72.raw
-    * write tb_bgr_opamp_dummy_magic_73.raw
-    * write tb_bgr_opamp_dummy_magic_74.raw
-    * write tb_bgr_opamp_dummy_magic_75.raw
-    * write tb_bgr_opamp_dummy_magic_76.raw
-    * write tb_bgr_opamp_dummy_magic_77.raw
-    * write tb_bgr_opamp_dummy_magic_78.raw
-    * write tb_bgr_opamp_dummy_magic_79.raw
-    * write tb_bgr_opamp_dummy_magic_80.raw
-    * write tb_bgr_opamp_dummy_magic_81.raw
-    * write tb_bgr_opamp_dummy_magic_82.raw
-    write tb_bgr_opamp_dummy_magic_83.raw
+    * write tb_bgr_opamp_dummy_magic.raw
+    write tb_bgr_opamp_dummy_magic_2.raw  
     * write tb_bgr_opamp_dummy_magic_mc.raw
     * write tb_bgr_opamp_dummy_magic_tt_mm.raw
     * write tb_bgr_opamp_dummy_magic_AC.raw
