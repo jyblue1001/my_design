@@ -5,15 +5,15 @@ V {}
 S {}
 E {}
 B 2 160 -3460 5790 -1910 {flags=graph
-y1=-0.0026
-y2=1.7
+y1=-0.0023
+y2=1.3
 ypos1=0
 ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=0
-x2=9e-06
+x1=7.7540594e-09
+x2=1.0187948e-08
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -89,15 +89,15 @@ linewidth_mult=5
 color=12
 node=v_cont}
 B 2 160 -1780 5790 -230 {flags=graph
-y1=-0.054
-y2=1.7
+y1=-0.037
+y2=1.8
 ypos1=0
 ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=0
-x2=9e-06
+x1=7.7540594e-09
+x2=1.0187948e-08
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -168,12 +168,9 @@ linewidth_mult=8
 
 
 
-color=5
+
+color=7
 node=v_osc}
-T {full_pll_14.raw - current_starved_VCO9 & divide_by_120
-full_pll_14_2.raw - current_starved_VCO8 & divide_by_120_4
-full_pll_14_3.raw - current_starved_VCO8 & divide_by_120_6
-full_pll_14_4.raw - current_starved_VCO10 & divide_by_120_6} 460 -4360 0 0 1 1 {}
 N 3700 -3640 3770 -3640 {
 lab=V_OUT120}
 N 3950 -3640 5150 -3640 {
@@ -184,10 +181,6 @@ N 4930 -4140 5150 -4140 {
 lab=V_OSC}
 N 1880 -3950 1880 -3910 {
 lab=F_REF}
-N 3830 -4110 3860 -4110 {
-lab=I_IN}
-N 1720 -3950 1720 -3910 {
-lab=I_IN}
 N 3690 -4140 3860 -4140 {
 lab=DOWN_PFD}
 N 3760 -4170 3860 -4170 {
@@ -234,6 +227,9 @@ N 3310 -3900 3310 -3810 {
 lab=V_OUT120_INV}
 N 3310 -4140 3310 -4050 {
 lab=V_OUT120_INV_2}
+N 3820 -4110 3860 -4110 {lab=I_IN}
+N 3820 -4490 3820 -4110 {lab=I_IN}
+N 3680 -4490 3820 -4490 {lab=I_IN}
 C {devices/vsource.sym} 1320 -3890 0 0 {name=VDD value=1.8 savecurrent=false}
 C {devices/gnd.sym} 1320 -3860 0 0 {name=l1 lab=GND}
 C {devices/code.sym} 1110 -3960 0 0 {name=Stimuli only_toplevel=false value="
@@ -261,17 +257,18 @@ C {devices/code.sym} 1110 -3960 0 0 {name=Stimuli only_toplevel=false value="
 +v(f_ref_inv_2)
 +i(x4.vmeas2)
 +i(x4.vmeas3)
++@m.x8.xm50.msky130_fd_pr__pfet_01v8[id]
 
 .control
     save v(v_cont) v(v_osc)
     * tran 2p 9u
     tran 5p 6u
     remzerovec
-    write full_pll_14.raw
-    * write full_pll_14_4.raw
+    * write full_pll_bgr.raw
+    write full_pll_bgr_2.raw
     linearize v(v_cont) v(v_osc)
-    * wrdata /foss/designs/my_design/projects/pll/full_pll/xschem_ngspice/full_pll_14.txt v(v_osc)
-    wrdata /foss/designs/my_design/projects/pll/full_pll/xschem_ngspice/full_pll_14_4.txt v(v_osc)
+    * wrdata /foss/designs/my_design/projects/pll/full_pll/xschem_ngspice/full_pll_bgr.txt v(v_osc)
+    wrdata /foss/designs/my_design/projects/pll/full_pll/xschem_ngspice/full_pll_bgr.txt v(v_osc)
     set appendwrite
  .endc
 
@@ -285,20 +282,18 @@ C {/foss/designs/my_design/projects/pll/vco/xschem_ngspice/current_starved_VCO10
 C {devices/vdd.sym} 3860 -3690 0 1 {name=l2 lab=VDD}
 C {devices/gnd.sym} 3860 -3590 0 1 {name=l3 lab=GND}
 C {devices/gnd.sym} 3970 -4070 0 0 {name=l14 lab=GND}
-C {devices/vsource.sym} 1880 -3880 0 0 {name=V3 value="pulse(0 1.8 0ns 1ns 1ns 24ns 50ns)" savecurrent=false
-}
+C {devices/vsource.sym} 1880 -3880 0 0 {name=V3 value="sin(0.9 0.9 20Meg)" savecurrent=false
+
+* "pulse(0 1.8 0ns 1ns 1ns 24ns 50ns)"}
 C {devices/gnd.sym} 1880 -3850 0 0 {name=l10 lab=GND}
 C {devices/lab_pin.sym} 1880 -3950 0 1 {name=p11 sig_type=std_logic lab=F_REF}
 C {/foss/designs/my_design/projects/pll/pfd/xschem_ngspice/phase_frequency_detector.sym} 3540 -4160 0 0 {name=x3}
 C {devices/lab_pin.sym} 2570 -4180 0 0 {name=p19 lab=F_REF}
 C {devices/vdd.sym} 3970 -4210 0 0 {name=l17 lab=VDD}
 C {/foss/designs/my_design/projects/pll/charge_pump/xschem_ngspice/charge_pump7.sym} 3970 -4140 0 0 {name=x4}
-C {devices/isource.sym} 1720 -3880 2 1 {name=I1 value=100u}
 C {devices/vdd.sym} 3540 -4220 0 0 {name=l11 lab=VDD}
 C {devices/gnd.sym} 3540 -4100 0 0 {name=l12 lab=GND}
-C {devices/gnd.sym} 1720 -3850 0 0 {name=l13 lab=GND}
-C {devices/lab_pin.sym} 1720 -3950 0 1 {name=p9 sig_type=std_logic lab=I_IN}
-C {devices/lab_pin.sym} 3830 -4110 0 0 {name=p10 sig_type=std_logic lab=I_IN}
+C {devices/lab_pin.sym} 3820 -4490 0 1 {name=p10 sig_type=std_logic lab=I_IN}
 C {devices/lab_wire.sym} 4610 -4140 0 1 {name=p7 sig_type=std_logic lab=V_CONT}
 C {devices/lab_wire.sym} 3760 -4180 0 1 {name=p3 sig_type=std_logic lab=UP_PFD}
 C {devices/lab_wire.sym} 3780 -4140 2 1 {name=p4 sig_type=std_logic lab=DOWN_PFD}
@@ -330,3 +325,6 @@ C {/foss/designs/my_design/projects/pll/divider/xschem_ngspice/inverter.sym} 309
 C {/foss/designs/my_design/projects/pll/divider/xschem_ngspice/inverter.sym} 3310 -3960 3 0 {name=x6}
 C {/foss/designs/my_design/projects/pll/divider/xschem_ngspice/inverter.sym} 3310 -3720 3 0 {name=x7}
 C {/foss/designs/my_design/projects/pll/divider/xschem_ngspice/divide_by_120/divide_by_120_6.sym} 3860 -3640 0 1 {name=x2}
+C {/foss/designs/my_design/projects/pll/full_pll/xschem_ngspice/bgr_dummy.sym} 3560 -4490 0 0 {name=x8}
+C {devices/vdd.sym} 3560 -4560 0 0 {name=l23 lab=VDD}
+C {devices/gnd.sym} 3560 -4420 0 0 {name=l24 lab=GND}

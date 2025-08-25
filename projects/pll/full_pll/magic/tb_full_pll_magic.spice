@@ -48,7 +48,7 @@ x1 V_OSC VDD GND F_REF I_IN full_pll_magic
   tran 5ps 6us
 
   remzerovec
-  write tb_full_pll_magic_4.raw
+  write tb_full_pll_magic.raw
   wrdata /foss/designs/my_design/projects/pll/full_pll/magic/full_pll_v_osc.txt v(v_osc)
   set appendwrite
 
