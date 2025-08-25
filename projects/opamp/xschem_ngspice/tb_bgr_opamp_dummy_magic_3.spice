@@ -1,20 +1,19 @@
-** sch_path: /foss/designs/my_design/projects/opamp/xschem_ngspice/tb_bgr_opamp_dummy_magic_2.sch
-**.subckt tb_bgr_opamp_dummy_magic_2
+** sch_path: /foss/designs/my_design/projects/opamp/xschem_ngspice/tb_bgr_opamp_dummy_magic_3.sch
+**.subckt tb_bgr_opamp_dummy_magic_3
 VDDA1 VDDA1 GND pwl(0 0 1us 0 2us 1.8)
 V2 VIN- GND sin(1.24 -0.001 200k)
 V1 VIN+ GND sin(1.24 0.001 200k)
 XC1 VOUT+ GND sky130_fd_pr__cap_mim_m3_1 W=23 L=23 MF=1 m=1
 XC2 VOUT- GND sky130_fd_pr__cap_mim_m3_1 W=23 L=23 MF=1 m=1
-x2 VDDA1 GND VOUT+ VOUT- VIN+ VIN- VDDA2 GND bgr_opamp_dummy_magic_2
-VDDA2 VDDA2 GND pwl(0 0 1us 0 2us 1.8)
+x2 VDDA1 GND VOUT+ VOUT- VIN+ VIN- bgr_opamp_dummy_magic
 **** begin user architecture code
 .lib /foss/pdks/sky130A/libs.tech/combined/sky130.lib.spice tt
 
 
 
 
-* .include /foss/designs/my_design/projects/opamp/xschem_ngspice/bgr_opamp_dummy_magic.spice
-.include /foss/designs/my_design/projects/opamp/xschem_ngspice/bgr_opamp_dummy_magic_2.spice
+.include /foss/designs/my_design/projects/opamp/xschem_ngspice/bgr_opamp_dummy_magic.spice
+* .include /foss/designs/my_design/projects/opamp/xschem_ngspice/bgr_opamp_dummy_magic_2.spice
 * .include /foss/designs/my_design/projects/opamp/xschem_ngspice/two_stage_opamp_dummy_magic.spice
 * .include /foss/designs/my_design/projects/opamp/xschem_ngspice/ref_volt_cur_gen_dummy_magic.spice
 

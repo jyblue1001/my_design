@@ -1,9 +1,5 @@
-# Query: (vb1.+pfet_gate_10ua)|(pfet_gate_10ua.+vb1)
+# Query: (v_source.+gnda_2)|(gnda_2.+v_source)
 # Flags: RegExp
 # Including: **/xschem_ngspice/bgr_opamp_dummy_magic.spice
 
-2 results - 1 file
-
-projects/opamp/xschem_ngspice/bgr_opamp_dummy_magic.spice:
-    694: X680 two_stage_opamp_dummy_magic_0.Vb1.t2 bgr_0.PFET_GATE_10uA.t26 VDDA.t231 VDDA.t230 sky130_fd_pr__pfet_01v8 ad=0.4 pd=2.4 as=0.4 ps=2.4 w=2 l=0.15
-  24151: C31 bgr_0.PFET_GATE_10uA two_stage_opamp_dummy_magic_0.Vb1 0.091782f
+No Results
