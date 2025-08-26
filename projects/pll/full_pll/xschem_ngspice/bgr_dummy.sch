@@ -328,10 +328,10 @@ C {/foss/designs/my_design/projects/bandgapref/xschem_ngspice/new_files/opamp_ba
 C {/foss/designs/my_design/projects/bandgapref/xschem_ngspice/new_files/opamp_bandgap_2.sym} 3070 -1010 2 1 {name=x2}
 C {lab_wire.sym} 3720 -910 2 0 {name=p95 sig_type=std_logic lab=V2}
 C {sky130_fd_pr/pfet_01v8.sym} 3550 -1010 0 1 {name=M80
-W=10
+W=1
 L=0.15
 nf=1
-mult=1
+mult=2
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
@@ -396,10 +396,10 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8.sym} 3980 -1010 0 1 {name=M2
-W=10
+W=1
 L=0.15
 nf=1
-mult=1
+mult=2
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 

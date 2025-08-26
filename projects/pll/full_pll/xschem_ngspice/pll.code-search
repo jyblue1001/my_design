@@ -1,0 +1,17 @@
+# Query: (v2.+v_cur_ref_reg)|(v_cur_ref_reg.+v2)
+# Flags: RegExp
+# Including: **/xschem_ngspice/bgr_dummy_magic.spice
+
+10 results - 1 file
+
+my_design\projects\pll\full_pll\xschem_ngspice\bgr_dummy_magic.spice:
+    5: X0 V_CUR_REF_REG.t12 V2.t10 VDDA.t171 VDDA.t170 sky130_fd_pr__pfet_01v8 ad=0.2 pd=1.4 as=0.2 ps=1.4 w=1 l=0.15
+   22: X17 V_CUR_REF_REG.t11 V2.t12 VDDA.t167 VDDA.t166 sky130_fd_pr__pfet_01v8 ad=0.2 pd=1.4 as=0.2 ps=1.4 w=1 l=0.15
+   31: X26 VDDA.t163 V2.t14 V_CUR_REF_REG.t10 VDDA.t162 sky130_fd_pr__pfet_01v8 ad=0.2 pd=1.4 as=0.2 ps=1.4 w=1 l=0.15
+   40: X35 V_CUR_REF_REG.t9 V2.t16 VDDA.t159 VDDA.t158 sky130_fd_pr__pfet_01v8 ad=0.2 pd=1.4 as=0.2 ps=1.4 w=1 l=0.15
+   49: X44 VDDA.t157 V2.t17 V_CUR_REF_REG.t8 VDDA.t156 sky130_fd_pr__pfet_01v8 ad=0.2 pd=1.4 as=0.2 ps=1.4 w=1 l=0.15
+  102: X95 VDDA.t151 V2.t20 V_CUR_REF_REG.t7 VDDA.t150 sky130_fd_pr__pfet_01v8 ad=0.2 pd=1.4 as=0.2 ps=1.4 w=1 l=0.15
+  117: X109 VDDA.t145 V2.t23 V_CUR_REF_REG.t6 VDDA.t144 sky130_fd_pr__pfet_01v8 ad=0.2 pd=1.4 as=0.2 ps=1.4 w=1 l=0.15
+  125: X117 V_CUR_REF_REG.t5 V2.t25 VDDA.t141 VDDA.t140 sky130_fd_pr__pfet_01v8 ad=0.2 pd=1.4 as=0.2 ps=1.4 w=1 l=0.15
+  135: X127 VDDA.t139 V2.t26 V_CUR_REF_REG.t4 VDDA.t138 sky130_fd_pr__pfet_01v8 ad=0.2 pd=1.4 as=0.2 ps=1.4 w=1 l=0.15
+  171: X160 V_CUR_REF_REG.t3 V2.t28 VDDA.t135 VDDA.t134 sky130_fd_pr__pfet_01v8 ad=0.2 pd=1.4 as=0.2 ps=1.4 w=1 l=0.15

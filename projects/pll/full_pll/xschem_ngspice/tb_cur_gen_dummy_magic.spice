@@ -1,0 +1,49 @@
+** sch_path: /foss/designs/my_design/projects/pll/full_pll/xschem_ngspice/tb_cur_gen_dummy_magic.sch
+**.subckt tb_cur_gen_dummy_magic
+V1 VDD GND pwl(0 0 1us 0 2us 1.8)
+x1 VDD CURRENT_OUTPUT GND bgr_dummy_magic
+**** begin user architecture code
+.lib /foss/pdks/sky130A/libs.tech/combined/sky130.lib.spice tt
+
+
+
+* ngspice commands
+
+.include /foss/designs/my_design/projects/pll/full_pll/xschem_ngspice/bgr_dummy_magic.spice
+
+.option method=gear
+.option wnflag=1
+.option savecurrents
+* .temp =140
+
+.save
++@m.xm50.msky130_fd_pr__pfet_01v8[id]
++@m.xm1.msky130_fd_pr__pfet_01v8[gm]
++@m.xm1.msky130_fd_pr__pfet_01v8[vth]
++@m.xm1.msky130_fd_pr__pfet_01v8[vgs]
++@m.xm1.msky130_fd_pr__pfet_01v8[vds]
++@m.x1.xm1.msky130_fd_pr__nfet_01v8[gm]
+
+* .ic v(vin-) = 0.8
+* .ic v(vin+) = 0.8
+* .ic v(v_top) = 1.8
+
+.control
+
+    save all
+    * dc temp -40 120 5 V1 1.6 2.0 0.05
+    * dc V1 1.7 1.9 0.001 temp -40 120 40
+    * dc V1 0.0 2.0 0.02 temp -40 120 20
+    * dc V1 0 2.0 0.02
+    tran 0.4ns 5us
+    remzerovec
+    write tb_cur_gen_dummy_magic.raw
+.endc
+
+
+
+**** end user architecture code
+**.ends
+.GLOBAL GND
+.GLOBAL VDD
+.end

@@ -1,0 +1,24 @@
+v {xschem version=3.4.6 file_version=1.2}
+G {}
+K {type=primitive
+format="@name @pinlist @symname"
+template="name=x1"
+}
+V {}
+S {}
+E {}
+L 4 -80 -50 100 -50 {}
+L 4 -80 50 100 50 {}
+L 4 -80 -50 -80 50 {}
+L 4 100 -50 100 50 {}
+L 4 100 0 120 0 {}
+L 7 0 -70 0 -50 {}
+L 7 0 50 0 70 {}
+B 5 -2.5 -72.5 2.5 -67.5 {name=VDDA dir=inout}
+B 5 117.5 -2.5 122.5 2.5 {name=CURRENT_OUTPUT dir=out}
+B 5 -2.5 67.5 2.5 72.5 {name=GNDA dir=inout}
+T {@symname} 101.5 -86 0 0 0.3 0.3 {}
+T {@name} 105 -62 0 0 0.2 0.2 {}
+T {VDDA} 45 -74 0 1 0.2 0.2 {}
+T {CURRENT_OUTPUT} 95 -4 0 1 0.2 0.2 {}
+T {GNDA} 45 66 0 1 0.2 0.2 {}
