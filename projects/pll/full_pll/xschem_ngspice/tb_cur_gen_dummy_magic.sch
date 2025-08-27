@@ -94,11 +94,20 @@ value="
 
 .option method=gear
 .option wnflag=1
-.option savecurrents
+* .option savecurrents
 * .temp =140
 
 .save
-+@m.xm50.msky130_fd_pr__pfet_01v8[id]
++@m.x1.x0.msky130_fd_pr__pfet_01v8[id]
++@m.x1.x17.msky130_fd_pr__pfet_01v8[id]
++@m.x1.x26.msky130_fd_pr__pfet_01v8[id]
++@m.x1.x35.msky130_fd_pr__pfet_01v8[id]
++@m.x1.x44.msky130_fd_pr__pfet_01v8[id]
++@m.x1.x95.msky130_fd_pr__pfet_01v8[id]
++@m.x1.x109.msky130_fd_pr__pfet_01v8[id]
++@m.x1.x117.msky130_fd_pr__pfet_01v8[id]
++@m.x1.x127.msky130_fd_pr__pfet_01v8[id]
++@m.x1.x160.msky130_fd_pr__pfet_01v8[id]
 +@m.xm1.msky130_fd_pr__pfet_01v8[gm]
 +@m.xm1.msky130_fd_pr__pfet_01v8[vth]
 +@m.xm1.msky130_fd_pr__pfet_01v8[vgs]
@@ -125,4 +134,4 @@ value="
 C {devices/gnd.sym} 780 -1820 0 1 {name=l1 lab=GND}
 C {devices/vdd.sym} 780 -2020 0 0 {name=l2 lab=VDD}
 C {lab_wire.sym} 1070 -1920 2 0 {name=p3 sig_type=std_logic lab=CURRENT_OUTPUT}
-C {bgr_dummy_magic.sym} 780 -1920 0 0 {name=x1}
+C {/foss/designs/my_design/projects/pll/full_pll/xschem_ngspice/bgr_dummy_magic.sym} 780 -1920 0 0 {name=x1}

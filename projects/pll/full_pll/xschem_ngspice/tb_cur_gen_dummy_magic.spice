@@ -13,11 +13,20 @@ x1 VDD CURRENT_OUTPUT GND bgr_dummy_magic
 
 .option method=gear
 .option wnflag=1
-.option savecurrents
+* .option savecurrents
 * .temp =140
 
 .save
-+@m.xm50.msky130_fd_pr__pfet_01v8[id]
++@m.x1.x0.msky130_fd_pr__pfet_01v8[id]
++@m.x1.x17.msky130_fd_pr__pfet_01v8[id]
++@m.x1.x26.msky130_fd_pr__pfet_01v8[id]
++@m.x1.x35.msky130_fd_pr__pfet_01v8[id]
++@m.x1.x44.msky130_fd_pr__pfet_01v8[id]
++@m.x1.x95.msky130_fd_pr__pfet_01v8[id]
++@m.x1.x109.msky130_fd_pr__pfet_01v8[id]
++@m.x1.x117.msky130_fd_pr__pfet_01v8[id]
++@m.x1.x127.msky130_fd_pr__pfet_01v8[id]
++@m.x1.x160.msky130_fd_pr__pfet_01v8[id]
 +@m.xm1.msky130_fd_pr__pfet_01v8[gm]
 +@m.xm1.msky130_fd_pr__pfet_01v8[vth]
 +@m.xm1.msky130_fd_pr__pfet_01v8[vgs]

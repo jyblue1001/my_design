@@ -808,7 +808,6 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {ammeter.sym} 520 -1500 0 0 {name=Vmeas7 savecurrent=true spice_ignore=0}
-C {opamp_bandgap_2.sym} 1160 -1400 1 1 {name=x1}
 C {ngspice_get_value.sym} 1320 -1600 2 0 {name=r5 node=v(@m.xm2.msky130_fd_pr__pfet_01v8[vth])
 descr="vth="}
 C {devices/gnd.sym} 790 -960 3 1 {name=l12 lab=GND}
@@ -890,3 +889,73 @@ C {ammeter.sym} 770 -1150 0 0 {name=Vmeas1 savecurrent=true spice_ignore=0}
 C {ammeter.sym} 980 -1150 0 0 {name=Vmeas2 savecurrent=true spice_ignore=0}
 C {ammeter.sym} 1360 -1150 0 0 {name=Vmeas3 savecurrent=true spice_ignore=0}
 C {ammeter.sym} 1570 -1150 0 0 {name=Vmeas9 savecurrent=true spice_ignore=0}
+C {/foss/designs/my_design/projects/bandgapref/xschem_ngspice/new_files/opamp_bandgap_2.sym} 1160 -1400 1 1 {name=x1}
+C {devices/code.sym} 430 -260 0 0 {name=CODE only_toplevel=false value="
+
+.option method=gear
+.option wnflag=1
+.option savecurrents
+* .temp =140
+
+.save
++@m.xm1.msky130_fd_pr__pfet_01v8[gm]
++@m.xm1.msky130_fd_pr__pfet_01v8[vth]
++@m.xm1.msky130_fd_pr__pfet_01v8[vgs]
++@m.xm1.msky130_fd_pr__pfet_01v8[vds]
++@m.xm2.msky130_fd_pr__pfet_01v8[gm]
++@m.xm2.msky130_fd_pr__pfet_01v8[vth]
++@m.xm2.msky130_fd_pr__pfet_01v8[vgs]
++@m.xm2.msky130_fd_pr__pfet_01v8[vds]
++@m.xm3.msky130_fd_pr__pfet_01v8[gm]
++@m.xm4.msky130_fd_pr__pfet_01v8[gm]
++@m.xm4.msky130_fd_pr__nfet_01v8[gm]
++@m.x1.xm1.msky130_fd_pr__nfet_01v8[gm]
++@m.x1.xm2.msky130_fd_pr__nfet_01v8[gm]
++@m.x1.xm3.msky130_fd_pr__nfet_01v8[gm]
++@m.x1.xm4.msky130_fd_pr__pfet_01v8[gm]
++@m.x1.xm5.msky130_fd_pr__pfet_01v8[gm]
++@m.x1.xm6.msky130_fd_pr__nfet_01v8[gm]
++@m.x1.xm7.msky130_fd_pr__pfet_01v8[gm]
++@m.x2.xm1.msky130_fd_pr__nfet_01v8[gm]
++@m.x2.xm2.msky130_fd_pr__nfet_01v8[gm]
++@m.x2.xm3.msky130_fd_pr__nfet_01v8[gm]
++@m.x2.xm4.msky130_fd_pr__pfet_01v8[gm]
++@m.x2.xm5.msky130_fd_pr__pfet_01v8[gm]
++@m.x2.xm6.msky130_fd_pr__pfet_01v8[gm]
++@m.x2.xm7.msky130_fd_pr__pfet_01v8[gm]
+
+* .ic v(vin-) = 0.8
+* .ic v(vin+) = 0.8
+* .ic v(v_top) = 1.8
+
+.control
+
+  * let start_vdd = 0.3 
+  * let stop_vdd = 1.8
+  * let delta_vdd = 0.3
+  * let w_act = start_vdd
+  * while w_act le stop_vdd
+    * echo $&w_act
+    * alter V1 = w_act
+    * echo v[vdd]
+    * alter @V1[pwl] = [ 0 0 1us 0 2us $&w_act ]
+    * reset
+    save all
+    * run
+    * dc temp -40 120 5 V1 1.6 2.0 0.05
+    * dc V1 1.7 1.9 0.001 temp -40 120 40
+    * dc V1 0.0 2.0 0.01 temp -40 120 40
+    * dc V1 0 2.0 0.001
+    tran 1ns 8us
+    remzerovec
+    * write tb_low_voltage_BGR_6.raw
+    * write tb_low_voltage_BGR_6_2.raw
+    * write tb_low_voltage_BGR_6_3.raw
+    write tb_low_voltage_BGR_6_4.raw
+    * let w_act = w_act + delta_vdd
+    set appendwrite
+  * end
+
+.endc
+
+"}
