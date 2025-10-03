@@ -187,11 +187,6 @@ L=10
 model=res_xhigh_po_0p35
 spiceprefix=X
 mult=1}
-C {sky130_fd_pr/res_xhigh_po_0p35.sym} 3330 -520 0 0 {name=R5
-L=1
-model=res_xhigh_po_0p35
-spiceprefix=X
-mult=1}
 C {sky130_fd_pr/pfet_01v8.sym} 3310 -1010 0 0 {name=M50
 W=10
 L=0.15
@@ -250,11 +245,6 @@ spiceprefix=X
 }
 C {lab_wire.sym} 1660 -700 2 0 {name=p70 sig_type=std_logic lab=bgr_Vin+}
 C {lab_wire.sym} 1470 -700 2 1 {name=p71 sig_type=std_logic lab=bgr_Vin-}
-C {sky130_fd_pr/res_xhigh_po_0p35.sym} 1760 -520 0 0 {name=R3
-L=2.3
-model=res_xhigh_po_0p35
-spiceprefix=X
-mult=1}
 C {sky130_fd_pr/res_xhigh_po_0p35.sym} 2020 -520 0 1 {name=R6
 L=18
 model=res_xhigh_po_0p35
@@ -410,3 +400,13 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {opin.sym} 3760 -720 0 0 {name=p14 lab=CURRENT_OUTPUT}
+C {sky130_fd_pr/res_high_po_0p35.sym} 3330 -520 0 0 {name=R8
+L=7.4
+model=res_high_po_0p35
+spiceprefix=X
+mult=1}
+C {sky130_fd_pr/res_high_po_0p35.sym} 1760 -520 0 0 {name=R9
+L=11.4
+model=res_high_po_0p35
+spiceprefix=X
+mult=1}

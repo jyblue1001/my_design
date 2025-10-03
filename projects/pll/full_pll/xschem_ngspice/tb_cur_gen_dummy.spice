@@ -3,8 +3,7 @@
 V1 VDD GND pwl(0 0 1us 0 2us 1.8)
 XM45 V1 V_TOP VDD VDD sky130_fd_pr__pfet_01v8 L=0.5 W=12 nf=4 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
 + ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
-XR4 GND V1 GND sky130_fd_pr__res_xhigh_po_0p35 L=10 mult=1 m=1
-XR5 GND V_CUR_REF_REG GND sky130_fd_pr__res_xhigh_po_0p35 L=1 mult=1 m=1
+XR4 GND V1 GND sky130_fd_pr__res_xhigh_po_0p35 L=12 mult=1 m=1
 XM50 V_CUR_REF_REG V2 VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=10 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
 XC1 V_TOP VDD sky130_fd_pr__cap_mim_m3_1 W=2 L=2 MF=20 m=20
@@ -14,7 +13,6 @@ XM51 bgr_Vin- V_TOP VDD VDD sky130_fd_pr__pfet_01v8 L=0.5 W=12 nf=4 ad='int((nf+
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
 XM53 bgr_Vin+ V_TOP VDD VDD sky130_fd_pr__pfet_01v8 L=0.5 W=12 nf=4 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
-XR3 Vbe2 bgr_Vin+ GND sky130_fd_pr__res_xhigh_po_0p35 L=2.3 mult=1 m=1
 XR6 GND bgr_Vin+ GND sky130_fd_pr__res_xhigh_po_0p35 L=18 mult=1 m=1
 XR7 GND bgr_Vin- GND sky130_fd_pr__res_xhigh_po_0p35 L=18 mult=1 m=1
 XM54 START_UP START_UP START_UP_NFET1 GND sky130_fd_pr__nfet_01v8 L=10 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
@@ -37,6 +35,8 @@ XM1 CURRENT_OUTPUT V2 VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=10 nf=1 ad='int((
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
 XM2 CURRENT_OUTPUT VDD VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=2 m=2
+XR12 GND V_CUR_REF_REG GND sky130_fd_pr__res_high_po_0p35 L=7.4 mult=1 m=1
+XR13 Vbe2 bgr_Vin+ GND sky130_fd_pr__res_high_po_0p35 L=11.4 mult=1 m=1
 **** begin user architecture code
 .lib /foss/pdks/sky130A/libs.tech/combined/sky130.lib.spice tt
 
@@ -47,7 +47,7 @@ XM2 CURRENT_OUTPUT VDD VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=1 nf=1 ad='int((
 
 .option method=gear
 .option wnflag=1
-* .option savecurrents
+.option savecurrents
 * .temp =140
 
 .save
@@ -105,7 +105,7 @@ XM7 Vout 1st_Vout VDDA VDDA sky130_fd_pr__pfet_01v8 L=0.2 W=6 nf=2 ad='int((nf+1
 XC1 1st_Vout cap_res sky130_fd_pr__cap_mim_m3_1 W=2 L=2 MF=20 m=20
 XM8 Vout VDDA VDDA VDDA sky130_fd_pr__pfet_01v8 L=0.2 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
 + ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=2 m=2
-XR2 Vout cap_res GNDA sky130_fd_pr__res_high_po_0p35 L=2.05 mult=1 m=1
+XR1 Vout cap_res GNDA sky130_fd_pr__res_high_po_0p69 L=5 mult=1 m=1
 .ends
 
 .GLOBAL GND

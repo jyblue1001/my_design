@@ -13,9 +13,9 @@ lab=V_p}
 N 370 -160 370 -100 {
 lab=GNDA}
 N 530 -670 530 -560 {
-lab=#net1}
-N 180 -670 180 -560 {
 lab=1st_Vout}
+N 180 -670 180 -560 {
+lab=V_mirror}
 N 310 -190 330 -190 {
 lab=VDDA}
 N 180 -780 180 -730 {
@@ -25,19 +25,19 @@ lab=VDDA}
 N 530 -780 530 -730 {
 lab=VDDA}
 N 220 -700 490 -700 {
-lab=1st_Vout}
+lab=V_mirror}
 N 430 -800 430 -780 {
 lab=VDDA}
 N 1100 -420 1210 -420 {
 lab=Vout}
 N 180 -560 180 -450 {
-lab=1st_Vout}
+lab=V_mirror}
 N 530 -560 530 -450 {
-lab=#net1}
+lab=1st_Vout}
 N 310 -270 310 -190 {
 lab=VDDA}
 N 310 -700 310 -570 {
-lab=1st_Vout}
+lab=V_mirror}
 N 370 -350 370 -220 {lab=V_p}
 N 370 -190 420 -190 {lab=GNDA}
 N 420 -190 420 -120 {lab=GNDA}
@@ -62,8 +62,8 @@ N 1100 -620 1150 -620 {lab=VDDA}
 N 530 -780 1100 -780 {lab=VDDA}
 N 1100 -780 1100 -590 {lab=VDDA}
 N 1100 -530 1100 -300 {lab=Vout}
-N 530 -560 1060 -560 {lab=#net1}
-N 180 -570 310 -570 {lab=1st_Vout}
+N 530 -560 1060 -560 {lab=1st_Vout}
+N 180 -570 310 -570 {lab=V_mirror}
 N 230 -420 480 -420 {lab=GNDA}
 N 480 -420 480 -120 {lab=GNDA}
 N 1040 -270 1060 -270 {lab=VDDA}
@@ -71,7 +71,7 @@ N 1100 -240 1100 -120 {lab=GNDA}
 N 350 -780 350 -270 {lab=VDDA}
 N 310 -270 350 -270 {lab=VDDA}
 N 350 -270 1040 -270 {lab=VDDA}
-N 800 -560 800 -530 {lab=#net1}
+N 800 -560 800 -530 {lab=1st_Vout}
 N 980 -440 1100 -440 {lab=Vout}
 N 800 -440 920 -440 {lab=cap_res}
 N 800 -470 800 -440 {lab=cap_res}
@@ -211,8 +211,8 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {sky130_fd_pr/res_high_po_0p35.sym} 950 -440 3 0 {name=R2
-L=2.05
-model=res_high_po_0p35
+C {sky130_fd_pr/res_high_po_0p69.sym} 950 -440 3 0 {name=R1
+L=5
+model=res_high_po_0p69
 spiceprefix=X
 mult=1}

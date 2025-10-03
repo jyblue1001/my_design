@@ -617,7 +617,6 @@ spiceprefix=X
 C {devices/lab_wire.sym} 2100 -1470 2 0 {name=p41 sig_type=std_logic lab=UP_input}
 C {devices/lab_wire.sym} 2230 -330 0 0 {name=p42 sig_type=std_logic lab=DOWN_input}
 C {devices/lab_wire.sym} 1440 -1470 0 0 {name=p43 sig_type=std_logic lab=opamp_out}
-C {rail_to_rail_opamp6.sym} 1340 -980 3 0 {name=x1}
 C {sky130_fd_pr/pfet_01v8.sym} 1690 -720 0 0 {name=M31
 L=0.15
 W=2
@@ -722,3 +721,4 @@ C {devices/lab_pin.sym} 1920 -290 0 1 {name=p13 sig_type=std_logic lab=VDDA}
 C {devices/lab_pin.sym} 1920 -370 0 1 {name=p14 sig_type=std_logic lab=GNDA}
 C {devices/lab_pin.sym} 1920 -1430 0 1 {name=p16 sig_type=std_logic lab=VDDA}
 C {devices/lab_pin.sym} 1920 -1510 0 1 {name=p17 sig_type=std_logic lab=GNDA}
+C {/foss/designs/my_design/projects/pll/charge_pump/xschem_ngspice/rail_to_rail_opamp6.sym} 1340 -980 3 0 {name=x1}

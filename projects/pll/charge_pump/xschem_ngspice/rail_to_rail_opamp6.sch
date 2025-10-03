@@ -200,10 +200,6 @@ N 1040 -510 1140 -510 {
 lab=#net3}
 N 1040 -370 1140 -370 {
 lab=#net4}
-N 160 -420 160 -360 {
-lab=GNDA}
-N 160 -360 160 -290 {
-lab=GNDA}
 N 1290 -430 1290 -280 {
 lab=Vout}
 N 1290 -600 1290 -490 {
@@ -420,23 +416,24 @@ C {devices/lab_pin.sym} 720 -280 2 0 {name=p8 sig_type=std_logic lab=p_right}
 C {devices/ammeter.sym} 180 -540 0 0 {name=Vmeas savecurrent=true spice_ignore=0}
 C {sky130_fd_pr/cap_mim_m3_1.sym} 1170 -510 3 0 {name=C1 model=cap_mim_m3_1 W=10 L=10 MF=1 spiceprefix=X}
 C {sky130_fd_pr/cap_mim_m3_1.sym} 1170 -370 1 1 {name=C2 model=cap_mim_m3_1 W=10 L=10 MF=1 spiceprefix=X}
-C {sky130_fd_pr/res_xhigh_po_0p35.sym} 1040 -570 0 0 {name=R1
-L=1.14
-model=res_xhigh_po_0p35
-spiceprefix=X
-mult=1}
-C {sky130_fd_pr/res_xhigh_po_0p35.sym} 1040 -300 2 1 {name=R2
-L=0.86
-model=res_xhigh_po_0p35
-spiceprefix=X
-mult=1}
 C {devices/lab_wire.sym} 1020 -300 3 0 {name=p15 sig_type=std_logic lab=GNDA
 }
 C {devices/ammeter.sym} 1290 -460 0 0 {name=Vmeas1 savecurrent=true spice_ignore=0}
-C {sky130_fd_pr/res_xhigh_po_2p85.sym} 180 -420 0 0 {name=R4
-L=0.5
-model=res_xhigh_po_2p85
-spiceprefix=X
-mult=1}
 C {devices/lab_wire.sym} 1020 -570 3 1 {name=p14 sig_type=std_logic lab=GNDA
 }
+C {sky130_fd_pr/res_high_po_0p35.sym} 1040 -570 0 0 {name=R2
+L=5.37
+model=res_high_po_0p35
+spiceprefix=X
+mult=1}
+C {sky130_fd_pr/res_high_po_0p35.sym} 1040 -300 0 0 {name=R5
+L=3.92
+model=res_high_po_0p35
+spiceprefix=X
+mult=1}
+C {sky130_fd_pr/res_generic_po.sym} 180 -420 0 0 {name=R1
+W=0.33
+L=2.4
+model=res_generic_po
+spiceprefix=X
+mult=1}

@@ -222,10 +222,10 @@ N 1150 -130 1150 -60 {
 lab=GNDA}
 C {devices/opin.sym} 2120 -470 0 0 {name=p5 lab=V_OSC}
 C {sky130_fd_pr/pfet_01v8.sym} 780 -520 0 0 {name=M22
-L=0.20
-W=1.1
-nf=2
-mult=1
+L=0.15
+W=1.0
+nf=1
+mult=2
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
@@ -236,8 +236,8 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {sky130_fd_pr/nfet_01v8.sym} 1240 -420 0 0 {name=M23
-L=0.20
-W=0.55
+L=0.15
+W=1.0
 nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -250,10 +250,10 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8.sym} 1240 -520 0 0 {name=M24
-L=0.20
-W=1.1
-nf=2
-mult=1
+L=0.15
+W=1.0
+nf=1
+mult=2
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
@@ -264,8 +264,8 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {sky130_fd_pr/nfet_01v8.sym} 1700 -420 0 0 {name=M25
-L=0.20
-W=0.55
+L=0.15
+W=1.0
 nf=1 
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -278,10 +278,10 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8.sym} 1700 -520 0 0 {name=M26
-L=0.20
-W=1.1
-nf=2
-mult=1
+L=0.15
+W=1.0
+nf=1
+mult=2
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
@@ -293,7 +293,7 @@ spiceprefix=X
 }
 C {sky130_fd_pr/nfet_01v8.sym} 780 -210 0 0 {name=M27
 L=0.15
-W=1.0
+W=2.0
 nf=1 
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -307,7 +307,7 @@ spiceprefix=X
 }
 C {sky130_fd_pr/nfet_01v8.sym} 1240 -210 0 0 {name=M28
 L=0.15
-W=1.0
+W=2.0
 nf=1 
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -321,7 +321,7 @@ spiceprefix=X
 }
 C {sky130_fd_pr/nfet_01v8.sym} 1700 -210 0 0 {name=M29
 L=0.15
-W=1.0
+W=2.0
 nf=1 
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -335,7 +335,7 @@ spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8.sym} 780 -730 0 0 {name=M30
 L=1.5
-W=2
+W=4
 nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -349,7 +349,7 @@ spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8.sym} 1240 -730 0 0 {name=M31
 L=1.5
-W=2
+W=4
 nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -363,7 +363,7 @@ spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8.sym} 1700 -730 0 0 {name=M32
 L=1.5
-W=2
+W=4
 nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -377,7 +377,7 @@ spiceprefix=X
 }
 C {sky130_fd_pr/nfet_01v8.sym} 1090 -210 0 1 {name=M33
 L=0.15
-W=0.5
+W=2.0
 nf=1 
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -391,7 +391,7 @@ spiceprefix=X
 }
 C {sky130_fd_pr/nfet_01v8.sym} 1540 -210 0 1 {name=M34
 L=0.15
-W=0.5
+W=2.0
 nf=1 
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -405,7 +405,7 @@ spiceprefix=X
 }
 C {sky130_fd_pr/nfet_01v8.sym} 2010 -210 0 1 {name=M35
 L=0.15
-W=0.5
+W=2.0
 nf=1 
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -419,8 +419,8 @@ spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8.sym} 1030 -730 0 1 {name=M36
 L=0.15
-W=1.0
-nf=2
+W=4.0
+nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
@@ -433,8 +433,8 @@ spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8.sym} 1490 -730 0 1 {name=M37
 L=0.15
-W=1.0
-nf=2
+W=4.0
+nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
@@ -447,8 +447,8 @@ spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8.sym} 1950 -730 0 1 {name=M38
 L=0.15
-W=1.0
-nf=2
+W=4.0
+nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
@@ -461,7 +461,7 @@ spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8.sym} 440 -730 0 1 {name=M39
 L=1.5
-W=2
+W=4
 nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -475,7 +475,7 @@ spiceprefix=X
 }
 C {sky130_fd_pr/nfet_01v8.sym} 400 -210 0 0 {name=M40
 L=0.15
-W=1.0
+W=2.0
 nf=1 
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -500,8 +500,8 @@ C {devices/lab_pin.sym} 420 -480 0 0 {name=p1 sig_type=std_logic lab=v1}
 C {devices/lab_pin.sym} 800 -590 0 0 {name=p2 sig_type=std_logic lab=v2}
 C {devices/lab_pin.sym} 800 -350 0 0 {name=p3 sig_type=std_logic lab=v3}
 C {sky130_fd_pr/nfet_01v8.sym} 780 -420 0 0 {name=M1
-L=0.20
-W=0.55
+L=0.15
+W=1.0
 nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 

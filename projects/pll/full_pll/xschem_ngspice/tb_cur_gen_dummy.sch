@@ -6,7 +6,7 @@ S {}
 E {}
 B 2 1610 -1070 2600 -200 {flags=graph
 y1=-0.00048
-y2=0.76
+y2=0.85
 ypos1=0
 ypos2=2
 divy=5
@@ -27,7 +27,7 @@ logy=0
 }
 B 2 2800 -1070 3790 -200 {flags=graph
 y1=0
-y2=0.00011
+y2=0.00016
 ypos1=0
 ypos2=2
 divy=5
@@ -222,7 +222,7 @@ value="
 
 .option method=gear
 .option wnflag=1
-* .option savecurrents
+.option savecurrents
 * .temp =140
 
 .save
@@ -265,12 +265,7 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {sky130_fd_pr/res_xhigh_po_0p35.sym} 2490 -1600 0 1 {name=R4
-L=10
-model=res_xhigh_po_0p35
-spiceprefix=X
-mult=1}
-C {sky130_fd_pr/res_xhigh_po_0p35.sym} 3240 -1600 0 0 {name=R5
-L=1
+L=12
 model=res_xhigh_po_0p35
 spiceprefix=X
 mult=1}
@@ -332,11 +327,6 @@ spiceprefix=X
 }
 C {lab_wire.sym} 1570 -1780 2 0 {name=p70 sig_type=std_logic lab=bgr_Vin+}
 C {lab_wire.sym} 1380 -1780 2 1 {name=p71 sig_type=std_logic lab=bgr_Vin-}
-C {sky130_fd_pr/res_xhigh_po_0p35.sym} 1670 -1600 0 0 {name=R3
-L=2.3
-model=res_xhigh_po_0p35
-spiceprefix=X
-mult=1}
 C {sky130_fd_pr/res_xhigh_po_0p35.sym} 1930 -1600 0 1 {name=R6
 L=18
 model=res_xhigh_po_0p35
@@ -492,3 +482,13 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {lab_wire.sym} 3810 -1800 2 0 {name=p3 sig_type=std_logic lab=CURRENT_OUTPUT}
+C {sky130_fd_pr/res_high_po_0p35.sym} 3240 -1600 0 0 {name=R12
+L=7.4
+model=res_high_po_0p35
+spiceprefix=X
+mult=1}
+C {sky130_fd_pr/res_high_po_0p35.sym} 1670 -1600 0 0 {name=R13
+L=11.4
+model=res_high_po_0p35
+spiceprefix=X
+mult=1}

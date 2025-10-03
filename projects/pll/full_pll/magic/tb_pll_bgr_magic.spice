@@ -47,11 +47,12 @@ x1 V_OSC VDD GND F_REF pll_bgr_magic
   save v(v_osc)
 
   * timestep for exact simulation results
-  tran 5ps 6us
+  tran 100ps 2us
 
   remzerovec
-  write pll_bgr_magic.raw
-  wrdata /foss/designs/my_design/projects/pll/full_pll/magic/pll_bgr_magic_v_osc.txt v(v_osc)
+  * write tb_pll_bgr_magic.raw
+  write tb_pll_bgr_magic_2.raw
+  wrdata /foss/designs/my_design/projects/pll/full_pll/magic/tb_pll_bgr_magic_v_osc.txt v(v_osc)
   set appendwrite
 
 .endc

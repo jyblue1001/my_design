@@ -12,8 +12,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=0
-x2=6e-06
+x1=5.2076394e-06
+x2=5.2123932e-06
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -49,8 +49,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=0
-x2=6e-06
+x1=5.2076394e-06
+x2=5.2123932e-06
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -122,11 +122,12 @@ C {devices/code.sym} 1630 -4651.25 0 0 {name=Testbench only_toplevel=false value
   save v(v_osc)
 
   * timestep for exact simulation results
-  tran 5ps 6us
+  tran 100ps 2us
 
   remzerovec
-  write pll_bgr_magic.raw
-  wrdata /foss/designs/my_design/projects/pll/full_pll/magic/pll_bgr_magic_v_osc.txt v(v_osc)
+  * write tb_pll_bgr_magic.raw
+  write tb_pll_bgr_magic_2.raw
+  wrdata /foss/designs/my_design/projects/pll/full_pll/magic/tb_pll_bgr_magic_v_osc.txt v(v_osc)
   set appendwrite
 
 .endc
@@ -224,4 +225,4 @@ value="
 "}
 C {lab_pin.sym} 1970 -4610 0 0 {name=p5 lab=F_REF}
 C {lab_pin.sym} 2130 -4610 0 1 {name=p1 lab=V_OSC}
-C {pll_bgr_magic.sym} 2050 -4610 0 0 {name=x1}
+C {/foss/designs/my_design/projects/pll/full_pll/magic/pll_bgr_magic.sym} 2050 -4610 0 0 {name=x1}
