@@ -1,5 +1,4 @@
-v {xschem version=3.4.5 file_version=1.2
-}
+v {xschem version=3.4.6 file_version=1.2}
 G {}
 K {}
 V {}
@@ -725,9 +724,9 @@ lab=START_UP}
 N 1990 -1530 1990 -1490 {
 lab=START_UP}
 N 2070 -1460 2070 -1290 {
-lab=#net3}
+lab=#net13}
 N 1970 -1440 2070 -1440 {
-lab=#net3}
+lab=#net13}
 N 1930 -1570 2070 -1570 {
 lab=VDD}
 N 2070 -1570 2070 -1520 {
