@@ -12,8 +12,8 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=2.8363388e-06
-x2=7.9563388e-06
+x1=0
+x2=8e-06
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -80,8 +80,8 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=2.8363388e-06
-x2=7.9563388e-06
+x1=0
+x2=8e-06
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -148,8 +148,8 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=2.8363388e-06
-x2=7.9563388e-06
+x1=0
+x2=8e-06
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -223,8 +223,8 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=2.8363388e-06
-x2=7.9563388e-06
+x1=0
+x2=8e-06
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -294,8 +294,8 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=2.8363388e-06
-x2=7.9563388e-06
+x1=0
+x2=8e-06
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -362,8 +362,8 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=2.8363388e-06
-x2=7.9563388e-06
+x1=0
+x2=8e-06
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -424,14 +424,14 @@ node="i(@m.xm9.msky130_fd_pr__nfet_01v8[id])
 i(@m.xm8.msky130_fd_pr__nfet_01v8[id])"}
 B 2 5510 -1870 6420 -1230 {flags=graph
 
-y2=1.2
+y2=0.91
 ypos1=0
 ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=2.8363388e-06
-x2=7.9563388e-06
+x1=0
+x2=8e-06
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -478,7 +478,7 @@ linewidth_mult=2
 
 
 
-y1=0.86
+y1=0.89
 
 
 
@@ -491,7 +491,7 @@ y1=0.86
 
 color="6 7"
 node="amp_out
-amp_mir"}
+vin+"}
 B 2 1380 -1810 2290 -1170 {flags=graph
 
 y2=0.99
@@ -500,8 +500,8 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=2.8363388e-06
-x2=7.9563388e-06
+x1=0
+x2=8e-06
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -560,7 +560,7 @@ y1=-1.1e-14
 
 color=7
 node=v_ref}
-B 2 6490 -2260 6710 -2090 {flags=graph
+B 2 6810 -2250 7030 -2080 {flags=graph
 
 y2=1.2
 ypos1=0
@@ -568,8 +568,8 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=2.8363388e-06
-x2=7.9563388e-06
+x1=0
+x2=8e-06
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -630,6 +630,7 @@ y1=0.86
 color="6 7"
 node="amp_out
 amp_mir"}
+T {r=7769} 2430 -2650 0 0 0.4 0.4 {}
 N 1380 -3200 1380 -2580 {lab=V_REF_MIR}
 N 2330 -3200 2330 -2580 {lab=V_REF}
 N 1380 -3330 1380 -3260 {lab=VDD}
@@ -922,7 +923,7 @@ N 6220 -2440 6250 -2440 {lab=Vb1}
 N 6220 -2490 6220 -2440 {lab=Vb1}
 N 6220 -2490 6290 -2490 {lab=Vb1}
 N 5940 -2370 6070 -2370 {lab=VIN+}
-N 6530 -2370 6660 -2370 {lab=VIN-}
+N 6530 -2370 6660 -2370 {lab=AMP_OUT}
 N 6110 -2590 6190 -2590 {lab=AMP_MIR}
 N 6190 -2910 6190 -2590 {lab=AMP_MIR}
 N 6360 -2980 6400 -2980 {lab=VDD}
@@ -940,8 +941,13 @@ N 5730 -2140 5730 -2090 {lab=VIN-}
 N 5580 -2140 5580 -2090 {lab=VIN+}
 N 6120 -2190 6250 -2190 {lab=Vbias3}
 N 6120 -2050 6250 -2050 {lab=Vbias4}
-C {devices/vsource.sym} 420 -3440 0 0 {name=V1 value="pwl(0 0 1us 0 2us 1.8)" savecurrent=false
-* 1.8}
+N 6490 -2620 6860 -2620 {lab=AMP_OUT}
+N 6860 -2620 6860 -2370 {lab=AMP_OUT}
+N 6660 -2370 6860 -2370 {lab=AMP_OUT}
+N 6700 -2370 6700 -2310 {lab=AMP_OUT}
+N 6700 -2250 6700 -2190 {lab=GND}
+C {devices/vsource.sym} 420 -3440 0 0 {name=V1 value=1.8 savecurrent=false
+* "pwl(0 0 1us 0 2us 1.8)"}
 C {devices/gnd.sym} 420 -3410 0 0 {name=l3 lab=GND}
 C {devices/vdd.sym} 420 -3470 0 0 {name=l4 lab=VDD}
 C {sky130_fd_pr/corner.sym} 190 -3490 0 0 {name=CORNER only_toplevel=false corner=tt}
@@ -1011,11 +1017,13 @@ value="
 
 .control
   save all
-  remzerovec
-  set appendwrite
   * dc V1 0.0 2.0 0.005
   tran 0.05ns 8us
+  * tran 0.05ns 1us
+  remzerovec
   write tb_tele_casc_diff_amp_3.raw
+  set appendwrite
+
 .endc
 
 
@@ -1385,7 +1393,7 @@ C {devices/gnd.sym} 3070 -2030 0 1 {name=l25 lab=GND}
 C {devices/vdd.sym} 3520 -3050 0 0 {name=l26 lab=VDD}
 C {sky130_fd_pr/pfet_01v8.sym} 3500 -2950 0 0 {name=M29
 W=12
-L=0.3
+L=0.15
 nf=6
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -1399,7 +1407,7 @@ spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8.sym} 3500 -2680 0 0 {name=M30
 W=12
-L=0.3
+L=0.15
 nf=6
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -1442,7 +1450,7 @@ spiceprefix=X
 C {devices/gnd.sym} 3520 -2030 0 0 {name=l27 lab=GND}
 C {sky130_fd_pr/pfet_01v8.sym} 3500 -2550 0 0 {name=M33
 W=12
-L=0.3
+L=0.15
 nf=6
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -1528,13 +1536,13 @@ spiceprefix=X
 }
 C {devices/vdd.sym} 4110 -2790 0 0 {name=l24 lab=VDD}
 C {lab_wire.sym} 3310 -2680 0 0 {name=p10 sig_type=std_logic lab=Vbias2}
-C {sky130_fd_pr/cap_mim_m3_1.sym} 2500 -3060 2 0 {name=C1 model=cap_mim_m3_1 W=2 L=2 MF=1 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 2500 -3060 2 0 {name=C1 model=cap_mim_m3_1 W=2 L=2 MF=4 spiceprefix=X}
 C {devices/vdd.sym} 2500 -3180 0 1 {name=l28 lab=VDD}
 C {sky130_fd_pr/nfet_01v8.sym} 6270 -2050 0 0 {name=M34
 W=12
 L=0.3
-nf=8 
-mult=1
+nf=4 
+mult=3
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
@@ -1548,8 +1556,8 @@ C {devices/gnd.sym} 6290 -1950 0 0 {name=l29 lab=GND}
 C {sky130_fd_pr/nfet_01v8.sym} 6270 -2190 0 0 {name=M35
 W=12
 L=0.3
-nf=8 
-mult=1
+nf=4 
+mult=3
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
@@ -1560,10 +1568,10 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {sky130_fd_pr/nfet_01v8.sym} 6090 -2370 0 0 {name=M36
-W=4
-L=0.15
-nf=2 
-mult=1
+W=12
+L=0.3
+nf=4 
+mult=2
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
@@ -1574,10 +1582,10 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {sky130_fd_pr/nfet_01v8.sym} 6510 -2370 0 1 {name=M37
-W=4
-L=0.15
-nf=2 
-mult=1
+W=12
+L=0.3
+nf=4 
+mult=2
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
@@ -1588,10 +1596,10 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {sky130_fd_pr/nfet_01v8.sym} 6130 -2530 0 1 {name=M38
-W=4
+W=12
 L=0.3
-nf=2 
-mult=1
+nf=4 
+mult=2
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
@@ -1602,10 +1610,10 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {sky130_fd_pr/nfet_01v8.sym} 6470 -2530 0 0 {name=M39
-W=4
+W=12
 L=0.3
-nf=2 
-mult=1
+nf=4 
+mult=2
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
@@ -1619,9 +1627,9 @@ C {devices/vdd.sym} 6110 -3010 0 0 {name=l30 lab=VDD}
 C {devices/vdd.sym} 6490 -3010 0 0 {name=l31 lab=VDD}
 C {sky130_fd_pr/pfet_01v8.sym} 6470 -2910 0 0 {name=M40
 W=12
-L=0.15
-nf=6
-mult=1
+L=0.3
+nf=4
+mult=6
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
@@ -1633,9 +1641,9 @@ spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8.sym} 6130 -2910 0 1 {name=M41
 W=12
-L=0.15
-nf=6
-mult=1
+L=0.3
+nf=4
+mult=6
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
@@ -1647,9 +1655,9 @@ spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8.sym} 6470 -2770 0 0 {name=M42
 W=12
-L=0.15
-nf=6
-mult=1
+L=0.3
+nf=4
+mult=6
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
@@ -1661,9 +1669,9 @@ spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8.sym} 6130 -2770 0 1 {name=M43
 W=12
-L=0.15
-nf=6
-mult=1
+L=0.3
+nf=4
+mult=6
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
@@ -1676,8 +1684,8 @@ spiceprefix=X
 C {devices/gnd.sym} 6570 -2530 0 0 {name=l32 lab=GND}
 C {devices/gnd.sym} 6030 -2530 0 1 {name=l33 lab=GND}
 C {sky130_fd_pr/nfet_01v8.sym} 6270 -2440 0 0 {name=M44
-W=4
-L=4
+W=1
+L=1
 nf=1 
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -1692,7 +1700,7 @@ spiceprefix=X
 C {sky130_fd_pr/pfet_01v8.sym} 6340 -2980 0 0 {name=M45
 W=12
 L=0.3
-nf=6
+nf=4
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
@@ -1706,7 +1714,7 @@ spiceprefix=X
 C {sky130_fd_pr/pfet_01v8.sym} 6340 -2670 0 0 {name=M46
 W=12
 L=0.3
-nf=6
+nf=4
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
@@ -1720,30 +1728,24 @@ spiceprefix=X
 C {devices/vdd.sym} 6360 -3080 0 0 {name=l34 lab=VDD}
 C {lab_wire.sym} 6240 -2980 0 0 {name=p15 sig_type=std_logic lab=Vbias1}
 C {lab_wire.sym} 6300 -2770 0 0 {name=p19 sig_type=std_logic lab=Vbias2}
-C {devices/vsource.sym} 5730 -2060 0 0 {name=V3 value="sin(1.1 -0.001 200k)" savecurrent=false
-*}
-C {devices/vsource.sym} 5580 -2060 0 1 {name=V2 value="sin(1.1 0.001 200k)" savecurrent=false
+C {devices/vsource.sym} 5730 -2060 0 0 {name=V3 value=0.9 savecurrent=false
+}
+C {devices/vsource.sym} 5580 -2060 0 1 {name=V2 value="sin(0.9 0.001 200k)" savecurrent=false
 * 0.001 1.44 * 1.24
 * 1.34 1.25 }
 C {devices/gnd.sym} 5730 -2030 0 1 {name=V4 value="pulse(1.241 1.239 0ns 10ns 10ns 240ns 500ns)" savecurrent=false
 * * 100k)"
-* "sin(1.24 -0.001 * 1.24 3us 1.24 3.01us 1.239)"}
+* "sin(1.24 * 1.24 3us 1.24 3.01us 1.239)"}
 C {devices/gnd.sym} 5580 -2030 0 1 {name=V5 value="pulse(1.241 1.239 0ns 10ns 10ns 240ns 500ns)" savecurrent=false
 * * 100k)"
 * "sin(1.24 -0.001 * 1.24 3us 1.24 3.01us 1.239)"}
 C {lab_pin.sym} 5580 -2140 0 0 {name=p22 lab=VIN+}
 C {lab_pin.sym} 5730 -2140 0 1 {name=p23 lab=VIN-}
 C {lab_pin.sym} 5940 -2370 0 0 {name=p24 lab=VIN+}
-C {lab_pin.sym} 6660 -2370 0 1 {name=p25 lab=VIN-}
 C {lab_wire.sym} 6120 -2190 2 1 {name=p26 sig_type=std_logic lab=Vbias3}
 C {lab_wire.sym} 6120 -2050 2 1 {name=p27 sig_type=std_logic lab=Vbias4}
 C {lab_pin.sym} 6490 -2670 0 1 {name=p28 lab=AMP_OUT}
 C {lab_pin.sym} 6110 -2670 0 0 {name=p29 lab=AMP_MIR}
-C {sky130_fd_pr/res_high_po_0p69.sym} 2330 -2420 0 0 {name=R1
-L=5
-model=res_high_po_0p69
-spiceprefix=X
-mult=1}
 C {lab_wire.sym} 6260 -2280 0 0 {name=p30 sig_type=std_logic lab=Vp}
 C {lab_wire.sym} 6250 -2530 0 0 {name=p31 sig_type=std_logic lab=Vb1}
 C {devices/ngspice_get_value.sym} 6270 -2010 2 0 {name=r2 node=v(@m.xm34.msky130_fd_pr__nfet_01v8[vth])
@@ -1787,3 +1789,14 @@ descr="vsat="}
 C {lab_wire.sym} 6290 -2110 0 1 {name=p32 sig_type=std_logic lab=V_tail_btw}
 C {lab_wire.sym} 6110 -2420 0 0 {name=p33 sig_type=std_logic lab=Vd1}
 C {lab_wire.sym} 6490 -2420 0 1 {name=p34 sig_type=std_logic lab=Vd2}
+C {capa.sym} 6700 -2280 0 0 {name=C2
+m=1
+value=1p
+footprint=1206
+device="ceramic capacitor"}
+C {devices/gnd.sym} 6700 -2190 0 0 {name=l35 lab=GND}
+C {sky130_fd_pr/res_high_po_0p35.sym} 2330 -2420 0 0 {name=R1
+L=10
+model=res_high_po_0p35
+spiceprefix=X
+mult=1}
