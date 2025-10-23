@@ -12,8 +12,8 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=9.8771737e-07
-x2=4.1334453e-06
+x1=0
+x2=2e-06
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -85,8 +85,8 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=9.8771737e-07
-x2=4.1334453e-06
+x1=0
+x2=2e-06
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -156,8 +156,8 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=9.8771737e-07
-x2=4.1334453e-06
+x1=0
+x2=2e-06
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -227,8 +227,8 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=9.8771737e-07
-x2=4.1334453e-06
+x1=0
+x2=2e-06
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -298,8 +298,8 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=9.8771737e-07
-x2=4.1334453e-06
+x1=0
+x2=2e-06
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -370,8 +370,8 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=9.8771737e-07
-x2=4.1334453e-06
+x1=0
+x2=2e-06
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -441,8 +441,8 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=9.8771737e-07
-x2=4.1334453e-06
+x1=0
+x2=2e-06
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -513,8 +513,8 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=9.8771737e-07
-x2=4.1334453e-06
+x1=0
+x2=2e-06
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -586,8 +586,8 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=9.8771737e-07
-x2=4.1334453e-06
+x1=0
+x2=2e-06
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -658,8 +658,8 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=9.8771737e-07
-x2=4.1334453e-06
+x1=0
+x2=2e-06
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -731,8 +731,8 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=9.8771737e-07
-x2=4.1334453e-06
+x1=0
+x2=2e-06
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -796,16 +796,16 @@ y1=0.00034
 
 color=7
 node=amp_out}
-B 2 7580 -3260 8250 -2830 {flags=graph
+B 2 7930 -2160 8190 -1970 {flags=graph
 
-y2=1.9
+y2=1.6
 ypos1=0
 ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=9.8771737e-07
-x2=4.1334453e-06
+x1=0
+x2=2e-06
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -852,7 +852,227 @@ linewidth_mult=1
 
 
 
-y1=0.0017
+y1=0.2
+
+
+
+
+
+
+
+
+
+
+
+
+
+color="7 6"
+node="v_sawtooth
+v_err_amp_out"}
+B 2 8670 -2160 8930 -1970 {flags=graph
+
+y2=2
+ypos1=0
+ypos2=2
+divy=5
+subdivy=4
+unity=1
+x1=0
+x2=2e-06
+divx=5
+subdivx=4
+xlabmag=1.0
+ylabmag=1.0
+
+
+dataset=0
+unitx=1
+logx=0
+logy=0
+
+
+
+
+
+
+
+
+
+
+
+linewidth_mult=1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+y1=-0.052
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+color=6
+node=v_q_b}
+B 2 7930 -2370 8190 -2180 {flags=graph
+
+y2=1.8
+ypos1=0
+ypos2=2
+divy=5
+subdivy=4
+unity=1
+x1=0
+x2=2e-06
+divx=5
+subdivx=4
+xlabmag=1.0
+ylabmag=1.0
+
+
+dataset=0
+unitx=1
+logx=0
+logy=0
+
+
+
+
+
+
+
+
+
+
+
+linewidth_mult=1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+y1=0.09
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+color=6
+node=v_err_amp_out}
+B 2 8670 -1940 8930 -1750 {flags=graph
+
+y2=1.9
+ypos1=0
+ypos2=2
+divy=5
+subdivy=4
+unity=1
+x1=0
+x2=2e-06
+divx=5
+subdivx=4
+xlabmag=1.0
+ylabmag=1.0
+
+
+dataset=0
+unitx=1
+logx=0
+logy=0
+
+
+
+
+
+
+
+
+
+
+
+linewidth_mult=1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+y1=-0.018
+
 
 
 
@@ -867,7 +1087,81 @@ y1=0.0017
 
 
 color=7
-node=v_sawtooth}
+node=v_final_pwm}
+B 2 8220 -2160 8480 -1970 {flags=graph
+
+y2=1.9
+ypos1=0
+ypos2=2
+divy=5
+subdivy=4
+unity=1
+x1=0
+x2=2e-06
+divx=5
+subdivx=4
+xlabmag=1.0
+ylabmag=1.0
+
+
+dataset=0
+unitx=1
+logx=0
+logy=0
+
+
+
+
+
+
+
+
+
+
+
+linewidth_mult=1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+y1=-0.0018
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+color=7
+node=clk_out}
 B 2 1500 -3040 1730 -2880 {flags=graph
 
 y2=1.3
@@ -876,8 +1170,8 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=9.8771737e-07
-x2=4.1334453e-06
+x1=0
+x2=2e-06
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -936,379 +1230,12 @@ y1=-5.2e-13
 
 color=7
 node=v_ref}
-B 2 6820 -3260 7490 -2830 {flags=graph
-
-y2=1.8
-ypos1=0
-ypos2=2
-divy=5
-subdivy=4
-unity=1
-x1=9.8771737e-07
-x2=4.1334453e-06
-divx=5
-subdivx=4
-xlabmag=1.0
-ylabmag=1.0
-
-
-dataset=0
-unitx=1
-logx=0
-logy=0
-
-
-
-
-
-
-
-
-
-
-
-linewidth_mult=1
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-y1=0
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-color=7
-node=s_rst}
-B 2 7580 -2770 8250 -2340 {flags=graph
-
-y2=4.8e-06
-ypos1=0
-ypos2=2
-divy=5
-subdivy=4
-unity=1
-x1=9.8771737e-07
-x2=4.1334453e-06
-divx=5
-subdivx=4
-xlabmag=1.0
-ylabmag=1.0
-
-
-dataset=0
-unitx=1
-logx=0
-logy=0
-
-
-
-
-
-
-
-
-
-
-
-linewidth_mult=1
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-y1=1.9e-13
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-color=7
-node=i(@m.xm70.msky130_fd_pr__pfet_01v8[id])}
-B 2 8330 -2770 9000 -2340 {flags=graph
-
-y2=4.8e-06
-ypos1=0
-ypos2=2
-divy=5
-subdivy=4
-unity=1
-x1=9.8771737e-07
-x2=4.1334453e-06
-divx=5
-subdivx=4
-xlabmag=1.0
-ylabmag=1.0
-
-
-dataset=0
-unitx=1
-logx=0
-logy=0
-
-
-
-
-
-
-
-
-
-
-
-linewidth_mult=1
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-y1=-0.00016
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-color=7
-node=i(vmeas)}
-B 2 7580 -2280 8250 -1850 {flags=graph
-
-y2=0.00016
-ypos1=0
-ypos2=2
-divy=5
-subdivy=4
-unity=1
-x1=9.8771737e-07
-x2=4.1334453e-06
-divx=5
-subdivx=4
-xlabmag=1.0
-ylabmag=1.0
-
-
-dataset=0
-unitx=1
-logx=0
-logy=0
-
-
-
-
-
-
-
-
-
-
-
-linewidth_mult=1
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-y1=3.9e-14
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-color=7
-node=i(@m.xm69.msky130_fd_pr__nfet_01v8[id])}
-B 2 6820 -2770 7490 -2340 {flags=graph
-
-y2=1.8
-ypos1=0
-ypos2=2
-divy=5
-subdivy=4
-unity=1
-x1=9.8771737e-07
-x2=4.1334453e-06
-divx=5
-subdivx=4
-xlabmag=1.0
-ylabmag=1.0
-
-
-dataset=0
-unitx=1
-logx=0
-logy=0
-
-
-
-
-
-
-
-
-
-
-
-linewidth_mult=1
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-y1=4.6e-07
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-color=6
-node=st_amp_out}
 T {r=7769} 2230 -2880 0 0 0.4 0.4 {}
-T {3.1uA} 7780 -4210 0 1 1 1 {}
-T {100nA} 7120 -4200 0 1 1 1 {}
-T {24/(0.3 * 2)} 7770 -4330 0 1 0.5 0.5 {}
-T {24/(0.3 * 8)} 7040 -4340 0 1 0.5 0.5 {}
-N 8290 -3550 8290 -3500 {lab=ST_V_REF}
+T {3.1uA} 7780 -3320 0 1 1 1 {}
+T {100nA} 7120 -3310 0 1 1 1 {}
+T {24/(0.3 * 2)} 7770 -3440 0 1 0.5 0.5 {}
+T {24/(0.3 * 8)} 7040 -3450 0 1 0.5 0.5 {}
+N 7620 -2350 7620 -2300 {lab=ST_V_REF}
 N 7510 -520 7510 -500 {lab=VDD}
 N 7510 -440 7510 -420 {lab=GND}
 N 1180 -3430 1180 -2810 {lab=V_REF_MIR}
@@ -1557,106 +1484,118 @@ N 4070 -2650 4410 -2650 {lab=Vbias3}
 N 4410 -2650 4410 -2360 {lab=Vbias3}
 N 2300 -3410 2300 -3320 {lab=VDD}
 N 2300 -3260 2300 -3180 {lab=Vbiasp}
-N 7680 -3660 7980 -3660 {lab=ST_AMP_MIR}
-N 8020 -4140 8020 -4070 {lab=Vp}
-N 7640 -4140 7640 -4070 {lab=Vp}
-N 8020 -4010 8020 -3930 {lab=ST_VD1}
-N 7640 -4010 7640 -3930 {lab=ST_VD2}
-N 7640 -3870 7640 -3690 {lab=ST_AMP_OUT}
-N 8020 -3870 8020 -3690 {lab=ST_AMP_MIR}
-N 7640 -3560 8020 -3560 {lab=GND}
-N 7840 -3560 7840 -3530 {lab=GND}
-N 8060 -4040 8120 -4040 {lab=V_SAWTOOTH}
-N 7530 -4040 7600 -4040 {lab=ST_V_REF}
-N 7840 -3740 8020 -3740 {lab=ST_AMP_MIR}
-N 7840 -3740 7840 -3660 {lab=ST_AMP_MIR}
-N 8090 -3660 8090 -3560 {lab=GND}
-N 8020 -3560 8090 -3560 {lab=GND}
-N 8020 -3660 8090 -3660 {lab=GND}
-N 7570 -3660 7570 -3560 {lab=GND}
-N 7570 -3560 7640 -3560 {lab=GND}
-N 7570 -3660 7640 -3660 {lab=GND}
-N 8090 -3900 8090 -3660 {lab=GND}
-N 7570 -3900 7570 -3660 {lab=GND}
-N 7640 -3900 8020 -3900 {lab=VDD}
-N 7640 -4040 8020 -4040 {lab=VDD}
-N 7790 -4040 7790 -3900 {lab=VDD}
-N 8020 -3630 8020 -3560 {lab=GND}
-N 7640 -3630 7640 -3560 {lab=GND}
-N 7120 -3660 7120 -3560 {lab=GND}
-N 7120 -3560 7160 -3560 {lab=GND}
-N 7120 -3660 7160 -3660 {lab=GND}
-N 7160 -3630 7160 -3560 {lab=GND}
-N 6820 -3660 6820 -3560 {lab=GND}
-N 6820 -3560 6860 -3560 {lab=GND}
-N 6820 -3660 6860 -3660 {lab=GND}
-N 6860 -3630 6860 -3560 {lab=GND}
-N 7520 -3740 7520 -3660 {lab=ST_AMP_OUT}
-N 7200 -3660 7520 -3660 {lab=ST_AMP_OUT}
-N 7160 -4220 7160 -3690 {lab=ST_PULL_DOWN}
-N 6950 -3740 6950 -3660 {lab=ST_PULL_DOWN}
-N 6900 -3660 6950 -3660 {lab=ST_PULL_DOWN}
-N 6860 -3870 6860 -3690 {lab=#net6}
-N 6950 -3900 6950 -3740 {lab=ST_PULL_DOWN}
-N 6900 -3900 6950 -3900 {lab=ST_PULL_DOWN}
-N 6950 -3790 7160 -3790 {lab=ST_PULL_DOWN}
-N 6820 -3970 6820 -3900 {lab=VDD}
-N 6820 -3900 6860 -3900 {lab=VDD}
-N 6860 -3970 6860 -3930 {lab=VDD}
-N 6820 -3970 6860 -3970 {lab=VDD}
-N 6860 -4020 6860 -3970 {lab=VDD}
-N 7640 -4140 8020 -4140 {lab=Vp}
-N 7830 -4220 7830 -4140 {lab=Vp}
-N 6720 -3790 6860 -3790 {lab=#net6}
-N 8060 -3900 8090 -3900 {lab=GND}
-N 7570 -3900 7600 -3900 {lab=GND}
-N 7160 -3560 7570 -3560 {lab=GND}
-N 6860 -3560 7120 -3560 {lab=GND}
-N 7790 -4250 7830 -4250 {lab=VDD}
-N 7870 -4250 7910 -4250 {lab=Vbias1}
-N 7910 -4250 8010 -4250 {lab=Vbias1}
-N 8120 -4040 8180 -4040 {lab=V_SAWTOOTH}
-N 7790 -4250 7790 -4040 {lab=VDD}
-N 7790 -4330 7830 -4330 {lab=VDD}
-N 7830 -4370 7830 -4280 {lab=VDD}
-N 7790 -4330 7790 -4250 {lab=VDD}
-N 7120 -4250 7160 -4250 {lab=VDD}
-N 7200 -4250 7240 -4250 {lab=Vbias1}
-N 7240 -4250 7290 -4250 {lab=Vbias1}
-N 7120 -4330 7160 -4330 {lab=VDD}
-N 7120 -4330 7120 -4250 {lab=VDD}
-N 7160 -4370 7160 -4280 {lab=VDD}
-N 7520 -3740 7640 -3740 {lab=ST_AMP_OUT}
-N 6700 -3790 6720 -3790 {lab=#net6}
-N 8360 -3850 8360 -3750 {lab=GND}
-N 8560 -3810 8600 -3810 {lab=GND}
-N 8600 -3850 8600 -3810 {lab=GND}
-N 8360 -3810 8560 -3810 {lab=GND}
-N 8360 -4040 8600 -4040 {lab=V_SAWTOOTH}
-N 8600 -4040 8600 -3910 {lab=V_SAWTOOTH}
-N 8300 -4040 8360 -4040 {lab=V_SAWTOOTH}
-N 8510 -3880 8600 -3880 {lab=GND}
-N 8360 -3950 8360 -3910 {lab=#net7}
-N 8360 -4040 8360 -4010 {lab=V_SAWTOOTH}
-N 8180 -4040 8300 -4040 {lab=V_SAWTOOTH}
-N 6700 -3790 6700 -3390 {lab=#net6}
-N 8730 -3880 8730 -3390 {lab=S_RST}
-N 8640 -3880 8730 -3880 {lab=S_RST}
-N 8480 -4120 8480 -4040 {lab=V_SAWTOOTH}
-N 8440 -4150 8480 -4150 {lab=VDD}
-N 8520 -4150 8560 -4150 {lab=Vbias1}
-N 8560 -4150 8660 -4150 {lab=Vbias1}
-N 8440 -4230 8480 -4230 {lab=VDD}
-N 8480 -4270 8480 -4180 {lab=VDD}
-N 8440 -4230 8440 -4150 {lab=VDD}
-N 8260 -4460 8260 -4040 {lab=V_SAWTOOTH}
-N 8470 -3550 8470 -3500 {lab=S_RST}
+N 7680 -2770 7980 -2770 {lab=ST_AMP_MIR}
+N 8020 -3250 8020 -3180 {lab=Vp}
+N 7640 -3250 7640 -3180 {lab=Vp}
+N 8020 -3120 8020 -3040 {lab=ST_VD1}
+N 7640 -3120 7640 -3040 {lab=ST_VD2}
+N 7640 -2980 7640 -2800 {lab=ST_AMP_OUT}
+N 8020 -2980 8020 -2800 {lab=ST_AMP_MIR}
+N 7640 -2670 8020 -2670 {lab=GND}
+N 7840 -2670 7840 -2640 {lab=GND}
+N 8060 -3150 8120 -3150 {lab=V_SAWTOOTH}
+N 7530 -3150 7600 -3150 {lab=ST_V_REF}
+N 7840 -2850 8020 -2850 {lab=ST_AMP_MIR}
+N 7840 -2850 7840 -2770 {lab=ST_AMP_MIR}
+N 8090 -2770 8090 -2670 {lab=GND}
+N 8020 -2670 8090 -2670 {lab=GND}
+N 8020 -2770 8090 -2770 {lab=GND}
+N 7570 -2770 7570 -2670 {lab=GND}
+N 7570 -2670 7640 -2670 {lab=GND}
+N 7570 -2770 7640 -2770 {lab=GND}
+N 8090 -3010 8090 -2770 {lab=GND}
+N 7570 -3010 7570 -2770 {lab=GND}
+N 7640 -3010 8020 -3010 {lab=VDD}
+N 7640 -3150 8020 -3150 {lab=VDD}
+N 7790 -3150 7790 -3010 {lab=VDD}
+N 8020 -2740 8020 -2670 {lab=GND}
+N 7640 -2740 7640 -2670 {lab=GND}
+N 7120 -2770 7120 -2670 {lab=GND}
+N 7120 -2670 7160 -2670 {lab=GND}
+N 7120 -2770 7160 -2770 {lab=GND}
+N 7160 -2740 7160 -2670 {lab=GND}
+N 6820 -2770 6820 -2670 {lab=GND}
+N 6820 -2670 6860 -2670 {lab=GND}
+N 6820 -2770 6860 -2770 {lab=GND}
+N 6860 -2740 6860 -2670 {lab=GND}
+N 7520 -2850 7520 -2770 {lab=ST_AMP_OUT}
+N 7200 -2770 7520 -2770 {lab=ST_AMP_OUT}
+N 7160 -3330 7160 -2800 {lab=ST_PULL_DOWN}
+N 6950 -2850 6950 -2770 {lab=ST_PULL_DOWN}
+N 6900 -2770 6950 -2770 {lab=ST_PULL_DOWN}
+N 6860 -2980 6860 -2800 {lab=S_RST}
+N 6950 -3010 6950 -2850 {lab=ST_PULL_DOWN}
+N 6900 -3010 6950 -3010 {lab=ST_PULL_DOWN}
+N 6950 -2900 7160 -2900 {lab=ST_PULL_DOWN}
+N 6820 -3080 6820 -3010 {lab=VDD}
+N 6820 -3010 6860 -3010 {lab=VDD}
+N 6860 -3080 6860 -3040 {lab=VDD}
+N 6820 -3080 6860 -3080 {lab=VDD}
+N 6860 -3130 6860 -3080 {lab=VDD}
+N 7640 -3250 8020 -3250 {lab=Vp}
+N 7830 -3330 7830 -3250 {lab=Vp}
+N 6720 -2900 6860 -2900 {lab=S_RST}
+N 8060 -3010 8090 -3010 {lab=GND}
+N 7570 -3010 7600 -3010 {lab=GND}
+N 7160 -2670 7570 -2670 {lab=GND}
+N 6860 -2670 7120 -2670 {lab=GND}
+N 7790 -3360 7830 -3360 {lab=VDD}
+N 7870 -3360 7910 -3360 {lab=Vbias1}
+N 7910 -3360 8010 -3360 {lab=Vbias1}
+N 8120 -3150 8180 -3150 {lab=V_SAWTOOTH}
+N 7790 -3360 7790 -3150 {lab=VDD}
+N 7790 -3440 7830 -3440 {lab=VDD}
+N 7830 -3480 7830 -3390 {lab=VDD}
+N 7790 -3440 7790 -3360 {lab=VDD}
+N 7120 -3360 7160 -3360 {lab=VDD}
+N 7200 -3360 7240 -3360 {lab=Vbias1}
+N 7240 -3360 7290 -3360 {lab=Vbias1}
+N 7120 -3440 7160 -3440 {lab=VDD}
+N 7120 -3440 7120 -3360 {lab=VDD}
+N 7160 -3480 7160 -3390 {lab=VDD}
+N 7520 -2850 7640 -2850 {lab=ST_AMP_OUT}
+N 6700 -2900 6720 -2900 {lab=S_RST}
+N 8360 -2960 8360 -2860 {lab=GND}
+N 8560 -2920 8600 -2920 {lab=GND}
+N 8600 -2960 8600 -2920 {lab=GND}
+N 8360 -2920 8560 -2920 {lab=GND}
+N 8360 -3150 8600 -3150 {lab=V_SAWTOOTH}
+N 8600 -3150 8600 -3020 {lab=V_SAWTOOTH}
+N 8300 -3150 8360 -3150 {lab=V_SAWTOOTH}
+N 8510 -2990 8600 -2990 {lab=GND}
+N 8360 -3060 8360 -3020 {lab=#net6}
+N 8360 -3150 8360 -3120 {lab=V_SAWTOOTH}
+N 8180 -3150 8300 -3150 {lab=V_SAWTOOTH}
+N 6700 -2900 6700 -2500 {lab=S_RST}
+N 6700 -2500 8730 -2500 {lab=S_RST}
+N 8730 -2990 8730 -2500 {lab=S_RST}
+N 8640 -2990 8730 -2990 {lab=S_RST}
+N 8480 -3230 8480 -3150 {lab=V_SAWTOOTH}
+N 8440 -3260 8480 -3260 {lab=VDD}
+N 8520 -3260 8560 -3260 {lab=Vbias1}
+N 8560 -3260 8660 -3260 {lab=Vbias1}
+N 8480 -3380 8480 -3290 {lab=#net7}
+N 8440 -3340 8440 -3260 {lab=VDD}
+N 8260 -3570 8260 -3150 {lab=V_SAWTOOTH}
+N 8440 -3410 8480 -3410 {lab=VDD}
+N 8480 -3530 8480 -3440 {lab=#net8}
+N 8440 -3490 8440 -3410 {lab=VDD}
+N 8440 -3410 8440 -3340 {lab=VDD}
+N 8440 -3560 8480 -3560 {lab=VDD}
+N 8440 -3640 8480 -3640 {lab=VDD}
+N 8480 -3680 8480 -3590 {lab=VDD}
+N 8440 -3640 8440 -3560 {lab=VDD}
+N 8440 -3560 8440 -3490 {lab=VDD}
+N 8520 -3410 8550 -3410 {lab=Vbias1}
+N 8550 -3410 8550 -3260 {lab=Vbias1}
+N 8520 -3560 8550 -3560 {lab=Vbias1}
+N 8550 -3560 8550 -3410 {lab=Vbias1}
 C {devices/vsource.sym} 7510 -470 0 0 {name=V1 value=1.8 savecurrent=false
 * "pwl(0 0 1us 0 1.2us 1.8)"}
 C {devices/gnd.sym} 7510 -420 0 0 {name=l3 lab=GND}
 C {devices/vdd.sym} 7510 -520 0 0 {name=l4 lab=VDD}
 C {sky130_fd_pr/corner.sym} 7290 -520 0 0 {name=CORNER only_toplevel=false corner=tt}
-C {simulator_commands_shown.sym} 8960 -4230 0 0 {name=COMMANDS
+C {simulator_commands_shown.sym} 8960 -3340 0 0 {name=COMMANDS
 simulator=ngspice
 only_toplevel=false 
 value="
@@ -1689,7 +1628,6 @@ value="
 +v(st_amp_mir)
 +v(st_amp_out)
 +v(st_pull_down)
-+v(st_v_ref)
 +v(s_rst)
 +v(v_sawtooth)
 +v(err_amp_mir)
@@ -1704,9 +1642,9 @@ value="
 .control
   * save all
   * dc V1 0.0 2.0 0.005
-  tran 0.2ns 15us
+  tran 0.1ns 5us
   remzerovec
-  write tb_PWM_gen.raw
+  write tb_PWM_gen_4.raw
   set appendwrite
 
 .endc
@@ -1714,13 +1652,13 @@ value="
 
 "
 }
-C {devices/vsource.sym} 8290 -3470 0 1 {name=V2 value=1.4 savecurrent=false
+C {devices/vsource.sym} 7620 -2270 0 0 {name=V2 value=1.43 savecurrent=false
 * 0.001 1.44 "pwl(0 0.17 2us 0.17 2us 0.12 4us 0.12 4us 0.22)"
 * 1.34 1.25 "sin(1.0 0.001 200k)"}
-C {devices/gnd.sym} 8290 -3440 0 1 {name=V5 value="pulse(1.241 1.239 0ns 10ns 10ns 240ns 500ns)" savecurrent=false
+C {devices/gnd.sym} 7620 -2240 0 0 {name=V5 value="pulse(1.241 1.239 0ns 10ns 10ns 240ns 500ns)" savecurrent=false
 * * 100k)"
 * "sin(1.24 -0.001 * 1.24 3us 1.24 3.01us 1.239)"}
-C {lab_pin.sym} 8290 -3550 0 0 {name=p22 lab=ST_V_REF}
+C {lab_pin.sym} 7620 -2350 0 1 {name=p22 lab=ST_V_REF}
 C {sky130_fd_pr/nfet_01v8.sym} 2110 -2780 0 0 {name=M1
 W=16
 L=0.3
@@ -2236,12 +2174,12 @@ L=10
 model=res_high_po_0p35
 spiceprefix=X
 mult=1}
-C {devices/gnd.sym} 7840 -3540 0 1 {name=l39 lab=GND}
-C {sky130_fd_pr/nfet_01v8.sym} 8000 -3660 0 0 {name=M58
+C {devices/gnd.sym} 7840 -2650 0 1 {name=l39 lab=GND}
+C {sky130_fd_pr/nfet_01v8.sym} 8000 -2770 0 0 {name=M58
 W=4
 L=0.15
 nf=2 
-mult=4
+mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
@@ -2251,11 +2189,11 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {sky130_fd_pr/nfet_01v8.sym} 7660 -3660 0 1 {name=M59
+C {sky130_fd_pr/nfet_01v8.sym} 7660 -2770 0 1 {name=M59
 W=4
 L=0.15
 nf=2 
-mult=4
+mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
@@ -2265,11 +2203,11 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {sky130_fd_pr/pfet_01v8.sym} 7620 -4040 0 0 {name=M60
+C {sky130_fd_pr/pfet_01v8.sym} 7620 -3150 0 0 {name=M60
 W=12
 L=0.15
 nf=6
-mult=4
+mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
@@ -2279,11 +2217,11 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {sky130_fd_pr/pfet_01v8.sym} 8040 -4040 0 1 {name=M61
+C {sky130_fd_pr/pfet_01v8.sym} 8040 -3150 0 1 {name=M61
 W=12
 L=0.15
 nf=6
-mult=4
+mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
@@ -2293,11 +2231,11 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {sky130_fd_pr/pfet_01v8.sym} 7620 -3900 0 0 {name=M62
+C {sky130_fd_pr/pfet_01v8.sym} 7620 -3010 0 0 {name=M62
 W=12
 L=0.15
 nf=6
-mult=4
+mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
@@ -2307,11 +2245,11 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {sky130_fd_pr/pfet_01v8.sym} 8040 -3900 0 1 {name=M63
+C {sky130_fd_pr/pfet_01v8.sym} 8040 -3010 0 1 {name=M63
 W=12
 L=0.15
 nf=6
-mult=4
+mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
 as="'int((nf+2)/2) * W/nf * 0.29'" 
@@ -2321,21 +2259,21 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {lab_pin.sym} 7640 -3800 0 0 {name=p44 lab=ST_AMP_OUT}
-C {lab_pin.sym} 8020 -3800 0 1 {name=p46 lab=ST_AMP_MIR}
-C {devices/ngspice_get_value.sym} 8000 -3630 2 0 {name=r33 node=v(@m.xm38.msky130_fd_pr__nfet_01v8[vth])
+C {lab_pin.sym} 7640 -2910 0 0 {name=p44 lab=ST_AMP_OUT}
+C {lab_pin.sym} 8020 -2910 0 1 {name=p46 lab=ST_AMP_MIR}
+C {devices/ngspice_get_value.sym} 8000 -2740 2 0 {name=r33 node=v(@m.xm38.msky130_fd_pr__nfet_01v8[vth])
 descr="vth="}
-C {devices/ngspice_get_value.sym} 7660 -3630 2 1 {name=r34 node=v(@m.xm39.msky130_fd_pr__nfet_01v8[vth])
+C {devices/ngspice_get_value.sym} 7660 -2740 2 1 {name=r34 node=v(@m.xm39.msky130_fd_pr__nfet_01v8[vth])
 descr="vth="}
-C {devices/ngspice_get_value.sym} 8000 -3870 2 0 {name=r35 node=v(@m.xm43.msky130_fd_pr__pfet_01v8[vth])
+C {devices/ngspice_get_value.sym} 8000 -2980 2 0 {name=r35 node=v(@m.xm43.msky130_fd_pr__pfet_01v8[vth])
 descr="vth="}
-C {devices/ngspice_get_value.sym} 7660 -3870 2 1 {name=r36 node=v(@m.xm42.msky130_fd_pr__pfet_01v8[vth])
+C {devices/ngspice_get_value.sym} 7660 -2980 2 1 {name=r36 node=v(@m.xm42.msky130_fd_pr__pfet_01v8[vth])
 descr="vth="}
-C {devices/ngspice_get_value.sym} 8000 -4000 2 0 {name=r37 node=v(@m.xm41.msky130_fd_pr__pfet_01v8[vth])
+C {devices/ngspice_get_value.sym} 8000 -3110 2 0 {name=r37 node=v(@m.xm41.msky130_fd_pr__pfet_01v8[vth])
 descr="vth="}
-C {devices/ngspice_get_value.sym} 7660 -4000 2 1 {name=r38 node=v(@m.xm40.msky130_fd_pr__pfet_01v8[vth])
+C {devices/ngspice_get_value.sym} 7660 -3110 2 1 {name=r38 node=v(@m.xm40.msky130_fd_pr__pfet_01v8[vth])
 descr="vth="}
-C {sky130_fd_pr/nfet_01v8.sym} 7180 -3660 0 1 {name=M64
+C {sky130_fd_pr/nfet_01v8.sym} 7180 -2770 0 1 {name=M64
 W=20
 L=0.15
 nf=2 
@@ -2349,9 +2287,9 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {sky130_fd_pr/nfet_01v8.sym} 6880 -3660 0 1 {name=M65
+C {sky130_fd_pr/nfet_01v8.sym} 6880 -2770 0 1 {name=M65
 W=4
-L=0.3
+L=0.15
 nf=2 
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -2363,9 +2301,9 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {sky130_fd_pr/pfet_01v8.sym} 6880 -3900 0 1 {name=M66
+C {sky130_fd_pr/pfet_01v8.sym} 6880 -3010 0 1 {name=M66
 W=36
-L=0.3
+L=0.15
 nf=6
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -2377,14 +2315,14 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {devices/ngspice_get_value.sym} 6840 -3870 2 0 {name=r39 node=v(@m.xm42.msky130_fd_pr__pfet_01v8[vth])
+C {devices/ngspice_get_value.sym} 6840 -2980 2 0 {name=r39 node=v(@m.xm42.msky130_fd_pr__pfet_01v8[vth])
 descr="vth="}
-C {devices/ngspice_get_value.sym} 7170 -3630 2 1 {name=r40 node=v(@m.xm39.msky130_fd_pr__nfet_01v8[vth])
+C {devices/ngspice_get_value.sym} 7170 -2740 2 1 {name=r40 node=v(@m.xm39.msky130_fd_pr__nfet_01v8[vth])
 descr="vth="}
-C {devices/ngspice_get_value.sym} 6870 -3630 2 1 {name=r41 node=v(@m.xm39.msky130_fd_pr__nfet_01v8[vth])
+C {devices/ngspice_get_value.sym} 6870 -2740 2 1 {name=r41 node=v(@m.xm39.msky130_fd_pr__nfet_01v8[vth])
 descr="vth="}
-C {devices/vdd.sym} 6860 -4020 0 1 {name=l40 lab=VDD}
-C {sky130_fd_pr/pfet_01v8.sym} 7850 -4250 0 1 {name=M67
+C {devices/vdd.sym} 6860 -3130 0 1 {name=l40 lab=VDD}
+C {sky130_fd_pr/pfet_01v8.sym} 7850 -3360 0 1 {name=M67
 W=12
 L=0.3
 nf=1
@@ -2398,13 +2336,13 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {devices/ngspice_get_value.sym} 7840 -4220 2 1 {name=r42 node=v(@m.xm14.msky130_fd_pr__pfet_01v8[vth])
+C {devices/ngspice_get_value.sym} 7840 -3330 2 1 {name=r42 node=v(@m.xm14.msky130_fd_pr__pfet_01v8[vth])
 descr="vth="}
-C {lab_wire.sym} 8010 -4250 0 1 {name=p48 sig_type=std_logic lab=Vbias1}
-C {lab_wire.sym} 7160 -3790 0 1 {name=p49 sig_type=std_logic lab=ST_PULL_DOWN}
-C {devices/vdd.sym} 7830 -4370 0 1 {name=l41 lab=VDD}
-C {lab_wire.sym} 7910 -4140 0 1 {name=p50 sig_type=std_logic lab=Vp}
-C {sky130_fd_pr/pfet_01v8.sym} 7180 -4250 0 1 {name=M68
+C {lab_wire.sym} 8010 -3360 0 1 {name=p48 sig_type=std_logic lab=Vbias1}
+C {lab_wire.sym} 7160 -2900 0 1 {name=p49 sig_type=std_logic lab=ST_PULL_DOWN}
+C {devices/vdd.sym} 7830 -3480 0 1 {name=l41 lab=VDD}
+C {lab_wire.sym} 7910 -3250 0 1 {name=p50 sig_type=std_logic lab=Vp}
+C {sky130_fd_pr/pfet_01v8.sym} 7180 -3360 0 1 {name=M68
 W=12
 L=0.3
 nf=1
@@ -2418,20 +2356,20 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {devices/ngspice_get_value.sym} 7170 -4220 2 1 {name=r43 node=v(@m.xm14.msky130_fd_pr__pfet_01v8[vth])
+C {devices/ngspice_get_value.sym} 7170 -3330 2 1 {name=r43 node=v(@m.xm14.msky130_fd_pr__pfet_01v8[vth])
 descr="vth="}
-C {lab_wire.sym} 7290 -4250 0 1 {name=p51 sig_type=std_logic lab=Vbias1}
-C {devices/vdd.sym} 7160 -4370 0 1 {name=l42 lab=VDD}
-C {lab_pin.sym} 7640 -3960 0 0 {name=p52 lab=ST_VD2}
-C {lab_pin.sym} 8020 -3960 0 1 {name=p53 lab=ST_VD1}
-C {lab_pin.sym} 7530 -4040 0 0 {name=p55 lab=ST_V_REF}
-C {sky130_fd_pr/cap_mim_m3_1.sym} 8360 -3880 0 1 {name=C2 model=cap_mim_m3_1 W=2 L=2 MF=8000 spiceprefix=X}
-C {devices/gnd.sym} 8360 -3760 0 1 {name=l43 lab=GND}
-C {devices/ngspice_get_value.sym} 8610 -3850 2 1 {name=r44 node=v(@m.xm39.msky130_fd_pr__nfet_01v8[vth])
+C {lab_wire.sym} 7290 -3360 0 1 {name=p51 sig_type=std_logic lab=Vbias1}
+C {devices/vdd.sym} 7160 -3480 0 1 {name=l42 lab=VDD}
+C {lab_pin.sym} 7640 -3070 0 0 {name=p52 lab=ST_VD2}
+C {lab_pin.sym} 8020 -3070 0 1 {name=p53 lab=ST_VD1}
+C {lab_pin.sym} 7530 -3150 0 0 {name=p55 lab=ST_V_REF}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 8360 -2990 0 1 {name=C2 model=cap_mim_m3_1 W=2 L=2 MF=500 spiceprefix=X}
+C {devices/gnd.sym} 8360 -2870 0 1 {name=l43 lab=GND}
+C {devices/ngspice_get_value.sym} 8610 -2960 2 1 {name=r44 node=v(@m.xm39.msky130_fd_pr__nfet_01v8[vth])
 descr="vth="}
-C {ammeter.sym} 8360 -3980 0 1 {name=Vmeas savecurrent=true spice_ignore=0}
-C {sky130_fd_pr/nfet_01v8.sym} 8620 -3880 0 1 {name=M69
-W=4
+C {ammeter.sym} 8360 -3090 0 1 {name=Vmeas savecurrent=true spice_ignore=0}
+C {sky130_fd_pr/nfet_01v8.sym} 8620 -2990 0 1 {name=M69
+W=4.0
 L=0.3
 nf=1 
 mult=1
@@ -2444,10 +2382,10 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {devices/gnd.sym} 8510 -3880 0 1 {name=l44 lab=GND}
-C {lab_wire.sym} 8730 -3880 0 1 {name=p57 sig_type=std_logic lab=S_RST}
-C {lab_wire.sym} 8140 -4040 2 0 {name=p58 sig_type=std_logic lab=V_SAWTOOTH}
-C {sky130_fd_pr/pfet_01v8.sym} 8500 -4150 0 1 {name=M70
+C {devices/gnd.sym} 8510 -2990 0 1 {name=l44 lab=GND}
+C {lab_wire.sym} 8730 -2990 0 1 {name=p57 sig_type=std_logic lab=S_RST}
+C {lab_wire.sym} 8140 -3150 2 0 {name=p58 sig_type=std_logic lab=V_SAWTOOTH}
+C {sky130_fd_pr/pfet_01v8.sym} 8500 -3260 0 1 {name=M70
 W=12
 L=0.3
 nf=1
@@ -2461,14 +2399,40 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {devices/ngspice_get_value.sym} 8490 -4120 2 1 {name=r45 node=v(@m.xm14.msky130_fd_pr__pfet_01v8[vth])
+C {devices/ngspice_get_value.sym} 8490 -3230 2 1 {name=r45 node=v(@m.xm14.msky130_fd_pr__pfet_01v8[vth])
 descr="vth="}
-C {lab_wire.sym} 8660 -4150 0 1 {name=p47 sig_type=std_logic lab=Vbias1}
-C {devices/vdd.sym} 8480 -4270 0 1 {name=l45 lab=VDD}
-C {devices/vsource.sym} 8470 -3470 0 0 {name=V3 value="pulse(0 1.8 0ns 40ns 40ns 80ns 2000ns)"  savecurrent=false
-* 0.001 1.44 "pwl(0 0.17 2us 0.17 2us 0.12 4us 0.12 4us 0.22)"
-* 1.34 1.25 "sin(1.0 0.001 200k)"}
-C {devices/gnd.sym} 8470 -3440 0 0 {name=V4 value="pulse(1.241 1.239 0ns 10ns 10ns 240ns 500ns)" savecurrent=false
-* * 100k)"
-* "sin(1.24 -0.001 * 1.24 3us 1.24 3.01us 1.239)"}
-C {lab_wire.sym} 8470 -3550 0 1 {name=p19 sig_type=std_logic lab=S_RST}
+C {lab_wire.sym} 8660 -3260 0 1 {name=p47 sig_type=std_logic lab=Vbias1}
+C {devices/vdd.sym} 8480 -3680 0 1 {name=l45 lab=VDD}
+C {lab_wire.sym} 8260 -3570 0 1 {name=p54 sig_type=std_logic lab=V_SAWTOOTH}
+C {sky130_fd_pr/pfet_01v8.sym} 8500 -3410 0 1 {name=M34
+W=12
+L=0.3
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=pfet_01v8
+spiceprefix=X
+}
+C {devices/ngspice_get_value.sym} 8490 -3380 2 1 {name=r2 node=v(@m.xm14.msky130_fd_pr__pfet_01v8[vth])
+descr="vth="}
+C {sky130_fd_pr/pfet_01v8.sym} 8500 -3560 0 1 {name=M35
+W=12
+L=0.3
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=pfet_01v8
+spiceprefix=X
+}
+C {devices/ngspice_get_value.sym} 8490 -3530 2 1 {name=r3 node=v(@m.xm14.msky130_fd_pr__pfet_01v8[vth])
+descr="vth="}

@@ -864,9 +864,6 @@ C {lab_wire.sym} 3340 -2460 0 1 {name=p57 sig_type=std_logic lab=VDDA}
 C {lab_wire.sym} 4070 -2820 0 1 {name=p58 sig_type=std_logic lab=VDDA}
 C {lab_wire.sym} 3690 -2820 0 1 {name=p59 sig_type=std_logic lab=VDDA}
 C {iopin.sym} 860 -3180 0 1 {name=p63 lab=VDDA}
-C {ipin.sym} 5220 -2010 0 0 {name=p50 lab=VIN_P}
-C {ipin.sym} 5840 -2010 0 1 {name=p24 lab=VIN_M}
-C {opin.sym} 6220 -2310 0 0 {name=p25 lab=AMP_OUT}
 C {sky130_fd_pr/nfet_01v8.sym} 5500 -1690 0 0 {name=M34
 W=12
 L=0.3
@@ -1104,3 +1101,6 @@ C {lab_wire.sym} 5720 -2650 0 1 {name=p60 sig_type=std_logic lab=VDDA}
 C {lab_wire.sym} 5590 -2720 0 1 {name=p61 sig_type=std_logic lab=VDDA}
 C {lab_wire.sym} 5340 -2650 0 0 {name=p62 sig_type=std_logic lab=VDDA}
 C {lab_wire.sym} 1690 -2220 2 0 {name=p64 sig_type=std_logic lab=GNDA}
+C {iopin.sym} 5840 -2010 0 0 {name=p65 lab=VIN_M}
+C {iopin.sym} 5220 -2010 0 1 {name=p24 lab=VIN_P}
+C {iopin.sym} 6220 -2310 0 0 {name=p50 lab=AMP_OUT}

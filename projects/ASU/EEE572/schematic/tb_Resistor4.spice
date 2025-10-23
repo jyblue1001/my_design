@@ -1,0 +1,37 @@
+** sch_path: /foss/designs/my_design/projects/ASU/EEE572/schematic/tb_Resistor4.sch
+**.subckt tb_Resistor4
+V1 VDD GND 1.8
+V2 VA GND pwl(0 9.975 2us 10.025 5us 9.975 7us 10.025 10us 9.975 12us 10.025 15us 9.975 17us 10.025 20us 9.975)
+R46 VA net1 10000 m=1
+R47 VC GND 1100 m=1
+R48 VA VB 7000 m=1
+C5 VB net1 1.1n m=1
+Vmeas net1 VC 0
+.save i(vmeas)
+**** begin user architecture code
+.lib /foss/pdks/sky130A/libs.tech/combined/sky130.lib.spice tt
+
+
+
+.options method=gear
+.options wnflag=1
+.options savecurrents
+
+.control
+  save all
+  * dc V1 0.0 2.0 0.005
+  tran 5ns 20us
+  remzerovec
+  write tb_Resistor4.raw
+  set appendwrite
+
+.endc
+
+
+
+
+**** end user architecture code
+**.ends
+.GLOBAL GND
+.GLOBAL VDD
+.end

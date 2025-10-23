@@ -5,12 +5,12 @@ V {}
 S {}
 E {}
 B 2 4310 -2240 5150 -1660 {flags=graph
-y1=0
-y2=1.9
+y1=2.5e-07
+y2=7.3
 ypos1=0
 ypos2=2
 divy=5
-subdivy=8
+subdivy=4
 unity=1
 x1=3
 x2=10
@@ -23,7 +23,7 @@ color=6
 dataset=-1
 unitx=1
 logx=1
-logy=1
+logy=0
 linewidth_mult=4}
 B 2 4310 -1620 5150 -1040 {flags=graph
 y1=-180
@@ -33,8 +33,8 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=3
-x2=10
+x1=1000
+x2=1e+10
 divx=5
 subdivx=8
 xlabmag=1.0
@@ -118,7 +118,7 @@ C {devices/gnd.sym} 4050 -2700 0 1 {name=V4 value="pulse(1.241 1.239 0ns 10ns 10
 C {lab_pin.sym} 4050 -2840 0 0 {name=p3 lab=DC_BIAS}
 C {capa.sym} 4920 -2860 0 0 {name=C1
 m=1
-value=1p
+value=8n
 footprint=1206
 device="ceramic capacitor"}
 C {devices/gnd.sym} 4920 -2790 0 1 {name=l2 lab=GND}
