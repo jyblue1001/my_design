@@ -1,41 +1,5 @@
-** sch_path: /foss/designs/my_design/projects/ASU/EEE572/schematic/tb_OPAMP_slew_rate.sch
-**.subckt tb_OPAMP_slew_rate
-V1 VDD GND 1.8
-V2 VIN_P GND pwl(0 0.9 1us 0.9 1.00001us 1.0 2us 1.0 2.00001us 0.9 3us 0.9 3.00001us 0.8 4us 0.8 4.00001us 0.9 5us 0.9)
-C2 AMP_OUT GND 10n m=1
-x1 VDD AMP_OUT VIN_P AMP_OUT GND OPAMP
-**** begin user architecture code
-.lib /foss/pdks/sky130A/libs.tech/combined/sky130.lib.spice tt
-
-
-
-.options method=gear
-.options wnflag=1
-* .options savecurrents
-
-.control
-
-  save v(vin_p) v(vin_m) v(amp_out) v(ph(amp_out))
-
-  * tran 0.1ns 4us
-  * tran 0.01ns 0.4us
-  tran 1ps 5us
-  remzerovec
-  * write tb_OPAMP_slew_rate.raw
-  write tb_OPAMP_slew_rate_2.raw
-  set appendwrite
-
-.endc
-
-
-
-**** end user architecture code
-**.ends
-
-* expanding   symbol:  OPAMP.sym # of pins=5
-** sym_path: /foss/designs/my_design/projects/ASU/EEE572/schematic/OPAMP.sym
 ** sch_path: /foss/designs/my_design/projects/ASU/EEE572/schematic/OPAMP.sch
-.subckt OPAMP VDDA AMP_OUT VIN_P VIN_M GNDA
+**.subckt OPAMP VDDA AMP_OUT VIN_P VIN_M GNDA
 *.iopin GNDA
 *.iopin VDDA
 *.iopin VIN_M
@@ -135,8 +99,6 @@ XM45 net7 Vbias1 VDDA VDDA sky130_fd_pr__pfet_01v8 L=0.3 W=12 nf=4 ad='int((nf+1
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
 XM46 Vb1 Vbias2 net7 VDDA sky130_fd_pr__pfet_01v8 L=0.3 W=12 nf=4 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
-.ends
-
-.GLOBAL GND
+**.ends
 .GLOBAL VDD
 .end

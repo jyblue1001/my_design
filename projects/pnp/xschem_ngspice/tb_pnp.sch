@@ -39,5 +39,5 @@ C {devices/gnd.sym} 410 -50 0 0 {name=l3 lab=GND}
 C {devices/gnd.sym} 160 -50 0 0 {name=l4 lab=GND}
 C {devices/lab_pin.sym} 410 -180 1 0 {name=p2 sig_type=std_logic lab=EMITTER}
 C {devices/vsource.sym} 70 -80 0 0 {name=Ve value=0.7 savecurrent=false}
-C {/foss/designs/projects/pnp/xschem_ngspice/sky130_fd_pr__pnp_05v5_W0p68L0p68.sym} 330 -10 0 0 {name=XQ2}
-C {/foss/designs/projects/pnp/xschem_ngspice/sky130_fd_pr__pnp_05v5_W0p68L0p68.sym} 150 -10 0 0 {name=XQ1}
+C {/foss/designs/my_design/projects/pnp/xschem_ngspice/sky130_fd_pr__pnp_05v5_W0p68L0p68.sym} 330 -10 0 0 {name=XQ1}
+C {/foss/designs/my_design/projects/pnp/xschem_ngspice/sky130_fd_pr__pnp_05v5_W0p68L0p68.sym} 150 -10 0 0 {name=XQ2}

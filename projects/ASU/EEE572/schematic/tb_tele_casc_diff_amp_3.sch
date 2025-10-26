@@ -1018,8 +1018,9 @@ value="
 .control
   save all
   * dc V1 0.0 2.0 0.005
-  tran 0.05ns 8us
+  * tran 0.05ns 8us
   * tran 0.05ns 1us
+  op
   remzerovec
   write tb_tele_casc_diff_amp_3.raw
   set appendwrite
@@ -1796,7 +1797,7 @@ footprint=1206
 device="ceramic capacitor"}
 C {devices/gnd.sym} 6700 -2190 0 0 {name=l35 lab=GND}
 C {sky130_fd_pr/res_high_po_0p35.sym} 2330 -2420 0 0 {name=R1
-L=10
+L=3
 model=res_high_po_0p35
 spiceprefix=X
 mult=1}

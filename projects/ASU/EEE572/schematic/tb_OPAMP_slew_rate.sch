@@ -6,14 +6,14 @@ S {}
 E {}
 B 2 4320 -1430 5230 -790 {flags=graph
 
-y2=0.90244289
+y2=1
 ypos1=0
 ypos2=2
 divy=5
 subdivy=4
 unity=1
 x1=0
-x2=4e-06
+x2=5e-06
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -60,7 +60,7 @@ linewidth_mult=2
 
 
 
-y1=0.89709924
+y1=0.8
 
 
 
@@ -72,9 +72,9 @@ y1=0.89709924
 
 
 
-color="6 7"
-node="\\"amp_out 0.0046 -\\"
-vin_p"}
+
+color=7
+node=amp_out}
 N 4690 -1670 4690 -1620 {lab=VIN_P}
 N 4900 -1920 4900 -1870 {lab=GND}
 N 4900 -2050 4900 -1980 {lab=AMP_OUT}
@@ -104,21 +104,22 @@ value="
   save v(vin_p) v(vin_m) v(amp_out) v(ph(amp_out))
 
   * tran 0.1ns 4us
-  tran 0.01ns 0.4us
-  * tran 1ns 40us
+  * tran 0.01ns 0.4us
+  tran 1ps 5us
   remzerovec
-  write tb_OPAMP_slew_rate.raw
+  * write tb_OPAMP_slew_rate.raw
+  write tb_OPAMP_slew_rate_2.raw
   set appendwrite
 
 .endc
 
 "}
 C {devices/gnd.sym} 4700 -1960 0 1 {name=l29 lab=GND}
-C {devices/vsource.sym} 4690 -1590 0 1 {name=V2 value="pulse(0.899 0.901 10ns 2ns 2ns 48ns 100ns)" savecurrent=false
+C {devices/vsource.sym} 4690 -1590 0 1 {name=V2 value="pwl(0 0.9 1us 0.9 1.00001us 1.0 2us 1.0 2.00001us 0.9 3us 0.9 3.00001us 0.8 4us 0.8 4.00001us 0.9 5us 0.9)" savecurrent=false
 * "pulse(0.899 0.901 1000ns 200ns 200ns 4800ns 10us)" "pulse(0.899 0.901 100ns 20ns 20ns 480ns 1us)"
 * 0.9 "0.9 AC 1"
 * 1.34 1.25  
-* "pwl(0 0.17 2us 0.17 2us 0.12 4us 0.12 4us 0.22)"
+* "pulse(0.899 0.901 10ns 2ns 2ns 48ns 100ns)"
 * "sin(0.9 0.001 100k)"
 * "pulse(0 1.8 12ns 1ns 1ns 24ns 50ns)"}
 C {devices/gnd.sym} 4690 -1560 0 1 {name=V5 value="pulse(1.241 1.239 0ns 10ns 10ns 240ns 500ns)" savecurrent=false
@@ -126,7 +127,7 @@ C {devices/gnd.sym} 4690 -1560 0 1 {name=V5 value="pulse(1.241 1.239 0ns 10ns 10
 * "sin(1.24 -0.001 * 1.24 3us 1.24 3.01us 1.239)"}
 C {capa.sym} 4900 -1950 0 0 {name=C2
 m=1
-value=1p
+value=10n
 footprint=1206
 device="ceramic capacitor"}
 C {devices/gnd.sym} 4900 -1870 0 0 {name=l35 lab=GND}

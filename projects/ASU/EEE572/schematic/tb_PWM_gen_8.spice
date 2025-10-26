@@ -1,7 +1,7 @@
-** sch_path: /foss/designs/my_design/projects/ASU/EEE572/schematic/tb_PWM_gen_5.sch
-**.subckt tb_PWM_gen_5
+** sch_path: /foss/designs/my_design/projects/ASU/EEE572/schematic/tb_PWM_gen_8.sch
+**.subckt tb_PWM_gen_8
 V1 VDD GND 1.8
-V2 ST_V_REF GND 1.59
+V2 ST_V_REF GND 1.60
 XM1 V_REF V_REF V_RES GND sky130_fd_pr__nfet_01v8 L=0.3 W=16 nf=8 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
 XM2 V_REF_MIR V_REF_MIR GND GND sky130_fd_pr__nfet_01v8 L=0.3 W=4 nf=2 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
@@ -92,7 +92,7 @@ XM67 ST_Vp Vbias1 VDD VDD sky130_fd_pr__pfet_01v8 L=0.3 W=12 nf=1 ad='int((nf+1)
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
 XM68 ST_PULL_DOWN Vbias1 net6 VDD sky130_fd_pr__pfet_01v8 L=0.3 W=12 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
-XC2 net7 GND sky130_fd_pr__cap_mim_m3_1 W=2 L=2 MF=300 m=300
+XC2 net7 GND sky130_fd_pr__cap_mim_m3_1 W=2 L=2 MF=270 m=270
 Vmeas V_SAWTOOTH net7 0
 .save i(vmeas)
 XM69 V_SAWTOOTH S_RST GND GND sky130_fd_pr__nfet_01v8 L=0.3 W=4.0 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
@@ -105,24 +105,24 @@ XM34 net10 Vbias1 VDD VDD sky130_fd_pr__pfet_01v8 L=0.3 W=12 nf=1 ad='int((nf+1)
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
 XM36 net9 Vbias1 net10 VDD sky130_fd_pr__pfet_01v8 L=0.3 W=12 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
-XM37 net11 VDD net12 GND sky130_fd_pr__nfet_01v8 L=0.3 W=8 nf=4 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
-+ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
-XM38 net12 GND net11 VDD sky130_fd_pr__pfet_01v8 L=0.3 W=8 nf=4 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
-+ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=3 m=3
-XM39 net12 VDD net13 GND sky130_fd_pr__nfet_01v8 L=0.3 W=8 nf=4 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
-+ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
-XM40 net13 GND net12 VDD sky130_fd_pr__pfet_01v8 L=0.3 W=8 nf=4 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
-+ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=3 m=3
-XM41 net13 VDD ST_PULL_DOWN GND sky130_fd_pr__nfet_01v8 L=0.3 W=8 nf=4 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
+XM37 ST_PULL_DOWN2 VDD net11 GND sky130_fd_pr__nfet_01v8 L=0.3 W=8 nf=4 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
-XM42 ST_PULL_DOWN GND net13 VDD sky130_fd_pr__pfet_01v8 L=0.3 W=8 nf=4 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
+XM38 net11 GND ST_PULL_DOWN2 VDD sky130_fd_pr__pfet_01v8 L=0.3 W=8 nf=4 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=3 m=3
-Vmeas1 ST_PULL_DOWN2 net11 0
-.save i(vmeas1)
+XM39 net11 VDD net12 GND sky130_fd_pr__nfet_01v8 L=0.3 W=8 nf=4 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM40 net12 GND net11 VDD sky130_fd_pr__pfet_01v8 L=0.3 W=8 nf=4 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=3 m=3
+XM41 net12 VDD net13 GND sky130_fd_pr__nfet_01v8 L=0.3 W=8 nf=4 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM42 net13 GND net12 VDD sky130_fd_pr__pfet_01v8 L=0.3 W=8 nf=4 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=3 m=3
 XM43 net6 Vbias1 net14 VDD sky130_fd_pr__pfet_01v8 L=0.3 W=12 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
 XM44 net14 Vbias1 VDD VDD sky130_fd_pr__pfet_01v8 L=0.3 W=12 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+Vmeas1 net13 ST_PULL_DOWN 0
+.save i(vmeas1)
 **** begin user architecture code
 .lib /foss/pdks/sky130A/libs.tech/combined/sky130.lib.spice tt
 
@@ -173,9 +173,9 @@ XM44 net14 Vbias1 VDD VDD sky130_fd_pr__pfet_01v8 L=0.3 W=12 nf=1 ad='int((nf+1)
 .control
   * save all
   * dc V1 0.0 2.0 0.005
-  tran 0.5ns 12us 3us
+  tran 0.5ns 20us
   remzerovec
-  write tb_PWM_gen_5.raw
+  write tb_PWM_gen_8.raw
   set appendwrite
 
 .endc

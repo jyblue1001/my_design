@@ -5,8 +5,8 @@ V {}
 S {}
 E {}
 B 2 4310 -2240 5150 -1660 {flags=graph
-y1=2.5e-07
-y2=7.3
+y1=0.00035
+y2=1500
 ypos1=0
 ypos2=2
 divy=5
@@ -108,7 +108,7 @@ C {devices/vsource.sym} 4050 -2890 0 1 {name=V2 value="0 AC 1" savecurrent=false
 C {lab_pin.sym} 4810 -2950 0 1 {name=p2 lab=AMP_OUT}
 C {vdd.sym} 4540 -3040 0 0 {name=l1 lab=VDD}
 C {lab_pin.sym} 4050 -2970 0 0 {name=p4 lab=VIN_P}
-C {OPAMP.sym} 4540 -2950 0 0 {name=x1}
+C {OPAMP_2.sym} 4540 -2950 0 0 {name=x1}
 C {devices/vsource.sym} 4050 -2780 0 1 {name=V3 value=0.9 savecurrent=false
 * 0.9 1.44 * 1.24 
 * 1.34 1.25  "sin(0.9 0.001 200k)"}
@@ -118,7 +118,7 @@ C {devices/gnd.sym} 4050 -2700 0 1 {name=V4 value="pulse(1.241 1.239 0ns 10ns 10
 C {lab_pin.sym} 4050 -2840 0 0 {name=p3 lab=DC_BIAS}
 C {capa.sym} 4920 -2860 0 0 {name=C1
 m=1
-value=8n
+value=100p
 footprint=1206
 device="ceramic capacitor"}
 C {devices/gnd.sym} 4920 -2790 0 1 {name=l2 lab=GND}
