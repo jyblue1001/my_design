@@ -5,8 +5,8 @@ V {}
 S {}
 E {}
 B 2 4310 -2240 5150 -1660 {flags=graph
-y1=0.00035
-y2=1500
+y1=0.00014
+y2=1400
 ypos1=0
 ypos2=2
 divy=5
@@ -118,7 +118,7 @@ C {devices/gnd.sym} 4050 -2700 0 1 {name=V4 value="pulse(1.241 1.239 0ns 10ns 10
 C {lab_pin.sym} 4050 -2840 0 0 {name=p3 lab=DC_BIAS}
 C {capa.sym} 4920 -2860 0 0 {name=C1
 m=1
-value=100p
+value=1p
 footprint=1206
 device="ceramic capacitor"}
 C {devices/gnd.sym} 4920 -2790 0 1 {name=l2 lab=GND}

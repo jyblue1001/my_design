@@ -1,9 +1,24 @@
 ** sch_path: /foss/designs/my_design/projects/ASU/EEE572/schematic/tb_OPAMP_slew_rate.sch
 **.subckt tb_OPAMP_slew_rate
 V1 VDD GND 1.8
-V2 VIN_P GND pwl(0 0.9 1us 0.9 1.00001us 1.0 2us 1.0 2.00001us 0.9 3us 0.9 3.00001us 0.8 4us 0.8 4.00001us 0.9 5us 0.9)
-C2 AMP_OUT GND 10n m=1
-x1 VDD AMP_OUT VIN_P AMP_OUT GND OPAMP
+V2 V_CONVERTER_OUT GND sin(10 0.025 200k)
+x1 VDD AMP_OUT VIN_P VIN_M GND OPAMP
+V3 VIN_P GND 1.0
+C1 AMP_OUT INT_BTW 0.5n m=1
+R1 net1 VIN_M 16700 m=1
+C2 AMP_OUT net2 7n m=1
+Vmeas1 net1 INT_BTW 0
+.save i(vmeas1)
+Vmeas2 VIN_M net2 0
+.save i(vmeas2)
+R46 V_CONVERTER_OUT net3 10000 m=1
+R48 V_CONVERTER_OUT net5 7000 m=1
+C5 net4 VIN_M 1.1n m=1
+R49 VIN_M GND 1100 m=1
+Vmeas7 net5 net4 0
+.save i(vmeas7)
+Vmeas8 net3 VIN_M 0
+.save i(vmeas8)
 **** begin user architecture code
 .lib /foss/pdks/sky130A/libs.tech/combined/sky130.lib.spice tt
 
@@ -15,14 +30,14 @@ x1 VDD AMP_OUT VIN_P AMP_OUT GND OPAMP
 
 .control
 
-  save v(vin_p) v(vin_m) v(amp_out) v(ph(amp_out))
-
+  save v(vin_p) v(vin_m) v(int_btw) v(v_converter_out) v(amp_out) v(ph(amp_out))
+  * save all
   * tran 0.1ns 4us
   * tran 0.01ns 0.4us
-  tran 1ps 5us
+  tran 100ps 25us
   remzerovec
-  * write tb_OPAMP_slew_rate.raw
-  write tb_OPAMP_slew_rate_2.raw
+  write tb_OPAMP_slew_rate.raw
+  * write tb_OPAMP_slew_rate_2.raw
   set appendwrite
 
 .endc

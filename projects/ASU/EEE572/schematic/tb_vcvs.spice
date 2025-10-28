@@ -1,0 +1,36 @@
+** sch_path: /foss/designs/my_design/projects/ASU/EEE572/schematic/tb_vcvs.sch
+**.subckt tb_vcvs
+V1 VDD GND 1.8
+V2 V_CONVERTER_OUT GND pwl(0 0.9975 2.5us 1.0025 5us 0.9975 7.5us 1.0025 10us 0.9975 12.5us 1.0025 15us 0.9975 17.5us 1.0025 20us
++ 0.9975 22.5us 1.0025 25us 0.9975)
+V3 VIN_P GND 1.0
+E1 V_CONVERTER_OUT GND V_CONVERTER_OUT VIN_P 200
+**** begin user architecture code
+.lib /foss/pdks/sky130A/libs.tech/combined/sky130.lib.spice tt
+
+
+
+.options method=gear
+.options wnflag=1
+* .options savecurrents
+
+.control
+
+  * save v(vin_p) v(vin_m) v(int_btw) v(v_converter_out) v(amp_out) v(ph(amp_out))
+  save all
+  * tran 0.1ns 4us
+  * tran 0.01ns 0.4us
+  tran 100ps 25us
+  remzerovec
+  write tb_vcvs.raw
+  set appendwrite
+
+.endc
+
+
+
+**** end user architecture code
+**.ends
+.GLOBAL GND
+.GLOBAL VDD
+.end
