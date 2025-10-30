@@ -12,8 +12,8 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=-1.0887801e-07
-x2=2.0925911e-07
+x1=0
+x2=0.003
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -89,8 +89,8 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=-1.0887801e-07
-x2=2.0925911e-07
+x1=0
+x2=0.003
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -168,8 +168,8 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=-1.0887801e-07
-x2=2.0925911e-07
+x1=0
+x2=0.003
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -247,8 +247,8 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=-1.0887801e-07
-x2=2.0925911e-07
+x1=0
+x2=0.003
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -328,8 +328,8 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=-1.0887801e-07
-x2=2.0925911e-07
+x1=0
+x2=0.003
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -409,8 +409,8 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=-1.0887801e-07
-x2=2.0925911e-07
+x1=0
+x2=0.003
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -489,8 +489,8 @@ ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=-1.0887801e-07
-x2=2.0925911e-07
+x1=0
+x2=0.003
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -563,170 +563,11 @@ y1=-8.8
 
 color=6
 node=i(@c1[i])}
-B 2 10240 -4560 10400 -4440 {flags=graph
-
-y2=25
-ypos1=0
-ypos2=2
-divy=5
-subdivy=4
-unity=1
-x1=-1.0887801e-07
-x2=2.0925911e-07
-divx=5
-subdivx=4
-xlabmag=1.0
-ylabmag=1.0
-
-
-dataset=0
-unitx=1
-logx=0
-logy=0
-
-
-
-
-
-
-
-
-
-
-
-linewidth_mult=1
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-y1=-0.29
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-color=6
-node=v_diode}
-B 2 10240 -4700 10400 -4580 {flags=graph
-
-y2=1.8
-ypos1=0
-ypos2=2
-divy=5
-subdivy=4
-unity=1
-x1=-1.0887801e-07
-x2=2.0925911e-07
-divx=5
-subdivx=4
-xlabmag=1.0
-ylabmag=1.0
-
-
-dataset=0
-unitx=1
-logx=0
-logy=0
-
-
-
-
-
-
-
-
-
-
-
-linewidth_mult=1
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-y1=0
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-color="7 6"
-node="sw2_in
-sw1_in"}
-N 10090 -4770 10090 -4630 {lab=V_DIODE}
-N 10090 -4960 10090 -4830 {lab=#net1}
-N 9660 -4960 10090 -4960 {lab=#net1}
-N 9660 -4960 9660 -4870 {lab=#net1}
-N 10090 -4740 10270 -4740 {lab=V_DIODE}
+N 10090 -4770 10090 -4630 {lab=#net1}
+N 10090 -4960 10090 -4830 {lab=#net2}
+N 9660 -4960 10090 -4960 {lab=#net2}
+N 9660 -4960 9660 -4870 {lab=#net2}
+N 10090 -4740 10270 -4740 {lab=#net1}
 N 10330 -4740 10520 -4740 {lab=vout}
 N 10090 -4570 10090 -4420 {lab=GND}
 N 10090 -4420 10520 -4420 {lab=GND}
@@ -735,9 +576,9 @@ N 10520 -4740 10670 -4740 {lab=vout}
 N 10670 -4740 10670 -4630 {lab=vout}
 N 10670 -4570 10670 -4420 {lab=GND}
 N 10520 -4420 10670 -4420 {lab=GND}
-N 10520 -4640 10520 -4580 {lab=#net2}
+N 10520 -4640 10520 -4580 {lab=#net3}
 N 10520 -4740 10520 -4700 {lab=vout}
-N 9660 -4870 9660 -4730 {lab=#net1}
+N 9660 -4870 9660 -4730 {lab=#net2}
 N 9660 -4670 9660 -4420 {lab=GND}
 N 9660 -4420 10090 -4420 {lab=GND}
 N 10010 -4800 10050 -4800 {lab=SW1_IN}
@@ -751,17 +592,6 @@ N 9980 -4800 9990 -4800 {lab=SW1_IN}
 N 9990 -4800 10010 -4800 {lab=SW1_IN}
 N 9960 -4700 9960 -4680 {lab=GND}
 N 10050 -4780 10050 -4760 {lab=GND}
-N 9960 -4570 9960 -4560 {lab=SW2_IN}
-N 9960 -4580 9960 -4570 {lab=SW2_IN}
-N 9960 -4590 9960 -4580 {lab=SW2_IN}
-N 9960 -4600 9960 -4590 {lab=SW2_IN}
-N 9960 -4600 9970 -4600 {lab=SW2_IN}
-N 9970 -4600 9980 -4600 {lab=SW2_IN}
-N 9980 -4600 9990 -4600 {lab=SW2_IN}
-N 9990 -4600 10010 -4600 {lab=SW2_IN}
-N 9960 -4500 9960 -4480 {lab=GND}
-N 10050 -4580 10050 -4560 {lab=GND}
-N 10010 -4600 10050 -4600 {lab=SW2_IN}
 C {devices/vsource.sym} 9660 -4700 0 1 {name=V1 value=25 savecurrent=false
 * "pwl(0 0 1us 0 1.2us 1.8)"}
 C {simulator_commands_shown.sym} 9700 -4220 0 0 {name=COMMANDS
@@ -780,10 +610,10 @@ value="
   save all
   * save v(vout)
   * dc V1 0.0 2.0 0.005
-  tran 10ns 3ms
+  tran 100ns 3ms
   * tran 1ns 3ms
   remzerovec
-  write tb_buck_converter.raw
+  write tb_buck_converter_4.raw
   set appendwrite
 
 .endc
@@ -820,11 +650,4 @@ device_model=".MODEL SW1 SW( VT=0.9 VH=0.01 RON=0.01 ROFF=10G )"}
 C {lab_pin.sym} 10670 -4740 2 0 {name=p1 sig_type=std_logic lab=vout}
 C {gnd.sym} 10270 -4420 0 0 {name=l4 lab=GND}
 C {lab_wire.sym} 9960 -4800 0 0 {name=p2 sig_type=std_logic lab=SW1_IN}
-C {devices/vsource.sym} 9960 -4530 0 1 {name=V3 value="pulse(1.8 0 0ns 0.1ns 0.1ns 199.9ns 500ns)" savecurrent=false
-}
-C {gnd.sym} 9960 -4480 0 0 {name=l5 lab=GND}
-C {lab_wire.sym} 9960 -4600 0 0 {name=p3 sig_type=std_logic lab=SW2_IN}
-C {gnd.sym} 10050 -4560 0 0 {name=l6 lab=GND}
-C {switch_ngspice.sym} 10090 -4600 0 0 {name=S2 model=SW1
-device_model=".MODEL SW1 SW( VT=0.9 VH=0.01 RON=0.01 ROFF=10G )"}
-C {lab_wire.sym} 10090 -4680 0 0 {name=p4 sig_type=std_logic lab=V_DIODE}
+C {diode.sym} 10090 -4600 2 0 {name=D1 model=D1N914 area=1}

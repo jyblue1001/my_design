@@ -1,0 +1,55 @@
+** sch_path: /foss/designs/my_design/projects/ASU/EEE572/schematic/tb_buck_converter_3.sch
+**.subckt tb_buck_converter_3
+V1 net1 GND 25
+R48 vout GND 1 m=1
+L1 vout V_DIODE 30u m=1
+C1 net2 GND 250u m=1
+R1 vout net2 0.05 m=1
+V2 SW1_IN GND pulse(0 1.8 0ns 0.1ns 0.1ns 199.9ns 500ns)
+S1 net1 V_DIODE SW1_IN2 GND SW1
+S2 V_DIODE GND SW1_INV GND SW1
+XM84 SW1_INV SW1_IN2 GND GND sky130_fd_pr__nfet_01v8 L=1.5 W=10 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM85 SW1_INV SW1_IN2 VDD VDD sky130_fd_pr__pfet_01v8 L=1.5 W=20 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+V3 VDD GND 1.8
+XM74 SW1_IN VDD SW1_IN2 GND sky130_fd_pr__nfet_01v8 L=1.5 W=10 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM75 SW1_IN2 GND SW1_IN VDD sky130_fd_pr__pfet_01v8 L=1.5 W=20 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+**** begin user architecture code
+
+
+
+.options method=gear
+.options wnflag=1
+* .options savecurrents
+
+
+.model D1N914 D(Is=168.1E-21 N=1 Rs=.1 Ikf=1 Xti=3 Eg=1.11 Cjo=4p M=.3333 Vj=.75 Fc=.5 Bv=100 Ibv=100u Tt=11.54n)
+
+
+.control
+  save all
+  * save v(vout)
+  * dc V1 0.0 2.0 0.005
+  tran 10ns 3ms
+  * tran 1ns 3ms
+  remzerovec
+  write tb_buck_converter_3.raw
+  set appendwrite
+
+.endc
+
+
+
+
+.lib /foss/pdks/sky130A/libs.tech/combined/sky130.lib.spice tt
+**** end user architecture code
+**.ends
+.GLOBAL GND
+.GLOBAL VDD
+**** begin user architecture code
+.MODEL SW1 SW( VT=0.9 VH=0.01 RON=0.01 ROFF=10G )
+**** end user architecture code
+.end

@@ -1,14 +1,13 @@
-** sch_path: /foss/designs/my_design/projects/ASU/EEE572/schematic/tb_buck_converter.sch
-**.subckt tb_buck_converter
-V1 net1 GND 25
+** sch_path: /foss/designs/my_design/projects/ASU/EEE572/schematic/tb_buck_converter_4.sch
+**.subckt tb_buck_converter_4
+V1 net2 GND 25
 R48 vout GND 1 m=1
-L1 vout V_DIODE 30u m=1
-C1 net2 GND 250u m=1
-R1 vout net2 0.05 m=1
+L1 vout net1 30u m=1
+C1 net3 GND 250u m=1
+R1 vout net3 0.05 m=1
 V2 SW1_IN GND pulse(0 1.8 0ns 0.1ns 0.1ns 199.9ns 500ns)
-S1 net1 V_DIODE SW1_IN GND SW1
-V3 SW2_IN GND pulse(1.8 0 0ns 0.1ns 0.1ns 199.9ns 500ns)
-S2 V_DIODE GND SW2_IN GND SW1
+S1 net2 net1 SW1_IN GND SW1
+D1 GND net1 D1N914 area=1
 **** begin user architecture code
 
 
@@ -25,10 +24,10 @@ S2 V_DIODE GND SW2_IN GND SW1
   save all
   * save v(vout)
   * dc V1 0.0 2.0 0.005
-  tran 10ns 3ms
+  tran 100ns 3ms
   * tran 1ns 3ms
   remzerovec
-  write tb_buck_converter.raw
+  write tb_buck_converter_4.raw
   set appendwrite
 
 .endc

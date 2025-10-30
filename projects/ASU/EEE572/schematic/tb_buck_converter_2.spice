@@ -1,5 +1,5 @@
-** sch_path: /foss/designs/my_design/projects/ASU/EEE572/schematic/tb_PWM_gen_6.sch
-**.subckt tb_PWM_gen_6
+** sch_path: /foss/designs/my_design/projects/ASU/EEE572/schematic/tb_buck_converter_2.sch
+**.subckt tb_buck_converter_2
 V1 VDD GND 1.8
 XM38 PMW_AMP_MIR PMW_AMP_MIR GND GND sky130_fd_pr__nfet_01v8 L=0.15 W=4 nf=2 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
@@ -16,13 +16,8 @@ XM43 PMW_AMP_MIR GND PMW_VD1 VDD sky130_fd_pr__pfet_01v8 L=0.15 W=12 nf=6 ad='in
 V2 ST_V_REF GND 1.6
 XM34 PMW_PULL_DOWN PMW_AMP_OUT GND GND sky130_fd_pr__nfet_01v8 L=0.3 W=2 nf=2 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
-XM35 D_IN PMW_PULL_DOWN GND GND sky130_fd_pr__nfet_01v8 L=0.15 W=4 nf=2 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
-+ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
-XM36 D_IN PMW_PULL_DOWN VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=36 nf=6 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
-+ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
 XM49 PMW_Vp Vbias1 VDD VDD sky130_fd_pr__pfet_01v8 L=0.3 W=12 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
-V6 V_ERR_AMP_OUT GND pwl(0 1.2 2.0us 0.2)
 XM1 V_REF V_REF V_RES GND sky130_fd_pr__nfet_01v8 L=0.3 W=16 nf=8 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
 XM2 V_REF_MIR V_REF_MIR GND GND sky130_fd_pr__nfet_01v8 L=0.3 W=4 nf=2 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
@@ -125,8 +120,6 @@ R48 V_CONVERTER_OUT net24 7000 m=1
 C5 net23 ERR_AMP_VIN 1.1n m=1
 R49 ERR_AMP_VIN GND 1000 m=1
 V3 ERR_AMP_REF GND 0.9
-V8 V_SAWTOOTH2 GND pwl(0 0 5us 1.8 5us 0 10us 1.8 10us 0 15us 1.8 15us 0 20us 1.8)
-V10 V_CONVERTER_OUT GND pwl(0 0 50us 0.00784)
 XM58 ST_AMP_MIR ST_AMP_MIR GND GND sky130_fd_pr__nfet_01v8 L=0.15 W=4 nf=2 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
 XM59 ST_AMP_OUT ST_AMP_MIR GND GND sky130_fd_pr__nfet_01v8 L=0.15 W=4 nf=2 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
@@ -198,6 +191,19 @@ Vmeas7 net24 net23 0
 .save i(vmeas7)
 Vmeas8 net22 ERR_AMP_VIN 0
 .save i(vmeas8)
+V12 buck_vin GND 25
+R27 V_CONVERTER_OUT GND 1 m=1
+L53 V_CONVERTER_OUT V_DIODE 30u m=1
+C6 net25 GND 250u m=1
+R28 V_CONVERTER_OUT net25 0.05 m=1
+S1 buck_vin V_DIODE PMW_PULL_DOWN GND SW1
+XM35 SW_IN PMW_PULL_DOWN GND GND sky130_fd_pr__nfet_01v8 L=0.15 W=4 nf=2 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM36 SW_IN PMW_PULL_DOWN VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=36 nf=6 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+S2 V_DIODE GND SW1_INV GND SW1
+E1 net26 GND PMW_PULL_DOWN GND -1
+V6 SW1_INV net26 1.8
 **** begin user architecture code
 .lib /foss/pdks/sky130A/libs.tech/combined/sky130.lib.spice tt
 
@@ -208,56 +214,17 @@ Vmeas8 net22 ERR_AMP_VIN 0
 .options savecurrents
 
 * .include /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
-
-.save
-+v(vbias1)
-+v(vbias2)
-+v(vbias3)
-+v(vbias4)
-+v(pwm_v_p)
-+v(pwm_vd1)
-+v(pwm_vd2)
-+v(pwm_amp_mir)
-+v(pwm_amp_out)
-+v(pwm_pull_down)
-+v(st_v_p)
-+v(st_vd1)
-+v(st_vd2)
-+v(st_amp_mir)
-+v(st_amp_out)
-+v(st_pull_down)
-+v(st_v_p)
-+v(st_vd1)
-+v(st_vd2)
-+v(st_amp_mir)
-+v(st_amp_out)
-+v(st_pull_down)
-+v(s_rst)
-+v(v_sawtooth)
-+v(v_p)
-+v(err_amp_vin)
-+v(err_amp_mir)
-+v(err_amp_out)
-+v(err_amp_vp)
-+v(err_amp_vd1)
-+v(err_amp_vd2)
-+v(err_amp_vb1)
-+v(err_v_tail_btw)
-+v(v_converter_out)
-+v(d_in)
-
+.model D1N914 D(Is=168.1E-21 N=1 Rs=.1 Ikf=1 Xti=3 Eg=1.11 Cjo=4p M=.3333 Vj=.75 Fc=.5 Bv=100 Ibv=100u Tt=11.54n)
 
 .control
+  * save v(sw_in) v(v_converter_out)
   save all
-  * dc V1 0.0 2.0 0.005
-  * tran 1ns 25us
-  tran 1ns 50us
+  tran 100ns 3ms
   remzerovec
-  write tb_PWM_gen_6.raw
+  write tb_buck_converter_2.raw
   set appendwrite
 
 .endc
-
 
 
 
@@ -265,4 +232,7 @@ Vmeas8 net22 ERR_AMP_VIN 0
 **.ends
 .GLOBAL GND
 .GLOBAL VDD
+**** begin user architecture code
+.MODEL SW1 SW( VT=0.9 VH=0.01 RON=0.01 ROFF=10G )
+**** end user architecture code
 .end
