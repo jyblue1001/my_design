@@ -1,12 +1,24 @@
-** sch_path: /foss/designs/my_design/projects/ASU/EEE572/schematic/tb_OPAMP_OL_AC_2.sch
-**.subckt tb_OPAMP_OL_AC_2
+** sch_path: /foss/designs/my_design/projects/ASU/EEE572/schematic/tb_OPAMP_AC_test_2.sch
+**.subckt tb_OPAMP_AC_test_2
 V1 VDD GND 1.8
-V2 VIN_P DC_BIAS 0 AC 1
-x1 VDD AMP_OUT VIN_P net1 GND OPAMP_2
-V3 DC_BIAS GND 0.9
-C1 AMP_OUT GND 1p m=1
-C2 net1 GND 1Meg m=1
-L6 AMP_OUT net1 100Meg m=1
+V2 V_CONVERTER_OUT GND 0.9 AC 1
+x1 VDD AMP_OUT VIN_P VIN_M GND OPAMP
+V3 VIN_P GND 0.9
+C1 AMP_OUT INT_BTW 0.5n m=1
+R1 net1 VIN_M 16700 m=1
+C2 AMP_OUT net2 7n m=1
+Vmeas1 net1 INT_BTW 0
+.save i(vmeas1)
+Vmeas2 VIN_M net2 0
+.save i(vmeas2)
+R46 V_CONVERTER_OUT net3 10000 m=1
+R48 V_CONVERTER_OUT net5 7000 m=1
+C5 net4 VIN_M 1.1n m=1
+R49 VIN_M GND 1000 m=1
+Vmeas7 net5 net4 0
+.save i(vmeas7)
+Vmeas8 net3 VIN_M 0
+.save i(vmeas8)
 **** begin user architecture code
 .lib /foss/pdks/sky130A/libs.tech/combined/sky130.lib.spice tt
 
@@ -14,24 +26,19 @@ L6 AMP_OUT net1 100Meg m=1
 
 .options method=gear
 .options wnflag=1
-.options savecurrents
+* .options savecurrents
 
 .control
 
-  * let start_DC = 0.5
-  * let stop_DC = 1.3
-  * dowhile start_DC <= stop_DC
-    * alter V3 dc = start_DC
-    save v(amp_out) v(ph(amp_out)) v(DC_BIAS) v(VIN_P)
-    ac dec 20 1k 10G
-    remzerovec
-    * echo $&start_DC
-    write tb_OPAMP_OL_AC_2.raw
-    set appendwrite
-    * reset
-    * let start_DC = start_DC + 0.1
-
-  * end
+  save v(vin_p) v(vin_m) v(int_btw) v(v_converter_out) v(amp_out) v(ph(amp_out))
+  * save all
+  * tran 0.1ns 4us
+  * tran 0.01ns 0.4us
+  * tran 100ps 25us
+  ac dec 20 1k 10G
+  remzerovec
+  write tb_OPAMP_AC_test_2.raw
+  set appendwrite
 
 .endc
 
@@ -40,10 +47,10 @@ L6 AMP_OUT net1 100Meg m=1
 **** end user architecture code
 **.ends
 
-* expanding   symbol:  OPAMP_2.sym # of pins=5
-** sym_path: /foss/designs/my_design/projects/ASU/EEE572/schematic/OPAMP_2.sym
-** sch_path: /foss/designs/my_design/projects/ASU/EEE572/schematic/OPAMP_2.sch
-.subckt OPAMP_2 VDDA AMP_OUT VIN_P VIN_M GNDA
+* expanding   symbol:  OPAMP.sym # of pins=5
+** sym_path: /foss/designs/my_design/projects/ASU/EEE572/schematic/OPAMP.sym
+** sch_path: /foss/designs/my_design/projects/ASU/EEE572/schematic/OPAMP.sch
+.subckt OPAMP VDDA AMP_OUT VIN_P VIN_M GNDA
 *.iopin GNDA
 *.iopin VDDA
 *.iopin VIN_M
@@ -116,15 +123,15 @@ XM24 net4 Vbias4 GNDA GNDA sky130_fd_pr__nfet_01v8 L=0.3 W=4 nf=2 ad='int((nf+1)
 XM26 Vbias2 Vbias3 net4 GNDA sky130_fd_pr__nfet_01v8 L=0.3 W=4 nf=2 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
 XC1 Vbiasp VDDA sky130_fd_pr__cap_mim_m3_1 W=2 L=2 MF=4 m=4
-XR1 GNDA V_RES GNDA sky130_fd_pr__res_high_po_0p35 L=0.5 mult=1 m=1
+XR1 GNDA V_RES GNDA sky130_fd_pr__res_high_po_0p35 L=10 mult=1 m=1
 XM34 V_tail_btw Vbias4 GNDA GNDA sky130_fd_pr__nfet_01v8 L=0.3 W=12 nf=4 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=3 m=3
 XM35 Vp Vbias3 V_tail_btw GNDA sky130_fd_pr__nfet_01v8 L=0.3 W=12 nf=4 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=3 m=3
 XM36 Vd1 VIN_P Vp GNDA sky130_fd_pr__nfet_01v8 L=0.3 W=12 nf=4 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
-+ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=10 m=10
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=2 m=2
 XM37 Vd2 VIN_M Vp GNDA sky130_fd_pr__nfet_01v8 L=0.3 W=12 nf=4 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
-+ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=10 m=10
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=2 m=2
 XM38 AMP_MIR Vb1 Vd1 GNDA sky130_fd_pr__nfet_01v8 L=0.3 W=12 nf=4 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=2 m=2
 XM39 AMP_OUT Vb1 Vd2 GNDA sky130_fd_pr__nfet_01v8 L=0.3 W=12 nf=4 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'

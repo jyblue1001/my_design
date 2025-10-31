@@ -6,14 +6,14 @@ S {}
 E {}
 B 2 9820 -3930 10080 -3740 {flags=graph
 
-y2=0.0079
+y2=0.0024
 ypos1=0
 ypos2=2
 divy=5
 subdivy=4
 unity=1
 x1=0
-x2=5e-05
+x2=1.5e-05
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -87,7 +87,7 @@ divy=5
 subdivy=4
 unity=1
 x1=0
-x2=5e-05
+x2=1.5e-05
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -155,7 +155,7 @@ divy=5
 subdivy=4
 unity=1
 x1=0
-x2=5e-05
+x2=1.5e-05
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -231,7 +231,7 @@ divy=5
 subdivy=4
 unity=1
 x1=0
-x2=5e-05
+x2=1.5e-05
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -310,7 +310,7 @@ divy=5
 subdivy=4
 unity=1
 x1=0
-x2=5e-05
+x2=1.5e-05
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -382,14 +382,14 @@ node="err_amp_out
 v_sawtooth"}
 B 2 6510 -3740 6770 -3550 {flags=graph
 
-y2=1.9
+y2=1.6e-06
 ypos1=0
 ypos2=2
 divy=5
 subdivy=4
 unity=1
 x1=0
-x2=5e-05
+x2=1.5e-05
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -436,7 +436,7 @@ linewidth_mult=1
 
 
 
-y1=-1.8e-05
+y1=3.1e-07
 
 
 
@@ -469,7 +469,7 @@ divy=5
 subdivy=4
 unity=1
 x1=0
-x2=5e-05
+x2=1.5e-05
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -549,7 +549,7 @@ divy=5
 subdivy=4
 unity=1
 x1=0
-x2=5e-05
+x2=1.5e-05
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -630,7 +630,7 @@ divy=5
 subdivy=4
 unity=1
 x1=0
-x2=5e-05
+x2=1.5e-05
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -711,7 +711,7 @@ divy=5
 subdivy=4
 unity=1
 x1=0
-x2=5e-05
+x2=1.5e-05
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -790,7 +790,7 @@ divy=5
 subdivy=4
 unity=1
 x1=0
-x2=5e-05
+x2=1.5e-05
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -870,7 +870,7 @@ divy=5
 subdivy=4
 unity=1
 x1=0
-x2=5e-05
+x2=1.5e-05
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -951,7 +951,7 @@ divy=5
 subdivy=4
 unity=1
 x1=0
-x2=5e-05
+x2=1.5e-05
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -1032,7 +1032,7 @@ divy=5
 subdivy=4
 unity=1
 x1=0
-x2=5e-05
+x2=1.5e-05
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -1079,7 +1079,7 @@ linewidth_mult=1
 
 
 
-y1=1.7
+y1=0.00059
 
 
 
@@ -1111,7 +1111,7 @@ divy=5
 subdivy=4
 unity=1
 x1=0
-x2=5e-05
+x2=1.5e-05
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -1188,7 +1188,7 @@ divy=5
 subdivy=4
 unity=1
 x1=0
-x2=5e-05
+x2=1.5e-05
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -1269,7 +1269,7 @@ divy=5
 subdivy=4
 unity=1
 x1=0
-x2=5e-05
+x2=1.5e-05
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -1347,7 +1347,7 @@ divy=5
 subdivy=4
 unity=1
 x1=0
-x2=5e-05
+x2=1.5e-05
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -1428,7 +1428,7 @@ divy=5
 subdivy=4
 unity=1
 x1=0
-x2=5e-05
+x2=1.5e-05
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -1506,7 +1506,7 @@ divy=5
 subdivy=4
 unity=1
 x1=0
-x2=5e-05
+x2=1.5e-05
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -1585,7 +1585,7 @@ divy=5
 subdivy=4
 unity=1
 x1=0
-x2=5e-05
+x2=1.5e-05
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -1664,7 +1664,7 @@ divy=5
 subdivy=4
 unity=1
 x1=0
-x2=5e-05
+x2=1.5e-05
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -1741,7 +1741,7 @@ divy=5
 subdivy=4
 unity=1
 x1=0
-x2=5e-05
+x2=1.5e-05
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -2460,8 +2460,8 @@ value="
 .control
   save all
   * dc V1 0.0 2.0 0.005
-  * tran 1ns 25us
-  tran 1ns 50us
+  tran 1ns 15us
+  * tran 10ns 50us
   remzerovec
   write tb_PWM_gen_6.raw
   set appendwrite
@@ -3469,7 +3469,7 @@ C {devices/gnd.sym} 4590 -3910 0 0 {name=V9 value="pulse(1.241 1.239 0ns 10ns 10
 * "sin(1.24 -0.001 * 1.24 3us 1.24 3.01us 1.239)"}
 C {lab_pin.sym} 4590 -4020 0 1 {name=p54 lab=V_SAWTOOTH2}
 C {lab_wire.sym} 10390 -4610 0 1 {name=p58 sig_type=std_logic lab=V_CONVERTER_OUT}
-C {devices/vsource.sym} 10190 -3580 0 0 {name=V10 value="pwl(0 0 50us 0.00784)" savecurrent=false
+C {devices/vsource.sym} 10190 -3580 0 0 {name=V10 value="pwl(0 0 15us 0.3731)" savecurrent=false
 * 0.001 1.44 "pwl(0 0.17 2us 0.17 2us 0.12 4us 0.12 4us 0.22)"
 * 1.34 1.25 "sin(10 0.05 200k)"  pwl(0 9.975 2us 10.025 5us 9.975 7us 10.025 10us 9.975 12us 10.025 15us 9.975 17us 10.025 20us 9.975)
 * "pwl(0 9.975 2.5us 10.025 5us 9.975 7.5us 10.025 10us 9.975 12.5us 10.025 15us 9.975 17.5us 10.025 20us 9.975 22.5us 10.025 25us 9.975)"

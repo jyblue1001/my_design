@@ -126,7 +126,7 @@ C5 net23 ERR_AMP_VIN 1.1n m=1
 R49 ERR_AMP_VIN GND 1000 m=1
 V3 ERR_AMP_REF GND 0.9
 V8 V_SAWTOOTH2 GND pwl(0 0 5us 1.8 5us 0 10us 1.8 10us 0 15us 1.8 15us 0 20us 1.8)
-V10 V_CONVERTER_OUT GND pwl(0 0 50us 0.00784)
+V10 V_CONVERTER_OUT GND pwl(0 0 15us 0.3731)
 XM58 ST_AMP_MIR ST_AMP_MIR GND GND sky130_fd_pr__nfet_01v8 L=0.15 W=4 nf=2 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
 XM59 ST_AMP_OUT ST_AMP_MIR GND GND sky130_fd_pr__nfet_01v8 L=0.15 W=4 nf=2 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
@@ -250,8 +250,8 @@ Vmeas8 net22 ERR_AMP_VIN 0
 .control
   save all
   * dc V1 0.0 2.0 0.005
-  * tran 1ns 25us
-  tran 1ns 50us
+  tran 1ns 15us
+  * tran 10ns 50us
   remzerovec
   write tb_PWM_gen_6.raw
   set appendwrite
