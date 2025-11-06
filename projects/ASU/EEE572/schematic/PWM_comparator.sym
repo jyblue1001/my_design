@@ -1,0 +1,33 @@
+v {xschem version=3.4.6 file_version=1.2}
+G {}
+K {type=subcircuit
+format="@name @pinlist @symname"
+template="name=x1"
+}
+V {}
+S {}
+E {}
+L 4 -70 -40 70 -40 {}
+L 4 -70 40 70 40 {}
+L 4 -70 -40 -70 40 {}
+L 4 70 -40 70 40 {}
+L 4 -90 20 -70 20 {}
+L 4 -90 -20 -70 -20 {}
+L 4 -90 0 -70 0 {}
+L 4 70 0 90 0 {}
+L 7 0 -60 0 -40 {}
+L 7 0 40 0 60 {}
+B 5 -2.5 -62.5 2.5 -57.5 {name=VDDA dir=inout}
+B 5 -92.5 17.5 -87.5 22.5 {name=VBIAS1 dir=in}
+B 5 -92.5 -22.5 -87.5 -17.5 {name=PWM_IN_P dir=in}
+B 5 -92.5 -2.5 -87.5 2.5 {name=PWM_IN_M dir=in}
+B 5 87.5 -2.5 92.5 2.5 {name=PWM_OUT dir=out}
+B 5 -2.5 57.5 2.5 62.5 {name=GNDA dir=inout}
+T {@symname} 89 -86 0 0 0.3 0.3 {}
+T {@name} 95 -62 0 0 0.2 0.2 {}
+T {VDDA} -15 -64 0 1 0.2 0.2 {}
+T {VBIAS1} -65 16 0 0 0.2 0.2 {}
+T {PWM_IN_P} -65 -24 0 0 0.2 0.2 {}
+T {PWM_IN_M} -65 -4 0 0 0.2 0.2 {}
+T {PWM_OUT} 65 -4 0 1 0.2 0.2 {}
+T {GNDA} -15 56 0 1 0.2 0.2 {}

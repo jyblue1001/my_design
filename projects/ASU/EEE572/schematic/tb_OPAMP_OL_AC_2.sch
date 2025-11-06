@@ -109,7 +109,7 @@ C {devices/vsource.sym} 4050 -2890 0 1 {name=V2 value="0 AC 1" savecurrent=false
 C {lab_pin.sym} 4810 -2950 0 1 {name=p2 lab=AMP_OUT}
 C {vdd.sym} 4540 -3040 0 0 {name=l1 lab=VDD}
 C {lab_pin.sym} 4050 -2970 0 0 {name=p4 lab=VIN_P}
-C {OPAMP_2.sym} 4540 -2950 0 0 {name=x1}
+C {OPAMP_3.sym} 4540 -2950 0 0 {name=x1}
 C {devices/vsource.sym} 4050 -2780 0 1 {name=V3 value=0.9 savecurrent=false
 * 0.9 1.44 * 1.24 
 * 1.34 1.25  "sin(0.9 0.001 200k)"}

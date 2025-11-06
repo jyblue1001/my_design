@@ -1,0 +1,33 @@
+v {xschem version=3.4.6 file_version=1.2}
+G {}
+K {type=subcircuit
+format="@name @pinlist @symname"
+template="name=x1"
+}
+V {}
+S {}
+E {}
+L 4 -100 -40 100 -40 {}
+L 4 -100 40 100 40 {}
+L 4 -100 -40 -100 40 {}
+L 4 100 -40 100 40 {}
+L 4 100 -20 120 -20 {}
+L 4 -120 20 -100 20 {}
+L 4 -120 -20 -100 -20 {}
+L 4 100 20 120 20 {}
+L 7 0 -60 0 -40 {}
+L 7 0 40 0 60 {}
+B 5 -2.5 -62.5 2.5 -57.5 {name=VDDA dir=inout}
+B 5 117.5 -22.5 122.5 -17.5 {name=SAWTOOTH_OUT dir=out}
+B 5 -122.5 17.5 -117.5 22.5 {name=VBIAS1 dir=in}
+B 5 -122.5 -22.5 -117.5 -17.5 {name=PULSE_MAG_REF dir=in}
+B 5 117.5 17.5 122.5 22.5 {name=RESET_CLK dir=out}
+B 5 -2.5 57.5 2.5 62.5 {name=GNDA dir=inout}
+T {@symname} 111 -76 0 0 0.3 0.3 {}
+T {@name} 105 -52 0 0 0.2 0.2 {}
+T {VDDA} -15 -74 0 1 0.2 0.2 {}
+T {SAWTOOTH_OUT} 95 -24 0 1 0.2 0.2 {}
+T {VBIAS1} -95 16 0 0 0.2 0.2 {}
+T {PULSE_MAG_REF} -95 -24 0 0 0.2 0.2 {}
+T {RESET_CLK} 95 16 0 1 0.2 0.2 {}
+T {GNDA} -15 56 0 1 0.2 0.2 {}

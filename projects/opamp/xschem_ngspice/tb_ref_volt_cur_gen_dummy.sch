@@ -432,7 +432,7 @@ value="
     * dc V1 1.7 1.9 0.001 temp -40 120 40
     * dc V1 0.0 2.0 0.02 temp -40 120 20
     * dc V1 0 2.0 0.02
-    tran 0.4ns 5us
+    tran 1ns 5us
     remzerovec
     write tb_ref_volt_cur_gen_dummy.raw
 .endc
