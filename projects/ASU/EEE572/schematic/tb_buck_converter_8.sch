@@ -2997,7 +2997,7 @@ value="
   save all
   tran 50ns 1ms
   remzerovec
-  write tb_buck_converter_8_2.raw
+  write tb_buck_converter_8.raw
   set appendwrite
 
 .endc

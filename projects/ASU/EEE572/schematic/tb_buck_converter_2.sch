@@ -60,7 +60,7 @@ linewidth_mult=1
 
 
 
-y1=0.54
+y1=2.4e-09
 
 
 
@@ -78,7 +78,7 @@ y1=0.54
 
 color=12
 node=v_converter_out
-x2=0.003}
+x2=0.00045}
 B 2 3260 -1970 3520 -1780 {flags=graph
 
 y2=25
@@ -88,7 +88,7 @@ divy=5
 subdivy=4
 unity=1
 x1=0
-x2=0.003
+x2=0.00045
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -164,7 +164,7 @@ divy=5
 subdivy=4
 unity=1
 x1=0
-x2=0.003
+x2=0.00045
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -247,7 +247,7 @@ divy=5
 subdivy=4
 unity=1
 x1=0
-x2=0.003
+x2=0.00045
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -324,7 +324,7 @@ divy=5
 subdivy=4
 unity=1
 x1=0
-x2=0.003
+x2=0.00045
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -401,7 +401,7 @@ divy=5
 subdivy=4
 unity=1
 x1=0
-x2=0.003
+x2=0.00045
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -478,7 +478,7 @@ divy=5
 subdivy=4
 unity=1
 x1=0
-x2=0.003
+x2=0.00045
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -556,7 +556,7 @@ divy=5
 subdivy=4
 unity=1
 x1=0
-x2=0.003
+x2=0.00045
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -633,7 +633,7 @@ divy=5
 subdivy=4
 unity=1
 x1=0
-x2=0.003
+x2=0.00045
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -712,7 +712,7 @@ divy=5
 subdivy=4
 unity=1
 x1=0
-x2=0.003
+x2=0.00045
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -790,7 +790,7 @@ divy=5
 subdivy=4
 unity=1
 x1=0
-x2=0.003
+x2=0.00045
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -867,7 +867,7 @@ node="sw_in
 sw_in_b"}
 B 2 2400 -1020 2660 -830 {flags=graph
 
-y2=14
+y2=1.7
 ypos1=0
 ypos2=2
 divy=5
@@ -921,7 +921,7 @@ linewidth_mult=1
 
 
 
-y1=0.54
+y1=0.44
 
 
 
@@ -939,7 +939,328 @@ y1=0.54
 
 
 
-x2=0.003}
+x2=0.00045
+color="6 7"
+node="err_amp_ref
+pulse_mag_ref"}
+B 2 2400 -790 2660 -600 {flags=graph
+
+y2=0.9
+ypos1=0
+ypos2=2
+divy=5
+subdivy=4
+unity=1
+x1=0
+
+divx=5
+subdivx=4
+xlabmag=1.0
+ylabmag=1.0
+
+
+dataset=-1
+unitx=1
+logx=0
+logy=0
+
+
+
+
+
+
+
+
+
+
+
+linewidth_mult=1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+y1=0.66
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+x2=0.00045
+
+color="7 6 9 11"
+node="vbias1
+vbias2
+vbias3
+vbias4"}
+B 2 2400 -550 2660 -360 {flags=graph
+
+y2=0.67
+ypos1=0
+ypos2=2
+divy=5
+subdivy=4
+unity=1
+x1=0
+
+divx=5
+subdivx=4
+xlabmag=1.0
+ylabmag=1.0
+
+
+dataset=-1
+unitx=1
+logx=0
+logy=0
+
+
+
+
+
+
+
+
+
+
+
+linewidth_mult=1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+y1=0.66
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+x2=0.00045
+
+
+color=7
+node=x3.v_ref}
+B 2 2700 -790 2960 -600 {flags=graph
+
+y2=0.89740898
+ypos1=0
+ypos2=2
+divy=5
+subdivy=4
+unity=1
+x1=0
+
+divx=5
+subdivx=4
+xlabmag=1.0
+ylabmag=1.0
+
+
+dataset=-1
+unitx=1
+logx=0
+logy=0
+
+
+
+
+
+
+
+
+
+
+
+linewidth_mult=1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+y1=0.8729478
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+x2=0.00045
+
+color=7
+node=vbias1}
+B 2 2700 -550 2960 -360 {flags=graph
+
+y2=0.76
+ypos1=0
+ypos2=2
+divy=5
+subdivy=4
+unity=1
+x1=0
+
+divx=5
+subdivx=4
+xlabmag=1.0
+ylabmag=1.0
+
+
+dataset=-1
+unitx=1
+logx=0
+logy=0
+
+
+
+
+
+
+
+
+
+
+
+linewidth_mult=1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+y1=0.75
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+x2=0.00045
+
+
+
+color=7
+node=x6.v_top}
 T {Voltage} 2820 -1910 0 0 0.6 0.6 {}
 T {Current} 2820 -1680 0 0 0.6 0.6 {}
 T {Switch} 3040 -2070 0 0 0.6 0.6 {}
@@ -1024,11 +1345,11 @@ N 1010 -1310 1620 -1310 {lab=ERR_AMP_OUT}
 N 2370 -2270 2370 -1710 {lab=V_CONVERTER_OUT}
 N 2240 -1020 2240 -980 {lab=VDD}
 N 2240 -860 2240 -820 {lab=GND}
-C {devices/vsource.sym} 2810 -1110 0 0 {name=V1 value=1.8 savecurrent=false
-* "pwl(0 0 1us 0 1.2us 1.8)"}
+C {devices/vsource.sym} 2810 -1110 0 0 {name=V1 value="pwl(0 0 1us 0 1.2us 1.8)" savecurrent=false
+* 1.8}
 C {devices/gnd.sym} 2810 -1060 0 0 {name=l3 lab=GND}
 C {devices/vdd.sym} 2810 -1160 0 0 {name=l4 lab=VDD}
-C {sky130_fd_pr/corner.sym} 2960 -1160 0 0 {name=CORNER only_toplevel=false corner=tt}
+C {sky130_fd_pr/corner.sym} 3030 -1150 0 0 {name=CORNER only_toplevel=false corner=tt}
 C {simulator_commands_shown.sym} 3300 -1260 0 0 {name=COMMANDS
 simulator=ngspice
 only_toplevel=false 
@@ -1039,13 +1360,37 @@ value="
 
 * .model D1N914 D(Is=1.93E-3 N=1.68 Rs=0.000917 Cjo=3.25n M=0.333 Bv=40 Ibv=20m Tt=14.4n)
 
+.save
++v(sw_in) 
++v(v_converter_out)
++v(x3.v_ref)
++v(x6.v_top)
++v(vbias1)
++v(vbias2)
++v(vbias3)
++v(vbias4)
++v(err_amp_vin_m)
++v(err_amp_ref)
++v(pulse_mag_ref)
++v(sawtooth_out)
++v(reset_clk)
++v(pwm_out)
++v(sw_in_b) 
++v(v_diode) 
++v(v_cap)
++v(buck_in) 
++@m.x3.x1.msky130_fd_pr__nfet_01v8[id]
++@m.x3.x23.msky130_fd_pr__pfet_01v8[id]
++@m.x6.x45.msky130_fd_pr__pfet_01v8[id]
+
+
 .control
-  save v(sw_in) v(v_converter_out)
+  * save v(sw_in) v(v_converter_out)
   * save all
   * tran 10ns 1ms
-  tran 1ns 0.6ms
+  tran 0.2ns 450us
   remzerovec
-  write tb_buck_converter_2.raw
+  write tb_buck_converter_2_7.raw
   set appendwrite
 
 .endc
@@ -1123,7 +1468,7 @@ C {switch_ngspice.sym} 1570 -2070 0 0 {name=S2 model=SW1
 device_model=".MODEL SW1 SW( VT=0.9 VH=0.01 RON=0.01 ROFF=10G )"}
 C {lab_pin.sym} 2000 -2060 2 1 {name=p15 sig_type=std_logic lab=V_CAP}
 C {lab_wire.sym} 1220 -2420 0 0 {name=p25 sig_type=std_logic lab=SW_IN}
-C {lab_wire.sym} 1490 -2070 0 1 {name=p28 sig_type=std_logic lab=SW_IN_B}
+C {lab_wire.sym} 1420 -2070 0 0 {name=p28 sig_type=std_logic lab=SW_IN_B}
 C {PWM_comparator.sym} 920 -1290 0 1 {name=x1}
 C {SR_latch.sym} 950 -1620 0 0 {name=x2}
 C {biasing_circuit.sym} 1850 -910 0 1 {name=x3}

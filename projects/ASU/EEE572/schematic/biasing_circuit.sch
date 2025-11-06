@@ -104,7 +104,7 @@ N 4260 -3250 4260 -3110 {lab=VHIGH}
 N 4640 -3250 4640 -3110 {lab=#net1}
 N 4440 -3170 4440 -2830 {lab=VBIAS1}
 N 4260 -2980 4260 -2760 {lab=VBIAS1}
-N 4640 -2980 4640 -2760 {lab=Vncas}
+N 4640 -2980 4640 -2760 {lab=VNCAS}
 N 4160 -2920 4360 -2920 {lab=VBIAS2}
 N 4360 -3010 4360 -2920 {lab=VBIAS2}
 N 4260 -2330 4260 -2260 {lab=GNDA}
@@ -116,9 +116,9 @@ N 4070 -2360 4220 -2360 {lab=VBIAS4}
 N 4640 -2550 4640 -2480 {lab=#net3}
 N 4600 -2580 4600 -2520 {lab=GNDA}
 N 4600 -2580 4640 -2580 {lab=GNDA}
-N 4640 -2760 4640 -2610 {lab=Vncas}
-N 4640 -2800 4950 -2800 {lab=Vncas}
-N 4680 -2580 4770 -2580 {lab=Vncas}
+N 4640 -2760 4640 -2610 {lab=VNCAS}
+N 4640 -2800 4950 -2800 {lab=VNCAS}
+N 4680 -2580 4770 -2580 {lab=VNCAS}
 N 4640 -2330 4640 -2260 {lab=#net4}
 N 4680 -2360 4680 -2300 {lab=GNDA}
 N 4640 -2360 4680 -2360 {lab=GNDA}
@@ -158,7 +158,7 @@ N 2910 -2360 2990 -2360 {lab=VBIAS4}
 N 2990 -2720 2990 -2360 {lab=VBIAS4}
 N 2870 -2720 2990 -2720 {lab=VBIAS4}
 N 4360 -2920 4950 -2920 {lab=VBIAS2}
-N 4770 -2800 4770 -2580 {lab=Vncas}
+N 4770 -2800 4770 -2580 {lab=VNCAS}
 N 2830 -2500 2830 -2360 {lab=GNDA}
 N 3320 -3280 3320 -3210 {lab=VDDA}
 N 3320 -3180 3360 -3180 {lab=VDDA}
@@ -248,8 +248,8 @@ N 3720 -2440 4070 -2440 {lab=VBIAS4}
 N 3720 -2650 4070 -2650 {lab=VBIAS3}
 N 4070 -2650 4410 -2650 {lab=VBIAS3}
 N 4410 -2650 4410 -2360 {lab=VBIAS3}
-N 2300 -3410 2300 -3320 {lab=VDDA}
-N 2300 -3260 2300 -3180 {lab=VBIASP}
+N 2310 -3250 2310 -3180 {lab=VBIASP}
+N 2310 -3370 2310 -3310 {lab=VDDA}
 C {sky130_fd_pr/nfet_01v8.sym} 2110 -2780 0 0 {name=M1
 W=16
 L=0.3
@@ -730,7 +730,6 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {lab_wire.sym} 3110 -2910 0 0 {name=p10 sig_type=std_logic lab=VBIAS2}
-C {sky130_fd_pr/cap_mim_m3_1.sym} 2300 -3290 2 0 {name=C1 model=cap_mim_m3_1 W=2 L=2 MF=4 spiceprefix=X}
 C {sky130_fd_pr/res_high_po_0p35.sym} 2130 -2650 0 0 {name=R1
 L=10
 model=res_high_po_0p35
@@ -753,7 +752,6 @@ C {lab_wire.sym} 1180 -3560 0 1 {name=p34 sig_type=std_logic lab=VDDA}
 C {lab_wire.sym} 1430 -3740 0 1 {name=p35 sig_type=std_logic lab=VDDA}
 C {lab_wire.sym} 1810 -3740 0 1 {name=p36 sig_type=std_logic lab=VDDA}
 C {lab_wire.sym} 2130 -3560 0 1 {name=p37 sig_type=std_logic lab=VDDA}
-C {lab_wire.sym} 2300 -3410 0 1 {name=p38 sig_type=std_logic lab=VDDA}
 C {lab_wire.sym} 2530 -3280 0 1 {name=p39 sig_type=std_logic lab=VDDA}
 C {lab_wire.sym} 2870 -3280 0 1 {name=p40 sig_type=std_logic lab=VDDA}
 C {lab_wire.sym} 3320 -3280 0 1 {name=p41 sig_type=std_logic lab=VDDA}
@@ -765,3 +763,5 @@ C {opin.sym} 4950 -3210 0 0 {name=p32 lab=VBIAS1}
 C {opin.sym} 4950 -2920 0 0 {name=p4 lab=VBIAS2}
 C {opin.sym} 4410 -2650 0 0 {name=p6 lab=VBIAS3}
 C {opin.sym} 4070 -2440 0 0 {name=p46 lab=VBIAS4}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 2310 -3280 2 0 {name=C1 model=cap_mim_m3_1 W=2 L=2 MF=100 spiceprefix=X}
+C {lab_wire.sym} 2310 -3370 0 1 {name=p38 sig_type=std_logic lab=VDDA}
