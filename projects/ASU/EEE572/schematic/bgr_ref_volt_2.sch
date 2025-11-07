@@ -11,8 +11,6 @@ N 2030 -1050 2070 -1050 {lab=VDDA}
 N 2070 -1120 2070 -1050 {lab=VDDA}
 N 2030 -1120 2070 -1120 {lab=VDDA}
 N 2030 -1020 2030 -450 {lab=ERR_AMP_REF}
-N 1760 -1120 1760 -1050 {lab=V_TOP}
-N 1760 -1240 1760 -1180 {lab=VDDA}
 N 1850 -1240 2030 -1240 {lab=VDDA}
 N 1060 -190 1440 -190 {
 lab=GNDA}
@@ -165,12 +163,11 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {sky130_fd_pr/res_xhigh_po_0p35.sym} 2030 -420 0 1 {name=R4
-L=21.76
+L=24.3
 model=res_xhigh_po_0p35
 spiceprefix=X
 mult=1}
 C {lab_wire.sym} 1860 -1050 2 0 {name=p56 sig_type=std_logic lab=V_TOP}
-C {sky130_fd_pr/cap_mim_m3_1.sym} 1760 -1150 2 0 {name=C1 model=cap_mim_m3_1 W=2 L=2 MF=50 spiceprefix=X}
 C {devices/lab_pin.sym} 1440 -340 2 0 {name=p67 sig_type=std_logic lab=Vbe2}
 C {sky130_fd_pr/pnp_05v5.sym} 1040 -270 0 0 {name=Q1
 model=pnp_05v5_W3p40L3p40
@@ -281,7 +278,6 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {devices/lab_pin.sym} 260 -720 2 0 {name=p90 sig_type=std_logic lab=START_UP_NFET1}
-C {/foss/designs/my_design/projects/bandgapref/xschem_ngspice/new_files/opamp_bandgap_2.sym} 1240 -790 1 1 {name=x1}
 C {sky130_fd_pr/pfet_01v8.sym} 2240 -1050 0 0 {name=M83
 W=10
 L=1
@@ -330,7 +326,7 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {sky130_fd_pr/res_xhigh_po_0p35.sym} 2470 -420 0 1 {name=R1
-L=40
+L=44.7
 model=res_xhigh_po_0p35
 spiceprefix=X
 mult=1}
@@ -359,3 +355,4 @@ C {lab_wire.sym} 1160 -790 2 1 {name=p8 sig_type=std_logic lab=GNDA}
 C {lab_wire.sym} 1320 -790 2 0 {name=p9 sig_type=std_logic lab=VDDA}
 C {opin.sym} 2150 -550 0 0 {name=p10 lab=ERR_AMP_REF}
 C {opin.sym} 2590 -550 0 0 {name=p11 lab=PULSE_MAG_REF}
+C {opamp_bandgap_3.sym} 1240 -790 1 1 {name=x2}

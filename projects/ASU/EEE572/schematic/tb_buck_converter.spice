@@ -29,16 +29,47 @@ x5 VDD SAWTOOTH_OUT VBIAS1 PULSE_MAG_REF RESET_CLK GND sawtooth_generator
 
 .options method=gear
 .options wnflag=1
-.options savecurrents
+* .options savecurrents
 
-.model D1N914 D(Is=533.1E-6 N=1.95 Rs=0.00141 Cjo=1.34n M=0.333 Bv=35 Ibv=50u Tt=1.44n)
+* .model D1N914 D(Is=1.93E-3 N=1.68 Rs=0.000917 Cjo=3.25n M=0.333 Bv=40 Ibv=20m Tt=14.4n)
+
+.save
++v(vdd)
++v(sw_in)
++v(v_converter_out)
++v(x3.v_ref)
++v(x6.v_top)
++v(x6.bgr_vin-)
++v(x6.bgr_vin+)
++v(x6.v_top)
++v(vbias1)
++v(vbias2)
++v(vbias3)
++v(vbias4)
++v(err_amp_vin_m)
++v(err_amp_ref)
++v(pulse_mag_ref)
++v(sawtooth_out)
++v(reset_clk)
++v(pwm_out)
++v(sw_in_b)
++v(v_diode)
++v(v_cap)
++v(buck_in)
++@m.x3.xm1.msky130_fd_pr__nfet_01v8[id]
++@m.x3.xm23.msky130_fd_pr__pfet_01v8[id]
++@m.x6.xm45.msky130_fd_pr__pfet_01v8[id]
++@m.x6.xm53.msky130_fd_pr__pfet_01v8[id]
++@m.x6.xm1.msky130_fd_pr__pfet_01v8[id]
 
 .control
   * save v(sw_in) v(v_converter_out)
   save all
-  tran 10ns 0.6ms
+  * tran 10ns 1ms
+  * tran 0.2ns 200us
+  tran 1000ps 500us
   remzerovec
-  write tb_buck_converter.raw
+  write tb_buck_converter2.raw
   set appendwrite
 
 .endc
@@ -195,7 +226,7 @@ XM24 net5 VBIAS4 GNDA GNDA sky130_fd_pr__nfet_01v8 L=0.3 W=4 nf=2 ad='int((nf+1)
 XM26 VBIAS2 VBIAS3 net5 GNDA sky130_fd_pr__nfet_01v8 L=0.3 W=4 nf=2 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
 XR1 GNDA V_RES GNDA sky130_fd_pr__res_high_po_0p35 L=10 mult=1 m=1
-XC1 VBIASP VDDA sky130_fd_pr__cap_mim_m3_1 W=2 L=2 MF=100 m=100
+XC1 VBIASP VDDA sky130_fd_pr__cap_mim_m3_1 W=2 L=2 MF=20 m=20
 .ends
 
 

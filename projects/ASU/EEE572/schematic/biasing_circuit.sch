@@ -763,5 +763,5 @@ C {opin.sym} 4950 -3210 0 0 {name=p32 lab=VBIAS1}
 C {opin.sym} 4950 -2920 0 0 {name=p4 lab=VBIAS2}
 C {opin.sym} 4410 -2650 0 0 {name=p6 lab=VBIAS3}
 C {opin.sym} 4070 -2440 0 0 {name=p46 lab=VBIAS4}
-C {sky130_fd_pr/cap_mim_m3_1.sym} 2310 -3280 2 0 {name=C1 model=cap_mim_m3_1 W=2 L=2 MF=100 spiceprefix=X}
 C {lab_wire.sym} 2310 -3370 0 1 {name=p38 sig_type=std_logic lab=VDDA}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 2310 -3280 2 0 {name=C1 model=cap_mim_m3_1 W=2 L=2 MF=20 spiceprefix=X}

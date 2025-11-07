@@ -4,9 +4,9 @@ K {}
 V {}
 S {}
 E {}
-B 2 1730 -1170 2720 -300 {flags=graph
-y1=-0.0034
-y2=1.2
+B 2 1440 -1170 2430 -300 {flags=graph
+y1=-0.0094
+y2=1.3
 ypos1=0
 ypos2=2
 divy=5
@@ -25,7 +25,7 @@ unitx=1
 logx=0
 logy=0
 }
-B 2 2920 -1170 3910 -300 {flags=graph
+B 2 2630 -1170 3620 -300 {flags=graph
 y1=-0.018
 y2=1.7
 ypos1=0
@@ -46,6 +46,29 @@ unitx=1
 logx=0
 logy=0
 }
+B 2 3730 -1170 4720 -300 {flags=graph
+y1=-1.4e-13
+y2=0.75
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=0
+x2=1e-06
+divx=5
+subdivx=1
+xlabmag=1.0
+ylabmag=1.0
+
+
+dataset=0
+unitx=1
+logx=0
+logy=0
+
+color=6
+node=v_top}
 N 2480 -1740 2480 -1540 {lab=GND}
 N 2480 -2590 2480 -2430 {
 lab=VDD}
@@ -276,12 +299,11 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {sky130_fd_pr/res_xhigh_po_0p35.sym} 2480 -1770 0 1 {name=R4
-L=21.76
+L=24.3
 model=res_xhigh_po_0p35
 spiceprefix=X
 mult=1}
 C {lab_wire.sym} 2310 -2400 2 0 {name=p56 sig_type=std_logic lab=V_TOP}
-C {sky130_fd_pr/cap_mim_m3_1.sym} 2210 -2500 2 0 {name=C1 model=cap_mim_m3_1 W=2 L=2 MF=20 spiceprefix=X}
 C {devices/lab_pin.sym} 1890 -1690 2 0 {name=p67 sig_type=std_logic lab=Vbe2}
 C {sky130_fd_pr/pnp_05v5.sym} 1490 -1620 0 0 {name=Q1
 model=pnp_05v5_W3p40L3p40
@@ -392,7 +414,6 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {devices/lab_pin.sym} 500 -2070 2 0 {name=p90 sig_type=std_logic lab=START_UP_NFET1}
-C {/foss/designs/my_design/projects/bandgapref/xschem_ngspice/new_files/opamp_bandgap_2.sym} 1690 -2140 1 1 {name=x1}
 C {sky130_fd_pr/pfet_01v8.sym} 2690 -2400 0 0 {name=M83
 W=10
 L=1
@@ -450,7 +471,7 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {sky130_fd_pr/res_xhigh_po_0p35.sym} 2920 -1770 0 1 {name=R1
-L=40
+L=44.7
 model=res_xhigh_po_0p35
 spiceprefix=X
 mult=1}
@@ -474,3 +495,4 @@ C {lab_pin.sym} 3040 -1900 0 1 {name=p16 lab=PULSE_MAG_REF}
 C {ammeter.sym} 1890 -1870 0 0 {name=Vmeas savecurrent=true spice_ignore=0}
 C {ammeter.sym} 2150 -1870 0 0 {name=Vmeas1 savecurrent=true spice_ignore=0}
 C {ammeter.sym} 1890 -2190 0 0 {name=Vmeas2 savecurrent=true spice_ignore=0}
+C {opamp_bandgap_3.sym} 1690 -2140 1 1 {name=x1}

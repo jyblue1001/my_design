@@ -6,7 +6,7 @@ S {}
 E {}
 B 2 2080 -550 2340 -360 {flags=graph
 
-y2=13
+y2=10.133103
 ypos1=0
 ypos2=2
 divy=5
@@ -60,7 +60,7 @@ linewidth_mult=1
 
 
 
-y1=0.54
+y1=9.8447448
 
 
 
@@ -243,7 +243,7 @@ node="err_amp_ref
 pulse_mag_ref"}
 B 2 2400 -790 2660 -600 {flags=graph
 
-y2=0.92
+y2=1.8
 ypos1=0
 ypos2=2
 divy=5
@@ -297,7 +297,7 @@ linewidth_mult=1
 
 
 
-y1=0.57
+y1=-2e-14
 
 
 
@@ -324,7 +324,7 @@ vbias3
 vbias4"}
 B 2 2400 -550 2660 -360 {flags=graph
 
-y2=0.66645
+y2=0.67
 ypos1=0
 ypos2=2
 divy=5
@@ -378,7 +378,7 @@ linewidth_mult=1
 
 
 
-y1=0.66618
+y1=-3.8e-16
 
 
 
@@ -457,7 +457,7 @@ linewidth_mult=1
 
 
 
-y1=1e-20
+y1=-1.5e-14
 
 
 
@@ -481,7 +481,7 @@ color=7
 node=vbias1}
 B 2 2700 -550 2960 -360 {flags=graph
 
-y2=0.88
+y2=0.9
 ypos1=0
 ypos2=2
 divy=5
@@ -535,7 +535,7 @@ linewidth_mult=1
 
 
 
-y1=0.73
+y1=0.15
 
 
 
@@ -615,7 +615,7 @@ linewidth_mult=1
 
 
 
-y1=0.068
+y1=-0.0076
 
 
 
@@ -846,9 +846,9 @@ value="
   * save all
   * tran 10ns 1ms
   * tran 0.2ns 200us
-  tran 1ns 500us
+  tran 100ps 600us
   remzerovec
-  write tb_buck_converter_3_4.raw
+  write tb_buck_converter_3_7.raw
   set appendwrite
 
 .endc

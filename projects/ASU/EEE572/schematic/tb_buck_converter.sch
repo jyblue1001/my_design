@@ -6,7 +6,7 @@ S {}
 E {}
 B 2 4310 -1520 4570 -1330 {flags=graph
 
-y2=10
+y2=14
 ypos1=0
 ypos2=2
 divy=5
@@ -78,17 +78,17 @@ y1=0.54
 
 color=12
 node=v_converter_out
-x2=0.0006}
+x2=0.0005}
 B 2 3430 -1520 3690 -1330 {flags=graph
 
-y2=25
+y2=27.10877
 ypos1=0
 ypos2=2
 divy=5
 subdivy=4
 unity=1
 x1=0
-x2=0.0006
+x2=0.0005
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -135,7 +135,7 @@ linewidth_mult=1
 
 
 
-y1=-0.33
+y1=-2.0713894
 
 
 
@@ -164,7 +164,7 @@ divy=5
 subdivy=4
 unity=1
 x1=0
-x2=0.0006
+x2=0.0005
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -247,7 +247,7 @@ divy=5
 subdivy=4
 unity=1
 x1=0
-x2=0.0006
+x2=0.0005
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -317,14 +317,14 @@ color=6
 node=i(@s1[i])}
 B 2 3430 -1300 3690 -1110 {flags=graph
 
-y2=1300
+y2=8.9956237
 ypos1=0
 ypos2=2
 divy=5
 subdivy=4
 unity=1
 x1=0
-x2=0.0006
+x2=0.0005
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -371,7 +371,7 @@ linewidth_mult=1
 
 
 
-y1=-43
+y1=-45.439385
 
 
 
@@ -401,7 +401,7 @@ divy=5
 subdivy=4
 unity=1
 x1=0
-x2=0.0006
+x2=0.0005
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -471,14 +471,14 @@ color=6
 node="\\"buck_vin v_diode -\\""}
 B 2 3720 -1300 3980 -1110 {flags=graph
 
-y2=0.97
+y2=4.4201713
 ypos1=0
 ypos2=2
 divy=5
 subdivy=4
 unity=1
 x1=0
-x2=0.0006
+x2=0.0005
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -525,7 +525,7 @@ linewidth_mult=1
 
 
 
-y1=-43
+y1=-48.343829
 
 
 
@@ -549,14 +549,14 @@ color=9
 node=i(l53)}
 B 2 3720 -1520 3980 -1330 {flags=graph
 
-y2=25
+y2=17.805004
 ypos1=0
 ypos2=2
 divy=5
 subdivy=4
 unity=1
 x1=0
-x2=0.0006
+x2=0.0005
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -603,7 +603,7 @@ linewidth_mult=1
 
 
 
-y1=-14
+y1=-19.634996
 
 
 
@@ -633,7 +633,7 @@ divy=5
 subdivy=4
 unity=1
 x1=0
-x2=0.0006
+x2=0.0005
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -712,7 +712,7 @@ divy=5
 subdivy=4
 unity=1
 x1=0
-x2=0.0006
+x2=0.0005
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -790,7 +790,7 @@ divy=5
 subdivy=4
 unity=1
 x1=0
-x2=0.0006
+x2=0.0005
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -865,6 +865,83 @@ y1=-0.015
 color="6 7"
 node="sw_in
 sw_in_b"}
+B 2 2280 -820 2540 -630 {flags=graph
+
+y2=0.67
+ypos1=0
+ypos2=2
+divy=5
+subdivy=4
+unity=1
+x1=0
+
+divx=5
+subdivx=4
+xlabmag=1.0
+ylabmag=1.0
+
+
+dataset=-1
+unitx=1
+logx=0
+logy=0
+
+
+
+
+
+
+
+
+
+
+
+linewidth_mult=1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+y1=0.66
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+x2=0.0005
+color=7
+node=x3.v_ref}
 T {Voltage} 2990 -1460 0 0 0.6 0.6 {}
 T {Current} 2990 -1230 0 0 0.6 0.6 {}
 T {Switch} 3210 -1620 0 0 0.6 0.6 {}
@@ -954,28 +1031,6 @@ C {devices/vsource.sym} 1920 -450 0 0 {name=V1 value=1.8 savecurrent=false
 C {devices/gnd.sym} 1920 -400 0 0 {name=l3 lab=GND}
 C {devices/vdd.sym} 1920 -500 0 0 {name=l4 lab=VDD}
 C {sky130_fd_pr/corner.sym} 1730 -500 0 0 {name=CORNER only_toplevel=false corner=tt}
-C {simulator_commands_shown.sym} 660 -660 0 0 {name=COMMANDS
-simulator=ngspice
-only_toplevel=false 
-value="
-.options method=gear
-.options wnflag=1
-.options savecurrents
-
-.model D1N914 D(Is=533.1E-6 N=1.95 Rs=0.00141 Cjo=1.34n M=0.333 Bv=35 Ibv=50u Tt=1.44n)
-
-.control
-  * save v(sw_in) v(v_converter_out)
-  save all
-  tran 10ns 0.6ms
-  remzerovec
-  write tb_buck_converter.raw
-  set appendwrite
-
-.endc
-
-"
-}
 C {devices/vsource.sym} 1640 -930 0 0 {name=V2 value=1.6 savecurrent=false
 * 0.001 1.44 "pwl(0 0.17 2us 0.17 2us 0.12 4us 0.12 4us 0.22)"
 * 1.34 1.25 "sin(1.0 0.001 200k)"}
@@ -1099,3 +1154,56 @@ C {devices/vdd.sym} 950 -1720 0 1 {name=l12 lab=VDD}
 C {lab_wire.sym} 1130 -980 2 1 {name=p7 sig_type=std_logic lab=SAWTOOTH_OUT}
 C {lab_wire.sym} 780 -1290 2 1 {name=p12 sig_type=std_logic lab=PWM_OUT}
 C {lab_wire.sym} 1130 -940 2 1 {name=p22 sig_type=std_logic lab=RESET_CLK}
+C {simulator_commands_shown.sym} 740 -760 0 0 {name=COMMANDS1
+simulator=ngspice
+only_toplevel=false 
+value="
+.options method=gear
+.options wnflag=1
+* .options savecurrents
+
+* .model D1N914 D(Is=1.93E-3 N=1.68 Rs=0.000917 Cjo=3.25n M=0.333 Bv=40 Ibv=20m Tt=14.4n)
+
+.save
++v(vdd)
++v(sw_in) 
++v(v_converter_out)
++v(x3.v_ref)
++v(x6.v_top)
++v(x6.bgr_vin-)
++v(x6.bgr_vin+)
++v(x6.v_top)
++v(vbias1)
++v(vbias2)
++v(vbias3)
++v(vbias4)
++v(err_amp_vin_m)
++v(err_amp_ref)
++v(pulse_mag_ref)
++v(sawtooth_out)
++v(reset_clk)
++v(pwm_out)
++v(sw_in_b) 
++v(v_diode) 
++v(v_cap)
++v(buck_in) 
++@m.x3.xm1.msky130_fd_pr__nfet_01v8[id]
++@m.x3.xm23.msky130_fd_pr__pfet_01v8[id]
++@m.x6.xm45.msky130_fd_pr__pfet_01v8[id]
++@m.x6.xm53.msky130_fd_pr__pfet_01v8[id]
++@m.x6.xm1.msky130_fd_pr__pfet_01v8[id]
+
+.control
+  * save v(sw_in) v(v_converter_out)
+  save all
+  * tran 10ns 1ms
+  * tran 0.2ns 200us
+  tran 1000ps 500us
+  remzerovec
+  write tb_buck_converter2.raw
+  set appendwrite
+
+.endc
+
+"
+}
