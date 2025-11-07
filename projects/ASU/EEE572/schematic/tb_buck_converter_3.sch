@@ -6,7 +6,7 @@ S {}
 E {}
 B 2 2080 -550 2340 -360 {flags=graph
 
-y2=11
+y2=13
 ypos1=0
 ypos2=2
 divy=5
@@ -219,7 +219,7 @@ linewidth_mult=1
 
 
 
-y1=0.44
+y1=0.068
 
 
 
@@ -403,7 +403,7 @@ color=7
 node=x3.v_ref}
 B 2 2700 -790 2960 -600 {flags=graph
 
-y2=0.90559226
+y2=1.8
 ypos1=0
 ypos2=2
 divy=5
@@ -457,7 +457,7 @@ linewidth_mult=1
 
 
 
-y1=0.8650141
+y1=1e-20
 
 
 
@@ -481,7 +481,7 @@ color=7
 node=vbias1}
 B 2 2700 -550 2960 -360 {flags=graph
 
-y2=0.75291
+y2=0.88
 ypos1=0
 ypos2=2
 divy=5
@@ -535,7 +535,7 @@ linewidth_mult=1
 
 
 
-y1=0.75241
+y1=0.73
 
 
 
@@ -561,7 +561,7 @@ color=7
 node=x6.v_top}
 B 2 3000 -550 3260 -360 {flags=graph
 
-y2=1.8538085
+y2=1.7
 ypos1=0
 ypos2=2
 divy=5
@@ -615,7 +615,7 @@ linewidth_mult=1
 
 
 
-y1=0.52180849
+y1=0.068
 
 
 
@@ -641,8 +641,89 @@ x2=0.0005
 color="6 7"
 node="err_amp_ref
 pulse_mag_ref"}
-N 2810 -1160 2810 -1140 {lab=VDD}
-N 2810 -1080 2810 -1060 {lab=GND}
+B 2 2980 -790 3240 -600 {flags=graph
+
+y2=0.78
+ypos1=0
+ypos2=2
+divy=5
+subdivy=4
+unity=1
+x1=0
+
+divx=5
+subdivx=4
+xlabmag=1.0
+ylabmag=1.0
+
+
+dataset=-1
+unitx=1
+logx=0
+logy=0
+
+
+
+
+
+
+
+
+
+
+
+linewidth_mult=1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+y1=0.16
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+x2=0.0005
+
+
+color="6 7 7"
+node="x6.bgr_vin+
+x6.bgr_vin-
+vdd"}
+N 2840 -1160 2840 -1140 {lab=VDD}
+N 2840 -1080 2840 -1060 {lab=GND}
 N 2290 -1710 2290 -1560 {lab=V_CONVERTER_OUT}
 N 2290 -1710 2450 -1710 {lab=V_CONVERTER_OUT}
 N 2450 -1710 2450 -1640 {lab=V_CONVERTER_OUT}
@@ -716,10 +797,10 @@ N 1010 -1310 1620 -1310 {lab=ERR_AMP_OUT}
 N 2370 -2270 2370 -1710 {lab=V_CONVERTER_OUT}
 N 2240 -1020 2240 -980 {lab=VDD}
 N 2240 -860 2240 -820 {lab=GND}
-C {devices/vsource.sym} 2810 -1110 0 0 {name=V1 value=1.8 savecurrent=false
-* "pwl(0 0 1us 0 1.2us 1.8)"}
-C {devices/gnd.sym} 2810 -1060 0 0 {name=l3 lab=GND}
-C {devices/vdd.sym} 2810 -1160 0 0 {name=l4 lab=VDD}
+C {devices/vsource.sym} 2840 -1110 0 0 {name=V1 value="pwl(0 0 1us 0 2us 1.8)" savecurrent=false
+* 1.8}
+C {devices/gnd.sym} 2840 -1060 0 0 {name=l3 lab=GND}
+C {devices/vdd.sym} 2840 -1160 0 0 {name=l4 lab=VDD}
 C {sky130_fd_pr/corner.sym} 3030 -1150 0 0 {name=CORNER only_toplevel=false corner=tt}
 C {simulator_commands_shown.sym} 3300 -1260 0 0 {name=COMMANDS
 simulator=ngspice
@@ -732,9 +813,13 @@ value="
 * .model D1N914 D(Is=1.93E-3 N=1.68 Rs=0.000917 Cjo=3.25n M=0.333 Bv=40 Ibv=20m Tt=14.4n)
 
 .save
++v(vdd)
 +v(sw_in) 
 +v(v_converter_out)
 +v(x3.v_ref)
++v(x6.v_top)
++v(x6.bgr_vin-)
++v(x6.bgr_vin+)
 +v(x6.v_top)
 +v(vbias1)
 +v(vbias2)
@@ -761,9 +846,9 @@ value="
   * save all
   * tran 10ns 1ms
   * tran 0.2ns 200us
-  tran 200ps 500us
+  tran 1ns 500us
   remzerovec
-  write tb_buck_converter_3_7.raw
+  write tb_buck_converter_3_4.raw
   set appendwrite
 
 .endc

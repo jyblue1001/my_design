@@ -1,6 +1,6 @@
 ** sch_path: /foss/designs/my_design/projects/ASU/EEE572/schematic/tb_buck_converter_3.sch
 **.subckt tb_buck_converter_3
-V1 VDD GND 1.8
+V1 VDD GND pwl(0 0 1us 0 2us 1.8)
 R46 V_CONVERTER_OUT ERR_AMP_VIN_M 10000 m=1
 C3 ERR_AMP_OUT net1 0.005n m=1
 R47 net1 ERR_AMP_VIN_M 16700 m=1
@@ -33,9 +33,13 @@ x6 VDD ERR_AMP_REF PULSE_MAG_REF GND bgr_ref_volt_2
 * .model D1N914 D(Is=1.93E-3 N=1.68 Rs=0.000917 Cjo=3.25n M=0.333 Bv=40 Ibv=20m Tt=14.4n)
 
 .save
++v(vdd)
 +v(sw_in)
 +v(v_converter_out)
 +v(x3.v_ref)
++v(x6.v_top)
++v(x6.bgr_vin-)
++v(x6.bgr_vin+)
 +v(x6.v_top)
 +v(vbias1)
 +v(vbias2)
@@ -62,9 +66,9 @@ x6 VDD ERR_AMP_REF PULSE_MAG_REF GND bgr_ref_volt_2
   * save all
   * tran 10ns 1ms
   * tran 0.2ns 200us
-  tran 200ps 500us
+  tran 1ns 500us
   remzerovec
-  write tb_buck_converter_3_7.raw
+  write tb_buck_converter_3_4.raw
   set appendwrite
 
 .endc
@@ -336,7 +340,7 @@ XM79 ST_VD1 ST_VD2 GNDA GNDA sky130_fd_pr__nfet_01v8 L=0.15 W=4 nf=2 ad='int((nf
 XM45 ERR_AMP_REF V_TOP VDDA VDDA sky130_fd_pr__pfet_01v8 L=1 W=20 nf=4 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
 XR4 GNDA ERR_AMP_REF GNDA sky130_fd_pr__res_xhigh_po_0p35 L=21.76 mult=1 m=1
-XC1 V_TOP VDDA sky130_fd_pr__cap_mim_m3_1 W=2 L=2 MF=100 m=100
+XC1 V_TOP VDDA sky130_fd_pr__cap_mim_m3_1 W=2 L=2 MF=50 m=50
 XQ1 GNDA GNDA bgr_Vin- sky130_fd_pr__pnp_05v5_W3p40L3p40 m=1 mult=1
 XQ2 GNDA GNDA Vbe2 sky130_fd_pr__pnp_05v5_W3p40L3p40 m=8 mult=8
 XM51 bgr_Vin- V_TOP VDDA VDDA sky130_fd_pr__pfet_01v8 L=1 W=20 nf=4 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'

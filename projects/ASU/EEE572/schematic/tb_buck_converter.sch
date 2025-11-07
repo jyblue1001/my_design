@@ -6,7 +6,7 @@ S {}
 E {}
 B 2 4310 -1520 4570 -1330 {flags=graph
 
-y2=14
+y2=10
 ypos1=0
 ypos2=2
 divy=5
@@ -78,7 +78,7 @@ y1=0.54
 
 color=12
 node=v_converter_out
-x2=0.001}
+x2=0.0006}
 B 2 3430 -1520 3690 -1330 {flags=graph
 
 y2=25
@@ -88,7 +88,7 @@ divy=5
 subdivy=4
 unity=1
 x1=0
-x2=0.001
+x2=0.0006
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -164,7 +164,7 @@ divy=5
 subdivy=4
 unity=1
 x1=0
-x2=0.001
+x2=0.0006
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -247,7 +247,7 @@ divy=5
 subdivy=4
 unity=1
 x1=0
-x2=0.001
+x2=0.0006
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -324,7 +324,7 @@ divy=5
 subdivy=4
 unity=1
 x1=0
-x2=0.001
+x2=0.0006
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -401,7 +401,7 @@ divy=5
 subdivy=4
 unity=1
 x1=0
-x2=0.001
+x2=0.0006
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -478,7 +478,7 @@ divy=5
 subdivy=4
 unity=1
 x1=0
-x2=0.001
+x2=0.0006
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -556,7 +556,7 @@ divy=5
 subdivy=4
 unity=1
 x1=0
-x2=0.001
+x2=0.0006
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -633,7 +633,7 @@ divy=5
 subdivy=4
 unity=1
 x1=0
-x2=0.001
+x2=0.0006
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -712,7 +712,7 @@ divy=5
 subdivy=4
 unity=1
 x1=0
-x2=0.001
+x2=0.0006
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -790,7 +790,7 @@ divy=5
 subdivy=4
 unity=1
 x1=0
-x2=0.001
+x2=0.0006
 divx=5
 subdivx=4
 xlabmag=1.0
@@ -967,7 +967,7 @@ value="
 .control
   * save v(sw_in) v(v_converter_out)
   save all
-  tran 10ns 1ms
+  tran 10ns 0.6ms
   remzerovec
   write tb_buck_converter.raw
   set appendwrite

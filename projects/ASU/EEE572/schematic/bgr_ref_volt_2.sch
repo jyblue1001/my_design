@@ -170,7 +170,7 @@ model=res_xhigh_po_0p35
 spiceprefix=X
 mult=1}
 C {lab_wire.sym} 1860 -1050 2 0 {name=p56 sig_type=std_logic lab=V_TOP}
-C {sky130_fd_pr/cap_mim_m3_1.sym} 1760 -1150 2 0 {name=C1 model=cap_mim_m3_1 W=2 L=2 MF=100 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 1760 -1150 2 0 {name=C1 model=cap_mim_m3_1 W=2 L=2 MF=50 spiceprefix=X}
 C {devices/lab_pin.sym} 1440 -340 2 0 {name=p67 sig_type=std_logic lab=Vbe2}
 C {sky130_fd_pr/pnp_05v5.sym} 1040 -270 0 0 {name=Q1
 model=pnp_05v5_W3p40L3p40
